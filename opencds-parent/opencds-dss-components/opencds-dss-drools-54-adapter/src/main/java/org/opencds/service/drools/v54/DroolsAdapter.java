@@ -57,7 +57,6 @@ import org.opencds.dss.evaluate.Evaluater;
 import org.opencds.knowledgeRepository.SimpleKnowledgeRepository;
 import org.opencds.vmr.v1_0.mappings.in.BuildCDSInputFactLists;
 
-// CAMBIO DE PRUEBA 
 
 /**
  * DroolsAdapter.java
