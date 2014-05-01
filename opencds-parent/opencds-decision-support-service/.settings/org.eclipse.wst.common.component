@@ -5,6 +5,39 @@
         <wb-resource deploy-path="/" source-path="/src/main/webapp" tag="defaultRootSource"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/java"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/resources"/>
+        <dependent-module archiveName="opencds-dss-evaluation-1.1.5-FINAL.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/opencds-dss-evaluation/opencds-dss-evaluation">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="dss-java-stub-1.1.5-FINAL.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/dss-java-stub/dss-java-stub">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="opencds-common-1.1.5-FINAL.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/opencds-common/opencds-common">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="opencds-knowledge-repository-file-based-1.1.5-FINAL.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/opencds-knowledge-repository-file-based/opencds-knowledge-repository-file-based">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="opencds-dss-drools-55-adapter-1.1.5-FINAL.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/opencds-dss-drools-55-adapter/opencds-dss-drools-55-adapter">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="opencds-vmr-1_0-mappings-1.1.5-FINAL.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/opencds-vmr-1_0-mappings/opencds-vmr-1_0-mappings">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="opencds-vmr-1_0-internal-1.1.5-FINAL.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/opencds-vmr-1_0-internal/opencds-vmr-1_0-internal">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="opencds-vmr-1_0-schema-1.1.5-FINAL.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/opencds-vmr-1_0-schema/opencds-vmr-1_0-schema">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="opencds-terminology-service-1.1.5-FINAL.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/opencds-terminology-service/opencds-terminology-service">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="opencds-simple-terminology-service-1.1.5-FINAL.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/opencds-simple-terminology-service/opencds-simple-terminology-service">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="opencds-apelon-1.1.5-FINAL.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/opencds-apelon/opencds-apelon">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
         <property name="context-root" value="opencds-decision-support-service"/>
         <property name="java-output-path" value="/opencds-decision-support-service/target/classes"/>
     </wb-module>
