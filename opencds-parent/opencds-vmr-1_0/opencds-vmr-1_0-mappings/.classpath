@@ -1,27 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
-	<classpathentry kind="src" output="target/classes" path="src/main/java">
-		<attributes>
-			<attribute name="optional" value="true"/>
-			<attribute name="maven.pomderived" value="true"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry kind="src" output="target/test-classes" path="src/test/java">
-		<attributes>
-			<attribute name="optional" value="true"/>
-			<attribute name="maven.pomderived" value="true"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.6">
-		<attributes>
-			<attribute name="maven.pomderived" value="true"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry kind="con" path="org.eclipse.m2e.MAVEN2_CLASSPATH_CONTAINER">
-		<attributes>
-			<attribute name="maven.pomderived" value="true"/>
-			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
-		</attributes>
-	</classpathentry>
-	<classpathentry kind="output" path="target/classes"/>
+  <classpathentry kind="src" path="src/main/java" including="**/*.java"/>
+  <classpathentry kind="output" path="target/classes"/>
+  <classpathentry kind="var" path="M2_REPO/javax/xml/bind/jaxb-api/2.0/jaxb-api-2.0.jar"/>
+  <classpathentry kind="var" path="M2_REPO/javax/xml/bind/jsr173_api/1.0/jsr173_api-1.0.jar"/>
+  <classpathentry kind="var" path="M2_REPO/javax/activation/activation/1.1/activation-1.1.jar"/>
+  <classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+  <classpathentry kind="src" path="/opencds-common"/>
+  <classpathentry kind="src" path="/dss-java-stub"/>
+  <classpathentry kind="src" path="/opencds-vmr-1_0-schema"/>
+  <classpathentry kind="var" path="M2_REPO/org/mod4j/org/apache/commons/logging/1.0.4/logging-1.0.4.jar"/>
+  <classpathentry kind="src" path="/opencds-vmr-1_0-internal"/>
+  <classpathentry kind="src" path="/opencds-terminology-service"/>
+  <classpathentry kind="src" path="/opencds-knowledge-repository-file-based"/>
+  <classpathentry kind="src" path="/opencds-simple-terminology-service"/>
+  <classpathentry kind="src" path="/opencds-apelon"/>
+  <classpathentry kind="var" path="M2_REPO/apelon-dts/dtsapps/3.5.0/dtsapps-3.5.0.jar"/>
+  <classpathentry kind="var" path="M2_REPO/apelon-dts/common/3.5.0/common-3.5.0.jar"/>
+  <classpathentry kind="var" path="M2_REPO/apelon-dts/apelonmessage/3.5.0/apelonmessage-3.5.0.jar"/>
+  <classpathentry kind="var" path="M2_REPO/apelon-dts/apelonserver/3.5.0/apelonserver-3.5.0.jar"/>
+  <classpathentry kind="var" path="M2_REPO/apelon-dts/classifier/3.5.0/classifier-3.5.0.jar"/>
+  <classpathentry kind="var" path="M2_REPO/apelon-dts/dtsmc/3.5.0/dtsmc-3.5.0.jar"/>
+  <classpathentry kind="var" path="M2_REPO/apelon-dts/dtsmc_xml/3.5.0/dtsmc_xml-3.5.0.jar"/>
+  <classpathentry kind="var" path="M2_REPO/apelon-dts/apelonsoap/3.5.0/apelonsoap-3.5.0.jar"/>
+  <classpathentry kind="var" path="M2_REPO/apelon-dts/graph/3.5.0/graph-3.5.0.jar"/>
+  <classpathentry kind="var" path="M2_REPO/apelon-dts/dag/3.5.0/dag-3.5.0.jar"/>
+  <classpathentry kind="var" path="M2_REPO/apelon-dts/dtscore/3.5.0/dtscore-3.5.0.jar"/>
+  <classpathentry kind="var" path="M2_REPO/log4j/log4j/1.2.9/log4j-1.2.9.jar"/>
+  <classpathentry kind="var" path="M2_REPO/xerces/xercesImpl/2.5.0/xercesImpl-2.5.0.jar"/>
+  <classpathentry kind="var" path="M2_REPO/xstream/xstream/1.1.2/xstream-1.1.2.jar"/>
+  <classpathentry kind="var" path="M2_REPO/xpp3/xpp3/1.1.4c/xpp3-1.1.4c.jar"/>
+  <classpathentry kind="var" path="M2_REPO/xalan/xalan/2.6.0/xalan-2.6.0.jar"/>
+  <classpathentry kind="var" path="M2_REPO/xml-apis/xml-apis/1.0.b2/xml-apis-1.0.b2.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/apache/xmlbeans/xmlbeans/2.3.0/xmlbeans-2.3.0.jar"/>
+  <classpathentry kind="var" path="M2_REPO/stax/stax-api/1.0.1/stax-api-1.0.1.jar"/>
+  <classpathentry kind="var" path="M2_REPO/oracle/ojdbc14/10.2.0.3.0/ojdbc14-10.2.0.3.0.jar"/>
 </classpath>
