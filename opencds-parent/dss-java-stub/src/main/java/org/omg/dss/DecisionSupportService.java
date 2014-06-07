@@ -19,7 +19,7 @@ import javax.xml.ws.Service;
  * Generated source version: 2.2.9
  * 
  */
-
+// PRUEBA
 
 @WebServiceClient(name = "DecisionSupportService", 
 //                  wsdlLocation = "file:/C:/OpenCDS/dss-wsdl-2-java/src/main/resources/dss.wsdl",
