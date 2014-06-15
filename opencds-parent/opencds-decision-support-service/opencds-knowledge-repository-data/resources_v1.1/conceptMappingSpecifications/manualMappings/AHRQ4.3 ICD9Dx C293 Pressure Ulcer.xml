@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OpenCdsConceptMappingSpecificationFile>
+	<specificationNotes>Created manually from AHRQ PSI specifications.</specificationNotes>
+    <openCdsConcept code="C293" displayName="Pressure Ulcer"/>
+    <conceptDeterminationMethod code="C267" displayName="AHRQ"/>
+    <membersForCodeSystem codeSystem="2.16.840.1.113883.6.103" codeSystemName="ICD9CM diagnoses">
+		<CD code="707.0" displayName="PRESSURE ULCER"/> 
+		<CD code="707.00" displayName="PRESSURE ULCER SITE NOS (OCT04)"/> 
+		<CD code="707.01" displayName="PRESSURE ULCER, ELBOW (OCT04)"/> 
+		<CD code="707.02" displayName="PRESSURE ULCER, UP BACK (OCT04)"/> 
+		<CD code="707.03" displayName="PRESSURE ULCER, LOW BACK (OCT04)"/> 
+		<CD code="707.04" displayName="PRESSURE ULCER, HIP (OCT04)"/> 
+		<CD code="707.05" displayName="PRESSURE ULCER, BUTTOCK (OCT04)"/> 
+		<CD code="707.06" displayName="PRESSURE ULCER, ANKLE (OCT04)"/> 
+		<CD code="707.07" displayName="PRESSURE ULCER, HEEL (OCT04)"/> 
+		<CD code="707.09" displayName="PRESSURE ULCER, SITE NEC (OCT04)"/> 
+   	</membersForCodeSystem>
+</OpenCdsConceptMappingSpecificationFile>

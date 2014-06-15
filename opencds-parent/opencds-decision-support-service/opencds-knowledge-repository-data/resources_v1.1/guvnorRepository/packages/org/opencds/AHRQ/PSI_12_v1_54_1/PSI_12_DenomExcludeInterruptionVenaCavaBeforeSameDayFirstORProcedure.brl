@@ -1,0 +1,171 @@
+<rule>
+  <name>PSI_12_DenomExcludeInterruptionVenaCavaBeforeSameDayFirstORProcedure</name>
+  <modelVersion>1.0</modelVersion>
+  <attributes>
+    <attribute>
+      <attributeName>ruleflow-group</attributeName>
+      <value>exclusions</value>
+    </attribute>
+    <attribute>
+      <attributeName>dialect</attributeName>
+      <value>java</value>
+    </attribute>
+  </attributes>
+  <metadataList/>
+  <lhs>
+    <dslSentence>
+      <definition>Initialize.evalTime.fpId.evalpId - Note that all criteria below must be met for the rule to fire.</definition>
+      <values/>
+    </dslSentence>
+    <freeForm>
+      <text>// This rule depends on the submission of all relevant data 
+// for exactly one encounter for one patient at a time.</text>
+    </freeForm>
+    <dslSentence>
+      <definition>Enc.Past.Id - EvaluatedPerson had {EncId:ENUM:EncounterId.reference}  {EncType:ENUM:EncounterTypeConcept.openCdsConceptCode} prior to evaluation time</definition>
+      <values>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+          <value>A</value>
+        </org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+          <value>C238</value>
+        </org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue>
+          <value>EncId</value>
+          <id>ENUM:EncounterId.reference</id>
+        </org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue>
+          <value>EncType</value>
+          <id>ENUM:EncounterTypeConcept.openCdsConceptCode</id>
+        </org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue>
+      </values>
+    </dslSentence>
+    <dslSentence>
+      <definition>Proc.Id.EncId - EvaluatedPerson had {ProcId:ENUM:ProcedureId.reference}  {Proc:ENUM:ProcedureConcept.openCdsConceptCode} as {Role:ENUM:ClinicalStatementRelationshipConcept.openCdsConceptCode}  {EncId:ENUM:EncounterId.reference} above</definition>
+      <values>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+          <value>B</value>
+        </org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+          <value>C377</value>
+        </org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+          <value>C405</value>
+        </org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+          <value>A</value>
+        </org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue>
+          <value>ProcId</value>
+          <id>ENUM:ProcedureId.reference</id>
+        </org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue>
+          <value>Proc</value>
+          <id>ENUM:ProcedureConcept.openCdsConceptCode</id>
+        </org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue>
+          <value>Role</value>
+          <id>ENUM:ClinicalStatementRelationshipConcept.openCdsConceptCode</id>
+        </org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue>
+          <value>EncId</value>
+          <id>ENUM:EncounterId.reference</id>
+        </org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue>
+      </values>
+    </dslSentence>
+    <dslSentence>
+      <definition>Proc.Id.EncId - EvaluatedPerson had {ProcId:ENUM:ProcedureId.reference}  {Proc:ENUM:ProcedureConcept.openCdsConceptCode} as {Role:ENUM:ClinicalStatementRelationshipConcept.openCdsConceptCode}  {EncId:ENUM:EncounterId.reference} above</definition>
+      <values>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+          <value>C</value>
+        </org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+          <value>C372</value>
+        </org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+          <value>C405</value>
+        </org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+          <value>A</value>
+        </org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue reference="../../../dslSentence[3]/values/org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue"/>
+        <org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue reference="../../../dslSentence[3]/values/org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue[2]"/>
+        <org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue reference="../../../dslSentence[3]/values/org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue[3]"/>
+        <org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue reference="../../../dslSentence[3]/values/org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue[4]"/>
+      </values>
+    </dslSentence>
+    <freeForm>
+      <text>and (</text>
+    </freeForm>
+    <dslSentence>
+      <definition>ProcId.Before.Proc2Id - EvaluatedPerson had {ProcId:ENUM:ProcedureId.reference} above before all other {ProcId2:ENUM:ProcedureId.reference} above</definition>
+      <values>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+          <value>C</value>
+        </org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+          <value>B</value>
+        </org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue>
+          <value>ProcId</value>
+          <id>ENUM:ProcedureId.reference</id>
+        </org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue>
+          <value>ProcId2</value>
+          <id>ENUM:ProcedureId.reference</id>
+        </org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue>
+      </values>
+    </dslSentence>
+    <freeForm>
+      <text>or</text>
+    </freeForm>
+    <dslSentence>
+      <definition>ProcId.SameDay.Proc2Id - EvaluatedPerson had the first {ProcId:ENUM:ProcedureId.reference} above on the same day as the first {ProcId2:ENUM:ProcedureId.reference} above</definition>
+      <values>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+          <value>C</value>
+        </org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+          <value>B</value>
+        </org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue>
+          <value>ProcId</value>
+          <id>ENUM:ProcedureId.reference</id>
+        </org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue>
+          <value>ProcId2</value>
+          <id>ENUM:ProcedureId.reference</id>
+        </org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue>
+      </values>
+    </dslSentence>
+    <freeForm>
+      <text>)</text>
+    </freeForm>
+  </lhs>
+  <rhs>
+    <dslSentence>
+      <definition>Assert to both Rules and Process that {AssertionToAdd:ENUM:Assertion.value}</definition>
+      <values>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+          <value>HasExclusions</value>
+        </org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue>
+          <value>AssertionToAdd</value>
+          <id>ENUM:Assertion.value</id>
+        </org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue>
+      </values>
+    </dslSentence>
+    <dslSentence>
+      <definition>Assert String {X} for both Rules and Process</definition>
+      <values>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+          <value>PSI_12_DenomExcludeInterruptionVenaCavaBeforeSameDayFirstORProcedure</value>
+        </org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+          <value>X</value>
+        </org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+      </values>
+    </dslSentence>
+  </rhs>
+  <isNegated>false</isNegated>
+</rule>

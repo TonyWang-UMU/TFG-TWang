@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vmr:vmr xmlns:vmr="org.opencds.vmr.v1_0.schema.vmr" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="org.opencds.vmr.v1_0.schema.vmr ../schema/vmr.xsd">
+	<!--constructed example of adverseEvent with a related allergy to a medication and an observationResult about the allergic reaction, presented in "nested/object" structure-->
+	<templateId root=""/>
+	<patient>
+		<id root=""/>
+		<demographics/>
+		<clinicalStatements>
+			<adverseEvents>
+				<adverseEvent>
+					<id root="adverseEventId"/>
+					<adverseEventCode codeSystem="" code=""/>
+					
+					<relatedEntity>
+						<targetRole code="allergen"/>
+						<administrableSubstance>
+							<id root="substanceId"/>
+							<substanceCode codeSystem="" code=""/>
+							
+						</administrableSubstance>
+					</relatedEntity>
+					<relatedClinicalStatement>
+						<targetRelationshipToSource code="reasonFor"/>
+						<observationResult>
+							<id root="observationId"/>
+							<observationFocus codeSystem="" code=""/>
+							
+						</observationResult>
+					</relatedClinicalStatement>
+				</adverseEvent>
+			</adverseEvents>
+		</clinicalStatements>
+	</patient>
+</vmr:vmr>

@@ -1,0 +1,145 @@
+<rule>
+  <name>DenomCriteriaMet</name>
+  <modelVersion>1.0</modelVersion>
+  <attributes>
+    <attribute>
+      <attributeName>dialect</attributeName>
+      <value>java</value>
+    </attribute>
+    <attribute>
+      <attributeName>salience</attributeName>
+      <value>75</value>
+    </attribute>
+  </attributes>
+  <metadataList/>
+  <lhs>
+    <dslSentence>
+      <definition>There is NOT an assertion {assert:ENUM:Assertion.value}</definition>
+      <values>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+          <value>DenominatorMet</value>
+        </org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue>
+          <value>assert</value>
+          <id>ENUM:Assertion.value</id>
+        </org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue>
+      </values>
+    </dslSentence>
+    <dslSentence>
+      <definition>Initialize.evalTime.fpId.evalpId - Note that all criteria below must be met for the rule to fire.</definition>
+      <values/>
+    </dslSentence>
+    <dslSentence>
+      <definition>Age.Low - EvaluatedPerson age is greater than or equal to {n} years</definition>
+      <values>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+          <value>26</value>
+        </org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+          <value>n</value>
+        </org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+      </values>
+    </dslSentence>
+    <dslSentence>
+      <definition>Age.High - EvaluatedPerson age is less than or equal to {n} years</definition>
+      <values>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+          <value>66</value>
+        </org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+          <value>n</value>
+        </org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+      </values>
+    </dslSentence>
+    <dslSentence>
+      <definition>Gender - EvaluatedPerson gender is {gender:ENUM:GenderConcept.openCdsConceptCode}</definition>
+      <values>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+          <value>C31</value>
+        </org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue>
+          <value>gender</value>
+          <id>ENUM:GenderConcept.openCdsConceptCode</id>
+        </org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue>
+      </values>
+    </dslSentence>
+    <freeForm>
+      <text>(</text>
+    </freeForm>
+    <dslSentence>
+      <definition>Enc.Time - EvaluatedPerson had {EncType:ENUM:EncounterTypeConcept.openCdsConceptCode} in the past {n}  {timeUnits:ENUM:EnumerationTarget.javaCalendarUnit}</definition>
+      <values>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+          <value>C61</value>
+        </org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+          <value>3</value>
+        </org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+          <value>1</value>
+        </org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue>
+          <value>EncType</value>
+          <id>ENUM:EncounterTypeConcept.openCdsConceptCode</id>
+        </org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+          <value>n</value>
+        </org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue>
+          <value>timeUnits</value>
+          <id>ENUM:EnumerationTarget.javaCalendarUnit</id>
+        </org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue>
+      </values>
+    </dslSentence>
+    <freeForm>
+      <text>or</text>
+    </freeForm>
+    <dslSentence>
+      <definition>Enc.Time - EvaluatedPerson had {EncType:ENUM:EncounterTypeConcept.openCdsConceptCode} in the past {n}  {timeUnits:ENUM:EnumerationTarget.javaCalendarUnit}</definition>
+      <values>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+          <value>C44</value>
+        </org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+          <value>3</value>
+        </org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+          <value>1</value>
+        </org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue reference="../../../dslSentence[6]/values/org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue"/>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue reference="../../../dslSentence[6]/values/org.drools.guvnor.client.modeldriven.brl.DSLVariableValue[4]"/>
+        <org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue reference="../../../dslSentence[6]/values/org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue[2]"/>
+      </values>
+    </dslSentence>
+    <freeForm>
+      <text>) and not</text>
+    </freeForm>
+    <dslSentence>
+      <definition>Proc.Past - EvaluatedPerson had {Proc:ENUM:ProcedureConcept.openCdsConceptCode}</definition>
+      <values>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+          <value>C60</value>
+        </org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue>
+          <value>Proc</value>
+          <id>ENUM:ProcedureConcept.openCdsConceptCode</id>
+        </org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue>
+      </values>
+    </dslSentence>
+  </lhs>
+  <rhs>
+    <dslSentence>
+      <definition>Assert to both Rules and Process that {AssertionToAdd:ENUM:Assertion.value}</definition>
+      <values>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+          <value>DenominatorMet</value>
+        </org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue>
+          <value>AssertionToAdd</value>
+          <id>ENUM:Assertion.value</id>
+        </org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue>
+      </values>
+    </dslSentence>
+  </rhs>
+  <isNegated>false</isNegated>
+</rule>

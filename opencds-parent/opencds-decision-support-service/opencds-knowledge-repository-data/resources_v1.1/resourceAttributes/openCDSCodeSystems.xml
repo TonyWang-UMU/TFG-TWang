@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tcs:codeSystems xsi:schemaLocation="org.opencds.term.codeSystem ..\schema\OpenCDSCodeSystems.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tcs="org.opencds.term.codeSystem">
+	<!-- OIDs for individual HL7 code systems are at http://www.hl7.org/v3ballot/html/infrastructure/vocabulary/vocabulary.html#voc-systems.
+	Names for these code systems are transformed from, e.g., AdministrativeGender to HL7 administrative gender. -->
+	<codeSystem codeSystemOID="2.16.840.1.113883.5" codeSystemDisplayName="HL7" apelonNamespaceName="HL7" isApelonOntylog="false"/>
+	
+	<!-- Individual HL7 code systems.  Note that these code systems are not maintained in Apelon as separate namespaces. -->
+	<codeSystem codeSystemOID="2.16.840.1.113883.5.1" codeSystemDisplayName="HL7 administrative gender" /><!--review this one ...-->
+	
+	<!--  Other code systems -->
+	<codeSystem codeSystemOID="2.16.840.1.113883.6.12" codeSystemDisplayName="CPT4" apelonNamespaceName="CPT" isApelonOntylog="false"/>
+	<codeSystem codeSystemOID="2.16.840.1.113883.6.103" codeSystemDisplayName="ICD9CM diagnoses" apelonNamespaceName="ICD-9-CM" isApelonOntylog="true"/>
+	<codeSystem codeSystemOID="2.16.840.1.113883.6.104" codeSystemDisplayName="ICD9CM procedures" apelonNamespaceName="ICD-9-CM" isApelonOntylog="true"/>
+	<codeSystem codeSystemOID="2.16.840.1.113883.6.104" codeSystemDisplayName="ICD9CM procedures" apelonNamespaceName="ICD-9-CM" isApelonOntylog="true"/>
+	<codeSystem codeSystemOID="2.16.840.1.113883.6.1" codeSystemDisplayName="LOINC" apelonNamespaceName="LOINC" isApelonOntylog="false"/>
+	<codeSystem codeSystemOID="2.16.840.1.113883.6.96" codeSystemDisplayName="SNOMED CT" apelonNamespaceName="SNOMED CT" isApelonOntylog="true"/>
+	<codeSystem codeSystemOID="2.16.840.1.113883.3.795.12.1.1" codeSystemDisplayName="OpenCDS concepts" apelonNamespaceName="OpenCDS" isApelonOntylog="false"/>
+	<codeSystem codeSystemOID="2.16.840.1.113883.3.795.12.1.2" codeSystemDisplayName="OpenCDS local proprietary codes" apelonNamespaceName="OpenCDS" isApelonOntylog="false"/>
+	<codeSystem codeSystemOID="2.16.840.1.113883.3.1829.11" codeSystemDisplayName="vMR templates" apelonNamespaceName="vMR" isApelonOntylog="false"/>
+	<codeSystem codeSystemOID="2.16.840.1.113883.6.88" codeSystemDisplayName="RXNorm" apelonNamespaceName="RXNorm" isApelonOntylog="false"/>
+<!--	<codeSystem codeSystemOID="2.16.840.1.113883.6.88" codeSystemDisplayName="RXNav" apelonNamespaceName="RXNav" isApelonOntylog="false"/>-->
+	<codeSystem codeSystemOID="2.16.840.1.113883.6.287" codeSystemDisplayName="RXTerms" apelonNamespaceName="RXTerms" isApelonOntylog="false"/>
+	<codeSystem codeSystemOID="2.16.840.1.113883.3.26.1.5" codeSystemDisplayName="NDF-RT" apelonNamespaceName="NDF-RT" isApelonOntylog="false"/>
+	<codeSystem codeSystemOID="2.16.840.1.113883.12.549" codeSystemDisplayName="NDC" apelonNamespaceName="NDC" isApelonOntylog="false"/>
+	<codeSystem codeSystemOID="2.16.840.1.113883.12.416" codeSystemDisplayName="DRG" apelonNamespaceName="DRG" isApelonOntylog="false"/>
+	<codeSystem codeSystemOID="2.16.840.1.113883.3.263" codeSystemDisplayName="MS-DRG" apelonNamespaceName="MS-DRG" isApelonOntylog="false"/>
+	<codeSystem codeSystemOID="2.16.840.1.113883.3.795.12.1.3" codeSystemDisplayName="MDC" apelonNamespaceName="MDC" isApelonOntylog="false"/>
+	<codeSystem codeSystemOID="2.16.840.1.113883.3.560" codeSystemDisplayName="NQF" apelonNamespaceName="NQF" isApelonOntylog="false"/>
+	<codeSystem codeSystemOID="2.16.840.1.113883.3.88.12.80.33" codeSystemDisplayName="National Uniform Billing Codes" apelonNamespaceName="NUBC" isApelonOntylog="false"/>
+	
+<!--	should this list include OIDS for defined values sets, as well? e.g., PHIN VADS has a number of them, as does HL7...  -->
+	
+</tcs:codeSystems>

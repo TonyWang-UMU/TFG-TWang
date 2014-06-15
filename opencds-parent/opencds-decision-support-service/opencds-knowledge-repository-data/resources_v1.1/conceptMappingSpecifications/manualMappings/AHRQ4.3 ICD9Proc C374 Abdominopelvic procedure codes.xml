@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OpenCdsConceptMappingSpecificationFile>
+	<specificationNotes>Created manually from AHRQ PSI specifications.</specificationNotes>
+    <openCdsConcept code="C374" displayName="Abdominopelvic Procedure"/>
+    <conceptDeterminationMethod code="C267" displayName="AHRQ v4.3"/>
+    <membersForCodeSystem codeSystem="2.16.840.1.113883.6.104" codeSystemName="ICD9CM procedures">
+    	<CD code="17.31" displayName="LAPAROSCOPIC MULTIPLE SEGMENTAL RESECTION OF LARGE INTESTINE (OCT08)"/>
+    	<CD code="17.32" displayName="LAPAROSCOPIC CECECTOMY (OCT08)"/>
+    	<CD code="17.33" displayName="LAPAROSCOPIC RIGHT HEMICOLECTOMY (OCT08)"/>
+    	<CD code="17.34" displayName="LAPAROSCOPIC RESECTION OF TRANSVERSE COLON (OCT08)"/>
+    	<CD code="17.35" displayName="LAPAROSCOPIC LEFT HEMICOLECTOMY (OCT08)"/>
+    	<CD code="17.36" displayName="LAPAROSCOPIC SIGMOIDECTOMY (OCT08)"/>
+    	<CD code="17.39" displayName="OTHER LAPAROSCOPIC PARTIAL EXCISION OF LARGE INTESTINE (OCT08)"/>
+    	<CD code="38.04" displayName="INCISION OF AORTA"/>
+    	<CD code="38.06" displayName="INCISION OF ABDOMINAL ARTERIES"/>
+    	<CD code="38.07" displayName="INCISION OF ABDOMINAL VEINS"/>
+    	<CD code="38.14" displayName="ENDARTERECTOMY OF AORTA"/>
+    	<CD code="38.16" displayName="ENDARTERECTOMY OF ABDOMINAL ARTERIES"/>
+    	<CD code="38.34" displayName="RESECTION OF AORTA W/ ANASTOMOSIS"/>
+    	<CD code="38.36" displayName="RESECTION OF ABDOMINAL ARTERIES W/ ANASTOMOSIS"/>
+    	<CD code="38.37" displayName="RESECTION OF ABDOMINAL VEINS W/ ANASTOMOSIS"/>
+    	<CD code="38.44" displayName="RESECTION OF AORTA, ABDOMINAL W/ REPLACEMENT"/>
+    	<CD code="38.46" displayName="RESECTION OF ABDOMINAL ARTERIES W/ REPLACEMENT"/>
+    	<CD code="38.47" displayName="RESECTION OF ABDOMINAL VEINS W/ REPLACEMENT"/>
+    	<CD code="38.57" displayName="LIGATION AND STRIPPING OF VARICOSE VEINS, ABDOMINAL VEINS"/>
+    	<CD code="38.64" displayName="OTHER EXCISION OF AORTA, ABDOMINAL"/>
+    	<CD code="38.66" displayName="OTHER EXCISION OF ABDOMINAL ARTERIES"/>
+    	<CD code="38.67" displayName="OTHER EXCISION OF ABDOMINAL VEINS"/>
+    	<CD code="38.84" displayName="OTHER SURGICAL OCCLUSION OF AORTA, ABDOMINAL"/>
+    	<CD code="38.86" displayName="OTHER SURGICAL OCCLUSION OF ABDOMINAL ARTERIES"/>
+    	<CD code="38.87" displayName="OTHER SURGICAL OCCLUSION OF ABDOMINAL VEINS"/>
+    	<CD code="39.1" displayName="INTRA-ABDOMINAL VENOUS SHUNT"/>
+    	<CD code="39.24" displayName="AORTA-RENAL BYPASS"/>
+    	<CD code="39.25" displayName="AORTA-ILIAC-FEMORAL BYPASS"/>
+    	<CD code="39.26" displayName="OTHER INTRA-ABDOMINAL VASCULAR SHUNT OR BYPASS"/>
+    	<CD code="40.52" displayName="RADICAL EXCISION OF PERIAORTIC LYMPH NODES"/>
+    	<CD code="40.53" displayName="RADICAL EXCISION OF ILIAC LYMPH NODES"/>
+    	<CD code="41.2" displayName="SPLENOTOMY"/>
+    	<CD code="41.33" displayName="OPEN BIOPSY OF SPLEEN"/>
+    	<CD code="41.41" displayName="MARSUPIALIZATION OF SPLENIC CYST"/>
+    	<CD code="41.42" displayName="EXCISION OF LESION OR TISSUE OF SPLEEN"/>
+    	<CD code="41.43" displayName="PARTIAL SPLENECTOMY"/>
+    	<CD code="41.5" displayName="TOTAL SPLENECTOMY"/>
+    	<CD code="41.93" displayName="EXCISION OF ACCESSORY SPLEEN"/>
+    	<CD code="41.94" displayName="TRANSPLANTATION OF SPLEEN"/>
+    	<CD code="41.95" displayName="REPAIR AND PLASTIC OPERATIONS ON SPLEEN"/>
+    	<CD code="41.99" displayName="OTHER OPERATIONS ON SPLEEN"/>
+    	<CD code="42.40" displayName="ESOPHAGECTOMY, NOS"/>
+    	<CD code="42.41" displayName="PARTIAL ESOPHAGECTOMY"/>
+    	<CD code="42.42" displayName="TOTAL ESOPHAGECTOMY"/>
+    	<CD code="42.53" displayName="INTRATHORACIC ESOPHAGEAL ANASTOMOSIS W/ INTERPOSITION OF SMALL BOWEL"/>
+    	<CD code="42.54" displayName="OTHER INTRATHORACIC ESOPHAGOENTEROSTOMY"/>
+    	<CD code="42.55" displayName="INTRATHORACIC ESOPHAGEAL ANASTOMOSIS W/ INTERPOSITION OF COLON"/>
+    	<CD code="42.56" displayName="OTHER INTRATHORACIC ESOPHAGOCOLOSTOMY"/>
+    	<CD code="42.63" displayName="ANTESTERNAL ESOPHAGEAL ANASTOMOSIS W/ INTERPOSITION OF SMALL BOWEL"/>
+    	<CD code="42.64" displayName="OTHER ANTESTERNAL ESOPHAGOENTEROSTOMY"/>
+    	<CD code="42.65" displayName="ANTESTERNAL ESOPHAGEAL ANASTOMOSIS W/ INTERPOSITION OF COLON"/>
+    	<CD code="42.66" displayName="OTHER ANTESTERNAL ESOPHAGOCOLOSTOMY"/>
+    	<CD code="42.91" displayName="LIGATION OF ESOPHAGEAL VARICES"/>
+    	<CD code="43.0" displayName="GASTROTOMY"/>
+    	<CD code="43.3" displayName="PYLOROMYOTOMY"/>
+    	<CD code="43.42" displayName="LOCAL EXCISION OF OTHER LESION OR TISSUE OF STOMACH"/>
+    	<CD code="43.49" displayName="OTHER DESTRUCTION OF LESION OR TISSUE OF STOMACH"/>
+    	<CD code="43.5" displayName="PARTIAL GASTRECTOMY W/ ANASTOMOSIS TO ESOPHAGUS"/>
+    	<CD code="43.6" displayName="PARTIAL GASTRECTOMY W/ ANASTOMOSIS TO DUODENUM"/>
+    	<CD code="43.7" displayName="PARTIAL GASTRECTOMY W/ ANASTOMOSIS TO JEJUNUM"/>
+    	<CD code="43.81" displayName="PARTIAL GASTRECTOMY W/ JEJUNA TRANSPOSITION"/>
+    	<CD code="43.89" displayName="OTHER PARTIAL GASTRECTOMY"/>
+    	<CD code="43.91" displayName="TOTAL GASTRECTOMY W/ INTESTINAL INTERPOSITION"/>
+    	<CD code="43.99" displayName="OTHER TOTAL GASTRECTOMY"/>
+    	<CD code="44.00" displayName="VAGOTOMY, NOS"/>
+    	<CD code="44.01" displayName="TRUNCAL VAGOTOMY"/>
+    	<CD code="44.02" displayName="HIGHLY SELECTIVE VAGOTOMY"/>
+    	<CD code="44.03" displayName="OTHER SELECTIVE VAGOTOMY"/>
+    	<CD code="44.11" displayName="TRANSABDOMINAL GASTROSCOPY"/>
+    	<CD code="44.15" displayName="OPEN BIOPSY OF STOMACH"/>
+    	<CD code="44.21" displayName="DILATION OF PYLORUS BY INCISION"/>
+    	<CD code="44.29" displayName="OTHER PYLOROPLASTY"/>
+    	<CD code="44.31" displayName="HIGH GASTRIC BYPASS"/>
+    	<CD code="44.39" displayName="OTHER GASTROENTEROSTOMY"/>
+    	<CD code="44.40" displayName="SUTURE OF PEPTIC ULCER, NOS"/>
+    	<CD code="44.41" displayName="SUTURE OF GASTRIC ULCER SITE"/>
+    	<CD code="44.42" displayName="SUTURE OF DUODENAL ULCER SITE"/>
+    	<CD code="44.5" displayName="REVISION OF GASTRIC ANASTOMOSIS"/>
+    	<CD code="44.61" displayName="SUTURE OF LACERATION OF STOMACH"/>
+    	<CD code="44.63" displayName="CLOSURE OF OTHER GASTRIC FISTULA"/>
+    	<CD code="44.64" displayName="GASTROPEXY"/>
+    	<CD code="44.65" displayName="ESOPHAGOGASTROPLASTY"/>
+    	<CD code="44.66" displayName="OTHER PROCEDURES FOR CREATION OF ESOPHAGOGASTRIC SPHINCTERIC COMPETENCE"/>
+    	<CD code="44.69" displayName="OTHER REPAIR OF STOMACH"/>
+    	<CD code="44.91" displayName="LIGATION OF GASTRIC VARICES"/>
+    	<CD code="44.92" displayName="INTRAOPERATIVE MANIPULATION OF STOMACH"/>
+    	<CD code="44.99" displayName="GASTRIC OPERATION NEC (OCT04)"/>
+    	<CD code="45.00" displayName="INCISION OF INTESTINE, NOS"/>
+    	<CD code="45.01" displayName="INCISION OF DUODENUM"/>
+    	<CD code="45.02" displayName="OTHER INCISION OF SMALL INTESTINE"/>
+    	<CD code="45.03" displayName="INCISION OF LARGE INTESTINE"/>
+    	<CD code="45.31" displayName="OTHER LOCAL EXCISION OF LESION OF DUODENUM"/>
+    	<CD code="45.32" displayName="OTHER DESTRUCTION OF LESION OF DUODENUM"/>
+    	<CD code="45.33" displayName="LOCAL EXCISION OF LESION OR TISSUE OF SMALL INTESTINE, EXCEPT DUODENUM"/>
+    	<CD code="45.34" displayName="OTHER DESTRUCTION OF LESION OF SMALL INTESTINE, EXCEPT DUODENUM"/>
+    	<CD code="45.41" displayName="EXCISION OF LESION OR TISSUE OF LARGE INTESTINE"/>
+    	<CD code="45.49" displayName="OTHER DESTRUCTION OF LESION OF LARGE INTESTINE"/>
+    	<CD code="45.50" displayName="ISOLATION OF INTESTINAL SEGMENT, NOS"/>
+    	<CD code="45.51" displayName="ISOLATION OF SEGMENT OF SMALL INTESTINE"/>
+    	<CD code="45.52" displayName="ISOLATION OF SEGMENT OF LARGE INTESTINE"/>
+    	<CD code="45.61" displayName="MULTIPLE SEGMENTAL RESECTION OF SMALL INTESTINE"/>
+    	<CD code="45.62" displayName="OTHER PARTIAL RESECTION OF SMALL INTESTINE"/>
+    	<CD code="45.63" displayName="TOTAL REMOVAL OF SMALL INTESTINE"/>
+    	<CD code="45.71" displayName="MULTIPLE SEGMENTAL RESECTION OF LARGE INTESTINE"/>
+    	<CD code="45.72" displayName="CESECTOMY"/>
+    	<CD code="45.73" displayName="RIGHT HEMICOLECTOMY"/>
+    	<CD code="45.74" displayName="RESECTION OF TRANSVERSE COLON"/>
+    	<CD code="45.75" displayName="LEFT HEMICOLECTOMY"/>
+    	<CD code="45.76" displayName="SIGMOIDECTOMY"/>
+    	<CD code="45.79" displayName="OTHER PARTIAL EXCISION OF LARGE INTESTINE"/>
+    	<CD code="45.8" displayName="TOTAL INTRA-ABDOMINAL COLECTOMY"/>
+    	<CD code="45.81" displayName="LAPAROSCOPIC TOTAL INTRA-ABDOMINAL COLECTOMY (OCT08)"/>
+    	<CD code="45.82" displayName="OPEN TOTAL INTRA-ABDOMINAL COLECTOMY (OCT08)"/>
+    	<CD code="45.83" displayName="OTHER AND UNSPECIFIED TOTAL INTRA-ABDOMINAL COLECTOMY (OCT08)"/>
+    	<CD code="45.90" displayName="INTESTINAL ANASTOMOSIS, NOS"/>
+    	<CD code="45.91" displayName="SMALL-TO-SMALL INTESTINAL ANASTOMOSIS"/>
+    	<CD code="45.92" displayName="ANASTOMOSIS OF SMALL INTESTINE TO RECTAL STUMP"/>
+    	<CD code="45.93" displayName="OTHER SMALL-TO-LARGE INTESTINAL ANASTOMOSIS"/>
+    	<CD code="45.94" displayName="LARGE-TO-LARGE INTESTINAL ANASTOMOSIS"/>
+    	<CD code="45.95" displayName="ANASTOMOSIS TO ANUS"/>
+    	<CD code="46.01" displayName="EXTERIORIZATION OF SMALL INTESTINE"/>
+    	<CD code="46.03" displayName="EXTERIORIZATION OF LARGE INTESTINE"/>
+    	<CD code="46.10" displayName="COLOSTOMY, NOS"/>
+    	<CD code="46.11" displayName="TEMPORARY COLOSTOMY"/>
+    	<CD code="46.13" displayName="PERMANENT COLOSTOMY"/>
+    	<CD code="46.20" displayName="ILEOSTOMY, NOS"/>
+    	<CD code="46.21" displayName="TEMPORARY ILESOSTOMY"/>
+    	<CD code="46.22" displayName="CONTINENT ILEOSTOMY"/>
+    	<CD code="46.23" displayName="OTHER PERMANENT ILEOSTOMY"/>
+    	<CD code="46.40" displayName="REVISION OF INTESTINA STOMA, NOS"/>
+    	<CD code="46.41" displayName="REVISION OF STOMA OF SMALL INTESTINE"/>
+    	<CD code="46.42" displayName="REPAIR OF PERICOLOSTOMY HERNIA"/>
+    	<CD code="46.43" displayName="OTHER REVISION OF STOMA OF LARGE INTESTINE"/>
+    	<CD code="46.50" displayName="CLOSURE OF INTESTINAL STOMA, NOS"/>
+    	<CD code="46.51" displayName="CLOSURE OF STOMA OF SMALL INTESTINE"/>
+    	<CD code="46.52" displayName="CLOSURE OF STOMA OF LARGE INTESTINE"/>
+    	<CD code="46.60" displayName="FIXATION OF INTESTINE, NOS"/>
+    	<CD code="46.61" displayName="FIXATION OF SMALL INTESTINE TO ABDOMINAL WALL"/>
+    	<CD code="46.62" displayName="OTHER FIXATION OF SMALL INTESTINE"/>
+    	<CD code="46.63" displayName="FIXATION OF LARGE INTESTINE TO ABDOMINAL WALL"/>
+    	<CD code="46.64" displayName="OTHER FIXATION OF LARGE INTESTINE"/>
+    	<CD code="46.72" displayName="CLOSURE OF FISTULA OF DUODENUM"/>
+    	<CD code="46.74" displayName="CLOSURE OF FISTULA OF SMALL INTESTINE, EXCEPT DUODENUM"/>
+    	<CD code="46.76" displayName="CLOSURE OF FISTULA OF LARGE INTESTINE"/>
+    	<CD code="46.80" displayName="INTRA-ABDOMINAL MANIPULATION OF INTESTINE, NOS"/>
+    	<CD code="46.81" displayName="INTRA-ABDOMINAL MANIPULATION OF SMALL INTESTINE"/>
+    	<CD code="46.82" displayName="INTRA-ABDOMINAL MANIPULATION OF LARGE INTESTINE"/>
+    	<CD code="46.91" displayName="MYOTOMY OF SIGMOID COLON"/>
+    	<CD code="46.92" displayName="MYOTOMY OF OTHER PARTS OF COLON"/>
+    	<CD code="46.93" displayName="REVISION OF ANASTOMOSIS OF SMALL INTESTINE"/>
+    	<CD code="46.94" displayName="REVISION OF ANASTOMOSIS OF LARGE INTESTINE"/>
+    	<CD code="46.99" displayName="OTHER OPERATIONS ON INTESTINES"/>
+    	<CD code="47.09" displayName="OTHER APPENDECTOMY"/>
+    	<CD code="47.19" displayName="OTHER INCIDENTAL APPENDECTOMY"/>
+    	<CD code="47.2" displayName="DRAINAGE OF APPENDICEAL ABSCESS"/>
+    	<CD code="47.91" displayName="APPENDECTOMY"/>
+    	<CD code="47.92" displayName="CLOSURE OF APPENDICEAL FISTULA"/>
+    	<CD code="47.99" displayName="OTHER OPERATIONS ON APPENDIX, OTHER"/>
+    	<CD code="48.40" displayName="PULL-THROUGH RESECTION OF RECTUM, NOT OTHERWISE SPECIFIED (OCT08)"/>
+    	<CD code="48.41" displayName="SUBMUCOSAL RESECTION OF RECTUM"/>
+    	<CD code="48.43" displayName="OPEN PULL-THROUGH RESECTION OF RECTUM (OCT08)"/>
+    	<CD code="48.49" displayName="OTHER PULL-THROUGH RESECTION OF RECTUM"/>
+    	<CD code="48.50" displayName="ABDOMINOPERINEAL RESECTION OF THE RECTUM, NOS (OCT08)"/>
+    	<CD code="48.52" displayName="OPEN ABDOMINOPERINEAL RESECTION OF THE RECTUM (OCT08)"/>
+    	<CD code="48.59" displayName="OTHER ABDOMINOPERINEAL RESECTION OF THE RECTUM (OCT08)"/>
+    	<CD code="48.75" displayName="ABDOMINAL PROCTOPEXY"/>
+    	<CD code="50.0" displayName="HEPATOTOMY"/>
+    	<CD code="50.12" displayName="OPEN BIOPSY OF LIVER"/>
+    	<CD code="50.21" displayName="MARSUPIALIZATION OF LESION OF LIVER"/>
+    	<CD code="50.22" displayName="PARTIAL HEPATECTOMY"/>
+    	<CD code="50.23" displayName="OPN ABLTN LIVER LES/TISS (OCT06)"/>
+    	<CD code="50.26" displayName="ABLTN LIVER LES/TISS NEC (OCT06)"/>
+    	<CD code="50.29" displayName="OTHER DESTRUCTION OF LESION OF LIVER"/>
+    	<CD code="50.3" displayName="LOBECTOMY OF LIVER"/>
+    	<CD code="50.4" displayName="TOTAL HEPATECTOMY"/>
+    	<CD code="50.51" displayName="AUXILIARY LIVER TRANSPLANT"/>
+    	<CD code="50.59" displayName="OTHER TRANSPLANT OF LIVER"/>
+    	<CD code="50.69" displayName="OTHER REPAIR OF LIVER"/>
+    	<CD code="51.03" displayName="OTHER CHOLECYSTOSTOMY"/>
+    	<CD code="51.04" displayName="OTHER CHOLECYSTOTOMY"/>
+    	<CD code="51.13" displayName="OPEN BIOPSY OF GALLBLADDER OR BILE DUCTS"/>
+    	<CD code="51.21" displayName="OTHER PARTIAL CHOLECYSTECTOMY"/>
+    	<CD code="51.22" displayName="CHOLECYSTECTOMY"/>
+    	<CD code="51.31" displayName="ANASTOMOSIS OF GALLBLADDER TO HEPATIC DUCTS"/>
+    	<CD code="51.32" displayName="ANASTOMOSIS OF GALLBLADDER TO INTESTINE"/>
+    	<CD code="51.33" displayName="ANASTOMOSIS OF GALLBLADDER TO PANCREAS"/>
+    	<CD code="51.34" displayName="ANASTOMOSIS OF GALLBLADDER TO STOMACH"/>
+    	<CD code="51.35" displayName="OTHER GALLBLADDER ANASTOMOSIS"/>
+    	<CD code="51.36" displayName="CHOLEDOCHOENTEROSTOMY"/>
+    	<CD code="51.37" displayName="ANASTOMOSIS OF HEPATIC DUCT TO GASTROINTESTINAL TRACT"/>
+    	<CD code="51.39" displayName="OTHER BILE DUCT ANASTOMOSIS"/>
+    	<CD code="51.41" displayName="COMMON DUCT EXPLORATION FOR REMOVAL OF CALCULUS"/>
+    	<CD code="51.42" displayName="COMMON DUCT EXPLORATION FOR RELIEF OF OTHER OBSTRUCTION"/>
+    	<CD code="51.43" displayName="INSERTION OF CHOLEDOCHOHEPATIC TUBE FOR DECOMPRESSION"/>
+    	<CD code="51.49" displayName="INCISION OF OTHER BILE DUCTS FOR RELIEF OF OBSTRUCTION"/>
+    	<CD code="51.51" displayName="EXPLORATION OF COMMON DUCT"/>
+    	<CD code="51.59" displayName="INCISION OF OTHER BILE DUCT"/>
+    	<CD code="51.61" displayName="EXCISION OF CYSTIC DUCT REMNANT"/>
+    	<CD code="51.62" displayName="EXCISION OF AMPULLA OF VATER W/ REIMPLANTATION OF COMMON DUCT"/>
+    	<CD code="51.63" displayName="OTHER EXCISION OF COMMON DUCT"/>
+    	<CD code="51.69" displayName="EXCISION OF OTHER BILE DUCT"/>
+    	<CD code="51.71" displayName="SIMPLE SUTURE OF COMMON BILE DUCT"/>
+    	<CD code="51.72" displayName="CHOLEDOCHOPLASTY"/>
+    	<CD code="51.79" displayName="REPAIR OF OTHER BILE DUCTS"/>
+    	<CD code="51.81" displayName="DILATION OF SPHINCTER OF ODDI"/>
+    	<CD code="51.82" displayName="PANCREATIC SPHINCTEROTOMY"/>
+    	<CD code="51.83" displayName="PANCREATIC SPHINCTEROPLASTY"/>
+    	<CD code="51.89" displayName="OTHER OPERATIONS ON SPHINCTER OF ODDI"/>
+    	<CD code="51.92" displayName="CLOSURE OF CHOLECYSTOSTOMY"/>
+    	<CD code="51.93" displayName="CLOSURE OF OTHER BILIARY FISTULA"/>
+    	<CD code="51.94" displayName="REVISION OF ANASTOMOSIS OF BILIARY TRACT"/>
+    	<CD code="51.95" displayName="REMOVAL OF PROSTHETIC DEVICE FROM BILE DUCT"/>
+    	<CD code="51.99" displayName="OTHER OPERATIONS ON BILIARY TRACT"/>
+    	<CD code="52.01" displayName="DRAINAGE OF PANCREATIC CYST BY CATHETER"/>
+    	<CD code="52.09" displayName="OTHER PANCREATOTOMY"/>
+    	<CD code="52.12" displayName="OPEN BIOPSY OF PANCREAS"/>
+    	<CD code="52.22" displayName="OTHER EXCISION OR DESTRUCTION OF LESION OR TISSUE OF PANCREAS OR PANCREATIC DUCT"/>
+    	<CD code="52.3" displayName="MARSUPIALIZATION OF PANCREATIC CYST"/>
+    	<CD code="52.4" displayName="INTERNAL DRAINAGE OF PANCREATIC CYST"/>
+    	<CD code="52.51" displayName="PROXIMAL PANCREATECTOMY"/>
+    	<CD code="52.52" displayName="DISTAL PANCREATECTOMY"/>
+    	<CD code="52.53" displayName="RADICAL SUBTOTAL PANCREATECTOMY"/>
+    	<CD code="52.59" displayName="OTHER PARTIAL PANCREATECTOMY"/>
+    	<CD code="52.6" displayName="TOTAL PANCREATECTOMY"/>
+    	<CD code="52.7" displayName="RADICAL PANCREATICODUODENECTOMY"/>
+    	<CD code="52.80" displayName="PANCREATIC TRANSPLANT, NOS"/>
+    	<CD code="52.81" displayName="REIMPLANTATION"/>
+    	<CD code="52.82" displayName="HOMOTRANSPLANT OF PANCREAS"/>
+    	<CD code="52.83" displayName="HETEROTRANSPLANT OF PANCREAS"/>
+    	<CD code="52.92" displayName="CANNULATION OF PANCREATIC DUCT"/>
+    	<CD code="52.95" displayName="OTHER REPAIR OF PANCREAS"/>
+    	<CD code="52.96" displayName="ANASTOMOSIS OF PANCREAS"/>
+    	<CD code="52.99" displayName="OTHER OPERATIONS ON PANCREAS"/>
+    	<CD code="53.00" displayName="UNILATERAL REPAIR OF INGUINAL HERNIA, NOS"/>
+    	<CD code="53.01" displayName="REPAIR OF DIRECT INGUINAL HERNIA"/>
+    	<CD code="53.02" displayName="REPAIR OF INDIRECT INGUINAL HERNIA"/>
+    	<CD code="53.03" displayName="REPAIR OF DIRECT INGUINAL HERNIA W/ GRAFT OR PROSTHESIS"/>
+    	<CD code="53.04" displayName="REPAIR OF INDIRECT INGUINAL HERNIA W/ GRAFT OR PROSTHESIS"/>
+    	<CD code="53.05" displayName="REPAIR OF INGUINAL HERNIA W/ GRAFT OR PROSTHESIS, NOS"/>
+    	<CD code="53.10" displayName="BILATERAL REPAIR OF INGUINAL HERNIA, NOS"/>
+    	<CD code="53.11" displayName="BILATERAL REPAIR OF DIRECT INGUINAL HERNIA"/>
+    	<CD code="53.12" displayName="BILATERAL REPAIR OF INDIRECT INGUINAL HERNIA"/>
+    	<CD code="53.13" displayName="BILATERAL REPAIR OF INGUINAL HERNIA, ONE DIRECT AND ONE INDIRECT"/>
+    	<CD code="53.14" displayName="BILATERAL REPAIR OF DIRECT INGUINAL HERNIA W/ GRAFT OR PROSTHESIS"/>
+    	<CD code="53.15" displayName="BILATERAL REPAIR OF INDIRECT INGUINAL HERNIA W/ GRAFT OR PROSTHESIS"/>
+    	<CD code="53.16" displayName="BILATERAL REPAIR OF INGUINAL HERNIA, ONE DIRECT AND ONE INDIRECT, W/ GRAFT OR PROSTHESIS"/>
+    	<CD code="53.17" displayName="BILATERAL INGUINAL HERNIA REPAIR W/ GRAFT OR PROSTHESIS, NOS"/>
+    	<CD code="53.21" displayName="UNILATERAL REPAIR OF FEMORAL HERNIA"/>
+    	<CD code="53.29" displayName="OTHER UNILATERAL FEMORAL HERNIORRHAPHY"/>
+    	<CD code="53.31" displayName="BILATERAL REPAIR OF FEMORAL HERNIA W/ GRAFT OR PROSTHESIS"/>
+    	<CD code="53.39" displayName="OTHER BILATERAL FEMORAL HERNIORRHAPHY"/>
+    	<CD code="53.41" displayName="REPAIR OF UMBILICAL HERNIA W/ PROSTHESIS"/>
+    	<CD code="53.49" displayName="OTHER UMBILICAL HERNIORRHAPHY"/>
+    	<CD code="53.51" displayName="INCISIONAL HERNIA REPAIR"/>
+    	<CD code="53.59" displayName="REPAIR OF OTHER HERNIA OF ANTERIOR ABDOMINAL WALL"/>
+    	<CD code="53.61" displayName="INCISIONAL HERNIA REPAIR W/ PROSTHESIS"/>
+    	<CD code="53.69" displayName="REPAIR OF OTHER HERNIA OF ANTERIOR ABDOMINAL WALL W/ PROSTHESIS"/>
+    	<CD code="53.7" displayName="REPAIR OF DIAPHRAGMATIC HERNIA, ABDOMINAL APPROACH"/>
+    	<CD code="53.75" displayName="REPAIR OF DIAPHRAGMATIC HERNIA, ABDOMINAL APPROACH, NOS (OCT08)"/>
+    	<CD code="54.0" displayName="INCISION OF ABDOMINAL WALL"/>
+    	<CD code="54.11" displayName="EXPLORATORY LAPAROTOMY"/>
+    	<CD code="54.19" displayName="OTHER LAPAROTOMY"/>
+    	<CD code="54.22" displayName="BIOPSY OF ABDOMINAL WALL OR UMBILICUS"/>
+    	<CD code="54.23" displayName="BIOPSY OF ABDOMINAL WALL OR UMBILICUS"/>
+    	<CD code="54.3" displayName="EXCISION OR DESTRUCTION OF LESION OR TISSUE OF ABDOMINAL WALL OR UMBILICUS"/>
+    	<CD code="54.4" displayName="EXCISION OR DESTRUCTION OF PERITONEAL TISSUE"/>
+    	<CD code="54.59" displayName="OTHER LYSIS OF PERITONEAL ADHESIONS"/>
+    	<CD code="54.63" displayName="OTHER SUTURE OF ABDOMINAL WALL"/>
+    	<CD code="54.64" displayName="SUTURE OF PERITONEUM"/>
+    	<CD code="54.71" displayName="REPAIR OF GASTROSCHISIS"/>
+    	<CD code="54.72" displayName="OTHER REPAIR OF ABDOMINAL WALLS"/>
+    	<CD code="54.73" displayName="OTHER REPAIR OF PERITONEUM"/>
+    	<CD code="54.74" displayName="OTHER REPAIR OF OMENTUM"/>
+    	<CD code="54.75" displayName="OTHER REPAIR OF MESENTERY"/>
+    	<CD code="54.92" displayName="REMOVAL OF FOREIGN BODY FROM PERITONEAL CAVITY"/>
+    	<CD code="54.93" displayName="CREATION OF CUTANEOPERITONEAL FISTULA"/>
+    	<CD code="54.94" displayName="CREATION OF PERITONEOVASCULAR SHUNT"/>
+    	<CD code="54.95" displayName="INCISION OF PERITONEUM"/>
+    	<CD code="55.32" displayName="OPN ABLTN RENAL LES/TISS (OCT06)"/>
+    	<CD code="55.35" displayName="ABLTN RENAL LES/TISS NEC (OCT06)"/>
+    	<CD code="55.51" displayName="NEPHROURETERECTOMY"/>
+    	<CD code="55.52" displayName="NEPHRECTOMY OF REMAINING KIDNEY"/>
+    	<CD code="55.53" displayName="REMOVAL OF TRANSPLANTED OR REGECTED KIDNEY"/>
+    	<CD code="55.54" displayName="BILATERAL NEPHRECTOMY"/>
+    	<CD code="55.61" displayName="RENAL AUTOTRANSPLANTATION"/>
+    	<CD code="55.69" displayName="OTHER KIDNEY TRANSPLANTATION"/>
+    	<CD code="55.7" displayName="NEPHROPEXY"/>
+    	<CD code="55.83" displayName="CLOSURE OF OTHER FISTULA OF KIDNEY"/>
+    	<CD code="55.84" displayName="REDUCTION OF TORSION OF RENAL"/>
+    	<CD code="55.85" displayName="SYMPHYSIOTOMY FOR HORESHOE KIDNEY"/>
+    	<CD code="55.86" displayName="ANASTOMOSIS OF KIDNEY"/>
+    	<CD code="55.87" displayName="CORRECTION OF URETEROPELVIC JUNCTION"/>
+    	<CD code="55.91" displayName="DECAPSULATION OF KIDNEY"/>
+    	<CD code="55.97" displayName="IMPLANTATION OR REPLACEMENT OF MECHANICAL KIDNEY"/>
+    	<CD code="55.98" displayName="REMOVAL OF MECHANICAL KIDNEY"/>
+    	<CD code="56.51" displayName="FORMATION OF CUTANEOUS URETERO-ILEOSTOMY"/>
+    	<CD code="56.52" displayName="REVISION OF CUTANEOUS URETERO-ILEOSTOMY"/>
+    	<CD code="56.61" displayName="FORMATION OF OTHER CUTANEOUS URETEROSTOMY"/>
+    	<CD code="56.62" displayName="REVISION OF OTHER CUTANEOUS URETEROSTOMY"/>
+    	<CD code="56.71" displayName="URINARY DIVERSION TO INTESTINE"/>
+    	<CD code="56.72" displayName="REVISION OF URETEROINTESTINAL ANASTOMOSIS"/>
+    	<CD code="56.73" displayName="NEPHROCYSTANASTOMOSIS, NOS"/>
+    	<CD code="56.74" displayName="URETERONEOXYSTOSTOMY"/>
+    	<CD code="56.75" displayName="TRANSURETEROURETEROSTOMY"/>
+    	<CD code="56.83" displayName="CLOSURE OF URETEROSTOMY"/>
+    	<CD code="56.84" displayName="CLOSURE OF OTHER FISTULA OF URETER"/>
+    	<CD code="56.85" displayName="URETEROPEXY"/>
+    	<CD code="56.86" displayName="REMOVAL OF LIGATURE FROM URETER"/>
+    	<CD code="56.89" displayName="OTHER REPAIR OF URETER"/>
+    	<CD code="56.95" displayName="LIGATION OF URETER"/>
+    	<CD code="57.71" displayName="RADICAL CYSTECTOMY"/>
+    	<CD code="57.79" displayName="OTHER TOTAL CYSTECTOMY"/>
+    	<CD code="57.82" displayName="CLOSURE OF CYSTOSTOMY"/>
+    	<CD code="57.87" displayName="RECONSTRUCTION OF URINARY BLADDER"/>
+    	<CD code="59.00" displayName="RETROPERITONEAL DISSECTION, NOS"/>
+    	<CD code="59.02" displayName="OTHER LYSIS OF PERIRENAL OR PERIURETERAL ADHESIONS"/>
+    	<CD code="59.09" displayName="OTHER INCISION OF PERIRENAL OR PERIURETERAL TISSUE"/>
+    	<CD code="60.12" displayName="OPEN BIOPSY OF PROSTATE"/>
+    	<CD code="60.14" displayName="OPEN BIOPSY OF SEMINAL VESICLES"/>
+    	<CD code="60.15" displayName="BIOPSY OF PERIPROSTATIC TISSUE"/>
+    	<CD code="60.3" displayName="SUPRAPUBIC PROSTATECTOMY"/>
+    	<CD code="60.4" displayName="RETROPUBIC PROSTATECTOMY"/>
+    	<CD code="60.5" displayName="RADICAL PROSTATECTOMY"/>
+    	<CD code="60.61" displayName="LOCAL EXCISION OF LESION OF PROSTATE"/>
+    	<CD code="60.72" displayName="INCISION OF SEMINAL VESICLE"/>
+    	<CD code="60.73" displayName="EXCISION OF SEMINAL VESICLE"/>
+    	<CD code="60.79" displayName="OTHER OPERATIONS ON SEMINAL VESICLES"/>
+    	<CD code="60.93" displayName="REPAIR OF PROSTATE"/>
+    	<CD code="65.09" displayName="OTHER OOPHORECTOMY"/>
+    	<CD code="65.12" displayName="OTHER BIOPSY OF OVARY"/>
+    	<CD code="65.21" displayName="MARSUPIALIZATION OF OVARIAN CYST"/>
+    	<CD code="65.22" displayName="WEDGE RESECTION OF OVARY"/>
+    	<CD code="65.29" displayName="OTHER LOCAL EXCISION OR DESTRUCTION OF OVARY"/>
+    	<CD code="65.39" displayName="OTHER UNLILATERAL OOPHORECTOMY"/>
+    	<CD code="65.49" displayName="OTHER UNILATERAL SALPINGOOPHORECTOMY"/>
+    	<CD code="65.51" displayName="OTHER REMOVAL OF BOTH OVARIES AT SAME OPERATIVE EPISODE"/>
+    	<CD code="65.52" displayName="OTHER REMOVAL OF REMAINING OVARY"/>
+    	<CD code="65.61" displayName="OTHER REMOVAL OF BOTH OVARIES AND TUBES AT SAME OPERATIVE EPISODE"/>
+    	<CD code="65.62" displayName="OTHER REMOVAL OF REMAINING OVARY AND TUBE"/>
+    	<CD code="65.71" displayName="OTHER SIMPLE SUTURE OF OVARY"/>
+    	<CD code="65.72" displayName="OTHER REIMPLANTATION OF OVARY"/>
+    	<CD code="65.73" displayName="OTHER SALPINGO OOPHOROPLASTY"/>
+    	<CD code="65.79" displayName="OTHER REPAIR OF OVARY"/>
+    	<CD code="65.89" displayName="OTHER LYSIS OF ADHESIONS OF OVARY AND FALLOPIAN TUBE"/>
+    	<CD code="65.92" displayName="TRANSPLANTATION OF OVARY"/>
+    	<CD code="65.93" displayName="MANUAL RUPTURE OF OVARIAN CYST"/>
+    	<CD code="65.94" displayName="OVARIAN DENERVATION"/>
+    	<CD code="65.95" displayName="RELEASE OF TORSION OF OVARY"/>
+    	<CD code="65.99" displayName="OTHER OPERATIONS ON OVARY"/>
+    	<CD code="66.01" displayName="SALPINGOTOMY"/>
+    	<CD code="66.02" displayName="SALPINGOSTOMY"/>
+    	<CD code="66.31" displayName="OTHER BILATERAL LIGATION AND CRUSHING OF FALLOPIAN TUBES"/>
+    	<CD code="66.32" displayName="OTHER BILATERAL LIGATION AND DIVISION OF FALLOPIAN TUBES"/>
+    	<CD code="66.39" displayName="OTHER BILATERAL DESTRUCTION OR OCCLUSION OF FALLOPIAN TUBES"/>
+    	<CD code="66.4" displayName="TOTAL UNILATERAL SALPINGECTOMY"/>
+    	<CD code="66.51" displayName="REMOVAL OF BOTH FALLOPIAN TUBES AT SAME OPERATIVE EPISODE"/>
+    	<CD code="66.52" displayName="REMOVAL OF REMAINING FALLOPIAN TUBE"/>
+    	<CD code="66.61" displayName="EXCISION OR DESTRUCTION OF LESION OF FALLOPIAN TUBE"/>
+    	<CD code="66.62" displayName="SALPINGECTOMY W/ REMOVAL OF TUBAL PREGNANCY"/>
+    	<CD code="66.63" displayName="BILATERAL PARTIAL SALPINGECTOMY, NOS"/>
+    	<CD code="66.69" displayName="OTHER PARTIAL SALPINGECTOMY"/>
+    	<CD code="66.71" displayName="SIMPLE SUTURE OF FALLOPIAN TUBE"/>
+    	<CD code="66.72" displayName="SALPINGO-OOPHOROSTOMY"/>
+    	<CD code="66.73" displayName="SALPINGO-SALPINGOSTOMY"/>
+    	<CD code="66.74" displayName="SALPINGO-UTEROSTOMY"/>
+    	<CD code="66.79" displayName="OTHER REPAIR OF FALLOPIAN TUBE"/>
+    	<CD code="66.92" displayName="UNILATERAL DESTRUCTION OR OCCLUSION OF FALLOPIAN TUBE"/>
+    	<CD code="66.97" displayName="BURYING OF FIMBRIAE IN UTERINE WALL"/>
+    	<CD code="68.0" displayName="OTHER INCISION AND EXCISION OF UTERUS"/>
+    	<CD code="68.13" displayName="OPEN BIOPSY OF UTERUS"/>
+    	<CD code="68.14" displayName="OPEN BIOPSY OF UTERINE LIGAMENTS"/>
+    	<CD code="68.3" displayName="SUBTOTAL ABDOMINAL HYSTERECTOMY"/>
+    	<CD code="68.39" displayName="OTHER SUBTOTAL ABDOMINAL HYSTERECTOMY"/>
+    	<CD code="68.4" displayName="TOTAL ABDOMINAL HYSTERECTOMY"/>
+    	<CD code="68.41" displayName="LAP TOTAL ABDOMINAL HYST (OCT06)"/>
+    	<CD code="68.49" displayName="TOTAL ABD HYST NEC/NOS (OCT06)"/>
+    	<CD code="68.6" displayName="RADICAL ABDOMINAL HYSTERECTOMY"/>
+    	<CD code="68.8" displayName="PELVIC EVISCERATION"/>
+    	<CD code="68.61" displayName="LAP RADICAL ABDOMNL HYST (OCT06)"/>
+    	<CD code="68.69" displayName="RADICAL ABD HYST NEC/NOS (OCT06)"/>
+    	<CD code="69.22" displayName="OTHER UTERINE SUSPENSION"/>
+    	<CD code="69.3" displayName="PARACERVICAL UTERINE DENERVATION"/>
+    	<CD code="69.41" displayName="SUTURE OF LACERATION OF UTERUS"/>
+    	<CD code="69.42" displayName="CLOSURE OF FISTULA OF UTERUS"/>
+    	<CD code="69.49" displayName="OTHER REPAIR OF UTERUS"/>
+   	</membersForCodeSystem>
+</OpenCdsConceptMappingSpecificationFile>
+

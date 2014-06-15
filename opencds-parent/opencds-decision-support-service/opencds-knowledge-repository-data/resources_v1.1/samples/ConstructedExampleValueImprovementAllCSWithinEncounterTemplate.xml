@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cdsInput>
+	<templateId root="2.16.840.1.113883.3.1829.11.1.1.1"/>
+	<vmrInput>
+		<templateId root="2.16.840.1.113883.3.1829.11.1.2.1"/>
+		<patient>
+			<templateId root="2.16.840.1.113883.3.1829.11.2.1.1"/>
+			<id root="2.16.840.1.113883.3.795.5.2.1.1" extension="put.patient_no.here"/>
+			<demographics>
+				<birthTime value="18010101"/> 
+				<gender code="F" codeSystem="2.16.840.1.113883.1.11.1"/>
+			</demographics>
+			<clinicalStatements>
+				<encounterEvents>
+					<encounterEvent>
+						<templateId root="2.16.840.1.113883.3.1829.11.4.3.1"/>
+						<id root="2.16.840.1.113883.3.795.5.2" extension="enc.id.here"/>
+						<dataSourceType code="Administrative" codeSystem="2.16.840.1.113883.3.795.12.2.5.1"/>
+						<encounterType code="I" codeSystem="2.16.840.1.113883.3.795.12.2.6.1"/>
+						<encounterEventTime low="18010101" high="18010101"/>
+						<relatedClinicalStatement>
+							<targetRelationshipToSource code="COMP" codeSystem="2.16.840.1.113883.5.1002 "/>
+							<observationResult>
+								<templateId root="2.16.840.1.113883.3.1829.11.6.3.2"/>
+								<id root="2.16.840.1.113883.3.795.5.2" extension="put.battery_id.here"/>
+								<dataSourceType code="Clinical" codeSystem="2.16.840.1.113883.3.795.12.2.5.1"/>
+								<observationFocus code="put.study_LOINC_code.here" codeSystem="2.16.840.1.113883.6.1"/>
+								<targetBodySite>
+									<bodySiteCode code="put.SNOMED.code.here" codeSystem="2.16.840.1.113883.6.96" originalText=""/>
+								</targetBodySite>
+								<observationEventTime low="18010101" high="18010101"/>
+								<observationValue>
+									<concept code="put.observation.SNOMED.value.here" codeSystem="2.16.840.1.113883.6.96"/>
+								</observationValue>
+									<interpretation code="put.interpretation.SNOMED.value.here" codeSystem="2.16.840.1.113883.6.96"/>
+								<relatedClinicalStatement>
+									<targetRelationshipToSource code="COMP" codeSystem="2.16.840.1.113883.5.1002 "/>
+									<observationResult>
+										<templateId root="2.16.840.1.113883.3.1829.11.6.3.1"/>
+										<id root="2.16.840.1.113883.3.795.5.2" extension="put.obxseg_id.here"/>
+										<dataSourceType code="Clinical" codeSystem="2.16.840.1.113883.3.795.12.2.5.1"/>
+										<observationFocus code="put.result_LOINC_code.here" codeSystem="2.16.840.1.113883.6.1"/>
+										<observationValue>
+											<concept code="put.observation.SNOMED.value.here" codeSystem="2.16.840.1.113883.6.96"/>
+										</observationValue>
+										<interpretation code="put.interpretation.SNOMED.value.here" codeSystem="2.16.840.1.113883.6.96"/>
+									</observationResult>
+								</relatedClinicalStatement>
+							</observationResult>
+						</relatedClinicalStatement>
+						<relatedClinicalStatement>
+							<targetRelationshipToSource code="COMP" codeSystem="2.16.840.1.113883.5.1002 "/>
+							<problem>
+								<templateId root="2.16.840.1.113883.3.1829.11.7.2.1"/>
+								<id root="2.16.840.1.113883.3.795.5.2" extension="put.problem_id.here"/>
+								<dataSourceType code="Clinical" codeSystem="2.16.840.1.113883.3.795.12.2.5.1"/>
+								<problemCode code="put.problem.ICD9.value.here" codeSystem="2.16.840.1.113883.6.103"/>
+								<problemEffectiveTime low="18010101" high="18010101"/>
+								<importance code="put.importance.SNOMED.value.here" codeSystem="2.16.840.1.113883.6.96"/>
+							</problem>
+						</relatedClinicalStatement>
+						<relatedClinicalStatement>
+							<targetRelationshipToSource code="COMP" codeSystem="2.16.840.1.113883.5.1002 "/>
+							<procedureEvent>
+								<templateId root="2.16.840.1.113883.3.1829.11.8.1.1"/>
+								<id root="2.16.840.1.113883.3.795.5.2" extension="put.procedure_id.here"/>
+								<dataSourceType code="Administrative" codeSystem="2.16.840.1.113883.3.795.12.2.5.1"/>
+								<procedureCode code="put.procedure.CPT.value.here" codeSystem="2.16.840.1.113883.6.96"/>
+								<procedureTime low="18010101" high="18010101"/>
+							</procedureEvent>
+						</relatedClinicalStatement>
+						<relatedClinicalStatement>
+							<targetRelationshipToSource code="COMP" codeSystem="2.16.840.1.113883.5.1002 "/>
+							<substanceAdministrationEvent>
+								<templateId root="2.16.840.1.113883.3.1829.11.9.1.2"/>
+								<id root="2.16.840.1.113883.3.795.5.2" extension="put.substanceAdministration_id.here"/>
+								<dataSourceType code="Clinical" codeSystem="2.16.840.1.113883.3.795.12.2.5.1"/>
+								<substance>
+									<id root="put.substance.GUID.here"/>
+									<substanceCode code="put.RXNORM.value.here" codeSystem="2.16.840.1.113883.6.88"/>
+									<strength numerator="0.05" denominator="1.0"/>
+									<form code="put.RXNORM.value.here" codeSystem="2.16.840.1.113883.6.88"/>
+								</substance>
+								<doseQuantity lowValue="1" lowUnit="lowDoseUnits" highValue="2" highUnit="highDoseUnits"/>
+								<dosingPeriod lowValue="3" lowUnit="lowPeriodUnits" highValue="4" highUnit="highPeriodUnits"/>
+								<administrationTimeInterval low="18010101" high="18010101"/>
+							</substanceAdministrationEvent>
+						</relatedClinicalStatement>
+					</encounterEvent>
+				</encounterEvents>
+			</clinicalStatements>
+			<clinicalStatementRelationships>
+				<clinicalStatementRelationship>
+					<sourceId root="sourceId"/>
+					<targetId root="targetId"/>
+					<targetRelationshipToSource code="COMP" codeSystem="2.16.840.1.113883.3.445"/>
+				</clinicalStatementRelationship>
+			</clinicalStatementRelationships>
+			<clinicalStatementEntityInRoleRelationships>
+				<clinicalStatementEntityInRoleRelationship>
+					<sourceId root="sourceId"/>
+					<targetEntityId root="targetEntityId"/>
+					<targetRole code="P" codeSystem="2.16.840.1.113883.12.369"/>
+				</clinicalStatementEntityInRoleRelationship>
+			</clinicalStatementEntityInRoleRelationships>
+			<entityRelationships>
+				<entityRelationship>
+					<sourceId root="sourceId"/>
+					<targetEntityId root="targetEntityId"/>
+					<targetRole code="C" codeSystem="2.16.840.1.114222.4.11.1040"/>
+				</entityRelationship>
+			</entityRelationships>
+		</patient>
+		<otherEvaluatedPersons>
+			<evaluatedPerson>
+				<id root="otherEvaluatedPersonId"/>
+				<demographics>
+					<birthTime value="18010101"/> 
+					<gender code="F" codeSystem="2.16.840.1.113883.1.11.1"/>
+					<isDeceased value="true"/>
+					<ageAtDeath value="99" unit="yrs"/>
+				</demographics>
+				<clinicalStatements/>
+			</evaluatedPerson>
+		</otherEvaluatedPersons>
+		<evaluatedPersonRelationships>
+			<evaluatedPersonRelationship>
+				<sourceId root="sourceId"/>
+				<targetEntityId root="targetEntityId"/>
+				<targetRole code="relationship" codeSystem="2.16.840.1.113883.12.63"/>
+			</evaluatedPersonRelationship>
+		</evaluatedPersonRelationships>
+	</vmrInput>
+</cdsInput>

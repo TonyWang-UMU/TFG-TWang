@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OpenCdsConceptMappingSpecificationFile>
+	<specificationNotes>Created manually from AHRQ PSI specifications.</specificationNotes>
+    <openCdsConcept code="C363" displayName="Dialysis"/>
+    <conceptDeterminationMethod code="C267" displayName="AHRQ v4.3"/>
+    <membersForCodeSystem codeSystem="2.16.840.1.113883.6.104" codeSystemName="ICD9CM procedures">
+    	<CD code="39.95" displayName="HEMODIALYSIS"/>
+    	<CD code="54.98" displayName="PERITONEAL DIALYSIS"/>
+   	</membersForCodeSystem>
+</OpenCdsConceptMappingSpecificationFile>

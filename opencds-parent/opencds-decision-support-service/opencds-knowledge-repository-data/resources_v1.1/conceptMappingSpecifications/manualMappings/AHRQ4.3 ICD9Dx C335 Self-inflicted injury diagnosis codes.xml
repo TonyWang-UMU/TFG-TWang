@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OpenCdsConceptMappingSpecificationFile>
+	<specificationNotes>Created manually from AHRQ PSI specifications.</specificationNotes>
+    <openCdsConcept code="C335" displayName="Self-inflicted Injury"/>
+    <conceptDeterminationMethod code="C267" displayName="AHRQ v4.3"/>
+    <membersForCodeSystem codeSystem="2.16.840.1.113883.6.103" codeSystemName="ICD9CM diagnoses">
+    	<CD code="E95.00" displayName="ANALGESICS, ANTIPYRETICS, AND ANTIRHEUMATICS"/>
+    	<CD code="E95.01" displayName="BARBITUATES"/>
+    	<CD code="E95.02" displayName="OTHER SEDATIVE AND HYPNOTICS"/>
+    	<CD code="E95.03" displayName="TRANQUILIZERS AND OTHER PSYCHOTROPIC AGENTS"/>
+    	<CD code="E95.04" displayName="OTHER SPECIFIED DRUGS AND MEDICINAL SUBSTANCES"/>
+    	<CD code="E95.05" displayName="UNSPECIFIED DRUG OR MEDICINAL SUBSTANCE"/>
+    	<CD code="E95.06" displayName="AGRICULTURAL AND HORTICULTURAL CHEMICAL AND PHARMACEUTICAL PREPARATIONS OTHER THAN PLANT FOODS AND FERTILIZERS"/>
+    	<CD code="E95.07" displayName="CORROSIVE AND CAUSTIC SUBSTANCES"/>
+    	<CD code="E95.08" displayName="ARSENIC AND ITS COMPOUNDS"/>
+    	<CD code="E95.09" displayName="OTHER AND UNSPECIFIED SOLID AND LIQUID SUBSTANCES"/>
+    	<CD code="E95.10" displayName="GAS DISTRIBUTED BY PIPELINE"/>
+    	<CD code="E95.11" displayName="LIQUIFIED PETROLEUM GAS DISTRIBUTED IN MOBILE CONTAINERS"/>
+    	<CD code="E95.18" displayName="OTHER UTLITY GASES"/>
+    	<CD code="E95.20" displayName="MOTOR VEHICLE EXHAUST GAS"/>
+    	<CD code="E95.21" displayName="OTHER CARBON MONOXIDE"/>
+    	<CD code="E95.28" displayName="OTHER SPECIFIED GASES AND VAPORS"/>
+    	<CD code="E95.29" displayName="UNSPECIFIED GASES AND VAPORS"/>
+    	<CD code="E95.30" displayName="HANGING"/>
+    	<CD code="E95.31" displayName="SUFFOCATION BY PLASTIC BAG"/>
+    	<CD code="E95.38" displayName="OTHER SPECIFIED MEANS"/>
+    	<CD code="E95.4" displayName="SUICIDE AND SELF-INFLICTED INJURY BY SUBMERSION [DROWNING]"/>
+    	<CD code="E95.50" displayName="HANDGUN"/>
+    	<CD code="E95.51" displayName="SHOTGUN"/>
+    	<CD code="E95.52" displayName="HUNTING RIFLE"/>
+    	<CD code="E95.53" displayName="MILITARY FIREARMS"/>
+    	<CD code="E95.54" displayName="OTHER AND UNSPECIFIED FIREARMS"/>
+    	<CD code="E95.55" displayName="EXPLOSIVES"/>
+    	<CD code="E95.59" displayName="UNSPECIFIED"/>
+    	<CD code="E95.6" displayName="SUICIDE AND SELF INFLICKED INJURY BY CUTTING AND PIERCING INSTRUMENT"/>
+    	<CD code="E95.70" displayName="RESIDENTIAL PREMISES"/>
+    	<CD code="E95.71" displayName="OTHER MAN-MADE STRUCTURES"/>
+    	<CD code="E95.72" displayName="NATURAL SITES"/>
+    	<CD code="E95.79" displayName="UNSPECIFIED"/>
+    	<CD code="E95.80" displayName="JUMPING OR LYING BEFORE MOVING OBJECT"/>
+    	<CD code="E95.81" displayName="BURNS, FIRE"/>
+    	<CD code="E95.82" displayName="SCALD"/>
+    	<CD code="E95.83" displayName="EXTREMES OF COLD"/>
+    	<CD code="E95.84" displayName="ELECTROCUTION"/>
+    	<CD code="E95.85" displayName="CRASHING OF MOTOR VEHICLE"/>
+    	<CD code="E95.86" displayName="CRASHING OF AIRCRAFT"/>
+    	<CD code="E95.87" displayName="CAUSTIC SUBSTANCES EXCEPT POISONING"/>
+    	<CD code="E95.88" displayName="OTHER SPECIFIED MEANS"/>
+   	</membersForCodeSystem>
+</OpenCdsConceptMappingSpecificationFile>

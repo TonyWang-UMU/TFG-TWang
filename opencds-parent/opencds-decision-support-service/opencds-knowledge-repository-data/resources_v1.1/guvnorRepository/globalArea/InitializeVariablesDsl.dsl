@@ -1,0 +1,1 @@
+[when] Initialize.evalTime.fpId.evalpId - Note that all criteria below must be met for the rule to fire. = ( EvalTime($evalTime : evalTimeValue) and FocalPersonId($focalPersonId : id) and FocalPersonId($evaluatedPersonId : id) ) //DslUsed==InitializeVariablesDsl

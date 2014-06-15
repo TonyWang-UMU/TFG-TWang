@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OpenCdsConceptMappingSpecificationFile>
+	<specificationNotes>Created manually from AHRQ PSI specifications.</specificationNotes>
+    <openCdsConcept code="C477" displayName="Low Mortality DRG"/>
+    <conceptDeterminationMethod code="C267" displayName="AHRQ"/>
+    <membersForCodeSystem codeSystem="2.16.840.1.113883.12.416" codeSystemName="DRG">
+    	<CD code="037" displayName="ORBITAL PROCEDURES"/>
+    	<CD code="045" displayName="NEUROLOGICAL EYE DISORDERS"/>
+    	<CD code="050" displayName="SIALOADENECTOMY"/>
+    	<CD code="051" displayName="SALIVARY GLAND PROCEDURES EXCEPT SIALOADENECTOMY"/>
+    	<CD code="065" displayName="DYSEQUILIBRIUM"/>
+    	<CD code="096" displayName="BRONCHITIS + ASTHMA AGE greater than 17 W CC"/>
+    	<CD code="097" displayName="BRONCHITIS + ASTHMA AGE greater than 17 W/O CC"/>
+    	<CD code="140" displayName="ANGINA PECTORIS"/>
+    	<CD code="141" displayName="SYNCOPE + COLLAPSE W CC"/>
+    	<CD code="142" displayName="SYNCOPE + COLLAPSE W/O CC"/>
+    	<CD code="143" displayName="CHEST PAIN"/>
+    	<CD code="228" displayName="MAJOR THUMB OR JOINT PROC,OR OTH HAND OR WRIST PROC W CC"/>
+    	<CD code="229" displayName="HAND OR WRIST PROC, EXCEPT MAJOR JOINT PROC, W/O CC"/>
+    	<CD code="237" displayName="SPRAINS, STRAINS, + DISLOCATIONS OF HIP, PELVIS + THIGH"/>
+    	<CD code="257" displayName="TOTAL MASTECTOMY FOR MALIGNANCY W CC"/>
+    	<CD code="258" displayName="TOTAL MASTECTOMY FOR MALIGNANCY W/O CC"/>
+    	<CD code="323" displayName="URINARY STONES W CC, +/OR ESW LITHOTRIPSY"/>
+    	<CD code="328" displayName="URETHRAL STRICTURE AGE greater than 17 W CC"/>
+    	<CD code="329" displayName="URETHRAL STRICTURE AGE greater than 17 W/O CC"/>
+    	<CD code="334" displayName="MAJOR MALE PELVIC PROCEDURES W CC"/>
+    	<CD code="335" displayName="MAJOR MALE PELVIC PROCEDURES W/O CC"/>
+    	<CD code="356" displayName="FEMALE REPRODUCTIVE SYSTEM RECONSTRUCTIVE PROCEDURES"/>
+    	<CD code="358" displayName="UTERINE + ADNEXA PROC FOR NON-MALIGNANCY W CC"/>
+    	<CD code="359" displayName="UTERINE + ADNEXA PROC FOR NON-MALIGNANCY W/O CC"/>
+    	<CD code="369" displayName="MENSTRUAL + OTHER FEMALE REPRODUCTIVE SYSTEM DISORDERS"/>
+    	<CD code="370" displayName="CESAREAN SECTION W CC"/>
+    	<CD code="371" displayName="CESAREAN SECTION W/O CC"/>
+    	<CD code="372" displayName="VAGINAL DELIVERY W COMPLICATING DIAGNOSES"/>
+    	<CD code="373" displayName="VAGINAL DELIVERY W/O COMPLICATING DIAGNOSES"/>
+    	<CD code="374" displayName="VAGINAL DELIVERY W STERILIZATION +/OR D+C"/>
+    	<CD code="375" displayName="VAGINAL DELIVERY W O.R. PROC EXCEPT STERIL +/OR D+C"/>
+    	<CD code="376" displayName="POSTPARTUM + POST ABORTION DIAGNOSES W/O O.R. PROCEDURE"/>
+    	<CD code="377" displayName="POSTPARTUM + POST ABORTION DIAGNOSES W O.R. PROCEDURE"/>
+    	<CD code="378" displayName="ECTOPIC PREGNANCY"/>
+    	<CD code="379" displayName="THREATENED ABORTION"/>
+    	<CD code="380" displayName="ABORTION W/O D+C"/>
+    	<CD code="381" displayName="ABORTION W D+C, ASPIRATION CURETTAGE OR HYSTEROTOMY"/>
+    	<CD code="382" displayName="FALSE LABOR"/>
+    	<CD code="383" displayName="OTHER ANTEPARTUM DIAGNOSES W MEDICAL COMPLICATIONS"/>
+    	<CD code="384" displayName="OTHER ANTEPARTUM DIAGNOSES W/O MEDICAL COMPLICATIONS"/>
+    	<CD code="389" displayName="FULL TERM NEONATE W MAJOR PROBLEMS"/>
+    	<CD code="390" displayName="NEONATE W OTHER SIGNIFICANT PROBLEMS"/>
+    	<CD code="425" displayName="ACUTE ADJUSTMENT REACTION + PSYCHOSOCIAL DYSFUNCTION"/>
+    	<CD code="426" displayName="DEPRESSIVE NEUROSES"/>
+    	<CD code="427" displayName="NEUROSES EXCEPT DEPRESSIVE"/>
+    	<CD code="428" displayName="DISORDERS OF PERSONALITY + IMPULSE CONTROL"/>
+    	<CD code="430" displayName="PSYCHOSES"/>
+    	<CD code="431" displayName="CHILDHOOD MENTAL DISORDERS"/>
+    	<CD code="432" displayName="OTHER MENTAL DISORDER DIAGNOSES"/>
+    	<CD code="433" displayName="ALCOHOL/DRUG ABUSE OR DEPENDENCE, LEFT AMA"/>
+    	<CD code="441" displayName="HAND PROCEDURES FOR INJURIES"/>
+    	<CD code="491" displayName="MAJOR JOINT + LIMB REATTACHMENT PROCEDURES OF UPPER EXTREMITY"/>
+    	<CD code="499" displayName="BACK + NECK PROCEDURES EXCEPT SPINAL FUSION W CC"/>
+    	<CD code="500" displayName="BACK + NECK PROCEDURES EXCEPT SPINAL FUSION W/O CC"/>
+    	<CD code="503" displayName="KNEE PROCEDURES W/O PDX OF INFECTION"/>
+    	<CD code="521" displayName="ALCOHOL/DRUG ABUSE OR DEPENDENCE W CC"/>
+    	<CD code="522" displayName="ALC/DRUG ABUSE OR DEPEND W REHABILITATION THERAPY W/O CC"/>
+    	<CD code="524" displayName="TRANSIENT ISCHEMIA"/>
+   	</membersForCodeSystem>
+</OpenCdsConceptMappingSpecificationFile>

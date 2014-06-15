@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+     <OpenCdsConceptMappingSpecificationFile>
+          <specificationNotes>Created using ApelonConceptMappingSpecificationFileCreator.</specificationNotes>
+          <openCdsConcept code="C59" displayName="Papanicolaou smear"></openCdsConcept>
+          <conceptDeterminationMethod code="C45" displayName="NQF"></conceptDeterminationMethod>
+          <membersForCodeSystem codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC">
+               <CD code="10524-7" displayName="Microscopic observation [Identifier] in Cervix by Cyto stain"></CD>
+               <CD code="18500-9" displayName="Microscopic observation [Identifier] in Cervix by Cyto stain.thin prep"></CD>
+               <CD code="19762-4" displayName="General categories [interpretation] of Cervical or vaginal smear or scraping by Cyto stain"></CD>
+               <CD code="19764-0" displayName="Statement of adequacy [interpretation] of Cervical or vaginal smear or scraping by Cyto stain"></CD>
+               <CD code="19765-7" displayName="Microscopic observation [Identifier] in Cervical or vaginal smear or scraping by Cyto stain (19765-7)"></CD>
+               <CD code="19766-5" displayName="Microscopic observation [Identifier] in Cervical or vaginal smear or scraping by Cyto stain (19766-5)"></CD>
+               <CD code="19774-9" displayName="Cytology study comment Cervical or vaginal smear or scraping Cyto stain"></CD>
+               <CD code="33717-0" displayName="Cytology Cervical or vaginal smear or scraping study"></CD>
+               <CD code="47527-7" displayName="Cytology report of Cervical or vaginal smear or scraping Cyto stain.thin prep"></CD>
+               <CD code="47528-5" displayName="Cytology report of Cervical or vaginal smear or scraping Cyto stain"></CD>
+          </membersForCodeSystem>
+     </OpenCdsConceptMappingSpecificationFile>

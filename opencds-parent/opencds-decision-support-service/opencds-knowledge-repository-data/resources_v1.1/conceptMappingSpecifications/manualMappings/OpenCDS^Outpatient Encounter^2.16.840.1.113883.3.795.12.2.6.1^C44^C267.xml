@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OpenCdsConceptMappingSpecificationFile>
+	<specificationNotes></specificationNotes>
+	<openCdsConcept code="C44" displayName="Outpatient Encounter"></openCdsConcept>
+    <conceptDeterminationMethod code="C267" displayName="AHRQ"/>
+    <membersForCodeSystem codeSystem="2.16.840.1.113883.3.795.12.2.6.1" codeSystemName="OpenCDS">
+    	<CD code="O" displayName="Outpatient"/>
+    </membersForCodeSystem>
+</OpenCdsConceptMappingSpecificationFile>     

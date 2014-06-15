@@ -1,0 +1,783 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OpenCdsConceptMappingSpecificationFile>
+	<specificationNotes>Created manually from AHRQ PSI specifications.</specificationNotes>
+    <openCdsConcept code="C289" displayName="Cancer"/>
+    <conceptDeterminationMethod code="C267" displayName="AHRQ"/>
+    <membersForCodeSystem codeSystem="2.16.840.1.113883.6.103" codeSystemName="ICD9CM diagnoses">
+    	<CD code="140.0" displayName="MAL NEO UPPER VERMILION"/>
+    	<CD code="140.1" displayName="MAL NEO LOWER VERMILION"/>
+    	<CD code="140.3" displayName="MAL NEO UPPER LIP, INNER"/>
+    	<CD code="140.4" displayName="MAL NEO LOWER LIP, INNER"/>
+    	<CD code="140.5" displayName="MAL NEO LIP, INNER NOS"/>
+    	<CD code="140.6" displayName="MAL NEO LIP, COMMISSURE"/>
+    	<CD code="140.8" displayName="MAL NEO LIP NEC"/>
+    	<CD code="140.9" displayName="MAL NEO LIP/VERMIL NOS"/>
+    	<CD code="141.0" displayName="MAL NEO TONGUE BASE"/>
+    	<CD code="141.1" displayName="MAL NEO DORSAL TONGUE"/>
+    	<CD code="141.2" displayName="MAL NEO TIP/LAT TONGUE"/>
+    	<CD code="141.3" displayName="MAL NEO VENTRAL TONGUE"/>
+    	<CD code="141.4" displayName="MAL NEO ANT 2/3 TONGUE"/>
+    	<CD code="141.5" displayName="MAL NEO TONGUE JUNCTION"/>
+    	<CD code="141.6" displayName="MAL NEO LINGUAL TONSIL"/>
+    	<CD code="141.8" displayName="MALIG NEO TONGUE NEC"/>
+    	<CD code="141.9" displayName="MALIG NEO TONGUE NOS"/>
+    	<CD code="142.0" displayName="MALIG NEO PAROTID"/>
+    	<CD code="142.1" displayName="MALIG NEO SUBMANDIBULAR"/>
+    	<CD code="142.2" displayName="MALIG NEO SUBLINGUAL"/>
+    	<CD code="142.8" displayName="MAL NEO MAJ SALIVARY NEC"/>
+    	<CD code="142.9" displayName="MAL NEO SALIVARY NOS"/>
+    	<CD code="143.0" displayName="MALIG NEO UPPER GUM"/>
+    	<CD code="143.1" displayName="MALIG NEO LOWER GUM"/>
+    	<CD code="143.8" displayName="MALIG NEO GUM NEC"/>
+    	<CD code="143.9" displayName="MALIG NEO GUM NOS"/>
+    	<CD code="144.0" displayName="MAL NEO ANT FLOOR MOUTH"/>
+    	<CD code="144.1" displayName="MAL NEO LAT FLOOR MOUTH"/>
+    	<CD code="144.8" displayName="MAL NEO MOUTH FLOOR NEC"/>
+    	<CD code="144.9" displayName="MAL NEO MOUTH FLOOR NOS"/>
+    	<CD code="145.0" displayName="MAL NEO CHEEK MUCOSA"/>
+    	<CD code="145.1" displayName="MAL NEO MOUTH VESTIBULE"/>
+    	<CD code="145.2" displayName="MALIG NEO HARD PALATE"/>
+    	<CD code="145.3" displayName="MALIG NEO SOFT PALATE"/>
+    	<CD code="145.4" displayName="MALIGNANT NEOPLASM UVULA"/>
+    	<CD code="145.5" displayName="MALIGNANT NEO PALATE NOS"/>
+    	<CD code="145.6" displayName="MALIG NEO RETROMOLAR"/>
+    	<CD code="145.8" displayName="MALIG NEOPLASM MOUTH NEC"/>
+    	<CD code="145.9" displayName="MALIG NEOPLASM MOUTH NOS"/>
+    	<CD code="146.0" displayName="MALIGNANT NEOPL TONSIL"/>
+    	<CD code="146.1" displayName="MAL NEO TONSILLAR FOSSA"/>
+    	<CD code="146.2" displayName="MAL NEO TONSIL PILLARS"/>
+    	<CD code="146.3" displayName="MALIGN NEOPL VALLECULA"/>
+    	<CD code="146.4" displayName="MAL NEO ANT EPIGLOTTIS"/>
+    	<CD code="146.5" displayName="MAL NEO EPIGLOTTIS JUNCT"/>
+    	<CD code="146.6" displayName="MAL NEO LAT OROPHARYNX"/>
+    	<CD code="146.7" displayName="MAL NEO POST OROPHARYNX"/>
+    	<CD code="146.8" displayName="MAL NEO OROPHARYNX NEC"/>
+    	<CD code="146.9" displayName="MALIG NEO OROPHARYNX NOS"/>
+    	<CD code="147.0" displayName="MAL NEO SUPER NASOPHARYN"/>
+    	<CD code="147.1" displayName="MAL NEO POST NASOPHARYNX"/>
+    	<CD code="147.2" displayName="MAL NEO LAT NASOPHARYNX"/>
+    	<CD code="147.3" displayName="MAL NEO ANT NASOPHARYNX"/>
+    	<CD code="147.8" displayName="MAL NEO NASOPHARYNX NEC"/>
+    	<CD code="147.9" displayName="MAL NEO NASOPHARYNX NOS"/>
+    	<CD code="148.0" displayName="MAL NEO POSTCRICOID"/>
+    	<CD code="148.1" displayName="MAL NEO PYRIFORM SINUS"/>
+    	<CD code="148.2" displayName="MAL NEO ARYEPIGLOTT FOLD"/>
+    	<CD code="148.3" displayName="MAL NEO POST HYPOPHARYNX"/>
+    	<CD code="148.8" displayName="MAL NEO HYPOPHARYNX NEC"/>
+    	<CD code="148.9" displayName="MAL NEO HYPOPHARYNX NOS"/>
+    	<CD code="149.0" displayName="MAL NEO PHARYNX NOS"/>
+    	<CD code="149.1" displayName="MAL NEO WALDEYERS RING"/>
+    	<CD code="149.8" displayName="MAL NEO ORAL/PHARYNX NEC"/>
+    	<CD code="149.9" displayName="MAL NEO OROPHRYN ILL-DEF"/>
+    	<CD code="150.0" displayName="MAL NEO CERVICAL ESOPHAG"/>
+    	<CD code="150.1" displayName="MAL NEO THORACIC ESOPHAG"/>
+    	<CD code="150.2" displayName="MAL NEO ABDOMIN ESOPHAG"/>
+    	<CD code="150.3" displayName="MAL NEO UPPER 3RD ESOPH"/>
+    	<CD code="150.4" displayName="MAL NEO MIDDLE 3RD ESOPH"/>
+    	<CD code="150.5" displayName="MAL NEO LOWER 3RD ESOPH"/>
+    	<CD code="150.8" displayName="MAL NEO ESOPHAGUS NEC"/>
+    	<CD code="150.9" displayName="MAL NEO ESOPHAGUS NOS"/>
+    	<CD code="151.0" displayName="MAL NEO STOMACH CARDIA"/>
+    	<CD code="151.1" displayName="MALIGNANT NEO PYLORUS"/>
+    	<CD code="151.2" displayName="MAL NEO PYLORIC ANTRUM"/>
+    	<CD code="151.3" displayName="MAL NEO STOMACH FUNDUS"/>
+    	<CD code="151.4" displayName="MAL NEO STOMACH BODY"/>
+    	<CD code="151.5" displayName="MAL NEO STOM LESSER CURV"/>
+    	<CD code="151.6" displayName="MAL NEO STOM GREAT CURV"/>
+    	<CD code="151.8" displayName="MALIG NEOPL STOMACH NEC"/>
+    	<CD code="151.9" displayName="MALIG NEOPL STOMACH NOS"/>
+    	<CD code="152.0" displayName="MALIGNANT NEOPL DUODENUM"/>
+    	<CD code="152.1" displayName="MALIGNANT NEOPL JEJUNUM"/>
+    	<CD code="152.2" displayName="MALIGNANT NEOPLASM ILEUM"/>
+    	<CD code="152.3" displayName="MAL NEO MECKELS DIVERT"/>
+    	<CD code="152.8" displayName="MAL NEO SMALL BOWEL NEC"/>
+    	<CD code="152.9" displayName="MAL NEO SMALL BOWEL NOS"/>
+    	<CD code="153.0" displayName="MAL NEO HEPATIC FLEXURE"/>
+    	<CD code="153.1" displayName="MAL NEO TRANSVERSE COLON"/>
+    	<CD code="153.2" displayName="MAL NEO DESCEND COLON"/>
+    	<CD code="153.3" displayName="MAL NEO SIGMOID COLON"/>
+    	<CD code="153.4" displayName="MALIGNANT NEOPLASM CECUM"/>
+    	<CD code="153.5" displayName="MALIGNANT NEO APPENDIX"/>
+    	<CD code="153.6" displayName="MALIG NEO ASCEND COLON"/>
+    	<CD code="153.7" displayName="MAL NEO SPLENIC FLEXURE"/>
+    	<CD code="153.8" displayName="MALIGNANT NEO COLON NEC"/>
+    	<CD code="153.9" displayName="MALIGNANT NEO COLON NOS"/>
+    	<CD code="154.0" displayName="MAL NEO RECTOSIGMOID JCT"/>
+    	<CD code="154.1" displayName="MALIGNANT NEOPL RECTUM"/>
+    	<CD code="154.2" displayName="MALIG NEOPL ANAL CANAL"/>
+    	<CD code="154.3" displayName="MALIGNANT NEO ANUS NOS"/>
+    	<CD code="154.8" displayName="MAL NEO RECTUM/ANUS NEC"/>
+    	<CD code="155.0" displayName="MAL NEO LIVER, PRIMARY"/>
+    	<CD code="155.1" displayName="MAL NEO INTRAHEPAT DUCTS"/>
+    	<CD code="155.2" displayName="MALIGNANT NEO LIVER NOS"/>
+    	<CD code="156.0" displayName="MALIG NEO GALLBLADDER"/>
+    	<CD code="156.1" displayName="MAL NEO EXTRAHEPAT DUCTS"/>
+    	<CD code="156.2" displayName="MAL NEO AMPULLA OF VATER"/>
+    	<CD code="156.8" displayName="MALIG NEO BILIARY NEC"/>
+    	<CD code="156.9" displayName="MALIG NEO BILIARY NOS"/>
+    	<CD code="157.0" displayName="MAL NEO PANCREAS HEAD"/>
+    	<CD code="157.1" displayName="MAL NEO PANCREAS BODY"/>
+    	<CD code="157.2" displayName="MAL NEO PANCREAS TAIL"/>
+    	<CD code="157.3" displayName="MAL NEO PANCREATIC DUCT"/>
+    	<CD code="157.4" displayName="MAL NEO ISLET LANGERHANS"/>
+    	<CD code="157.8" displayName="MALIG NEO PANCREAS NEC"/>
+    	<CD code="157.9" displayName="MALIG NEO PANCREAS NOS"/>
+    	<CD code="158.0" displayName="MAL NEO RETROPERITONEUM"/>
+    	<CD code="158.8" displayName="MAL NEO PERITONEUM NEC"/>
+    	<CD code="158.9" displayName="MAL NEO PERITONEUM NOS"/>
+    	<CD code="159.0" displayName="MALIG NEO INTESTINE NOS"/>
+    	<CD code="159.1" displayName="MALIGNANT NEO SPLEEN NEC"/>
+    	<CD code="159.8" displayName="MAL NEO GI/INTRA-ABD NEC"/>
+    	<CD code="159.9" displayName="MAL NEO GI TRACT ILL-DEF"/>
+    	<CD code="160.0" displayName="MAL NEO NASAL CAVITIES"/>
+    	<CD code="160.1" displayName="MALIG NEO MIDDLE EAR"/>
+    	<CD code="160.2" displayName="MAL NEO MAXILLARY SINUS"/>
+    	<CD code="160.3" displayName="MAL NEO ETHMOIDAL SINUS"/>
+    	<CD code="160.4" displayName="MALIG NEO FRONTAL SINUS"/>
+    	<CD code="160.5" displayName="MAL NEO SPHENOID SINUS"/>
+    	<CD code="160.8" displayName="MAL NEO ACCESS SINUS NEC"/>
+    	<CD code="160.9" displayName="MAL NEO ACCESS SINUS NOS"/>
+    	<CD code="161.0" displayName="MALIGNANT NEO GLOTTIS"/>
+    	<CD code="161.1" displayName="MALIG NEO SUPRAGLOTTIS"/>
+    	<CD code="161.2" displayName="MALIG NEO SUBGLOTTIS"/>
+    	<CD code="161.3" displayName="MAL NEO CARTILAGE LARYNX"/>
+    	<CD code="161.8" displayName="MALIGNANT NEO LARYNX NEC"/>
+    	<CD code="161.9" displayName="MALIGNANT NEO LARYNX NOS"/>
+    	<CD code="162.0" displayName="MALIGNANT NEO TRACHEA"/>
+    	<CD code="162.2" displayName="MALIG NEO MAIN BRONCHUS"/>
+    	<CD code="162.3" displayName="MAL NEO UPPER LOBE LUNG"/>
+    	<CD code="162.4" displayName="MAL NEO MIDDLE LOBE LUNG"/>
+    	<CD code="162.5" displayName="MAL NEO LOWER LOBE LUNG"/>
+    	<CD code="162.8" displayName="MAL NEO BRONCH/LUNG NEC"/>
+    	<CD code="162.9" displayName="MAL NEO BRONCH/LUNG NOS"/>
+    	<CD code="163.0" displayName="MAL NEO PARIETAL PLEURA"/>
+    	<CD code="163.1" displayName="MAL NEO VISCERAL PLEURA"/>
+    	<CD code="163.8" displayName="MALIG NEOPL PLEURA NEC"/>
+    	<CD code="163.9" displayName="MALIG NEOPL PLEURA NOS"/>
+    	<CD code="164.0" displayName="MALIGNANT NEOPL THYMUS"/>
+    	<CD code="164.1" displayName="MALIGNANT NEOPL HEART"/>
+    	<CD code="164.2" displayName="MAL NEO ANT MEDIASTINUM"/>
+    	<CD code="164.3" displayName="MAL NEO POST MEDIASTINUM"/>
+    	<CD code="164.8" displayName="MAL NEO MEDIASTINUM NEC"/>
+    	<CD code="164.9" displayName="MAL NEO MEDIASTINUM NOS"/>
+    	<CD code="165.0" displayName="MAL NEO UPPER RESP NOS"/>
+    	<CD code="165.8" displayName="MAL NEO THORAX/RESP NEC"/>
+    	<CD code="165.9" displayName="MAL NEO RESP SYSTEM NOS"/>
+    	<CD code="170.0" displayName="MAL NEO SKULL/FACE BONE"/>
+    	<CD code="170.1" displayName="MALIGNANT NEO MANDIBLE"/>
+    	<CD code="170.2" displayName="MALIG NEO VERTEBRAE"/>
+    	<CD code="170.3" displayName="MAL NEO RIBS/STERN/CLAV"/>
+    	<CD code="170.4" displayName="MAL NEO LONG BONES ARM"/>
+    	<CD code="170.5" displayName="MAL NEO BONES WRIST/HAND"/>
+    	<CD code="170.6" displayName="MAL NEO PELVIC GIRDLE"/>
+    	<CD code="170.7" displayName="MAL NEO LONG BONES LEG"/>
+    	<CD code="170.8" displayName="MAL NEO BONES ANKLE/FOOT"/>
+    	<CD code="170.9" displayName="MALIG NEOPL BONE NOS"/>
+    	<CD code="171.0" displayName="MAL NEO SOFT TISSUE HEAD"/>
+    	<CD code="171.2" displayName="MAL NEO SOFT TISSUE ARM"/>
+    	<CD code="171.3" displayName="MAL NEO SOFT TISSUE LEG"/>
+    	<CD code="171.4" displayName="MAL NEO SOFT TIS THORAX"/>
+    	<CD code="171.5" displayName="MAL NEO SOFT TIS ABDOMEN"/>
+    	<CD code="171.6" displayName="MAL NEO SOFT TIS PELVIS"/>
+    	<CD code="171.7" displayName="MAL NEOPL TRUNK NOS"/>
+    	<CD code="171.8" displayName="MAL NEO SOFT TISSUE NEC"/>
+    	<CD code="171.9" displayName="MAL NEO SOFT TISSUE NOS"/>
+    	<CD code="172.0" displayName="MALIG MELANOMA LIP"/>
+    	<CD code="172.1" displayName="MALIG MELANOMA EYELID"/>
+    	<CD code="172.2" displayName="MALIG MELANOMA EAR"/>
+    	<CD code="172.3" displayName="MAL MELANOM FACE NEC/NOS"/>
+    	<CD code="172.4" displayName="MAL MELANOMA SCALP/NECK"/>
+    	<CD code="172.5" displayName="MALIG MELANOMA TRUNK"/>
+    	<CD code="172.6" displayName="MALIG MELANOMA ARM"/>
+    	<CD code="172.7" displayName="MALIG MELANOMA LEG"/>
+    	<CD code="172.8" displayName="MALIG MELANOMA SKIN NEC"/>
+    	<CD code="172.9" displayName="MALIG MELANOMA SKIN NOS"/>
+    	<CD code="174.0" displayName="MALIG NEO NIPPLE"/>
+    	<CD code="174.1" displayName="MAL NEO BREAST-CENTRAL"/>
+    	<CD code="174.2" displayName="MAL NEO BREAST UP-INNER"/>
+    	<CD code="174.3" displayName="MAL NEO BREAST LOW-INNER"/>
+    	<CD code="174.4" displayName="MAL NEO BREAST UP-OUTER"/>
+    	<CD code="174.5" displayName="MAL NEO BREAST LOW-OUTER"/>
+    	<CD code="174.6" displayName="MAL NEO BREAST-AXILLARY"/>
+    	<CD code="174.8" displayName="MALIGN NEOPL BREAST NEC"/>
+    	<CD code="174.9" displayName="MALIGN NEOPL BREAST NOS"/>
+    	<CD code="175.0" displayName="MAL NEO MALE NIPPLE"/>
+    	<CD code="175.9" displayName="MAL NEO MALE BREAST NEC"/>
+    	<CD code="176.0" displayName="SKIN - KAPOSIS SARCOMA"/>
+    	<CD code="176.1" displayName="SFT TISUE - KPSIS SRCMA"/>
+    	<CD code="176.2" displayName="PALATE - KPSIS SARCOMA"/>
+    	<CD code="176.3" displayName="GI SITES - KPSIS SRCOMA"/>
+    	<CD code="176.4" displayName="LUNG - KAPOSIS SARCOMA"/>
+    	<CD code="176.5" displayName="LYM NDS - KPSIS SARCOMA"/>
+    	<CD code="176.8" displayName="SPF STS - KPSIS SARCOMA"/>
+    	<CD code="176.9" displayName="KAPOSIS SARCOMA NOS"/>
+    	<CD code="179" displayName="MALIG NEOPL UTERUS NOS"/>
+    	<CD code="180.0" displayName="MALIG NEO ENDOCERVIX"/>
+    	<CD code="180.1" displayName="MALIG NEO EXOCERVIX"/>
+    	<CD code="180.8" displayName="MALIG NEO CERVIX NEC"/>
+    	<CD code="180.9" displayName="MAL NEO CERVIX UTERI NOS"/>
+    	<CD code="181" displayName="MALIGNANT NEOPL PLACENTA"/>
+    	<CD code="182.0" displayName="MALIG NEO CORPUS UTERI"/>
+    	<CD code="182.1" displayName="MAL NEO UTERINE ISTHMUS"/>
+    	<CD code="182.8" displayName="MAL NEO BODY UTERUS NEC"/>
+    	<CD code="183.0" displayName="MALIGN NEOPL OVARY"/>
+    	<CD code="183.2" displayName="MAL NEO FALLOPIAN TUBE"/>
+    	<CD code="183.3" displayName="MAL NEO BROAD LIGAMENT"/>
+    	<CD code="183.4" displayName="MALIG NEO PARAMETRIUM"/>
+    	<CD code="183.5" displayName="MAL NEO ROUND LIGAMENT"/>
+    	<CD code="183.8" displayName="MAL NEO ADNEXA NEC"/>
+    	<CD code="183.9" displayName="MAL NEO ADNEXA NOS"/>
+    	<CD code="184.0" displayName="MALIGN NEOPL VAGINA"/>
+    	<CD code="184.1" displayName="MAL NEO LABIA MAJORA"/>
+    	<CD code="184.2" displayName="MAL NEO LABIA MINORA"/>
+    	<CD code="184.3" displayName="MALIGN NEOPL CLITORIS"/>
+    	<CD code="184.4" displayName="MALIGN NEOPL VULVA NOS"/>
+    	<CD code="184.8" displayName="MAL NEO FEMALE GENIT NEC"/>
+    	<CD code="184.9" displayName="MAL NEO FEMALE GENIT NOS"/>
+    	<CD code="185" displayName="MALIGN NEOPL PROSTATE"/>
+    	<CD code="186.0" displayName="MAL NEO UNDESCEND TESTIS"/>
+    	<CD code="186.9" displayName="MALIG NEO TESTIS NEC"/>
+    	<CD code="187.1" displayName="MALIGN NEOPL PREPUCE"/>
+    	<CD code="187.2" displayName="MALIG NEO GLANS PENIS"/>
+    	<CD code="187.3" displayName="MALIG NEO PENIS BODY"/>
+    	<CD code="187.4" displayName="MALIG NEO PENIS NOS"/>
+    	<CD code="187.5" displayName="MALIG NEO EPIDIDYMIS"/>
+    	<CD code="187.6" displayName="MAL NEO SPERMATIC CORD"/>
+    	<CD code="187.7" displayName="MALIGN NEOPL SCROTUM"/>
+    	<CD code="187.8" displayName="MAL NEO MALE GENITAL NEC"/>
+    	<CD code="187.9" displayName="MAL NEO MALE GENITAL NOS"/>
+    	<CD code="188.0" displayName="MAL NEO BLADDER-TRIGONE"/>
+    	<CD code="188.1" displayName="MAL NEO BLADDER-DOME"/>
+    	<CD code="188.2" displayName="MAL NEO BLADDER-LATERAL"/>
+    	<CD code="188.3" displayName="MAL NEO BLADDER-ANTERIOR"/>
+    	<CD code="188.4" displayName="MAL NEO BLADDER-POST"/>
+    	<CD code="188.5" displayName="MAL NEO BLADDER NECK"/>
+    	<CD code="188.6" displayName="MAL NEO URETERIC ORIFICE"/>
+    	<CD code="188.7" displayName="MALIG NEO URACHUS"/>
+    	<CD code="188.8" displayName="MALIG NEO BLADDER NEC"/>
+    	<CD code="188.9" displayName="MALIG NEO BLADDER NOS"/>
+    	<CD code="189.0" displayName="MALIG NEOPL KIDNEY"/>
+    	<CD code="189.1" displayName="MALIG NEO RENAL PELVIS"/>
+    	<CD code="189.2" displayName="MALIGN NEOPL URETER"/>
+    	<CD code="189.3" displayName="MALIGN NEOPL URETHRA"/>
+    	<CD code="189.4" displayName="MAL NEO PARAURETHRAL"/>
+    	<CD code="189.8" displayName="MAL NEO URINARY NEC"/>
+    	<CD code="189.9" displayName="MAL NEO URINARY NOS"/>
+    	<CD code="190.0" displayName="MALIGN NEOPL EYEBALL"/>
+    	<CD code="190.1" displayName="MALIGN NEOPL ORBIT"/>
+    	<CD code="190.2" displayName="MAL NEO LACRIMAL GLAND"/>
+    	<CD code="190.3" displayName="MAL NEO CONJUNCTIVA"/>
+    	<CD code="190.4" displayName="MALIGN NEOPL CORNEA"/>
+    	<CD code="190.5" displayName="MALIGN NEOPL RETINA"/>
+    	<CD code="190.6" displayName="MALIGN NEOPL CHOROID"/>
+    	<CD code="190.7" displayName="MAL NEO LACRIMAL DUCT"/>
+    	<CD code="190.8" displayName="MALIGN NEOPL EYE NEC"/>
+    	<CD code="190.9" displayName="MALIGN NEOPL EYE NOS"/>
+    	<CD code="191.0" displayName="MALIGN NEOPL CEREBRUM"/>
+    	<CD code="191.1" displayName="MALIG NEO FRONTAL LOBE"/>
+    	<CD code="191.2" displayName="MAL NEO TEMPORAL LOBE"/>
+    	<CD code="191.3" displayName="MAL NEO PARIETAL LOBE"/>
+    	<CD code="191.4" displayName="MAL NEO OCCIPITAL LOBE"/>
+    	<CD code="191.5" displayName="MAL NEO CEREB VENTRICLE"/>
+    	<CD code="191.6" displayName="MAL NEO CEREBELLUM NOS"/>
+    	<CD code="191.7" displayName="MAL NEO BRAIN STEM"/>
+    	<CD code="191.8" displayName="MALIG NEO BRAIN NEC"/>
+    	<CD code="191.9" displayName="MALIG NEO BRAIN NOS"/>
+    	<CD code="192.0" displayName="MAL NEO CRANIAL NERVES"/>
+    	<CD code="192.1" displayName="MAL NEO CEREBRAL MENING"/>
+    	<CD code="192.2" displayName="MAL NEO SPINAL CORD"/>
+    	<CD code="192.3" displayName="MAL NEO SPINAL MENINGES"/>
+    	<CD code="192.8" displayName="MAL NEO NERVOUS SYST NEC"/>
+    	<CD code="192.9" displayName="MAL NEO NERVOUS SYST NOS"/>
+    	<CD code="193" displayName="MALIGN NEOPL THYROID"/>
+    	<CD code="194.0" displayName="MALIGN NEOPL ADRENAL"/>
+    	<CD code="194.1" displayName="MALIG NEO PARATHYROID"/>
+    	<CD code="194.3" displayName="MALIG NEO PITUITARY"/>
+    	<CD code="194.4" displayName="MALIGN NEO PINEAL GLAND"/>
+    	<CD code="194.5" displayName="MAL NEO CAROTID BODY"/>
+    	<CD code="194.6" displayName="MAL NEO PARAGANGLIA NEC"/>
+    	<CD code="194.8" displayName="MAL NEO ENDOCRINE NEC"/>
+    	<CD code="194.9" displayName="MAL NEO ENDOCRINE NOS"/>
+    	<CD code="195.0" displayName="MAL NEO HEAD/FACE/NECK"/>
+    	<CD code="195.1" displayName="MALIGN NEOPL THORAX"/>
+    	<CD code="195.2" displayName="MALIG NEO ABDOMEN"/>
+    	<CD code="195.3" displayName="MALIGN NEOPL PELVIS"/>
+    	<CD code="195.4" displayName="MALIGN NEOPL ARM"/>
+    	<CD code="195.5" displayName="MALIGN NEOPL LEG"/>
+    	<CD code="195.8" displayName="MALIG NEO SITE NEC"/>
+    	<CD code="196.0" displayName="MAL NEO LYMPH-HEAD/NECK"/>
+    	<CD code="196.1" displayName="MAL NEO LYMPH-INTRATHOR"/>
+    	<CD code="196.2" displayName="MAL NEO LYMPH INTRA-ABD"/>
+    	<CD code="196.3" displayName="MAL NEO LYMPH-AXILLA/ARM"/>
+    	<CD code="196.5" displayName="MAL NEO LYMPH-INGUIN/LEG"/>
+    	<CD code="196.6" displayName="MAL NEO LYMPH-INTRAPELV"/>
+    	<CD code="196.8" displayName="MAL NEO LYMPH NODE-MULT"/>
+    	<CD code="196.9" displayName="MAL NEO LYMPH NODE NOS"/>
+    	<CD code="197.0" displayName="SECONDARY MALIG NEO LUNG"/>
+    	<CD code="197.1" displayName="SEC MAL NEO MEDIASTINUM"/>
+    	<CD code="197.2" displayName="SECOND MALIG NEO PLEURA"/>
+    	<CD code="197.3" displayName="SEC MALIG NEO RESP NEC"/>
+    	<CD code="197.4" displayName="SEC MALIG NEO SM BOWEL"/>
+    	<CD code="197.5" displayName="SEC MALIG NEO LG BOWEL"/>
+    	<CD code="197.6" displayName="SEC MAL NEO PERITONEUM"/>
+    	<CD code="197.7" displayName="SECOND MALIG NEO LIVER"/>
+    	<CD code="197.8" displayName="SEC MAL NEO GI NEC"/>
+    	<CD code="198.0" displayName="SECOND MALIG NEO KIDNEY"/>
+    	<CD code="198.1" displayName="SEC MALIG NEO URIN NEC"/>
+    	<CD code="198.2" displayName="SECONDARY MALIG NEO SKIN"/>
+    	<CD code="198.3" displayName="SEC MAL NEO BRAIN/SPINE"/>
+    	<CD code="198.4" displayName="SEC MALIG NEO NERVE NEC"/>
+    	<CD code="198.5" displayName="SECONDARY MALIG NEO BONE"/>
+    	<CD code="198.6" displayName="SECOND MALIG NEO OVARY"/>
+    	<CD code="198.7" displayName="SECOND MALIG NEO ADRENAL"/>
+    	<CD code="198.81" displayName="SECOND MALIG NEO BREAST"/>
+    	<CD code="198.82" displayName="SECOND MALIG NEO GENITAL"/>
+    	<CD code="198.89" displayName="SECONDARY MALIG NEO NEC"/>
+    	<CD code="199.0" displayName="MALIG NEO DISSEMINATED"/>
+    	<CD code="199.1" displayName="MALIGNANT NEOPLASM NOS"/>
+    	<CD code="200.00" displayName="RETCLSRC UNSP XTRNDL ORG"/>
+    	<CD code="200.01" displayName="RETICULOSARCOMA HEAD"/>
+    	<CD code="200.02" displayName="RETICULOSARCOMA THORAX"/>
+    	<CD code="200.03" displayName="RETICULOSARCOMA ABDOM"/>
+    	<CD code="200.04" displayName="RETICULOSARCOMA AXILLA"/>
+    	<CD code="200.05" displayName="RETICULOSARCOMA INGUIN"/>
+    	<CD code="200.06" displayName="RETICULOSARCOMA PELVIC"/>
+    	<CD code="200.07" displayName="RETICULOSARCOMA SPLEEN"/>
+    	<CD code="200.08" displayName="RETICULOSARCOMA MULT"/>
+    	<CD code="200.10" displayName="LYMPHSRC UNSP XTRNDL ORG"/>
+    	<CD code="200.11" displayName="LYMPHOSARCOMA HEAD"/>
+    	<CD code="200.12" displayName="LYMPHOSARCOMA THORAX"/>
+    	<CD code="200.13" displayName="LYMPHOSARCOMA ABDOM"/>
+    	<CD code="200.14" displayName="LYMPHOSARCOMA AXILLA"/>
+    	<CD code="200.15" displayName="LYMPHOSARCOMA INGUIN"/>
+    	<CD code="200.16" displayName="LYMPHOSARCOMA PELVIC"/>
+    	<CD code="200.17" displayName="LYMPHOSARCOMA SPLEEN"/>
+    	<CD code="200.18" displayName="LYMPHOSARCOMA MULT"/>
+    	<CD code="200.20" displayName="BRKT TMR UNSP XTRNDL ORG"/>
+    	<CD code="200.21" displayName="BURKITTS TUMOR HEAD"/>
+    	<CD code="200.22" displayName="BURKITTS TUMOR THORAX"/>
+    	<CD code="200.23" displayName="BURKITTS TUMOR ABDOM"/>
+    	<CD code="200.24" displayName="BURKITTS TUMOR AXILLA"/>
+    	<CD code="200.25" displayName="BURKITTS TUMOR INGUIN"/>
+    	<CD code="200.26" displayName="BURKITTS TUMOR PELVIC"/>
+    	<CD code="200.27" displayName="BURKITTS TUMOR SPLEEN"/>
+    	<CD code="200.28" displayName="BURKITTS TUMOR MULT"/>
+    	<CD code="200.30" displayName="MARGNL ZONE LYM XTRNDL"/>
+    	<CD code="200.31" displayName="MARGIN ZONE LYM HEAD"/>
+    	<CD code="200.32" displayName="MARGIN ZONE LYM THORAX"/>
+    	<CD code="200.33" displayName="MARGIN ZONE LYM ABDOM"/>
+    	<CD code="200.34" displayName="MARGIN ZONE LYM AZILLA"/>
+    	<CD code="200.35" displayName="MARGIN ZONE LYM INGUIN"/>
+    	<CD code="200.36" displayName="MARGIN ZONE LYM PELVIC"/>
+    	<CD code="200.37" displayName="MARGIN ZONE LYMPH SPLEEN"/>
+    	<CD code="200.38" displayName="MARGIN ZONE LYMP MULTIP"/>
+    	<CD code="200.40" displayName="MANTLE CELL LYM XTRRNDL"/>
+    	<CD code="200.41" displayName="MANTLE CELL LYMPH HEAD"/>
+    	<CD code="200.42" displayName="MANTLE CELL LYMPH THORAX"/>
+    	<CD code="200.43" displayName="MANTLE CELL LYMPH ABDOM"/>
+    	<CD code="200.44" displayName="MANTLE CELL LYMPH AXILLA"/>
+    	<CD code="200.45" displayName="MANTLE CELL LYMPH INGUIN"/>
+    	<CD code="200.46" displayName="MANTLE CELL LYMPH PELVIC"/>
+    	<CD code="200.47" displayName="MANTLE CELL LYMPH SPLEEN"/>
+    	<CD code="200.48" displayName="MANTLE CELL LYMPH MULTIP"/>
+    	<CD code="200.50" displayName="PRIMARY CNS LYMPH XTRNDL"/>
+    	<CD code="200.51" displayName="PRIMARY CNS LYMPH HEAD"/>
+    	<CD code="200.52" displayName="PRIMARY CNS LYMPH THORAX"/>
+    	<CD code="200.53" displayName="PRIMARY CNS LYMPH ADOM"/>
+    	<CD code="200.54" displayName="PRIMARY CNS LYMPH AXILLA"/>
+    	<CD code="200.55" displayName="PRIMARY CNS LYM INGUIN"/>
+    	<CD code="200.56" displayName="PRIMARY CNS LYMPH PELVIC"/>
+    	<CD code="200.57" displayName="PRIMARY CNS LYMPH SPLEEN"/>
+    	<CD code="200.58" displayName="PRIMARY CNS LYMPH MULTIP"/>
+    	<CD code="200.60" displayName="ANAPLASTIC LYMPH XTRNDL"/>
+    	<CD code="200.61" displayName="ANAPLASTIC LYMPH HEAD"/>
+    	<CD code="200.62" displayName="ANAPLASTIC LYMPH THORAX"/>
+    	<CD code="200.63" displayName="ANAPLASTIC LYMPH ABDOM"/>
+    	<CD code="200.64" displayName="ANAPLASTIC LYMPH AXILLA"/>
+    	<CD code="200.65" displayName="ANAPLASTIC LYMPH INGUIN"/>
+    	<CD code="200.66" displayName="ANAPLASTIC LYMPH PELVIC"/>
+    	<CD code="200.67" displayName="ANAPLASTIC LYMPH SPLEEN"/>
+    	<CD code="200.68" displayName="ANAPLASTIC LYMPH MULTIP"/>
+    	<CD code="200.70" displayName="LARGE CELL LYMPH XTRNDL"/>
+    	<CD code="200.71" displayName="LARGE CELL LYMPHOMA HEAD"/>
+    	<CD code="200.72" displayName="LARGE CELL LYMPH THORAX"/>
+    	<CD code="200.73" displayName="LARGE CELL LYMPH ABDOM"/>
+    	<CD code="200.74" displayName="LARGE CELL LYMPH AXILLA"/>
+    	<CD code="200.75" displayName="LARGE CELL LYMPH INGUIN"/>
+    	<CD code="200.76" displayName="LARGE CELL LYMPH PELVIC"/>
+    	<CD code="200.77" displayName="LARGE CELL LYMPH SPLEEN"/>
+    	<CD code="200.78" displayName="LARGE CELL LYMPH MULTIP"/>
+    	<CD code="200.80" displayName="OTH VARN UNSP XTRNDL ORG"/>
+    	<CD code="200.81" displayName="MIXED LYMPHOSARC HEAD"/>
+    	<CD code="200.82" displayName="MIXED LYMPHOSARC THORAX"/>
+    	<CD code="200.83" displayName="MIXED LYMPHOSARC ABDOM"/>
+    	<CD code="200.84" displayName="MIXED LYMPHOSARC AXILLA"/>
+    	<CD code="200.85" displayName="MIXED LYMPHOSARC INGUIN"/>
+    	<CD code="200.86" displayName="MIXED LYMPHOSARC PELVIC"/>
+    	<CD code="200.87" displayName="MIXED LYMPHOSARC SPLEEN"/>
+    	<CD code="200.88" displayName="MIXED LYMPHOSARC MULT"/>
+    	<CD code="201.00" displayName="HDGK PRG UNSP XTRNDL ORG"/>
+    	<CD code="201.01" displayName="HODGKINS PARAGRAN HEAD"/>
+    	<CD code="201.02" displayName="HODGKINS PARAGRAN THORAX"/>
+    	<CD code="201.03" displayName="HODGKINS PARAGRAN ABDOM"/>
+    	<CD code="201.04" displayName="HODGKINS PARAGRAN AXILLA"/>
+    	<CD code="201.05" displayName="HODGKINS PARAGRAN INGUIN"/>
+    	<CD code="201.06" displayName="HODGKINS PARAGRAN PELVIC"/>
+    	<CD code="201.07" displayName="HODGKINS PARAGRAN SPLEEN"/>
+    	<CD code="201.08" displayName="HODGKINS PARAGRAN MULT"/>
+    	<CD code="201.10" displayName="HDGK GRN UNSP XTRNDL ORG"/>
+    	<CD code="201.11" displayName="HODGKINS GRANULOM HEAD"/>
+    	<CD code="201.12" displayName="HODGKINS GRANULOM THORAX"/>
+    	<CD code="201.13" displayName="HODGKINS GRANULOM ABDOM"/>
+    	<CD code="201.14" displayName="HODGKINS GRANULOM AXILLA"/>
+    	<CD code="201.15" displayName="HODGKINS GRANULOM INGUIN"/>
+    	<CD code="201.16" displayName="HODGKINS GRANULOM PELVIC"/>
+    	<CD code="201.17" displayName="HODGKINS GRANULOM SPLEEN"/>
+    	<CD code="201.18" displayName="HODGKINS GRANULOM MULT"/>
+    	<CD code="201.20" displayName="HDGK SRC UNSP XTRNDL ORG"/>
+    	<CD code="201.21" displayName="HODGKINS SARCOMA HEAD"/>
+    	<CD code="201.22" displayName="HODGKINS SARCOMA THORAX"/>
+    	<CD code="201.23" displayName="HODGKINS SARCOMA ABDOM"/>
+    	<CD code="201.24" displayName="HODGKINS SARCOMA AXILLA"/>
+    	<CD code="201.25" displayName="HODGKINS SARCOMA INGUIN"/>
+    	<CD code="201.26" displayName="HODGKINS SARCOMA PELVIC"/>
+    	<CD code="201.27" displayName="HODGKINS SARCOMA SPLEEN"/>
+    	<CD code="201.28" displayName="HODGKINS SARCOMA MULT"/>
+    	<CD code="201.40" displayName="LYM-HST UNSP XTRNDL ORGN"/>
+    	<CD code="201.41" displayName="HODG LYMPH-HISTIO HEAD"/>
+    	<CD code="201.42" displayName="HODG LYMPH-HISTIO THORAX"/>
+    	<CD code="201.43" displayName="HODG LYMPH-HISTIO ABDOM"/>
+    	<CD code="201.44" displayName="HODG LYMPH-HISTIO AXILLA"/>
+    	<CD code="201.45" displayName="HODG LYMPH-HISTIO INGUIN"/>
+    	<CD code="201.46" displayName="HODG LYMPH-HISTIO PELVIC"/>
+    	<CD code="201.47" displayName="HODG LYMPH-HISTIO SPLEEN"/>
+    	<CD code="201.48" displayName="HODG LYMPH-HISTIO MULT"/>
+    	<CD code="201.50" displayName="NDR SCLR UNSP XTRNDL ORG"/>
+    	<CD code="201.51" displayName="HODG NODUL SCLERO HEAD"/>
+    	<CD code="201.52" displayName="HODG NODUL SCLERO THORAX"/>
+    	<CD code="201.53" displayName="HODG NODUL SCLERO ABDOM"/>
+    	<CD code="201.54" displayName="HODG NODUL SCLERO AXILLA"/>
+    	<CD code="201.55" displayName="HODG NODUL SCLERO INGUIN"/>
+    	<CD code="201.56" displayName="HODG NODUL SCLERO PELVIC"/>
+    	<CD code="201.57" displayName="HODG NODUL SCLERO SPLEEN"/>
+    	<CD code="201.58" displayName="HODG NODUL SCLERO MULT"/>
+    	<CD code="201.60" displayName="MXD CELR UNSP XTRNDL ORG"/>
+    	<CD code="201.61" displayName="HODGKINS MIX CELL HEAD"/>
+    	<CD code="201.62" displayName="HODGKINS MIX CELL THORAX"/>
+    	<CD code="201.63" displayName="HODGKINS MIX CELL ABDOM"/>
+    	<CD code="201.64" displayName="HODGKINS MIX CELL AXILLA"/>
+    	<CD code="201.65" displayName="HODGKINS MIX CELL INGUIN"/>
+    	<CD code="201.66" displayName="HODGKINS MIX CELL PELVIC"/>
+    	<CD code="201.67" displayName="HODGKINS MIX CELL SPLEEN"/>
+    	<CD code="201.68" displayName="HODGKINS MIX CELL MULT"/>
+    	<CD code="201.70" displayName="LYM DPLT UNSP XTRNDL ORG"/>
+    	<CD code="201.71" displayName="HODG LYMPH DEPLET HEAD"/>
+    	<CD code="201.72" displayName="HODG LYMPH DEPLET THORAX"/>
+    	<CD code="201.73" displayName="HODG LYMPH DEPLET ABDOM"/>
+    	<CD code="201.74" displayName="HODG LYMPH DEPLET AXILLA"/>
+    	<CD code="201.75" displayName="HODG LYMPH DEPLET INGUIN"/>
+    	<CD code="201.76" displayName="HODG LYMPH DEPLET PELVIC"/>
+    	<CD code="201.77" displayName="HODG LYMPH DEPLET SPLEEN"/>
+    	<CD code="201.78" displayName="HODG LYMPH DEPLET MULT"/>
+    	<CD code="201.90" displayName="HDGK DIS UNSP XTRNDL ORG"/>
+    	<CD code="201.91" displayName="HODGKINS DIS NOS HEAD"/>
+    	<CD code="201.92" displayName="HODGKINS DIS NOS THORAX"/>
+    	<CD code="201.93" displayName="HODGKINS DIS NOS ABDOM"/>
+    	<CD code="201.94" displayName="HODGKINS DIS NOS AXILLA"/>
+    	<CD code="201.95" displayName="HODGKINS DIS NOS INGUIN"/>
+    	<CD code="201.96" displayName="HODGKINS DIS NOS PELVIC"/>
+    	<CD code="201.97" displayName="HODGKINS DIS NOS SPLEEN"/>
+    	<CD code="201.98" displayName="HODGKINS DIS NOS MULT"/>
+    	<CD code="202.00" displayName="NDLR LYM UNSP XTRNDL ORG"/>
+    	<CD code="202.01" displayName="LYMPHOMA HEAD"/>
+    	<CD code="202.02" displayName="NODULAR LYMPHOMA THORAX"/>
+    	<CD code="202.03" displayName="NODULAR LYMPHOMA ABDOM"/>
+    	<CD code="202.04" displayName="NODULAR LYMPHOMA AXILLA"/>
+    	<CD code="202.05" displayName="NODULAR LYMPHOMA INGUIN"/>
+    	<CD code="202.06" displayName="NODULAR LYMPHOMA PELVIC"/>
+    	<CD code="202.07" displayName="NODULAR LYMPHOMA SPLEEN"/>
+    	<CD code="202.08" displayName="NODULAR LYMPHOMA MULT"/>
+    	<CD code="202.10" displayName="MYCS FNG UNSP XTRNDL ORG"/>
+    	<CD code="202.11" displayName="MYCOSIS FUNGOIDES HEAD"/>
+    	<CD code="202.12" displayName="MYCOSIS FUNGOIDES THORAX"/>
+    	<CD code="202.13" displayName="MYCOSIS FUNGOIDES ABDOM"/>
+    	<CD code="202.14" displayName="MYCOSIS FUNGOIDES AXILLA"/>
+    	<CD code="202.15" displayName="MYCOSIS FUNGOIDES INGUIN"/>
+    	<CD code="202.16" displayName="MYCOSIS FUNGOIDES PELVIC"/>
+    	<CD code="202.17" displayName="MYCOSIS FUNGOIDES SPLEEN"/>
+    	<CD code="202.18" displayName="MYCOSIS FUNGOIDES MULT"/>
+    	<CD code="202.20" displayName="SZRY DIS UNSP XTRNDL ORG"/>
+    	<CD code="202.21" displayName="SEZARYS DISEASE HEAD"/>
+    	<CD code="202.22" displayName="SEZARYS DISEASE THORAX"/>
+    	<CD code="202.23" displayName="SEZARYS DISEASE ABDOM"/>
+    	<CD code="202.24" displayName="SEZARYS DISEASE AXILLA"/>
+    	<CD code="202.25" displayName="SEZARYS DISEASE INGUIN"/>
+    	<CD code="202.26" displayName="SEZARYS DISEASE PELVIC"/>
+    	<CD code="202.27" displayName="SEZARYS DISEASE SPLEEN"/>
+    	<CD code="202.28" displayName="SEZARYS DISEASE MULT"/>
+    	<CD code="202.30" displayName="MLG HIST UNSP XTRNDL ORG"/>
+    	<CD code="202.31" displayName="MAL HISTIOCYTOSIS HEAD"/>
+    	<CD code="202.32" displayName="MAL HISTIOCYTOSIS THORAX"/>
+    	<CD code="202.33" displayName="MAL HISTIOCYTOSIS ABDOM"/>
+    	<CD code="202.34" displayName="MAL HISTIOCYTOSIS AXILLA"/>
+    	<CD code="202.35" displayName="MAL HISTIOCYTOSIS INGUIN"/>
+    	<CD code="202.36" displayName="MAL HISTIOCYTOSIS PELVIC"/>
+    	<CD code="202.37" displayName="MAL HISTIOCYTOSIS SPLEEN"/>
+    	<CD code="202.38" displayName="MAL HISTIOCYTOSIS MULT"/>
+    	<CD code="202.40" displayName="LK RTCTL UNSP XTRNDL ORG"/>
+    	<CD code="202.41" displayName="HAIRY-CELL LEUKEM HEAD"/>
+    	<CD code="202.42" displayName="HAIRY-CELL LEUKEM THORAX"/>
+    	<CD code="202.43" displayName="HAIRY-CELL LEUKEM ABDOM"/>
+    	<CD code="202.44" displayName="HAIRY-CELL LEUKEM AXILLA"/>
+    	<CD code="202.45" displayName="HAIRY-CELL LEUKEM INGUIN"/>
+    	<CD code="202.46" displayName="HAIRY-CELL LEUKEM PELVIC"/>
+    	<CD code="202.47" displayName="HAIRY-CELL LEUKEM SPLEEN"/>
+    	<CD code="202.48" displayName="HAIRY-CELL LEUKEM MULT"/>
+    	<CD code="202.50" displayName="LTR-SIWE UNSP XTRNDL ORG"/>
+    	<CD code="202.51" displayName="LETTERER-SIWE DIS HEAD"/>
+    	<CD code="202.52" displayName="LETTERER-SIWE DIS THORAX"/>
+    	<CD code="202.53" displayName="LETTERER-SIWE DIS ABDOM"/>
+    	<CD code="202.54" displayName="LETTERER-SIWE DIS AXILLA"/>
+    	<CD code="202.55" displayName="LETTERER-SIWE DIS INGUIN"/>
+    	<CD code="202.56" displayName="LETTERER-SIWE DIS PELVIC"/>
+    	<CD code="202.57" displayName="LETTERER-SIWE DIS SPLEEN"/>
+    	<CD code="202.58" displayName="LETTERER-SIWE DIS MULT"/>
+    	<CD code="202.60" displayName="MLG MAST UNSP XTRNDL ORG"/>
+    	<CD code="202.61" displayName="MAL MASTOCYTOSIS HEAD"/>
+    	<CD code="202.62" displayName="MAL MASTOCYTOSIS THORAX"/>
+    	<CD code="202.63" displayName="MAL MASTOCYTOSIS ABDOM"/>
+    	<CD code="202.64" displayName="MAL MASTOCYTOSIS AXILLA"/>
+    	<CD code="202.65" displayName="MAL MASTOCYTOSIS INGUIN"/>
+    	<CD code="202.66" displayName="MAL MASTOCYTOSIS PELVIC"/>
+    	<CD code="202.67" displayName="MAL MASTOCYTOSIS SPLEEN"/>
+    	<CD code="202.68" displayName="MAL MASTOCYTOSIS MULT"/>
+    	<CD code="202.70" displayName="PERIPH T CELL LYM XTRNDL"/>
+    	<CD code="202.71" displayName="PERIPH T CELL LYM HEAD"/>
+    	<CD code="202.72" displayName="PERIPH T CELL LYM THORAX"/>
+    	<CD code="202.73" displayName="PERIPH T CELL LYM ABDOM"/>
+    	<CD code="202.74" displayName="PERIPH T CELL LYM AXILLA"/>
+    	<CD code="202.75" displayName="PERIPH T CELL LYM INGUIN"/>
+    	<CD code="202.76" displayName="PERIPH T CELL LYM PELVIC"/>
+    	<CD code="202.77" displayName="PERIPH T CELL LYM SPLEEN"/>
+    	<CD code="202.78" displayName="PERIPH T CELL LYM MULTIP"/>
+    	<CD code="202.80" displayName="OTH LYMP UNSP XTRNDL ORG"/>
+    	<CD code="202.81" displayName="LYMPHOMAS NEC HEAD"/>
+    	<CD code="202.82" displayName="LYMPHOMAS NEC THORAX"/>
+    	<CD code="202.83" displayName="LYMPHOMAS NEC ABDOM"/>
+    	<CD code="202.84" displayName="LYMPHOMAS NEC AXILLA"/>
+    	<CD code="202.85" displayName="LYMPHOMAS NEC INGUIN"/>
+    	<CD code="202.86" displayName="LYMPHOMAS NEC PELVIC"/>
+    	<CD code="202.87" displayName="LYMPHOMAS NEC SPLEEN"/>
+    	<CD code="202.88" displayName="LYMPHOMAS NEC MULT"/>
+    	<CD code="202.90" displayName="UNSP LYM UNSP XTRNDL ORG"/>
+    	<CD code="202.91" displayName="LYMPHOID MAL NEC HEAD"/>
+    	<CD code="202.92" displayName="LYMPHOID MAL NEC THORAX"/>
+    	<CD code="202.93" displayName="LYMPHOID MAL NEC ABDOM"/>
+    	<CD code="202.94" displayName="LYMPHOID MAL NEC AXILLA"/>
+    	<CD code="202.95" displayName="LYMPHOID MAL NEC INGUIN"/>
+    	<CD code="202.96" displayName="LYMPHOID MAL NEC PELVIC"/>
+    	<CD code="202.97" displayName="LYMPHOID MAL NEC SPLEEN"/>
+    	<CD code="202.98" displayName="LYMPHOID MAL NEC MULT"/>
+    	<CD code="203.0" displayName="MULTIPLE MYELOMA"/>
+    	<CD code="203.00" displayName="MULT MYELM W/O REMISSION"/>
+    	<CD code="203.01" displayName="MULT MYELM W REMISSION"/>
+    	<CD code="203.02" displayName="MULT MYELOMA IN RELAPS"/>
+    	<CD code="203.1" displayName="PLASMA CELL LEUKEMIA"/>
+    	<CD code="203.10" displayName="PLSM CELL LEUK W/O RMSON"/>
+    	<CD code="203.11" displayName="PLSM CELL LEUK W RMSON"/>
+    	<CD code="203.12" displayName="PLSM CEL LEUK IN RELAPSE"/>
+    	<CD code="203.8" displayName="IMMUNOPROLIFERAT NEO NEC"/>
+    	<CD code="203.80" displayName="OTH IMNPRFL NPL W/O RMSN"/>
+    	<CD code="203.81" displayName="OTH IMNPRFL NPL W RMSN"/>
+    	<CD code="203.81" displayName="OTH IMNPRLF NEO-RELAPSE"/>
+    	<CD code="204.0" displayName="ACUTE LYMPHOID LEUKEMIA"/>
+    	<CD code="204.00" displayName="ACT LYM LEUK W/O RMSION"/>
+    	<CD code="204.01" displayName="ACT LYM LEUK W RMSION"/>
+    	<CD code="204.02" displayName="ACT LYM LEUK IN RELAPSE"/>
+    	<CD code="204.1" displayName="CHR LYMPHOID LEUKEMIA"/>
+    	<CD code="204.10" displayName="CHR LYM LEUK W/O RMSION"/>
+    	<CD code="204.11" displayName="CHR LYM LEUK W RMSION"/>
+    	<CD code="204.12" displayName="CHR LYMP LEUK IN RELAPSE"/>
+    	<CD code="204.2" displayName="SUBAC LYMPHOID LEUKEMIA"/>
+    	<CD code="204.20" displayName="SBAC LYM LEUK W/O RMSION"/>
+    	<CD code="204.21" displayName="SBAC LYM LEUK W RMSION"/>
+    	<CD code="204.22" displayName="SBAC LYM LEUK IN RELAPSE"/>
+    	<CD code="204.8" displayName="LYMPHOID LEUKEMIA NEC"/>
+    	<CD code="204.80" displayName="OTH LYM LEUK W/O RMSION"/>
+    	<CD code="204.81" displayName="OTH LYM LEUK W RMSION"/>
+    	<CD code="204.82" displayName="OTH LYM LEUK IN RELAPSE"/>
+    	<CD code="204.9" displayName="LYMPHOID LEUKEMIA NOS"/>
+    	<CD code="204.90" displayName="UNS LYM LEUK W/O RMSION"/>
+    	<CD code="204.91" displayName="UNS LYM LEUK W RMSION"/>
+    	<CD code="204.92" displayName="LYMP LEUK NOS RELAPSE"/>
+    	<CD code="205.0" displayName="ACUTE MYELOID LEUKEMIA"/>
+    	<CD code="205.00" displayName="ACT MYL LEUK W/O RMSION"/>
+    	<CD code="205.01" displayName="ACT MYL LEUK W RMSION"/>
+    	<CD code="205.02" displayName="ACT MYEL LEUK IN RELAPSE"/>
+    	<CD code="205.1" displayName="CHRONIC MYELOID LEUKEMIA"/>
+    	<CD code="205.10" displayName="CHR MYL LEUK W/O RMSION"/>
+    	<CD code="205.11" displayName="CHR MYL LEUK W RMSION"/>
+    	<CD code="205.12" displayName="CHR MYEL LEUK IN RELAPSE"/>
+    	<CD code="205.2" displayName="SUBACUT MYELOID LEUKEMIA"/>
+    	<CD code="205.20" displayName="SBAC MYL LEUK W/O RMSION"/>
+    	<CD code="205.21" displayName="SBAC MYL LEUK W RMSION"/>
+    	<CD code="205.22" displayName="SBAC MYL LEUK IN RELAPSE"/>
+    	<CD code="205.3" displayName="MYELOID SARCOMA"/>
+    	<CD code="205.30" displayName="MYL SRCOMA W/O RMSION"/>
+    	<CD code="205.31" displayName="MYL SRCOMA W RMSION"/>
+    	<CD code="205.32" displayName="MYEL CARCOMA IN RELAPSE"/>
+    	<CD code="205.8" displayName="MYELOID LEUKEMIA NEC"/>
+    	<CD code="205.80" displayName="OTH MYL LEUK W/O RMSION"/>
+    	<CD code="205.81" displayName="OTH MYL LEUK W RMSION"/>
+    	<CD code="205.82" displayName="OTH MYEL LEUK IN RELAPSE"/>
+    	<CD code="205.9" displayName="MYELOID LEUKEMIA NOS"/>
+    	<CD code="205.90" displayName="UNS MYL LEUK W/O RMSION"/>
+    	<CD code="205.91" displayName="UNS MYL LEUK W RMSION"/>
+    	<CD code="205.92" displayName="MYEL LEUK NOS IN RELAPSE"/>
+    	<CD code="206.0" displayName="ACUTE MONOCYTIC LEUKEMIA"/>
+    	<CD code="206.00" displayName="ACT MONO LEUK W/O RMSION"/>
+    	<CD code="206.01" displayName="ACT MONO LEUK W RMSION"/>
+    	<CD code="206.02" displayName="ACT MONO LEUK IN RELAPSE"/>
+    	<CD code="206.1" displayName="CHR MONOCYTIC LEUKEMIA"/>
+    	<CD code="206.10" displayName="CHR MONO LEUK W/O RMSION"/>
+    	<CD code="206.11" displayName="CHR MONO LEUK W RMSION"/>
+    	<CD code="206.12" displayName="CHR MONO LEUK IN RELAPSE"/>
+    	<CD code="206.2" displayName="SUBAC MONOCYTIC LEUKEMIA"/>
+    	<CD code="206.20" displayName="SBAC MONO LEUK W/O RMSON"/>
+    	<CD code="206.21" displayName="SBAC MONO LEUK W RMSION"/>
+    	<CD code="206.22" displayName="SBAC MONO LEU IN RELAPSE"/>
+    	<CD code="206.8" displayName="MONOCYTIC LEUKEMIA NEC"/>
+    	<CD code="206.80" displayName="OTH MONO LEUK W/O RMSION"/>
+    	<CD code="206.81" displayName="OTH MONO LEUK W RMSION"/>
+    	<CD code="206.82" displayName="OTH MONO LEUK IN RELAPSE"/>
+    	<CD code="206.9" displayName="MONOCYTIC LEUKEMIA NOS"/>
+    	<CD code="206.90" displayName="UNS MONO LEUK W/O RMSION"/>
+    	<CD code="206.91" displayName="UNS MONO LEUK W RMSION"/>
+    	<CD code="206.92" displayName="MONO LEUK NOS RELAPSE"/>
+    	<CD code="207.0" displayName="ACUTE ERYTHREMIA"/>
+    	<CD code="207.00" displayName="ACT ERTH/ERYLK W/O RMSON"/>
+    	<CD code="207.01" displayName="ACT ERTH/ERYLK W RMSON"/>
+    	<CD code="207.02" displayName="AC ERTH/ERYLK IN RELAPSE"/>
+    	<CD code="207.1" displayName="CHRONIC ERYTHREMIA"/>
+    	<CD code="207.10" displayName="CHR ERYTHRM W/O REMISION"/>
+    	<CD code="207.11" displayName="CHR ERYTHRM W REMISION"/>
+    	<CD code="207.12" displayName="CHR ERYTHRMIA IN RELAPSE"/>
+    	<CD code="207.2" displayName="MEGAKARYOCYTIC LEUKEMIA"/>
+    	<CD code="207.20" displayName="MGKRYCYT LEUK W/O RMSION"/>
+    	<CD code="207.21" displayName="MGKRYCYT LEUK W RMSION"/>
+    	<CD code="207.22" displayName="MCKRYCYT LEUK IN RELAPSE"/>
+    	<CD code="207.8" displayName="SPECIFIED LEUKEMIA NEC"/>
+    	<CD code="207.80" displayName="OTH SPF LEUK W/O REMSION"/>
+    	<CD code="207.81" displayName="OTH SPF LEUK W REMSION"/>
+    	<CD code="207.82" displayName="OTH SPF LEUK IN RELAPSE"/>
+    	<CD code="208.0" displayName="ACT LEUK UNS CL W/O RMSN"/>
+    	<CD code="208.00" displayName="ACT LEUK UNS CL W/O RMSN"/>
+    	<CD code="208.01" displayName="ACT LEUK UNS CL W RMSON"/>
+    	<CD code="208.02" displayName="ACT LEUK UNS CL RELAPSE"/>
+    	<CD code="208.1" displayName="CHRONIC LEUKEMIA NOS"/>
+    	<CD code="208.10" displayName="CHR LEUK UNS CL W/O RMSN"/>
+    	<CD code="208.11" displayName="CHR LEUK UNS CL W RMSON"/>
+    	<CD code="208.12" displayName="CH LEU UNS CL IN RELAPSE"/>
+    	<CD code="208.2" displayName="SUBACUTE LEUKEMIA NOS"/>
+    	<CD code="208.20" displayName="SBAC LEUK UNS CL W/O RMS"/>
+    	<CD code="208.21" displayName="SBAC LEUK UNS CL W RMSON"/>
+    	<CD code="208.22" displayName="SBAC LEU UNS CL-RELAPSE"/>
+    	<CD code="208.8" displayName="LEUKEMIA-UNSPEC CELL NEC"/>
+    	<CD code="208.80" displayName="OTH LEUK UNS CL W/O RMSN"/>
+    	<CD code="208.81" displayName="OTH LEUK UNS CL W RMSON"/>
+    	<CD code="208.82" displayName="OTH LEUK UNS CL-RELAPSE"/>
+    	<CD code="208.9" displayName="LEUKEMIA-UNSPEC CELL NOS"/>
+    	<CD code="208.90" displayName="LEUKEMIA NOS W/O REMSION"/>
+    	<CD code="208.91" displayName="LEUKEMIA NOS W REMISSIO"/>
+    	<CD code="208.92" displayName="LEUKEMIA NOS IN RELAPSE"/>
+    	<CD code="209.00" displayName="MAL CRCNOID SM INTST NOS"/>
+    	<CD code="209.01" displayName="MALIG CARCINOID DUODENUM"/>
+    	<CD code="209.02" displayName="MALIG CARCINOID JEJUNUM"/>
+    	<CD code="209.03" displayName="MALIG CARCINOID ILEUM"/>
+    	<CD code="209.10" displayName="MAL CRCNOID LG INTST NOS"/>
+    	<CD code="209.11" displayName="MALIG CARCINOID APPENDIX"/>
+    	<CD code="209.12" displayName="MALIG CARCINOID CECUM"/>
+    	<CD code="209.13" displayName="MAL CRCNOID ASCEND COLON"/>
+    	<CD code="209.14" displayName="MAL CRCNOID TRANSV COLON"/>
+    	<CD code="209.15" displayName="MAL CARCINOID DESC COLON"/>
+    	<CD code="209.16" displayName="MAL CARCINOID SIG COLON"/>
+    	<CD code="209.17" displayName="MALIG CARCINOID RECTUM"/>
+    	<CD code="209.20" displayName="MAL CRCND PRIM SITE UNKN"/>
+    	<CD code="209.21" displayName="MAL CARCINOID BRONC/LUNG"/>
+    	<CD code="209.22" displayName="MALIG CARCINOID THYMUS"/>
+    	<CD code="209.23" displayName="MALIG CARCINOID STOMACH"/>
+    	<CD code="209.24" displayName="MALIG CARCINOID KIDNEY"/>
+    	<CD code="209.25" displayName="MAL CARCNOID FOREGUT NOS"/>
+    	<CD code="209.26" displayName="MAL CARCINOID MIDGUT NOS"/>
+    	<CD code="209.27" displayName="MAL CARCNOID HINDGUT NOS"/>
+    	<CD code="209.29" displayName="MALIG CARCINOID OTH SITE"/>
+    	<CD code="209.30" displayName="MALIGNANT POORLY DIFFERENTIATED NEUROENDOCRINE CARCINOMA, ANY SITE (OCT09)"/>
+    	<CD code="209.31" displayName="MERKEL CELL CARCINOMA OF THE FACE (OCT09)"/>
+    	<CD code="209.32" displayName="MERKEL CELL CARCINOMA OF THE SCALP AND NECK (OCT09)"/>
+    	<CD code="209.33" displayName="MERKEL CELL CARCINOMA OF THE UPPER LIMB (OCT09)"/>
+    	<CD code="209.34" displayName="MERKEL CELL CARCINOMA OF THE LOWER LIMB (OCT09)"/>
+    	<CD code="209.35" displayName="MERKEL CELL CARCINOMA OF THE TRUNK (OCT09)"/>
+    	<CD code="209.36" displayName="MERKEL CELL CARCINOMA OF OTHER SITES (OCT09)"/>
+    	<CD code="209.70" displayName="SECONDARY NEUROENDOCRINE TUMOR, UNSPECIFIED SITE (OCT09)"/>
+    	<CD code="209.71" displayName="SECONDARY NEUROENDOCRINE TUMOR OF DISTANT LYMPH NODES (OCT09)"/>
+    	<CD code="209.72" displayName="SECONDARY NEUROENDOCRINE TUMOR OF LIVER (OCT09)"/>
+    	<CD code="209.73" displayName="SECONDARY NEUROENDOCRINE TUMOR OF BONE (OCT09)"/>
+    	<CD code="209.74" displayName="SECONDARY NEUROENDOCRINE TUMOR OF PERITONEUM (OCT09)"/>
+    	<CD code="209.75" displayName="SECONDARY MERKEL CELL CARCINOMA (OCT09)"/>
+    	<CD code="209.79" displayName="SECONDARY NEUROENDOCRINE TUMOR OF OTHER SITES (OCT09)"/>
+    	<CD code="238.6" displayName="NEOPLASM OF UNCERTAIN BEHAVIOR OF OTHER AND UNSPECIFIED SITES AND TISSUES, PLASMA CELLS"/>
+    	<CD code="273.3" displayName="DISORDERS OF PLASMA PROTEIN METABOLISM-MACROGLOBULINEMIA"/>
+    	<CD code="V10.00" displayName="GASTROINTESTINAL TRACT, UNSPECIFIED"/>
+    	<CD code="V10.01" displayName="TONGUE"/>
+    	<CD code="V10.02" displayName="OTHER AND UNSPECIFIED ORAL CAVITY AND PHARYNX"/>
+    	<CD code="V10.03" displayName="ESOPHAGUS"/>
+    	<CD code="V10.04" displayName="STOMACH"/>
+    	<CD code="V10.05" displayName="LARGE INTESTINE"/>
+    	<CD code="V10.06" displayName="RECTUM, RECTOSIGMOID JUNCTION, AND ANUS"/>
+    	<CD code="V10.07" displayName="LIVER"/>
+    	<CD code="V10.09" displayName="OTHER"/>
+    	<CD code="V10.11" displayName="BRONCHUS AND LUNG"/>
+    	<CD code="V10.12" displayName="TRACHEA"/>
+    	<CD code="V10.20" displayName="RESPIRATORY ORGAN, UNSPECIFIED"/>
+    	<CD code="V10.21" displayName="LARYNX"/>
+    	<CD code="V10.22" displayName="NASAL CAVITIES, MIDDLE EAR, AND ACCESSORY SINUSES"/>
+    	<CD code="V10.29" displayName="OTHER"/>
+    	<CD code="V10.3" displayName="BREAST"/>
+    	<CD code="V10.40" displayName="FEMALE GENITAL ORGAN, UNSPECIFIED"/>
+    	<CD code="V10.41" displayName="CERVIX UTERI"/>
+    	<CD code="V10.42" displayName="OTHER PARTS OF UTERUS"/>
+    	<CD code="V10.43" displayName="OVARY"/>
+    	<CD code="V10.44" displayName="OTHER FEMALE GENITAL ORGANS"/>
+    	<CD code="V10.45" displayName="MALE GENITAL ORGAN, UNSPECIFIED"/>
+    	<CD code="V10.46" displayName="PROSTATE"/>
+    	<CD code="V10.47" displayName="TESTIS"/>
+    	<CD code="V10.48" displayName="EPIDDIDYMIS"/>
+    	<CD code="V10.49" displayName="OTHER MALE GENITAL ORGANS"/>
+    	<CD code="V10.50" displayName="URINARY ORGAN, UNSPECIFIED"/>
+    	<CD code="V10.51" displayName="BLADDER"/>
+    	<CD code="V10.52" displayName="KIDNEY"/>
+    	<CD code="V10.53" displayName="RENAL PELVIS"/>
+    	<CD code="V10.59" displayName="OTHER"/>
+    	<CD code="V10.60" displayName="LEUKEMIA, UNSPECIFIED"/>
+    	<CD code="V10.61" displayName="LYMPHID LEUKEMIA"/>
+    	<CD code="V10.62" displayName="MYELOID LEUKEMIA"/>
+    	<CD code="V10.63" displayName="MONOCYTIC LEUKEMIA"/>
+    	<CD code="V10.69" displayName="OTHER"/>
+    	<CD code="V10.71" displayName="LYMPHOSARCOMA AND RETICULOSARCOMA"/>
+    	<CD code="V10.72" displayName="HODGKINS DISEASE"/>
+    	<CD code="V10.79" displayName="OTHER"/>
+    	<CD code="V10.81" displayName="BONE"/>
+    	<CD code="V10.82" displayName="MALIGNANT MELANOMA OF SKIN"/>
+    	<CD code="V10.83" displayName="OPTHER MALIGNANT NEOPLASM OF SKIN"/>
+    	<CD code="V10.84" displayName="EYE"/>
+    	<CD code="V10.85" displayName="BRAIN"/>
+    	<CD code="V10.86" displayName="OTHER PARTS OF NERVOUS SYSTEM"/>
+    	<CD code="V10.87" displayName="THYROID"/>
+    	<CD code="V10.88" displayName="OTHER ENDOCRINE GLANDS AND RELATED STRUCTURES"/>
+    	<CD code="V10.89" displayName="OTHER"/>
+    	<CD code="V10.9" displayName="UNSPECIFIED PERSONAL HISTORY OF MALIGNANT NEOPLASM"/>
+    	<CD code="V10.90" displayName="PERSONAL HISTORY OF UNSPECIFIED MALIGNANT NEOPLASM (OCT09)"/>
+    	<CD code="V10.91" displayName="PERSONAL HISTORY OF MALIGNANT NEUROENDOCRINE TUMOR (OCT09)"/>
+		
+   	</membersForCodeSystem>
+</OpenCdsConceptMappingSpecificationFile>

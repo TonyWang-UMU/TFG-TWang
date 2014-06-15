@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OpenCdsConceptMappingSpecificationFile>
+	<specificationNotes></specificationNotes>
+	<openCdsConcept code="C482" displayName="NUBC Value Sets"></openCdsConcept>
+    <conceptDeterminationMethod code="C267" displayName="AHRQ"/>
+    <membersForCodeSystem codeSystem="2.16.840.1.113883.3.795.12.1.1" codeSystemName="OpenCDS">
+    	<CD code="AdmSource" displayName="Admission Source"/>
+    	<CD code="AdmType" displayName="Admission Type"/>
+    	<CD code="DischDisp" displayName="Discharge Disposition"/>
+    	<CD code="DischType" displayName="Discharge Type"/>
+    	<CD code="PatClass" displayName="Patient Class"/>
+    </membersForCodeSystem>
+</OpenCdsConceptMappingSpecificationFile>     

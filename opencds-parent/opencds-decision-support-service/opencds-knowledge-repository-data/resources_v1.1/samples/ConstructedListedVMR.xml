@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vmr:vmr xmlns:vmr="org.opencds.vmr.v1_0.schema.vmr" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="org.opencds.vmr.v1_0.schema.vmr ../schema/vmr.xsd">
+	<!--constructed example showing relationship between an adverseEvent, an observationResult and an administrableSubstance pertaining to the adverseEvent, submitted in "listed/relational" format-->
+	<templateId root=""/>
+	<patient>
+		<id root=""/>
+		<demographics/>
+		<clinicalStatements>
+			<adverseEvents>
+				<adverseEvent>
+					<id root="adverseEventId"/>
+					<adverseEventCode codeSystem="codeSystem" code="code"/>
+					
+				</adverseEvent>
+			</adverseEvents>
+			<observationResults>
+				<observationResult>
+					<id root="observationId"/>
+					<observationFocus codeSystem="codeSystem" code="code"/>
+					 
+				</observationResult>
+			</observationResults>
+		</clinicalStatements>
+		<clinicalStatementRelationships>
+			<clinicalStatementRelationship>
+				<sourceId root="adverseEventId"/>
+				<targetId root="observationId"/>
+				<targetRelationshipToSource code="reasonFor"/>
+			</clinicalStatementRelationship>
+		</clinicalStatementRelationships>
+		<clinicalStatementEntityInRoleRelationships>
+			<clinicalStatementEntityInRoleRelationship>
+				<sourceId root="adverseEventId"/>
+				<targetEntityId root="substanceId"/>
+				<targetRole code="allergen"/>
+			</clinicalStatementEntityInRoleRelationship>
+		</clinicalStatementEntityInRoleRelationships>
+		<entityLists>
+			<administrableSubstances>
+				<administrableSubstance>
+					<id root="substanceId"/>
+					<substanceCode codeSystem="codeSystem" code="code"/>					
+				</administrableSubstance>
+			</administrableSubstances>
+		</entityLists>
+	</patient>
+</vmr:vmr>

@@ -68,7 +68,7 @@ public class TestEvaluationImpl {
  * to test for memory leaks anywhere in OpenCDS repeat entire evaluation at least 50,000 times
  * 
  */
-			for (int j = 0; j < 1000; j++) {
+			for (int j = 0; j < 1; j++) {
 				System.out.println("starting outer loop=" + j);
 				String 				payloadString 	= null;
 				String				filePath		= null;
@@ -137,7 +137,7 @@ public class TestEvaluationImpl {
 				er.getDataRequirementItemData().get(0).getData().getInformationModelSSId().setVersion("1.0");	
 				parameters.setEvaluationRequest(er);
 				
-				filePath = "T:/Mirth/in/read/184651367.txt";  //must be a valid VMR xml in a single file
+				filePath = "C:/OpenCDS/pruebastxt/ConstructedExampleNestedInputs.xml";  //must be a valid VMR xml in a single file
 				
 				try {
 					payloadString = FileUtility.getInstance().getFileContentsAsString(new File (filePath));

@@ -1,0 +1,63 @@
+<rule>
+  <name>NumCriteriaMet</name>
+  <modelVersion>1.0</modelVersion>
+  <attributes/>
+  <metadataList/>
+  <lhs>
+    <dslSentence>
+      <definition>There is assertion {assertionX:ENUM:Assertion.value}</definition>
+      <values>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+          <value>DenominatorMet</value>
+        </org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+          <value>assertionX</value>
+        </org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+      </values>
+    </dslSentence>
+    <dslSentence>
+      <definition>Initialize.evalTime.fpId.evalpId - Note that all criteria below must be met for the rule to fire.</definition>
+      <values/>
+    </dslSentence>
+    <dslSentence>
+      <definition>Proc.Time - EvaluatedPerson had {Proc:ENUM:ProcedureConcept.openCdsConceptCode} in the past {n}  {timeUnits:ENUM:EnumerationTarget.javaCalendarUnit}</definition>
+      <values>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+          <value>C48</value>
+        </org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+          <value>2</value>
+        </org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+          <value>1</value>
+        </org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue>
+          <value>Proc</value>
+          <id>ENUM:ProcedureConcept.openCdsConceptCode</id>
+        </org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+          <value>n</value>
+        </org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue>
+          <value>timeUnits</value>
+          <id>ENUM:EnumerationTarget.javaCalendarUnit</id>
+        </org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue>
+      </values>
+    </dslSentence>
+  </lhs>
+  <rhs>
+    <dslSentence>
+      <definition>Assert to both Rules and Process that {AssertionToAdd:ENUM:Assertion.value}</definition>
+      <values>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+          <value>NumeratorMet</value>
+        </org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue>
+          <value>AssertionToAdd</value>
+          <id>ENUM:Assertion.value</id>
+        </org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue>
+      </values>
+    </dslSentence>
+  </rhs>
+  <isNegated>false</isNegated>
+</rule>

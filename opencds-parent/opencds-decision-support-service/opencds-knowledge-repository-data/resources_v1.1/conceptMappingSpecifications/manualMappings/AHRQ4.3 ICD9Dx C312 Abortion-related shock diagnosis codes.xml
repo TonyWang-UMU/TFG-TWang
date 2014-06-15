@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OpenCdsConceptMappingSpecificationFile>
+	<specificationNotes>Created manually from AHRQ PSI specifications.</specificationNotes>
+    <openCdsConcept code="C312" displayName="Abortion-related Shock"/>
+    <conceptDeterminationMethod code="C267" displayName="AHRQ v4.3"/>
+    <membersForCodeSystem codeSystem="2.16.840.1.113883.6.103" codeSystemName="ICD9CM diagnoses">
+    	<CD code="634.50" displayName="SPONTANEOUS ABORTION W/ SHOCK - UNSPECIFIED"/>
+    	<CD code="634.51" displayName="SPONTANEOUS ABORTION W/ SHOCK - INCOMPLETE"/>
+    	<CD code="634.52" displayName="SPONTANEOUS ABORTION W/ SHOCK - COMPLETE"/>
+    	<CD code="635.50" displayName="LEGAL ABORTION W/ SHOCK - UNSPECIFIED"/>
+    	<CD code="635.51" displayName="LEGAL ABORTION W/ SHOCK - INCOMPLETE"/>
+    	<CD code="635.52" displayName="LEGAL ABORTION W/ SHOCK - COMPLETE"/>
+    	<CD code="636.50" displayName="ILLEGAL ABORTION W/ SHOCK - UNSPECIFIED"/>
+    	<CD code="636.51" displayName="ILLEGAL ABORTION W/ SHOCK - INCOMPLETE"/>
+    	<CD code="636.52" displayName="ILLEGAL ABORTION W/ SHOCK - COMPLETE"/>
+    	<CD code="637.50" displayName="ABORTION NOS W/ SHOCK - UNSPECIFIED"/>
+    	<CD code="637.51" displayName="ABORTION NOS W/ SHOCK - INCOMPLETE"/>
+    	<CD code="637.52" displayName="ABORTION NOS W/ SHOCK - COMPLETE"/>
+    	<CD code="638.5" displayName="ATTEMPTED ABORTION W/ SHOCK"/>
+   	</membersForCodeSystem>
+</OpenCdsConceptMappingSpecificationFile>

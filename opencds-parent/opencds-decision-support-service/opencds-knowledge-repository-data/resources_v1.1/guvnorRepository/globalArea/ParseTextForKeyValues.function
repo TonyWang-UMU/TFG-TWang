@@ -1,0 +1,11 @@
+function String parseTextForKeyValues(String[] keyValues, String text) 
+    {
+    	String result = "";
+    	for (String key : keyValues) {
+    		if (text.contains(key)) {
+    			result = text;
+    			break;
+    		}
+    	}
+    	return result;
+    }

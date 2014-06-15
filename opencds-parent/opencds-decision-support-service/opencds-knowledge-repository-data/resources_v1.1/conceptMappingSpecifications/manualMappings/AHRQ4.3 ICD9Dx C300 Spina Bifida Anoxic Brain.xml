@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OpenCdsConceptMappingSpecificationFile>
+	<specificationNotes>Created manually from AHRQ PSI specifications.</specificationNotes>
+    <openCdsConcept code="C300" displayName="Spina Bifida or Anoxic Brain Damage"/>
+    <conceptDeterminationMethod code="C267" displayName="AHRQ"/>
+    <membersForCodeSystem codeSystem="2.16.840.1.113883.6.103" codeSystemName="ICD9CM diagnoses">
+		<CD code="348.1" displayName="ANOXIC BRAIN DAMAGE"/> 
+		<CD code="741.00" displayName="SPINA BIFIDA, W HYDROCEPHALUS UNSPECIFIED REGION"/> 
+		<CD code="741.01" displayName="SPINA BIFIDA, W HYDROCEPHALUS CERVICAL REGION"/> 
+		<CD code="741.02" displayName="SPINA BIFIDA, W HYDROCEPHALUS DORSAL REGION"/> 
+		<CD code="741.03" displayName="SPINA BIFIDA, W HYDROCEPHALUS LUMBAR REGION"/> 
+		<CD code="741.90" displayName="SPINA BIFIDA, W/O HYDROCEPHALUS UNSPECIFIED REGION"/> 
+		<CD code="741.91" displayName="SPINA BIFIDA, W/O HYDROCEPHALUS CERVICAL REGION"/> 
+		<CD code="741.92" displayName="SPINA BIFIDA, W/O HYDROCEPHALUS DORSAL REGION"/> 
+		<CD code="741.93" displayName="SPINA BIFIDA, W/O HYDROCEPHALUS LUMBAR REGION"/> 
+		<CD code="768.5" displayName="SEVERE BIRTH ASPHYXIA"/> 
+   	</membersForCodeSystem>
+</OpenCdsConceptMappingSpecificationFile>

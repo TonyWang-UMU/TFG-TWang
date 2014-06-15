@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OpenCdsConceptMappingSpecificationFile>
+	<specificationNotes>Created manually from AHRQ PSI specifications.</specificationNotes>
+    <openCdsConcept code="C309" displayName="Shock or Cardiac Arrest"/>
+    <conceptDeterminationMethod code="C267" displayName="AHRQ v4.3"/>
+    <membersForCodeSystem codeSystem="2.16.840.1.113883.6.103" codeSystemName="ICD9CM diagnoses">
+    	<CD code="427.5" displayName="CARDIAC ARREST"/>
+    	<CD code="639.5" displayName="COMPLICATIONS FOLLOWING ABORTION AND ECTOPIC AND MOLAR PREGNANCIES, SHOCK"/>
+    	<CD code="669.10" displayName="SHOCK DURING OR FOLLOWING LABOR AND DELIVERY – UNSPECIFIED AS TO EPISODE OF CARE OR NOT APPLICABLE"/>
+    	<CD code="669.11" displayName="SHOCK DURING OR FOLLOWING LABOR AND DELIVERY – DELIVERED, W/ OR W/O MENTION OF ANTEPARTUM CONDITION"/>
+    	<CD code="669.12" displayName="SHOCK DURING OR FOLLOWING LABOR AND DELIVERY – DELIVERED, W/ MENTION OF POSTPARTUM COMPLICATION"/>
+    	<CD code="669.13" displayName="SHOCK DURING OR FOLLOWING LABOR AND DELIVERY – ANTEPARTUM CONDITION OR COMPLICATION"/>
+    	<CD code="669.14" displayName="SHOCK DURING OR FOLLOWING LABOR AND DELIVERY – POSTPARTUM CONDITION OR COMPLICATION"/>
+    	<CD code="785.5" displayName="SHOCK NOS"/>
+    	<CD code="785.50" displayName="SHOCK, UNSPECIFIED"/>
+    	<CD code="785.51" displayName="CARDIOGENIC SHOCK"/>
+    	<CD code="785.52" displayName="SEPTIC SHOCK (OCT03)"/>
+    	<CD code="785.59" displayName="SHOCK W/O MENTION OF TRAUMA- OTHER"/>
+    	<CD code="799.1" displayName="RESPIRATORY ARREST"/>
+    	<CD code="995.0" displayName="OTHER ANAPHYLACTIC SHOCK"/>
+    	<CD code="995.4" displayName="SHOCK DUE TO ANESTHESIA"/>
+    	<CD code="998.0" displayName="POSTOPERATIVE SHOCK"/>
+    	<CD code="999.4" displayName="ANAPHYLACTIC SHOCK DUE TO SERUM"/>
+   	</membersForCodeSystem>
+</OpenCdsConceptMappingSpecificationFile>

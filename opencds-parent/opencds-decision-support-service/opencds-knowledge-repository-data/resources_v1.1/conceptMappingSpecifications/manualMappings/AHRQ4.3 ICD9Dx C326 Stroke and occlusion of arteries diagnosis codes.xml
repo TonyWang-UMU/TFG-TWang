@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OpenCdsConceptMappingSpecificationFile>
+	<specificationNotes>Created manually from AHRQ PSI specifications.</specificationNotes>
+    <openCdsConcept code="C326" displayName="Stroke and Occlusion of Arteries"/>
+    <conceptDeterminationMethod code="C267" displayName="AHRQ v4.3"/>
+    <membersForCodeSystem codeSystem="2.16.840.1.113883.6.103" codeSystemName="ICD9CM diagnoses">
+    	<CD code="430" displayName="SUBARACHNOID HEMORRHAGE"/>
+    	<CD code="431" displayName="INTRACEREBRAL HEMORRHAGE"/>
+    	<CD code="432.0" displayName="NONTRAUMATIC EXTRADURAL HEMORRHAGE"/>
+    	<CD code="432.1" displayName="SUBDURAL HEMORRHAGE"/>
+    	<CD code="432.9" displayName="UNSPECIFIED INTRACRANIAL HEMORRHAGE"/>
+    	<CD code="433.01" displayName="BASILAR ARTERY, W/ CEREBRAL INFARCTION"/>
+    	<CD code="433.11" displayName="CAROTID ARTERY, W/ CEREBRAL INFARCTION"/>
+    	<CD code="433.21" displayName="VERTEBRAL ARTERY - W/ CEREBRAL INFARCTION"/>
+    	<CD code="433.31" displayName="MULTIPLE AND BILATERAL W/ CEREBRAL INFARCTION"/>
+    	<CD code="433.81" displayName="OTHER SPECIFIED PRECEREBRAL ARTERY W/ CEREBRAL INFARCTION"/>
+    	<CD code="433.91" displayName="OCCLUSION AND STENOSIS OF PRECEREBRAL ARTERIES, UNSPECIFIED PRECEREBRAL ARTERY W/ CEREBRAL INFARCTION"/>
+    	<CD code="434.01" displayName="CEREBRAL THROMBOSIS – W/ CEREBRAL INFARCTION"/>
+    	<CD code="434.11" displayName="CEREBRAL EMBOLISM – W/ CEREBRAL INFARCTION"/>
+    	<CD code="434.91" displayName="CEREBRAL ARTERY OCCLUSION, UNSPECIFIED - W/ CEREBRAL INFARCTION"/>
+    	<CD code="435.0" displayName="BASILAR ARTERY SYNDROME"/>
+    	<CD code="435.1" displayName="VERTEBRAL ARTERY SYNDROME"/>
+    	<CD code="435.3" displayName="VERTEBROBASILAR ARTERY SYNDROME"/>
+    	<CD code="436" displayName="ACUTE, BUT ILL-DEFINED CEREBROVASCULAR DISEASE"/>
+    	<CD code="997.02" displayName="POSTOPERATIVE CEREBROVASCULAR ACCIDENT"/>
+   	</membersForCodeSystem>
+</OpenCdsConceptMappingSpecificationFile>

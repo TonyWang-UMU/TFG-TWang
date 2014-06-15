@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OpenCdsConceptMappingSpecificationFile> 
+<specificationNotes>Created manually from AHRQ PSI specifications.</specificationNotes> 
+<openCdsConcept displayName="Foreign Body Left During Procedure" code="C317"/> 
+<conceptDeterminationMethod displayName="AHRQ" code="C267"/> 
+	<membersForCodeSystem codeSystemName="ICD9CM diagnoses" codeSystem="2.16.840.1.113883.6.103"> 
+		<CD code="998.4" displayName="FOREIGN BODY ACCIDENTALLY LEFT DURING A PROCEDURE"/> 
+		<CD code="998.7" displayName="ACUTE REACTIONS TO FOREIGN SUBSTANCE ACCIDENTALLY LEFT DURING A PROCEDURE"/> 
+		<CD code="E871.0" displayName="SURGICAL OPERATION"/> 
+		<CD code="E871.1" displayName="INFUSION OR TRANSFUSION"/> 
+		<CD code="E871.2" displayName="KIDNEY DIALYSIS OR OTHER PERFUSION"/> 
+		<CD code="E871.3" displayName="INJECTION OR VACCINATION"/> 
+		<CD code="E871.4" displayName="ENDOSCOPIC EXAMINATION"/> 
+		<CD code="E871.5" displayName="ASPIRATION OF FLUID OR TISSUE, PUNCTURE, AND CATHETERIZATION"/> 
+		<CD code="E871.6" displayName="HEART CATHETERIZATION"/> 
+		<CD code="E871.7" displayName="REMOVAL OF CATHETER OR PACKING"/> 
+		<CD code="E871.8" displayName="OTHER SPECIFIED PROCEDURES"/> 
+		<CD code="E871.9" displayName="UNSPECIFIED PROCEDURE"/> 
+	</membersForCodeSystem> 
+</OpenCdsConceptMappingSpecificationFile>

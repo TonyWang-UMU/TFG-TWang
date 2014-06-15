@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+     <OpenCdsConceptMappingSpecificationFile>
+          <specificationNotes>Created using ApelonConceptMappingSpecificationFileCreator.</specificationNotes>
+          <openCdsConcept code="C60" displayName="Hysterectomy"></openCdsConcept>
+          <conceptDeterminationMethod code="C45" displayName="NQF"></conceptDeterminationMethod>
+          <membersForCodeSystem codeSystem="2.16.840.1.113883.6.12" codeSystemName="CPT4">
+               <CD code="51925" displayName="Closure of vesicouterine fistula; with hysterectomy [51925]"></CD>
+               <CD code="58150" displayName="Total abdominal hysterectomy (corpus and cervix), with or without removal of tube(s), with or without removal of ovary(s) [58150]"></CD>
+               <CD code="58152" displayName="Total abdominal hysterectomy (corpus and cervix), with or without removal of tube(s), with or without removal of ovary(s); with colpo-urethrocystopexy (eg, Marshall-Marchetti-Krantz, Burch) [58152]"></CD>
+               <CD code="58200" displayName="Total abdominal hysterectomy, including partial vaginectomy, with para-aortic and pelvic lymph node sampling, with or without removal of tube(s), with or without removal of ovary(s) [58200]"></CD>
+               <CD code="58210" displayName="Radical abdominal hysterectomy, with bilateral total pelvic lymphadenectomy and para-aortic lymph node sampling (biopsy), with or without removal of tube(s), with or without removal of ovary(s) [58210]"></CD>
+               <CD code="58240" displayName="Pelvic exenteration for gynecologic malignancy, with total abdominal hysterectomy or cervicectomy, with or without removal of tube(s), with or without removal of ovary(s), with removal of bladder and ureteral transplantations, and/or [58240]"></CD>
+               <CD code="58260" displayName="Vaginal hysterectomy, for uterus 250 g or less [58260]"></CD>
+               <CD code="58262" displayName="Vaginal hysterectomy, for uterus 250 g or less; with removal of tube(s), and/or ovary(s) [58262]"></CD>
+               <CD code="58263" displayName="Vaginal hysterectomy, for uterus 250 g or less; with removal of tube(s), and/or ovary(s), with repair of enterocele [58263]"></CD>
+               <CD code="58267" displayName="Vaginal hysterectomy, for uterus 250 g or less; with colpo-urethrocystopexy (Marshall-Marchetti-Krantz type, Pereyra type) with or without endoscopic control [58267]"></CD>
+               <CD code="58275" displayName="Vaginal hysterectomy, with total or partial vaginectomy [58275]"></CD>
+               <CD code="58280" displayName="Vaginal hysterectomy, with total or partial vaginectomy; with repair of enterocele [58280]"></CD>
+               <CD code="58285" displayName="Vaginal hysterectomy, radical (Schauta type operation) [58285]"></CD>
+               <CD code="58290" displayName="Vaginal hysterectomy, for uterus greater than 250 g [58290]"></CD>
+               <CD code="58291" displayName="Vaginal hysterectomy, for uterus greater than 250 g; with removal of tube(s) and/or ovary(s) [58291]"></CD>
+               <CD code="58292" displayName="Vaginal hysterectomy, for uterus greater than 250 g; with removal of tube(s) and/or ovary(s), with repair of enterocele [58292]"></CD>
+               <CD code="58293" displayName="Vaginal hysterectomy, for uterus greater than 250 g; with colpo-urethrocystopexy (Marshall-Marchetti-Krantz type, Pereyra type) with or without endoscopic control [58293]"></CD>
+               <CD code="58294" displayName="Vaginal hysterectomy, for uterus greater than 250 g; with repair of enterocele [58294]"></CD>
+               <CD code="58550" displayName="Laparoscopy, surgical, with vaginal hysterectomy, for uterus 250 g or less [58550]"></CD>
+               <CD code="58552" displayName="Laparoscopy, surgical, with vaginal hysterectomy, for uterus 250 g or less; with removal of tube(s) and/or ovary(s) [58552]"></CD>
+               <CD code="58553" displayName="Laparoscopy, surgical, with vaginal hysterectomy, for uterus greater than 250 g [58553]"></CD>
+               <CD code="58554" displayName="Laparoscopy, surgical, with vaginal hysterectomy, for uterus greater than 250 g; with removal of tube(s) and/or ovary(s) [58554]"></CD>
+               <CD code="58570" displayName="Laparoscopy, surgical, with total hysterectomy, for uterus 250 g or less [58570]"></CD>
+               <CD code="58571" displayName="Laparoscopy, surgical, with total hysterectomy, for uterus 250 g or less; with removal of tube(s) and/or ovary(s) [58571]"></CD>
+               <CD code="58572" displayName="Laparoscopy, surgical, with total hysterectomy, for uterus greater than 250 g [58572]"></CD>
+               <CD code="58573" displayName="Laparoscopy, surgical, with total hysterectomy, for uterus greater than 250 g; with removal of tube(s) and/or ovary(s) [58573]"></CD>
+               <CD code="58951" displayName="Resection (initial) of ovarian, tubal or primary peritoneal malignancy with bilateral salpingo-oophorectomy and omentectomy; with total abdominal hysterectomy, pelvic and limited para-aortic lymphadenectomy [58951]"></CD>
+               <CD code="58953" displayName="Bilateral salpingo-oophorectomy with omentectomy, total abdominal hysterectomy and radical dissection for debulking [58953]"></CD>
+               <CD code="58954" displayName="Bilateral salpingo-oophorectomy with omentectomy, total abdominal hysterectomy and radical dissection for debulking; with pelvic lymphadenectomy and limited para-aortic lymphadenectomy [58954]"></CD>
+               <CD code="58956" displayName="Bilateral salpingo-oophorectomy with total omentectomy, total abdominal hysterectomy for malignancy [58956]"></CD>
+               <CD code="59135" displayName="Surgical treatment of ectopic pregnancy; interstitial, uterine pregnancy requiring total hysterectomy [59135]"></CD>
+          </membersForCodeSystem>
+     </OpenCdsConceptMappingSpecificationFile>

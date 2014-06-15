@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OpenCdsConceptMappingSpecificationFile>
+	<specificationNotes>Created manually from AHRQ PSI specifications.</specificationNotes>
+    <openCdsConcept code="C353" displayName="Debridement or Pedicle Graft"/>
+    <conceptDeterminationMethod code="C267" displayName="AHRQ"/>
+    <membersForCodeSystem codeSystem="2.16.840.1.113883.6.104" codeSystemName="ICD9CM procedures">
+		<CD code="83.45" displayName="OTHER MYECTOMY"/> 
+		<CD code="86.22" displayName="EXC WOUND DEBRIDEMENT"/> 
+		<CD code="86.28" displayName="NONEXCIS DEBRIDEMENT WND"/> 
+		<CD code="86.70" displayName="PEDICLE GRAFT/FLAP NOS"/> 
+		<CD code="86.71" displayName="CUT AND PREP PEDICLE GRAFT"/> 
+		<CD code="86.72" displayName="PEDICLE GRAFT ADVANCEMEN"/> 
+		<CD code="86.74" displayName="ATTACH PEDICLE GRAFT NEC"/> 
+		<CD code="86.75" displayName="REVISION OF PEDICLE GRFT"/> 
+   	</membersForCodeSystem>
+</OpenCdsConceptMappingSpecificationFile>

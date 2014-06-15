@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+     <OpenCdsConceptMappingSpecificationFile>
+          <specificationNotes>Created using ApelonConceptMappingSpecificationFileCreator.</specificationNotes>
+          <openCdsConcept code="C59" displayName="Papanicolaou smear"></openCdsConcept>
+          <conceptDeterminationMethod code="C45" displayName="NQF"></conceptDeterminationMethod>
+          <membersForCodeSystem codeSystem="2.16.840.1.113883.6.12" codeSystemName="CPT4">
+               <CD code="88141" displayName="Cytopathology, cervical or vaginal (any reporting system), requiring interpretation by physician [88141]"></CD>
+               <CD code="88142" displayName="Cytopathology, cervical or vaginal (any reporting system), collected in preservative fluid, automated thin layer preparation; manual screening under physician supervision [88142]"></CD>
+               <CD code="88143" displayName="Cytopathology, cervical or vaginal (any reporting system), collected in preservative fluid, automated thin layer preparation; with manual screening and rescreening under physician supervision [88143]"></CD>
+               <CD code="88147" displayName="Cytopathology smears, cervical or vaginal; screening by automated system under physician supervision [88147]"></CD>
+               <CD code="88148" displayName="Cytopathology smears, cervical or vaginal; screening by automated system with manual rescreening under physician supervision [88148]"></CD>
+               <CD code="88150" displayName="Cytopathology, slides, cervical or vaginal; manual screening under physician supervision [88150]"></CD>
+               <CD code="88152" displayName="Cytopathology, slides, cervical or vaginal; with manual screening and computer-assisted rescreening under physician supervision [88152]"></CD>
+               <CD code="88153" displayName="Cytopathology, slides, cervical or vaginal; with manual screening and rescreening under physician supervision [88153]"></CD>
+               <CD code="88154" displayName="Cytopathology, slides, cervical or vaginal; with manual screening and computer-assisted rescreening using cell selection and review under physician supervision [88154]"></CD>
+               <CD code="88155" displayName="Cytopathology, slides, cervical or vaginal, definitive hormonal evaluation (eg, maturation index, karyopyknotic index, estrogenic index) (List separately in addition to code[s] for other technical and interpretation services) [88155]"></CD>
+               <CD code="88164" displayName="Cytopathology, slides, cervical or vaginal (the Bethesda System); manual screening under physician supervision [88164]"></CD>
+               <CD code="88166" displayName="Cytopathology, slides, cervical or vaginal (the Bethesda System); with manual screening and computer-assisted rescreening under physician supervision [88166]"></CD>
+               <CD code="88167" displayName="Cytopathology, slides, cervical or vaginal (the Bethesda System); with manual screening and computer-assisted rescreening using cell selection and review under physician supervision [88167]"></CD>
+               <CD code="88174" displayName="Cytopathology, cervical or vaginal (any reporting system), collected in preservative fluid, automated thin layer preparation; screening by automated system, under physician supervision [88174]"></CD>
+               <CD code="88175" displayName="Cytopathology, cervical or vaginal (any reporting system), collected in preservative fluid, automated thin layer preparation; with screening by automated system and manual rescreening or review, under physician supervision [88175]"></CD>
+          </membersForCodeSystem>
+     </OpenCdsConceptMappingSpecificationFile>

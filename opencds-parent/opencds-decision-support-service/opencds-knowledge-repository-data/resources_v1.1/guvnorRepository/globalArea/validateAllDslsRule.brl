@@ -1,0 +1,1016 @@
+<rule>
+  <name>validateAllDslsRule</name>
+  <modelVersion>1.0</modelVersion>
+  <attributes>
+    <attribute>
+      <attributeName>dialect</attributeName>
+      <value>java</value>
+    </attribute>
+  </attributes>
+  <metadataList/>
+  <lhs>
+    <dslSentence>
+      <definition>Initialize.evalTime.fpId.evalpId - Note that all criteria below must be met for the rule to fire.</definition>
+      <values/>
+    </dslSentence>
+    <dslSentence>
+      <definition>Age.Low - EvaluatedPerson age is greater than or equal to {n} years</definition>
+      <values>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+          <value>21</value>
+        </org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+          <value>n</value>
+        </org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+      </values>
+    </dslSentence>
+    <dslSentence>
+      <definition>Age.High - EvaluatedPerson age is less than or equal to {n} years</definition>
+      <values>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+          <value>67</value>
+        </org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+          <value>n</value>
+        </org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+      </values>
+    </dslSentence>
+    <dslSentence>
+      <definition>Gender - EvaluatedPerson gender is {gender:ENUM:GenderConcept.openCdsConceptCode}</definition>
+      <values>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+          <value>C31</value>
+        </org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue>
+          <value>gender</value>
+          <id>ENUM:GenderConcept.openCdsConceptCode</id>
+        </org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue>
+      </values>
+    </dslSentence>
+    <dslSentence>
+      <definition>Enc.Past.Count - EvaluatedPerson had {encType:ENUM:EncounterTypeConcept.openCdsConceptCode}  {n1} or more times in the past {n2}  {timeUnits:ENUM:EnumerationTarget.javaCalendarUnit}</definition>
+      <values>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+          <value>C381</value>
+        </org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+          <value>7</value>
+        </org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+          <value>77</value>
+        </org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+          <value>1</value>
+        </org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue>
+          <value>encType</value>
+          <id>ENUM:EncounterTypeConcept.openCdsConceptCode</id>
+        </org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+          <value>n1</value>
+        </org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+          <value>n2</value>
+        </org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue>
+          <value>timeUnits</value>
+          <id>ENUM:EnumerationTarget.javaCalendarUnit</id>
+        </org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue>
+      </values>
+    </dslSentence>
+    <dslSentence>
+      <definition>Enc.Past.Count - EvaluatedPerson had {encType:ENUM:EncounterTypeConcept.openCdsConceptCode}  {n1} or more times in the past {n2}  {timeUnits:ENUM:EnumerationTarget.javaCalendarUnit}</definition>
+      <values>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+          <value>C239</value>
+        </org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+          <value>1</value>
+        </org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+          <value>1</value>
+        </org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+          <value>1</value>
+        </org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue reference="../../../dslSentence[5]/values/org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue"/>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue reference="../../../dslSentence[5]/values/org.drools.guvnor.client.modeldriven.brl.DSLVariableValue[5]"/>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue reference="../../../dslSentence[5]/values/org.drools.guvnor.client.modeldriven.brl.DSLVariableValue[6]"/>
+        <org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue reference="../../../dslSentence[5]/values/org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue[2]"/>
+      </values>
+    </dslSentence>
+    <dslSentence>
+      <definition>Enc.Past - EvaluatedPerson had {EncType:ENUM:EncounterTypeConcept.openCdsConceptCode} prior to evaluation time</definition>
+      <values>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+          <value>C381</value>
+        </org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue>
+          <value>EncType</value>
+          <id>ENUM:EncounterTypeConcept.openCdsConceptCode</id>
+        </org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue>
+      </values>
+    </dslSentence>
+    <dslSentence>
+      <definition>Enc.Past - EvaluatedPerson had {EncType:ENUM:EncounterTypeConcept.openCdsConceptCode} prior to evaluation time</definition>
+      <values>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+          <value>C239</value>
+        </org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue reference="../../../dslSentence[7]/values/org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue"/>
+      </values>
+    </dslSentence>
+    <dslSentence>
+      <definition>Enc.Time - EvaluatedPerson had {EncType:ENUM:EncounterTypeConcept.openCdsConceptCode} in the past {n}  {timeUnits:ENUM:EnumerationTarget.javaCalendarUnit}</definition>
+      <values>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+          <value>C381</value>
+        </org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+          <value>2</value>
+        </org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+          <value>1</value>
+        </org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue>
+          <value>EncType</value>
+          <id>ENUM:EncounterTypeConcept.openCdsConceptCode</id>
+        </org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+          <value>n</value>
+        </org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue>
+          <value>timeUnits</value>
+          <id>ENUM:EnumerationTarget.javaCalendarUnit</id>
+        </org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue>
+      </values>
+    </dslSentence>
+    <dslSentence>
+      <definition>Enc.Time - EvaluatedPerson had {EncType:ENUM:EncounterTypeConcept.openCdsConceptCode} in the past {n}  {timeUnits:ENUM:EnumerationTarget.javaCalendarUnit}</definition>
+      <values>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+          <value>C239</value>
+        </org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+          <value>3</value>
+        </org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+          <value>1</value>
+        </org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue reference="../../../dslSentence[9]/values/org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue"/>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue reference="../../../dslSentence[9]/values/org.drools.guvnor.client.modeldriven.brl.DSLVariableValue[4]"/>
+        <org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue reference="../../../dslSentence[9]/values/org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue[2]"/>
+      </values>
+    </dslSentence>
+    <dslSentence>
+      <definition>Enc.Time.Id - EvaluatedPerson had ref:{EncId:ENUM:EncounterId.reference}  {EncType:ENUM:EncounterTypeConcept.openCdsConceptCode} in the past {n}  {timeUnits:ENUM:EnumerationTarget.javaCalendarUnit}</definition>
+      <values>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+          <value>A</value>
+        </org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+          <value>C381</value>
+        </org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+          <value>25</value>
+        </org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+          <value>1</value>
+        </org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue>
+          <value>EncId</value>
+          <id>ENUM:EncounterId.reference</id>
+        </org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue>
+          <value>EncType</value>
+          <id>ENUM:EncounterTypeConcept.openCdsConceptCode</id>
+        </org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+          <value>n</value>
+        </org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue>
+          <value>timeUnits</value>
+          <id>ENUM:EnumerationTarget.javaCalendarUnit</id>
+        </org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue>
+      </values>
+    </dslSentence>
+    <dslSentence>
+      <definition>Enc.Time.Id - EvaluatedPerson had ref:{EncId:ENUM:EncounterId.reference}  {EncType:ENUM:EncounterTypeConcept.openCdsConceptCode} in the past {n}  {timeUnits:ENUM:EnumerationTarget.javaCalendarUnit}</definition>
+      <values>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+          <value>B</value>
+        </org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+          <value>C238</value>
+        </org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+          <value>3</value>
+        </org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+          <value>13</value>
+        </org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue reference="../../../dslSentence[11]/values/org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue"/>
+        <org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue reference="../../../dslSentence[11]/values/org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue[2]"/>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue reference="../../../dslSentence[11]/values/org.drools.guvnor.client.modeldriven.brl.DSLVariableValue[5]"/>
+        <org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue reference="../../../dslSentence[11]/values/org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue[3]"/>
+      </values>
+    </dslSentence>
+    <dslSentence>
+      <definition>Obs.CDVal.Time - EvaluatedPerson had {ObsCDValue:ENUM:ObservationCodedValueConcept.openCdsConceptCode} in the past {n}  {timeUnits:ENUM:EnumerationTarget.javaCalendarUnit}</definition>
+      <values>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+          <value>C72</value>
+        </org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+          <value>1</value>
+        </org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+          <value>1</value>
+        </org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue>
+          <value>ObsCDValue</value>
+          <id>ENUM:ObservationCodedValueConcept.openCdsConceptCode</id>
+        </org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+          <value>n</value>
+        </org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue>
+          <value>timeUnits</value>
+          <id>ENUM:EnumerationTarget.javaCalendarUnit</id>
+        </org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue>
+      </values>
+    </dslSentence>
+    <dslSentence>
+      <definition>Obs.CDVal.Time - EvaluatedPerson had {ObsCDValue:ENUM:ObservationCodedValueConcept.openCdsConceptCode} in the past {n}  {timeUnits:ENUM:EnumerationTarget.javaCalendarUnit}</definition>
+      <values>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+          <value>C73</value>
+        </org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+          <value>1</value>
+        </org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+          <value>1</value>
+        </org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue reference="../../../dslSentence[13]/values/org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue"/>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue reference="../../../dslSentence[13]/values/org.drools.guvnor.client.modeldriven.brl.DSLVariableValue[4]"/>
+        <org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue reference="../../../dslSentence[13]/values/org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue[2]"/>
+      </values>
+    </dslSentence>
+    <dslSentence>
+      <definition>Obs.Focus.CDVal.Past - EvaluatedPerson had {ObsFocus:ENUM:ObservationFocusConcept.openCdsConceptCode} finding of {ObsCDVal:ENUM:ObservationCodedValueConcept.openCdsConceptCode} prior to evaluation time.</definition>
+      <values>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+          <value>C270</value>
+        </org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+          <value>C91</value>
+        </org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue>
+          <value>ObsFocus</value>
+          <id>ENUM:ObservationFocusConcept.openCdsConceptCode</id>
+        </org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue>
+          <value>ObsCDVal</value>
+          <id>ENUM:ObservationCodedValueConcept.openCdsConceptCode</id>
+        </org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue>
+      </values>
+    </dslSentence>
+    <dslSentence>
+      <definition>Obs.Focus.CDVal.Past - EvaluatedPerson had {ObsFocus:ENUM:ObservationFocusConcept.openCdsConceptCode} finding of {ObsCDVal:ENUM:ObservationCodedValueConcept.openCdsConceptCode} prior to evaluation time.</definition>
+      <values>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+          <value>C269</value>
+        </org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+          <value>C91</value>
+        </org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue reference="../../../dslSentence[15]/values/org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue"/>
+        <org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue reference="../../../dslSentence[15]/values/org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue[2]"/>
+      </values>
+    </dslSentence>
+    <dslSentence>
+      <definition>Obs.Focus.CDVal.Time - EvaluatedPerson had {ObsFocus:ENUM:ObservationFocusConcept.openCdsConceptCode} finding of {ObsCDValue:ENUM:ObservationCodedValueConcept.openCdsConceptCode} in the past {n}  {timeUnits:ENUM:EnumerationTarget.javaCalendarUnit}</definition>
+      <values>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+          <value>C270</value>
+        </org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+          <value>C88</value>
+        </org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+          <value>1</value>
+        </org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+          <value>1</value>
+        </org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue>
+          <value>ObsFocus</value>
+          <id>ENUM:ObservationFocusConcept.openCdsConceptCode</id>
+        </org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue>
+          <value>ObsCDValue</value>
+          <id>ENUM:ObservationCodedValueConcept.openCdsConceptCode</id>
+        </org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+          <value>n</value>
+        </org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue>
+          <value>timeUnits</value>
+          <id>ENUM:EnumerationTarget.javaCalendarUnit</id>
+        </org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue>
+      </values>
+    </dslSentence>
+    <dslSentence>
+      <definition>Obs.Focus.CDVal.Time - EvaluatedPerson had {ObsFocus:ENUM:ObservationFocusConcept.openCdsConceptCode} finding of {ObsCDValue:ENUM:ObservationCodedValueConcept.openCdsConceptCode} in the past {n}  {timeUnits:ENUM:EnumerationTarget.javaCalendarUnit}</definition>
+      <values>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+          <value>C270</value>
+        </org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+          <value>C87</value>
+        </org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+          <value>1</value>
+        </org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+          <value>1</value>
+        </org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue reference="../../../dslSentence[17]/values/org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue"/>
+        <org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue reference="../../../dslSentence[17]/values/org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue[2]"/>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue reference="../../../dslSentence[17]/values/org.drools.guvnor.client.modeldriven.brl.DSLVariableValue[5]"/>
+        <org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue reference="../../../dslSentence[17]/values/org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue[3]"/>
+      </values>
+    </dslSentence>
+    <dslSentence>
+      <definition>Obs.Focus.Interp.Past - EvaluatedPerson had {ObsFocus:ENUM:ObservationFocusConcept.openCdsConceptCode} interpretation of {ObsInterp:ENUM:ObservationInterpretationConcept.openCdsConceptCode} prior to evaluation time.</definition>
+      <values>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+          <value>C270</value>
+        </org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+          <value>C95</value>
+        </org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue>
+          <value>ObsFocus</value>
+          <id>ENUM:ObservationFocusConcept.openCdsConceptCode</id>
+        </org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue>
+          <value>ObsInterp</value>
+          <id>ENUM:ObservationInterpretationConcept.openCdsConceptCode</id>
+        </org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue>
+      </values>
+    </dslSentence>
+    <dslSentence>
+      <definition>Obs.Focus.Interp.Past - EvaluatedPerson had {ObsFocus:ENUM:ObservationFocusConcept.openCdsConceptCode} interpretation of {ObsInterp:ENUM:ObservationInterpretationConcept.openCdsConceptCode} prior to evaluation time.</definition>
+      <values>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+          <value>C269</value>
+        </org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+          <value>C95</value>
+        </org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue reference="../../../dslSentence[19]/values/org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue"/>
+        <org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue reference="../../../dslSentence[19]/values/org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue[2]"/>
+      </values>
+    </dslSentence>
+    <dslSentence>
+      <definition>Obs.Focus.Mthd.Site.TextVal.Past - EvaluatedPerson had {ObsFocus:ENUM:ObservationFocusConcept.openCdsConceptCode} method {ObsMethod:ENUM:ObservationMethodConcept.openCdsConceptCode} site {ObsSite:ENUM:ObservationTargetBodySiteConcept.openCdsConceptCode} finding of {text} prior to evaluation time.</definition>
+      <values>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+          <value>C270</value>
+        </org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+          <value>C244</value>
+        </org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+          <value>C256</value>
+        </org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+          <value>text</value>
+        </org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue>
+          <value>ObsFocus</value>
+          <id>ENUM:ObservationFocusConcept.openCdsConceptCode</id>
+        </org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue>
+          <value>ObsMethod</value>
+          <id>ENUM:ObservationMethodConcept.openCdsConceptCode</id>
+        </org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue>
+          <value>ObsSite</value>
+          <id>ENUM:ObservationTargetBodySiteConcept.openCdsConceptCode</id>
+        </org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+          <value>text</value>
+        </org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+      </values>
+    </dslSentence>
+    <dslSentence>
+      <definition>Obs.Focus.Mthd.Site.TextVal.Past - EvaluatedPerson had {ObsFocus:ENUM:ObservationFocusConcept.openCdsConceptCode} method {ObsMethod:ENUM:ObservationMethodConcept.openCdsConceptCode} site {ObsSite:ENUM:ObservationTargetBodySiteConcept.openCdsConceptCode} finding of {text} prior to evaluation time.</definition>
+      <values>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+          <value>C269</value>
+        </org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+          <value>C244</value>
+        </org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+          <value>C256</value>
+        </org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+          <value>text</value>
+        </org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue reference="../../../dslSentence[21]/values/org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue"/>
+        <org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue reference="../../../dslSentence[21]/values/org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue[2]"/>
+        <org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue reference="../../../dslSentence[21]/values/org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue[3]"/>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue reference="../../../dslSentence[21]/values/org.drools.guvnor.client.modeldriven.brl.DSLVariableValue[5]"/>
+      </values>
+    </dslSentence>
+    <dslSentence>
+      <definition>Obs.Focus.NotCDVal.Past - EvaluatedPerson had {ObsFocus:ENUM:ObservationFocusConcept.openCdsConceptCode} with no finding of {PtObsFocusCDValPastX2:ENUM:ObservationCodedValueConcept.openCdsConceptCode} prior to evaluation time.</definition>
+      <values>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+          <value>C270</value>
+        </org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+          <value>C90</value>
+        </org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue>
+          <value>ObsFocus</value>
+          <id>ENUM:ObservationFocusConcept.openCdsConceptCode</id>
+        </org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue>
+          <value>PtObsFocusCDValPastX2</value>
+          <id>ENUM:ObservationCodedValueConcept.openCdsConceptCode</id>
+        </org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue>
+      </values>
+    </dslSentence>
+    <dslSentence>
+      <definition>Obs.Focus.NotCDVal.Past - EvaluatedPerson had {ObsFocus:ENUM:ObservationFocusConcept.openCdsConceptCode} with no finding of {PtObsFocusCDValPastX2:ENUM:ObservationCodedValueConcept.openCdsConceptCode} prior to evaluation time.</definition>
+      <values>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+          <value>C270</value>
+        </org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+          <value>C92</value>
+        </org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue reference="../../../dslSentence[23]/values/org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue"/>
+        <org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue reference="../../../dslSentence[23]/values/org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue[2]"/>
+      </values>
+    </dslSentence>
+    <dslSentence>
+      <definition>Obs.Focus.Site.CDVal.Past - EvaluatedPerson had {ObsFocus:ENUM:ObservationFocusConcept.openCdsConceptCode} site {Site:ENUM:ObservationTargetBodySiteConcept.openCdsConceptCode} finding of {CDValue:ENUM:ObservationCodedValueConcept.openCdsConceptCode} prior to evaluation time.</definition>
+      <values>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+          <value>C270</value>
+        </org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+          <value>C256</value>
+        </org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+          <value>C92</value>
+        </org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue>
+          <value>ObsFocus</value>
+          <id>ENUM:ObservationFocusConcept.openCdsConceptCode</id>
+        </org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue>
+          <value>Site</value>
+          <id>ENUM:ObservationTargetBodySiteConcept.openCdsConceptCode</id>
+        </org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue>
+          <value>CDValue</value>
+          <id>ENUM:ObservationCodedValueConcept.openCdsConceptCode</id>
+        </org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue>
+      </values>
+    </dslSentence>
+    <dslSentence>
+      <definition>Obs.Focus.Site.CDVal.Past - EvaluatedPerson had {ObsFocus:ENUM:ObservationFocusConcept.openCdsConceptCode} site {Site:ENUM:ObservationTargetBodySiteConcept.openCdsConceptCode} finding of {CDValue:ENUM:ObservationCodedValueConcept.openCdsConceptCode} prior to evaluation time.</definition>
+      <values>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+          <value>C270</value>
+        </org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+          <value>C256</value>
+        </org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+          <value>C91</value>
+        </org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue reference="../../../dslSentence[25]/values/org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue"/>
+        <org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue reference="../../../dslSentence[25]/values/org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue[2]"/>
+        <org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue reference="../../../dslSentence[25]/values/org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue[3]"/>
+      </values>
+    </dslSentence>
+    <dslSentence>
+      <definition>Obs.Focus.TextVal.Past - EvaluatedPerson had {ObsFocus:ENUM:ObservationFocusConcept.openCdsConceptCode} finding of {text} prior to evaluation time</definition>
+      <values>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+          <value>C270</value>
+        </org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+          <value>text</value>
+        </org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue>
+          <value>ObsFocus</value>
+          <id>ENUM:ObservationFocusConcept.openCdsConceptCode</id>
+        </org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+          <value>text</value>
+        </org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+      </values>
+    </dslSentence>
+    <dslSentence>
+      <definition>Obs.Focus.TextVal.Past - EvaluatedPerson had {ObsFocus:ENUM:ObservationFocusConcept.openCdsConceptCode} finding of {text} prior to evaluation time</definition>
+      <values>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+          <value>C270</value>
+        </org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+          <value>othertext</value>
+        </org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue reference="../../../dslSentence[27]/values/org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue"/>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue reference="../../../dslSentence[27]/values/org.drools.guvnor.client.modeldriven.brl.DSLVariableValue[3]"/>
+      </values>
+    </dslSentence>
+    <dslSentence>
+      <definition>Obs.Focus.Time - EvaluatedPerson had {ObsFocus:ENUM:ObservationFocusConcept.openCdsConceptCode} in the past {n}  {timeUnits:ENUM:EnumerationTarget.javaCalendarUnit}</definition>
+      <values>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+          <value>C270</value>
+        </org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+          <value>1</value>
+        </org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+          <value>1</value>
+        </org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue>
+          <value>ObsFocus</value>
+          <id>ENUM:ObservationFocusConcept.openCdsConceptCode</id>
+        </org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+          <value>n</value>
+        </org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue>
+          <value>timeUnits</value>
+          <id>ENUM:EnumerationTarget.javaCalendarUnit</id>
+        </org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue>
+      </values>
+    </dslSentence>
+    <dslSentence>
+      <definition>Obs.Focus.Time - EvaluatedPerson had {ObsFocus:ENUM:ObservationFocusConcept.openCdsConceptCode} in the past {n}  {timeUnits:ENUM:EnumerationTarget.javaCalendarUnit}</definition>
+      <values>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+          <value>C274</value>
+        </org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+          <value>1</value>
+        </org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+          <value>1</value>
+        </org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue reference="../../../dslSentence[29]/values/org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue"/>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue reference="../../../dslSentence[29]/values/org.drools.guvnor.client.modeldriven.brl.DSLVariableValue[4]"/>
+        <org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue reference="../../../dslSentence[29]/values/org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue[2]"/>
+      </values>
+    </dslSentence>
+    <dslSentence>
+      <definition>Obs.Focus.CDVal.Interp.Past - EvaluatedPerson had {ObsFocus:ENUM:ObservationFocusConcept.openCdsConceptCode} finding of {ObsCD:ENUM:ObservationCodedValueConcept.openCdsConceptCode} for {Interp:ENUM:ObservationInterpretationConcept.openCdsConceptCode} prior to evaluation time.</definition>
+      <values>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+          <value>C270</value>
+        </org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+          <value>C72</value>
+        </org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+          <value>C96</value>
+        </org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue>
+          <value>ObsFocus</value>
+          <id>ENUM:ObservationFocusConcept.openCdsConceptCode</id>
+        </org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue>
+          <value>ObsCD</value>
+          <id>ENUM:ObservationCodedValueConcept.openCdsConceptCode</id>
+        </org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue>
+          <value>Interp</value>
+          <id>ENUM:ObservationInterpretationConcept.openCdsConceptCode</id>
+        </org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue>
+      </values>
+    </dslSentence>
+    <dslSentence>
+      <definition>Obs.Focus.CDVal.Interp.Past - EvaluatedPerson had {ObsFocus:ENUM:ObservationFocusConcept.openCdsConceptCode} finding of {ObsCD:ENUM:ObservationCodedValueConcept.openCdsConceptCode} for {Interp:ENUM:ObservationInterpretationConcept.openCdsConceptCode} prior to evaluation time.</definition>
+      <values>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+          <value>C270</value>
+        </org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+          <value>C72</value>
+        </org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+          <value>C95</value>
+        </org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue reference="../../../dslSentence[31]/values/org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue"/>
+        <org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue reference="../../../dslSentence[31]/values/org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue[2]"/>
+        <org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue reference="../../../dslSentence[31]/values/org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue[3]"/>
+      </values>
+    </dslSentence>
+    <dslSentence>
+      <definition>Obs.Focus.Past - EvaluatedPerson had {ObsFocus:ENUM:ObservationFocusConcept.openCdsConceptCode} prior to evaluation time</definition>
+      <values>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+          <value>C270</value>
+        </org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue>
+          <value>ObsFocus</value>
+          <id>ENUM:ObservationFocusConcept.openCdsConceptCode</id>
+        </org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue>
+      </values>
+    </dslSentence>
+    <dslSentence>
+      <definition>Obs.Focus.Past - EvaluatedPerson had {ObsFocus:ENUM:ObservationFocusConcept.openCdsConceptCode} prior to evaluation time</definition>
+      <values>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+          <value>C64</value>
+        </org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue reference="../../../dslSentence[33]/values/org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue"/>
+      </values>
+    </dslSentence>
+    <dslSentence>
+      <definition>Prb.EncId - EvaluatedPerson had {Problem:ENUM:ProblemConcept.openCdsConceptCode} as {Role:ENUM:ClinicalStatementRelationshipConcept.openCdsConceptCode}  {EncId:ENUM:EncounterId.reference} above</definition>
+      <values>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+          <value>C312</value>
+        </org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+          <value>C67</value>
+        </org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+          <value>A</value>
+        </org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue>
+          <value>Problem</value>
+          <id>ENUM:ProblemConcept.openCdsConceptCode</id>
+        </org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue>
+          <value>Role</value>
+          <id>ENUM:ClinicalStatementRelationshipConcept.openCdsConceptCode</id>
+        </org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue>
+          <value>EncId</value>
+          <id>ENUM:EncounterId.reference</id>
+        </org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue>
+      </values>
+    </dslSentence>
+    <dslSentence>
+      <definition>Prb.EncId - EvaluatedPerson had {Problem:ENUM:ProblemConcept.openCdsConceptCode} as {Role:ENUM:ClinicalStatementRelationshipConcept.openCdsConceptCode}  {EncId:ENUM:EncounterId.reference} above</definition>
+      <values>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+          <value>C312</value>
+        </org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+          <value>C67</value>
+        </org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+          <value>B</value>
+        </org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue reference="../../../dslSentence[35]/values/org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue"/>
+        <org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue reference="../../../dslSentence[35]/values/org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue[2]"/>
+        <org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue reference="../../../dslSentence[35]/values/org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue[3]"/>
+      </values>
+    </dslSentence>
+    <dslSentence>
+      <definition>Prb.EncId.Imp - EvaluatedPerson had {Import:ENUM:ProblemImportanceConcept.openCdsConceptCode} diagnosis of {Problem:ENUM:ProblemConcept.openCdsConceptCode} as {Role:ENUM:ClinicalStatementRelationshipConcept.openCdsConceptCode}  {EncId:ENUM:EncounterId.reference} above</definition>
+      <values>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+          <value>C416</value>
+        </org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+          <value>C312</value>
+        </org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+          <value>C67</value>
+        </org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+          <value>A</value>
+        </org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue>
+          <value>Import</value>
+          <id>ENUM:ProblemImportanceConcept.openCdsConceptCode</id>
+        </org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue>
+          <value>Problem</value>
+          <id>ENUM:ProblemConcept.openCdsConceptCode</id>
+        </org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue>
+          <value>Role</value>
+          <id>ENUM:ClinicalStatementRelationshipConcept.openCdsConceptCode</id>
+        </org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue>
+          <value>EncId</value>
+          <id>ENUM:EncounterId.reference</id>
+        </org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue>
+      </values>
+    </dslSentence>
+    <dslSentence>
+      <definition>Prb.EncId.Imp - EvaluatedPerson had {Import:ENUM:ProblemImportanceConcept.openCdsConceptCode} diagnosis of {Problem:ENUM:ProblemConcept.openCdsConceptCode} as {Role:ENUM:ClinicalStatementRelationshipConcept.openCdsConceptCode}  {EncId:ENUM:EncounterId.reference} above</definition>
+      <values>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+          <value>C416</value>
+        </org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+          <value>C312</value>
+        </org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+          <value>C67</value>
+        </org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+          <value>B</value>
+        </org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue reference="../../../dslSentence[37]/values/org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue"/>
+        <org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue reference="../../../dslSentence[37]/values/org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue[2]"/>
+        <org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue reference="../../../dslSentence[37]/values/org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue[3]"/>
+        <org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue reference="../../../dslSentence[37]/values/org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue[4]"/>
+      </values>
+    </dslSentence>
+    <dslSentence>
+      <definition>Proc.Count.Past - EvaluatedPerson had {Proc:ENUM:ProcedureConcept.openCdsConceptCode}  {n1} or more times.</definition>
+      <values>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+          <value>C374</value>
+        </org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+          <value>1</value>
+        </org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue>
+          <value>Proc</value>
+          <id>ENUM:ProcedureConcept.openCdsConceptCode</id>
+        </org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+          <value>n1</value>
+        </org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+      </values>
+    </dslSentence>
+    <dslSentence>
+      <definition>Proc.Count.Past - EvaluatedPerson had {Proc:ENUM:ProcedureConcept.openCdsConceptCode}  {n1} or more times.</definition>
+      <values>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+          <value>C361</value>
+        </org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+          <value>1</value>
+        </org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue reference="../../../dslSentence[39]/values/org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue"/>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue reference="../../../dslSentence[39]/values/org.drools.guvnor.client.modeldriven.brl.DSLVariableValue[3]"/>
+      </values>
+    </dslSentence>
+    <dslSentence>
+      <definition>Proc.Count.Time - EvaluatedPerson had {Procedure:ENUM:ProcedureConcept.openCdsConceptCode}  {n1} or more times in the past {n2}  {timeUnits:ENUM:EnumerationTarget.javaCalendarUnit}</definition>
+      <values>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+          <value>C374</value>
+        </org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+          <value>1</value>
+        </org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+          <value>1</value>
+        </org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+          <value>1</value>
+        </org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue>
+          <value>Procedure</value>
+          <id>ENUM:ProcedureConcept.openCdsConceptCode</id>
+        </org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+          <value>n1</value>
+        </org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+          <value>n2</value>
+        </org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue>
+          <value>timeUnits</value>
+          <id>ENUM:EnumerationTarget.javaCalendarUnit</id>
+        </org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue>
+      </values>
+    </dslSentence>
+    <dslSentence>
+      <definition>Proc.Count.Time - EvaluatedPerson had {Procedure:ENUM:ProcedureConcept.openCdsConceptCode}  {n1} or more times in the past {n2}  {timeUnits:ENUM:EnumerationTarget.javaCalendarUnit}</definition>
+      <values>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+          <value>C49</value>
+        </org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+          <value>1</value>
+        </org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+          <value>1</value>
+        </org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+          <value>1</value>
+        </org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue reference="../../../dslSentence[41]/values/org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue"/>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue reference="../../../dslSentence[41]/values/org.drools.guvnor.client.modeldriven.brl.DSLVariableValue[5]"/>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue reference="../../../dslSentence[41]/values/org.drools.guvnor.client.modeldriven.brl.DSLVariableValue[6]"/>
+        <org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue reference="../../../dslSentence[41]/values/org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue[2]"/>
+      </values>
+    </dslSentence>
+    <dslSentence>
+      <definition>Proc.EncId - EvaluatedPerson had {Proc:ENUM:ProcedureConcept.openCdsConceptCode} as {Role:ENUM:ClinicalStatementRelationshipConcept.openCdsConceptCode}  {EncId:ENUM:EncounterId.reference} above</definition>
+      <values>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+          <value>C374</value>
+        </org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+          <value>C67</value>
+        </org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+          <value>A</value>
+        </org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue>
+          <value>Proc</value>
+          <id>ENUM:ProcedureConcept.openCdsConceptCode</id>
+        </org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue>
+          <value>Role</value>
+          <id>ENUM:ClinicalStatementRelationshipConcept.openCdsConceptCode</id>
+        </org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue>
+          <value>EncId</value>
+          <id>ENUM:EncounterId.reference</id>
+        </org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue>
+      </values>
+    </dslSentence>
+    <dslSentence>
+      <definition>Proc.EncId - EvaluatedPerson had {Proc:ENUM:ProcedureConcept.openCdsConceptCode} as {Role:ENUM:ClinicalStatementRelationshipConcept.openCdsConceptCode}  {EncId:ENUM:EncounterId.reference} above</definition>
+      <values>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+          <value>C374</value>
+        </org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+          <value>C67</value>
+        </org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+          <value>B</value>
+        </org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue reference="../../../dslSentence[43]/values/org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue"/>
+        <org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue reference="../../../dslSentence[43]/values/org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue[2]"/>
+        <org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue reference="../../../dslSentence[43]/values/org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue[3]"/>
+      </values>
+    </dslSentence>
+    <dslSentence>
+      <definition>Proc.Lat.Past - EvaluatedPerson had {Proc:ENUM:ProcedureConcept.openCdsConceptCode} with a laterality of {SiteLat:ENUM:ProcedureTargetBodySiteLateralityConcept.openCdsConceptCode} prior to evaluation time</definition>
+      <values>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+          <value>C374</value>
+        </org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+          <value>C399</value>
+        </org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue>
+          <value>Proc</value>
+          <id>ENUM:ProcedureConcept.openCdsConceptCode</id>
+        </org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue>
+          <value>SiteLat</value>
+          <id>ENUM:ProcedureTargetBodySiteLateralityConcept.openCdsConceptCode</id>
+        </org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue>
+      </values>
+    </dslSentence>
+    <dslSentence>
+      <definition>Proc.Lat.Past - EvaluatedPerson had {Proc:ENUM:ProcedureConcept.openCdsConceptCode} with a laterality of {SiteLat:ENUM:ProcedureTargetBodySiteLateralityConcept.openCdsConceptCode} prior to evaluation time</definition>
+      <values>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+          <value>C374</value>
+        </org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+          <value>C400</value>
+        </org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue reference="../../../dslSentence[45]/values/org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue"/>
+        <org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue reference="../../../dslSentence[45]/values/org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue[2]"/>
+      </values>
+    </dslSentence>
+    <dslSentence>
+      <definition>Proc.Lat.Time - EvaluatedPerson had {Proc:ENUM:ProcedureConcept.openCdsConceptCode} with a laterality of {SiteLat:ENUM:ProcedureTargetBodySiteLateralityConcept.openCdsConceptCode} in the past {n}  {timeUnits:ENUM:EnumerationTarget.javaCalendarUnit}</definition>
+      <values>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+          <value>C374</value>
+        </org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+          <value>C399</value>
+        </org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+          <value>1</value>
+        </org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+          <value>1</value>
+        </org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue>
+          <value>Proc</value>
+          <id>ENUM:ProcedureConcept.openCdsConceptCode</id>
+        </org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue>
+          <value>SiteLat</value>
+          <id>ENUM:ProcedureTargetBodySiteLateralityConcept.openCdsConceptCode</id>
+        </org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+          <value>n</value>
+        </org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue>
+          <value>timeUnits</value>
+          <id>ENUM:EnumerationTarget.javaCalendarUnit</id>
+        </org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue>
+      </values>
+    </dslSentence>
+    <dslSentence>
+      <definition>Proc.Lat.Time - EvaluatedPerson had {Proc:ENUM:ProcedureConcept.openCdsConceptCode} with a laterality of {SiteLat:ENUM:ProcedureTargetBodySiteLateralityConcept.openCdsConceptCode} in the past {n}  {timeUnits:ENUM:EnumerationTarget.javaCalendarUnit}</definition>
+      <values>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+          <value>C374</value>
+        </org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+          <value>C400</value>
+        </org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+          <value>1</value>
+        </org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+          <value>1</value>
+        </org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue reference="../../../dslSentence[47]/values/org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue"/>
+        <org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue reference="../../../dslSentence[47]/values/org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue[2]"/>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue reference="../../../dslSentence[47]/values/org.drools.guvnor.client.modeldriven.brl.DSLVariableValue[5]"/>
+        <org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue reference="../../../dslSentence[47]/values/org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue[3]"/>
+      </values>
+    </dslSentence>
+    <dslSentence>
+      <definition>Proc.Past - EvaluatedPerson had {Proc:ENUM:ProcedureConcept.openCdsConceptCode}</definition>
+      <values>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+          <value>C374</value>
+        </org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue>
+          <value>Proc</value>
+          <id>ENUM:ProcedureConcept.openCdsConceptCode</id>
+        </org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue>
+      </values>
+    </dslSentence>
+    <dslSentence>
+      <definition>Proc.Past - EvaluatedPerson had {Proc:ENUM:ProcedureConcept.openCdsConceptCode}</definition>
+      <values>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+          <value>C46</value>
+        </org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue reference="../../../dslSentence[49]/values/org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue"/>
+      </values>
+    </dslSentence>
+    <dslSentence>
+      <definition>Proc.Time - EvaluatedPerson had {Proc:ENUM:ProcedureConcept.openCdsConceptCode} in the past {n}  {timeUnits:ENUM:EnumerationTarget.javaCalendarUnit}</definition>
+      <values>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+          <value>C374</value>
+        </org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+          <value>1</value>
+        </org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+          <value>1</value>
+        </org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue>
+          <value>Proc</value>
+          <id>ENUM:ProcedureConcept.openCdsConceptCode</id>
+        </org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+          <value>n</value>
+        </org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue>
+          <value>timeUnits</value>
+          <id>ENUM:EnumerationTarget.javaCalendarUnit</id>
+        </org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue>
+      </values>
+    </dslSentence>
+    <dslSentence>
+      <definition>Proc.Time - EvaluatedPerson had {Proc:ENUM:ProcedureConcept.openCdsConceptCode} in the past {n}  {timeUnits:ENUM:EnumerationTarget.javaCalendarUnit}</definition>
+      <values>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+          <value>C365</value>
+        </org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+          <value>1</value>
+        </org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+          <value>1</value>
+        </org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue reference="../../../dslSentence[51]/values/org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue"/>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue reference="../../../dslSentence[51]/values/org.drools.guvnor.client.modeldriven.brl.DSLVariableValue[4]"/>
+        <org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue reference="../../../dslSentence[51]/values/org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue[2]"/>
+      </values>
+    </dslSentence>
+  </lhs>
+  <rhs/>
+  <isNegated>false</isNegated>
+</rule>

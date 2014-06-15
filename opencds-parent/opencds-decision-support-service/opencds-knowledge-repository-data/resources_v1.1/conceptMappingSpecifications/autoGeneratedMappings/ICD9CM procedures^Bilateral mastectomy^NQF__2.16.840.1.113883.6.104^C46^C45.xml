@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+     <OpenCdsConceptMappingSpecificationFile>
+          <specificationNotes>Created using ApelonConceptMappingSpecificationFileCreator.</specificationNotes>
+          <openCdsConcept code="C46" displayName="Bilateral mastectomy"></openCdsConcept>
+          <conceptDeterminationMethod code="C45" displayName="NQF"></conceptDeterminationMethod>
+          <membersForCodeSystem codeSystem="2.16.840.1.113883.6.104" codeSystemName="ICD9CM procedures">
+               <CD code="85.42" displayName="Bilateral simple mastectomy [85.42]"></CD>
+               <CD code="85.44" displayName="Bilateral extended simple mastectomy [85.44]"></CD>
+               <CD code="85.46" displayName="Bilateral radical mastectomy [85.46]"></CD>
+               <CD code="85.48" displayName="Bilateral extended radical mastectomy [85.48]"></CD>
+          </membersForCodeSystem>
+     </OpenCdsConceptMappingSpecificationFile>

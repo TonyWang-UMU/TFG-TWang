@@ -1,0 +1,2499 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OpenCdsConceptMappingSpecificationFile>
+	<specificationNotes>Created manually from AHRQ PSI specifications.</specificationNotes>
+    <openCdsConcept code="C377" displayName="Operating Room Therapeutic Procedure"/>
+    <conceptDeterminationMethod code="C267" displayName="AHRQ"/>
+    <membersForCodeSystem codeSystem="2.16.840.1.113883.6.104" codeSystemName="ICD9CM procedures">
+    	<CD code="00.50" displayName="IMPL CRT PACEMAKER SYS"/>
+    	<CD code="00.51" displayName="IMPL CRT DEFIBRILLAT SYS"/>
+    	<CD code="00.52" displayName="IMP/REP LEAD LF VEN SYS"/>
+    	<CD code="00.53" displayName="IMP/REP CRT PACEMAKR GEN"/>
+    	<CD code="00.54" displayName="IMP/REP CRT DEFIB GENAT"/>
+    	<CD code="00.56" displayName="INS/REP IMPL SENSOR LEAD (OCT06)"/>
+    	<CD code="00.57" displayName="IMP/REP SUBCUE CARD DEV (OCT06)"/>
+    	<CD code="00.61" displayName="PERC ANGIO PRECEREB VES (OCT04)"/>
+    	<CD code="00.62" displayName="PERC ANGIO INTRACRAN VES (OCT04)"/>
+    	<CD code="00.66" displayName="PTCA OR CORONARY ATHER (OCT05)"/>
+    	<CD code="00.70" displayName="REV HIP REPL-ACETAB/FEM (OCT05)"/>
+    	<CD code="00.71" displayName="REV HIP REPL-ACETAB COMP (OCT05)"/>
+    	<CD code="00.72" displayName="REV HIP REPL-FEM COMP (OCT05)"/>
+    	<CD code="00.73" displayName="REV HIP REPL-LINER/HEAD (OCT05)"/>
+    	<CD code="00.80" displayName="REV KNEE REPLACEMT-TOTAL (OCT05)"/>
+    	<CD code="00.81" displayName="REV KNEE REPL-TIBIA COMP (OCT05)"/>
+    	<CD code="00.82" displayName="REV KNEE REPL-FEMUR COMP (OCT05)"/>
+    	<CD code="00.83" displayName="REV KNEE REPLACE-PATELLA (OCT05)"/>
+    	<CD code="00.84" displayName="REV KNEE REPL-TIBIA LIN (OCT05)"/>
+    	<CD code="00.85" displayName="RESRF HIPTOTAL-ACET/FEM (OCT06)"/>
+    	<CD code="00.86" displayName="RESRF HIPPART-FEM HEAD (OCT06)"/>
+    	<CD code="00.87" displayName="RESRF HIPPART-ACETABLUM (OCT06)"/>
+    	<CD code="00.94" displayName="INTRA-OP NEURO PHYS MONTR (OCT08)"/>
+    	<CD code="01.10" displayName="INTRACRAN PRESSURE MONTR (OCT08)"/>
+    	<CD code="01.12" displayName="OPEN CEREB MENINGES BX"/>
+    	<CD code="01.14" displayName="OPEN BRAIN BIOPSY"/>
+    	<CD code="01.15" displayName="SKULL BIOPSY"/>
+    	<CD code="01.16" displayName="INTRACRANIAL 02 MONITOR (OCT08)"/>
+    	<CD code="01.17" displayName="BRAIN TEMP MONITORING (OCT08)"/>
+    	<CD code="01.18" displayName="OTHER BRAIN DX PROCEDURE"/>
+    	<CD code="01.19" displayName="OTHER SKULL DX PROCEDURE"/>
+    	<CD code="01.21" displayName="CRANIAL SINUS I + D"/>
+    	<CD code="01.22" displayName="REMOV INTRACRAN STIMULAT"/>
+    	<CD code="01.23" displayName="REOPEN CRANIOTOMY SITE"/>
+    	<CD code="01.24" displayName="OTHER CRANIOTOMY"/>
+    	<CD code="01.25" displayName="OTHER CRANIECTOMY"/>
+    	<CD code="01.28" displayName="INTRACEREB CTH-BURR HOLE (OCT06)"/>
+    	<CD code="01.31" displayName="INCISE CEREBRAL MENINGES"/>
+    	<CD code="01.32" displayName="LOBOTOMY + TRACTOTOMY"/>
+    	<CD code="01.39" displayName="OTHER BRAIN INCISION"/>
+    	<CD code="01.41" displayName="THALAMUS OPERATIONS"/>
+    	<CD code="01.42" displayName="GLOBUS PALLIDUS OPS"/>
+    	<CD code="01.51" displayName="EX CEREB MENINGEAL LES"/>
+    	<CD code="01.52" displayName="HEMISPHERECTOMY"/>
+    	<CD code="01.53" displayName="BRAIN LOBECTOMY"/>
+    	<CD code="01.59" displayName="OTHER BRAIN EXCISION"/>
+    	<CD code="01.6" displayName="EXCISE SKULL LESION"/>
+    	<CD code="02.01" displayName="LINEAR CRANIECTOMY"/>
+    	<CD code="02.02" displayName="ELEVATE SKULL FX FRAGMNT"/>
+    	<CD code="02.03" displayName="SKULL FLAP FORMATION"/>
+    	<CD code="02.04" displayName="BONE GRAFT TO SKULL"/>
+    	<CD code="02.05" displayName="SKULL PLATE INSERTION"/>
+    	<CD code="02.06" displayName="CRANIAL OSTEOPLASTY NEC"/>
+    	<CD code="02.07" displayName="SKULL PLATE REMOVAL"/>
+    	<CD code="02.11" displayName="SIMPLE SUTURE OF DURA"/>
+    	<CD code="02.12" displayName="BRAIN MENINGE REPAIR NEC"/>
+    	<CD code="02.13" displayName="MENINGE VESSEL LIGATION"/>
+    	<CD code="02.14" displayName="CHOROID PLEXECTOMY"/>
+    	<CD code="02.2" displayName="VENTRICULOSTOMY"/>
+    	<CD code="02.31" displayName="VENTRICL SHUNT-HEAD/NECK"/>
+    	<CD code="02.32" displayName="VENTRI SHUNT-CIRCULA SYS"/>
+    	<CD code="02.33" displayName="VENTRICL SHUNT-THORAX"/>
+    	<CD code="02.34" displayName="VENTRICL SHUNT-ABDOMEN"/>
+    	<CD code="02.35" displayName="VENTRI SHUNT-UNINARY SYS"/>
+    	<CD code="02.39" displayName="OTHER VENTRICULAR SHUNT"/>
+    	<CD code="02.42" displayName="REPLACE VENTRICLE SHUNT"/>
+    	<CD code="02.43" displayName="REMOVE VENTRICLE SHUNT"/>
+    	<CD code="02.91" displayName="LYSIS CORTICAL ADHESION"/>
+    	<CD code="02.92" displayName="BRAIN REPAIR"/>
+    	<CD code="02.93" displayName="IMPLANT BRAIN STIMULATOR"/>
+    	<CD code="02.94" displayName="INSERT/REPLAC SKULL TONG"/>
+    	<CD code="02.99" displayName="SKULL + BRAIN OP NEC"/>
+    	<CD code="03.01" displayName="REMOVAL FB SPINAL CANAL"/>
+    	<CD code="03.02" displayName="REOPEN LAMINECTOMY SITE"/>
+    	<CD code="03.09" displayName="SPINAL CANAL EXPLOR NEC"/>
+    	<CD code="03.1" displayName="INTRASPIN NERVE ROOT DIV"/>
+    	<CD code="03.21" displayName="PERCUTANEOUS CHORDOTOMY"/>
+    	<CD code="03.29" displayName="OTHER CHORDOTOMY"/>
+    	<CD code="03.32" displayName="SPINAL CORD/MENINGES BX"/>
+    	<CD code="03.39" displayName="OTHER SPINAL DX PROC"/>
+    	<CD code="03.4" displayName="EXCIS SPINAL CORD LESION"/>
+    	<CD code="03.51" displayName="SPINE MENINGOCELE REPAIR"/>
+    	<CD code="03.52" displayName="MYELOMENINGOCEL REPAIR"/>
+    	<CD code="03.53" displayName="VERTEBRAL FX REPAIR"/>
+    	<CD code="03.59" displayName="SPINAL STRUCT REPAIR NEC"/>
+    	<CD code="03.6" displayName="SPINAL CORD ADHESIOLYSIS"/>
+    	<CD code="03.71" displayName="SUBARACH-PERITON SHUNT"/>
+    	<CD code="03.72" displayName="SUBARACH-URETERAL SHUNT"/>
+    	<CD code="03.79" displayName="OTH SPINAL THECAL SHUNT"/>
+    	<CD code="03.93" displayName="INSERT SPINAL STIMULATOR"/>
+    	<CD code="03.94" displayName="REMOVE SPINAL STIMULATOR"/>
+    	<CD code="03.97" displayName="REVISE SPINE THECA SHUNT"/>
+    	<CD code="03.98" displayName="REMOVE SPINE THECA SHUNT"/>
+    	<CD code="03.99" displayName="SPINE CANAL STRUC OP NEC"/>
+    	<CD code="04.01" displayName="EXCISION ACOUSTC NEUROMA"/>
+    	<CD code="04.02" displayName="TRIGEMINAL NERV DIVISION"/>
+    	<CD code="04.03" displayName="PERIPH NERVE DIV NEC"/>
+    	<CD code="04.04" displayName="PERIPH NERVE INCIS NEC"/>
+    	<CD code="04.05" displayName="GASSERIAN GANGLIONECTOMY"/>
+    	<CD code="04.06" displayName="PERIPH GANGLIONECT NEC"/>
+    	<CD code="04.07" displayName="PERIPH NERV EXCISION NEC"/>
+    	<CD code="04.12" displayName="OPEN PERIPH NERVE BIOPSY"/>
+    	<CD code="04.19" displayName="PERIPH NERVE DX PROC NEC"/>
+    	<CD code="04.3" displayName="PERIPHERAL NERVE SUTURE"/>
+    	<CD code="04.41" displayName="DECOMPRESS TRIGEM ROOT"/>
+    	<CD code="04.42" displayName="CRAN NERV ROOT DECOM NEC"/>
+    	<CD code="04.43" displayName="CARPAL TUNNEL RELEASE"/>
+    	<CD code="04.44" displayName="TARSAL TUNNEL RELEASE"/>
+    	<CD code="04.49" displayName="PER NERVE ADHESIOLYS NEC"/>
+    	<CD code="04.5" displayName="PERIPHERAL NERVE GRAFT"/>
+    	<CD code="04.6" displayName="PERIPH NERVE TRANSPOSIT"/>
+    	<CD code="04.71" displayName="HYPOGLOSS-FACIAL ANASTOM"/>
+    	<CD code="04.72" displayName="ACCESSORY-FACIAL ANASTOM"/>
+    	<CD code="04.73" displayName="ACCESS-HYPOGLOSS ANASTOM"/>
+    	<CD code="04.74" displayName="PERIPH NERV ANASTOM NEC"/>
+    	<CD code="04.75" displayName="POSTOP REVIS PER NERV OP"/>
+    	<CD code="04.76" displayName="LATE REPAIR PER NERV INJ"/>
+    	<CD code="04.79" displayName="OTHER NEUROPLASTY"/>
+    	<CD code="04.91" displayName="NEURECTASIS"/>
+    	<CD code="04.92" displayName="IMPLANT PERIPH STIMULAT"/>
+    	<CD code="04.93" displayName="REMOVE PERIPH STIMULATOR"/>
+    	<CD code="04.99" displayName="PERIPHERAL NERVE OPS NEC"/>
+    	<CD code="05.0" displayName="SYMPATH NERVE DIVISION"/>
+    	<CD code="05.11" displayName="SYMPATHETIC NERVE BIOPSY"/>
+    	<CD code="05.19" displayName="SYMPATH NRV DX PROC NEC"/>
+    	<CD code="05.21" displayName="SPHENOPALATIN GANGLIONEC"/>
+    	<CD code="05.22" displayName="CERVICAL SYMPATHECTOMY"/>
+    	<CD code="05.23" displayName="LUMBAR SYMPATHECTOMY"/>
+    	<CD code="05.24" displayName="PRESACRAL SYMPATHECTOMY"/>
+    	<CD code="05.25" displayName="PERIART SYMPATHECTOMY"/>
+    	<CD code="05.29" displayName="OTHER SYMPATHECTOMY"/>
+    	<CD code="05.81" displayName="SYMPATHETIC NERVE REPAIR"/>
+    	<CD code="05.89" displayName="SYMPATHETIC NERVE OP NEC"/>
+    	<CD code="05.9" displayName="OTHER NERVOUS SYSTEM OPS"/>
+    	<CD code="06.02" displayName="REOPEN THYROID FIELD WND"/>
+    	<CD code="06.09" displayName="INCIS THYROID FIELD NEC"/>
+    	<CD code="06.12" displayName="OPEN THYROID GLAND BX"/>
+    	<CD code="06.13" displayName="PARATHYROID BIOPSY"/>
+    	<CD code="06.19" displayName="THYR/PARATHY DX PROC NEC"/>
+    	<CD code="06.2" displayName="UNILAT THYROID LOBECTOMY"/>
+    	<CD code="06.31" displayName="EXCISION THYROID LESION"/>
+    	<CD code="06.39" displayName="PART THYROIDECTOMY NEC"/>
+    	<CD code="06.4" displayName="COMPLETE THYROIDECTOMY"/>
+    	<CD code="06.50" displayName="SUBSTERN THYROIDECT NOS"/>
+    	<CD code="06.51" displayName="PART SUBSTERN THYROIDECT"/>
+    	<CD code="06.52" displayName="TOT SUBSTERN THYROIDECT"/>
+    	<CD code="06.6" displayName="LINGUAL THYROID EXCISION"/>
+    	<CD code="06.7" displayName="THYROGLOSS DUCT EXCISION"/>
+    	<CD code="06.81" displayName="TOTAL PARATHYROIDECTOMY"/>
+    	<CD code="06.89" displayName="OTHER PARATHYROIDECTOMY"/>
+    	<CD code="06.91" displayName="THYROID ISTHMUS DIVISION"/>
+    	<CD code="06.92" displayName="THYROID VESSEL LIGATION"/>
+    	<CD code="06.93" displayName="THYROID SUTURE"/>
+    	<CD code="06.94" displayName="THYROID REIMPLANTATION"/>
+    	<CD code="06.95" displayName="PARATHYROID REIMPLANT"/>
+    	<CD code="06.98" displayName="OTHER THYROID OPERATIONS"/>
+    	<CD code="06.99" displayName="OTHER PARATHYROID OPS"/>
+    	<CD code="07.00" displayName="ADRENAL EXPLORATION NOS"/>
+    	<CD code="07.01" displayName="UNILAT ADRENAL EXPLORAT"/>
+    	<CD code="07.02" displayName="BILAT ADRENAL EXPLORAT"/>
+    	<CD code="07.12" displayName="OPEN ADRENAL GLAND BX"/>
+    	<CD code="07.13" displayName="TRANSFRONT PITUITARY BX"/>
+    	<CD code="07.14" displayName="TRANSPHEN PITUITARY BX"/>
+    	<CD code="07.15" displayName="PITUITARY BIOPSY NOS"/>
+    	<CD code="07.16" displayName="THYMUS BIOPSY"/>
+    	<CD code="07.17" displayName="PINEAL BIOPSY"/>
+    	<CD code="07.19" displayName="ENDOCRINE DX PROC NEC"/>
+    	<CD code="07.21" displayName="ADRENAL LESION EXCISION"/>
+    	<CD code="07.22" displayName="UNILATERAL ADRENALECTOMY"/>
+    	<CD code="07.29" displayName="PART ADRENALECTOMY NEC"/>
+    	<CD code="07.3" displayName="BILATERAL ADRENALECTOMY"/>
+    	<CD code="07.41" displayName="ADRENAL INCISION"/>
+    	<CD code="07.42" displayName="ADRENAL NERVE DIVISION"/>
+    	<CD code="07.43" displayName="ADRENAL VESSEL LIGATION"/>
+    	<CD code="07.44" displayName="ADRENAL REPAIR"/>
+    	<CD code="07.45" displayName="ADRENAL REIMPLANTATION"/>
+    	<CD code="07.49" displayName="ADRENAL OPERATION NEC"/>
+    	<CD code="07.51" displayName="PINEAL FIELD EXPLORATION"/>
+    	<CD code="07.52" displayName="PINEAL GLAND INCISION"/>
+    	<CD code="07.53" displayName="PARTIAL PINEALECTOMY"/>
+    	<CD code="07.54" displayName="TOTAL PINEALECTOMY"/>
+    	<CD code="07.59" displayName="PINEAL OPERATION NEC"/>
+    	<CD code="07.61" displayName="EXC PITUIT LES-TRANSFRON"/>
+    	<CD code="07.62" displayName="EXC PITUIT LES-TRANSPHEN"/>
+    	<CD code="07.63" displayName="PART EXCIS PITUITARY NOS"/>
+    	<CD code="07.64" displayName="TOT EXC PITUIT-TRANSFRON"/>
+    	<CD code="07.65" displayName="TOT EXC PITUIT-TRANSPHEN"/>
+    	<CD code="07.68" displayName="TOTAL EXC PITUITARY NEC"/>
+    	<CD code="07.69" displayName="TOTAL EXC PITUITARY NOS"/>
+    	<CD code="07.71" displayName="PITUITARY FOSSA EXPLORAT"/>
+    	<CD code="07.72" displayName="PITUITARY GLAND INCISION"/>
+    	<CD code="07.79" displayName="PITUITARY OPERATION NEC"/>
+    	<CD code="07.80" displayName="THYMECTOMY NOS"/>
+    	<CD code="07.81" displayName="PART EXCISION OF THYMUS"/>
+    	<CD code="07.82" displayName="TOTAL EXCISION OF THYMUS"/>
+    	<CD code="07.83" displayName="THORAC PART EXISN THYMUS (OCT08)"/>
+    	<CD code="07.84" displayName="THORAC TOTAL EXC THYMUS (OCT08)"/>
+    	<CD code="07.91" displayName="THYMUS FIELD EXPLORATION"/>
+    	<CD code="07.92" displayName="INCISION OF THYMUS"/>
+    	<CD code="07.93" displayName="REPAIR OF THYMUS"/>
+    	<CD code="07.94" displayName="THYMUS TRANSPLANTATION"/>
+    	<CD code="07.95" displayName="THORAC INCISION THYMUS (OCT08)"/>
+    	<CD code="07.98" displayName="OTH THORAC OP THYMUS NOS (OCT08)"/>
+    	<CD code="07.99" displayName="THYMUS OPERATION NEC"/>
+    	<CD code="08.11" displayName="EYELID BIOPSY"/>
+    	<CD code="08.20" displayName="REMOVE EYELID LESION NOS"/>
+    	<CD code="08.21" displayName="CHALAZION EXCISION"/>
+    	<CD code="08.22" displayName="EXCISE MINOR LES LID NEC"/>
+    	<CD code="08.23" displayName="EXC MAJ LES LID PRT-THIC"/>
+    	<CD code="08.24" displayName="EXC MAJ LES LID FUL-THIC"/>
+    	<CD code="08.25" displayName="DESTRUCTION LID LESION"/>
+    	<CD code="08.31" displayName="PTOSIS REP-FRONT MUS SUT"/>
+    	<CD code="08.32" displayName="PTOSIS REP-FRON MUS SLNG"/>
+    	<CD code="08.33" displayName="PTOSIS REP-LEVAT MUS ADV"/>
+    	<CD code="08.34" displayName="PTOSIS REP-LEVAT MUS NEC"/>
+    	<CD code="08.35" displayName="PTOS REP-TARSAL TECHNIQ"/>
+    	<CD code="08.36" displayName="BLEPHAROPTOS REPAIR NEC"/>
+    	<CD code="08.37" displayName="REDUC OVERCORRECT PTOSIS"/>
+    	<CD code="08.38" displayName="CORRECT LID RETRACTION"/>
+    	<CD code="08.41" displayName="THERMOCAUT/ENTROPION REP"/>
+    	<CD code="08.42" displayName="SUTURE ENTROPION REPAIR"/>
+    	<CD code="08.43" displayName="WEDG RESEC ENTROPION REP"/>
+    	<CD code="08.44" displayName="LID RECONS ENTROPION REP"/>
+    	<CD code="08.49" displayName="ENTROPION/ECTROP REP NEC"/>
+    	<CD code="08.51" displayName="CANTHOTOMY"/>
+    	<CD code="08.52" displayName="BLEPHARORRHAPHY"/>
+    	<CD code="08.59" displayName="ADJUST LID POSITION NEC"/>
+    	<CD code="08.61" displayName="LID RECONST W SKIN GRAFT"/>
+    	<CD code="08.62" displayName="LID RECONST W MUC GRAFT"/>
+    	<CD code="08.63" displayName="LID RECONST W HAIR GRAFT"/>
+    	<CD code="08.64" displayName="LID RECON-TARSOCONJ FLAP"/>
+    	<CD code="08.69" displayName="LID RECONSTR W GRAFT NEC"/>
+    	<CD code="08.70" displayName="LID RECONSTRUCTION NOS"/>
+    	<CD code="08.71" displayName="LID MARG RECON-PART THIC"/>
+    	<CD code="08.72" displayName="LID RECONS-PART THIC NEC"/>
+    	<CD code="08.73" displayName="LID MARG RECONS FUL THIC"/>
+    	<CD code="08.74" displayName="LID RECONST-FUL THIC NEC"/>
+    	<CD code="08.91" displayName="ELECTROSURG LID EPILAT"/>
+    	<CD code="08.92" displayName="CRYOSURG LID EPILATION"/>
+    	<CD code="08.93" displayName="EYELID EPILATION NEC"/>
+    	<CD code="08.99" displayName="EYELID OPERATION NEC"/>
+    	<CD code="09.0" displayName="LACRIMAL GLAND INCISION"/>
+    	<CD code="09.11" displayName="LACRIMAL GLAND BIOPSY"/>
+    	<CD code="09.12" displayName="LACRIMAL SAC BIOPSY"/>
+    	<CD code="09.19" displayName="LACRIMAL SYS DX PROC NEC"/>
+    	<CD code="09.20" displayName="EXC LACRIMAL GLAND NOS"/>
+    	<CD code="09.21" displayName="EXCIS LES LACRIMAL GLAND"/>
+    	<CD code="09.22" displayName="PART DACRYOADENECT NEC"/>
+    	<CD code="09.23" displayName="TOTAL DACRYOADENECTOMY"/>
+    	<CD code="09.3" displayName="OTHER LACRIMAL GLAND OPS"/>
+    	<CD code="09.41" displayName="LACRIMAL PUNCTUM PROBE"/>
+    	<CD code="09.42" displayName="LAC CANALICULI PROBE"/>
+    	<CD code="09.43" displayName="NASOLACRIMAL DUCT PROBE"/>
+    	<CD code="09.44" displayName="NASOLAC DUCT INTUBAT"/>
+    	<CD code="09.49" displayName="LAC PASSAGE MANIP NEC"/>
+    	<CD code="09.51" displayName="LAC PUNCTUM INCISION"/>
+    	<CD code="09.52" displayName="LAC CANALICULI INCISION"/>
+    	<CD code="09.53" displayName="LACRIMAL SAC INCISION"/>
+    	<CD code="09.59" displayName="LACRIM PASSAGE INCIS NEC"/>
+    	<CD code="09.6" displayName="LACRIM SAC/PASSAGE EXCIS"/>
+    	<CD code="09.71" displayName="CORRECT EVERTED PUNCTUM"/>
+    	<CD code="09.72" displayName="PUNCTUM REPAIR NEC"/>
+    	<CD code="09.73" displayName="CANALICULUS REPAIR"/>
+    	<CD code="09.81" displayName="DACRYOCYSTORHINOSTOMY"/>
+    	<CD code="09.82" displayName="CONJUNCTIVOCYSTORHINOST"/>
+    	<CD code="09.83" displayName="CONJUNCTIVORHINOS W TUBE"/>
+    	<CD code="09.91" displayName="LAC PUNCTUM OBLITERATION"/>
+    	<CD code="09.99" displayName="LACRIMAL SYSTEM OP NEC"/>
+    	<CD code="10.0" displayName="INCISE/REMOV CONJUNCT FB"/>
+    	<CD code="10.1" displayName="CONJUNCTIVA INCISION NEC"/>
+    	<CD code="10.21" displayName="CONJUNCTIVAL BIOPSY"/>
+    	<CD code="10.29" displayName="CONJUNCTIVA DX PROC NEC"/>
+    	<CD code="10.31" displayName="EXCISE CONJUNCTIV LESION"/>
+    	<CD code="10.32" displayName="DESTRUCT CONJUNC LES NEC"/>
+    	<CD code="10.33" displayName="OTH CONJUNC DESTRUC PROC"/>
+    	<CD code="10.41" displayName="SYMBLEPH REP W FREE GRFT"/>
+    	<CD code="10.42" displayName="GRAFT CONJUNC CUL-DE-SAC"/>
+    	<CD code="10.43" displayName="CONJUN CUL-DE-SAC RX NEC"/>
+    	<CD code="10.44" displayName="CONJUNC FREE GRAFT NEC"/>
+    	<CD code="10.49" displayName="CONJUNCTIVOPLASTY NEC"/>
+    	<CD code="10.5" displayName="CONJUNC/LID ADHESIOLYSIS"/>
+    	<CD code="10.6" displayName="REPAIR CONJUNCT LACERAT"/>
+    	<CD code="10.91" displayName="SUBCONJUNCTIVAL INJECT"/>
+    	<CD code="10.99" displayName="CONJUNCTIVAL OP NEC"/>
+    	<CD code="11.0" displayName="MAGNET REMOVAL CORNEA FB"/>
+    	<CD code="11.1" displayName="CORNEAL INCISION"/>
+    	<CD code="11.21" displayName="CORNEAL SCRAPE FOR SMEAR"/>
+    	<CD code="11.22" displayName="CORNEAL BIOPSY"/>
+    	<CD code="11.29" displayName="CORNEAL DX PROC NEC"/>
+    	<CD code="11.31" displayName="PTERYGIUM TRANSPOSITION"/>
+    	<CD code="11.32" displayName="PTERYG EXC W CORNEA GRFT"/>
+    	<CD code="11.39" displayName="PTERYGIUM EXCISION NEC"/>
+    	<CD code="11.41" displayName="MECH REMOV CORNEA EPITH"/>
+    	<CD code="11.42" displayName="THERMOCAUT CORNEA LESION"/>
+    	<CD code="11.43" displayName="CRYOTHERAP CORNEA LESION"/>
+    	<CD code="11.49" displayName="DESTRUCT CORNEA LES NEC"/>
+    	<CD code="11.51" displayName="SUTURE CORNEA LACERATION"/>
+    	<CD code="11.52" displayName="REP CORNEA POSTOP DEHISC"/>
+    	<CD code="11.53" displayName="RX CORNEA LAC W CONJ FLP"/>
+    	<CD code="11.59" displayName="CORNEAL REPAIR NEC"/>
+    	<CD code="11.60" displayName="CORNEAL TRANSPLANT NOS"/>
+    	<CD code="11.61" displayName="LAM KERATPLAST W AUTGRFT"/>
+    	<CD code="11.62" displayName="LAMELLAR KERATOPLAST NEC"/>
+    	<CD code="11.63" displayName="PERF KERATOPL W AUTOGRFT"/>
+    	<CD code="11.64" displayName="PERFORAT KERATOPLAST NEC"/>
+    	<CD code="11.69" displayName="CORNEAL TRANSPLANT NEC"/>
+    	<CD code="11.71" displayName="KERATOMILEUSIS"/>
+    	<CD code="11.72" displayName="KERATOPHAKIA"/>
+    	<CD code="11.73" displayName="KERATOPROSTHESIS"/>
+    	<CD code="11.74" displayName="THERMOKERATOPLASTY"/>
+    	<CD code="11.75" displayName="RADIAL KERATOTOMY"/>
+    	<CD code="11.76" displayName="EPIKERATOPHAKIA"/>
+    	<CD code="11.79" displayName="CORNEA RECONSTRUCT NEC"/>
+    	<CD code="11.91" displayName="CORNEAL TATTOOING"/>
+    	<CD code="11.92" displayName="REMOVE CORNEAL IMPLANT"/>
+    	<CD code="11.99" displayName="CORNEAL OPERATION NEC"/>
+    	<CD code="12.00" displayName="REMOV ANT SEGMNT FB NOS"/>
+    	<CD code="12.01" displayName="MAGNET REMOV ANT SEG FB"/>
+    	<CD code="12.02" displayName="NONMAG REMOV ANT SEG FB"/>
+    	<CD code="12.11" displayName="IRIDOTOMY W TRANSFIXION"/>
+    	<CD code="12.12" displayName="IRIDOTOMY NEC"/>
+    	<CD code="12.13" displayName="PROLAPSED IRIS EXCISION"/>
+    	<CD code="12.14" displayName="IRIDECTOMY NEC"/>
+    	<CD code="12.21" displayName="DX ASPIRAT-ANT CHAMBER"/>
+    	<CD code="12.22" displayName="IRIS BIOPSY"/>
+    	<CD code="12.29" displayName="ANT SEGMENT DX PROC NEC"/>
+    	<CD code="12.31" displayName="GONIOSYNECHIAE LYSIS"/>
+    	<CD code="12.32" displayName="ANT SYNECHIA LYSIS NEC"/>
+    	<CD code="12.33" displayName="POST SYNECHIAE LYSIS"/>
+    	<CD code="12.34" displayName="CORNEOVITREAL ADHESIOLYS"/>
+    	<CD code="12.35" displayName="COREOPLASTY"/>
+    	<CD code="12.39" displayName="IRIDOPLASTY NEC"/>
+    	<CD code="12.40" displayName="REMOV ANT SEGMNT LES NOS"/>
+    	<CD code="12.41" displayName="NONEXC DESTRUC IRIS LES"/>
+    	<CD code="12.42" displayName="EXCISION OF IRIS LESION"/>
+    	<CD code="12.43" displayName="NONEXC DESTR CIL BOD LES"/>
+    	<CD code="12.44" displayName="EXCISE CILIARY BODY LES"/>
+    	<CD code="12.51" displayName="GONIOPUNCTURE"/>
+    	<CD code="12.52" displayName="GONIOTOMY"/>
+    	<CD code="12.53" displayName="GONIOTOMY W GONIOPUNCTUR"/>
+    	<CD code="12.54" displayName="TRABECULOTOMY AB EXTERNO"/>
+    	<CD code="12.55" displayName="CYCLODIALYSIS"/>
+    	<CD code="12.59" displayName="FACILIT INTRAOC CIRC NEC"/>
+    	<CD code="12.61" displayName="TREPHIN SCLERA W IRIDECT"/>
+    	<CD code="12.62" displayName="THERMCAUT SCLER W IRIDEC"/>
+    	<CD code="12.63" displayName="IRIDENCLEISIS/IRIDOTASIS"/>
+    	<CD code="12.64" displayName="TRABECULECTOM AB EXTERNO"/>
+    	<CD code="12.65" displayName="SCLER FISTULIZ W IRIDECT"/>
+    	<CD code="12.66" displayName="POSTOP REVIS SCL FISTUL"/>
+    	<CD code="12.69" displayName="SCLER FISTULIZING OP NEC"/>
+    	<CD code="12.71" displayName="CYCLODIATHERMY"/>
+    	<CD code="12.72" displayName="CYCLOCRYOTHERAPY"/>
+    	<CD code="12.73" displayName="CYCLOPHOTOCOAGULATION"/>
+    	<CD code="12.74" displayName="CIL BODY DIMINUTION NOS"/>
+    	<CD code="12.79" displayName="GLAUCOMA PROCEDURE NEC"/>
+    	<CD code="12.81" displayName="SUTURE SCLERAL LACER"/>
+    	<CD code="12.82" displayName="SCLERAL FISTULA REPAIR"/>
+    	<CD code="12.83" displayName="REVIS ANT SEG OP WND NEC"/>
+    	<CD code="12.84" displayName="DESTRUCT SCLERAL LESION"/>
+    	<CD code="12.85" displayName="REPAIR STAPHYLOM W GRAFT"/>
+    	<CD code="12.86" displayName="REP SCLER STAPHYLOMA NEC"/>
+    	<CD code="12.87" displayName="GRAFT REINFORCE SCLERA"/>
+    	<CD code="12.88" displayName="SCLERA REINFORCEMENT NEC"/>
+    	<CD code="12.89" displayName="SCLERAL OPERATION NEC"/>
+    	<CD code="12.91" displayName="THERAPEUT EVAC ANT CHAMB"/>
+    	<CD code="12.92" displayName="ANTERIOR CHAMBER INJECT"/>
+    	<CD code="12.93" displayName="REMOV EPITHEL DOWNGROWTH"/>
+    	<CD code="12.97" displayName="IRIS OPERATION NEC"/>
+    	<CD code="12.98" displayName="CILIARY BODY OP NEC"/>
+    	<CD code="12.99" displayName="ANTERIOR CHAMBER OP NEC"/>
+    	<CD code="13.00" displayName="REMOVE FB LENS NOS"/>
+    	<CD code="13.01" displayName="MAGNET REMOVE FB LENS"/>
+    	<CD code="13.02" displayName="NONMAGNET REMOVE FB LENS"/>
+    	<CD code="13.11" displayName="TEMP-INF INTRCAP LENS EX"/>
+    	<CD code="13.19" displayName="INTRACAPSUL LENS EXT NEC"/>
+    	<CD code="13.2" displayName="LINEAR EXTRACAP LENS EXT"/>
+    	<CD code="13.3" displayName="SIMPL ASPIR LENS EXTRACT"/>
+    	<CD code="13.41" displayName="CATARAC PHACOEMULS/ASPIR"/>
+    	<CD code="13.42" displayName="POST CATARAC FRAG/ASPIR"/>
+    	<CD code="13.43" displayName="CATARACT FRAG/ASPIR NEC"/>
+    	<CD code="13.51" displayName="TEMP-INF XTRACAP LENS EX"/>
+    	<CD code="13.59" displayName="EXTRACAP LENS EXTRAC NEC"/>
+    	<CD code="13.61" displayName="EXTRACAP LENS EXTRAC NEC"/>
+    	<CD code="13.62" displayName="EXTRACAP LENS EXTRAC NEC"/>
+    	<CD code="13.63" displayName="EXTRACAP LENS EXTRAC NEC"/>
+    	<CD code="13.64" displayName="AFTER-CATAR DISCISSION"/>
+    	<CD code="13.65" displayName="AFTER-CATARACT EXCISION"/>
+    	<CD code="13.66" displayName="AFTER CATAR FRAGMNTATION"/>
+    	<CD code="13.69" displayName="CATARACT EXTRACTION NEC"/>
+    	<CD code="13.70" displayName="INSERT PSEUDOPHAKOS NOS"/>
+    	<CD code="13.71" displayName="NSERT LENS AT CATAR EXT"/>
+    	<CD code="13.72" displayName="SECONDARY INSERT LENS"/>
+    	<CD code="13.8" displayName="IMPLANTED LENS REMOVAL"/>
+    	<CD code="13.9" displayName="OTHER OPERATIONS ON LENS"/>
+    	<CD code="13.90" displayName="OPERATION ON LENS NEC (OCT06)"/>
+    	<CD code="13.91" displayName="IMPL INTRAOC TELESC PROS (OCT06)"/>
+    	<CD code="14.00" displayName="REMOV POST SEGMNT FB NOS"/>
+    	<CD code="14.01" displayName="MAGNET REMOV POST SEG FB"/>
+    	<CD code="14.02" displayName="NONMAG REMOV POST SEG FB"/>
+    	<CD code="14.11" displayName="DIAGNOST VITREOUS ASPIR"/>
+    	<CD code="14.19" displayName="DX PROC POST SEG NEC"/>
+    	<CD code="14.21" displayName="CHORIORET LES DIATHERMY"/>
+    	<CD code="14.22" displayName="CHORIORETIN LES CRYOTHER"/>
+    	<CD code="14.26" displayName="CHORIORET LES RADIOTHER"/>
+    	<CD code="14.27" displayName="CHORIORET LES RAD IMPLAN"/>
+    	<CD code="14.29" displayName="CHORIORET LES DESTR NEC"/>
+    	<CD code="14.31" displayName="RETINAL TEAR DIATHERMY"/>
+    	<CD code="14.32" displayName="RETINAL TEAR CRYOTHERAPY"/>
+    	<CD code="14.39" displayName="RETINAL TEAR REPAIR NEC"/>
+    	<CD code="14.41" displayName="SCLERAL BUCKLE W IMPLANT"/>
+    	<CD code="14.49" displayName="SCLERAL BUCKLING NEC"/>
+    	<CD code="14.51" displayName="DETACH RETINA-DIATHERMY"/>
+    	<CD code="14.52" displayName="DETACH RETINA-CRYOTHERAP"/>
+    	<CD code="14.53" displayName="DETACH RETINA XENON COAG"/>
+    	<CD code="14.54" displayName="DETACH RETINA LASER COAG"/>
+    	<CD code="14.55" displayName="DETACH RET PHOTOCOAG NOS"/>
+    	<CD code="14.59" displayName="REPAIR RETINA DETACH NEC"/>
+    	<CD code="14.6" displayName="REMOV PROS MAT POST SEG"/>
+    	<CD code="14.71" displayName="ANTERIOR REMOV VITREOUS"/>
+    	<CD code="14.72" displayName="VITREOUS REMOVAL NEC"/>
+    	<CD code="14.73" displayName="ANTERIOR MECHAN VITRECT"/>
+    	<CD code="14.74" displayName="MECH VITRECTOMY NEC"/>
+    	<CD code="14.75" displayName="VITREOUS SUBSTITUT INJEC"/>
+    	<CD code="14.79" displayName="VITREOUS OPERATION NEC"/>
+    	<CD code="14.9" displayName="OTHER POST SEGMENT OPS"/>
+    	<CD code="15.01" displayName="EXTRAOC MUSC-TEND BIOPSY"/>
+    	<CD code="15.09" displayName="EXTRAOC MUSC DX PROC NEC"/>
+    	<CD code="15.11" displayName="ONE EXTRAOC MUS RECESS"/>
+    	<CD code="15.12" displayName="1 EXTRAOC MUSCL ADVANCE"/>
+    	<CD code="15.13" displayName="1 EXTRAOC MUSCL RESECT"/>
+    	<CD code="15.19" displayName="XTRAOC MUS OP/DETACH NEC"/>
+    	<CD code="15.21" displayName="LENGTHEN 1 EXTRAOC MUSC"/>
+    	<CD code="15.22" displayName="SHORTEN 1 EXTRAOC MUSC"/>
+    	<CD code="15.29" displayName="OP ON 1 EXTRAOC MUSC NEC"/>
+    	<CD code="15.3" displayName="TEMP DETACH GT1 XTROC MUS"/>
+    	<CD code="15.4" displayName="OTH OP ON GTL EXTRAOC MUS"/>
+    	<CD code="15.5" displayName="EXTRAOCUL MUS TRANSPOSIT"/>
+    	<CD code="15.6" displayName="REVIS EXTRAOC MUSC SURG"/>
+    	<CD code="15.7" displayName="EXTRAOC MUSC INJ REPAIR"/>
+    	<CD code="15.9" displayName="OTH EXTRAOC MUS-TEND OP"/>
+    	<CD code="16.01" displayName="ORBITOTOMY W BONE FLAP"/>
+    	<CD code="16.02" displayName="ORBITOTOMY W IMPLANT"/>
+    	<CD code="16.09" displayName="ORBITOTOMY NEC"/>
+    	<CD code="16.1" displayName="REMOVE PENETRAT FB EYE"/>
+    	<CD code="16.22" displayName="DIAGNOSTIC ASP OF ORBIT"/>
+    	<CD code="16.23" displayName="EYEBALL + ORBIT BIOPSY"/>
+    	<CD code="16.29" displayName="EYEBAL/ORBIT DX PROC NEC"/>
+    	<CD code="16.31" displayName="EYE EVISC W SYNCH IMPLAN"/>
+    	<CD code="16.39" displayName="EYEBALL EVISCERATION NEC"/>
+    	<CD code="16.41" displayName="EYE ENUC/IMPLAN/MUSC ATT"/>
+    	<CD code="16.42" displayName="EYE ENUC W IMPLANT NEC"/>
+    	<CD code="16.49" displayName="EYEBALL ENUCLEATION NEC"/>
+    	<CD code="16.51" displayName="RADICAL ORBITOMAXILLECT"/>
+    	<CD code="16.52" displayName="ORBIT EXENT W BONE REMOV"/>
+    	<CD code="16.59" displayName="ORBITAL EXENTERATION NEC"/>
+    	<CD code="16.61" displayName="2NDRY OCULAR IMP INSERT"/>
+    	<CD code="16.62" displayName="REVIS/REINSERT OCUL IMP"/>
+    	<CD code="16.63" displayName="REVIS ENUC SOCKET W GRFT"/>
+    	<CD code="16.64" displayName="ENUC SOCKET REVIS NEC"/>
+    	<CD code="16.65" displayName="2NDRY EXENT CAVITY GRAFT"/>
+    	<CD code="16.66" displayName="REVIS EXENTER CAVITY NEC"/>
+    	<CD code="16.69" displayName="2ND OP POST EYE REM NEC"/>
+    	<CD code="16.71" displayName="REMOVE OCULAR IMPLANT"/>
+    	<CD code="16.72" displayName="REMOVE ORBITAL IMPLANT"/>
+    	<CD code="16.81" displayName="REPAIR OF ORBITAL WOUND"/>
+    	<CD code="16.82" displayName="REPAIR EYEBALL RUPTURE"/>
+    	<CD code="16.89" displayName="EYE/ORBIT INJ REPAIR NEC"/>
+    	<CD code="16.92" displayName="EXCISION ORBITAL LESION"/>
+    	<CD code="16.93" displayName="EXCISION EYE LESION NOS"/>
+    	<CD code="16.98" displayName="OPERATION ON ORBIT NEC"/>
+    	<CD code="16.99" displayName="OPERATION ON EYEBALL NEC"/>
+    	<CD code="17.11" displayName="LAP DIR ING HERN-GRAFT (OCT08)"/>
+    	<CD code="17.12" displayName="LAP INDIR ING HERN-GRAFT (OCT08)"/>
+    	<CD code="17.13" displayName="LAP ING HERN-GRAFT NOS (OCT08)"/>
+    	<CD code="17.21" displayName="LAP BIL DIR ING HRN-GRFT (OCT08)"/>
+    	<CD code="17.22" displayName="LAP BI INDIR ING HRN-GRF (OCT08)"/>
+    	<CD code="17.23" displayName="LAP BI DR/IND ING HRN-GR (OCT08)"/>
+    	<CD code="17.24" displayName="LAP BIL ING HERN-GRF NOS (OCT08)"/>
+    	<CD code="17.31" displayName="LAP MUL SEG RES LG INTES (OCT08)"/>
+    	<CD code="17.32" displayName="LAPAROSCOPIC CECECTOMY (OCT08)"/>
+    	<CD code="17.33" displayName="LAP RIGHT HEMICOLECTOMY (OCT08)"/>
+    	<CD code="17.34" displayName="LAP RES TRANSVERSE COLON (OCT08)"/>
+    	<CD code="17.35" displayName="LAP LEFT HEMICOLECTOMY (OCT08)"/>
+    	<CD code="17.36" displayName="LAP SIGMOIDECTOMY (OCT08)"/>
+    	<CD code="17.39" displayName="LAP PT EX LRG INTEST NEC (OCT08)"/>
+    	<CD code="17.51" displayName="IMPLANT CCM, TOTAL SYSTEM (OCT09)"/>
+    	<CD code="17.52" displayName="IMPLANT CCM PULSE GENRTR (OCT09)"/>
+    	<CD code="17.61" displayName="LITT LESN BRAIN, GUIDANCE (OCT09)"/>
+    	<CD code="17.62" displayName="LITT LESN HD/NCK GUIDANCE (OCT09)"/>
+    	<CD code="17.63" displayName="LITT LESN LIVER, GUIDEANCE (OCT09)"/>
+    	<CD code="17.69" displayName="LITT LESN GUIDE OTH/NOS (OCT09)"/>
+    	<CD code="18.21" displayName="PREAURICULAR SINUS EXCIS"/>
+    	<CD code="18.31" displayName="RAD EXCIS EXT EAR LES"/>
+    	<CD code="18.39" displayName="EXCIS EXTERNAL EAR NEC"/>
+    	<CD code="18.5" displayName="CORRECTION PROMINENT EAR"/>
+    	<CD code="18.6" displayName="EXT AUDIT CANAL RECONSTR"/>
+    	<CD code="18.71" displayName="CONSTRUCTION EAR AURICLE"/>
+    	<CD code="18.72" displayName="REATTACH AMPUTATED EAR"/>
+    	<CD code="18.79" displayName="PLASTIC REP EXT EAR NEC"/>
+    	<CD code="18.9" displayName="OTHER EXT EAR OPERATIONS"/>
+    	<CD code="19.0" displayName="STAPES MOBILIZATION"/>
+    	<CD code="19.11" displayName="STAPEDECT W REPLAC INCUS"/>
+    	<CD code="19.19" displayName="STAPEDECTOMY NEC"/>
+    	<CD code="19.21" displayName="REV STAPDEC W INCUS REPL"/>
+    	<CD code="19.29" displayName="STAPEDECTOMY REVIS NEC"/>
+    	<CD code="19.3" displayName="OSSICULAR CHAIN OP NEC"/>
+    	<CD code="19.4" displayName="MYRINGOPLASTY"/>
+    	<CD code="19.52" displayName="TYPE 2 TYMPANOPLASTY"/>
+    	<CD code="19.53" displayName="TYPE 3 TYMPANOPLASTY"/>
+    	<CD code="19.54" displayName="TYPE 4 TYMPANOPLASTY"/>
+    	<CD code="19.55" displayName="TYPE 5 TYMPANOPLASTY"/>
+    	<CD code="19.6" displayName="TYMPANOPLASTY REVISION"/>
+    	<CD code="19.9" displayName="MIDDLE EAR REPAIR NEC"/>
+    	<CD code="20.01" displayName="MYRINGOTOMY W INTUBATION"/>
+    	<CD code="20.21" displayName="MASTOID INCISION"/>
+    	<CD code="20.22" displayName="PETRUS PYRAM AIR CEL INC"/>
+    	<CD code="20.23" displayName="MIDDLE EAR INCISION"/>
+    	<CD code="20.32" displayName="MID + INNER EAR BIOPSY"/>
+    	<CD code="20.39" displayName="MID/IN EAR DX PROC NEC"/>
+    	<CD code="20.41" displayName="SIMPLE MASTOIDECTOMY"/>
+    	<CD code="20.42" displayName="RADICAL MASTOIDECTOMY"/>
+    	<CD code="20.49" displayName="MASTOIDECTOMY NEC"/>
+    	<CD code="20.51" displayName="EXCISE MIDDLE EAR LESION"/>
+    	<CD code="20.59" displayName="MIDDLE EAR EXCISION NEC"/>
+    	<CD code="20.61" displayName="INNER EAR FENESTRATION"/>
+    	<CD code="20.62" displayName="REVIS INNER EAR FENESTRA"/>
+    	<CD code="20.71" displayName="ENDOLYMPHATIC SHUNT"/>
+    	<CD code="20.72" displayName="INNER EAR INJECTION"/>
+    	<CD code="20.79" displayName="INC/EXC/DESTR IN EAR NEC"/>
+    	<CD code="20.91" displayName="TYMPANOSYMPATHECTOMY"/>
+    	<CD code="20.92" displayName="MASTOIDECTOMY REVISION"/>
+    	<CD code="20.93" displayName="REPAIR OVAL/ROUND WINDOW"/>
+    	<CD code="20.95" displayName="ELECMAG HEAR DEV IMPLANT"/>
+    	<CD code="20.96" displayName="IMPLT COCHLEAR PROST NOS"/>
+    	<CD code="20.97" displayName="IMP/REP SCHAN COCH PROS"/>
+    	<CD code="20.98" displayName="IMP/REP MCHAN COCHL PROS"/>
+    	<CD code="20.99" displayName="MID-INNER EAR OPS NEC"/>
+    	<CD code="21.04" displayName="ETHMOID ART LIGAT-EPIST"/>
+    	<CD code="21.05" displayName="MAX ART LIG FOR EPISTAX"/>
+    	<CD code="21.06" displayName="EXT CAROT ART LIG-EPIST"/>
+    	<CD code="21.07" displayName="NASAL SEPT GRFT-EPISTAX"/>
+    	<CD code="21.09" displayName="EPISTAXIS CONTROL NEC"/>
+    	<CD code="21.4" displayName="RESECTION OF NOSE"/>
+    	<CD code="21.5" displayName="SUBMUC NASAL SEPT RESECT"/>
+    	<CD code="21.61" displayName="DIATHER/CRYO TURBINECTOM"/>
+    	<CD code="21.62" displayName="TURBINATE FRACTURE"/>
+    	<CD code="21.69" displayName="TURBINECTOMY NEC"/>
+    	<CD code="21.72" displayName="OPEN REDUCTION NASAL FX"/>
+    	<CD code="21.82" displayName="NASAL FISTULA CLOSURE"/>
+    	<CD code="21.83" displayName="TOT NASAL RECONSTRUCTION"/>
+    	<CD code="21.84" displayName="REVISION RHINOPLASTY"/>
+    	<CD code="21.85" displayName="AUGMENTATION RHINOPLASTY"/>
+    	<CD code="21.86" displayName="LIMITED RHINOPLASTY"/>
+    	<CD code="21.87" displayName="RHINOPLASTY NEC"/>
+    	<CD code="21.88" displayName="SEPTOPLASTY NEC"/>
+    	<CD code="21.89" displayName="NASAL REPAIR NEC"/>
+    	<CD code="21.99" displayName="NASAL OPERATION NEC"/>
+    	<CD code="22.12" displayName="OPEN BIOPSY NASAL SINUS"/>
+    	<CD code="22.31" displayName="RADICAL MAXILLARY ANTROT"/>
+    	<CD code="22.39" displayName="EXT MAXILLARY ANTROT NEC"/>
+    	<CD code="22.41" displayName="FRONTAL SINUSOTOMY"/>
+    	<CD code="22.42" displayName="FRONTAL SINUSECTOMY"/>
+    	<CD code="22.50" displayName="SINUSOTOMY NOS"/>
+    	<CD code="22.51" displayName="ETHMOIDOTOMY"/>
+    	<CD code="22.52" displayName="SPHENOIDOTOMY"/>
+    	<CD code="22.53" displayName="MULTIPLE SINUS INCISION"/>
+    	<CD code="22.60" displayName="SINUSECTOMY NOS"/>
+    	<CD code="22.61" displayName="C-LUC EXC MAX SINUS LES"/>
+    	<CD code="22.62" displayName="EXC MAX SINUS LESION NEC"/>
+    	<CD code="22.63" displayName="ETHMOIDECTOMY"/>
+    	<CD code="22.64" displayName="SPHENOIDECTOMY"/>
+    	<CD code="22.71" displayName="NASAL SINUS FISTULA CLOS"/>
+    	<CD code="22.79" displayName="NASAL SINUS REPAIR NEC"/>
+    	<CD code="22.9" displayName="OTHER NASAL SINUS OPS"/>
+    	<CD code="24.2" displayName="GINGIVOPLASTY"/>
+    	<CD code="24.4" displayName="EXC OF DENTAL LES OF JAW"/>
+    	<CD code="24.5" displayName="ALVEOLOPLASTY"/>
+    	<CD code="25.02" displayName="OPEN BIOPSY OF TONGUE"/>
+    	<CD code="25.1" displayName="DESTRUCTION TONGUE LES"/>
+    	<CD code="25.2" displayName="PARTIAL GLOSSECTOMY"/>
+    	<CD code="25.3" displayName="COMPLETE GLOSSECTOMY"/>
+    	<CD code="25.4" displayName="RADICAL GLOSSECTOMY"/>
+    	<CD code="25.59" displayName="REPAIR OF TONGUE NEC"/>
+    	<CD code="25.94" displayName="OTHER GLOSSOTOMY"/>
+    	<CD code="25.99" displayName="TONGUE OPERATION NEC"/>
+    	<CD code="26.12" displayName="OPEN BX SALIV GLAND/DUCT"/>
+    	<CD code="26.21" displayName="SALIVARY CYST MARSUPIAL"/>
+    	<CD code="26.29" displayName="SALIV LESION EXCIS NEC"/>
+    	<CD code="26.30" displayName="SIALOADENECTOMY NOS"/>
+    	<CD code="26.31" displayName="PARTIAL SIALOADENECTOMY"/>
+    	<CD code="26.32" displayName="COMPLETE SIALOADENECTOMY"/>
+    	<CD code="26.41" displayName="SUTURE OF SALIV GLND LAC"/>
+    	<CD code="26.42" displayName="SALIVARY FISTULA CLOSURE"/>
+    	<CD code="26.49" displayName="SALIVARY REPAIR NEC"/>
+    	<CD code="26.99" displayName="SALIVARY OPERATION NEC"/>
+    	<CD code="27.0" displayName="DRAIN FACE + MOUTH FLOOR"/>
+    	<CD code="27.1" displayName="INCISION OF PALATE"/>
+    	<CD code="27.21" displayName="BONY PALATE BIOPSY"/>
+    	<CD code="27.22" displayName="UVULA AND SOFT PALATE BX"/>
+    	<CD code="27.31" displayName="LOC EXC BONY PALATE LES"/>
+    	<CD code="27.32" displayName="WIDE EXC BONY PALATE LES"/>
+    	<CD code="27.42" displayName="WIDE EXCISION OF LIP LES"/>
+    	<CD code="27.43" displayName="EXCISION OF LIP LES NEC"/>
+    	<CD code="27.49" displayName="EXCISION OF MOUTH NEC"/>
+    	<CD code="27.53" displayName="CLOSURE OF MOUTH FISTULA"/>
+    	<CD code="27.54" displayName="REPAIR OF CLEFT LIP"/>
+    	<CD code="27.55" displayName="FULL-THICK GRFT TO MOUTH"/>
+    	<CD code="27.56" displayName="SKIN GRAFT TO MOUTH NEC"/>
+    	<CD code="27.57" displayName="PEDICLE ATTACH TO MOUTH"/>
+    	<CD code="27.59" displayName="MOUTH REPAIR NEC"/>
+    	<CD code="27.61" displayName="SUTURE OF PALATE LACERAT"/>
+    	<CD code="27.62" displayName="CLEFT PALATE CORRECTION"/>
+    	<CD code="27.63" displayName="REVIS CLEFT PALAT REPAIR"/>
+    	<CD code="27.69" displayName="OTH PLASTIC REPAIR PALAT"/>
+    	<CD code="27.71" displayName="INCISION OF UVULA"/>
+    	<CD code="27.72" displayName="EXCISION OF UVULA"/>
+    	<CD code="27.73" displayName="REPAIR OF UVULA"/>
+    	<CD code="27.79" displayName="OTHER UVULA OPERATIONS"/>
+    	<CD code="27.92" displayName="MOUTH INCISION NOS"/>
+    	<CD code="27.99" displayName="ORAL CAVITY OPS NEC"/>
+    	<CD code="28.0" displayName="PERITONSILLAR I + D"/>
+    	<CD code="28.11" displayName="TONSIL+ADENOID BIOPSY"/>
+    	<CD code="28.19" displayName="TONSIL+ADENOID DX OP NEC"/>
+    	<CD code="28.2" displayName="TONSILLECTOMY"/>
+    	<CD code="28.3" displayName="TONSILLECTOMY/ADENOIDEC"/>
+    	<CD code="28.4" displayName="EXCISION OF TONSIL TAG"/>
+    	<CD code="28.5" displayName="EXCISION LINGUAL TONSIL"/>
+    	<CD code="28.6" displayName="ADENOIDECTOMY"/>
+    	<CD code="28.7" displayName="HEMORR CONTRL POST T + A"/>
+    	<CD code="28.91" displayName="INCIS TO REMOV TONSIL FB"/>
+    	<CD code="28.92" displayName="EXCIS TONSIL/ADENOID LES"/>
+    	<CD code="28.99" displayName="TONSIL/ADENOID OPS NEC"/>
+    	<CD code="29.0" displayName="PHARYNGOTOMY"/>
+    	<CD code="29.2" displayName="EXC BRANCHIAL CLEFT CYST"/>
+    	<CD code="29.3" displayName="EXC BRANCHIAL CLEFT CYST"/>
+    	<CD code="29.31" displayName="CRICOPHARYNGEAL MYOTOMY"/>
+    	<CD code="29.32" displayName="PHARYNGEAL DIVERTICULEC"/>
+    	<CD code="29.33" displayName="PHARYNGECTOMY"/>
+    	<CD code="29.39" displayName="EXCIS/DESTR LES PHAR NEC"/>
+    	<CD code="29.4" displayName="PLASTIC OP ON PHARYNX"/>
+    	<CD code="29.51" displayName="SUTURE OF PHARYNGEAL LAC"/>
+    	<CD code="29.52" displayName="CLOS BRANCH CLEFT FISTUL"/>
+    	<CD code="29.53" displayName="CLOS PHARYNX FISTULA NEC"/>
+    	<CD code="29.54" displayName="LYSIS PHARYNGEAL ADHES"/>
+    	<CD code="29.59" displayName="PHARYNGEAL REPAIR NEC"/>
+    	<CD code="29.92" displayName="DIVIS GLOSSOPHARYNG NERV"/>
+    	<CD code="29.99" displayName="PHARYNGEAL OPERATION NEC"/>
+    	<CD code="30.01" displayName="LARYNX CYST MARSUPIALIZ"/>
+    	<CD code="30.09" displayName="DESTRUCT LARYNX LES NEC"/>
+    	<CD code="30.1" displayName="HEMILARYNGECTOMY"/>
+    	<CD code="30.21" displayName="EPIGLOTTIDECTOMY"/>
+    	<CD code="30.22" displayName="VOCAL CORDECTOMY"/>
+    	<CD code="30.29" displayName="OTHER PART LARYNGECTOMY"/>
+    	<CD code="30.3" displayName="COMPLETE LARYNGECTOMY"/>
+    	<CD code="30.4" displayName="RADICAL LARYNGECTOMY"/>
+    	<CD code="31.21" displayName="MEDIASTINAL TRACHEOSTOMY"/>
+    	<CD code="31.29" displayName="OTHER PERM TRACHEOSTOMY"/>
+    	<CD code="31.3" displayName="INCIS LARYNX TRACHEA NEC"/>
+    	<CD code="31.45" displayName="OPN BX LARYNX OR TRACHEA"/>
+    	<CD code="31.5" displayName="LOCAL DESTRUC TRACH LES"/>
+    	<CD code="31.61" displayName="SUTURE OF LARYNGEAL LAC"/>
+    	<CD code="31.62" displayName="LARYNGEAL FISTULA CLOS"/>
+    	<CD code="31.63" displayName="LARYNGOSTOMY REVISION"/>
+    	<CD code="31.64" displayName="LARYNGEAL FX REPAIR"/>
+    	<CD code="31.69" displayName="OTHER LARYNGEAL REPAIR"/>
+    	<CD code="31.71" displayName="SUTURE OF TRACHEAL LACER"/>
+    	<CD code="31.72" displayName="CLOSURE OF TRACHEOSTOMY"/>
+    	<CD code="31.73" displayName="TRACHEA FISTULA CLOS NEC"/>
+    	<CD code="31.74" displayName="REVISION OF TRACHEOSTOMY"/>
+    	<CD code="31.75" displayName="TRACHEAL RECONSTRUCTION"/>
+    	<CD code="31.79" displayName="OTHER TRACHEAL REPAIR"/>
+    	<CD code="31.91" displayName="LARYNGEAL NERV DIVISION"/>
+    	<CD code="31.92" displayName="LYSIS TRACH/LARYNX ADHES"/>
+    	<CD code="31.98" displayName="OTH LARYNGEAL OPERATION"/>
+    	<CD code="31.99" displayName="OTHER TRACHEAL OPERATION"/>
+    	<CD code="32.0" displayName="OTHER TRACHEAL OPERATION"/>
+    	<CD code="32.09" displayName="OTHER DESTRUC BRONC LES"/>
+    	<CD code="32.1" displayName="OTHER BRONCHIAL EXCISION"/>
+    	<CD code="32.20" displayName="THORAC EXC LUNG LESION (OCT08)"/>
+    	<CD code="32.21" displayName="EMPHYSEMA BLEB PLICATION"/>
+    	<CD code="32.22" displayName="LUNG VOL REDUCTION SURG"/>
+    	<CD code="32.23" displayName="OPEN ABLTN LUNG LES/TISS (OCT06)"/>
+    	<CD code="32.24" displayName="PERC ABLTN LUNG LES/TISS (OCT06)"/>
+    	<CD code="32.25" displayName="THOR ABLTN LUNG LES/TISS (OCT06)"/>
+    	<CD code="32.26" displayName="ABLTN LUNG TISS NEC/NOS (OCT06)"/>
+    	<CD code="32.29" displayName="DESTROY LOC LUNG LES NEC"/>
+    	<CD code="32.3" displayName="SEGMENTAL LUNG RESECTION"/>
+    	<CD code="32.30" displayName="THORAC SEG LUNG RESECT (OCT08)"/>
+    	<CD code="32.39" displayName="OTH SEG LUNG RESECT NOS (OCT08)"/>
+    	<CD code="32.4" displayName="LOBECTOMY OF LUNG"/>
+    	<CD code="32.41" displayName="THORAC LOBECTOMY LUNG (OCT08)"/>
+    	<CD code="32.49" displayName="LOBECTOMY OF LUNG NEC (OCT08)"/>
+    	<CD code="32.5" displayName="COMPLETE PNEUMONECTOMY"/>
+    	<CD code="32.50" displayName="THORACOSPC PNEUMONECTOMY (OCT08)"/>
+    	<CD code="32.59" displayName="OTHER PNEUMONECTOMY NOS (OCT08)"/>
+    	<CD code="32.6" displayName="RAD DISSEC THORAC STRUCT"/>
+    	<CD code="32.9" displayName="OTHER EXCISION OF LUNG"/>
+    	<CD code="33.0" displayName="INCISION OF BRONCHUS"/>
+    	<CD code="33.1" displayName="INCISION OF LUNG"/>
+    	<CD code="33.20" displayName="THORACOSCOPC LUNG BIOPSY (OCT08)"/>
+    	<CD code="33.25" displayName="OPEN BRONCHIAL BIOPSY"/>
+    	<CD code="33.27" displayName="CLOS ENDOSCOPIC LUNG BX"/>
+    	<CD code="33.28" displayName="OPEN LUNG BIOPSY"/>
+    	<CD code="33.29" displayName="BRONCH/LUNG DX PROC NEC"/>
+    	<CD code="33.34" displayName="THORACOPLASTY"/>
+    	<CD code="33.39" displayName="SURG COLLAPS OF LUNG NEC"/>
+    	<CD code="33.41" displayName="BRONCHIAL LACERAT SUTURE"/>
+    	<CD code="33.42" displayName="BRONCHIAL FISTULA CLOS"/>
+    	<CD code="33.43" displayName="LUNG LACERATION CLOSURE"/>
+    	<CD code="33.48" displayName="BRONCHIAL REPAIR NEC"/>
+    	<CD code="33.49" displayName="LUNG REPAIR NEC"/>
+    	<CD code="33.5" displayName="LUNG REPAIR NEC"/>
+    	<CD code="33.50" displayName="LUNG TRANSPLANT NOS"/>
+    	<CD code="33.51" displayName="UNILAT LUNG TRANSPLANT"/>
+    	<CD code="33.52" displayName="BILAT LUNG TRANSPLANT"/>
+    	<CD code="33.6" displayName="COMB HEART/LUNG TRANSPLA"/>
+    	<CD code="33.92" displayName="BRONCHIAL LIGATION"/>
+    	<CD code="33.93" displayName="PUNCTURE OF LUNG"/>
+    	<CD code="33.98" displayName="BRONCHIAL OPERATION NEC"/>
+    	<CD code="33.99" displayName="LUNG OPERATION NEC"/>
+    	<CD code="34.02" displayName="EXPLORATORY THORACOTOMY"/>
+    	<CD code="34.03" displayName="REOPEN THORACOTOMY SITE"/>
+    	<CD code="34.06" displayName="THORAC DRAIN PLEURL CAV (OCT08)"/>
+    	<CD code="34.1" displayName="INCISION OF MEDIASTINUM"/>
+    	<CD code="34.20" displayName="THORACOSCOPIC PLEURAL BX (OCT08)"/>
+    	<CD code="34.21" displayName="TRANSPLEURA THORACOSCOPY"/>
+    	<CD code="34.22" displayName="MEDIASTINOSCOPY"/>
+    	<CD code="34.26" displayName="OPEN MEDIASTINAL BIOPSY"/>
+    	<CD code="34.27" displayName="BIOPSY OF DIAPHRAGM"/>
+    	<CD code="34.28" displayName="DX PROCEDURE THORAX NEC"/>
+    	<CD code="34.29" displayName="DX PROC MEDIASTINUM NEC"/>
+    	<CD code="34.3" displayName="DESTRUCT MEDIASTIN LES"/>
+    	<CD code="34.4" displayName="DESTRUCT CHEST WALL LES"/>
+    	<CD code="34.51" displayName="DECORTICATION OF LUNG"/>
+    	<CD code="34.52" displayName="THORACOSCOPC DECORT LUNG (OCT08)"/>
+    	<CD code="34.59" displayName="OTHER PLEURAL EXCISION"/>
+    	<CD code="34.6" displayName="SCARIFICATION OF PLEURA"/>
+    	<CD code="34.73" displayName="CLOS THORACIC FISTUL NEC"/>
+    	<CD code="34.74" displayName="PECTUS DEFORMITY REPAIR"/>
+    	<CD code="34.79" displayName="OTHER CHEST WALL REPAIR"/>
+    	<CD code="34.81" displayName="EXCISE DIAPHRAGM LESION"/>
+    	<CD code="34.82" displayName="SUTURE DIAPHRAGM LACERAT"/>
+    	<CD code="34.83" displayName="CLOSE DIAPHRAGM FISTULA"/>
+    	<CD code="34.84" displayName="OTHER DIAPHRAGM REPAIR"/>
+    	<CD code="34.85" displayName="IMPLANT DIAPHRA PACEMAKE"/>
+    	<CD code="34.89" displayName="DIAPHRAGM OPERATION NEC"/>
+    	<CD code="34.93" displayName="REPAIR OF PLEURA"/>
+    	<CD code="34.99" displayName="THORACIC OPERATION NEC"/>
+    	<CD code="35.00" displayName="CLOSED VALVOTOMY NOS"/>
+    	<CD code="35.01" displayName="CLOSED AORTIC VALVOTOMY"/>
+    	<CD code="35.02" displayName="CLOSED MITRAL VALVOTOMY"/>
+    	<CD code="35.03" displayName="CLOSED PULMON VALVOTOMY"/>
+    	<CD code="35.04" displayName="CLOSED TRICUSP VALVOTOMY"/>
+    	<CD code="35.10" displayName="OPEN VALVULOPLASTY NOS"/>
+    	<CD code="35.11" displayName="OPN AORTIC VALVULOPLASTY"/>
+    	<CD code="35.12" displayName="OPN MITRAL VALVULOPLASTY"/>
+    	<CD code="35.13" displayName="OPN PULMON VALVULOPLASTY"/>
+    	<CD code="35.14" displayName="OPN TRICUS VALVULOPLASTY"/>
+    	<CD code="35.20" displayName="REPLACE HEART VALVE NOS"/>
+    	<CD code="35.21" displayName="REPLACE AORT VALV-TISSUE"/>
+    	<CD code="35.22" displayName="REPLACE AORTIC VALVE NEC"/>
+    	<CD code="35.23" displayName="REPLACE MITR VALV-TISSUE"/>
+    	<CD code="35.24" displayName="REPLACE MITRAL VALVE NEC"/>
+    	<CD code="35.25" displayName="REPLACE PULM VALV-TISSUE"/>
+    	<CD code="35.26" displayName="REPLACE PULMON VALVE NEC"/>
+    	<CD code="35.27" displayName="REPLACE TRIC VALV-TISSUE"/>
+    	<CD code="35.28" displayName="REPLACE TRICUSP VALV NEC"/>
+    	<CD code="35.31" displayName="PAPILLARY MUSCLE OPS"/>
+    	<CD code="35.32" displayName="CHORDAE TENDINEAE OPS"/>
+    	<CD code="35.33" displayName="ANNULOPLASTY"/>
+    	<CD code="35.34" displayName="INFUNDIBULECTOMY"/>
+    	<CD code="35.35" displayName="TRABECUL CARNEAE CORD OP"/>
+    	<CD code="35.39" displayName="TISS ADJ TO VALV OPS NEC"/>
+    	<CD code="35.42" displayName="CREATE SEPTAL DEFECT"/>
+    	<CD code="35.50" displayName="PROSTH REP HRT SEPTA NOS"/>
+    	<CD code="35.51" displayName="PROS REP ATRIAL DEF-OPN"/>
+    	<CD code="35.52" displayName="PROS REPAIR ATRIA DEF-CL"/>
+    	<CD code="35.53" displayName="PROST REPAIR VENTRIC DEF"/>
+    	<CD code="35.54" displayName="PROS REP ENDOCAR CUSHION"/>
+    	<CD code="35.55" displayName="PROS REP VENTRC DEF-CLOS (OCT06)"/>
+    	<CD code="35.60" displayName="GRFT REPAIR HRT SEPT NOS"/>
+    	<CD code="35.61" displayName="GRAFT REPAIR ATRIAL DEF"/>
+    	<CD code="35.62" displayName="GRAFT REPAIR VENTRIC DEF"/>
+    	<CD code="35.63" displayName="GRFT REP ENDOCAR CUSHION"/>
+    	<CD code="35.70" displayName="HEART SEPTA REPAIR NOS"/>
+    	<CD code="35.71" displayName="ATRIA SEPTA DEF REP NEC"/>
+    	<CD code="35.72" displayName="VENTR SEPTA DEF REP NEC"/>
+    	<CD code="35.73" displayName="ENDOCAR CUSHION REP NEC"/>
+    	<CD code="35.81" displayName="TOT REPAIR TETRAL FALLOT"/>
+    	<CD code="35.82" displayName="TOTAL REPAIR OF TAPVC"/>
+    	<CD code="35.83" displayName="TOT REP TRUNCUS ARTERIOS"/>
+    	<CD code="35.84" displayName="TOT COR TRANSPOS GRT VES"/>
+    	<CD code="35.91" displayName="INTERAT VEN RETRN TRANSP"/>
+    	<CD code="35.92" displayName="CONDUIT RT VENT-PUL ART"/>
+    	<CD code="35.93" displayName="CONDUIT LEFT VENTR-AORTA"/>
+    	<CD code="35.94" displayName="CONDUIT ARTIUM-PULM ART"/>
+    	<CD code="35.95" displayName="HEART REPAIR REVISION"/>
+    	<CD code="35.96" displayName="PERC HEART VALVULOPLASTY"/>
+    	<CD code="35.98" displayName="OTHER HEART SEPTA OPS"/>
+    	<CD code="35.99" displayName="OTHER HEART VALVE OPS"/>
+    	<CD code="36.00" displayName="OTHER HEART VALVE OPS"/>
+    	<CD code="36.01" displayName="PTCA-1 VES/ATH W/O AGENT"/>
+    	<CD code="36.02" displayName="PTCA-1 VES/ATH W AGENT"/>
+    	<CD code="36.03" displayName="OPEN CORONRY ANGIOPLASTY"/>
+    	<CD code="36.05" displayName="PTCA-MULTIPLE VESSEL/ATH"/>
+    	<CD code="36.09" displayName="REM OF COR ART OBSTR NEC"/>
+    	<CD code="36.10" displayName="AORTOCORONARY BYPASS NOS"/>
+    	<CD code="36.11" displayName="AORTOCOR BYPAS-1 COR ART"/>
+    	<CD code="36.12" displayName="AORTOCOR BYPAS-2 COR ART"/>
+    	<CD code="36.13" displayName="AORTOCOR BYPAS-3 COR ART"/>
+    	<CD code="36.14" displayName="AORTCOR BYPAS-4+ COR ART"/>
+    	<CD code="36.15" displayName="1 INT MAM-COR ART BYPASS"/>
+    	<CD code="36.16" displayName="2 INT MAM-COR ART BYPASS"/>
+    	<CD code="36.17" displayName="ABD-CORON ARTERY BYPASS"/>
+    	<CD code="36.19" displayName="HRT REVAS BYPS ANAS NEC"/>
+    	<CD code="36.2" displayName="ARTERIAL IMPLANT REVASC"/>
+    	<CD code="36.3" displayName="ARTERIAL IMPLANT REVASC"/>
+    	<CD code="36.31" displayName="OPEN CHEST TRANS REVASC"/>
+    	<CD code="36.32" displayName="OTH TRANSMYO REVASCULAR"/>
+    	<CD code="36.33" displayName="ENDO TRANSMYO REVASCULAR (OCT06)"/>
+    	<CD code="36.34" displayName="PERC TRANSMYO REVASCULAR (OCT06)"/>
+    	<CD code="36.39" displayName="OTH HEART REVASCULAR"/>
+    	<CD code="36.91" displayName="CORON VESS ANEURYSM REP"/>
+    	<CD code="36.99" displayName="HEART VESSEL OP NEC"/>
+    	<CD code="37.10" displayName="INCISION OF HEART NOS"/>
+    	<CD code="37.11" displayName="CARDIOTOMY"/>
+    	<CD code="37.12" displayName="PERICARDIOTOMY"/>
+    	<CD code="37.24" displayName="PERICARDIAL BIOPSY"/>
+    	<CD code="37.31" displayName="PERICARDIECTOMY"/>
+    	<CD code="37.32" displayName="HEART ANEURYSM EXCISION"/>
+    	<CD code="37.33" displayName="EXC/DEST HRT LESION OPEN"/>
+    	<CD code="37.34" displayName="EXC/DEST HRT LES OTHER"/>
+    	<CD code="37.35" displayName="PARTIAL VENTRICULECTOMY"/>
+    	<CD code="37.4" displayName="HEART + PERICARD REPAIR"/>
+    	<CD code="37.41" displayName="IMPL CARDIAC SUPPORT DEV (OCT05)"/>
+    	<CD code="37.49" displayName="HEART/PERICARD REPR NEC (OCT05)"/>
+    	<CD code="37.5" displayName="HEART + PERICARD REPAIR"/>
+    	<CD code="37.51" displayName="HEART TRANSPLANTATION (OCT03)"/>
+    	<CD code="37.52" displayName="IMPLANT TOT REP HRT SYS"/>
+    	<CD code="37.53" displayName="REPL/REP THORAC UNIT HRT"/>
+    	<CD code="37.54" displayName="REPL/REP OTH TOT HRT SYS"/>
+    	<CD code="37.55" displayName="REM INT BIVENT HRT SYS (OCT08)"/>
+    	<CD code="37.60" displayName="IMP BIVN EXT HRT AST SYS (OCT08)"/>
+    	<CD code="37.61" displayName="PULSATION BALLOON IMPLAN"/>
+    	<CD code="37.62" displayName="IMPLANT HRT ASST SYS NEC"/>
+    	<CD code="37.63" displayName="REPLACE HRT ASSIST SYST"/>
+    	<CD code="37.64" displayName="REMOVE HEART ASSIST SYS"/>
+    	<CD code="37.65" displayName="IMP EXT PUL HRT ASST SYS"/>
+    	<CD code="37.66" displayName="IMP IMP PUL HRT ASST SYS"/>
+    	<CD code="37.67" displayName="IMP CARDIOMYOSTIMUL SYS"/>
+    	<CD code="37.68" displayName="PERCUTAN HRT ASSIST SYST"/>
+    	<CD code="37.74" displayName="INT OR REPL LEAD EPICAR"/>
+    	<CD code="37.75" displayName="REVISION OF LEAD"/>
+    	<CD code="37.76" displayName="REPL TV ATRI-VENT LEAD"/>
+    	<CD code="37.77" displayName="REMOVAL OF LEAD W/O REPL"/>
+    	<CD code="37.79" displayName="REVIS OR RELOCATE POCKET"/>
+    	<CD code="37.80" displayName="INT OR REPL PERM PACEMKR"/>
+    	<CD code="37.85" displayName="REPL PACEM W 1-CHAM, NON"/>
+    	<CD code="37.86" displayName="REPL PACEM 1-CHAM, RATE"/>
+    	<CD code="37.87" displayName="REPL PACEM W DUAL-CHAM"/>
+    	<CD code="37.89" displayName="REVISE OR REMOVE PACEMAK"/>
+    	<CD code="37.91" displayName="OPN CHEST CARDIAC MASSAG"/>
+    	<CD code="37.94" displayName="IMPLT/REPL CARDDEFIB TOT"/>
+    	<CD code="37.95" displayName="IMPLT CARDIODEFIB LEADS"/>
+    	<CD code="37.96" displayName="IMPLT CARDIODEFIB GENATR"/>
+    	<CD code="37.97" displayName="REPL CARDIODEFIB LEADS"/>
+    	<CD code="37.98" displayName="REPL CARDIODEFIB GENRATR"/>
+    	<CD code="37.99" displayName="OTHER HEART/PERICARD OPS"/>
+    	<CD code="38.00" displayName="INCISION OF VESSEL NOS"/>
+    	<CD code="38.01" displayName="INTRACRAN VESSEL INCIS"/>
+    	<CD code="38.02" displayName="HEAD/NECK VES INCIS NEC"/>
+    	<CD code="38.03" displayName="UPPER LIMB VESSEL INCIS"/>
+    	<CD code="38.04" displayName="INCISION OF AORTA"/>
+    	<CD code="38.05" displayName="THORACIC VESSEL INC NEC"/>
+    	<CD code="38.06" displayName="ABDOMEN ARTERY INCISION"/>
+    	<CD code="38.07" displayName="ABDOMINAL VEIN INCISION"/>
+    	<CD code="38.08" displayName="LOWER LIMB ARTERY INCIS"/>
+    	<CD code="38.09" displayName="LOWER LIMB VEIN INCISION"/>
+    	<CD code="38.10" displayName="ENDARTERECTOMY NOS"/>
+    	<CD code="38.11" displayName="INTRACRAN ENDARTERECTOMY"/>
+    	<CD code="38.12" displayName="HEAD + NECK ENDARTER NEC"/>
+    	<CD code="38.13" displayName="UPPER LIMB ENDARTERECTOM"/>
+    	<CD code="38.14" displayName="ENDARTERECTOMY OF AORTA"/>
+    	<CD code="38.15" displayName="THORACIC ENDARTERECTOMY"/>
+    	<CD code="38.16" displayName="ABDOMINAL ENDARTERECTOMY"/>
+    	<CD code="38.18" displayName="LOWER LIMB ENDARTERECT"/>
+    	<CD code="38.21" displayName="BLOOD VESSEL BIOPSY"/>
+    	<CD code="38.29" displayName="BLOOD VESSEL DX PROC NEC"/>
+    	<CD code="38.30" displayName="VESSEL RESECT/ANAST NOS"/>
+    	<CD code="38.31" displayName="INTRACRAN VES RESEC-ANAS"/>
+    	<CD code="38.32" displayName="HEAD/NECK VES RESEC-ANAS"/>
+    	<CD code="38.33" displayName="ARM VESSEL RESECT/ANAST"/>
+    	<CD code="38.34" displayName="AORTA RESECTION + ANAST"/>
+    	<CD code="38.35" displayName="THOR VESSEL RESECT/ANAST"/>
+    	<CD code="38.36" displayName="ABD VESSEL RESECT/ANAST"/>
+    	<CD code="38.37" displayName="ABD VEIN RESECT + ANAST"/>
+    	<CD code="38.38" displayName="LEG ARTERY RESECT/ANAST"/>
+    	<CD code="38.39" displayName="LEG VEIN RESECT/ANASTOM"/>
+    	<CD code="38.40" displayName="VESSEL RESECT/REPLAC NOS"/>
+    	<CD code="38.41" displayName="INTRACRAN VES RESEC-REPL"/>
+    	<CD code="38.42" displayName="HEAD/NECK VES RESEC-REPL"/>
+    	<CD code="38.43" displayName="ARM VES RESECT W REPLACE"/>
+    	<CD code="38.44" displayName="RESECT ABDM AORTA W REPL"/>
+    	<CD code="38.45" displayName="RESECT THORAC VES W REPL"/>
+    	<CD code="38.46" displayName="ABD ARTERY RESEC W REPLA"/>
+    	<CD code="38.47" displayName="ABD VEIN RESECT W REPLAC"/>
+    	<CD code="38.48" displayName="LEG ARTERY RESEC W REPLA"/>
+    	<CD code="38.49" displayName="LEG VEIN RESECT W REPLAC"/>
+    	<CD code="38.50" displayName="VARICOSE V LIG-STRIP NOS"/>
+    	<CD code="38.51" displayName="INTCRAN VAR V LIG-STRIP"/>
+    	<CD code="38.52" displayName="HEAD/NECK VAR V LIG-STR"/>
+    	<CD code="38.53" displayName="ARM VARICOSE V LIG-STRIP"/>
+    	<CD code="38.55" displayName="THORAC VAR V LIG-STRIP"/>
+    	<CD code="38.57" displayName="ABD VARICOS V LIGA-STRIP"/>
+    	<CD code="38.59" displayName="LEG VARICOS V LIGA-STRIP"/>
+    	<CD code="38.60" displayName="EXCISION OF VESSEL NOS"/>
+    	<CD code="38.61" displayName="INTRACRAN VESSEL EXCIS"/>
+    	<CD code="38.62" displayName="HEAD/NECK VESSEL EXCIS"/>
+    	<CD code="38.63" displayName="ARM VESSEL EXCISION"/>
+    	<CD code="38.64" displayName="EXCISION OF AORTA"/>
+    	<CD code="38.65" displayName="THORACIC VESSEL EXCISION"/>
+    	<CD code="38.66" displayName="ABDOMINAL ARTERY EXCIS"/>
+    	<CD code="38.67" displayName="ABDOMINAL VEIN EXCISION"/>
+    	<CD code="38.68" displayName="LEG ARTERY EXCISION"/>
+    	<CD code="38.69" displayName="LEG VEIN EXCISION"/>
+    	<CD code="38.80" displayName="SURG VESSEL OCCLUS NEC"/>
+    	<CD code="38.81" displayName="OCCLUS INTRACRAN VES NEC"/>
+    	<CD code="38.82" displayName="OCCLUS HEAD/NECK VES NEC"/>
+    	<CD code="38.83" displayName="OCCLUDE ARM VESSEL NEC"/>
+    	<CD code="38.84" displayName="OCCLUDE AORTA NEC"/>
+    	<CD code="38.85" displayName="OCCLUDE THORACIC VES NEC"/>
+    	<CD code="38.86" displayName="OCCLUDE ABD ARTERY NEC"/>
+    	<CD code="38.87" displayName="OCCLUDE ABD VEIN NEC"/>
+    	<CD code="38.88" displayName="OCCLUDE LEG ARTERY NEC"/>
+    	<CD code="38.89" displayName="OCCLUDE LEG VEIN NEC"/>
+    	<CD code="39.0" displayName="SYSTEMIC-PULM ART SHUNT"/>
+    	<CD code="39.1" displayName="INTRA-ABD VENOUS SHUNT"/>
+    	<CD code="39.8" displayName="CARTD BODY/SINUS/VASC OP (OCT08)"/>
+    	<CD code="39.21" displayName="CAVAL-PULMON ART ANASTOM"/>
+    	<CD code="39.22" displayName="AORTA-SUBCLV-CAROT BYPAS"/>
+    	<CD code="39.23" displayName="INTRATHORACIC SHUNT NEC"/>
+    	<CD code="39.24" displayName="AORTA-RENAL BYPASS"/>
+    	<CD code="39.25" displayName="AORTA-ILIAC-FEMOR BYPASS"/>
+    	<CD code="39.26" displayName="INTRA-ABDOMIN SHUNT NEC"/>
+    	<CD code="39.27" displayName="DIALYSIS ARTERIOVENOSTOM"/>
+    	<CD code="39.28" displayName="EXTRACRAN-INTRACR BYPASS"/>
+    	<CD code="39.29" displayName="VASC SHUNT + BYPASS NEC"/>
+    	<CD code="39.30" displayName="SUTURE OF VESSEL NOS"/>
+    	<CD code="39.31" displayName="SUTURE OF ARTERY"/>
+    	<CD code="39.32" displayName="SUTURE OF VEIN"/>
+    	<CD code="39.41" displayName="POSTOP VASC OP HEM CONTR"/>
+    	<CD code="39.42" displayName="REVIS REN DIALYSIS SHUNT"/>
+    	<CD code="39.43" displayName="REMOV REN DIALYSIS SHUNT"/>
+    	<CD code="39.49" displayName="VASC PROC REVISION NEC"/>
+    	<CD code="39.50" displayName="ANGIO/ATH NON-CORO VES"/>
+    	<CD code="39.51" displayName="CLIPPING OF ANEURYSM"/>
+    	<CD code="39.52" displayName="ANEURYSM REPAIR NEC"/>
+    	<CD code="39.53" displayName="ARTERIOVEN FISTULA REP"/>
+    	<CD code="39.54" displayName="RE-ENTRY OPERATION"/>
+    	<CD code="39.55" displayName="REIMPLAN ABERR RENAL VES"/>
+    	<CD code="39.56" displayName="REPAIR VESS W TIS PATCH"/>
+    	<CD code="39.57" displayName="REP VESS W SYNTH PATCH"/>
+    	<CD code="39.58" displayName="REPAIR VESS W PATCH NOS"/>
+    	<CD code="39.59" displayName="REPAIR OF VESSEL NEC"/>
+    	<CD code="39.7" displayName="PER CARDIOPULMON BYPASS"/>
+    	<CD code="39.71" displayName="ENDO IMPL GRFT ABD AORTA"/>
+    	<CD code="39.72" displayName="ENDOVASC REPAIR HEAD VES"/>
+    	<CD code="39.73" displayName="ENDO IMP GRFT THOR AORTA (OCT05)"/>
+    	<CD code="39.74" displayName="ENDO REM OBS HD/NECK VES (OCT06)"/>
+    	<CD code="39.75" displayName="ENDO EM HD/NK, BARE COILD (OCT09)"/>
+    	<CD code="39.76" displayName="ENDO EM HD/NK, BIOAC COIL (OCT09)"/>
+    	<CD code="39.79" displayName="ENDO REPAIR OTHER VESSEL"/>
+    	<CD code="39.8" displayName="VASCULAR BODY OPERATIONS"/>
+    	<CD code="39.91" displayName="FREEING OF VESSEL"/>
+    	<CD code="39.92" displayName="VEIN INJECT-SCLEROS AGNT"/>
+    	<CD code="39.93" displayName="INSERT VES-TO-VES CANNUL"/>
+    	<CD code="39.94" displayName="REPLAC VES-TO-VES CANNUL"/>
+    	<CD code="39.98" displayName="HEMORRHAGE CONTROL NOS"/>
+    	<CD code="39.99" displayName="VESSEL OPERATION NEC"/>
+    	<CD code="40.0" displayName="INCIS LYMPHATIC STRUCTUR"/>
+    	<CD code="40.11" displayName="LYMPHATIC STRUCT BIOPSY"/>
+    	<CD code="40.19" displayName="LYMPHATIC DIAG PROC NEC"/>
+    	<CD code="40.21" displayName="EXCIS DEEP CERVICAL NODE"/>
+    	<CD code="40.22" displayName="EXCISE INT MAMMARY NODE"/>
+    	<CD code="40.23" displayName="EXCISE AXILLARY NODE"/>
+    	<CD code="40.24" displayName="EXCISE INGUINAL NODE"/>
+    	<CD code="40.29" displayName="SIMP EXC LYMPH STRUC NEC"/>
+    	<CD code="40.3" displayName="REGIONAL LYMPH NODE EXC"/>
+    	<CD code="40.40" displayName="RAD NECK DISSECTION NOS"/>
+    	<CD code="40.41" displayName="UNILAT RAD NECK DISSECT"/>
+    	<CD code="40.42" displayName="BILAT RAD NECK DISSECT"/>
+    	<CD code="40.50" displayName="RAD NODE DISSECTION NOS"/>
+    	<CD code="40.51" displayName="RAD DISSEC AXILLARY NODE"/>
+    	<CD code="40.52" displayName="RAD DISSEC PERIAORT NODE"/>
+    	<CD code="40.53" displayName="RAD DISSECT ILIAC NODES"/>
+    	<CD code="40.54" displayName="RADICAL GROIN DISSECTION"/>
+    	<CD code="40.59" displayName="RAD NODE DISSECTION NEC"/>
+    	<CD code="40.61" displayName="THORAC DUCT CANNULATION"/>
+    	<CD code="40.62" displayName="THORACIC DUCT FISTULIZAT"/>
+    	<CD code="40.63" displayName="CLOSE THORACIC DUCT FIST"/>
+    	<CD code="40.64" displayName="LIGATE THORACIC DUCT"/>
+    	<CD code="40.69" displayName="THORACIC DUCT OP NEC"/>
+    	<CD code="40.9" displayName="LYMPH STRUCTURE OP NEC"/>
+    	<CD code="41.2" displayName="SPLENOTOMY"/>
+    	<CD code="41.33" displayName="OPEN SPLEEN BIOPSY"/>
+    	<CD code="41.41" displayName="SPLENIC CYST MARSUPIAL"/>
+    	<CD code="41.42" displayName="EXC SPLENIC LESION/TISS"/>
+    	<CD code="41.43" displayName="PARTIAL SPLENECTOMY"/>
+    	<CD code="41.5" displayName="TOTAL SPLENECTOMY"/>
+    	<CD code="41.93" displayName="EXC OF ACCESSORY SPLEEN"/>
+    	<CD code="41.94" displayName="SPLEEN TRANSPLANTATION"/>
+    	<CD code="41.95" displayName="REPAIR OF SPLEEN"/>
+    	<CD code="41.99" displayName="SPLEEN OPERATION NEC"/>
+    	<CD code="42.01" displayName="ESOPHAGEAL WEB INCISION"/>
+    	<CD code="42.09" displayName="ESOPHAGEAL INCISION NEC"/>
+    	<CD code="42.10" displayName="ESOPHAGOSTOMY NOS"/>
+    	<CD code="42.11" displayName="CERVICAL ESOPHAGOSTOMY"/>
+    	<CD code="42.12" displayName="ESOPH POUCH EXTERIORIZAT"/>
+    	<CD code="42.19" displayName="EXT FISTULIZAT ESOPH NEC"/>
+    	<CD code="42.21" displayName="ESOPHAGOSCOPY BY INCIS"/>
+    	<CD code="42.25" displayName="OPEN BIOPSY OF ESOPHAGUS"/>
+    	<CD code="42.31" displayName="LOC EXCIS ESOPH DIVERTIC"/>
+    	<CD code="42.32" displayName="LOCAL EXCIS ESOPHAG NEC"/>
+    	<CD code="42.39" displayName="DESTRUCT ESOPHAG LES NEC"/>
+    	<CD code="42.40" displayName="ESOPHAGECTOMY NOS"/>
+    	<CD code="42.41" displayName="PARTIAL ESOPHAGECTOMY"/>
+    	<CD code="42.42" displayName="TOTAL ESOPHAGECTOMY"/>
+    	<CD code="42.51" displayName="THORAC ESOPHAGOESOPHAGOS"/>
+    	<CD code="42.52" displayName="THORAC ESOPHAGOGASTROST"/>
+    	<CD code="42.53" displayName="THORAC SM BOWEL INTERPOS"/>
+    	<CD code="42.54" displayName="THORAC ESOPHAGOENTER NEC"/>
+    	<CD code="42.55" displayName="THORAC LG BOWEL INTERPOS"/>
+    	<CD code="42.56" displayName="THORAC ESOPHAGOCOLOS NEC"/>
+    	<CD code="42.58" displayName="THORAC INTERPOSITION NEC"/>
+    	<CD code="42.59" displayName="THORAC ESOPHAG ANAST NEC"/>
+    	<CD code="42.61" displayName="STERN ESOPHAGOESOPHAGOST"/>
+    	<CD code="42.62" displayName="STERN ESOPHAGOGASTROSTOM"/>
+    	<CD code="42.63" displayName="STERN SM BOWEL INTERPOS"/>
+    	<CD code="42.64" displayName="STERN ESOPHAGOENTER NEC"/>
+    	<CD code="42.65" displayName="STERN LG BOWEL INTERPOS"/>
+    	<CD code="42.66" displayName="STERN ESOPHAGOCOLOS NEC"/>
+    	<CD code="42.68" displayName="STERN INTERPOSITION NEC"/>
+    	<CD code="42.69" displayName="STERN ESOPHAG ANAST NEC"/>
+    	<CD code="42.7" displayName="ESOPHAGOMYOTOMY"/>
+    	<CD code="42.82" displayName="SUTURE ESOPHAGEAL LACER"/>
+    	<CD code="42.83" displayName="ESOPHAGOSTOMY CLOSURE"/>
+    	<CD code="42.84" displayName="ESOPH FISTULA REPAIR NEC"/>
+    	<CD code="42.85" displayName="ESOPHAG STRICTURE REPAIR"/>
+    	<CD code="42.86" displayName="PROD SUBQ TUNNEL NO ANAS"/>
+    	<CD code="42.87" displayName="ESOPHAGEAL GRAFT NEC"/>
+    	<CD code="42.89" displayName="ESOPHAGEAL REPAIR NEC"/>
+    	<CD code="42.91" displayName="LIGATION ESOPH VARIX"/>
+    	<CD code="43.0" displayName="GASTROTOMY"/>
+    	<CD code="43.1" displayName="GASTROTOMY"/>
+    	<CD code="43.2" displayName="OTHER GASTROSTOMY"/>
+    	<CD code="43.3" displayName="PYLOROMYOTOMY"/>
+    	<CD code="43.42" displayName="LOCAL GASTR EXCISION NEC"/>
+    	<CD code="43.49" displayName="LOCAL GASTR DESTRUCT NEC"/>
+    	<CD code="43.5" displayName="PROXIMAL GASTRECTOMY"/>
+    	<CD code="43.6" displayName="DISTAL GASTRECTOMY"/>
+    	<CD code="43.7" displayName="PART GASTREC W JEJ ANAST"/>
+    	<CD code="43.81" displayName="PART GAST W JEJ TRANSPOS"/>
+    	<CD code="43.89" displayName="PARTIAL GASTRECTOMY NEC"/>
+    	<CD code="43.91" displayName="TOT GAST W INTES INTERPO"/>
+    	<CD code="43.99" displayName="TOTAL GASTRECTOMY NEC"/>
+    	<CD code="44.00" displayName="VAGOTOMY NOS"/>
+    	<CD code="44.01" displayName="TRUNCAL VAGOTOMY"/>
+    	<CD code="44.02" displayName="HIGHLY SELECT VAGOTOMY"/>
+    	<CD code="44.03" displayName="SELECTIVE VAGOTOMY NEC"/>
+    	<CD code="44.11" displayName="TRANSABDOMIN GASTROSCOPY"/>
+    	<CD code="44.15" displayName="OPEN GASTRIC BIOPSY"/>
+    	<CD code="44.2" displayName="GASTRIC DIAGNOS PROC NEC"/>
+    	<CD code="44.21" displayName="DILATE PYLORUS, INCISION"/>
+    	<CD code="44.29" displayName="OTHER PYLOROPLASTY"/>
+    	<CD code="44.31" displayName="HIGH GASTRIC BYPASS"/>
+    	<CD code="44.32" displayName="PERCU GASTROJEJUNOSTOMY"/>
+    	<CD code="44.38" displayName="LAP GASTROENTEROSTOMY (OCT04)"/>
+    	<CD code="44.39" displayName="GASTROENTEROSTOMY NEC"/>
+    	<CD code="44.40" displayName="SUTURE PEPTIC ULCER NOS"/>
+    	<CD code="44.41" displayName="SUT GASTRIC ULCER SITE"/>
+    	<CD code="44.42" displayName="SUTURE DUODEN ULCER SITE"/>
+    	<CD code="44.5" displayName="REVISION GASTRIC ANASTOM"/>
+    	<CD code="44.61" displayName="SUTURE GASTRIC LACERAT"/>
+    	<CD code="44.63" displayName="CLOSE GASTRIC FISTUL NEC"/>
+    	<CD code="44.64" displayName="GASTROPEXY"/>
+    	<CD code="44.65" displayName="ESOPHAGOGASTROPLASTY"/>
+    	<CD code="44.66" displayName="CREAT ESOPHAGASTR SPHINC"/>
+    	<CD code="44.67" displayName="LAP CREAT ESOPH SPHINCT (OCT04)"/>
+    	<CD code="44.68" displayName="LAPAROSCOP GASTROPLSTY (OCT04)"/>
+    	<CD code="44.69" displayName="GASTRIC REPAIR NEC"/>
+    	<CD code="44.91" displayName="LIGATE GASTRIC VARICES"/>
+    	<CD code="44.92" displayName="INTRAOP GASTRIC MANIPUL"/>
+    	<CD code="44.95" displayName="LAP GASTRIC RESTRIC PROC (OCT04)"/>
+    	<CD code="44.96" displayName="LAP REV GAST RESTRI PROC (OCT04)"/>
+    	<CD code="44.97" displayName="LAP REM GAST RESTRIC DEV (OCT04)"/>
+    	<CD code="44.98" displayName="ADJUST GAST RESTRICT DEV (OCT04)"/>
+    	<CD code="44.99" displayName="GASTRIC OPERATION NEC"/>
+    	<CD code="45.00" displayName="INTESTINAL INCISION NOS"/>
+    	<CD code="45.01" displayName="DUODENAL INCISION"/>
+    	<CD code="45.02" displayName="SMALL BOWEL INCISION NEC"/>
+    	<CD code="45.03" displayName="LARGE BOWEL INCISION"/>
+    	<CD code="45.11" displayName="TRANSAB SM BOWEL ENDOSC"/>
+    	<CD code="45.15" displayName="OPEN SMALL BOWEL BIOPSY"/>
+    	<CD code="45.21" displayName="TRANSAB LG BOWEL ENDOSC"/>
+    	<CD code="45.26" displayName="OPEN LARGE BOWEL BIOPSY"/>
+    	<CD code="45.31" displayName="OTH EXCISE DUODENUM LES"/>
+    	<CD code="45.32" displayName="DESTRUCT DUODEN LES NEC"/>
+    	<CD code="45.33" displayName="LOCAL EXCIS SM BOWEL NEC"/>
+    	<CD code="45.34" displayName="DESTR SM BOWEL LES NEC"/>
+    	<CD code="45.41" displayName="EXCISE LG INTESTINE LES"/>
+    	<CD code="45.49" displayName="DESTRUC LG BOWEL LES NEC"/>
+    	<CD code="45.50" displayName="INTEST SEG ISOLAT NOS"/>
+    	<CD code="45.51" displayName="SM BOWEL SEGMENT ISOLAT"/>
+    	<CD code="45.52" displayName="LG BOWEL SEGMENT ISOLAT"/>
+    	<CD code="45.61" displayName="MULT SEG SM BOWEL EXCIS"/>
+    	<CD code="45.62" displayName="PART SM BOWEL RESECT NEC"/>
+    	<CD code="45.63" displayName="TOTAL REMOVAL SM BOWEL"/>
+    	<CD code="45.71" displayName="MULT SEG LG BOWEL EXCIS"/>
+    	<CD code="45.72" displayName="CECECTOMY"/>
+    	<CD code="45.73" displayName="RIGHT HEMICOLECTOMY"/>
+    	<CD code="45.74" displayName="TRANSVERSE COLON RESECT"/>
+    	<CD code="45.75" displayName="LEFT HEMICOLECTOMY"/>
+    	<CD code="45.76" displayName="SIGMOIDECTOMY"/>
+    	<CD code="45.79" displayName="PART LG BOWEL EXCIS NEC"/>
+    	<CD code="45.8" displayName="TOT INTRA-ABD COLECTOMY"/>
+    	<CD code="45.81" displayName="LAP TOT INTR-AB COLECTMY (OCT08)"/>
+    	<CD code="45.82" displayName="OP TOT INTR-ABD COLECTMY (OCT08)"/>
+    	<CD code="45.83" displayName="TOT ABD COLECTMY NEC/NOS (OCT08)"/>
+    	<CD code="45.90" displayName="INTESTINAL ANASTOM NOS"/>
+    	<CD code="45.91" displayName="SM-TO-SM BOWEL ANASTOM"/>
+    	<CD code="45.92" displayName="SM BOWEL-RECT STUMP ANAS"/>
+    	<CD code="45.93" displayName="SMALL-TO-LARGE BOWEL NEC"/>
+    	<CD code="45.94" displayName="LG-TO-LG BOWEL ANASTOM"/>
+    	<CD code="45.95" displayName="ANAL ANASTOMOSIS"/>
+    	<CD code="46.01" displayName="SM BOWEL EXTERIORIZATION"/>
+    	<CD code="46.02" displayName="RESECT EXT SEG SM BOWEL"/>
+    	<CD code="46.03" displayName="LG BOWEL EXTERIORIZATION"/>
+    	<CD code="46.04" displayName="RESECT EXT SEG LG BOWEL"/>
+    	<CD code="46.10" displayName="COLOSTOMY NOS"/>
+    	<CD code="46.11" displayName="TEMPORARY COLOSTOMY"/>
+    	<CD code="46.12" displayName="TEMPORARY COLOSTOMY"/>
+    	<CD code="46.13" displayName="PERMANENT COLOSTOMY"/>
+    	<CD code="46.20" displayName="ILEOSTOMY NOS"/>
+    	<CD code="46.21" displayName="TEMPORARY ILEOSTOMY"/>
+    	<CD code="46.22" displayName="CONTINENT ILEOSTOMY"/>
+    	<CD code="46.23" displayName="PERMANENT ILEOSTOMY NEC"/>
+    	<CD code="46.40" displayName="INTEST STOMA REVIS NOS"/>
+    	<CD code="46.41" displayName="SM BOWEL STOMA REVISION"/>
+    	<CD code="46.42" displayName="PERICOLOST HERNIA REPAIR"/>
+    	<CD code="46.43" displayName="LG BOWEL STOMA REVIS NEC"/>
+    	<CD code="46.50" displayName="INTEST STOMA CLOSURE NOS"/>
+    	<CD code="46.51" displayName="SM BOWEL STOMA CLOSURE"/>
+    	<CD code="46.52" displayName="LG BOWEL STOMA CLOSURE"/>
+    	<CD code="46.60" displayName="INTESTINAL FIXATION NOS"/>
+    	<CD code="46.61" displayName="SM BOWEL-ABD WALL FIXAT"/>
+    	<CD code="46.62" displayName="SMALL BOWEL FIXATION NEC"/>
+    	<CD code="46.63" displayName="LG BOWEL-ABD WALL FIXAT"/>
+    	<CD code="46.64" displayName="LARGE BOWEL FIXATION NEC"/>
+    	<CD code="46.71" displayName="DUODENAL LACERAT SUTURE"/>
+    	<CD code="46.72" displayName="DUODENAL FISTULA CLOSURE"/>
+    	<CD code="46.73" displayName="SMALL BOWEL SUTURE NEC"/>
+    	<CD code="46.74" displayName="CLOSE SM BOWEL FIST NEC"/>
+    	<CD code="46.75" displayName="SUTURE LG BOWEL LACERAT"/>
+    	<CD code="46.76" displayName="CLOSE LG BOWEL FISTULA"/>
+    	<CD code="46.79" displayName="REPAIR OF INTESTINE NEC"/>
+    	<CD code="46.80" displayName="INTRA-AB BOWEL MANIP NOS"/>
+    	<CD code="46.81" displayName="INTRA-ABD SM BOWEL MANIP"/>
+    	<CD code="46.82" displayName="INTRA-ABD LG BOWEL MANIP"/>
+    	<CD code="46.91" displayName="MYOTOMY OF SIGMOID COLON"/>
+    	<CD code="46.92" displayName="MYOTOMY OF COLON NEC"/>
+    	<CD code="46.93" displayName="REVISE SM BOWEL ANASTOM"/>
+    	<CD code="46.94" displayName="REVISE LG BOWEL ANASTOM"/>
+    	<CD code="46.97" displayName="TRANSPLANT OF INTESTINE"/>
+    	<CD code="46.99" displayName="INTESTINAL OP NEC"/>
+    	<CD code="47.0" displayName="INTESTINAL OP NEC"/>
+    	<CD code="47.01" displayName="LAP APPENDECTOMY"/>
+    	<CD code="47.09" displayName="OTHER APPENDECTOMY"/>
+    	<CD code="47.1" displayName="OTHER APPENDECTOMY"/>
+    	<CD code="47.11" displayName="LAP INCID APPENDECTOMY"/>
+    	<CD code="47.19" displayName="OTHER INCID APPENDECTOMY"/>
+    	<CD code="47.2" displayName="DRAIN APPENDICEAL ABSC"/>
+    	<CD code="47.91" displayName="APPENDICOSTOMY"/>
+    	<CD code="47.92" displayName="CLOSE APPENDICEAL FISTUL"/>
+    	<CD code="47.99" displayName="APPENDICEAL OPS NEC"/>
+    	<CD code="48.0" displayName="PROCTOTOMY"/>
+    	<CD code="48.1" displayName="PROCTOSTOMY"/>
+    	<CD code="48.21" displayName="TRANSAB PROCTOSIGMOIDOSC"/>
+    	<CD code="48.25" displayName="OPEN RECTAL BIOPSY"/>
+    	<CD code="48.35" displayName="LOCAL EXCIS RECTAL LES"/>
+    	<CD code="48.40" displayName="PULL-THRU RES RECTUM NOS (OCT08)"/>
+    	<CD code="48.41" displayName="SOAVE SUBMUC RECT RESECT"/>
+    	<CD code="48.42" displayName="LAP PULL-THRU RES RECTUM (OCT08)"/>
+    	<CD code="48.43" displayName="OPN PULL-THRU RES RECTUM (OCT08)"/>
+    	<CD code="48.49" displayName="PULL-THRU RECT RESEC NEC"/>
+    	<CD code="48.5" displayName="ABD-PERINEAL RECT RESECT"/>
+    	<CD code="48.50" displayName="ABDPERNEAL RES RECTM NOS (OCT09)"/>
+    	<CD code="48.51" displayName="LAP ABDPERNEAL RESC REC (OCT08)"/>
+    	<CD code="48.52" displayName="OPN ABDPERNEAL RESC REC (OCT08)"/>
+    	<CD code="48.59" displayName="ABDPERNEAL RESC RECT NEC (OCT08)"/>
+    	<CD code="48.61" displayName="TRANSSAC RECTOSIGMOIDECT"/>
+    	<CD code="48.62" displayName="ANT RECT RESECT W COLOST"/>
+    	<CD code="48.63" displayName="ANTERIOR RECT RESECT NEC"/>
+    	<CD code="48.64" displayName="POSTERIOR RECT RESECTION"/>
+    	<CD code="48.65" displayName="DUHAMEL RECTAL RESECTION"/>
+    	<CD code="48.66" displayName="DUHAMEL RECTAL RESECTION"/>
+    	<CD code="48.69" displayName="RECTAL RESECTION NEC"/>
+    	<CD code="48.71" displayName="SUTURE OF RECTAL LACER"/>
+    	<CD code="48.72" displayName="CLOSURE OF PROSTOMY"/>
+    	<CD code="48.73" displayName="CLOSE RECTAL FIST NEC"/>
+    	<CD code="48.74" displayName="RECTORECTOSTOMY"/>
+    	<CD code="48.75" displayName="ABDOMINAL PROPEXY"/>
+    	<CD code="48.76" displayName="PROPEXY NEC"/>
+    	<CD code="48.79" displayName="REPAIR OF RECTUM NEC"/>
+    	<CD code="48.81" displayName="PERIRECTAL INCISION"/>
+    	<CD code="48.82" displayName="PERIRECTAL EXCISION"/>
+    	<CD code="48.91" displayName="INCIS RECTAL STRICTURE"/>
+    	<CD code="48.92" displayName="ANORECTAL MYOMECTOMY"/>
+    	<CD code="48.93" displayName="REPAIR PERIRECT FISTULA"/>
+    	<CD code="48.99" displayName="RECTAL PERIRECT OP NEC"/>
+    	<CD code="49.01" displayName="INCIS PERIANAL ABSCESS"/>
+    	<CD code="49.02" displayName="PERIANAL INCISION NEC"/>
+    	<CD code="49.04" displayName="PERIANAL EXCISION NEC"/>
+    	<CD code="49.11" displayName="ANAL FISTULOTOMY"/>
+    	<CD code="49.12" displayName="ANAL FISTULECTOMY"/>
+    	<CD code="49.3" displayName="LOCAL EXCIS DEST ANUS LES (Begin 1980 End 1989)"/>
+    	<CD code="49.39" displayName="OTHER DESTRUC ANUS LES (Begin 1989)"/>
+    	<CD code="49.44" displayName="HEMORRHOID CRYOTHERAPY"/>
+    	<CD code="49.45" displayName="HEMORRHOID LIGATION"/>
+    	<CD code="49.46" displayName="HEMORRHOIDECTOMY"/>
+    	<CD code="49.49" displayName="HEMORRHOID PROCEDURE NEC"/>
+    	<CD code="49.51" displayName="LEFT LAT SPHINCTEROTOMY"/>
+    	<CD code="49.52" displayName="POST SPHINCTEROTOMY"/>
+    	<CD code="49.59" displayName="ANAL SPHINCTEROTOMY NEC"/>
+    	<CD code="49.6" displayName="EXCISION OF ANUS"/>
+    	<CD code="49.71" displayName="SUTURE ANAL LACERATION"/>
+    	<CD code="49.72" displayName="ANAL CERCLAGE"/>
+    	<CD code="49.73" displayName="CLOSURE OF ANAL FISTULA"/>
+    	<CD code="49.74" displayName="GRACILIS MUSC TRANSPLAN"/>
+    	<CD code="49.75" displayName="IMPL/REV OF ARTIFICIAL ANAL (Begin 2002)"/>
+    	<CD code="49.76" displayName="REMOVAL OF ARTIFICIAL ANAL (Begin 2002)"/>
+    	<CD code="49.79" displayName="ANAL SPHINCT REPAIR NEC"/>
+    	<CD code="49.91" displayName="INCISION OF ANAL SEPTUM"/>
+    	<CD code="49.92" displayName="INSERT SUBQ ANAL STIMUL"/>
+    	<CD code="49.93" displayName="ANAL INCISION NEC"/>
+    	<CD code="49.94" displayName="REDUCTION ANAL PROLAPSE"/>
+    	<CD code="49.95" displayName="CONTROL ANAL HEMORRHAGE"/>
+    	<CD code="49.99" displayName="ANAL OPERATION NEC"/>
+    	<CD code="50.0" displayName="HEPATOTOMY"/>
+    	<CD code="50.12" displayName="OPEN LIVER BIOPSY"/>
+    	<CD code="50.13" displayName="TRANSJUGULAR LIVER BX (OCT08)"/>
+    	<CD code="50.14" displayName="LAPAROSCOPIC LIVER BX (OCT08)"/>
+    	<CD code="50.19" displayName="HEPATIC DX PROC NEC"/>
+    	<CD code="50.21" displayName="MARSUPIALIZAT LIVER LES"/>
+    	<CD code="50.22" displayName="PARTIAL HEPATECTOMY"/>
+    	<CD code="50.23" displayName="OPN ABLTN LIVER LES/TISS (Begin 2006)"/>
+    	<CD code="50.24" displayName="PERC ABLTN LIVER LES/TIS (Begin 2006)"/>
+    	<CD code="50.25" displayName="LAP ABLTN LIVER LES/TISS (Begin 2006)"/>
+    	<CD code="50.26" displayName="ABLTN LIVER LES/TISS NEC (Begin 2006)"/>
+    	<CD code="50.29" displayName="DESTRUC HEPATIC LES NEC"/>
+    	<CD code="50.3" displayName="HEPATIC LOBECTOMY"/>
+    	<CD code="50.4" displayName="TOTAL HEPATECTOMY"/>
+    	<CD code="50.51" displayName="AUXILIARY LIVER TRANSPL"/>
+    	<CD code="50.59" displayName="LIVER TRANSPLANT NEC"/>
+    	<CD code="50.61" displayName="CLOSURE LIVER LACERAT"/>
+    	<CD code="50.69" displayName="LIVER REPAIR NEC"/>
+    	<CD code="51.02" displayName="TROCAR CHOLECYSTOSTOMY"/>
+    	<CD code="51.03" displayName="CHOLECYSTOSTOMY NEC"/>
+    	<CD code="51.04" displayName="CHOLECYSTOTOMY NEC"/>
+    	<CD code="51.13" displayName="OPEN BILIARY TRACT BX"/>
+    	<CD code="51.19" displayName="BILIARY TR DX PROC NEC"/>
+    	<CD code="51.21" displayName="PARTIAL CHOLECYSTECTOMY (Begin 1996)"/>
+    	<CD code="51.22" displayName="(TOTAL) CHOLECYSTECTOMY (Begin 1991)"/>
+    	<CD code="51.23" displayName="LAPAROSCOPIC CHOLECYSTEC (Begin 1991)"/>
+    	<CD code="51.24" displayName="LAPAROSCOP PART CHOLE (Begin 1996)"/>
+    	<CD code="51.31" displayName="GBTOHEPAT DUCT ANAST"/>
+    	<CD code="51.32" displayName="GBTOINTESTINE ANASTOM"/>
+    	<CD code="51.33" displayName="GBTOPANCREAS ANASTOM"/>
+    	<CD code="51.34" displayName="GBTOSTOMACH ANASTOMOS"/>
+    	<CD code="51.35" displayName="GALLBLADDER ANASTOM NEC"/>
+    	<CD code="51.36" displayName="CHOLEDOCHOENTEROSTOMY"/>
+    	<CD code="51.37" displayName="HEPATIC DUCTGI ANASTOM"/>
+    	<CD code="51.39" displayName="BILE DUCT ANASTOMOS NEC"/>
+    	<CD code="51.41" displayName="CDE FOR CALCULUS REMOV"/>
+    	<CD code="51.42" displayName="CDE FOR OBSTRUCTION NEC"/>
+    	<CD code="51.43" displayName="CHOLEDOCHOHEPAT INTUBAT"/>
+    	<CD code="51.49" displayName="INCIS OBSTR BILE DUC NEC"/>
+    	<CD code="51.51" displayName="COMMON DUCT EXPLORATION"/>
+    	<CD code="51.59" displayName="BILE DUCT INCISION NEC"/>
+    	<CD code="51.61" displayName="EXCIS CYST DUCT REMNANT"/>
+    	<CD code="51.62" displayName="EXCIS AMPULLA OF VATER"/>
+    	<CD code="51.63" displayName="COMMON DUCT EXCIS NEC"/>
+    	<CD code="51.69" displayName="BILE DUCT EXCISION NEC"/>
+    	<CD code="51.71" displayName="SIMPLE SUTCOMMON DUCT"/>
+    	<CD code="51.72" displayName="CHOLEDOCHOPLASTY"/>
+    	<CD code="51.79" displayName="BILE DUCT REPAIR NEC"/>
+    	<CD code="51.81" displayName="SPHINCTER OF ODDI DILAT"/>
+    	<CD code="51.82" displayName="PANCREAT SPHINCTEROTOM"/>
+    	<CD code="51.83" displayName="PANCREAT SPHINCTEROPLAS"/>
+    	<CD code="51.89" displayName="SPHINCT OF ODDI OP NEC"/>
+    	<CD code="51.91" displayName="REPAIR GB LACERATION"/>
+    	<CD code="51.92" displayName="CLOSURE CHOLECYSTOSTOMY"/>
+    	<CD code="51.93" displayName="CLOS BILIARY FISTUL NEC"/>
+    	<CD code="51.94" displayName="REVIS BILE TRACT ANASTOM"/>
+    	<CD code="51.95" displayName="REMOVE BILE DUCT PROSTH"/>
+    	<CD code="51.99" displayName="BILIARY TRACT OP NEC"/>
+    	<CD code="52.01" displayName="CATH DRAINPANCREAT CYST"/>
+    	<CD code="52.09" displayName="PANCREATOTOMY NEC"/>
+    	<CD code="52.12" displayName="OPEN PANCREATIC BIOPSY"/>
+    	<CD code="52.19" displayName="PANCREATIC DX PROC NEC"/>
+    	<CD code="52.2" displayName="LOCAL EXCIS PANCREAS LES (Begin 1980 End 1989)"/>
+    	<CD code="52.22" displayName="OTHER DESTRU PANCREA LES (Begin 1989)"/>
+    	<CD code="52.3" displayName="PANCREAT CYST MARSUPIALI"/>
+    	<CD code="52.4" displayName="INT DRAIN PANCREAT CYST"/>
+    	<CD code="52.51" displayName="PROXIMAL PANCREATECTOMY"/>
+    	<CD code="52.52" displayName="DISTAL PANCREATECTOMY"/>
+    	<CD code="52.53" displayName="RAD SUBTOT PANCREATECTOM"/>
+    	<CD code="52.59" displayName="PARTIAL PANCREATECT NEC"/>
+    	<CD code="52.6" displayName="TOTAL PANCREATECTOMY"/>
+    	<CD code="52.7" displayName="RAD PANCREATICODUODENECT"/>
+    	<CD code="52.80" displayName="PANCREAT TRANSPLANT NOS"/>
+    	<CD code="52.81" displayName="REIMPLANT PANCREATIC TIS"/>
+    	<CD code="52.82" displayName="PANCREATIC HOMOTRANSPLAN"/>
+    	<CD code="52.83" displayName="PANCREATIC HETEROTRANSPL"/>
+    	<CD code="52.91" displayName="ERCP (Begin 1980 End 1989)"/>
+    	<CD code="52.92" displayName="(OTH) CANNULAT PANCRE DUC (Begin 1980)"/>
+    	<CD code="52.95" displayName="PANCREATIC REPAIR NEC"/>
+    	<CD code="52.96" displayName="PANCREATIC ANASTOMOSIS"/>
+    	<CD code="52.99" displayName="PANCREATIC OPERATION NEC (Begin 1989)"/>
+    	<CD code="53.00" displayName="UNILAT ING HERN REP NOS"/>
+    	<CD code="53.01" displayName="REPAIR DIRECT ING HERNIA"/>
+    	<CD code="53.02" displayName="REPAIR INDIR ING HERNIA"/>
+    	<CD code="53.03" displayName="DIR ING HERNIA REPGRAFT"/>
+    	<CD code="53.04" displayName="IND ING HERNIA REPGRAFT"/>
+    	<CD code="53.05" displayName="ING HERNIA REPGRAFT NOS"/>
+    	<CD code="53.10" displayName="BILAT ING HERNIA REP NOS"/>
+    	<CD code="53.11" displayName="BILAT DIR ING HERN REP"/>
+    	<CD code="53.12" displayName="BILAT IND ING HERN REP"/>
+    	<CD code="53.13" displayName="BIL DIR/IND ING HRN REP"/>
+    	<CD code="53.14" displayName="BIL DIR ING HRN REPGRFT"/>
+    	<CD code="53.15" displayName="BIL IND ING HRN REPGRFT"/>
+    	<CD code="53.16" displayName="BIL DIR/IND ING HERNPRO"/>
+    	<CD code="53.17" displayName="BIL ING HRN REPGRFT NOS"/>
+    	<CD code="53.21" displayName="UNIL FEMOR HRN REPGRFT"/>
+    	<CD code="53.29" displayName="UNIL FEMOR HERN REP NEC"/>
+    	<CD code="53.31" displayName="BIL FEM HERN REPAIRGRFT"/>
+    	<CD code="53.39" displayName="BIL FEM HERN REPAIR NEC"/>
+    	<CD code="53.41" displayName="UMBIL HERNIA REPAIRGRFT"/>
+    	<CD code="53.42" displayName="LAP UMBIL HERNIA-GRAFT (begin 2008)"/>
+    	<CD code="53.43" displayName="LAP UMBILICAL HERNIA NEC (begin 2008)"/>
+    	<CD code="53.49" displayName="UMBIL HERNIA REPAIR NEC"/>
+    	<CD code="53.51" displayName="INCISIONAL HERNIA REPAIR"/>
+    	<CD code="53.59" displayName="ABD WALL HERN REPAIR NEC"/>
+    	<CD code="53.61" displayName="INCIS HERNIA REPAIRGRFT"/>
+    	<CD code="53.62" displayName="LAP INCIS HERN REPR-GRFT (begin 2008)"/>
+    	<CD code="53.63" displayName="LAP HERN ANT ABD-GFT NEC (begin 2008)"/>
+    	<CD code="53.69" displayName="ABD HERN REPAIRGRFT NEC"/>
+    	<CD code="53.7" displayName="ABD REPAIRDIAPHR HERNIA (end 2008)"/>
+    	<CD code="53.71" displayName="LAP ABD REP-DIAPHR HERN (begin 2008)"/>
+    	<CD code="53.72" displayName="OPN ABD DIAPHRM HERN NEC (begin 2008)"/>
+    	<CD code="53.75" displayName="ABD REP-DIAPHR HERN NOS (begin 2008)"/>
+    	<CD code="53.80" displayName="THOR REPDIAPH HERN NOS"/>
+    	<CD code="53.81" displayName="DIAPHRAGMATIC PLICATION"/>
+    	<CD code="53.82" displayName="PARASTERN HERNIA REPAIR"/>
+    	<CD code="53.83" displayName="LAP THORC APP-DIAPH HERN (begin 2008)"/>
+    	<CD code="53.84" displayName="OPN THORC DIAPH HERN NEC (begin 2008)"/>
+    	<CD code="53.9" displayName="OTHER HERNIA REPAIR"/>
+    	<CD code="54.0" displayName="ABDOMINAL WALL INCISION"/>
+    	<CD code="54.11" displayName="EXPLORATORY LAPAROTOMY"/>
+    	<CD code="54.12" displayName="REOPEN RECENT LAP SITE"/>
+    	<CD code="54.19" displayName="LAPAROTOMY NEC"/>
+    	<CD code="54.21" displayName="LAPAROSCOPY"/>
+    	<CD code="54.22" displayName="ABDOMINAL WALL BIOPSY"/>
+    	<CD code="54.23" displayName="PERITONEAL BIOPSY"/>
+    	<CD code="54.29" displayName="ABD REGION DX PROC NEC"/>
+    	<CD code="54.3" displayName="DESTRUCT ABD WALL LESION"/>
+    	<CD code="54.4" displayName="DESTRUCT PERITONEAL TISS"/>
+    	<CD code="54.5" displayName="PERITONEAL ADHESIOLYSIS (End 1996)"/>
+    	<CD code="54.51" displayName="LAPSC LYSIS ABD ADHES (Begin 1996)"/>
+    	<CD code="54.59" displayName="OTH LYSIS ABD ADHES (Begin 1996)"/>
+    	<CD code="54.61" displayName="RECLOSE POST OP DISRUPT"/>
+    	<CD code="54.62" displayName="DELAYED CLOS ABD WOUND"/>
+    	<CD code="54.63" displayName="ABD WALL SUTURE NEC"/>
+    	<CD code="54.64" displayName="PERITONEAL SUTURE"/>
+    	<CD code="54.71" displayName="REPAIR OF GASTROSCHISIS"/>
+    	<CD code="54.72" displayName="ABDOMEN WALL REPAIR NEC"/>
+    	<CD code="54.73" displayName="PERITONEAL REPAIR NEC"/>
+    	<CD code="54.74" displayName="OMENTAL REPAIR NEC"/>
+    	<CD code="54.75" displayName="MESENTERIC REPAIR NEC"/>
+    	<CD code="54.92" displayName="REMOVE FB FROM PERITON"/>
+    	<CD code="54.93" displayName="CREATE CUTANPERITON FIST"/>
+    	<CD code="54.94" displayName="CREAT PERITONEOVAS SHUNT"/>
+    	<CD code="54.95" displayName="PERITONEAL INCISION"/>
+    	<CD code="55.01" displayName="NEPHROTOMY"/>
+    	<CD code="55.02" displayName="NEPHROSTOMY"/>
+    	<CD code="55.03" displayName="PERCU NEPHROSTM W/O FRAG (Begin 1986)"/>
+    	<CD code="55.04" displayName="PERCU NEPHROSTMY W FRAG (Begin 1986)"/>
+    	<CD code="55.11" displayName="PYELOTOMY"/>
+    	<CD code="55.12" displayName="PYELOSTOMY"/>
+    	<CD code="55.24" displayName="OPEN RENAL BIOPSY"/>
+    	<CD code="55.29" displayName="RENAL DIAGNOST PROC NEC"/>
+    	<CD code="55.31" displayName="RENAL LES MARSUPIALIZAT"/>
+    	<CD code="55.32" displayName="OPN ABLTN RENAL LES/TISS (Begin 2006)"/>
+    	<CD code="55.33" displayName="PERC ABLTN RENL LES/TISS (Begin 2006)"/>
+    	<CD code="55.34" displayName="LAP ABLTN RENAL LES/TISS (Begin 2006)"/>
+    	<CD code="55.35" displayName="ABLTN RENAL LES/TISS NEC (Begin 2006)"/>
+    	<CD code="55.39" displayName="LOC DESTR RENAL LES NEC"/>
+    	<CD code="55.4" displayName="PARTIAL NEPHRECTOMY"/>
+    	<CD code="55.51" displayName="NEPHROURETERECTOMY"/>
+    	<CD code="55.52" displayName="SOLITARY KIDNEY NEPHRECT"/>
+    	<CD code="55.53" displayName="REJECTED KIDNEY NEPHRECT"/>
+    	<CD code="55.54" displayName="BILATERAL NEPHRECTOMY"/>
+    	<CD code="55.61" displayName="RENAL AUTOTRANSPLANT"/>
+    	<CD code="55.69" displayName="KIDNEY TRANSPLANT NEC"/>
+    	<CD code="55.7" displayName="NEPHROPEXY"/>
+    	<CD code="55.81" displayName="SUTURE KIDNEY LACERATION"/>
+    	<CD code="55.82" displayName="CLOSE NEPHROST + PYELOST"/>
+    	<CD code="55.83" displayName="CLOSE RENAL FISTULA NEC"/>
+    	<CD code="55.84" displayName="REDUCE RENAL PEDICL TORS"/>
+    	<CD code="55.85" displayName="SYMPHYSIOTOMY"/>
+    	<CD code="55.86" displayName="RENAL ANASTOMOSIS"/>
+    	<CD code="55.87" displayName="CORRECT URETEROPELV JUNC"/>
+    	<CD code="55.89" displayName="RENAL REPAIR NEC"/>
+    	<CD code="55.91" displayName="RENAL DECAPSULATION"/>
+    	<CD code="55.97" displayName="IMPLANT MECHANIC KIDNEY"/>
+    	<CD code="55.98" displayName="REMOV MECHANICAL KIDNEY"/>
+    	<CD code="55.99" displayName="RENAL OPERATION NEC"/>
+    	<CD code="56.0" displayName="TU REMOV URETER OBSTRUCT"/>
+    	<CD code="56.1" displayName="URETERAL MEATOTOMY"/>
+    	<CD code="56.2" displayName="URETEROTOMY"/>
+    	<CD code="56.40" displayName="URETERECTOMY NOS"/>
+    	<CD code="56.41" displayName="PARTIAL URETERECTOMY"/>
+    	<CD code="56.42" displayName="TOTAL URETERECTOMY"/>
+    	<CD code="56.51" displayName="FORM CUTAN ILEOURETEROST"/>
+    	<CD code="56.52" displayName="REVIS CUTAN ILEOURETEROS"/>
+    	<CD code="56.61" displayName="FORM CUTAN URETEROSTOMY"/>
+    	<CD code="56.62" displayName="REVIS CUTAN URETEROS NEC"/>
+    	<CD code="56.71" displayName="URIN DIVERSION TO BOWEL"/>
+    	<CD code="56.72" displayName="REVIS URETEROENTEROSTOMY"/>
+    	<CD code="56.73" displayName="NEPHROCYSTANASTOMOSI NOS"/>
+    	<CD code="56.74" displayName="URETERONEOCYSTOSTOMY"/>
+    	<CD code="56.75" displayName="TRANSURETEROURETEROSTOMY"/>
+    	<CD code="56.79" displayName="URETERAL ANASTOMOSIS NEC"/>
+    	<CD code="56.81" displayName="INTRALUM URETE ADHESIOLY"/>
+    	<CD code="56.82" displayName="SUTURE URETERAL LACERAT"/>
+    	<CD code="56.83" displayName="URETEROSTOMY CLOSURE"/>
+    	<CD code="56.84" displayName="CLOSE URETER FISTULA NEC"/>
+    	<CD code="56.85" displayName="URETEROPEXY"/>
+    	<CD code="56.86" displayName="REMOVE URETERAL LIGATURE"/>
+    	<CD code="56.89" displayName="REPAIR OF URETER NEC"/>
+    	<CD code="56.92" displayName="IMPLANT URETERAL STIMUL"/>
+    	<CD code="56.93" displayName="REPLACE URETERAL STIMUL"/>
+    	<CD code="56.94" displayName="REMOVE URETERAL STIMULAT"/>
+    	<CD code="56.95" displayName="LIGATION OF URETER"/>
+    	<CD code="56.99" displayName="URETERAL OPERATION NEC"/>
+    	<CD code="57.12" displayName="CYSTOTOMY + ADHESIOLYSIS"/>
+    	<CD code="57.18" displayName="OTHER SUPRAPU CYSTOSTOMY (Begin 1989)"/>
+    	<CD code="57.19" displayName="CYSTOTOMY NEC"/>
+    	<CD code="57.21" displayName="CYSTOSTOMY (Begin 1980 End 1989)"/>
+    	<CD code="57.22" displayName="REVISE CYSTOSTOMY(Begin 1989)"/>
+    	<CD code="57.33" displayName="CLOS TRANSURETH BLADD BX"/>
+    	<CD code="57.34" displayName="OPEN BLADDER BIOPSY"/>
+    	<CD code="57.39" displayName="BLADDER DIAGNOS PROC NEC"/>
+    	<CD code="57.41" displayName="TU ADHESIOLYSIS BLADDER"/>
+    	<CD code="57.49" displayName="TU DESTRUC BLADD LES NEC"/>
+    	<CD code="57.51" displayName="EXCISION OF URACHUS"/>
+    	<CD code="57.59" displayName="BLADDER LES DESTRUCT NEC"/>
+    	<CD code="57.6" displayName="PARTIAL CYSTECTOMY"/>
+    	<CD code="57.71" displayName="RADICAL CYSTECTOMY"/>
+    	<CD code="57.79" displayName="TOTAL CYSTECTOMY NEC"/>
+    	<CD code="57.81" displayName="SUTURE BLADDER LACERAT"/>
+    	<CD code="57.82" displayName="CYSTOSTOMY CLOSURE"/>
+    	<CD code="57.83" displayName="ENTEROVESICO FIST REPAIR"/>
+    	<CD code="57.84" displayName="VESIC FISTULA REPAIR NEC"/>
+    	<CD code="57.85" displayName="CYSTOURETHROPLASTY"/>
+    	<CD code="57.86" displayName="BLADDER EXSTROPHY REPAIR"/>
+    	<CD code="57.87" displayName="BLADDER RECONSTRUCTION"/>
+    	<CD code="57.88" displayName="BLADDER ANASTOMOSIS NEC"/>
+    	<CD code="57.89" displayName="BLADDER REPAIR NEC"/>
+    	<CD code="57.91" displayName="BLADDER SPHINCTEROTOMY"/>
+    	<CD code="57.93" displayName="CONTROL BLADD HEMORRHAGE"/>
+    	<CD code="57.96" displayName="IMPLANT BLADDER STIMULAT"/>
+    	<CD code="57.97" displayName="REPLACE BLADDER STIMULAT"/>
+    	<CD code="57.98" displayName="REMOVE BLADDER STIMULAT"/>
+    	<CD code="57.99" displayName="BLADDER OPERATION NEC"/>
+    	<CD code="58.0" displayName="URETHROTOMY"/>
+    	<CD code="58.1" displayName="URETHRAL MEATOTOMY"/>
+    	<CD code="58.41" displayName="SUTURE URETHRAL LACERAT"/>
+    	<CD code="58.42" displayName="URETHROSTOMY CLOSURE"/>
+    	<CD code="58.43" displayName="CLOSE URETH FISTULA NEC"/>
+    	<CD code="58.44" displayName="URETHRAL REANASTOMOSIS"/>
+    	<CD code="58.45" displayName="HYPOEPISPADIUS REPAIR"/>
+    	<CD code="58.46" displayName="URETH RECONSTRUCTION NEC"/>
+    	<CD code="58.47" displayName="URETHRAL MEATOPLASTY"/>
+    	<CD code="58.49" displayName="URETHRAL REPAIR NEC"/>
+    	<CD code="58.5" displayName="URETH STRICTURE RELEASE"/>
+    	<CD code="58.91" displayName="PERIURETHRAL INCISION"/>
+    	<CD code="58.92" displayName="PERIURETHRAL EXCISION"/>
+    	<CD code="58.93" displayName="IMPLT ARTF URIN SPHINCT (Begin 1986)"/>
+    	<CD code="58.99" displayName="URETH/PERIURETH OP NEC"/>
+    	<CD code="59.00" displayName="RETROPERIT DISSECT NOS"/>
+    	<CD code="59.01" displayName="URETEROLYS FOR FIBROSIS"/>
+    	<CD code="59.02" displayName="PERIREN ADHESIOLYS NEC"/>
+    	<CD code="59.03" displayName="LAPAROSC LYSIS VESC ADH (Begin 1996)"/>
+    	<CD code="59.09" displayName="PERIREN/URETER INCIS NEC"/>
+    	<CD code="59.11" displayName="PERIVESICAL ADHESIOLYSIS"/>
+    	<CD code="59.12" displayName="OTH LYSUS VESICAL ADH (Begin 1996)"/>
+    	<CD code="59.19" displayName="PERIVESICAL INCISION NEC"/>
+    	<CD code="59.21" displayName="PERIREN/URETERAL BIOPSY"/>
+    	<CD code="59.29" displayName="PERIREN/URET DX PROC NEC"/>
+    	<CD code="59.3" displayName="URETHROVES JUNCT PLICAT"/>
+    	<CD code="59.4" displayName="SUPRAPUBIC SLING OP"/>
+    	<CD code="59.5" displayName="RETROPUBIC URETH SUSPENS"/>
+    	<CD code="59.6" displayName="PARAURETHRAL SUSPENSION"/>
+    	<CD code="59.71" displayName="LEVATOR MUSC SUSPENSION"/>
+    	<CD code="59.79" displayName="URIN INCONTIN REPAIR NEC"/>
+    	<CD code="59.91" displayName="PERIREN/VESICLE EXCISION"/>
+    	<CD code="59.92" displayName="PERIREN/VESICLE OP NEC"/>
+    	<CD code="60.0" displayName="INCISION OF PROSTATE"/>
+    	<CD code="60.12" displayName="OPEN PROSTATIC BIOPSY"/>
+    	<CD code="60.14" displayName="OPEN SEMINAL VESICLES BX"/>
+    	<CD code="60.15" displayName="PERIPROSTATIC BIOPSY"/>
+    	<CD code="60.18" displayName="PROSTATIC DX PROCED NEC"/>
+    	<CD code="60.19" displayName="SEMIN VES DX PROCED NEC"/>
+    	<CD code="60.2" displayName="TRANSURETHRAL PROSTATECT (End 1995)"/>
+    	<CD code="60.21" displayName="TRANSUR ULTRAS LASER PROST (Begin 1995)"/>
+    	<CD code="60.29" displayName="OTHER TURP (Begin 1995)"/>
+    	<CD code="60.3" displayName="SUPRAPUBIC PROSTATECTOMY"/>
+    	<CD code="60.4" displayName="RETROPUBIC PROSTATECTOMY"/>
+    	<CD code="60.5" displayName="RADICAL PROSTATECTOMY"/>
+    	<CD code="60.61" displayName="LOS EXCIS PROSTATIC LES"/>
+    	<CD code="60.62" displayName="PERINEAL PROSTATECTOMY"/>
+    	<CD code="60.69" displayName="PROSTATECTOMY NEC"/>
+    	<CD code="60.72" displayName="SEMINAL VESICLE INCISION"/>
+    	<CD code="60.73" displayName="SEMINAL VESICLE EXCISION"/>
+    	<CD code="60.79" displayName="SEMINAL VESICLE OP NEC"/>
+    	<CD code="60.81" displayName="PERIPROSTATIC INCISION"/>
+    	<CD code="60.82" displayName="PERIPROSTATIC EXCISION"/>
+    	<CD code="60.93" displayName="REPAIR OF PROSTATE"/>
+    	<CD code="60.94" displayName="CONTROL POSTOP PROST HEM"/>
+    	<CD code="60.95" displayName="TRANS BAL DIL PROS URETH (Begin 1991)"/>
+    	<CD code="60.96" displayName="TRANSUR MICROWAVE THERMO PRO (Begin 2000)"/>
+    	<CD code="60.97" displayName="TRANSUR OTHER THERMO PROSTAT (Begin 2000)"/>
+    	<CD code="60.99" displayName="PROSTATIC OPERATION NEC"/>
+    	<CD code="61.2" displayName="EXCISION OF HYDROCELE"/>
+    	<CD code="61.42" displayName="SCROTAL FISTULA REPAIR"/>
+    	<CD code="61.49" displayName="SCROTUM/TUNIC REPAIR NEC"/>
+    	<CD code="61.92" displayName="EXCISION TUNICA LES NEC"/>
+    	<CD code="61.99" displayName="SCROTUM + TUNICA OP NEC"/>
+    	<CD code="62.0" displayName="INCISION OF TESTES"/>
+    	<CD code="62.2" displayName="TESTICULAR LES DESTRUCT"/>
+    	<CD code="62.3" displayName="UNILATERAL ORCHIECTOMY"/>
+    	<CD code="62.41" displayName="REMOVE BOTH TESTES"/>
+    	<CD code="62.42" displayName="REMOVE SOLITARY TESTIS"/>
+    	<CD code="62.5" displayName="ORCHIOPEXY"/>
+    	<CD code="62.61" displayName="SUTURE TESTICULAR LACER"/>
+    	<CD code="62.69" displayName="TESTICULAR REPAIR NEC"/>
+    	<CD code="62.7" displayName="INSERT TESTICULAR PROSTH"/>
+    	<CD code="62.99" displayName="TESTICULAR OPERATION NEC"/>
+    	<CD code="63.1" displayName="EXC SPERMATIC VARICOCELE"/>
+    	<CD code="63.2" displayName="EXCISE EPIDIDYMIS CYST"/>
+    	<CD code="63.3" displayName="EXCISE CORD/EPID LES NEC"/>
+    	<CD code="63.4" displayName="EPIDIDYMECTOMY"/>
+    	<CD code="63.51" displayName="SUTURE CORD + EPID LACER"/>
+    	<CD code="63.53" displayName="TRANSPLANT SPERMAT CORD"/>
+    	<CD code="63.59" displayName="CORD + EPIDID REPAIR NEC"/>
+    	<CD code="63.81" displayName="SUTURE VAS + EPIDID LAC"/>
+    	<CD code="63.82" displayName="POSTOP VAS RECONSTRUCT"/>
+    	<CD code="63.83" displayName="EPIDIDYMOVASOSTOMY"/>
+    	<CD code="63.85" displayName="REMOV VAS DEFERENS VALVE"/>
+    	<CD code="63.89" displayName="VAS + EPIDIDY REPAIR NEC"/>
+    	<CD code="63.92" displayName="EPIDIDYMOTOMY"/>
+    	<CD code="63.93" displayName="SPERMATIC CORD INCISION"/>
+    	<CD code="63.94" displayName="SPERM CORD ADHESIOLYSIS"/>
+    	<CD code="63.95" displayName="INSERT VALVE IN VAS DEF"/>
+    	<CD code="63.99" displayName="CORD/EPID/VAS OPS NEC"/>
+    	<CD code="64.0" displayName="CIRCUMCISION"/>
+    	<CD code="64.11" displayName="PENILE BIOPSY"/>
+    	<CD code="64.2" displayName="LOCAL EXCIS PENILE LES"/>
+    	<CD code="64.3" displayName="AMPUTATION OF PENIS"/>
+    	<CD code="64.41" displayName="SUTURE PENILE LACERATION"/>
+    	<CD code="64.42" displayName="RELEASE OF CHORDEE"/>
+    	<CD code="64.43" displayName="CONSTRUCTION OF PENIS"/>
+    	<CD code="64.44" displayName="RECONSTRUCTION OF PENIS"/>
+    	<CD code="64.45" displayName="REPLANTATION OF PENIS"/>
+    	<CD code="64.49" displayName="PENILE REPAIR NEC"/>
+    	<CD code="64.5" displayName="SEX TRANSFORMAT OP NEC"/>
+    	<CD code="64.92" displayName="INCISION OF PENIS"/>
+    	<CD code="64.93" displayName="DIVISION OF PENILE ADHES"/>
+    	<CD code="64.95" displayName="INS NONINFL PENIS PROSTH"/>
+    	<CD code="64.96" displayName="REMOVE INT PENILE PROSTH"/>
+    	<CD code="64.97" displayName="INS INFLATE PENIS PROSTH (Begin 1986)"/>
+    	<CD code="64.98" displayName="PENILE OPERATION NEC"/>
+    	<CD code="64.99" displayName="MALE GENITAL OP NEC"/>
+    	<CD code="65.0" displayName="OOPHOROTOMY (End 1996)"/>
+    	<CD code="65.01" displayName="LAPAROSC OOPHOROTOMY (Begin 1996)"/>
+    	<CD code="65.09" displayName="OTHER OOPHOROTOMY (Begin 1996)"/>
+    	<CD code="65.11" displayName="OVARIAN ASPIRAT BIOPSY"/>
+    	<CD code="65.12" displayName="OVARIAN BIOPSY NEC"/>
+    	<CD code="65.13" displayName="LAP BIOPSY OF OVARY"/>
+    	<CD code="65.14" displayName="OTH LAP DX PROC OVARIES"/>
+    	<CD code="65.19" displayName="OVARIAN DX PROCEDURE NEC"/>
+    	<CD code="65.21" displayName="OVARIAN CYST MARSUPIALIZ"/>
+    	<CD code="65.22" displayName="OVARIAN WEDGE RESECTION"/>
+    	<CD code="65.23" displayName="LAPAR MARSUP OVARY (Begin 1996)"/>
+    	<CD code="65.24" displayName="LAPAR WEDGE RESCT OV (Begin 1996)"/>
+    	<CD code="65.25" displayName="OTH LAPAR EXCIS OV (Begin 1996)"/>
+    	<CD code="65.29" displayName="LOCAL DESTR OVA LES NEC"/>
+    	<CD code="65.3" displayName="UNILATERAL OOPHORECTOMY (End 1996)"/>
+    	<CD code="65.31" displayName="LAPARSC OOPHECTOMY UNI (Begin 1996)"/>
+    	<CD code="65.39" displayName="OTH LAPARSC OOPHECT UNI (Begin 1996)"/>
+    	<CD code="65.4" displayName="UNILAT SALPINGOOOPHOREC (End 1996)"/>
+    	<CD code="65.41" displayName="LAPAR SALP OOPH UNI (Begin 1996)"/>
+    	<CD code="65.49" displayName="OTH SALP OOPH UNI (Begin 1996)"/>
+    	<CD code="65.51" displayName="REMOVE BOTH OVARIES"/>
+    	<CD code="65.52" displayName="REMOVE SOLITARY OVARY"/>
+    	<CD code="65.53" displayName="LAPAR BIL OOPH (Begin 1996)"/>
+    	<CD code="65.54" displayName="LAPAR REMOV REMAIN OV (Begin 1996)"/>
+    	<CD code="65.61" displayName="REMOVE BOTH TUBES + OVAR"/>
+    	<CD code="65.62" displayName="REMOVE SOLITARY TUBE/OVA"/>
+    	<CD code="65.63" displayName="LAPAR REMOV SALP OV BIL (Begin 1996)"/>
+    	<CD code="65.64" displayName="LAPAR REMV SALP OV REM (Begin 1996)"/>
+    	<CD code="65.71" displayName="SIMPLE SUTURE OF OVARY"/>
+    	<CD code="65.72" displayName="OVARIAN REIMPLANTATION"/>
+    	<CD code="65.73" displayName="SALPINGOOOPHOROPLASTY"/>
+    	<CD code="65.74" displayName="LAPAR SUTURE OV (Begin 1996)"/>
+    	<CD code="65.75" displayName="LAPAR REIMPLANT OV (Begin 1996)"/>
+    	<CD code="65.76" displayName="LAPAR SALPOOPHPLASTY (Begin 1996)"/>
+    	<CD code="65.79" displayName="REPAIR OF OVARY NEC"/>
+    	<CD code="65.8" displayName="TUBOOVARIAN ADHESIOLYS (End 1996)"/>
+    	<CD code="65.81" displayName="LAPAR LYSIS ADHES OV (Begin 1996)"/>
+    	<CD code="65.89" displayName="OTH LYSIS ADHES OV (Begin 1996)"/>
+    	<CD code="65.91" displayName="ASPIRATION OF OVARY"/>
+    	<CD code="65.92" displayName="TRANSPLANTATION OF OVARY"/>
+    	<CD code="65.93" displayName="MANUAL RUPT OVARIAN CYST"/>
+    	<CD code="65.94" displayName="OVARIAN DENERVATION"/>
+    	<CD code="65.95" displayName="OVARIAN TORSION RELEASE"/>
+    	<CD code="65.99" displayName="OVARIAN OPERATION NEC"/>
+    	<CD code="66.0" displayName="SALPINGOTOMY (Begin 1980 End 1992)"/>
+    	<CD code="66.01" displayName="SALPINGOTOMY (Begin 1992)"/>
+    	<CD code="66.02" displayName="SALPINGOSTOMY (Begin 1992)"/>
+    	<CD code="66.11" displayName="FALLOPIAN TUBE BIOPSY"/>
+    	<CD code="66.19" displayName="FALLOP TUBE DX PROC NEC"/>
+    	<CD code="66.21" displayName="BILAT ENDOSC CRUSH TUBE"/>
+    	<CD code="66.22" displayName="BILAT ENDOSC DIVIS TUBE"/>
+    	<CD code="66.29" displayName="BILAT ENDOS OCC TUBE NEC"/>
+    	<CD code="66.31" displayName="BILAT TUBAL CRUSHING NEC"/>
+    	<CD code="66.32" displayName="BILAT TUBAL DIVISION NEC"/>
+    	<CD code="66.39" displayName="BILAT TUBAL DESTRUCT NEC"/>
+    	<CD code="66.4" displayName="TOTAL UNILAT SALPINGECT"/>
+    	<CD code="66.51" displayName="REMOVE BOTH FALLOP TUBES"/>
+    	<CD code="66.52" displayName="REMOVE SOLITARY FAL TUBE"/>
+    	<CD code="66.61" displayName="DESTROY FALLOP TUBE LES"/>
+    	<CD code="66.62" displayName="REMOV TUBE + ECTOP PREG"/>
+    	<CD code="66.63" displayName="BILAT PART SALPINGEC NOS"/>
+    	<CD code="66.69" displayName="PARTIAL SALPINGECTOM NEC"/>
+    	<CD code="66.71" displayName="SIMPL SUTURE FALLOP TUBE"/>
+    	<CD code="66.72" displayName="SALPINGOOOPHOROSTOMY"/>
+    	<CD code="66.73" displayName="SALPINGOSALPINGOSTOMY"/>
+    	<CD code="66.74" displayName="SALPINGOUTEROSTOMY"/>
+    	<CD code="66.79" displayName="FALLOP TUBE REPAIR NEC"/>
+    	<CD code="66.92" displayName="UNILAT FALLOP TUBE DESTR"/>
+    	<CD code="66.93" displayName="IMPL FALLOP TUBE PROSTH"/>
+    	<CD code="66.94" displayName="REMOV FALLOP TUBE PROSTH"/>
+    	<CD code="66.95" displayName="BLOW THERAPEUT INTO TUBE"/>
+    	<CD code="66.96" displayName="FALLOPIAN TUBE DILATION"/>
+    	<CD code="66.97" displayName="BURY FIMBRIAE IN UTERUS"/>
+    	<CD code="66.99" displayName="FALLOPIAN TUBE OP NEC"/>
+    	<CD code="67.2" displayName="CONIZATION OF CERVIX"/>
+    	<CD code="67.11" displayName="ENDOCERVICAL BIOPSY"/>
+    	<CD code="67.12" displayName="CERVICAL BIOPSY NEC"/>
+    	<CD code="67.19" displayName="CERVICAL DX PROCEDUR NEC"/>
+    	<CD code="67.31" displayName="CERVICAL CYST MARSUPIAL"/>
+    	<CD code="67.32" displayName="CERVICAL LES CAUTERIZAT"/>
+    	<CD code="67.33" displayName="CERVICAL LES CRYOTHERAPY"/>
+    	<CD code="67.39" displayName="CERVICAL LES DESTRUC NEC"/>
+    	<CD code="67.4" displayName="AMPUTATION OF CERVIX"/>
+    	<CD code="67.5" displayName="INT CERVICAL OS REPAIR (End 2001)"/>
+    	<CD code="67.51" displayName="TRANSABDOMINAL CERCLAGE OF C (Begin 2001)"/>
+    	<CD code="67.59" displayName="OTHER REPAIR OF INT CERVICAL (Begin 2001)"/>
+    	<CD code="67.61" displayName="SUTURE CERVICAL LACERAT"/>
+    	<CD code="67.62" displayName="CERVICAL FISTULA REPAIR"/>
+    	<CD code="67.69" displayName="CERVICAL REPAIR NEC"/>
+    	<CD code="68.0" displayName="HYSTEROTOMY"/>
+    	<CD code="68.13" displayName="OPEN UTERINE BIOPSY"/>
+    	<CD code="68.14" displayName="OPEN UTERINE LIGAMENT BX"/>
+    	<CD code="68.15" displayName="CLOS UTERINE LIGAMENT BX"/>
+    	<CD code="68.16" displayName="CLOSED UTERINE BIOPSY"/>
+    	<CD code="68.19" displayName="UTERUS/ADNEX DX PROC NEC"/>
+    	<CD code="68.21" displayName="ENDOMET SYNECHIAE DIVIS"/>
+    	<CD code="68.22" displayName="INCISION UTERINE SEPTUM"/>
+    	<CD code="68.23" displayName="ENDOMETRIAL ABLATION (Begin 1996)"/>
+    	<CD code="68.24" displayName="UTERINE ART EMB W COILS (Begin 2011)"/>
+    	<CD code="68.25" displayName="UTERINE ART EMB W/O COIL (Begin 2011)"/>
+    	<CD code="68.29" displayName="UTERINE LES DESTRUCT NEC"/>
+    	<CD code="68.3" displayName="SUBTOT ABD HYSTERECTOMY (End 2003)"/>
+    	<CD code="68.31" displayName="LAPAROSCOPIC SUPRACERVICAL H (Begin 2003)"/>
+    	<CD code="68.39" displayName="OTHER SUBTOTAL ABDOMINAL HYS (Begin 2003)"/>
+    	<CD code="68.4" displayName="TOTAL ABD HYSTERECTOMY"/>
+    	<CD code="68.41" displayName="LAP TOTAL ABDOMINAL HYST (Begin 2006)"/>
+    	<CD code="68.49" displayName="TOTAL ABD HYST NEC/NOS   (Begin 2006)"/>
+    	<CD code="68.5" displayName="VAGINAL HYSTERECTOMY (End 1996)"/>
+    	<CD code="68.51" displayName="LAPAR ASSIST VAG HYS (Begin 1996)"/>
+    	<CD code="68.59" displayName="OTH VAG HYS (Begin 1996)"/>
+    	<CD code="68.6" displayName="RADICAL ABD HYSTERECTOMY"/>
+    	<CD code="68.61" displayName="LAP RADICAL ABDOMNL HYST (Begin 2006)"/>
+    	<CD code="68.69" displayName="RADICAL ABD HYST NEC/NOS (Begin 2006)"/>
+    	<CD code="68.7" displayName="RADICAL VAG HYSTERECTOMY"/>
+    	<CD code="68.71" displayName="LAP RADICAL VAGINAL HYST (Begin 2006)"/>
+    	<CD code="68.79" displayName="RADICAL VAG HYST NEC/NOS (Begin 2006)"/>
+    	<CD code="68.8" displayName="PELVIC EVISCERATION"/>
+    	<CD code="68.9" displayName="OTHER UNSPEC HYSTERECTOMY (Begin 1992)"/>
+    	<CD code="69.01" displayName="D + C FOR PREG TERMINAT"/>
+    	<CD code="69.02" displayName="D + C POST DELIVERY"/>
+    	<CD code="69.11" displayName="REMOVE INTRALIG ECT PREG (End 1992)"/>
+    	<CD code="69.19" displayName="DESTRUC UTER SUPPORT NEC"/>
+    	<CD code="69.21" displayName="INTERPOSIT OP UTERIN LIG"/>
+    	<CD code="69.22" displayName="UTERINE SUSPENSION NEC"/>
+    	<CD code="69.23" displayName="VAG REPAIR INVERS UTERUS"/>
+    	<CD code="69.29" displayName="UTERUS/ADNEXA REPAIR NEC"/>
+    	<CD code="69.3" displayName="PARACERV UTERINE DENERV"/>
+    	<CD code="69.41" displayName="SUTURE UTERINE LACERAT"/>
+    	<CD code="69.42" displayName="CLOSURE UTERINE FISTULA"/>
+    	<CD code="69.49" displayName="UTERINE REPAIR NEC"/>
+    	<CD code="69.51" displayName="ASPIRAT CURETPREG TERMI"/>
+    	<CD code="69.52" displayName="ASPIRAT CURETPOST DELIV"/>
+    	<CD code="69.95" displayName="INCISION OF CERVIX"/>
+    	<CD code="69.97" displayName="REMOVE PENETRAT CERV FB"/>
+    	<CD code="69.98" displayName="UTERINE SUPPORT OP NEC"/>
+    	<CD code="69.99" displayName="UTERINE OPERATION NEC"/>
+    	<CD code="70.12" displayName="CULDOTOMY"/>
+    	<CD code="70.13" displayName="INTRALUM VAG ADHESIOLYS"/>
+    	<CD code="70.14" displayName="VAGINOTOMY NEC"/>
+    	<CD code="70.23" displayName="CUL-DE-SAC BIOPSY"/>
+    	<CD code="70.24" displayName="VAGINAL BIOPSY"/>
+    	<CD code="70.29" displayName="VAGIN/CUL-DE-SAC DX NEC"/>
+    	<CD code="70.31" displayName="HYMENECTOMY"/>
+    	<CD code="70.32" displayName="EXCIS CULDESAC LESION"/>
+    	<CD code="70.33" displayName="EXCISION VAGINAL LESION"/>
+    	<CD code="70.4" displayName="VAGINAL OBLITERATION"/>
+    	<CD code="70.50" displayName="CYSTOCEL/RECTOCEL REPAIR"/>
+    	<CD code="70.51" displayName="CYSTOCELE REPAIR"/>
+    	<CD code="70.52" displayName="RECTOCELE REPAIR"/>
+    	<CD code="70.53" displayName="CYSTO + RECTO W GRF/PROS (Begin 2007)"/>
+    	<CD code="70.54" displayName="REP CYSTOCEL W GRFT/PROS (Begin 2007)"/>
+    	<CD code="70.55" displayName="REP RECTOCELE W GRF/PROS (Begin 2007)"/>
+    	<CD code="70.61" displayName="VAGINAL CONSTRUCTION"/>
+    	<CD code="70.62" displayName="VAGINAL RECONSTRUCTION"/>
+    	<CD code="70.63" displayName="VAGINAL CONST W GRF/PROS (Begin 2007)"/>
+    	<CD code="70.64" displayName="VAG RECONST W GRFT/PROS (Begin 2007)"/>
+    	<CD code="70.71" displayName="SUTURE VAGINA LACERATION"/>
+    	<CD code="70.72" displayName="REPAIR COLOVAGIN FISTULA"/>
+    	<CD code="70.73" displayName="REPAIR RECTOVAG FISTULA"/>
+    	<CD code="70.74" displayName="REP VAGINOENT FISTUL NEC"/>
+    	<CD code="70.75" displayName="REPAIR VAG FISTULA NEC"/>
+    	<CD code="70.76" displayName="HYMENORRHAPHY"/>
+    	<CD code="70.77" displayName="VAGINAL SUSPENS + FIXAT"/>
+    	<CD code="70.78" displayName="VAG SUSP/FIX W GRFT/PROS (Begin 2007)"/>
+    	<CD code="70.79" displayName="VAGINAL REPAIR NEC"/>
+    	<CD code="70.8" displayName="VAGINAL VAULT OBLITERAT"/>
+    	<CD code="70.91" displayName="VAGINAL OPERATION NEC"/>
+    	<CD code="70.92" displayName="CULDESAC OPERATION NEC"/>
+    	<CD code="70.93" displayName="CUL-DE-SAC GRF/PROS NEC (Begin 2007)"/>
+    	<CD code="71.01" displayName="VULVAR ADHESIOLYSIS"/>
+    	<CD code="71.09" displayName="INCIS VULVA/PERINEUM NEC"/>
+    	<CD code="71.11" displayName="VULVAR BIOPSY"/>
+    	<CD code="71.19" displayName="VULVAR DIAGNOS PROC NEC"/>
+    	<CD code="71.22" displayName="INCISE BARTHOLIN"/>
+    	<CD code="71.23" displayName="BARTHOLIN GLAND MARSUP"/>
+    	<CD code="71.24" displayName="DESTRUC BARTHOLIN GLAND"/>
+    	<CD code="71.29" displayName="BARTHOLIN"/>
+    	<CD code="71.3" displayName="LOCAL VULVAR EXCIS NEC"/>
+    	<CD code="71.4" displayName="OPERATIONS ON CLITORIS"/>
+    	<CD code="71.5" displayName="RADICAL VULVECTOMY"/>
+    	<CD code="71.61" displayName="UNILATERAL VULVECTOMY"/>
+    	<CD code="71.62" displayName="BILATERAL VULVECTOMY"/>
+    	<CD code="71.71" displayName="SUTURE VULVAR LACERATION"/>
+    	<CD code="71.72" displayName="REPAIR VULVAR FISTULA"/>
+    	<CD code="71.79" displayName="VULVAR/PERIN REPAIR NEC"/>
+    	<CD code="71.8" displayName="OT VULVAR OPERATIONS"/>
+    	<CD code="71.9" displayName="OT FEMALE GENITAL OPS"/>
+    	<CD code="73.94" displayName="PUBIOTOMY TO ASSIST DEL"/>
+    	<CD code="73.99" displayName="OPS ASSISTING DELIV NEC"/>
+    	<CD code="74.0" displayName="CLASSICAL CSECTION"/>
+    	<CD code="74.1" displayName="LOW CERVICAL CSECTION"/>
+    	<CD code="74.2" displayName="EXTRAPERITONEAL CSECT"/>
+    	<CD code="74.3" displayName="REMOV INTRAPERIT FETUS (Begin 1992)"/>
+    	<CD code="74.4" displayName="CESAREAN SECTION NEC"/>
+    	<CD code="74.91" displayName="HYSTEROTOMY TO TERMIN PG"/>
+    	<CD code="74.99" displayName="CESAREAN SECTION NOS"/>
+    	<CD code="75.36" displayName="CORRECTION FETAL DEFECT"/>
+    	<CD code="75.50" displayName="REPAIR OB LAC UTERUS NOS"/>
+    	<CD code="75.51" displayName="REPAIR OB LACERAT CERVIX"/>
+    	<CD code="75.52" displayName="REPAIR OB LAC CORP UTERI"/>
+    	<CD code="75.61" displayName="REPAIR OB LAC BLAD/URETH"/>
+    	<CD code="75.93" displayName="SURG CORR INVERT UTERUS"/>
+    	<CD code="75.99" displayName="OBSTETRIC OPERATION NEC"/>
+    	<CD code="76.01" displayName="FACIAL BONE SEQUESTRECT"/>
+    	<CD code="76.09" displayName="FACIAL BONE INCISION NEC"/>
+    	<CD code="76.11" displayName="FACIAL BONE BIOPSY"/>
+    	<CD code="76.19" displayName="FACIAL BONE DX PROC NEC"/>
+    	<CD code="76.2" displayName="DESTRUCT FACIAL BONE LES"/>
+    	<CD code="76.31" displayName="PARTIAL MANDIBULECTOMY"/>
+    	<CD code="76.39" displayName="PART FACIAL OSTECTOM NEC"/>
+    	<CD code="76.41" displayName="TOT MANDIBULEC W RECONST"/>
+    	<CD code="76.42" displayName="TOTAL MANDIBULECTOMY NEC"/>
+    	<CD code="76.43" displayName="MANDIBULAR RECONST NEC"/>
+    	<CD code="76.44" displayName="TOT FACE OSTECT W RECONS"/>
+    	<CD code="76.45" displayName="TOT FACE BONE OSTECT NEC"/>
+    	<CD code="76.46" displayName="FACIAL BONE RECONSTR NEC"/>
+    	<CD code="76.5" displayName="TEMPOROMAND ARTHROPLASTY"/>
+    	<CD code="76.61" displayName="CL OSTEOPLASTY MAND RAMI"/>
+    	<CD code="76.62" displayName="OPEN OSTEOPLAS MAND RAMI"/>
+    	<CD code="76.63" displayName="OSTEOPLASTY MANDIBLE BDY"/>
+    	<CD code="76.64" displayName="MAND ORTHOGNATHIC OP NEC"/>
+    	<CD code="76.65" displayName="SEG OSTEOPLASTY MAXILLA"/>
+    	<CD code="76.66" displayName="TOT OSTEOPLASTY MAXILLA"/>
+    	<CD code="76.67" displayName="REDUCTION GENIOPLASTY"/>
+    	<CD code="76.68" displayName="AUGMENTATION GENIOPLASTY"/>
+    	<CD code="76.69" displayName="FACIAL BONE REPAIR NEC"/>
+    	<CD code="76.70" displayName="REDUCTION FACIAL FX NOS"/>
+    	<CD code="76.72" displayName="OPN REDUCT MALAR/ZYGO FX"/>
+    	<CD code="76.74" displayName="OPEN REDUCT MAXILLARY FX"/>
+    	<CD code="76.76" displayName="OPEN REDUCT MANDIBLE FX"/>
+    	<CD code="76.77" displayName="OPEN REDUCT ALVEOLAR FX"/>
+    	<CD code="76.79" displayName="OPEN REDUCT FACE FX NEC"/>
+    	<CD code="76.91" displayName="BONE GRAFT TO FACE BONE"/>
+    	<CD code="76.92" displayName="SYN IMPLANT TO FACE BONE"/>
+    	<CD code="76.94" displayName="OPEN REDUCT TM DISLOCAT"/>
+    	<CD code="76.97" displayName="REMOVE INT FIX FACE BONE"/>
+    	<CD code="76.99" displayName="FACIAL BONE/JNT OP NEC"/>
+    	<CD code="77.00" displayName="SEQUESTRECTOMY NOS"/>
+    	<CD code="77.01" displayName="CHEST CAGE SEQUESTREC"/>
+    	<CD code="77.02" displayName="HUMERUS SEQUESTRECTOMY"/>
+    	<CD code="77.03" displayName="RADIUS + ULNA SEQUESTREC"/>
+    	<CD code="77.04" displayName="METACARP/CARP SEQUESTREC"/>
+    	<CD code="77.05" displayName="FEMORAL SEQUESTRECTOMY"/>
+    	<CD code="77.06" displayName="PATELLAR SEQUESTRECTOMY"/>
+    	<CD code="77.07" displayName="TIBIA/FIBULA SEQUESTREC"/>
+    	<CD code="77.08" displayName="METATAR/TAR SEQUESTREC"/>
+    	<CD code="77.09" displayName="SEQUESTRECTOMY NEC"/>
+    	<CD code="77.10" displayName="OTHER BONE INCISION NOS"/>
+    	<CD code="77.11" displayName="OTHER CHEST CAGE INCIS"/>
+    	<CD code="77.12" displayName="OTHER HUMERUS INCISION"/>
+    	<CD code="77.13" displayName="OTHER RADIUS/ULNA INCIS"/>
+    	<CD code="77.14" displayName="OTH METACARP/CARP INCIS"/>
+    	<CD code="77.15" displayName="OTHER FEMORAL INCISION"/>
+    	<CD code="77.16" displayName="OTHER PATELLAR INCISION"/>
+    	<CD code="77.17" displayName="OTHER TIBIA/FIBULA INCIS"/>
+    	<CD code="77.18" displayName="OTH METATARS/TARS INCIS"/>
+    	<CD code="77.19" displayName="BONE INCIS W/O DIV NEC"/>
+    	<CD code="77.20" displayName="WEDGE OSTEOTOMY NOS"/>
+    	<CD code="77.21" displayName="CHEST CAGE WEDG OSTEOTOM"/>
+    	<CD code="77.22" displayName="HUMERUS WEDGE OSTEOTOMY"/>
+    	<CD code="77.23" displayName="RADIUS/ULNA WEDG OSTEOTO"/>
+    	<CD code="77.24" displayName="METACAR/CAR WEDG OSTEOTO"/>
+    	<CD code="77.25" displayName="FEMORAL WEDGE OSTEOTOMY"/>
+    	<CD code="77.26" displayName="PATELLAR WEDGE OSTEOTOMY"/>
+    	<CD code="77.27" displayName="TIBIA/FIBUL WEDG OSTEOT"/>
+    	<CD code="77.28" displayName="METATAR/TAR WEDG OSTEOT"/>
+    	<CD code="77.29" displayName="WEDGE OSTEOTOMY NEC"/>
+    	<CD code="77.30" displayName="OTHER BONE DIVISION NOS"/>
+    	<CD code="77.31" displayName="CHEST CAGE BONE DIV NEC"/>
+    	<CD code="77.32" displayName="HUMERUS DIVISION NEC"/>
+    	<CD code="77.33" displayName="RADIUS/ULNA DIVISION NEC"/>
+    	<CD code="77.34" displayName="METACAR/CAR DIVISION NEC"/>
+    	<CD code="77.35" displayName="FEMORAL DIVISION NEC"/>
+    	<CD code="77.36" displayName="PATELLAR DIVISION NEC"/>
+    	<CD code="77.37" displayName="TIBIA/FIBULA DIV NEC"/>
+    	<CD code="77.38" displayName="METATAR/TAR DIVISION NEC"/>
+    	<CD code="77.39" displayName="BONE DIVISION NEC"/>
+    	<CD code="77.40" displayName="BONE BIOPSY NOS"/>
+    	<CD code="77.41" displayName="CHEST CAGE BONE BIOPSY"/>
+    	<CD code="77.42" displayName="HUMERUS BIOPSY"/>
+    	<CD code="77.43" displayName="RADIUS + ULNA BIOPSY"/>
+    	<CD code="77.44" displayName="METACARPAL/CARPAL BIOPSY"/>
+    	<CD code="77.45" displayName="FEMORAL BIOPSY"/>
+    	<CD code="77.46" displayName="PATELLAR BIOPSY"/>
+    	<CD code="77.47" displayName="TIBIA + FIBULA BIOPSY"/>
+    	<CD code="77.48" displayName="METATARSAL/TARSAL BIOPSY"/>
+    	<CD code="77.51" displayName="BUNIONECT/SFT/OSTEOTOMY"/>
+    	<CD code="77.52" displayName="BUNIONECT/SFT/ARTHRODES"/>
+    	<CD code="77.53" displayName="OTH BUNIONECT"/>
+    	<CD code="77.54" displayName="EXC (CORRECT) BUNIONETTE (Begin 1980)"/>
+    	<CD code="77.56" displayName="REPAIR OF HAMMER TOE (Begin 1989)"/>
+    	<CD code="77.57" displayName="REPAIR OF CLAW TOE (Begin 1989)"/>
+    	<CD code="77.58" displayName="OTH EXC FUS REPAIR TOE (Begin 1989)"/>
+    	<CD code="77.59" displayName="BUNIONECTOMY NEC"/>
+    	<CD code="77.60" displayName="LOC EXC BONE LESION NOS"/>
+    	<CD code="77.61" displayName="EXC CHEST CAGE BONE LES"/>
+    	<CD code="77.62" displayName="LOC EXC BONE LES HUMERUS"/>
+    	<CD code="77.63" displayName="LOC EXC LES RADIUS/ULNA"/>
+    	<CD code="77.64" displayName="LOC EXC LES METACAR/CAR"/>
+    	<CD code="77.65" displayName="LOC EXC BONE LES FEMUR"/>
+    	<CD code="77.66" displayName="LOC EXC BONE LES PATELLA"/>
+    	<CD code="77.67" displayName="LOC EXC LES TIBIA/FIBULA"/>
+    	<CD code="77.68" displayName="LOC EXC LES METATAR/TAR"/>
+    	<CD code="77.69" displayName="LOC EXC BONE LESION NEC"/>
+    	<CD code="77.70" displayName="EXCISE BONE FOR GRFT NOS"/>
+    	<CD code="77.71" displayName="EX CHEST CAGE BONEGFT"/>
+    	<CD code="77.72" displayName="EXCISE HUMERUS FOR GRAFT"/>
+    	<CD code="77.73" displayName="EXCIS RADIUS/ULNAGRAFT"/>
+    	<CD code="77.74" displayName="EXCIS METACAR/CARGRAFT"/>
+    	<CD code="77.75" displayName="EXCISE FEMUR FOR GRAFT"/>
+    	<CD code="77.76" displayName="EXCISE PATELLA FOR GRAFT"/>
+    	<CD code="77.77" displayName="EXCISE TIB/FIB FOR GRAFT"/>
+    	<CD code="77.78" displayName="EXCIS METATAR/TARGRAFT"/>
+    	<CD code="77.79" displayName="EXCISE BONE FOR GFT NEC"/>
+    	<CD code="77.80" displayName="OTH PART OSTECTOMY NOS"/>
+    	<CD code="77.81" displayName="OTH CHEST CAGE OSTECTOMY"/>
+    	<CD code="77.82" displayName="PARTIAL HUMERECTOMY NEC"/>
+    	<CD code="77.83" displayName="PART OSTECTRADIUS/ULNA"/>
+    	<CD code="77.84" displayName="PART OSTECTMETACAR/CAR"/>
+    	<CD code="77.85" displayName="PART OSTECTOMYFEMUR"/>
+    	<CD code="77.86" displayName="PARTIAL PATELLECTOMY"/>
+    	<CD code="77.87" displayName="PART OSTECTTIBIA/FIBULA"/>
+    	<CD code="77.88" displayName="PART OSTECTMETATAR/TAR"/>
+    	<CD code="77.89" displayName="PARTIAL OSTECTOMY NEC"/>
+    	<CD code="77.90" displayName="TOTAL OSTECTOMY NOS"/>
+    	<CD code="77.91" displayName="TOT CHEST CAGE OSTECTOMY"/>
+    	<CD code="77.92" displayName="TOTAL OSTECTOMYHUMERUS"/>
+    	<CD code="77.93" displayName="TOT OSTECTRADIUS/ULNA"/>
+    	<CD code="77.94" displayName="TOT OSTECTMETACARP/CARP"/>
+    	<CD code="77.95" displayName="TOT OSTECTOMYFEMUR"/>
+    	<CD code="77.96" displayName="TOTAL PATELLECTOMY"/>
+    	<CD code="77.97" displayName="TOT OSTECTTIBIA/FIBULA"/>
+    	<CD code="77.98" displayName="TOT OSTECTMETATARS/TARS"/>
+    	<CD code="77.99" displayName="TOTAL OSTECTOMY NEC"/>
+    	<CD code="78.00" displayName="BONE GRAFT NOS"/>
+    	<CD code="78.01" displayName="BONE GRAFT TO CHEST CAGE"/>
+    	<CD code="78.02" displayName="BONE GRAFT TO HUMERUS"/>
+    	<CD code="78.03" displayName="BONE GRAFTRADIUS/ULNA"/>
+    	<CD code="78.04" displayName="BONE GRFT TO METACAR/CAR"/>
+    	<CD code="78.05" displayName="BONE GRAFT TO FEMUR"/>
+    	<CD code="78.06" displayName="BONE GRAFT TO PATELLA"/>
+    	<CD code="78.07" displayName="BONE GRAFTTIBIA/FIBULA"/>
+    	<CD code="78.08" displayName="BONE GRAFTMETATAR/TAR"/>
+    	<CD code="78.09" displayName="BONE GRAFT NEC"/>
+    	<CD code="78.10" displayName="PERIOSTEAL SUTURE NOS (Begin 1991)"/>
+    	<CD code="78.11" displayName="PERIOST SUTCHEST CAGE (Begin 1991)"/>
+    	<CD code="78.12" displayName="PERIOSTEAL SUTHUMERUS (Begin 1991)"/>
+    	<CD code="78.13" displayName="PERIOST SUTRADIUS/ULNA (Begin 1991)"/>
+    	<CD code="78.14" displayName="PERIOST SUTMETACAR/CAR (Begin 1991)"/>
+    	<CD code="78.15" displayName="PERIOSTEAL SUTUREFEMUR (Begin 1991)"/>
+    	<CD code="78.16" displayName="PERIOSTEAL SUTURPATELLA (Begin 1991)"/>
+    	<CD code="78.17" displayName="PERIOST SUTTIBIA/FIBULA (Begin 1991)"/>
+    	<CD code="78.18" displayName="PERIOST SUTMETATAR/TAR (Begin 1991)"/>
+    	<CD code="78.19" displayName="PERIOSTEAL SUTURE NEC (Begin 1991)"/>
+    	<CD code="78.20" displayName="EPIPHYSEAL STAPLING NOS (Begin 1991)"/>
+    	<CD code="78.22" displayName="EPIPHYS STAPLEHUMERUS (Begin 1991)"/>
+    	<CD code="78.23" displayName="EPIPHYS STAPLERAD/ULNA (Begin 1991)"/>
+    	<CD code="78.24" displayName="EPIPHYSEAL STAPLECARPALS (Begin 1991)"/>
+    	<CD code="78.25" displayName="EPIPHYSEAL STAPLEFEMUR (Begin 1991)"/>
+    	<CD code="78.27" displayName="EPIPHYS STAPLETIB/FIBUL (Begin 1991)"/>
+    	<CD code="78.28" displayName="EPIPHYSEAL STAPLETARSALS (Begin 1991)"/>
+    	<CD code="78.29" displayName="EPIPHYSEAL STAPLING NEC (Begin 1991)"/>
+    	<CD code="78.30" displayName="OTH BONE LNGTH CHNGE NOS"/>
+    	<CD code="78.31" displayName="BONE LNGTH CHNGETHORAX"/>
+    	<CD code="78.32" displayName="HUMERUS LENGTH CHANGE"/>
+    	<CD code="78.33" displayName="RADIUS/ULNA LENGTH CHNGE"/>
+    	<CD code="78.34" displayName="CARPAL LENGTH CHANGE"/>
+    	<CD code="78.35" displayName="FEMUR LENGTH CHANGE"/>
+    	<CD code="78.37" displayName="TIBIA/FIBULA LNGTH CHNGE"/>
+    	<CD code="78.38" displayName="TARSAL LENGTH CHANGE"/>
+    	<CD code="78.39" displayName="OTH BONE LNGTH CHNGE NEC (Begin 1991)"/>
+    	<CD code="78.40" displayName="OTH BONE REPAIR/PLAST OP"/>
+    	<CD code="78.41" displayName="OTH CHEST CAGE REP/PLAST"/>
+    	<CD code="78.42" displayName="OTH HUMERUS REPAIR/PLAST"/>
+    	<CD code="78.43" displayName="OTH RAD/ULN REPAIR/PLAST"/>
+    	<CD code="78.44" displayName="OTH METAC/CARP REP/PLAST"/>
+    	<CD code="78.45" displayName="OTH FEMUR REPAIR/PLASTIC"/>
+    	<CD code="78.46" displayName="OTH PATELLA REPAIR/PLAST"/>
+    	<CD code="78.47" displayName="OTH TIB/FIB REPAIR/PLAST"/>
+    	<CD code="78.48" displayName="OTH META/TAR REPA/PLAST"/>
+    	<CD code="78.49" displayName="OTH BONE REPA/PLAST NEC"/>
+    	<CD code="78.50" displayName="INT FIX W/O FX REDUC NOS"/>
+    	<CD code="78.51" displayName="INT FIXATIONCHEST CAGE"/>
+    	<CD code="78.52" displayName="INT FIXATIONHUMERUS"/>
+    	<CD code="78.53" displayName="INT FIXATIONRADIUS/ULNA"/>
+    	<CD code="78.54" displayName="INT FIXATIONMETACAR/CAR"/>
+    	<CD code="78.55" displayName="INTERNAL FIXATIONFEMUR"/>
+    	<CD code="78.56" displayName="INTERNAL FIXPATELLA"/>
+    	<CD code="78.57" displayName="INT FIXATIONTIBIA/FIBUL"/>
+    	<CD code="78.58" displayName="INT FIXATIONMETATAR/TAR"/>
+    	<CD code="78.59" displayName="INT FIXNO FX REDUCT NEC"/>
+    	<CD code="78.60" displayName="REMOVE IMP DEVICE NOS"/>
+    	<CD code="78.61" displayName="REMOV IMP DEVCHEST CAGE"/>
+    	<CD code="78.62" displayName="REMOVE IMPL DEVHUMERUS"/>
+    	<CD code="78.63" displayName="REMOV IMP DEVRADIUS/ULN"/>
+    	<CD code="78.64" displayName="REMOV IMP DEVMETAC/CARP"/>
+    	<CD code="78.65" displayName="REMOVE IMP DEVICEFEMUR"/>
+    	<CD code="78.66" displayName="REMOV IMP DEVICEPATELLA"/>
+    	<CD code="78.67" displayName="REMOV IMP DEVTIB/FIBULA"/>
+    	<CD code="78.68" displayName="REMOVE IMP DEVMETAT/TAR"/>
+    	<CD code="78.69" displayName="REMOVE IMPL DEVICE NEC"/>
+    	<CD code="78.70" displayName="OSTEOCLASIS NOS"/>
+    	<CD code="78.71" displayName="OSTEOCLASISCHEST CAGE"/>
+    	<CD code="78.72" displayName="OSTEOCLASISHUMERUS"/>
+    	<CD code="78.73" displayName="OSTEOCLASISRADIUS/ULNA"/>
+    	<CD code="78.74" displayName="OSTEOCLASISMETACAR/CAR"/>
+    	<CD code="78.75" displayName="OSTEOCLASISFEMUR"/>
+    	<CD code="78.76" displayName="OSTEOCLASISPATELLA"/>
+    	<CD code="78.77" displayName="OSTEOCLASISTIBIA/FIBULA"/>
+    	<CD code="78.78" displayName="OSTEOCLASISMETATAR/TAR"/>
+    	<CD code="78.79" displayName="OSTEOCLASIS NEC"/>
+    	<CD code="78.80" displayName="OTHER BONE DX PROC NOS"/>
+    	<CD code="78.81" displayName="OTH DX PROCED-CHEST CAGE"/>
+    	<CD code="78.82" displayName="OTH DX PROCED-HUMERUS"/>
+    	<CD code="78.83" displayName="OTH DX PROC-RADIUS/ULNA"/>
+    	<CD code="78.84" displayName="OTH DX PROC-METACAR/CAR"/>
+    	<CD code="78.85" displayName="OTH DX PROCED-FEMUR"/>
+    	<CD code="78.86" displayName="OTH DX PROCED-PATELLA"/>
+    	<CD code="78.87" displayName="OTH DX PROC-TIBIA/FIBULA"/>
+    	<CD code="78.88" displayName="OTH DX PROC-METATAR/TAR"/>
+    	<CD code="78.89" displayName="OTHER BONE DX PROC NEC"/>
+    	<CD code="78.90" displayName="INSERT BONE STIMUL NOS (Begin 1987)"/>
+    	<CD code="78.91" displayName="INSERT BONE STIMULCHEST (Begin 1987)"/>
+    	<CD code="78.92" displayName="INSERT BONE STIMHUMERUS (Begin 1987)"/>
+    	<CD code="78.93" displayName="INSER BONE STIMRAD/ULNA (Begin 1987)"/>
+    	<CD code="78.94" displayName="INSER BONE STIMMETA/CAR (Begin 1987)"/>
+    	<CD code="78.95" displayName="INSERT BONE STIMFEMUR (Begin 1987)"/>
+    	<CD code="78.96" displayName="INSERT BONE STIMPATELLA (Begin 1987)"/>
+    	<CD code="78.97" displayName="INSER BONE STIMTIB/FIB (Begin 1987)"/>
+    	<CD code="78.98" displayName="INSER BONE STIMMETA/TAR (Begin 1987)"/>
+    	<CD code="78.99" displayName="INSERT BONE STIMUL NEC (Begin 1987)"/>
+    	<CD code="79.10" displayName="CL FX REDUCINT FIX NOS"/>
+    	<CD code="79.11" displayName="CLOS REDINT FIX HUMERUS"/>
+    	<CD code="79.12" displayName="CL REDINT FIX RAD/ULNA"/>
+    	<CD code="79.13" displayName="CL REDINT FIX METAC/CAR"/>
+    	<CD code="79.14" displayName="CLOSE REDINT FIX FINGER"/>
+    	<CD code="79.15" displayName="CLOSED REDINT FIX FEMUR"/>
+    	<CD code="79.16" displayName="CL REDINT FIX TIB/FIBU"/>
+    	<CD code="79.17" displayName="CL REDINT FIX METAT/TAR"/>
+    	<CD code="79.18" displayName="CLOSE REDINT FIX TOE FX"/>
+    	<CD code="79.19" displayName="CL FX REDUCINT FIX NEC"/>
+    	<CD code="79.20" displayName="OPEN FX REDUCTION NOS"/>
+    	<CD code="79.21" displayName="OPEN REDUCHUMERUS FX"/>
+    	<CD code="79.22" displayName="OPEN REDUCRADIUS/ULN FX"/>
+    	<CD code="79.23" displayName="OPEN REDUCMETAC/CAR FX"/>
+    	<CD code="79.24" displayName="OPEN REDUCTIONFINGER FX"/>
+    	<CD code="79.25" displayName="OPEN REDUCTIONFEMUR FX"/>
+    	<CD code="79.26" displayName="OPEN REDUCTIBIA/FIB FX"/>
+    	<CD code="79.27" displayName="OPEN REDUCMETAT/TARS FX"/>
+    	<CD code="79.28" displayName="OPEN REDUCTIONTOE FX"/>
+    	<CD code="79.29" displayName="OPEN FX REDUCTION NEC"/>
+    	<CD code="79.30" displayName="OPN FX RED W INT FIX NOS"/>
+    	<CD code="79.31" displayName="OPEN REDINT FIX HUMERUS"/>
+    	<CD code="79.32" displayName="OP REDINT FIX RAD/ULNA"/>
+    	<CD code="79.33" displayName="OP REDINT FIX METAC/CAR"/>
+    	<CD code="79.34" displayName="OPEN REDINT FIX FINGER"/>
+    	<CD code="79.35" displayName="OPEN REDUCINT FIX FEMUR"/>
+    	<CD code="79.36" displayName="OP REDINT FIX TIB/FIBUL"/>
+    	<CD code="79.37" displayName="OP REDINT FIX METAT/TAR"/>
+    	<CD code="79.38" displayName="OPEN REDUCTINT FIX TOE"/>
+    	<CD code="79.39" displayName="OPN FX RED W INT FIX NEC"/>
+    	<CD code="79.40" displayName="CLS REDUCEPIPHY NOS"/>
+    	<CD code="79.41" displayName="CLOSE REDHUMERUS EPIPHY"/>
+    	<CD code="79.42" displayName="CLS REDRADIUS/UL EPIPHY"/>
+    	<CD code="79.45" displayName="CLOSE REDUCFEMUR EPIPHY"/>
+    	<CD code="79.46" displayName="CLS REDTIBIA/FIB EPIPHY"/>
+    	<CD code="79.49" displayName="CLS REDUCEPIPHY NEC"/>
+    	<CD code="79.50" displayName="OPEN REDEPIPHY NOS"/>
+    	<CD code="79.51" displayName="OPN REDEPIPHYHUMER"/>
+    	<CD code="79.52" displayName="OP REDRADIUS/ULN EPIPHY"/>
+    	<CD code="79.55" displayName="OPN REDEPIPHYFEMUR"/>
+    	<CD code="79.56" displayName="OP REDTIBIA/FIB EPIPHYS"/>
+    	<CD code="79.59" displayName="OPEN REDEPIPHY NEC"/>
+    	<CD code="79.60" displayName="OPEN FX SITE DEBRIDE NOS"/>
+    	<CD code="79.61" displayName="DEBRID OPEN FXHUMERUS"/>
+    	<CD code="79.62" displayName="DEBRID OPN FXRADIUS/ULN"/>
+    	<CD code="79.63" displayName="DEBRID OPN FXMETAC/CAR"/>
+    	<CD code="79.64" displayName="DEBRID OPN FXFINGER"/>
+    	<CD code="79.65" displayName="DEBRID OPN FXFEMUR"/>
+    	<CD code="79.66" displayName="DEBRID OPN FXTIBIA/FIB"/>
+    	<CD code="79.67" displayName="DEBRID OPN FXMETAT/TAR"/>
+    	<CD code="79.68" displayName="DEBRID OPN FXTOE"/>
+    	<CD code="79.69" displayName="OPEN FX SITE DEBRIDE NEC"/>
+    	<CD code="79.80" displayName="OPEN REDUCDISLOCAT NOS"/>
+    	<CD code="79.81" displayName="OPN REDUC DISLOCSHOULDR"/>
+    	<CD code="79.82" displayName="OPEN REDUCELBOW DISLOC"/>
+    	<CD code="79.83" displayName="OPEN REDUCWRIST DISLOC"/>
+    	<CD code="79.84" displayName="OPN REDUC DISLOCHAND"/>
+    	<CD code="79.85" displayName="OPEN REDUCHIP DISLOCAT"/>
+    	<CD code="79.86" displayName="OPEN REDUCKNEE DISLOCAT"/>
+    	<CD code="79.87" displayName="OPEN REDUCANKLE DISLOC"/>
+    	<CD code="79.88" displayName="OPN REDUC DISLOCFT/TOE"/>
+    	<CD code="79.89" displayName="OPEN REDUCDISLOCAT NEC"/>
+    	<CD code="79.90" displayName="UNSPEC OP BONE INJ NOS"/>
+    	<CD code="79.91" displayName="HUMERUS INJURY OP NOS"/>
+    	<CD code="79.92" displayName="RADIUS/ULNA INJ OP NOS"/>
+    	<CD code="79.93" displayName="METACARP/CARP INJ OP NOS"/>
+    	<CD code="79.94" displayName="FINGER INJURY OP NOS"/>
+    	<CD code="79.95" displayName="FEMUR INJURY OP NOS"/>
+    	<CD code="79.96" displayName="TIBIA/FIBULA INJ OP NOS"/>
+    	<CD code="79.97" displayName="METATARS/TARS INJ OP NOS"/>
+    	<CD code="79.98" displayName="TOE INJURY OPERATION NOS"/>
+    	<CD code="79.99" displayName="UNSPEC OPBONE INJ NEC"/>
+    	<CD code="80.00" displayName="ARTHROT + PROS REMOV NOS"/>
+    	<CD code="80.01" displayName="ARTHROT/PROS REMOVSHLDR"/>
+    	<CD code="80.02" displayName="ARTHROT/PROS REMOVELBOW"/>
+    	<CD code="80.03" displayName="ARTHROT/PROS REMOVWRIST"/>
+    	<CD code="80.04" displayName="ARTHROT/PROS REMOVHAND"/>
+    	<CD code="80.05" displayName="ARTHROT/PROS REMOVHIP"/>
+    	<CD code="80.06" displayName="ARTHROT/PROS REMOVKNEE"/>
+    	<CD code="80.07" displayName="ARTHROT/PROS REMOVANKLE"/>
+    	<CD code="80.08" displayName="ARTHROT/PROS REMOVFOOT"/>
+    	<CD code="80.09" displayName="ARTHROT + PROS REMOV NEC"/>
+    	<CD code="80.10" displayName="OTHER ARTHROTOMY NOS"/>
+    	<CD code="80.11" displayName="OTH ARTHROTOMYSHOULDER"/>
+    	<CD code="80.12" displayName="OTH ARTHROTOMYELBOW"/>
+    	<CD code="80.13" displayName="OTH ARTHROTOMYWRIST"/>
+    	<CD code="80.14" displayName="OTH ARTHROTOMYHAND/FNGR"/>
+    	<CD code="80.15" displayName="OTH ARTHROTOMYHIP"/>
+    	<CD code="80.16" displayName="OTH ARTHROTOMYKNEE"/>
+    	<CD code="80.17" displayName="OTH ARTHROTOMYANKLE"/>
+    	<CD code="80.18" displayName="OTH ARTHROTOMYFOOT/TOE"/>
+    	<CD code="80.19" displayName="OTHER ARTHROTOMY NEC"/>
+    	<CD code="80.20" displayName="ARTHROSCOPY NOS"/>
+    	<CD code="80.21" displayName="SHOULDER ARTHROSCOPY"/>
+    	<CD code="80.22" displayName="ELBOW ARTHROSCOPY"/>
+    	<CD code="80.23" displayName="WRIST ARTHROSCOPY"/>
+    	<CD code="80.24" displayName="HAND + FINGER ARTHROSCOP"/>
+    	<CD code="80.25" displayName="HIP ARTHROSCOPY"/>
+    	<CD code="80.26" displayName="KNEE ARTHROSCOPY"/>
+    	<CD code="80.27" displayName="ANKLE ARTHROSCOPY"/>
+    	<CD code="80.28" displayName="FOOT + TOE ARTHROSCOPY"/>
+    	<CD code="80.29" displayName="ARTHROSCOPY NEC"/>
+    	<CD code="80.40" displayName="JT STRUCTUR DIVISION NOS"/>
+    	<CD code="80.41" displayName="SHOULDER STRUCT DIVISION"/>
+    	<CD code="80.42" displayName="ELBOW STRUCTURE DIVISION"/>
+    	<CD code="80.43" displayName="WRIST STRUCTURE DIVISION"/>
+    	<CD code="80.44" displayName="HAND JOINT STRUCT DIVIS"/>
+    	<CD code="80.45" displayName="HIP STRUCTURE DIVISION"/>
+    	<CD code="80.46" displayName="KNEE STRUCTURE DIVISION"/>
+    	<CD code="80.47" displayName="ANKLE STRUCTURE DIVISION"/>
+    	<CD code="80.48" displayName="FOOT JOINT STRUCT DIVIS"/>
+    	<CD code="80.49" displayName="JT STRUCTUR DIVISION NEC"/>
+    	<CD code="80.5" displayName="EXCIS DESTR VERTEB DISC (Begin 1980 End 1986)"/>
+    	<CD code="80.50" displayName="EXC/DEST INTVRT DISC NOS (Begin 1986)"/>
+    	<CD code="80.51" displayName="EXCISION INTERVERT DISC (Begin 1986)"/>
+    	<CD code="80.53" displayName="REP ANULUS FIBROSUS-GRFT (begin 2008)"/>
+    	<CD code="80.54" displayName="REP ANULS FIBROS NEC/NOS (begin 2008)"/>
+    	<CD code="80.59" displayName="OTH EXC/DEST INTVRT DISC (Begin 1986)"/>
+    	<CD code="80.6" displayName="EXCIS KNEE SEMILUN CARTL"/>
+    	<CD code="80.70" displayName="SYNOVECTOMYSITE NOS"/>
+    	<CD code="80.71" displayName="SHOULDER SYNOVECTOMY"/>
+    	<CD code="80.72" displayName="ELBOW SYNOVECTOMY"/>
+    	<CD code="80.73" displayName="WRIST SYNOVECTOMY"/>
+    	<CD code="80.74" displayName="HAND SYNOVECTOMY"/>
+    	<CD code="80.75" displayName="HIP SYNOVECTOMY"/>
+    	<CD code="80.76" displayName="KNEE SYNOVECTOMY"/>
+    	<CD code="80.77" displayName="ANKLE SYNOVECTOMY"/>
+    	<CD code="80.78" displayName="FOOT SYNOVECTOMY"/>
+    	<CD code="80.79" displayName="SYNOVECTOMYSITE NEC"/>
+    	<CD code="80.80" displayName="DESTRUCT JOINT LES NOS"/>
+    	<CD code="80.81" displayName="DESTRUCSHOULDER LES NEC"/>
+    	<CD code="80.82" displayName="DESTRUCELBOW LESION NEC"/>
+    	<CD code="80.83" displayName="DESTRUCWRIST LESION NEC"/>
+    	<CD code="80.84" displayName="DESTRUCHAND JT LES NEC"/>
+    	<CD code="80.85" displayName="DESTRUCTHIP LESION NEC"/>
+    	<CD code="80.86" displayName="DESTRUCTKNEE LESION NEC"/>
+    	<CD code="80.87" displayName="DESTRUCANKLE LESION NEC"/>
+    	<CD code="80.88" displayName="DESTRUCFOOT JT LES NEC"/>
+    	<CD code="80.89" displayName="DESTRUCT JOINT LES NEC"/>
+    	<CD code="80.90" displayName="EXCISION OF JOINT NOS"/>
+    	<CD code="80.91" displayName="EXCISION OF SHOULDER NEC"/>
+    	<CD code="80.92" displayName="EXCISION OF ELBOW NEC"/>
+    	<CD code="80.93" displayName="EXCISION OF WRIST NEC"/>
+    	<CD code="80.94" displayName="EXCISION HAND JOINT NEC"/>
+    	<CD code="80.95" displayName="EXCISION OF HIP NEC"/>
+    	<CD code="80.96" displayName="EXCISION OF KNEE NEC"/>
+    	<CD code="80.97" displayName="EXCISION OF ANKLE NEC"/>
+    	<CD code="80.98" displayName="EXCISION FOOT JOINT NEC"/>
+    	<CD code="80.99" displayName="EXCISION OF JOINT NEC"/>
+    	<CD code="81.00" displayName="SPINAL FUSION NOS"/>
+    	<CD code="81.01" displayName="ATLASAXIS FUSION"/>
+    	<CD code="81.02" displayName="OTHER CERVICAL FUS (ANT) (Begin 1980)"/>
+    	<CD code="81.03" displayName="(DORSAL) SPINAL FUSS (Begin 1989)"/>
+    	<CD code="81.04" displayName="DORSOLUM FUS W/ H ROD (Begin 1989)"/>
+    	<CD code="81.05" displayName="OTH DORSOLUM FUS (Begin 1989)"/>
+    	<CD code="81.06" displayName="LUMBAR SPINAL FUS(Begin 1989)"/>
+    	<CD code="81.07" displayName="LUMBOSAC SPINAL FUSS (Begin 1989)"/>
+    	<CD code="81.08" displayName="REFUSION OF SPINE(Begin 1989)"/>
+    	<CD code="81.09" displayName="OTHER SPINAL FUS (Begin 1989)"/>
+    	<CD code="81.11" displayName="ANKLE FUSION"/>
+    	<CD code="81.12" displayName="TRIPLE ARTHRODESIS"/>
+    	<CD code="81.13" displayName="SUBTALAR FUSION"/>
+    	<CD code="81.14" displayName="MIDTARSAL FUSION"/>
+    	<CD code="81.15" displayName="TARSOMETATARSAL FUSION"/>
+    	<CD code="81.16" displayName="METATARSOPHALANGEAL FUS"/>
+    	<CD code="81.17" displayName="OTHER FUSION OF FOOT"/>
+    	<CD code="81.18" displayName="SUBTALR JT ARTHROEREISIS (Begin 2005)"/>
+    	<CD code="81.20" displayName="ARTHRODESIS NOS"/>
+    	<CD code="81.21" displayName="ARTHRODESIS OF HIP"/>
+    	<CD code="81.22" displayName="ARTHRODESIS OF KNEE"/>
+    	<CD code="81.23" displayName="ARTHRODESIS OF SHOULDER"/>
+    	<CD code="81.24" displayName="ARTHRODESIS OF ELBOW"/>
+    	<CD code="81.25" displayName="CARPORADIAL FUSION"/>
+    	<CD code="81.26" displayName="METACARPOCARPAL FUSION"/>
+    	<CD code="81.27" displayName="METACARPOPHALANGEAL FUS"/>
+    	<CD code="81.28" displayName="INTERPHALANGEAL FUSION"/>
+    	<CD code="81.29" displayName="ARTHRODESIS NEC"/>
+    	<CD code="81.30" displayName="REFUSION SPINE NOS (Begin 2001)"/>
+    	<CD code="81.31" displayName="REFUSION ATLASAXIS SPINE(Begin 2001)"/>
+    	<CD code="81.32" displayName="REFUSION CERVICAL SPINE ANT (Begin 2001)"/>
+    	<CD code="81.33" displayName="REFUSION CERVICAL SPINE POST (Begin 2001)"/>
+    	<CD code="81.34" displayName="REFUSION DORSAL SPINE ANT(Begin 2001)"/>
+    	<CD code="81.35" displayName="REFUSION DORSAL SPINE POST T (Begin 2001)"/>
+    	<CD code="81.36" displayName="REFUSION LUMBAR SPINE ANT(Begin 2001)"/>
+    	<CD code="81.37" displayName="REFUSION LUMBAR SPINE LAT(Begin 2001)"/>
+    	<CD code="81.38" displayName="REFUSION LUMBAR SPINE POST (Begin 2001)"/>
+    	<CD code="81.39" displayName="REFUSION SPINE NEC (Begin 2001)"/>
+    	<CD code="81.40" displayName="REPAIR OF HIP NEC (Begin 1989)"/>
+    	<CD code="81.41" displayName="TOTAL KNEE REPLACEMENT (Begin 1980 End 1989)"/>
+    	<CD code="81.42" displayName="FIVEINONE KNEE REPAIR"/>
+    	<CD code="81.43" displayName="TRIAD KNEE REPAIR"/>
+    	<CD code="81.44" displayName="PATELLAR STABILIZATION"/>
+    	<CD code="81.45" displayName="CRUCIATE LIG REPAIR NEC"/>
+    	<CD code="81.46" displayName="COLLATERL LIG REPAIR NEC"/>
+    	<CD code="81.47" displayName="OTHER REPAIR OF KNEE"/>
+    	<CD code="81.48" displayName="TOTAL ANKLE REPLACEMENT (Begin 1980 End 1989)"/>
+    	<CD code="81.49" displayName="OTHER REPAIR OF ANKLE"/>
+    	<CD code="81.51" displayName="TOT HIP REPLACE (W/MET) (Begin 1989)"/>
+    	<CD code="81.52" displayName="PARTIAL HIP REPLACEMENT (Begin 1989)"/>
+    	<CD code="81.53" displayName="REVISE HIP REPLACEMENT (Begin 1989)"/>
+    	<CD code="81.54" displayName="TOTAL KNEE REPLACEMENT (Begin 1989)"/>
+    	<CD code="81.55" displayName="REVISE KNEE REPLACEMENT (Begin 1989)"/>
+    	<CD code="81.56" displayName="TOTAL ANKLE REPLACEMENT (Begin 1989)"/>
+    	<CD code="81.57" displayName="REPL JOINT OF FOOT TOE (Begin 1989)"/>
+    	<CD code="81.59" displayName="REV OF JOINT REPLACE OF LOWE (Begin 1989)"/>
+    	<CD code="81.61" displayName="SPINAL FUSION SINGLE INCISIO (Begin 2002 End 2005)"/>
+    	<CD code="81.62" displayName="FUSION OR REFUSION OF 23 VE (Begin 2003)"/>
+    	<CD code="81.63" displayName="FUSION OR REFUSION OF 48 VE (Begin 2003)"/>
+    	<CD code="81.64" displayName="FUSION OR REFUSION OF 9 OR M (Begin 2003)"/>
+    	<CD code="81.65" displayName="VERTEBROPLASTY (Begin 2004)"/>
+    	<CD code="81.66" displayName="KYPHOPLASTY (Begin 2004)"/>
+    	<CD code="81.69" displayName="OTH HIP REPAIR (Begin 1980 End 1989)"/>
+    	<CD code="81.71" displayName="ARTHRPLAS (HAND/FINGR)WIT (Begin 1980)"/>
+    	<CD code="81.72" displayName="ARTHROPLASTY METACAR W/O (Begin 1989)"/>
+    	<CD code="81.73" displayName="TOTAL WRIST REPLACEMENT (Begin 1989)"/>
+    	<CD code="81.74" displayName="ARTHROPLASTY CARPAL WIT (Begin 1989)"/>
+    	<CD code="81.75" displayName="ARTHROPLASTY CARPAL W/O (Begin 1989)"/>
+    	<CD code="81.79" displayName="OTH REPAIR (HAND/FINGR) (Begin 1989)"/>
+    	<CD code="81.80" displayName="TOTAL SHOULDER REPLACE (Begin 1989)"/>
+    	<CD code="81.81" displayName="(ARTHRPLST) SHOULDER WIT (Begin 1980)"/>
+    	<CD code="81.82" displayName="REP RECUR SHLDER DISLOC"/>
+    	<CD code="81.83" displayName="SHOULDER ARTHROPLAST NEC"/>
+    	<CD code="81.84" displayName="ARTHRPLST ELBOW WITS (Begin 1980)"/>
+    	<CD code="81.85" displayName="ELBOW ARTHROPLASTY NEC"/>
+    	<CD code="81.86" displayName="ARTHRPLST CARPALS WIT (Begin 1980 End 1989)"/>
+    	<CD code="81.87" displayName="OTH REPAIR WRIST (Begin 1980 End 1989)"/>
+    	<CD code="81.88" displayName="RVRS TOTL SHLDR REPLACMT (Begin 2010)"/>
+    	<CD code="81.93" displayName="SUTUR CAPSUL/LIGAMEN ARM"/>
+    	<CD code="81.94" displayName="SUTURE CAPSUL/LIG ANK/FT"/>
+    	<CD code="81.95" displayName="SUTUR CAPSUL/LIG LEG NEC"/>
+    	<CD code="81.96" displayName="OTHER REPAIR OF JOINT"/>
+    	<CD code="81.97" displayName="REVIS UP EXTR JNT REPL (Begin 1992)"/>
+    	<CD code="81.99" displayName="JOINT STRUCTURE OP NEC"/>
+    	<CD code="82.01" displayName="EXPLOR TEND SHEATHHAND"/>
+    	<CD code="82.02" displayName="MYOTOMY OF HAND"/>
+    	<CD code="82.03" displayName="BURSOTOMY OF HAND"/>
+    	<CD code="82.09" displayName="INC SOFT TISSUE HAND NEC"/>
+    	<CD code="82.11" displayName="TENOTOMY OF HAND"/>
+    	<CD code="82.12" displayName="FASCIOTOMY OF HAND"/>
+    	<CD code="82.19" displayName="DIV SOFT TISSUE HAND NEC"/>
+    	<CD code="82.21" displayName="EXC LES TEND SHEATH HAND"/>
+    	<CD code="82.22" displayName="EXCISION HAND MUSCLE LES"/>
+    	<CD code="82.29" displayName="EXC LES SFT TISS HND NEC"/>
+    	<CD code="82.31" displayName="BURSECTOMY OF HAND"/>
+    	<CD code="82.32" displayName="EXCIS HAND TEND FOR GRFT"/>
+    	<CD code="82.33" displayName="HAND TENONECTOMY NEC"/>
+    	<CD code="82.34" displayName="EXC HND MUS/FAS FOR GRFT"/>
+    	<CD code="82.35" displayName="HAND FASCIECTOMY NEC"/>
+    	<CD code="82.36" displayName="OTHER MYECTOMY OF HAND"/>
+    	<CD code="82.39" displayName="HAND SOFT TISSUE EXC NEC"/>
+    	<CD code="82.41" displayName="SUTURE TENDN SHEATH HAND"/>
+    	<CD code="82.42" displayName="DELAY SUT FLEX TEND HAND"/>
+    	<CD code="82.43" displayName="DELAY SUT HAND TEND NEC"/>
+    	<CD code="82.44" displayName="SUTUR FLEX TEND HAND NEC"/>
+    	<CD code="82.45" displayName="SUTURE HAND TENDON NEC"/>
+    	<CD code="82.46" displayName="SUTURE HAND MUSCLE/FASC"/>
+    	<CD code="82.51" displayName="HAND TENDON ADVANCEMENT"/>
+    	<CD code="82.52" displayName="HAND TENDON RECESSION"/>
+    	<CD code="82.53" displayName="HAND TENDON REATTACHMENT"/>
+    	<CD code="82.54" displayName="HAND MUSCLE REATTACHMENT"/>
+    	<CD code="82.55" displayName="CHNG HND MUS/TEN LNG NEC"/>
+    	<CD code="82.56" displayName="TRANSPLANT HAND TEND NEC"/>
+    	<CD code="82.57" displayName="TRANSPOSIT HAND TEND NEC"/>
+    	<CD code="82.58" displayName="TRANSPLANT HAND MUSC NEC"/>
+    	<CD code="82.59" displayName="TRANSPOSIT HAND MUSC NEC"/>
+    	<CD code="82.61" displayName="POLLICIZATION OPERATION"/>
+    	<CD code="82.69" displayName="THUMB RECONSTRUCTION NEC"/>
+    	<CD code="82.71" displayName="HAND TEND PULLEY RECONST"/>
+    	<CD code="82.72" displayName="PLAST OP HNDMUS/FAS GRF"/>
+    	<CD code="82.79" displayName="PLAST OP HAND W GRFT NEC"/>
+    	<CD code="82.81" displayName="TRANSFER OF FINGER"/>
+    	<CD code="82.82" displayName="REPAIR OF CLEFT HAND"/>
+    	<CD code="82.83" displayName="REPAIR OF MACRODACTYLY"/>
+    	<CD code="82.84" displayName="REPAIR OF MALLET FINGER"/>
+    	<CD code="82.85" displayName="OTHER TENODESIS OF HAND"/>
+    	<CD code="82.86" displayName="OTHER TENOPLASTY OF HAND"/>
+    	<CD code="82.89" displayName="HAND PLASTIC OP NEC"/>
+    	<CD code="82.91" displayName="LYSIS OF HAND ADHESIONS"/>
+    	<CD code="82.99" displayName="HAND MUS/TEN/FAS/OPS NEC"/>
+    	<CD code="83.01" displayName="TENDON SHEATH EXPLORAT"/>
+    	<CD code="83.02" displayName="MYOTOMY"/>
+    	<CD code="83.03" displayName="BURSOTOMY"/>
+    	<CD code="83.09" displayName="SOFT TISSUE INCISION NEC"/>
+    	<CD code="83.11" displayName="ACHILLOTENOTOMY"/>
+    	<CD code="83.12" displayName="ADDUCTOR TENOTOMY OF HIP"/>
+    	<CD code="83.13" displayName="OTHER TENOTOMY"/>
+    	<CD code="83.14" displayName="FASCIOTOMY"/>
+    	<CD code="83.19" displayName="SOFT TISSUE DIVISION NEC"/>
+    	<CD code="83.21" displayName="SOFT TISSUE BIOPSY"/>
+    	<CD code="83.29" displayName="SOFT TISSUE DX PROC NEC"/>
+    	<CD code="83.31" displayName="EXCIS LES TENDON SHEATH"/>
+    	<CD code="83.32" displayName="EXCIS LESION OF MUSCLE"/>
+    	<CD code="83.39" displayName="EXC LES SOFT TISSUE NEC"/>
+    	<CD code="83.41" displayName="TENDON EXCISION FOR GRFT"/>
+    	<CD code="83.42" displayName="OTHER TENONECTOMY"/>
+    	<CD code="83.43" displayName="MUSC/FASC EXCIS FOR GRFT"/>
+    	<CD code="83.44" displayName="OTHER FASCIECTOMY"/>
+    	<CD code="83.45" displayName="OTHER MYECTOMY"/>
+    	<CD code="83.49" displayName="OTHER SOFT TISSUE EXCIS"/>
+    	<CD code="83.5" displayName="BURSECTOMY"/>
+    	<CD code="83.61" displayName="TENDON SHEATH SUTURE"/>
+    	<CD code="83.62" displayName="DELAYED TENDON SUTURE"/>
+    	<CD code="83.63" displayName="ROTATOR CUFF REPAIR"/>
+    	<CD code="83.64" displayName="OTHER SUTURE OF TENDON"/>
+    	<CD code="83.65" displayName="OTHER MUSCLE/FASC SUTURE"/>
+    	<CD code="83.71" displayName="TENDON ADVANCEMENT"/>
+    	<CD code="83.72" displayName="TENDON RECESSION"/>
+    	<CD code="83.73" displayName="TENDON REATTACHMENT"/>
+    	<CD code="83.74" displayName="MUSCLE REATTACHMENT"/>
+    	<CD code="83.75" displayName="TENDON TRNSFR/TRANSPLANT"/>
+    	<CD code="83.76" displayName="OTHER TENDON TRANSPOSIT"/>
+    	<CD code="83.77" displayName="MUSCLE TRNSFR/TRANSPLANT"/>
+    	<CD code="83.79" displayName="OTHER MUSCLE TRANSPOSIT"/>
+    	<CD code="83.81" displayName="TENDON GRAFT"/>
+    	<CD code="83.82" displayName="MUSCLE OR FASCIA GRAFT"/>
+    	<CD code="83.83" displayName="TENDON PULLEY RECONSTRUC"/>
+    	<CD code="83.84" displayName="CLUBFOOT RELEASE NEC"/>
+    	<CD code="83.85" displayName="MUSC/TEND LNG CHANGE NEC"/>
+    	<CD code="83.86" displayName="QUADRICEPSPLASTY"/>
+    	<CD code="83.87" displayName="OTHER PLASTIC OPS MUSCLE"/>
+    	<CD code="83.88" displayName="OTHER PLASTIC OPS TENDON"/>
+    	<CD code="83.89" displayName="OTHER PLASTIC OPS FASCIA"/>
+    	<CD code="83.91" displayName="ADHESIOLYSIS MUS/TEN/FAS"/>
+    	<CD code="83.92" displayName="INSERT SKEL MUSC STIMULA"/>
+    	<CD code="83.93" displayName="REMOV SKEL MUSC STIMULAT"/>
+    	<CD code="83.99" displayName="MUS/TEN/FAS/BUR OP NEC"/>
+    	<CD code="84.00" displayName="UPPER LIMB AMPUTAT NOS"/>
+    	<CD code="84.01" displayName="FINGER AMPUTATION"/>
+    	<CD code="84.02" displayName="THUMB AMPUTATION"/>
+    	<CD code="84.03" displayName="AMPUTATION THROUGH HAND"/>
+    	<CD code="84.04" displayName="DISARTICULATION OF WRIST"/>
+    	<CD code="84.05" displayName="AMPUTATION THRU FOREARM"/>
+    	<CD code="84.06" displayName="DISARTICULATION OF ELBOW"/>
+    	<CD code="84.07" displayName="AMPUTATION THRU HUMERUS"/>
+    	<CD code="84.08" displayName="SHOULDER DISARTICULATION"/>
+    	<CD code="84.09" displayName="FOREQUARTER AMPUTATION"/>
+    	<CD code="84.10" displayName="LOWER LIMB AMPUTAT NOS"/>
+    	<CD code="84.11" displayName="TOE AMPUTATION"/>
+    	<CD code="84.12" displayName="AMPUTATION THROUGH FOOT"/>
+    	<CD code="84.13" displayName="DISARTICULATION OF ANKLE"/>
+    	<CD code="84.14" displayName="AMPUTAT THROUGH MALLEOLI"/>
+    	<CD code="84.15" displayName="BELOW KNEE AMPUTAT NEC"/>
+    	<CD code="84.16" displayName="DISARTICULATION OF KNEE"/>
+    	<CD code="84.17" displayName="ABOVE KNEE AMPUTATION"/>
+    	<CD code="84.18" displayName="DISARTICULATION OF HIP"/>
+    	<CD code="84.19" displayName="HINDQUARTER AMPUTATION"/>
+    	<CD code="84.21" displayName="THUMB REATTACHMENT"/>
+    	<CD code="84.22" displayName="FINGER REATTACHMENT"/>
+    	<CD code="84.23" displayName="FOREARM/WRIST/HAND REATT"/>
+    	<CD code="84.24" displayName="UPPER ARM REATTACHMENT"/>
+    	<CD code="84.25" displayName="TOE REATTACHMENT"/>
+    	<CD code="84.26" displayName="FOOT REATTACHMENT"/>
+    	<CD code="84.27" displayName="LOWER LEG/ANKLE REATTACH"/>
+    	<CD code="84.28" displayName="THIGH REATTACHMENT"/>
+    	<CD code="84.29" displayName="REATTACHMENT NEC"/>
+    	<CD code="84.3" displayName="AMPUTATION STUMP REVIS"/>
+    	<CD code="84.40" displayName="IMPLNT/FIT PROS LIMB NOS"/>
+    	<CD code="84.44" displayName="IMPLANT ARM PROSTHESIS"/>
+    	<CD code="84.48" displayName="IMPLANT LEG PROSTHESIS"/>
+    	<CD code="84.58" displayName="IMP INTRSPINE DECOMP DEV (Begin 2005) (End 2007)"/>
+    	<CD code="84.59" displayName="INSERT OTHR SPIN DEVICE (Begin 2004)"/>
+    	<CD code="84.60" displayName="INSERT DISC PROS NOS (Begin 2004)"/>
+    	<CD code="84.61" displayName="INS PART DISC PROS CERV (Begin 2004)"/>
+    	<CD code="84.62" displayName="INS TOT DISC PROST CERV (Begin 2004)"/>
+    	<CD code="84.63" displayName="INS SPIN DISC PROS THOR (Begin 2004)"/>
+    	<CD code="84.64" displayName="INS PART DISC PROS LUMB (Begin 2004)"/>
+    	<CD code="84.65" displayName="INS TOTL DISC PROS LUMB (Begin 2004)"/>
+    	<CD code="84.66" displayName="REVISE DISC PROST CERV (Begin 2004)"/>
+    	<CD code="84.67" displayName="REVISE DISC PROST THORA (Begin 2004)"/>
+    	<CD code="84.68" displayName="REVISE DISC PROSTH LUMB (Begin 2004)"/>
+    	<CD code="84.69" displayName="REVISE DISC PROSTH NOS (Begin 2004)"/>
+    	<CD code="84.80" displayName="INS/REPL INTERSPINE DEV (Begin 2007)"/>
+    	<CD code="84.81" displayName="REV INTERSPINE DEVICE (Begin 2007)"/>
+    	<CD code="84.82" displayName="INS/REPL PDCL STABIL DEV (Begin 2007)"/>
+    	<CD code="84.83" displayName="REV PEDCL DYN STABIL DEV (Begin 2007)"/>
+    	<CD code="84.84" displayName="INS/REPL FACET REPLC DEV (Begin 2007)"/>
+    	<CD code="84.85" displayName="REV FACET REPLACE DEVICE (Begin 2007)"/>
+    	<CD code="84.91" displayName="AMPUTATION NOS"/>
+    	<CD code="84.92" displayName="SEPARAT EQUAL JOIN TWIN"/>
+    	<CD code="84.93" displayName="SEPARAT UNEQUL JOIN TWIN"/>
+    	<CD code="84.94" displayName="INS STRN FIX W RGD PLATE (Begin 2010)"/>
+    	<CD code="84.99" displayName="MUSCULOSKELETAL OP NEC"/>
+    	<CD code="85.20" displayName="BREAST TISSU DESTRUC NOS"/>
+    	<CD code="85.21" displayName="LOCAL EXCIS BREAST LES"/>
+    	<CD code="85.22" displayName="QUADRANT RESECT BREAST"/>
+    	<CD code="85.23" displayName="SUBTOTAL MASTECTOMY"/>
+    	<CD code="85.24" displayName="EXC ECTOPIC BREAST TISSU"/>
+    	<CD code="85.25" displayName="EXCISION OF NIPPLE"/>
+    	<CD code="85.31" displayName="UNILAT REDUCT MAMMOPLAST"/>
+    	<CD code="85.32" displayName="BILAT REDUCT MAMMOPLASTY"/>
+    	<CD code="85.33" displayName="UNIL SUBQ MAMMECTIMPLNT"/>
+    	<CD code="85.34" displayName="UNILAT SUBQ MAMMECT NEC"/>
+    	<CD code="85.35" displayName="BIL SUBQ MAMMECTIMPLANT"/>
+    	<CD code="85.36" displayName="BILAT SUBQ MAMMECTOM NEC"/>
+    	<CD code="85.41" displayName="UNILAT SIMPLE MASTECTOMY"/>
+    	<CD code="85.42" displayName="BILAT SIMPLE MASTECTOMY"/>
+    	<CD code="85.43" displayName="UNILAT EXTEN SIMP MASTEC"/>
+    	<CD code="85.44" displayName="BILAT EXTEND SIMP MASTEC"/>
+    	<CD code="85.45" displayName="UNILAT RADICAL MASTECTOM"/>
+    	<CD code="85.46" displayName="BILAT RADICAL MASTECTOMY"/>
+    	<CD code="85.47" displayName="UNIL EXT RAD MASTECTOMY"/>
+    	<CD code="85.48" displayName="BIL EXTEN RAD MASTECTOMY"/>
+    	<CD code="85.50" displayName="AUGMENT MAMMOPLASTY NOS"/>
+    	<CD code="85.53" displayName="UNILAT BREAST IMPLANT"/>
+    	<CD code="85.54" displayName="BILATERAL BREAST IMPLANT"/>
+    	<CD code="85.55" displayName="FAT GRAFT TO BREAST (Begin 2010)"/>
+    	<CD code="85.6" displayName="MASTOPEXY"/>
+    	<CD code="85.7" displayName="TOTAL BREAST RECONSTRUCT (end 2008)"/>
+    	<CD code="85.70" displayName="TOTL RECONSTC BREAST NOS (begin 2008)"/>
+    	<CD code="85.71" displayName="LATISS DORSI MYOCUT FLAP (begin 2008)"/>
+    	<CD code="85.72" displayName="TRAM FLAP PEDICLED (begin 2008)"/>
+    	<CD code="85.73" displayName="TRAM FLAP FREE (begin 2008)"/>
+    	<CD code="85.74" displayName="DIEP FLAP FREE (begin 2008)"/>
+    	<CD code="85.75" displayName="SIEA FLAP FREE (begin 2008)"/>
+    	<CD code="85.76" displayName="GAP FLAP FREE (begin 2008)"/>
+    	<CD code="85.79" displayName="TOTL RECONST BREAST NEC (begin 2008)"/>
+    	<CD code="85.82" displayName="BREAST SPLITTHICK GRAFT"/>
+    	<CD code="85.83" displayName="BREAST FULLTHICK GRAFT"/>
+    	<CD code="85.84" displayName="BREAST PEDICLE GRAFT"/>
+    	<CD code="85.85" displayName="BREAST MUSCLE FLAP GRAFT"/>
+    	<CD code="85.86" displayName="TRANSPOSITION OF NIPPLE"/>
+    	<CD code="85.87" displayName="NIPPLE REPAIR NEC"/>
+    	<CD code="85.89" displayName="MAMMOPLASTY NEC"/>
+    	<CD code="85.93" displayName="BREAST IMPLANT REVISION"/>
+    	<CD code="85.94" displayName="BREAST IMPLANT REMOVAL"/>
+    	<CD code="85.95" displayName="INS BRST TIS EXPAN (Begin 1987)"/>
+    	<CD code="85.96" displayName="REM BRST TIS EXPAN (Begin 1987)"/>
+    	<CD code="85.99" displayName="BREAST OPERATION NEC"/>
+    	<CD code="86.06" displayName="INSERT INFUSION PUMP (Begin 1987)"/>
+    	<CD code="86.21" displayName="EXCISION OF PILONID CYST"/>
+    	<CD code="86.22" displayName="WOUND DEBRIDEMENT(Begin 1980)"/>
+    	<CD code="86.25" displayName="DERMABRASION"/>
+    	<CD code="86.4" displayName="RADICAL EXCIS SKIN LES"/>
+    	<CD code="86.60" displayName="FREE SKIN GRAFT NOS"/>
+    	<CD code="86.61" displayName="FULLTHICK HAND SKIN GRF"/>
+    	<CD code="86.62" displayName="HAND SKIN GRAFT NEC"/>
+    	<CD code="86.63" displayName="FULLTHICK SKIN GRFT NEC"/>
+    	<CD code="86.65" displayName="HETEROGRAFT TO SKIN"/>
+    	<CD code="86.66" displayName="HOMOGRAFT TO SKIN"/>
+    	<CD code="86.67" displayName="DERMAL REGENERATIVE GRAFT(Begin 1998)"/>
+    	<CD code="86.69" displayName="FREE SKIN GRAFT NEC"/>
+    	<CD code="86.70" displayName="PEDICLE GRAFT/FLAP NOS"/>
+    	<CD code="86.71" displayName="CUT + PREP PEDICLE GRAFT"/>
+    	<CD code="86.72" displayName="PEDICLE GRAFT ADVANCEMEN"/>
+    	<CD code="86.73" displayName="ATTACH PEDICLE TO HAND"/>
+    	<CD code="86.74" displayName="ATTACH PEDICLE GRAFT NEC"/>
+    	<CD code="86.75" displayName="REVISION OF PEDICLE GRFT"/>
+    	<CD code="86.81" displayName="REPAIR FACIAL WEAKNESS"/>
+    	<CD code="86.82" displayName="FACIAL RHYTIDECTOMY"/>
+    	<CD code="86.83" displayName="SIZE REDUCT PLASTIC OP"/>
+    	<CD code="86.84" displayName="RELAXATION OF SCAR"/>
+    	<CD code="86.85" displayName="SYNDACTYLY CORRECTION"/>
+    	<CD code="86.86" displayName="ONYCHOPLASTY"/>
+    	<CD code="86.87" displayName="FAT GRFT SKIN/SUBQ TISS (Begin 2010)"/>
+    	<CD code="86.89" displayName="SKIN REPAIR + PLASTY NEC"/>
+    	<CD code="86.90" displayName="EXT FAT FOR GRFT/BANKING (Begin 2010)"/>
+    	<CD code="86.91" displayName="SKIN EXCISION FOR GRAFT"/>
+    	<CD code="86.93" displayName="INSERT TISSUE EXPANDER (Begin 1987)"/>
+    	<CD code="86.94" displayName="INS/REPL SINGLE PUL GEN (Begin 2004)"/>
+    	<CD code="86.95" displayName="INS/REPL DUAL PULSE GEN (Begin 2004)"/>
+    	<CD code="86.96" displayName="INSERT/REPL OTH NEUROST (Begin 2004)"/>
+    	<CD code="86.97" displayName="INS/REP 1 PUL GENRECHRG (Begin 2005)"/>
+    	<CD code="86.98" displayName="INS/REP 2 PUL GENRECHRG (Begin 2005)"/>
+    	<CD code="86.98" displayName="INS/REP 2 PUL GENRECHRG (Begin 2005)"/>
+    	<CD code="87.53" displayName="INTRAOPER CHOLANGIOGRAM"/>
+    	<CD code="92.27" displayName="RADIOACTIVE ELEM IMPLANT"/>
+    	<CD code="95.04" displayName="ANESTHETIZED EYE EXAM"/>
+   	</membersForCodeSystem>
+</OpenCdsConceptMappingSpecificationFile>

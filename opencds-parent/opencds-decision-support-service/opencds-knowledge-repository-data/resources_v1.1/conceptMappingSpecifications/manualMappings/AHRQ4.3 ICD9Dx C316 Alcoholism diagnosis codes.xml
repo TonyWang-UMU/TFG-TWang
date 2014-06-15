@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OpenCdsConceptMappingSpecificationFile>
+	<specificationNotes>Created manually from AHRQ PSI specifications.</specificationNotes>
+    <openCdsConcept code="C316" displayName="Alcoholism"/>
+    <conceptDeterminationMethod code="C267" displayName="AHRQ v4.3"/>
+    <membersForCodeSystem codeSystem="2.16.840.1.113883.6.103" codeSystemName="ICD9CM diagnoses">
+    	<CD code="291.0" displayName="ALCOHOL WITHDRAWAL DELIRIUM"/>
+    	<CD code="291.1" displayName="ALCOHOL AMNESTIC SYNDROME"/>
+    	<CD code="291.2" displayName="OTHER ALCOHOLIC DEMENTIA"/>
+    	<CD code="291.3" displayName="ALCOHOL WITHDRAWAL HALLUCINOSIS"/>
+    	<CD code="291.4" displayName="IDIOSYNCRATIC ALCOHOL INTOXICATION"/>
+    	<CD code="291.5" displayName="ALCOHOLIC JEALOUSY"/>
+    	<CD code="291.81" displayName="OTHER SPECIFIED ALCOHOLIC PSYCHOSES, ALCOHOL WITHDRAWAL"/>
+    	<CD code="291.82" displayName="ALCOHOL INDUCED SLEEP DISORDERS (OCT05)"/>
+    	<CD code="291.89" displayName="OTHER SPECIFIED ALCOHOLIC PSYCHOSES, OTHER"/>
+    	<CD code="291.9" displayName="UNSPECIFIED ALCOHOLIC PSYCHOSIS"/>
+    	<CD code="303.00" displayName="ACUTE ALCOHOLIC INTOXICATION - UNSPECIFIED"/>
+    	<CD code="303.01" displayName="ACUTE ALCOHOLIC INTOXICATION - CONTINUOUS"/>
+    	<CD code="303.02" displayName="ACUTE ALCOHOLIC INTOXICATION - EPISODIC"/>
+    	<CD code="303.03" displayName="ACUTE ALCOHOLIC INTOXICATION - IN REMISSION"/>
+    	<CD code="303.90" displayName="OTHER AND UNSPECIFIED ALCOHOL DEPENDENCE - UNSPECIFIED"/>
+    	<CD code="303.91" displayName="OTHER AND UNSPECIFIED ALCOHOL DEPENDENCE - CONTINUOUS"/>
+    	<CD code="303.92" displayName="OTHER AND UNSPECIFIED ALCOHOL DEPENDENCE - EPISODIC"/>
+    	<CD code="303.93" displayName="OTHER AND UNSPECIFIED ALCOHOL DEPENDENCE - IN REMISSION"/>
+    	<CD code="305.00" displayName="NONDEPENDENT ABUSE OF DRUGS, ALCOHOL ABUSE - UNSPECIFIED"/>
+    	<CD code="305.01" displayName="NONDEPENDENT ABUSE OF DRUGS, ALCOHOL ABUSE - CONTINUOUS"/>
+    	<CD code="305.02" displayName="NONDEPENDENT ABUSE OF DRUGS, ALCOHOL ABUSE - EPISODIC"/>
+    	<CD code="305.03" displayName="NONDEPENDENT ABUSE OF DRUGS, ALCOHOL ABUSE – IN REMISSION"/>
+    	<CD code="425.5" displayName="ALCOHOLIC CARDIOMYOPATHY"/>
+    	<CD code="535.30" displayName="ALCOHOLIC GASTRITIS, W/O MENTION OF HEMORRHAGE"/>
+    	<CD code="535.31" displayName="ALCOHOLIC GASTRITIS, W/ HEMORRHAGE"/>
+    	<CD code="571.0" displayName="ALCOHOLIC FATTY LIVER"/>
+    	<CD code="571.1" displayName="ACUTE ALCOHOLIC HEPATITIS"/>
+    	<CD code="571.2" displayName="ALCOHOLIC CIRRHOSIS OF LIVER"/>
+    	<CD code="571.3" displayName="ALCOHOLIC LIVER DAMAGE, UNSPECIFIED"/>
+    	<CD code="980.0" displayName="TOXIC EFFECT OF ALCOHOL, ETHYL ALCOHOL"/>
+    	<CD code="980.9" displayName="TOXIC EFFECT OF ALCOHOL, UNSPECIFIED ALCOHOL"/>
+   	</membersForCodeSystem>
+</OpenCdsConceptMappingSpecificationFile>

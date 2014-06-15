@@ -1,0 +1,2 @@
+[when] Concept.Determination.Identify - Concept is not determined according to {X:ENUM:VMRTemplateConcept.determinationMethodCode} = ($ConceptDeterminationMethodDsl_conceptToRemove : VmrOpenCdsConcept(determinationMethodCode != "{X}")) //DslUsed==ConceptDeterminationMethodDsl.Identify|||X=={X}
+[then] Concept.Determination.Remove - Remove concept without desired concept determination method = retract ($ConceptDeterminationMethodDsl_conceptToRemove); //DslUsed==ConceptDeterminationMethodDsl.Remove

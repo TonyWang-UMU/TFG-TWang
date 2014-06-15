@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OpenCdsConceptMappingSpecificationFile>
+	<specificationNotes>Created manually from AHRQ PSI specifications.</specificationNotes>
+    <openCdsConcept code="C285" displayName="Neuromuscular Disorder"/>
+    <conceptDeterminationMethod code="C267" displayName="AHRQ"/>
+    <membersForCodeSystem codeSystem="2.16.840.1.113883.6.103" codeSystemName="ICD9CM diagnoses">
+    	<CD code="357.0" displayName="AC INFECT POLYNEURITIS"/>
+    	<CD code="358.00" displayName="MYSTHNA GRVS W/O AC EXAC"/>
+    	<CD code="358.01" displayName="MYASTHNA GRAVS W AC EXAC"/>
+    	<CD code="358.1" displayName="MYASTHENIA IN OTH DIS"/>
+    	<CD code="358.2" displayName="TOXIC MYONEURAL DISORDER"/>
+    	<CD code="358.8" displayName="MYONEURAL DISORDERS NEC"/>
+    	<CD code="358.9" displayName="MYONEURAL DISORDERS NOS"/>
+    	<CD code="359.0" displayName="CONG HERED MUSC DYSTRPHY"/>
+    	<CD code="359.1" displayName="HERED PROG MUSC DYSTRPHY"/>
+    	<CD code="359.2" displayName="MYOTONIC DISORDERS"/>
+    	<CD code="359.22" displayName="MYOTONIA CONGENITA"/>
+    	<CD code="359.23" displayName="MYOTONIC CHONDRODYSTRPHY"/>
+    	<CD code="359.3" displayName="FAMIL PERIODIC PARALYSIS"/>
+    	<CD code="359.4" displayName="TOXIC MYOPATHY"/>
+    	<CD code="359.5" displayName="MYOPATHY IN ENDOCRIN DIS"/>
+    	<CD code="359.6" displayName="INFL MYOPATHY IN OTH DIS"/>
+    	<CD code="359.71" displayName="INCLUSION BODY MYOSITIS IBM (OCT09)"/>
+    	<CD code="359.79" displayName="OTHER INFLAMMATORY AND IMMUNE MYOPATHIES, NEC (OCT09)"/>
+    	<CD code="359.81" displayName="CRITICAL ILLNESS MYOPTHY"/>
+    	<CD code="359.89" displayName="MYOPATHIES NEC"/>
+    	<CD code="359.9" displayName="MYOPATHY NOS"/>
+   	</membersForCodeSystem>
+</OpenCdsConceptMappingSpecificationFile>

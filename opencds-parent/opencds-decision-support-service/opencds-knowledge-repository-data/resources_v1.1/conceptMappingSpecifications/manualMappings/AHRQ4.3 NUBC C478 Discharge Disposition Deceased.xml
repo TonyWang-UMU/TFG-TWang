@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OpenCdsConceptMappingSpecificationFile>
+	<specificationNotes></specificationNotes>
+	<openCdsConcept code="C478" displayName="Discharge Disposition Deceased"></openCdsConcept>
+    <conceptDeterminationMethod code="C267" displayName="AHRQ"/>
+    <membersForCodeSystem codeSystem="2.16.840.1.113883.3.88.12.80.33" codeSystemName="National Uniform Billing Codes">
+    	<CD code="20" displayName="Expired or did not recover"/>
+    </membersForCodeSystem>
+</OpenCdsConceptMappingSpecificationFile>     

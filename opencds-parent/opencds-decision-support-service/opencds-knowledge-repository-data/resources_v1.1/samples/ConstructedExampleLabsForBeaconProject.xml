@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<in:cdsInput xmlns:in="org.opencds.vmr.v1_0.schema.cdsinput"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+		xmlns:dt="org.opencds.vmr.v1_0.schema.datatypes"
+		xsi:schemaLocation="org.opencds.vmr.v1_0.schema.cdsinput ..\schema\cdsInput.xsd">
+	<!--the root OID 2.16.840.1.113883.3.795.5.2.1 has been assigned to University of Utah, Beacon Project by OpenCDS which owns the parent OID  2.16.840.1.113883.3.795-->
+	<!--the University of Utah Beacon Project may assign child OIDs as needed-->
+	<!--We suggest using 2.16.840.1.113883.3.795.5.2.1.1 as the root for Patient #s-->
+	<!--We suggest using 2.16.840.1.113883.3.795.5.2.1.2 as the root for Lab Panel or Battery #s-->
+	<!--We suggest using 2.16.840.1.113883.3.795.5.2.1.3 as the root for individual Lab Test #s-->
+	<!--if other identifiers need to be used, roots can be assigned in a similar fashion based on the root OID for University of Utah, Beacon Project-->
+	<templateId root="2.16.840.1.113883.3.795.11.1.1"/><!--this is the template for a vmr, version 1.0-->
+	<vmrInput>
+		<templateId root="2.16.840.1.113883.3.795.11.1.1"/><!--this is the template for a vmr, version 1.0-->
+		<patient>
+			<id root="2.16.840.1.113883.3.795.5.2.1.1" extension="patientNo"/><!--replace "patientNo" with the actual patient # from the EDW-->
+			<demographics>
+				<birthTime value="19830630"/><!--optional, use this format if sent-->
+				<gender codeSystem="2.16.840.1.113883.5.1" code="F"/><!--optional, use codes M/F if sent-->
+			</demographics>
+			<clinicalStatements>
+				<!--lab results, using optional nested structure for panel-->
+				<observationResults>
+					<!--a different set of lab results, using alternate listed structure in lieu of nested structure above-->
+					<observationResult>
+						<templateId root="2.16.840.1.113883.3.795.11.6.3.2"/> <!-- OpenCDS v1 Microbiology Lab Result observation organizer (panel/battery) template -->
+						<id root="2.16.840.1.113883.3.795.5.2.1.2" extension="lab.panel.no"/><!--replace "lab.panel.no" with the panel or battery identifier used in the data-->
+						<!--<observationFocus code="412895003" codeSystem="2.16.840.1.113883.6.96" displayName="Microbiology test battery"/>--><!--Snomed Code for a Lab Panel / Battery for Microbiology-->
+						<observationFocus code="62864-4" codeSystem="2.16.840.1.113883.6.1" displayName="PhenX measure - assay for chlamydia - gonorrhea"/><!--LOINC Code for PhenX measure - assay for chlamydia - gonorrhea-->
+						<observationEventTime low="20110803" high="20110803"/>
+						<observationValue/>
+					</observationResult>
+					<observationResult>
+						<templateId root="2.16.840.1.113883.3.795.11.6.3.3"/> <!-- OpenCDS v1 Microbiology Lab Result observation template -->
+						<id root="2.16.840.1.113883.3.795.5.2.1.3" extension="labResultNo"/><!--replace "labResultNo" with the actual result identifier-->
+						<observationFocus code="22194-5" codeSystem="2.16.840.1.113883.6.1" displayName="Chlamydia trachomatis B IgA Ab [Titer] in Serum"/><!--LOINC code-->
+						<!--<observationFocus code="13217-5" codeSystem="2.16.840.1.113883.6.1" displayName="Chlamydia trachomatis B Ab [Units/volume] in Serum"/>--><!--LOINC code-->
+						<observationEventTime low="20110803" high="20110803"/>
+						<!--only one observationValue should be submitted, the possible choices are below-->
+						<!--<observationValue><boolean value=""/></observationValue>-->
+						<!--<observationValue><concept code="" codeSystem=""/></observationValue>-->
+						<!--<observationValue><decimal value=""/></observationValue>-->
+						<!--<observationValue><decimalRange low="" high=""/></observationValue>-->
+						<!--<observationValue><identifier root="" extension=""/></observationValue>-->
+						<!--<observationValue><integer value=""/></observationValue>-->
+						<!--<observationValue><integerRange low="" high=""/></observationValue>-->
+						<!--<observationValue><physicalQuantity value="" unit=""/></observationValue>-->
+						<!--<observationValue><physicalQuantityRange lowUnit="" highValue="" highUnit="" lowValue=""/></observationValue>-->
+						<observationValue><ratio numerator="1" denominator="32"/></observationValue><!--this is the normal structure of the value for a titer-->
+						<!--<observationValue><ratioRange highDenominator="" lowNumerator="" highNumerator="" lowDenominator=""/></observationValue>-->
+						<!--<observationValue><simpleConcept code=""/></observationValue>-->
+						<!--<observationValue><text value=""/></observationValue>-->
+						<!--<observationValue><time value=""/></observationValue>-->
+						<!--<observationValue><timeRange low="" high=""/></observationValue>-->
+						<!--you may submit as many interpretation codes as needed to fully describe the observationResult-->
+						<interpretation code="442635007" codeSystem="2.16.840.1.113883.6.96"/><!--Snomed Code for Positive Microbiology Finding-->
+						<interpretation code="63938009" codeSystem="2.16.840.1.113883.6.96"/><!--Snomed Code for Chlamydia Trachomatis-->
+					</observationResult>
+				</observationResults>
+			</clinicalStatements>
+			<clinicalStatementRelationships>
+				<clinicalStatementRelationship>
+					<sourceId root="2.16.840.1.113883.3.795.5.2.1.2" extension="lab.panel.no"/><!--replace "lab.panel.no" with the panel or battery identifier used in the data-->
+					<targetId root="2.16.840.1.113883.3.795.5.2.1.3" extension="labResultNo"/><!--replace "labResultNo" with the actual result identifier-->
+					<targetRelationshipToSource codeSystem="2.16.840.1.113883.5.1002" code="COMP"/><!--this code and codeSystem says that the target is a component of the source-->
+				</clinicalStatementRelationship>
+			</clinicalStatementRelationships>
+		</patient>
+	</vmrInput>
+</in:cdsInput>

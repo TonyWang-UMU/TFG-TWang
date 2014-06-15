@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OpenCdsConceptMappingSpecificationFile>
+	<specificationNotes>Created manually from AHRQ PSI specifications.</specificationNotes>
+    <openCdsConcept code="C329" displayName="Poisoning"/>
+    <conceptDeterminationMethod code="C267" displayName="AHRQ v4.3"/>
+    <membersForCodeSystem codeSystem="2.16.840.1.113883.6.103" codeSystemName="ICD9CM diagnoses">
+    	<CD code="965.00" displayName="POISONING-OPIUM NOS (OCT08)"/>
+    	<CD code="965.01" displayName="POISONING-HEROIN"/>
+    	<CD code="965.02" displayName="POISONING-METHADONE"/>
+    	<CD code="965.09" displayName="POISONING-OPIATES NEC"/>
+    	<CD code="965.6" displayName="POISONING-ANTIRHEUMATICS (OCT08)"/>
+    	<CD code="965.8" displayName="POIS-ANALGES/ANTIPYR NEC"/>
+    	<CD code="966.0" displayName="POISON-OXAZOLIDINE DERIV"/>
+    	<CD code="966.1" displayName="POISON-HYDANTOIN DERIVAT"/>
+    	<CD code="966.2" displayName="POISONING-SUCCINIMIDES"/>
+    	<CD code="966.3" displayName="POIS-ANTICONVUL NEC/NOS"/>
+    	<CD code="966.4" displayName="POIS-ANTI-PARKINSON DRUG"/>
+    	<CD code="967.0" displayName="POISONING-BARBITURATES"/>
+    	<CD code="967.1" displayName="POISONING-CHLORAL HYDRAT"/>
+    	<CD code="967.2" displayName="POISONING-PARALDEHYDE"/>
+    	<CD code="967.3" displayName="POISONING-BROMINE COMPND"/>
+    	<CD code="967.4" displayName="POISONING-METHAQUALONE"/>
+    	<CD code="967.5" displayName="POISONING-GLUTETHIMIDE"/>
+    	<CD code="967.6" displayName="POISON-MIX SEDATIVE NEC"/>
+    	<CD code="967.8" displayName="POIS-SEDATIVE/HYPNOT NEC"/>
+    	<CD code="967.9" displayName="POIS-SEDATIVE/HYPNOT NOS"/>
+    	<CD code="968.0" displayName="POIS-CNS MUSCLE DEPRESS"/>
+    	<CD code="968.1" displayName="POISONING-HALOTHANE"/>
+    	<CD code="968.2" displayName="POISON-GAS ANESTHET NEC"/>
+    	<CD code="968.3" displayName="POISON-INTRAVEN ANESTHET"/>
+    	<CD code="968.4" displayName="POIS-GEN ANESTH NEC/NOS"/>
+    	<CD code="968.5" displayName="POIS-TOPIC/INFILT ANESTH"/>
+    	<CD code="968.6" displayName="POIS-NERVE/PLEX-BLK ANES"/>
+    	<CD code="968.7" displayName="POISON-SPINAL ANESTHETIC"/>
+    	<CD code="968.9" displayName="POIS-LOCAL ANEST NEC/NOS"/>
+    	<CD code="969.0" displayName="POISONING-ANTIDEPRESSANT"/>
+    	<CD code="969.00" displayName="POISONING BY ANTIDEPRESSANT, UNSPECIFIED (OCT09)"/>
+    	<CD code="969.01" displayName="POISONING BY MAOI (OCT09)"/>
+    	<CD code="969.02" displayName="POISONING BY SSNRI (OCT09)"/>
+    	<CD code="969.03" displayName="POISONING BY SSRI (OCT09)"/>
+    	<CD code="969.04" displayName="POISONING BY TETRACYCLICS (OCT09)"/>
+    	<CD code="969.05" displayName="POISONING BY TRICYCLICS (OCT09)"/>
+    	<CD code="969.09" displayName="POISONING BY OTHER ANTIDEPRESSENTS (OCT09)"/>
+    	<CD code="969.1" displayName="POIS-PHENOTHIAZINE TRANQ"/>
+    	<CD code="969.2" displayName="POIS-BUTYROPHENONE TRANQ"/>
+    	<CD code="969.3" displayName="POISON-ANTIPSYCHOTIC NEC"/>
+    	<CD code="969.4" displayName="POIS-BENZODIAZEPINE TRAN"/>
+    	<CD code="969.5" displayName="POISON-TRANQUILIZER NEC"/>
+    	<CD code="969.6" displayName="POISONING-HALLUCINOGENS"/>
+    	<CD code="969.7" displayName="POISON-PSYCHOSTIMULANTS"/>
+    	<CD code="969.70" displayName="POISONING BY PSYCHOSTIMULANT, UNSPEC (OCT09)"/>
+    	<CD code="969.71" displayName="POISONING BY CAFFEINE (OCT09)"/>
+    	<CD code="969.72" displayName="POISONING BY AMPHETAMINES/METHAAMPH (OCT09)"/>
+    	<CD code="969.73" displayName="POISONING BY METHYLPHENIDATE (OCT09)"/>
+    	<CD code="969.79" displayName="POISONING BY OTHER PSYCHOSTIMULANTS (OCT09)"/>
+    	<CD code="969.8" displayName="POISON-PSYCHOTROPIC NEC"/>
+    	<CD code="969.9" displayName="POISON-PSYCHOTROPIC NOS"/>
+    	<CD code="975.2" displayName="POIS-SKELET MUSCLE RELAX (OCT08)"/>
+     	<CD code="E850.0" displayName="ACC POISON-HEROIN"/>
+    	<CD code="E850.1" displayName="ACC POISON-METHADONE"/>
+    	<CD code="E850.2" displayName="ACC POISON-OPIATES NEC"/>
+    	<CD code="E850.3" displayName="ACC POISON-SALICYLATES"/>
+    	<CD code="E850.4" displayName="ACC POISON-AROM ANALGESC"/>
+    	<CD code="E850.5" displayName="ACC POISON-PYRAZOLE DERV"/>
+    	<CD code="E850.6" displayName="ACC POISON-ANTIRHEUMATIC"/>
+    	<CD code="E850.7" displayName="ACC POISON-NONNARC ANALG"/>
+    	<CD code="E850.8" displayName="ACC POISON-ANALGESIC NEC"/>
+    	<CD code="E850.9" displayName="ACC POISON-ANALGESIC NOS"/>
+    	<CD code="E851" displayName="ACC POISON-BARBITURATES"/>
+    	<CD code="E852.0" displayName="ACC POISN-CHLORL HYDRATE"/>
+    	<CD code="E852.1" displayName="ACC POISON-PARALDEHYDE"/>
+    	<CD code="E852.2" displayName="ACC POISON-BROMINE CMPND"/>
+    	<CD code="E852.3" displayName="ACC POISON-METHAQUALONE"/>
+    	<CD code="E852.4" displayName="ACC POISON-GLUTETHIMIDE"/>
+    	<CD code="E852.5" displayName="ACC POISON-MIX SEDTV NEC"/>
+    	<CD code="E852.8" displayName="ACC POISON-SEDATIVES NEC"/>
+    	<CD code="E852.9" displayName="ACC POISON-SEDATIVES NOS"/>
+    	<CD code="E853.0" displayName="ACC POIS-PHENTHIAZ TRANQ"/>
+    	<CD code="E853.1" displayName="ACC POIS-BUTYRPHEN TRANQ"/>
+    	<CD code="E853.2" displayName="ACC POISN-BENZDIAZ TRANQ"/>
+    	<CD code="E853.8" displayName="ACC POISN-TRANQUILZR NEC"/>
+    	<CD code="E853.9" displayName="ACC POISN-TRANQUILZR NOS"/>
+    	<CD code="E854.0" displayName="ACC POISON-ANTIDEPRESSNT"/>
+    	<CD code="E854.1" displayName="ACC POISON-HALLUCINOGENS"/>
+    	<CD code="E854.2" displayName="ACC POISN-PSYCHSTIMULANT"/>
+    	<CD code="E854.3" displayName="ACC POISON-CNS STIMULANT"/>
+    	<CD code="E854.8" displayName="ACC POISN PSYCHOTROP NEC"/>
+    	<CD code="E855.0" displayName="ACC POISN-ANTICONVULSANT"/>
+    	<CD code="E855.1" displayName="ACC POISN-CNS DEPRES NEC"/>
+    	<CD code="E855.2" displayName="ACC POISN-LOCAL ANESTHET"/>
+    	<CD code="E855.3" displayName="ACC POISON-CHOLINERGICS"/>
+    	<CD code="E855.4" displayName="ACC POISN-ANTICHOLINERG"/>
+    	<CD code="E855.5" displayName="ACC POISON-ADRENERGICS"/>
+    	<CD code="E855.6" displayName="ACC POISN-SYMPATHOLYTICS"/>
+    	<CD code="E855.8" displayName="ACC POISON-CNS DRUG NEC"/>
+    	<CD code="E855.9" displayName="ACC POISON-CNS DRUG NOS"/>
+    	<CD code="E856" displayName="ACC POISON-ANTIBIOTICS"/>
+    	<CD code="E857" displayName="ACC POIS-OTH ANTI-INFECT"/>
+    	<CD code="E858.0" displayName="ACC POISON-HORMONES"/>
+    	<CD code="E858.1" displayName="ACC POISN-SYSTEMIC AGENT"/>
+    	<CD code="E858.2" displayName="ACC POISON-BLOOD AGENT"/>
+    	<CD code="E858.3" displayName="ACC POISN-CARDIOVASC AGT"/>
+    	<CD code="E858.4" displayName="ACC POISON-GI AGENT"/>
+    	<CD code="E858.5" displayName="ACC POISN-METABOL AGNT"/>
+    	<CD code="E858.6" displayName="ACC POISN-MUSCL/RESP AGT"/>
+    	<CD code="E858.7" displayName="ACC POISN-SKIN/EENT AGNT"/>
+    	<CD code="E858.8" displayName="ACC POISONING-DRUG NEC"/>
+    	<CD code="E858.9" displayName="ACC POISONING-DRUG NOS"/>
+    	<CD code="E860.0" displayName="ACC POISN-ALCOHOL BEVRAG"/>
+    	<CD code="E860.1" displayName="ACC POISON-ETHYL ALCOHOL"/>
+    	<CD code="E860.2" displayName="ACC POISN-METHYL ALCOHOL"/>
+    	<CD code="E860.3" displayName="ACC POISN-ISOPROPYL ALC"/>
+    	<CD code="E860.4" displayName="ACC POISON-FUSEL OIL"/>
+    	<CD code="E860.8" displayName="ACC POISON-ALCOHOL NEC"/>
+    	<CD code="E860.9" displayName="ACC POISON-ALCOHOL NOS"/>
+    	<CD code="E861.0" displayName="ACC POIS-SYNTH DETERGENT"/>
+    	<CD code="E861.1" displayName="ACC POISON-SOAP PRODUCTS"/>
+    	<CD code="E861.2" displayName="ACC POISON-POLISHES"/>
+    	<CD code="E861.3" displayName="ACC POISON-CLEANSER NEC"/>
+    	<CD code="E861.4" displayName="ACC POISON-DISINFECTANTS"/>
+    	<CD code="E861.5" displayName="ACC POISON-LEAD PAINTS"/>
+    	<CD code="E861.6" displayName="ACC POISON-PAINTS NEC"/>
+    	<CD code="E861.9" displayName="ACC POISON-CLEANSER NOS"/>
+    	<CD code="E862.0" displayName="ACC POISN-PETROL SOLVENT"/>
+    	<CD code="E862.1" displayName="ACC POISN-PETROLEUM FUEL"/>
+    	<CD code="E862.2" displayName="ACC POIS-LUBRICATING OIL"/>
+    	<CD code="E862.3" displayName="ACC POIS-PETROLEUM SOLID"/>
+    	<CD code="E862.4" displayName="ACC POISN-SOLVENTS NEC"/>
+    	<CD code="E862.9" displayName="ACC POISN-SOLVENT NOS"/>
+    	<CD code="E863.0" displayName="ACC POIS-CHLORINE PESTIC"/>
+    	<CD code="E863.1" displayName="ACC POIS-PHOSPH PESTICID"/>
+    	<CD code="E863.2" displayName="ACC POISON-CARBAMATES"/>
+    	<CD code="E863.3" displayName="ACC POISN-MIXED PESTICID"/>
+    	<CD code="E863.4" displayName="ACC POISON-PESTICIDE NEC"/>
+    	<CD code="E863.5" displayName="ACC POISON-HERBICIDES"/>
+    	<CD code="E863.6" displayName="ACC POISON-FUNGICIDES"/>
+    	<CD code="E863.7" displayName="ACC POISON-RODENTICIDES"/>
+    	<CD code="E863.8" displayName="ACC POISON-FUMIGANTS"/>
+    	<CD code="E863.9" displayName="ACC POIS-AGRCULT NEC/NOS"/>
+    	<CD code="E864.0" displayName="ACC POIS-CORROSIV AROMAT"/>
+    	<CD code="E864.1" displayName="ACC POISON-ACIDS"/>
+    	<CD code="E864.2" displayName="ACC POISN-CAUSTIC ALKALI"/>
+    	<CD code="E864.3" displayName="ACC POISON-CAUSTIC NEC"/>
+    	<CD code="E864.4" displayName="ACC POISON-CAUSTIC NOS"/>
+    	<CD code="E865.0" displayName="ACC POISON-MEAT"/>
+    	<CD code="E865.1" displayName="ACC POISON-SHELLFISH"/>
+    	<CD code="E865.2" displayName="ACC POISON-FISH NEC"/>
+    	<CD code="E865.3" displayName="ACC POISON-BERRIES/SEEDS"/>
+    	<CD code="E865.4" displayName="ACC POISON-PLANTS NEC"/>
+    	<CD code="E865.5" displayName="ACC POISON-MUSHROOMS"/>
+    	<CD code="E865.8" displayName="ACC POISON-FOOD NEC"/>
+    	<CD code="E865.9" displayName="ACC POISN-FOOD/PLANT NOS"/>
+    	<CD code="E866.0" displayName="ACC POISONING-LEAD"/>
+    	<CD code="E866.1" displayName="ACC POISONING-MERCURY"/>
+    	<CD code="E866.2" displayName="ACC POISONING-ANTIMONY"/>
+    	<CD code="E866.3" displayName="ACC POISONING-ARSENIC"/>
+    	<CD code="E866.4" displayName="ACC POISON-METALS NEC"/>
+    	<CD code="E866.5" displayName="ACC POISON-PLANT FOOD"/>
+    	<CD code="E866.6" displayName="ACC POISON-GLUES"/>
+    	<CD code="E866.7" displayName="ACC POISON-COSMETICS"/>
+    	<CD code="E866.8" displayName="ACC POIS-SOLID/LIQ NEC"/>
+    	<CD code="E866.9" displayName="ACC POIS-SOLID/LIQ NOS"/>
+    	<CD code="E867" displayName="ACC POISON-PIPED GAS"/>
+    	<CD code="E868.0" displayName="ACC POIS-LIQ PETROL GAS"/>
+    	<CD code="E868.1" displayName="ACC POIS-UTL GAS NEC/NOS"/>
+    	<CD code="E868.2" displayName="ACC POISON-EXHAUST GAS"/>
+    	<CD code="E868.3" displayName="ACC POIS-CO/DOMESTC FUEL"/>
+    	<CD code="E868.8" displayName="ACC POIS-CARBN MONOX NEC"/>
+    	<CD code="E868.9" displayName="ACC POIS-CARBN MONOX NOS"/>
+    	<CD code="E869.0" displayName="ACC POISN-NITROGEN OXIDE"/>
+    	<CD code="E869.1" displayName="ACC POISN-SULFUR DIOXIDE"/>
+    	<CD code="E869.2" displayName="ACC POISON-FREON"/>
+    	<CD code="E869.3" displayName="ACC POISON-TEAR GAS"/>
+    	<CD code="E869.4" displayName="SCNDHND TBCCO SMOKE"/>
+    	<CD code="E869.8" displayName="ACC POISON-GAS/VAPOR NEC"/>
+    	<CD code="E869.9" displayName="ACC POISON-GAS/VAPOR NOS"/>
+    	<CD code="E951.0" displayName="POISON-PIPED GAS"/>
+    	<CD code="E951.1" displayName="POISON-GAS IN CONTAINER"/>
+    	<CD code="E951.8" displayName="POISON-UTILITY GAS NEC"/>
+    	<CD code="E952.0" displayName="POISON-EXHAUST GAS"/>
+    	<CD code="E952.1" displayName="POISON-CO NEC"/>
+    	<CD code="E952.8" displayName="POISON-GAS/VAPOR NEC"/>
+    	<CD code="E952.9" displayName="POISON-GAS/VAPOR NOS"/>
+    	<CD code="E962.0" displayName="ASSAULT-POIS W MEDIC AGT"/>
+    	<CD code="E962.1" displayName="ASSAULT-POIS W SOLID/LIQ"/>
+    	<CD code="E962.2" displayName="ASSAULT-POIS W GAS/VAPOR"/>
+    	<CD code="E962.9" displayName="ASSAULT-POISONING NOS"/>
+    	<CD code="E980.0" displayName="UNDETERM POIS-ANALGESICS"/>
+    	<CD code="E980.1" displayName="UNDETERM POIS-BARBITURAT"/>
+    	<CD code="E980.2" displayName="UNDET POIS-SED/HYPN NEC"/>
+    	<CD code="E980.3" displayName="UNDETERM POIS-PSYCHOTROP"/>
+    	<CD code="E980.4" displayName="UNDET POIS-MED AGNT NEC"/>
+    	<CD code="E980.5" displayName="UNDET POIS-MED AGNT NOS"/>
+    	<CD code="E980.6" displayName="UNDET POIS-CORROS/CAUST"/>
+    	<CD code="E980.7" displayName="UNDET POIS-AGRICULT AGNT"/>
+    	<CD code="E980.8" displayName="UNDETER POIS-ARSENIC"/>
+    	<CD code="E980.9" displayName="UNDETER POIS-SOL/LIQ NEC"/>
+    	<CD code="E981.0" displayName="UNDETER POIS-PIPED GAS"/>
+    	<CD code="E981.1" displayName="UNDET POIS-CONTAINER GAS"/>
+    	<CD code="E981.8" displayName="UNDET POIS-UTIL GAS NEC"/>
+    	<CD code="E982.0" displayName="UNDETER POIS-EXHAUST GAS"/>
+    	<CD code="E982.1" displayName="UNDETERMIN POISON-CO NEC"/>
+    	<CD code="E982.8" displayName="UNDET POIS-GAS/VAPOR NEC"/>
+    	<CD code="E982.9" displayName="UNDET POIS-GAS/VAPOR NOS"/>
+  	</membersForCodeSystem>
+</OpenCdsConceptMappingSpecificationFile>

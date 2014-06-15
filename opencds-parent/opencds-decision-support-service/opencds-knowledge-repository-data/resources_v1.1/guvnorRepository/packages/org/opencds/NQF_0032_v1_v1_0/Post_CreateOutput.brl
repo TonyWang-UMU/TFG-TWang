@@ -1,0 +1,101 @@
+<rule>
+  <name>Post_CreateOutput</name>
+  <modelVersion>1.0</modelVersion>
+  <attributes>
+    <attribute>
+      <attributeName>dialect</attributeName>
+      <value>java</value>
+    </attribute>
+  </attributes>
+  <metadataList/>
+  <lhs>
+    <dslSentence>
+      <definition>Initialize.evalTime.fpId.evalpId - Note that all criteria below must be met for the rule to fire.</definition>
+      <values/>
+    </dslSentence>
+    <dslSentence>
+      <definition>Collect assertions</definition>
+      <values/>
+    </dslSentence>
+  </lhs>
+  <rhs>
+    <dslSentence>
+      <definition>Output.Root.Obs.Focus.CDValue.Assrt - Create root output observation with ID {ROOT} focus {focus:ENUM:ObservationFocusConcept.openCdsConceptCode} coded value {CDValue:ENUM:ObservationCodedValueConcept.openCdsConceptCode}</definition>
+      <values>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+          <value>ROOT_NQF_32</value>
+        </org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+          <value>C53</value>
+        </org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+          <value>C73</value>
+        </org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+          <value>ROOT</value>
+        </org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue>
+          <value>focus</value>
+          <id>ENUM:ObservationFocusConcept.openCdsConceptCode</id>
+        </org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue>
+          <value>CDValue</value>
+          <id>ENUM:ObservationCodedValueConcept.openCdsConceptCode</id>
+        </org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue>
+      </values>
+    </dslSentence>
+    <dslSentence>
+      <definition>Output.Nested.Obs.Focus.BLValue.Assrt - Create nested observation with ID {nestedIdValue} within enclosing observation ID {ROOT} focused on {OutputNestedObsFocusBLValueAssrtX1:ENUM:ObservationFocusConcept.openCdsConceptCode} boolean value {OutputNestedObsFocusBLValueAssrtX2:ENUM:Assertion.value}</definition>
+      <values>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+          <value>denominator</value>
+        </org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+          <value>ROOT_NQF_32</value>
+        </org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+          <value>C54</value>
+        </org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+          <value>DenominatorMet</value>
+        </org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+          <value>nestedIdValue</value>
+        </org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+          <value>ROOT</value>
+        </org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue>
+          <value>OutputNestedObsFocusBLValueAssrtX1</value>
+          <id>ENUM:ObservationFocusConcept.openCdsConceptCode</id>
+        </org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue>
+          <value>OutputNestedObsFocusBLValueAssrtX2</value>
+          <id>ENUM:Assertion.value</id>
+        </org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue>
+      </values>
+    </dslSentence>
+    <dslSentence>
+      <definition>Output.Nested.Obs.Focus.BLValue.Assrt - Create nested observation with ID {nestedIdValue} within enclosing observation ID {ROOT} focused on {OutputNestedObsFocusBLValueAssrtX1:ENUM:ObservationFocusConcept.openCdsConceptCode} boolean value {OutputNestedObsFocusBLValueAssrtX2:ENUM:Assertion.value}</definition>
+      <values>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+          <value>numerator</value>
+        </org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+          <value>ROOT_NQF_32</value>
+        </org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+          <value>C55</value>
+        </org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+          <value>NumeratorMet</value>
+        </org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue reference="../../../dslSentence[2]/values/org.drools.guvnor.client.modeldriven.brl.DSLVariableValue[5]"/>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue reference="../../../dslSentence[2]/values/org.drools.guvnor.client.modeldriven.brl.DSLVariableValue[6]"/>
+        <org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue reference="../../../dslSentence[2]/values/org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue"/>
+        <org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue reference="../../../dslSentence[2]/values/org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue[2]"/>
+      </values>
+    </dslSentence>
+  </rhs>
+  <isNegated>false</isNegated>
+</rule>

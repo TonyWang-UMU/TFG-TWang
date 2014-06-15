@@ -1,0 +1,34 @@
+<rule>
+  <name>PSI_13_DenomNotMetInitialize</name>
+  <modelVersion>1.0</modelVersion>
+  <attributes>
+    <attribute>
+      <attributeName>ruleflow-group</attributeName>
+      <value>initialize</value>
+    </attribute>
+  </attributes>
+  <metadataList/>
+  <lhs>
+    <freeForm>
+      <text>//initialize assertions to value for Denominator Indicator not met.
+//This will be changed to &quot;Denominator Indicator met&quot; if the Denominator rule fires.
+//It will be changed back to &quot;not met&quot; if the Denominator rule has fired, and if any 
+//  one of the Denominator exclusions rules fires.</text>
+    </freeForm>
+  </lhs>
+  <rhs>
+    <dslSentence>
+      <definition>Assert to both Rules and Process that {AssertionToAdd:ENUM:Assertion.value}</definition>
+      <values>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+          <value>DenominatorNotMet</value>
+        </org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue>
+          <value>AssertionToAdd</value>
+          <id>ENUM:Assertion.value</id>
+        </org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue>
+      </values>
+    </dslSentence>
+  </rhs>
+  <isNegated>false</isNegated>
+</rule>

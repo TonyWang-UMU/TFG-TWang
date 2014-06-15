@@ -1,0 +1,1291 @@
+<in:cdsInput xmlns:dt="org.opencds.vmr.v1_0.schema.datatypes" xmlns:in="org.opencds.vmr.v1_0.schema.cdsinput" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="org.opencds.vmr.v1_0.schema.cdsinput ..\schema\cdsInput.xsd">
+    <templateId root="2.16.840.1.113883.3.1829.11.1.1.1"/>
+    <vmrInput>
+        <templateId root="2.16.840.1.113883.3.1829.11.1.2.1"/>
+        <patient>
+            <templateId root="2.16.840.1.113883.3.1829.11.2.1.1"/>
+            <id extension="05236369" root="2.16.840.1.113883.3.795.5.2.1.1"/>
+            <demographics>
+                <birthTime value="19410912000000"/>
+                <gender code="M" codeSystem="2.16.840.1.113883.1.11.1" displayName="Female"/>
+            </demographics>
+            <clinicalStatements>
+                <encounterEvents>
+                    <encounterEvent>
+                        <templateId root="2.16.840.1.113883.3.1829.11.4.3.1"/>
+                        <id extension="1550599" root="2.16.840.1.113883.3.795.5.2"/>
+                        <dataSourceType code="Administrative" codeSystem="2.16.840.1.113883.3.795.12.2.5.1"/>
+                        <encounterType code="I" codeSystem="2.16.840.1.113883.3.795.12.2.6.1" displayName="Inpatient encounter"/>
+                        <encounterEventTime high="20061023115000" low="20061014190000"/>
+                    </encounterEvent>
+                    <encounterEvent>
+                        <templateId root="2.16.840.1.113883.3.1829.11.4.3.1"/>
+                        <id extension="1594266" root="2.16.840.1.113883.3.795.5.2"/>
+                        <dataSourceType code="Administrative" codeSystem="2.16.840.1.113883.3.795.12.2.5.1"/>
+                        <encounterType code="I" codeSystem="2.16.840.1.113883.3.795.12.2.6.1" displayName="Inpatient encounter"/>
+                        <encounterEventTime high="20070105114000" low="20061229154500"/>
+                    </encounterEvent>
+                    <encounterEvent>
+                        <templateId root="2.16.840.1.113883.3.1829.11.4.3.1"/>
+                        <id extension="1903541" root="2.16.840.1.113883.3.795.5.2"/>
+                        <dataSourceType code="Administrative" codeSystem="2.16.840.1.113883.3.795.12.2.5.1"/>
+                        <encounterType code="I" codeSystem="2.16.840.1.113883.3.795.12.2.6.1" displayName="Inpatient encounter"/>
+                        <encounterEventTime high="20080509170000" low="20080503171800"/>
+                    </encounterEvent>
+                    <encounterEvent>
+                        <templateId root="2.16.840.1.113883.3.1829.11.4.3.1"/>
+                        <id extension="1970789" root="2.16.840.1.113883.3.795.5.2"/>
+                        <dataSourceType code="Administrative" codeSystem="2.16.840.1.113883.3.795.12.2.5.1"/>
+                        <encounterType code="I" codeSystem="2.16.840.1.113883.3.795.12.2.6.1" displayName="Inpatient encounter"/>
+                        <encounterEventTime high="20080910102500" low="20080830192600"/>
+                    </encounterEvent>
+                    <encounterEvent>
+                        <templateId root="2.16.840.1.113883.3.1829.11.4.3.1"/>
+                        <id extension="2289486" root="2.16.840.1.113883.3.795.5.2"/>
+                        <dataSourceType code="Administrative" codeSystem="2.16.840.1.113883.3.795.12.2.5.1"/>
+                        <encounterType code="I" codeSystem="2.16.840.1.113883.3.795.12.2.6.1" displayName="Inpatient encounter"/>
+                        <encounterEventTime high="20100224124500" low="20100217220000"/>
+                    </encounterEvent>
+                    <encounterEvent>
+                        <templateId root="2.16.840.1.113883.3.1829.11.4.3.1"/>
+                        <id extension="189125869" root="2.16.840.1.113883.3.795.5.2"/>
+                        <dataSourceType code="Administrative" codeSystem="2.16.840.1.113883.3.795.12.2.5.1"/>
+                        <encounterType code="I" codeSystem="2.16.840.1.113883.3.795.12.2.6.1" displayName="Inpatient encounter"/>
+                        <encounterEventTime high="20120518121500" low="20120510233900"/>
+                    </encounterEvent>
+                </encounterEvents>
+                <problems>
+                    <problem>
+                        <templateId root="2.16.840.1.113883.3.1829.11.7.2.1"/>
+                        <id extension="VD189125869" root="2.16.840.1.113883.3.795.5.2"/>
+                        <dataSourceType code="Clinical" codeSystem="2.16.840.1.113883.3.795.12.2.5.1"/>
+                        <problemCode code="895" codeSystem="2.16.840.1.113883.6.103" displayName="put.problem.name.here"/>
+                        <problemEffectiveTime high="20120518121500" low="20120518121500"/>
+                    </problem>
+                    <problem>
+                        <templateId root="2.16.840.1.113883.3.1829.11.7.2.1"/>
+                        <id extension="VD1903541" root="2.16.840.1.113883.3.795.5.2"/>
+                        <dataSourceType code="Clinical" codeSystem="2.16.840.1.113883.3.795.12.2.5.1"/>
+                        <problemCode code="895" codeSystem="2.16.840.1.113883.6.103" displayName="put.problem.name.here"/>
+                        <problemEffectiveTime high="20080509170000" low="20080509170000"/>
+                    </problem>
+                    <problem>
+                        <templateId root="2.16.840.1.113883.3.1829.11.7.2.1"/>
+                        <id extension="VD1970789" root="2.16.840.1.113883.3.795.5.2"/>
+                        <dataSourceType code="Clinical" codeSystem="2.16.840.1.113883.3.795.12.2.5.1"/>
+                        <problemCode code="895" codeSystem="2.16.840.1.113883.6.103" displayName="put.problem.name.here"/>
+                        <problemEffectiveTime high="20080910102500" low="20080910102500"/>
+                    </problem>
+                    <problem>
+                        <templateId root="2.16.840.1.113883.3.1829.11.7.2.1"/>
+                        <id extension="VD2289486" root="2.16.840.1.113883.3.795.5.2"/>
+                        <dataSourceType code="Clinical" codeSystem="2.16.840.1.113883.3.795.12.2.5.1"/>
+                        <problemCode code="895" codeSystem="2.16.840.1.113883.6.103" displayName="put.problem.name.here"/>
+                        <problemEffectiveTime high="20100224124500" low="20100224124500"/>
+                    </problem>
+                    <problem>
+                        <templateId root="2.16.840.1.113883.3.1829.11.7.2.1"/>
+                        <id extension="190354119035411HOSPBILLING" root="2.16.840.1.113883.3.795.5.2"/>
+                        <dataSourceType code="Clinical" codeSystem="2.16.840.1.113883.3.795.12.2.5.1"/>
+                        <problemCode code="303.91" codeSystem="2.16.840.1.113883.6.103" displayName="put.problem.name.here"/>
+                        <problemEffectiveTime high="" low="2008-05-03 17:18:00.0"/>
+                        <importance code="1" codeSystem="2.16.840.1.113883.6.96" displayName="put.importance.title.here"/>
+                    </problem>
+                    <problem>
+                        <templateId root="2.16.840.1.113883.3.1829.11.7.2.1"/>
+                        <id extension="190354119035412HOSPBILLING" root="2.16.840.1.113883.3.795.5.2"/>
+                        <dataSourceType code="Clinical" codeSystem="2.16.840.1.113883.3.795.12.2.5.1"/>
+                        <problemCode code="300.02" codeSystem="2.16.840.1.113883.6.103" displayName="put.problem.name.here"/>
+                        <problemEffectiveTime high="" low="2008-05-03 17:18:00.0"/>
+                        <importance code="2" codeSystem="2.16.840.1.113883.6.96" displayName="put.importance.title.here"/>
+                    </problem>
+                    <problem>
+                        <templateId root="2.16.840.1.113883.3.1829.11.7.2.1"/>
+                        <id extension="190354119035413HOSPBILLING" root="2.16.840.1.113883.3.795.5.2"/>
+                        <dataSourceType code="Clinical" codeSystem="2.16.840.1.113883.3.795.12.2.5.1"/>
+                        <problemCode code="291.81" codeSystem="2.16.840.1.113883.6.103" displayName="put.problem.name.here"/>
+                        <problemEffectiveTime high="" low="2008-05-03 17:18:00.0"/>
+                        <importance code="3" codeSystem="2.16.840.1.113883.6.96" displayName="put.importance.title.here"/>
+                    </problem>
+                    <problem>
+                        <templateId root="2.16.840.1.113883.3.1829.11.7.2.1"/>
+                        <id extension="190354119035414HOSPBILLING" root="2.16.840.1.113883.3.795.5.2"/>
+                        <dataSourceType code="Clinical" codeSystem="2.16.840.1.113883.3.795.12.2.5.1"/>
+                        <problemCode code="V14.0" codeSystem="2.16.840.1.113883.6.103" displayName="put.problem.name.here"/>
+                        <problemEffectiveTime high="" low="2008-05-03 17:18:00.0"/>
+                        <importance code="4" codeSystem="2.16.840.1.113883.6.96" displayName="put.importance.title.here"/>
+                    </problem>
+                    <problem>
+                        <templateId root="2.16.840.1.113883.3.1829.11.7.2.1"/>
+                        <id extension="197078919707891HOSPBILLING" root="2.16.840.1.113883.3.795.5.2"/>
+                        <dataSourceType code="Clinical" codeSystem="2.16.840.1.113883.3.795.12.2.5.1"/>
+                        <problemCode code="303.91" codeSystem="2.16.840.1.113883.6.103" displayName="put.problem.name.here"/>
+                        <problemEffectiveTime high="" low="2008-08-30 19:26:00.0"/>
+                        <importance code="1" codeSystem="2.16.840.1.113883.6.96" displayName="put.importance.title.here"/>
+                    </problem>
+                    <problem>
+                        <templateId root="2.16.840.1.113883.3.1829.11.7.2.1"/>
+                        <id extension="197078919707892HOSPBILLING" root="2.16.840.1.113883.3.795.5.2"/>
+                        <dataSourceType code="Clinical" codeSystem="2.16.840.1.113883.3.795.12.2.5.1"/>
+                        <problemCode code="291.81" codeSystem="2.16.840.1.113883.6.103" displayName="put.problem.name.here"/>
+                        <problemEffectiveTime high="" low="2008-08-30 19:26:00.0"/>
+                        <importance code="2" codeSystem="2.16.840.1.113883.6.96" displayName="put.importance.title.here"/>
+                    </problem>
+                    <problem>
+                        <templateId root="2.16.840.1.113883.3.1829.11.7.2.1"/>
+                        <id extension="197078919707893HOSPBILLING" root="2.16.840.1.113883.3.795.5.2"/>
+                        <dataSourceType code="Clinical" codeSystem="2.16.840.1.113883.3.795.12.2.5.1"/>
+                        <problemCode code="272.0" codeSystem="2.16.840.1.113883.6.103" displayName="put.problem.name.here"/>
+                        <problemEffectiveTime high="" low="2008-08-30 19:26:00.0"/>
+                        <importance code="3" codeSystem="2.16.840.1.113883.6.96" displayName="put.importance.title.here"/>
+                    </problem>
+                    <problem>
+                        <templateId root="2.16.840.1.113883.3.1829.11.7.2.1"/>
+                        <id extension="197078919707894HOSPBILLING" root="2.16.840.1.113883.3.795.5.2"/>
+                        <dataSourceType code="Clinical" codeSystem="2.16.840.1.113883.3.795.12.2.5.1"/>
+                        <problemCode code="724.5" codeSystem="2.16.840.1.113883.6.103" displayName="put.problem.name.here"/>
+                        <problemEffectiveTime high="" low="2008-08-30 19:26:00.0"/>
+                        <importance code="4" codeSystem="2.16.840.1.113883.6.96" displayName="put.importance.title.here"/>
+                    </problem>
+                    <problem>
+                        <templateId root="2.16.840.1.113883.3.1829.11.7.2.1"/>
+                        <id extension="197078919707895HOSPBILLING" root="2.16.840.1.113883.3.795.5.2"/>
+                        <dataSourceType code="Clinical" codeSystem="2.16.840.1.113883.3.795.12.2.5.1"/>
+                        <problemCode code="V14.0" codeSystem="2.16.840.1.113883.6.103" displayName="put.problem.name.here"/>
+                        <problemEffectiveTime high="" low="2008-08-30 19:26:00.0"/>
+                        <importance code="5" codeSystem="2.16.840.1.113883.6.96" displayName="put.importance.title.here"/>
+                    </problem>
+                    <problem>
+                        <templateId root="2.16.840.1.113883.3.1829.11.7.2.1"/>
+                        <id extension="197078919707896HOSPBILLING" root="2.16.840.1.113883.3.795.5.2"/>
+                        <dataSourceType code="Clinical" codeSystem="2.16.840.1.113883.3.795.12.2.5.1"/>
+                        <problemCode code="V14.2" codeSystem="2.16.840.1.113883.6.103" displayName="put.problem.name.here"/>
+                        <problemEffectiveTime high="" low="2008-08-30 19:26:00.0"/>
+                        <importance code="6" codeSystem="2.16.840.1.113883.6.96" displayName="put.importance.title.here"/>
+                    </problem>
+                    <problem>
+                        <templateId root="2.16.840.1.113883.3.1829.11.7.2.1"/>
+                        <id extension="228948622894861HOSPBILLING" root="2.16.840.1.113883.3.795.5.2"/>
+                        <dataSourceType code="Clinical" codeSystem="2.16.840.1.113883.3.795.12.2.5.1"/>
+                        <problemCode code="303.91" codeSystem="2.16.840.1.113883.6.103" displayName="put.problem.name.here"/>
+                        <problemEffectiveTime high="" low="2010-02-17 22:00:00.0"/>
+                        <importance code="1" codeSystem="2.16.840.1.113883.6.96" displayName="put.importance.title.here"/>
+                    </problem>
+                    <problem>
+                        <templateId root="2.16.840.1.113883.3.1829.11.7.2.1"/>
+                        <id extension="228948622894862HOSPBILLING" root="2.16.840.1.113883.3.795.5.2"/>
+                        <dataSourceType code="Clinical" codeSystem="2.16.840.1.113883.3.795.12.2.5.1"/>
+                        <problemCode code="311" codeSystem="2.16.840.1.113883.6.103" displayName="put.problem.name.here"/>
+                        <problemEffectiveTime high="" low="2010-02-17 22:00:00.0"/>
+                        <importance code="2" codeSystem="2.16.840.1.113883.6.96" displayName="put.importance.title.here"/>
+                    </problem>
+                    <problem>
+                        <templateId root="2.16.840.1.113883.3.1829.11.7.2.1"/>
+                        <id extension="228948622894863HOSPBILLING" root="2.16.840.1.113883.3.795.5.2"/>
+                        <dataSourceType code="Clinical" codeSystem="2.16.840.1.113883.3.795.12.2.5.1"/>
+                        <problemCode code="291.81" codeSystem="2.16.840.1.113883.6.103" displayName="put.problem.name.here"/>
+                        <problemEffectiveTime high="" low="2010-02-17 22:00:00.0"/>
+                        <importance code="3" codeSystem="2.16.840.1.113883.6.96" displayName="put.importance.title.here"/>
+                    </problem>
+                    <problem>
+                        <templateId root="2.16.840.1.113883.3.1829.11.7.2.1"/>
+                        <id extension="228948622894864HOSPBILLING" root="2.16.840.1.113883.3.795.5.2"/>
+                        <dataSourceType code="Clinical" codeSystem="2.16.840.1.113883.3.795.12.2.5.1"/>
+                        <problemCode code="530.81" codeSystem="2.16.840.1.113883.6.103" displayName="put.problem.name.here"/>
+                        <problemEffectiveTime high="" low="2010-02-17 22:00:00.0"/>
+                        <importance code="4" codeSystem="2.16.840.1.113883.6.96" displayName="put.importance.title.here"/>
+                    </problem>
+                    <problem>
+                        <templateId root="2.16.840.1.113883.3.1829.11.7.2.1"/>
+                        <id extension="228948622894865HOSPBILLING" root="2.16.840.1.113883.3.795.5.2"/>
+                        <dataSourceType code="Clinical" codeSystem="2.16.840.1.113883.3.795.12.2.5.1"/>
+                        <problemCode code="380.10" codeSystem="2.16.840.1.113883.6.103" displayName="put.problem.name.here"/>
+                        <problemEffectiveTime high="" low="2010-02-17 22:00:00.0"/>
+                        <importance code="5" codeSystem="2.16.840.1.113883.6.96" displayName="put.importance.title.here"/>
+                    </problem>
+                    <problem>
+                        <templateId root="2.16.840.1.113883.3.1829.11.7.2.1"/>
+                        <id extension="228948622894866HOSPBILLING" root="2.16.840.1.113883.3.795.5.2"/>
+                        <dataSourceType code="Clinical" codeSystem="2.16.840.1.113883.3.795.12.2.5.1"/>
+                        <problemCode code="V14.0" codeSystem="2.16.840.1.113883.6.103" displayName="put.problem.name.here"/>
+                        <problemEffectiveTime high="" low="2010-02-17 22:00:00.0"/>
+                        <importance code="6" codeSystem="2.16.840.1.113883.6.96" displayName="put.importance.title.here"/>
+                    </problem>
+                    <problem>
+                        <templateId root="2.16.840.1.113883.3.1829.11.7.2.1"/>
+                        <id extension="228948622894867HOSPBILLING" root="2.16.840.1.113883.3.795.5.2"/>
+                        <dataSourceType code="Clinical" codeSystem="2.16.840.1.113883.3.795.12.2.5.1"/>
+                        <problemCode code="V14.2" codeSystem="2.16.840.1.113883.6.103" displayName="put.problem.name.here"/>
+                        <problemEffectiveTime high="" low="2010-02-17 22:00:00.0"/>
+                        <importance code="7" codeSystem="2.16.840.1.113883.6.96" displayName="put.importance.title.here"/>
+                    </problem>
+                </problems>
+                <procedureEvents>
+                    <procedureEvent>
+                        <templateId root="2.16.840.1.113883.3.1829.11.8.1.1"/>
+                        <id extension="155059915505991HOSPBILLING" root="2.16.840.1.113883.3.795.5.2"/>
+                        <dataSourceType code="Administrative" codeSystem="2.16.840.1.113883.3.795.12.2.5.1"/>
+                        <procedureCode code="94.63" codeSystem="2.16.840.1.113883.6.96" displayName="put.procedure.name.here"/>
+                        <procedureTime high="2006-10-14 19:00:00.0" low="2006-10-14 19:00:00.0"/>
+                    </procedureEvent>
+                    <procedureEvent>
+                        <templateId root="2.16.840.1.113883.3.1829.11.8.1.1"/>
+                        <id extension="155059915505992HOSPBILLING" root="2.16.840.1.113883.3.795.5.2"/>
+                        <dataSourceType code="Administrative" codeSystem="2.16.840.1.113883.3.795.12.2.5.1"/>
+                        <procedureCode code="94.11" codeSystem="2.16.840.1.113883.6.96" displayName="put.procedure.name.here"/>
+                        <procedureTime high="2006-10-14 19:00:00.0" low="2006-10-14 19:00:00.0"/>
+                    </procedureEvent>
+                    <procedureEvent>
+                        <templateId root="2.16.840.1.113883.3.1829.11.8.1.1"/>
+                        <id extension="155059915505993HOSPBILLING" root="2.16.840.1.113883.3.795.5.2"/>
+                        <dataSourceType code="Administrative" codeSystem="2.16.840.1.113883.3.795.12.2.5.1"/>
+                        <procedureCode code="89.7" codeSystem="2.16.840.1.113883.6.96" displayName="put.procedure.name.here"/>
+                        <procedureTime high="2006-10-14 19:00:00.0" low="2006-10-14 19:00:00.0"/>
+                    </procedureEvent>
+                    <procedureEvent>
+                        <templateId root="2.16.840.1.113883.3.1829.11.8.1.1"/>
+                        <id extension="155059915505994HOSPBILLING" root="2.16.840.1.113883.3.795.5.2"/>
+                        <dataSourceType code="Administrative" codeSystem="2.16.840.1.113883.3.795.12.2.5.1"/>
+                        <procedureCode code="94.25" codeSystem="2.16.840.1.113883.6.96" displayName="put.procedure.name.here"/>
+                        <procedureTime high="2006-10-14 19:00:00.0" low="2006-10-14 19:00:00.0"/>
+                    </procedureEvent>
+                    <procedureEvent>
+                        <templateId root="2.16.840.1.113883.3.1829.11.8.1.1"/>
+                        <id extension="155059915505995HOSPBILLING" root="2.16.840.1.113883.3.795.5.2"/>
+                        <dataSourceType code="Administrative" codeSystem="2.16.840.1.113883.3.795.12.2.5.1"/>
+                        <procedureCode code="94.44" codeSystem="2.16.840.1.113883.6.96" displayName="put.procedure.name.here"/>
+                        <procedureTime high="2006-10-14 19:00:00.0" low="2006-10-14 19:00:00.0"/>
+                    </procedureEvent>
+                    <procedureEvent>
+                        <templateId root="2.16.840.1.113883.3.1829.11.8.1.1"/>
+                        <id extension="155059915505996HOSPBILLING" root="2.16.840.1.113883.3.795.5.2"/>
+                        <dataSourceType code="Administrative" codeSystem="2.16.840.1.113883.3.795.12.2.5.1"/>
+                        <procedureCode code="93.89" codeSystem="2.16.840.1.113883.6.96" displayName="put.procedure.name.here"/>
+                        <procedureTime high="2006-10-14 19:00:00.0" low="2006-10-14 19:00:00.0"/>
+                    </procedureEvent>
+                    <procedureEvent>
+                        <templateId root="2.16.840.1.113883.3.1829.11.8.1.1"/>
+                        <id extension="155059915505997HOSPBILLING" root="2.16.840.1.113883.3.795.5.2"/>
+                        <dataSourceType code="Administrative" codeSystem="2.16.840.1.113883.3.795.12.2.5.1"/>
+                        <procedureCode code="93.84" codeSystem="2.16.840.1.113883.6.96" displayName="put.procedure.name.here"/>
+                        <procedureTime high="2006-10-14 19:00:00.0" low="2006-10-14 19:00:00.0"/>
+                    </procedureEvent>
+                    <procedureEvent>
+                        <templateId root="2.16.840.1.113883.3.1829.11.8.1.1"/>
+                        <id extension="155059915505998HOSPBILLING" root="2.16.840.1.113883.3.795.5.2"/>
+                        <dataSourceType code="Administrative" codeSystem="2.16.840.1.113883.3.795.12.2.5.1"/>
+                        <procedureCode code="93.81" codeSystem="2.16.840.1.113883.6.96" displayName="put.procedure.name.here"/>
+                        <procedureTime high="2006-10-14 19:00:00.0" low="2006-10-14 19:00:00.0"/>
+                    </procedureEvent>
+                    <procedureEvent>
+                        <templateId root="2.16.840.1.113883.3.1829.11.8.1.1"/>
+                        <id extension="159426615942661HOSPBILLING" root="2.16.840.1.113883.3.795.5.2"/>
+                        <dataSourceType code="Administrative" codeSystem="2.16.840.1.113883.3.795.12.2.5.1"/>
+                        <procedureCode code="94.63" codeSystem="2.16.840.1.113883.6.96" displayName="put.procedure.name.here"/>
+                        <procedureTime high="2006-12-29 15:45:00.0" low="2006-12-29 15:45:00.0"/>
+                    </procedureEvent>
+                    <procedureEvent>
+                        <templateId root="2.16.840.1.113883.3.1829.11.8.1.1"/>
+                        <id extension="159426615942662HOSPBILLING" root="2.16.840.1.113883.3.795.5.2"/>
+                        <dataSourceType code="Administrative" codeSystem="2.16.840.1.113883.3.795.12.2.5.1"/>
+                        <procedureCode code="94.11" codeSystem="2.16.840.1.113883.6.96" displayName="put.procedure.name.here"/>
+                        <procedureTime high="2006-12-29 15:45:00.0" low="2006-12-29 15:45:00.0"/>
+                    </procedureEvent>
+                    <procedureEvent>
+                        <templateId root="2.16.840.1.113883.3.1829.11.8.1.1"/>
+                        <id extension="159426615942663HOSPBILLING" root="2.16.840.1.113883.3.795.5.2"/>
+                        <dataSourceType code="Administrative" codeSystem="2.16.840.1.113883.3.795.12.2.5.1"/>
+                        <procedureCode code="89.7" codeSystem="2.16.840.1.113883.6.96" displayName="put.procedure.name.here"/>
+                        <procedureTime high="2006-12-29 15:45:00.0" low="2006-12-29 15:45:00.0"/>
+                    </procedureEvent>
+                    <procedureEvent>
+                        <templateId root="2.16.840.1.113883.3.1829.11.8.1.1"/>
+                        <id extension="159426615942664HOSPBILLING" root="2.16.840.1.113883.3.795.5.2"/>
+                        <dataSourceType code="Administrative" codeSystem="2.16.840.1.113883.3.795.12.2.5.1"/>
+                        <procedureCode code="94.25" codeSystem="2.16.840.1.113883.6.96" displayName="put.procedure.name.here"/>
+                        <procedureTime high="2006-12-29 15:45:00.0" low="2006-12-29 15:45:00.0"/>
+                    </procedureEvent>
+                    <procedureEvent>
+                        <templateId root="2.16.840.1.113883.3.1829.11.8.1.1"/>
+                        <id extension="159426615942665HOSPBILLING" root="2.16.840.1.113883.3.795.5.2"/>
+                        <dataSourceType code="Administrative" codeSystem="2.16.840.1.113883.3.795.12.2.5.1"/>
+                        <procedureCode code="94.44" codeSystem="2.16.840.1.113883.6.96" displayName="put.procedure.name.here"/>
+                        <procedureTime high="2006-12-29 15:45:00.0" low="2006-12-29 15:45:00.0"/>
+                    </procedureEvent>
+                    <procedureEvent>
+                        <templateId root="2.16.840.1.113883.3.1829.11.8.1.1"/>
+                        <id extension="159426615942666HOSPBILLING" root="2.16.840.1.113883.3.795.5.2"/>
+                        <dataSourceType code="Administrative" codeSystem="2.16.840.1.113883.3.795.12.2.5.1"/>
+                        <procedureCode code="93.89" codeSystem="2.16.840.1.113883.6.96" displayName="put.procedure.name.here"/>
+                        <procedureTime high="2006-12-29 15:45:00.0" low="2006-12-29 15:45:00.0"/>
+                    </procedureEvent>
+                    <procedureEvent>
+                        <templateId root="2.16.840.1.113883.3.1829.11.8.1.1"/>
+                        <id extension="159426615942667HOSPBILLING" root="2.16.840.1.113883.3.795.5.2"/>
+                        <dataSourceType code="Administrative" codeSystem="2.16.840.1.113883.3.795.12.2.5.1"/>
+                        <procedureCode code="93.81" codeSystem="2.16.840.1.113883.6.96" displayName="put.procedure.name.here"/>
+                        <procedureTime high="2006-12-29 15:45:00.0" low="2006-12-29 15:45:00.0"/>
+                    </procedureEvent>
+                    <procedureEvent>
+                        <templateId root="2.16.840.1.113883.3.1829.11.8.1.1"/>
+                        <id extension="190354119035411HOSPBILLING" root="2.16.840.1.113883.3.795.5.2"/>
+                        <dataSourceType code="Administrative" codeSystem="2.16.840.1.113883.3.795.12.2.5.1"/>
+                        <procedureCode code="94.63" codeSystem="2.16.840.1.113883.6.96" displayName="put.procedure.name.here"/>
+                        <procedureTime high="2008-05-03 17:18:00.0" low="2008-05-03 17:18:00.0"/>
+                    </procedureEvent>
+                    <procedureEvent>
+                        <templateId root="2.16.840.1.113883.3.1829.11.8.1.1"/>
+                        <id extension="190354119035412HOSPBILLING" root="2.16.840.1.113883.3.795.5.2"/>
+                        <dataSourceType code="Administrative" codeSystem="2.16.840.1.113883.3.795.12.2.5.1"/>
+                        <procedureCode code="94.11" codeSystem="2.16.840.1.113883.6.96" displayName="put.procedure.name.here"/>
+                        <procedureTime high="2008-05-03 17:18:00.0" low="2008-05-03 17:18:00.0"/>
+                    </procedureEvent>
+                    <procedureEvent>
+                        <templateId root="2.16.840.1.113883.3.1829.11.8.1.1"/>
+                        <id extension="190354119035413HOSPBILLING" root="2.16.840.1.113883.3.795.5.2"/>
+                        <dataSourceType code="Administrative" codeSystem="2.16.840.1.113883.3.795.12.2.5.1"/>
+                        <procedureCode code="89.7" codeSystem="2.16.840.1.113883.6.96" displayName="put.procedure.name.here"/>
+                        <procedureTime high="2008-05-03 17:18:00.0" low="2008-05-03 17:18:00.0"/>
+                    </procedureEvent>
+                    <procedureEvent>
+                        <templateId root="2.16.840.1.113883.3.1829.11.8.1.1"/>
+                        <id extension="190354119035414HOSPBILLING" root="2.16.840.1.113883.3.795.5.2"/>
+                        <dataSourceType code="Administrative" codeSystem="2.16.840.1.113883.3.795.12.2.5.1"/>
+                        <procedureCode code="94.25" codeSystem="2.16.840.1.113883.6.96" displayName="put.procedure.name.here"/>
+                        <procedureTime high="2008-05-03 17:18:00.0" low="2008-05-03 17:18:00.0"/>
+                    </procedureEvent>
+                    <procedureEvent>
+                        <templateId root="2.16.840.1.113883.3.1829.11.8.1.1"/>
+                        <id extension="190354119035415HOSPBILLING" root="2.16.840.1.113883.3.795.5.2"/>
+                        <dataSourceType code="Administrative" codeSystem="2.16.840.1.113883.3.795.12.2.5.1"/>
+                        <procedureCode code="93.84" codeSystem="2.16.840.1.113883.6.96" displayName="put.procedure.name.here"/>
+                        <procedureTime high="2008-05-03 17:18:00.0" low="2008-05-03 17:18:00.0"/>
+                    </procedureEvent>
+                    <procedureEvent>
+                        <templateId root="2.16.840.1.113883.3.1829.11.8.1.1"/>
+                        <id extension="190354119035416HOSPBILLING" root="2.16.840.1.113883.3.795.5.2"/>
+                        <dataSourceType code="Administrative" codeSystem="2.16.840.1.113883.3.795.12.2.5.1"/>
+                        <procedureCode code="94.44" codeSystem="2.16.840.1.113883.6.96" displayName="put.procedure.name.here"/>
+                        <procedureTime high="2008-05-03 17:18:00.0" low="2008-05-03 17:18:00.0"/>
+                    </procedureEvent>
+                    <procedureEvent>
+                        <templateId root="2.16.840.1.113883.3.1829.11.8.1.1"/>
+                        <id extension="197078919707891HOSPBILLING" root="2.16.840.1.113883.3.795.5.2"/>
+                        <dataSourceType code="Administrative" codeSystem="2.16.840.1.113883.3.795.12.2.5.1"/>
+                        <procedureCode code="94.63" codeSystem="2.16.840.1.113883.6.96" displayName="put.procedure.name.here"/>
+                        <procedureTime high="2008-08-30 19:26:00.0" low="2008-08-30 19:26:00.0"/>
+                    </procedureEvent>
+                    <procedureEvent>
+                        <templateId root="2.16.840.1.113883.3.1829.11.8.1.1"/>
+                        <id extension="197078919707892HOSPBILLING" root="2.16.840.1.113883.3.795.5.2"/>
+                        <dataSourceType code="Administrative" codeSystem="2.16.840.1.113883.3.795.12.2.5.1"/>
+                        <procedureCode code="94.11" codeSystem="2.16.840.1.113883.6.96" displayName="put.procedure.name.here"/>
+                        <procedureTime high="2008-08-30 19:26:00.0" low="2008-08-30 19:26:00.0"/>
+                    </procedureEvent>
+                    <procedureEvent>
+                        <templateId root="2.16.840.1.113883.3.1829.11.8.1.1"/>
+                        <id extension="197078919707893HOSPBILLING" root="2.16.840.1.113883.3.795.5.2"/>
+                        <dataSourceType code="Administrative" codeSystem="2.16.840.1.113883.3.795.12.2.5.1"/>
+                        <procedureCode code="89.7" codeSystem="2.16.840.1.113883.6.96" displayName="put.procedure.name.here"/>
+                        <procedureTime high="2008-08-30 19:26:00.0" low="2008-08-30 19:26:00.0"/>
+                    </procedureEvent>
+                    <procedureEvent>
+                        <templateId root="2.16.840.1.113883.3.1829.11.8.1.1"/>
+                        <id extension="197078919707894HOSPBILLING" root="2.16.840.1.113883.3.795.5.2"/>
+                        <dataSourceType code="Administrative" codeSystem="2.16.840.1.113883.3.795.12.2.5.1"/>
+                        <procedureCode code="93.89" codeSystem="2.16.840.1.113883.6.96" displayName="put.procedure.name.here"/>
+                        <procedureTime high="2008-08-30 19:26:00.0" low="2008-08-30 19:26:00.0"/>
+                    </procedureEvent>
+                    <procedureEvent>
+                        <templateId root="2.16.840.1.113883.3.1829.11.8.1.1"/>
+                        <id extension="197078919707895HOSPBILLING" root="2.16.840.1.113883.3.795.5.2"/>
+                        <dataSourceType code="Administrative" codeSystem="2.16.840.1.113883.3.795.12.2.5.1"/>
+                        <procedureCode code="93.84" codeSystem="2.16.840.1.113883.6.96" displayName="put.procedure.name.here"/>
+                        <procedureTime high="2008-08-30 19:26:00.0" low="2008-08-30 19:26:00.0"/>
+                    </procedureEvent>
+                    <procedureEvent>
+                        <templateId root="2.16.840.1.113883.3.1829.11.8.1.1"/>
+                        <id extension="197078919707896HOSPBILLING" root="2.16.840.1.113883.3.795.5.2"/>
+                        <dataSourceType code="Administrative" codeSystem="2.16.840.1.113883.3.795.12.2.5.1"/>
+                        <procedureCode code="93.81" codeSystem="2.16.840.1.113883.6.96" displayName="put.procedure.name.here"/>
+                        <procedureTime high="2008-08-30 19:26:00.0" low="2008-08-30 19:26:00.0"/>
+                    </procedureEvent>
+                    <procedureEvent>
+                        <templateId root="2.16.840.1.113883.3.1829.11.8.1.1"/>
+                        <id extension="197078919707897HOSPBILLING" root="2.16.840.1.113883.3.795.5.2"/>
+                        <dataSourceType code="Administrative" codeSystem="2.16.840.1.113883.3.795.12.2.5.1"/>
+                        <procedureCode code="94.44" codeSystem="2.16.840.1.113883.6.96" displayName="put.procedure.name.here"/>
+                        <procedureTime high="2008-08-30 19:26:00.0" low="2008-08-30 19:26:00.0"/>
+                    </procedureEvent>
+                    <procedureEvent>
+                        <templateId root="2.16.840.1.113883.3.1829.11.8.1.1"/>
+                        <id extension="228948622894861HOSPBILLING" root="2.16.840.1.113883.3.795.5.2"/>
+                        <dataSourceType code="Administrative" codeSystem="2.16.840.1.113883.3.795.12.2.5.1"/>
+                        <procedureCode code="94.63" codeSystem="2.16.840.1.113883.6.96" displayName="put.procedure.name.here"/>
+                        <procedureTime high="2010-02-17 22:00:00.0" low="2010-02-17 22:00:00.0"/>
+                    </procedureEvent>
+                    <procedureEvent>
+                        <templateId root="2.16.840.1.113883.3.1829.11.8.1.1"/>
+                        <id extension="352211521891258691HOSPBILLING" root="2.16.840.1.113883.3.795.5.2"/>
+                        <dataSourceType code="Administrative" codeSystem="2.16.840.1.113883.3.795.12.2.5.1"/>
+                        <procedureCode code="94.66" codeSystem="2.16.840.1.113883.6.96" displayName="put.procedure.name.here"/>
+                        <procedureTime high="2012-05-10 23:39:00.0" low="2012-05-10 23:39:00.0"/>
+                    </procedureEvent>
+                    <procedureEvent>
+                        <templateId root="2.16.840.1.113883.3.1829.11.8.1.1"/>
+                        <id extension="19707898247004063CPT4" root="2.16.840.1.113883.3.795.5.2"/>
+                        <dataSourceType code="Administrative" codeSystem="2.16.840.1.113883.3.795.12.2.5.1"/>
+                        <procedureCode code="80101" codeSystem="2.16.840.1.113883.6.96" displayName="put.procedure.name.here"/>
+                        <procedureTime high="2008-08-31 00:00:00.0" low="2008-08-31 00:00:00.0"/>
+                    </procedureEvent>
+                    <procedureEvent>
+                        <templateId root="2.16.840.1.113883.3.1829.11.8.1.1"/>
+                        <id extension="19707898247004064CPT4" root="2.16.840.1.113883.3.795.5.2"/>
+                        <dataSourceType code="Administrative" codeSystem="2.16.840.1.113883.3.795.12.2.5.1"/>
+                        <procedureCode code="80101" codeSystem="2.16.840.1.113883.6.96" displayName="put.procedure.name.here"/>
+                        <procedureTime high="2008-08-31 00:00:00.0" low="2008-08-31 00:00:00.0"/>
+                    </procedureEvent>
+                    <procedureEvent>
+                        <templateId root="2.16.840.1.113883.3.1829.11.8.1.1"/>
+                        <id extension="19707898247004065CPT4" root="2.16.840.1.113883.3.795.5.2"/>
+                        <dataSourceType code="Administrative" codeSystem="2.16.840.1.113883.3.795.12.2.5.1"/>
+                        <procedureCode code="80101" codeSystem="2.16.840.1.113883.6.96" displayName="put.procedure.name.here"/>
+                        <procedureTime high="2008-08-31 00:00:00.0" low="2008-08-31 00:00:00.0"/>
+                    </procedureEvent>
+                    <procedureEvent>
+                        <templateId root="2.16.840.1.113883.3.1829.11.8.1.1"/>
+                        <id extension="19707898246002452CPT4" root="2.16.840.1.113883.3.795.5.2"/>
+                        <dataSourceType code="Administrative" codeSystem="2.16.840.1.113883.3.795.12.2.5.1"/>
+                        <procedureCode code="82947" codeSystem="2.16.840.1.113883.6.96" displayName="put.procedure.name.here"/>
+                        <procedureTime high="2008-09-01 00:00:00.0" low="2008-09-01 00:00:00.0"/>
+                    </procedureEvent>
+                    <procedureEvent>
+                        <templateId root="2.16.840.1.113883.3.1829.11.8.1.1"/>
+                        <id extension="19707898246002453CPT4" root="2.16.840.1.113883.3.795.5.2"/>
+                        <dataSourceType code="Administrative" codeSystem="2.16.840.1.113883.3.795.12.2.5.1"/>
+                        <procedureCode code="80061" codeSystem="2.16.840.1.113883.6.96" displayName="put.procedure.name.here"/>
+                        <procedureTime high="2008-09-01 00:00:00.0" low="2008-09-01 00:00:00.0"/>
+                    </procedureEvent>
+                    <procedureEvent>
+                        <templateId root="2.16.840.1.113883.3.1829.11.8.1.1"/>
+                        <id extension="2289486490025569CPT4" root="2.16.840.1.113883.3.795.5.2"/>
+                        <dataSourceType code="Administrative" codeSystem="2.16.840.1.113883.3.795.12.2.5.1"/>
+                        <procedureCode code="J3411" codeSystem="2.16.840.1.113883.6.96" displayName="put.procedure.name.here"/>
+                        <procedureTime high="2010-02-17 00:00:00.0" low="2010-02-17 00:00:00.0"/>
+                    </procedureEvent>
+                    <procedureEvent>
+                        <templateId root="2.16.840.1.113883.3.1829.11.8.1.1"/>
+                        <id extension="2289486490025570CPT4" root="2.16.840.1.113883.3.795.5.2"/>
+                        <dataSourceType code="Administrative" codeSystem="2.16.840.1.113883.3.795.12.2.5.1"/>
+                        <procedureCode code="J3490" codeSystem="2.16.840.1.113883.6.96" displayName="put.procedure.name.here"/>
+                        <procedureTime high="2010-02-17 00:00:00.0" low="2010-02-17 00:00:00.0"/>
+                    </procedureEvent>
+                    <procedureEvent>
+                        <templateId root="2.16.840.1.113883.3.1829.11.8.1.1"/>
+                        <id extension="2289486500023603CPT4" root="2.16.840.1.113883.3.795.5.2"/>
+                        <dataSourceType code="Administrative" codeSystem="2.16.840.1.113883.3.795.12.2.5.1"/>
+                        <procedureCode code="84443" codeSystem="2.16.840.1.113883.6.96" displayName="put.procedure.name.here"/>
+                        <procedureTime high="2010-02-18 00:00:00.0" low="2010-02-18 00:00:00.0"/>
+                    </procedureEvent>
+                    <procedureEvent>
+                        <templateId root="2.16.840.1.113883.3.1829.11.8.1.1"/>
+                        <id extension="2289486500023604CPT4" root="2.16.840.1.113883.3.795.5.2"/>
+                        <dataSourceType code="Administrative" codeSystem="2.16.840.1.113883.3.795.12.2.5.1"/>
+                        <procedureCode code="82055" codeSystem="2.16.840.1.113883.6.96" displayName="put.procedure.name.here"/>
+                        <procedureTime high="2010-02-18 00:00:00.0" low="2010-02-18 00:00:00.0"/>
+                    </procedureEvent>
+                    <procedureEvent>
+                        <templateId root="2.16.840.1.113883.3.1829.11.8.1.1"/>
+                        <id extension="2289486500023605CPT4" root="2.16.840.1.113883.3.795.5.2"/>
+                        <dataSourceType code="Administrative" codeSystem="2.16.840.1.113883.3.795.12.2.5.1"/>
+                        <procedureCode code="84100" codeSystem="2.16.840.1.113883.6.96" displayName="put.procedure.name.here"/>
+                        <procedureTime high="2010-02-18 00:00:00.0" low="2010-02-18 00:00:00.0"/>
+                    </procedureEvent>
+                    <procedureEvent>
+                        <templateId root="2.16.840.1.113883.3.1829.11.8.1.1"/>
+                        <id extension="2289486500023606CPT4" root="2.16.840.1.113883.3.795.5.2"/>
+                        <dataSourceType code="Administrative" codeSystem="2.16.840.1.113883.3.795.12.2.5.1"/>
+                        <procedureCode code="80053" codeSystem="2.16.840.1.113883.6.96" displayName="put.procedure.name.here"/>
+                        <procedureTime high="2010-02-18 00:00:00.0" low="2010-02-18 00:00:00.0"/>
+                    </procedureEvent>
+                    <procedureEvent>
+                        <templateId root="2.16.840.1.113883.3.1829.11.8.1.1"/>
+                        <id extension="2289486500023607CPT4" root="2.16.840.1.113883.3.795.5.2"/>
+                        <dataSourceType code="Administrative" codeSystem="2.16.840.1.113883.3.795.12.2.5.1"/>
+                        <procedureCode code="85025" codeSystem="2.16.840.1.113883.6.96" displayName="put.procedure.name.here"/>
+                        <procedureTime high="2010-02-18 00:00:00.0" low="2010-02-18 00:00:00.0"/>
+                    </procedureEvent>
+                    <procedureEvent>
+                        <templateId root="2.16.840.1.113883.3.1829.11.8.1.1"/>
+                        <id extension="2289486500023608CPT4" root="2.16.840.1.113883.3.795.5.2"/>
+                        <dataSourceType code="Administrative" codeSystem="2.16.840.1.113883.3.795.12.2.5.1"/>
+                        <procedureCode code="83735" codeSystem="2.16.840.1.113883.6.96" displayName="put.procedure.name.here"/>
+                        <procedureTime high="2010-02-18 00:00:00.0" low="2010-02-18 00:00:00.0"/>
+                    </procedureEvent>
+                    <procedureEvent>
+                        <templateId root="2.16.840.1.113883.3.1829.11.8.1.1"/>
+                        <id extension="2289486500054720CPT4" root="2.16.840.1.113883.3.795.5.2"/>
+                        <dataSourceType code="Administrative" codeSystem="2.16.840.1.113883.3.795.12.2.5.1"/>
+                        <procedureCode code="J3490" codeSystem="2.16.840.1.113883.6.96" displayName="put.procedure.name.here"/>
+                        <procedureTime high="2010-02-18 00:00:00.0" low="2010-02-18 00:00:00.0"/>
+                    </procedureEvent>
+                    <procedureEvent>
+                        <templateId root="2.16.840.1.113883.3.1829.11.8.1.1"/>
+                        <id extension="2289486500054721CPT4" root="2.16.840.1.113883.3.795.5.2"/>
+                        <dataSourceType code="Administrative" codeSystem="2.16.840.1.113883.3.795.12.2.5.1"/>
+                        <procedureCode code="J3490" codeSystem="2.16.840.1.113883.6.96" displayName="put.procedure.name.here"/>
+                        <procedureTime high="2010-02-18 00:00:00.0" low="2010-02-18 00:00:00.0"/>
+                    </procedureEvent>
+                    <procedureEvent>
+                        <templateId root="2.16.840.1.113883.3.1829.11.8.1.1"/>
+                        <id extension="2289486500054722CPT4" root="2.16.840.1.113883.3.795.5.2"/>
+                        <dataSourceType code="Administrative" codeSystem="2.16.840.1.113883.3.795.12.2.5.1"/>
+                        <procedureCode code="J3490" codeSystem="2.16.840.1.113883.6.96" displayName="put.procedure.name.here"/>
+                        <procedureTime high="2010-02-18 00:00:00.0" low="2010-02-18 00:00:00.0"/>
+                    </procedureEvent>
+                    <procedureEvent>
+                        <templateId root="2.16.840.1.113883.3.1829.11.8.1.1"/>
+                        <id extension="2289486500054723CPT4" root="2.16.840.1.113883.3.795.5.2"/>
+                        <dataSourceType code="Administrative" codeSystem="2.16.840.1.113883.3.795.12.2.5.1"/>
+                        <procedureCode code="J3490" codeSystem="2.16.840.1.113883.6.96" displayName="put.procedure.name.here"/>
+                        <procedureTime high="2010-02-18 00:00:00.0" low="2010-02-18 00:00:00.0"/>
+                    </procedureEvent>
+                    <procedureEvent>
+                        <templateId root="2.16.840.1.113883.3.1829.11.8.1.1"/>
+                        <id extension="2289486500054724CPT4" root="2.16.840.1.113883.3.795.5.2"/>
+                        <dataSourceType code="Administrative" codeSystem="2.16.840.1.113883.3.795.12.2.5.1"/>
+                        <procedureCode code="J3490" codeSystem="2.16.840.1.113883.6.96" displayName="put.procedure.name.here"/>
+                        <procedureTime high="2010-02-18 00:00:00.0" low="2010-02-18 00:00:00.0"/>
+                    </procedureEvent>
+                    <procedureEvent>
+                        <templateId root="2.16.840.1.113883.3.1829.11.8.1.1"/>
+                        <id extension="2289486500054725CPT4" root="2.16.840.1.113883.3.795.5.2"/>
+                        <dataSourceType code="Administrative" codeSystem="2.16.840.1.113883.3.795.12.2.5.1"/>
+                        <procedureCode code="J3490" codeSystem="2.16.840.1.113883.6.96" displayName="put.procedure.name.here"/>
+                        <procedureTime high="2010-02-18 00:00:00.0" low="2010-02-18 00:00:00.0"/>
+                    </procedureEvent>
+                    <procedureEvent>
+                        <templateId root="2.16.840.1.113883.3.1829.11.8.1.1"/>
+                        <id extension="2289486500054726CPT4" root="2.16.840.1.113883.3.795.5.2"/>
+                        <dataSourceType code="Administrative" codeSystem="2.16.840.1.113883.3.795.12.2.5.1"/>
+                        <procedureCode code="J3490" codeSystem="2.16.840.1.113883.6.96" displayName="put.procedure.name.here"/>
+                        <procedureTime high="2010-02-18 00:00:00.0" low="2010-02-18 00:00:00.0"/>
+                    </procedureEvent>
+                    <procedureEvent>
+                        <templateId root="2.16.840.1.113883.3.1829.11.8.1.1"/>
+                        <id extension="2289486500054727CPT4" root="2.16.840.1.113883.3.795.5.2"/>
+                        <dataSourceType code="Administrative" codeSystem="2.16.840.1.113883.3.795.12.2.5.1"/>
+                        <procedureCode code="J3490" codeSystem="2.16.840.1.113883.6.96" displayName="put.procedure.name.here"/>
+                        <procedureTime high="2010-02-18 00:00:00.0" low="2010-02-18 00:00:00.0"/>
+                    </procedureEvent>
+                    <procedureEvent>
+                        <templateId root="2.16.840.1.113883.3.1829.11.8.1.1"/>
+                        <id extension="2289486500054728CPT4" root="2.16.840.1.113883.3.795.5.2"/>
+                        <dataSourceType code="Administrative" codeSystem="2.16.840.1.113883.3.795.12.2.5.1"/>
+                        <procedureCode code="J3490" codeSystem="2.16.840.1.113883.6.96" displayName="put.procedure.name.here"/>
+                        <procedureTime high="2010-02-18 00:00:00.0" low="2010-02-18 00:00:00.0"/>
+                    </procedureEvent>
+                    <procedureEvent>
+                        <templateId root="2.16.840.1.113883.3.1829.11.8.1.1"/>
+                        <id extension="2289486500054729CPT4" root="2.16.840.1.113883.3.795.5.2"/>
+                        <dataSourceType code="Administrative" codeSystem="2.16.840.1.113883.3.795.12.2.5.1"/>
+                        <procedureCode code="J3490" codeSystem="2.16.840.1.113883.6.96" displayName="put.procedure.name.here"/>
+                        <procedureTime high="2010-02-18 00:00:00.0" low="2010-02-18 00:00:00.0"/>
+                    </procedureEvent>
+                    <procedureEvent>
+                        <templateId root="2.16.840.1.113883.3.1829.11.8.1.1"/>
+                        <id extension="2289486500054730CPT4" root="2.16.840.1.113883.3.795.5.2"/>
+                        <dataSourceType code="Administrative" codeSystem="2.16.840.1.113883.3.795.12.2.5.1"/>
+                        <procedureCode code="J3490" codeSystem="2.16.840.1.113883.6.96" displayName="put.procedure.name.here"/>
+                        <procedureTime high="2010-02-18 00:00:00.0" low="2010-02-18 00:00:00.0"/>
+                    </procedureEvent>
+                    <procedureEvent>
+                        <templateId root="2.16.840.1.113883.3.1829.11.8.1.1"/>
+                        <id extension="2289486500054731CPT4" root="2.16.840.1.113883.3.795.5.2"/>
+                        <dataSourceType code="Administrative" codeSystem="2.16.840.1.113883.3.795.12.2.5.1"/>
+                        <procedureCode code="Q0170" codeSystem="2.16.840.1.113883.6.96" displayName="put.procedure.name.here"/>
+                        <procedureTime high="2010-02-18 00:00:00.0" low="2010-02-18 00:00:00.0"/>
+                    </procedureEvent>
+                    <procedureEvent>
+                        <templateId root="2.16.840.1.113883.3.1829.11.8.1.1"/>
+                        <id extension="2289486500054732CPT4" root="2.16.840.1.113883.3.795.5.2"/>
+                        <dataSourceType code="Administrative" codeSystem="2.16.840.1.113883.3.795.12.2.5.1"/>
+                        <procedureCode code="J3490" codeSystem="2.16.840.1.113883.6.96" displayName="put.procedure.name.here"/>
+                        <procedureTime high="2010-02-18 00:00:00.0" low="2010-02-18 00:00:00.0"/>
+                    </procedureEvent>
+                    <procedureEvent>
+                        <templateId root="2.16.840.1.113883.3.1829.11.8.1.1"/>
+                        <id extension="2289486500054733CPT4" root="2.16.840.1.113883.3.795.5.2"/>
+                        <dataSourceType code="Administrative" codeSystem="2.16.840.1.113883.3.795.12.2.5.1"/>
+                        <procedureCode code="J3490" codeSystem="2.16.840.1.113883.6.96" displayName="put.procedure.name.here"/>
+                        <procedureTime high="2010-02-18 00:00:00.0" low="2010-02-18 00:00:00.0"/>
+                    </procedureEvent>
+                    <procedureEvent>
+                        <templateId root="2.16.840.1.113883.3.1829.11.8.1.1"/>
+                        <id extension="2289486500054734CPT4" root="2.16.840.1.113883.3.795.5.2"/>
+                        <dataSourceType code="Administrative" codeSystem="2.16.840.1.113883.3.795.12.2.5.1"/>
+                        <procedureCode code="J3490" codeSystem="2.16.840.1.113883.6.96" displayName="put.procedure.name.here"/>
+                        <procedureTime high="2010-02-18 00:00:00.0" low="2010-02-18 00:00:00.0"/>
+                    </procedureEvent>
+                    <procedureEvent>
+                        <templateId root="2.16.840.1.113883.3.1829.11.8.1.1"/>
+                        <id extension="2289486510009868CPT4" root="2.16.840.1.113883.3.795.5.2"/>
+                        <dataSourceType code="Administrative" codeSystem="2.16.840.1.113883.3.795.12.2.5.1"/>
+                        <procedureCode code="80101" codeSystem="2.16.840.1.113883.6.96" displayName="put.procedure.name.here"/>
+                        <procedureTime high="2010-02-18 00:00:00.0" low="2010-02-18 00:00:00.0"/>
+                    </procedureEvent>
+                    <procedureEvent>
+                        <templateId root="2.16.840.1.113883.3.1829.11.8.1.1"/>
+                        <id extension="2289486510009869CPT4" root="2.16.840.1.113883.3.795.5.2"/>
+                        <dataSourceType code="Administrative" codeSystem="2.16.840.1.113883.3.795.12.2.5.1"/>
+                        <procedureCode code="80101" codeSystem="2.16.840.1.113883.6.96" displayName="put.procedure.name.here"/>
+                        <procedureTime high="2010-02-18 00:00:00.0" low="2010-02-18 00:00:00.0"/>
+                    </procedureEvent>
+                    <procedureEvent>
+                        <templateId root="2.16.840.1.113883.3.1829.11.8.1.1"/>
+                        <id extension="2289486510009870CPT4" root="2.16.840.1.113883.3.795.5.2"/>
+                        <dataSourceType code="Administrative" codeSystem="2.16.840.1.113883.3.795.12.2.5.1"/>
+                        <procedureCode code="80101" codeSystem="2.16.840.1.113883.6.96" displayName="put.procedure.name.here"/>
+                        <procedureTime high="2010-02-18 00:00:00.0" low="2010-02-18 00:00:00.0"/>
+                    </procedureEvent>
+                    <procedureEvent>
+                        <templateId root="2.16.840.1.113883.3.1829.11.8.1.1"/>
+                        <id extension="2289486510009871CPT4" root="2.16.840.1.113883.3.795.5.2"/>
+                        <dataSourceType code="Administrative" codeSystem="2.16.840.1.113883.3.795.12.2.5.1"/>
+                        <procedureCode code="80101" codeSystem="2.16.840.1.113883.6.96" displayName="put.procedure.name.here"/>
+                        <procedureTime high="2010-02-18 00:00:00.0" low="2010-02-18 00:00:00.0"/>
+                    </procedureEvent>
+                    <procedureEvent>
+                        <templateId root="2.16.840.1.113883.3.1829.11.8.1.1"/>
+                        <id extension="2289486510009872CPT4" root="2.16.840.1.113883.3.795.5.2"/>
+                        <dataSourceType code="Administrative" codeSystem="2.16.840.1.113883.3.795.12.2.5.1"/>
+                        <procedureCode code="80101" codeSystem="2.16.840.1.113883.6.96" displayName="put.procedure.name.here"/>
+                        <procedureTime high="2010-02-18 00:00:00.0" low="2010-02-18 00:00:00.0"/>
+                    </procedureEvent>
+                    <procedureEvent>
+                        <templateId root="2.16.840.1.113883.3.1829.11.8.1.1"/>
+                        <id extension="2289486510009873CPT4" root="2.16.840.1.113883.3.795.5.2"/>
+                        <dataSourceType code="Administrative" codeSystem="2.16.840.1.113883.3.795.12.2.5.1"/>
+                        <procedureCode code="80101" codeSystem="2.16.840.1.113883.6.96" displayName="put.procedure.name.here"/>
+                        <procedureTime high="2010-02-18 00:00:00.0" low="2010-02-18 00:00:00.0"/>
+                    </procedureEvent>
+                    <procedureEvent>
+                        <templateId root="2.16.840.1.113883.3.1829.11.8.1.1"/>
+                        <id extension="2289486510009874CPT4" root="2.16.840.1.113883.3.795.5.2"/>
+                        <dataSourceType code="Administrative" codeSystem="2.16.840.1.113883.3.795.12.2.5.1"/>
+                        <procedureCode code="80101" codeSystem="2.16.840.1.113883.6.96" displayName="put.procedure.name.here"/>
+                        <procedureTime high="2010-02-18 00:00:00.0" low="2010-02-18 00:00:00.0"/>
+                    </procedureEvent>
+                    <procedureEvent>
+                        <templateId root="2.16.840.1.113883.3.1829.11.8.1.1"/>
+                        <id extension="2289486510009875CPT4" root="2.16.840.1.113883.3.795.5.2"/>
+                        <dataSourceType code="Administrative" codeSystem="2.16.840.1.113883.3.795.12.2.5.1"/>
+                        <procedureCode code="80101" codeSystem="2.16.840.1.113883.6.96" displayName="put.procedure.name.here"/>
+                        <procedureTime high="2010-02-18 00:00:00.0" low="2010-02-18 00:00:00.0"/>
+                    </procedureEvent>
+                    <procedureEvent>
+                        <templateId root="2.16.840.1.113883.3.1829.11.8.1.1"/>
+                        <id extension="2289486510009876CPT4" root="2.16.840.1.113883.3.795.5.2"/>
+                        <dataSourceType code="Administrative" codeSystem="2.16.840.1.113883.3.795.12.2.5.1"/>
+                        <procedureCode code="80101" codeSystem="2.16.840.1.113883.6.96" displayName="put.procedure.name.here"/>
+                        <procedureTime high="2010-02-18 00:00:00.0" low="2010-02-18 00:00:00.0"/>
+                    </procedureEvent>
+                    <procedureEvent>
+                        <templateId root="2.16.840.1.113883.3.1829.11.8.1.1"/>
+                        <id extension="2289486510009877CPT4" root="2.16.840.1.113883.3.795.5.2"/>
+                        <dataSourceType code="Administrative" codeSystem="2.16.840.1.113883.3.795.12.2.5.1"/>
+                        <procedureCode code="80101" codeSystem="2.16.840.1.113883.6.96" displayName="put.procedure.name.here"/>
+                        <procedureTime high="2010-02-18 00:00:00.0" low="2010-02-18 00:00:00.0"/>
+                    </procedureEvent>
+                    <procedureEvent>
+                        <templateId root="2.16.840.1.113883.3.1829.11.8.1.1"/>
+                        <id extension="2289486510009878CPT4" root="2.16.840.1.113883.3.795.5.2"/>
+                        <dataSourceType code="Administrative" codeSystem="2.16.840.1.113883.3.795.12.2.5.1"/>
+                        <procedureCode code="85610" codeSystem="2.16.840.1.113883.6.96" displayName="put.procedure.name.here"/>
+                        <procedureTime high="2010-02-19 00:00:00.0" low="2010-02-19 00:00:00.0"/>
+                    </procedureEvent>
+                    <procedureEvent>
+                        <templateId root="2.16.840.1.113883.3.1829.11.8.1.1"/>
+                        <id extension="2289486510017490CPT4" root="2.16.840.1.113883.3.795.5.2"/>
+                        <dataSourceType code="Administrative" codeSystem="2.16.840.1.113883.3.795.12.2.5.1"/>
+                        <procedureCode code="J3490" codeSystem="2.16.840.1.113883.6.96" displayName="put.procedure.name.here"/>
+                        <procedureTime high="2010-02-19 00:00:00.0" low="2010-02-19 00:00:00.0"/>
+                    </procedureEvent>
+                    <procedureEvent>
+                        <templateId root="2.16.840.1.113883.3.1829.11.8.1.1"/>
+                        <id extension="2289486510017491CPT4" root="2.16.840.1.113883.3.795.5.2"/>
+                        <dataSourceType code="Administrative" codeSystem="2.16.840.1.113883.3.795.12.2.5.1"/>
+                        <procedureCode code="J3490" codeSystem="2.16.840.1.113883.6.96" displayName="put.procedure.name.here"/>
+                        <procedureTime high="2010-02-19 00:00:00.0" low="2010-02-19 00:00:00.0"/>
+                    </procedureEvent>
+                    <procedureEvent>
+                        <templateId root="2.16.840.1.113883.3.1829.11.8.1.1"/>
+                        <id extension="2289486510017492CPT4" root="2.16.840.1.113883.3.795.5.2"/>
+                        <dataSourceType code="Administrative" codeSystem="2.16.840.1.113883.3.795.12.2.5.1"/>
+                        <procedureCode code="J3490" codeSystem="2.16.840.1.113883.6.96" displayName="put.procedure.name.here"/>
+                        <procedureTime high="2010-02-19 00:00:00.0" low="2010-02-19 00:00:00.0"/>
+                    </procedureEvent>
+                    <procedureEvent>
+                        <templateId root="2.16.840.1.113883.3.1829.11.8.1.1"/>
+                        <id extension="2289486510017493CPT4" root="2.16.840.1.113883.3.795.5.2"/>
+                        <dataSourceType code="Administrative" codeSystem="2.16.840.1.113883.3.795.12.2.5.1"/>
+                        <procedureCode code="J3490" codeSystem="2.16.840.1.113883.6.96" displayName="put.procedure.name.here"/>
+                        <procedureTime high="2010-02-19 00:00:00.0" low="2010-02-19 00:00:00.0"/>
+                    </procedureEvent>
+                    <procedureEvent>
+                        <templateId root="2.16.840.1.113883.3.1829.11.8.1.1"/>
+                        <id extension="2289486510017494CPT4" root="2.16.840.1.113883.3.795.5.2"/>
+                        <dataSourceType code="Administrative" codeSystem="2.16.840.1.113883.3.795.12.2.5.1"/>
+                        <procedureCode code="J3490" codeSystem="2.16.840.1.113883.6.96" displayName="put.procedure.name.here"/>
+                        <procedureTime high="2010-02-19 00:00:00.0" low="2010-02-19 00:00:00.0"/>
+                    </procedureEvent>
+                    <procedureEvent>
+                        <templateId root="2.16.840.1.113883.3.1829.11.8.1.1"/>
+                        <id extension="2289486510017495CPT4" root="2.16.840.1.113883.3.795.5.2"/>
+                        <dataSourceType code="Administrative" codeSystem="2.16.840.1.113883.3.795.12.2.5.1"/>
+                        <procedureCode code="J3490" codeSystem="2.16.840.1.113883.6.96" displayName="put.procedure.name.here"/>
+                        <procedureTime high="2010-02-19 00:00:00.0" low="2010-02-19 00:00:00.0"/>
+                    </procedureEvent>
+                    <procedureEvent>
+                        <templateId root="2.16.840.1.113883.3.1829.11.8.1.1"/>
+                        <id extension="2289486510017496CPT4" root="2.16.840.1.113883.3.795.5.2"/>
+                        <dataSourceType code="Administrative" codeSystem="2.16.840.1.113883.3.795.12.2.5.1"/>
+                        <procedureCode code="J3490" codeSystem="2.16.840.1.113883.6.96" displayName="put.procedure.name.here"/>
+                        <procedureTime high="2010-02-19 00:00:00.0" low="2010-02-19 00:00:00.0"/>
+                    </procedureEvent>
+                    <procedureEvent>
+                        <templateId root="2.16.840.1.113883.3.1829.11.8.1.1"/>
+                        <id extension="2289486510017497CPT4" root="2.16.840.1.113883.3.795.5.2"/>
+                        <dataSourceType code="Administrative" codeSystem="2.16.840.1.113883.3.795.12.2.5.1"/>
+                        <procedureCode code="J3490" codeSystem="2.16.840.1.113883.6.96" displayName="put.procedure.name.here"/>
+                        <procedureTime high="2010-02-19 00:00:00.0" low="2010-02-19 00:00:00.0"/>
+                    </procedureEvent>
+                    <procedureEvent>
+                        <templateId root="2.16.840.1.113883.3.1829.11.8.1.1"/>
+                        <id extension="2289486510017498CPT4" root="2.16.840.1.113883.3.795.5.2"/>
+                        <dataSourceType code="Administrative" codeSystem="2.16.840.1.113883.3.795.12.2.5.1"/>
+                        <procedureCode code="J3490" codeSystem="2.16.840.1.113883.6.96" displayName="put.procedure.name.here"/>
+                        <procedureTime high="2010-02-19 00:00:00.0" low="2010-02-19 00:00:00.0"/>
+                    </procedureEvent>
+                    <procedureEvent>
+                        <templateId root="2.16.840.1.113883.3.1829.11.8.1.1"/>
+                        <id extension="2289486510017499CPT4" root="2.16.840.1.113883.3.795.5.2"/>
+                        <dataSourceType code="Administrative" codeSystem="2.16.840.1.113883.3.795.12.2.5.1"/>
+                        <procedureCode code="J3490" codeSystem="2.16.840.1.113883.6.96" displayName="put.procedure.name.here"/>
+                        <procedureTime high="2010-02-19 00:00:00.0" low="2010-02-19 00:00:00.0"/>
+                    </procedureEvent>
+                    <procedureEvent>
+                        <templateId root="2.16.840.1.113883.3.1829.11.8.1.1"/>
+                        <id extension="2289486510017500CPT4" root="2.16.840.1.113883.3.795.5.2"/>
+                        <dataSourceType code="Administrative" codeSystem="2.16.840.1.113883.3.795.12.2.5.1"/>
+                        <procedureCode code="J3490" codeSystem="2.16.840.1.113883.6.96" displayName="put.procedure.name.here"/>
+                        <procedureTime high="2010-02-19 00:00:00.0" low="2010-02-19 00:00:00.0"/>
+                    </procedureEvent>
+                    <procedureEvent>
+                        <templateId root="2.16.840.1.113883.3.1829.11.8.1.1"/>
+                        <id extension="2289486510017501CPT4" root="2.16.840.1.113883.3.795.5.2"/>
+                        <dataSourceType code="Administrative" codeSystem="2.16.840.1.113883.3.795.12.2.5.1"/>
+                        <procedureCode code="J3490" codeSystem="2.16.840.1.113883.6.96" displayName="put.procedure.name.here"/>
+                        <procedureTime high="2010-02-19 00:00:00.0" low="2010-02-19 00:00:00.0"/>
+                    </procedureEvent>
+                    <procedureEvent>
+                        <templateId root="2.16.840.1.113883.3.1829.11.8.1.1"/>
+                        <id extension="2289486510017502CPT4" root="2.16.840.1.113883.3.795.5.2"/>
+                        <dataSourceType code="Administrative" codeSystem="2.16.840.1.113883.3.795.12.2.5.1"/>
+                        <procedureCode code="J3490" codeSystem="2.16.840.1.113883.6.96" displayName="put.procedure.name.here"/>
+                        <procedureTime high="2010-02-19 00:00:00.0" low="2010-02-19 00:00:00.0"/>
+                    </procedureEvent>
+                    <procedureEvent>
+                        <templateId root="2.16.840.1.113883.3.1829.11.8.1.1"/>
+                        <id extension="2289486510017503CPT4" root="2.16.840.1.113883.3.795.5.2"/>
+                        <dataSourceType code="Administrative" codeSystem="2.16.840.1.113883.3.795.12.2.5.1"/>
+                        <procedureCode code="J3490" codeSystem="2.16.840.1.113883.6.96" displayName="put.procedure.name.here"/>
+                        <procedureTime high="2010-02-19 00:00:00.0" low="2010-02-19 00:00:00.0"/>
+                    </procedureEvent>
+                    <procedureEvent>
+                        <templateId root="2.16.840.1.113883.3.1829.11.8.1.1"/>
+                        <id extension="2289486510017504CPT4" root="2.16.840.1.113883.3.795.5.2"/>
+                        <dataSourceType code="Administrative" codeSystem="2.16.840.1.113883.3.795.12.2.5.1"/>
+                        <procedureCode code="J3490" codeSystem="2.16.840.1.113883.6.96" displayName="put.procedure.name.here"/>
+                        <procedureTime high="2010-02-19 00:00:00.0" low="2010-02-19 00:00:00.0"/>
+                    </procedureEvent>
+                    <procedureEvent>
+                        <templateId root="2.16.840.1.113883.3.1829.11.8.1.1"/>
+                        <id extension="2289486520013626CPT4" root="2.16.840.1.113883.3.795.5.2"/>
+                        <dataSourceType code="Administrative" codeSystem="2.16.840.1.113883.3.795.12.2.5.1"/>
+                        <procedureCode code="J3490" codeSystem="2.16.840.1.113883.6.96" displayName="put.procedure.name.here"/>
+                        <procedureTime high="2010-02-20 00:00:00.0" low="2010-02-20 00:00:00.0"/>
+                    </procedureEvent>
+                    <procedureEvent>
+                        <templateId root="2.16.840.1.113883.3.1829.11.8.1.1"/>
+                        <id extension="2289486520013627CPT4" root="2.16.840.1.113883.3.795.5.2"/>
+                        <dataSourceType code="Administrative" codeSystem="2.16.840.1.113883.3.795.12.2.5.1"/>
+                        <procedureCode code="J3490" codeSystem="2.16.840.1.113883.6.96" displayName="put.procedure.name.here"/>
+                        <procedureTime high="2010-02-20 00:00:00.0" low="2010-02-20 00:00:00.0"/>
+                    </procedureEvent>
+                    <procedureEvent>
+                        <templateId root="2.16.840.1.113883.3.1829.11.8.1.1"/>
+                        <id extension="2289486520013628CPT4" root="2.16.840.1.113883.3.795.5.2"/>
+                        <dataSourceType code="Administrative" codeSystem="2.16.840.1.113883.3.795.12.2.5.1"/>
+                        <procedureCode code="J3490" codeSystem="2.16.840.1.113883.6.96" displayName="put.procedure.name.here"/>
+                        <procedureTime high="2010-02-20 00:00:00.0" low="2010-02-20 00:00:00.0"/>
+                    </procedureEvent>
+                    <procedureEvent>
+                        <templateId root="2.16.840.1.113883.3.1829.11.8.1.1"/>
+                        <id extension="2289486520013629CPT4" root="2.16.840.1.113883.3.795.5.2"/>
+                        <dataSourceType code="Administrative" codeSystem="2.16.840.1.113883.3.795.12.2.5.1"/>
+                        <procedureCode code="J3490" codeSystem="2.16.840.1.113883.6.96" displayName="put.procedure.name.here"/>
+                        <procedureTime high="2010-02-20 00:00:00.0" low="2010-02-20 00:00:00.0"/>
+                    </procedureEvent>
+                    <procedureEvent>
+                        <templateId root="2.16.840.1.113883.3.1829.11.8.1.1"/>
+                        <id extension="2289486520013630CPT4" root="2.16.840.1.113883.3.795.5.2"/>
+                        <dataSourceType code="Administrative" codeSystem="2.16.840.1.113883.3.795.12.2.5.1"/>
+                        <procedureCode code="J3490" codeSystem="2.16.840.1.113883.6.96" displayName="put.procedure.name.here"/>
+                        <procedureTime high="2010-02-20 00:00:00.0" low="2010-02-20 00:00:00.0"/>
+                    </procedureEvent>
+                    <procedureEvent>
+                        <templateId root="2.16.840.1.113883.3.1829.11.8.1.1"/>
+                        <id extension="2289486520013631CPT4" root="2.16.840.1.113883.3.795.5.2"/>
+                        <dataSourceType code="Administrative" codeSystem="2.16.840.1.113883.3.795.12.2.5.1"/>
+                        <procedureCode code="J3490" codeSystem="2.16.840.1.113883.6.96" displayName="put.procedure.name.here"/>
+                        <procedureTime high="2010-02-20 00:00:00.0" low="2010-02-20 00:00:00.0"/>
+                    </procedureEvent>
+                    <procedureEvent>
+                        <templateId root="2.16.840.1.113883.3.1829.11.8.1.1"/>
+                        <id extension="2289486520013632CPT4" root="2.16.840.1.113883.3.795.5.2"/>
+                        <dataSourceType code="Administrative" codeSystem="2.16.840.1.113883.3.795.12.2.5.1"/>
+                        <procedureCode code="J3490" codeSystem="2.16.840.1.113883.6.96" displayName="put.procedure.name.here"/>
+                        <procedureTime high="2010-02-20 00:00:00.0" low="2010-02-20 00:00:00.0"/>
+                    </procedureEvent>
+                    <procedureEvent>
+                        <templateId root="2.16.840.1.113883.3.1829.11.8.1.1"/>
+                        <id extension="2289486520013633CPT4" root="2.16.840.1.113883.3.795.5.2"/>
+                        <dataSourceType code="Administrative" codeSystem="2.16.840.1.113883.3.795.12.2.5.1"/>
+                        <procedureCode code="J3490" codeSystem="2.16.840.1.113883.6.96" displayName="put.procedure.name.here"/>
+                        <procedureTime high="2010-02-20 00:00:00.0" low="2010-02-20 00:00:00.0"/>
+                    </procedureEvent>
+                    <procedureEvent>
+                        <templateId root="2.16.840.1.113883.3.1829.11.8.1.1"/>
+                        <id extension="2289486520013634CPT4" root="2.16.840.1.113883.3.795.5.2"/>
+                        <dataSourceType code="Administrative" codeSystem="2.16.840.1.113883.3.795.12.2.5.1"/>
+                        <procedureCode code="J3490" codeSystem="2.16.840.1.113883.6.96" displayName="put.procedure.name.here"/>
+                        <procedureTime high="2010-02-20 00:00:00.0" low="2010-02-20 00:00:00.0"/>
+                    </procedureEvent>
+                    <procedureEvent>
+                        <templateId root="2.16.840.1.113883.3.1829.11.8.1.1"/>
+                        <id extension="2289486520013635CPT4" root="2.16.840.1.113883.3.795.5.2"/>
+                        <dataSourceType code="Administrative" codeSystem="2.16.840.1.113883.3.795.12.2.5.1"/>
+                        <procedureCode code="J3490" codeSystem="2.16.840.1.113883.6.96" displayName="put.procedure.name.here"/>
+                        <procedureTime high="2010-02-20 00:00:00.0" low="2010-02-20 00:00:00.0"/>
+                    </procedureEvent>
+                    <procedureEvent>
+                        <templateId root="2.16.840.1.113883.3.1829.11.8.1.1"/>
+                        <id extension="2289486520013636CPT4" root="2.16.840.1.113883.3.795.5.2"/>
+                        <dataSourceType code="Administrative" codeSystem="2.16.840.1.113883.3.795.12.2.5.1"/>
+                        <procedureCode code="J3490" codeSystem="2.16.840.1.113883.6.96" displayName="put.procedure.name.here"/>
+                        <procedureTime high="2010-02-20 00:00:00.0" low="2010-02-20 00:00:00.0"/>
+                    </procedureEvent>
+                    <procedureEvent>
+                        <templateId root="2.16.840.1.113883.3.1829.11.8.1.1"/>
+                        <id extension="2289486520013637CPT4" root="2.16.840.1.113883.3.795.5.2"/>
+                        <dataSourceType code="Administrative" codeSystem="2.16.840.1.113883.3.795.12.2.5.1"/>
+                        <procedureCode code="J3490" codeSystem="2.16.840.1.113883.6.96" displayName="put.procedure.name.here"/>
+                        <procedureTime high="2010-02-20 00:00:00.0" low="2010-02-20 00:00:00.0"/>
+                    </procedureEvent>
+                    <procedureEvent>
+                        <templateId root="2.16.840.1.113883.3.1829.11.8.1.1"/>
+                        <id extension="22894865200143CPT4" root="2.16.840.1.113883.3.795.5.2"/>
+                        <dataSourceType code="Administrative" codeSystem="2.16.840.1.113883.3.795.12.2.5.1"/>
+                        <procedureCode code="J3490" codeSystem="2.16.840.1.113883.6.96" displayName="put.procedure.name.here"/>
+                        <procedureTime high="2010-02-20 00:00:00.0" low="2010-02-20 00:00:00.0"/>
+                    </procedureEvent>
+                    <procedureEvent>
+                        <templateId root="2.16.840.1.113883.3.1829.11.8.1.1"/>
+                        <id extension="2289486560031291CPT4" root="2.16.840.1.113883.3.795.5.2"/>
+                        <dataSourceType code="Administrative" codeSystem="2.16.840.1.113883.3.795.12.2.5.1"/>
+                        <procedureCode code="J3490" codeSystem="2.16.840.1.113883.6.96" displayName="put.procedure.name.here"/>
+                        <procedureTime high="2010-02-20 00:00:00.0" low="2010-02-20 00:00:00.0"/>
+                    </procedureEvent>
+                    <procedureEvent>
+                        <templateId root="2.16.840.1.113883.3.1829.11.8.1.1"/>
+                        <id extension="2289486530007189CPT4" root="2.16.840.1.113883.3.795.5.2"/>
+                        <dataSourceType code="Administrative" codeSystem="2.16.840.1.113883.3.795.12.2.5.1"/>
+                        <procedureCode code="84100" codeSystem="2.16.840.1.113883.6.96" displayName="put.procedure.name.here"/>
+                        <procedureTime high="2010-02-21 00:00:00.0" low="2010-02-21 00:00:00.0"/>
+                    </procedureEvent>
+                    <procedureEvent>
+                        <templateId root="2.16.840.1.113883.3.1829.11.8.1.1"/>
+                        <id extension="2289486530007190CPT4" root="2.16.840.1.113883.3.795.5.2"/>
+                        <dataSourceType code="Administrative" codeSystem="2.16.840.1.113883.3.795.12.2.5.1"/>
+                        <procedureCode code="80048" codeSystem="2.16.840.1.113883.6.96" displayName="put.procedure.name.here"/>
+                        <procedureTime high="2010-02-21 00:00:00.0" low="2010-02-21 00:00:00.0"/>
+                    </procedureEvent>
+                    <procedureEvent>
+                        <templateId root="2.16.840.1.113883.3.1829.11.8.1.1"/>
+                        <id extension="2289486530007191CPT4" root="2.16.840.1.113883.3.795.5.2"/>
+                        <dataSourceType code="Administrative" codeSystem="2.16.840.1.113883.3.795.12.2.5.1"/>
+                        <procedureCode code="83735" codeSystem="2.16.840.1.113883.6.96" displayName="put.procedure.name.here"/>
+                        <procedureTime high="2010-02-21 00:00:00.0" low="2010-02-21 00:00:00.0"/>
+                    </procedureEvent>
+                    <procedureEvent>
+                        <templateId root="2.16.840.1.113883.3.1829.11.8.1.1"/>
+                        <id extension="2289486530023428CPT4" root="2.16.840.1.113883.3.795.5.2"/>
+                        <dataSourceType code="Administrative" codeSystem="2.16.840.1.113883.3.795.12.2.5.1"/>
+                        <procedureCode code="J3490" codeSystem="2.16.840.1.113883.6.96" displayName="put.procedure.name.here"/>
+                        <procedureTime high="2010-02-21 00:00:00.0" low="2010-02-21 00:00:00.0"/>
+                    </procedureEvent>
+                    <procedureEvent>
+                        <templateId root="2.16.840.1.113883.3.1829.11.8.1.1"/>
+                        <id extension="2289486530023429CPT4" root="2.16.840.1.113883.3.795.5.2"/>
+                        <dataSourceType code="Administrative" codeSystem="2.16.840.1.113883.3.795.12.2.5.1"/>
+                        <procedureCode code="J3490" codeSystem="2.16.840.1.113883.6.96" displayName="put.procedure.name.here"/>
+                        <procedureTime high="2010-02-21 00:00:00.0" low="2010-02-21 00:00:00.0"/>
+                    </procedureEvent>
+                    <procedureEvent>
+                        <templateId root="2.16.840.1.113883.3.1829.11.8.1.1"/>
+                        <id extension="2289486530023430CPT4" root="2.16.840.1.113883.3.795.5.2"/>
+                        <dataSourceType code="Administrative" codeSystem="2.16.840.1.113883.3.795.12.2.5.1"/>
+                        <procedureCode code="J3490" codeSystem="2.16.840.1.113883.6.96" displayName="put.procedure.name.here"/>
+                        <procedureTime high="2010-02-21 00:00:00.0" low="2010-02-21 00:00:00.0"/>
+                    </procedureEvent>
+                    <procedureEvent>
+                        <templateId root="2.16.840.1.113883.3.1829.11.8.1.1"/>
+                        <id extension="2289486530023431CPT4" root="2.16.840.1.113883.3.795.5.2"/>
+                        <dataSourceType code="Administrative" codeSystem="2.16.840.1.113883.3.795.12.2.5.1"/>
+                        <procedureCode code="J3490" codeSystem="2.16.840.1.113883.6.96" displayName="put.procedure.name.here"/>
+                        <procedureTime high="2010-02-21 00:00:00.0" low="2010-02-21 00:00:00.0"/>
+                    </procedureEvent>
+                    <procedureEvent>
+                        <templateId root="2.16.840.1.113883.3.1829.11.8.1.1"/>
+                        <id extension="2289486530023432CPT4" root="2.16.840.1.113883.3.795.5.2"/>
+                        <dataSourceType code="Administrative" codeSystem="2.16.840.1.113883.3.795.12.2.5.1"/>
+                        <procedureCode code="J3490" codeSystem="2.16.840.1.113883.6.96" displayName="put.procedure.name.here"/>
+                        <procedureTime high="2010-02-21 00:00:00.0" low="2010-02-21 00:00:00.0"/>
+                    </procedureEvent>
+                    <procedureEvent>
+                        <templateId root="2.16.840.1.113883.3.1829.11.8.1.1"/>
+                        <id extension="2289486530023433CPT4" root="2.16.840.1.113883.3.795.5.2"/>
+                        <dataSourceType code="Administrative" codeSystem="2.16.840.1.113883.3.795.12.2.5.1"/>
+                        <procedureCode code="J3490" codeSystem="2.16.840.1.113883.6.96" displayName="put.procedure.name.here"/>
+                        <procedureTime high="2010-02-21 00:00:00.0" low="2010-02-21 00:00:00.0"/>
+                    </procedureEvent>
+                    <procedureEvent>
+                        <templateId root="2.16.840.1.113883.3.1829.11.8.1.1"/>
+                        <id extension="2289486530023434CPT4" root="2.16.840.1.113883.3.795.5.2"/>
+                        <dataSourceType code="Administrative" codeSystem="2.16.840.1.113883.3.795.12.2.5.1"/>
+                        <procedureCode code="J3490" codeSystem="2.16.840.1.113883.6.96" displayName="put.procedure.name.here"/>
+                        <procedureTime high="2010-02-21 00:00:00.0" low="2010-02-21 00:00:00.0"/>
+                    </procedureEvent>
+                    <procedureEvent>
+                        <templateId root="2.16.840.1.113883.3.1829.11.8.1.1"/>
+                        <id extension="2289486530023435CPT4" root="2.16.840.1.113883.3.795.5.2"/>
+                        <dataSourceType code="Administrative" codeSystem="2.16.840.1.113883.3.795.12.2.5.1"/>
+                        <procedureCode code="J3490" codeSystem="2.16.840.1.113883.6.96" displayName="put.procedure.name.here"/>
+                        <procedureTime high="2010-02-21 00:00:00.0" low="2010-02-21 00:00:00.0"/>
+                    </procedureEvent>
+                    <procedureEvent>
+                        <templateId root="2.16.840.1.113883.3.1829.11.8.1.1"/>
+                        <id extension="2289486530023436CPT4" root="2.16.840.1.113883.3.795.5.2"/>
+                        <dataSourceType code="Administrative" codeSystem="2.16.840.1.113883.3.795.12.2.5.1"/>
+                        <procedureCode code="J3490" codeSystem="2.16.840.1.113883.6.96" displayName="put.procedure.name.here"/>
+                        <procedureTime high="2010-02-21 00:00:00.0" low="2010-02-21 00:00:00.0"/>
+                    </procedureEvent>
+                    <procedureEvent>
+                        <templateId root="2.16.840.1.113883.3.1829.11.8.1.1"/>
+                        <id extension="2289486530023437CPT4" root="2.16.840.1.113883.3.795.5.2"/>
+                        <dataSourceType code="Administrative" codeSystem="2.16.840.1.113883.3.795.12.2.5.1"/>
+                        <procedureCode code="J3490" codeSystem="2.16.840.1.113883.6.96" displayName="put.procedure.name.here"/>
+                        <procedureTime high="2010-02-21 00:00:00.0" low="2010-02-21 00:00:00.0"/>
+                    </procedureEvent>
+                    <procedureEvent>
+                        <templateId root="2.16.840.1.113883.3.1829.11.8.1.1"/>
+                        <id extension="2289486530023438CPT4" root="2.16.840.1.113883.3.795.5.2"/>
+                        <dataSourceType code="Administrative" codeSystem="2.16.840.1.113883.3.795.12.2.5.1"/>
+                        <procedureCode code="J3490" codeSystem="2.16.840.1.113883.6.96" displayName="put.procedure.name.here"/>
+                        <procedureTime high="2010-02-21 00:00:00.0" low="2010-02-21 00:00:00.0"/>
+                    </procedureEvent>
+                    <procedureEvent>
+                        <templateId root="2.16.840.1.113883.3.1829.11.8.1.1"/>
+                        <id extension="2289486530023439CPT4" root="2.16.840.1.113883.3.795.5.2"/>
+                        <dataSourceType code="Administrative" codeSystem="2.16.840.1.113883.3.795.12.2.5.1"/>
+                        <procedureCode code="J3490" codeSystem="2.16.840.1.113883.6.96" displayName="put.procedure.name.here"/>
+                        <procedureTime high="2010-02-21 00:00:00.0" low="2010-02-21 00:00:00.0"/>
+                    </procedureEvent>
+                    <procedureEvent>
+                        <templateId root="2.16.840.1.113883.3.1829.11.8.1.1"/>
+                        <id extension="2289486530023440CPT4" root="2.16.840.1.113883.3.795.5.2"/>
+                        <dataSourceType code="Administrative" codeSystem="2.16.840.1.113883.3.795.12.2.5.1"/>
+                        <procedureCode code="J3490" codeSystem="2.16.840.1.113883.6.96" displayName="put.procedure.name.here"/>
+                        <procedureTime high="2010-02-21 00:00:00.0" low="2010-02-21 00:00:00.0"/>
+                    </procedureEvent>
+                    <procedureEvent>
+                        <templateId root="2.16.840.1.113883.3.1829.11.8.1.1"/>
+                        <id extension="2289486530023441CPT4" root="2.16.840.1.113883.3.795.5.2"/>
+                        <dataSourceType code="Administrative" codeSystem="2.16.840.1.113883.3.795.12.2.5.1"/>
+                        <procedureCode code="J3490" codeSystem="2.16.840.1.113883.6.96" displayName="put.procedure.name.here"/>
+                        <procedureTime high="2010-02-21 00:00:00.0" low="2010-02-21 00:00:00.0"/>
+                    </procedureEvent>
+                    <procedureEvent>
+                        <templateId root="2.16.840.1.113883.3.1829.11.8.1.1"/>
+                        <id extension="2289486530023442CPT4" root="2.16.840.1.113883.3.795.5.2"/>
+                        <dataSourceType code="Administrative" codeSystem="2.16.840.1.113883.3.795.12.2.5.1"/>
+                        <procedureCode code="Q0170" codeSystem="2.16.840.1.113883.6.96" displayName="put.procedure.name.here"/>
+                        <procedureTime high="2010-02-21 00:00:00.0" low="2010-02-21 00:00:00.0"/>
+                    </procedureEvent>
+                    <procedureEvent>
+                        <templateId root="2.16.840.1.113883.3.1829.11.8.1.1"/>
+                        <id extension="2289486530023443CPT4" root="2.16.840.1.113883.3.795.5.2"/>
+                        <dataSourceType code="Administrative" codeSystem="2.16.840.1.113883.3.795.12.2.5.1"/>
+                        <procedureCode code="J3490" codeSystem="2.16.840.1.113883.6.96" displayName="put.procedure.name.here"/>
+                        <procedureTime high="2010-02-22 00:00:00.0" low="2010-02-22 00:00:00.0"/>
+                    </procedureEvent>
+                    <procedureEvent>
+                        <templateId root="2.16.840.1.113883.3.1829.11.8.1.1"/>
+                        <id extension="2289486530023444CPT4" root="2.16.840.1.113883.3.795.5.2"/>
+                        <dataSourceType code="Administrative" codeSystem="2.16.840.1.113883.3.795.12.2.5.1"/>
+                        <procedureCode code="J3490" codeSystem="2.16.840.1.113883.6.96" displayName="put.procedure.name.here"/>
+                        <procedureTime high="2010-02-22 00:00:00.0" low="2010-02-22 00:00:00.0"/>
+                    </procedureEvent>
+                    <procedureEvent>
+                        <templateId root="2.16.840.1.113883.3.1829.11.8.1.1"/>
+                        <id extension="2289486540021427CPT4" root="2.16.840.1.113883.3.795.5.2"/>
+                        <dataSourceType code="Administrative" codeSystem="2.16.840.1.113883.3.795.12.2.5.1"/>
+                        <procedureCode code="J3490" codeSystem="2.16.840.1.113883.6.96" displayName="put.procedure.name.here"/>
+                        <procedureTime high="2010-02-22 00:00:00.0" low="2010-02-22 00:00:00.0"/>
+                    </procedureEvent>
+                    <procedureEvent>
+                        <templateId root="2.16.840.1.113883.3.1829.11.8.1.1"/>
+                        <id extension="2289486540021428CPT4" root="2.16.840.1.113883.3.795.5.2"/>
+                        <dataSourceType code="Administrative" codeSystem="2.16.840.1.113883.3.795.12.2.5.1"/>
+                        <procedureCode code="J3490" codeSystem="2.16.840.1.113883.6.96" displayName="put.procedure.name.here"/>
+                        <procedureTime high="2010-02-22 00:00:00.0" low="2010-02-22 00:00:00.0"/>
+                    </procedureEvent>
+                    <procedureEvent>
+                        <templateId root="2.16.840.1.113883.3.1829.11.8.1.1"/>
+                        <id extension="2289486540021429CPT4" root="2.16.840.1.113883.3.795.5.2"/>
+                        <dataSourceType code="Administrative" codeSystem="2.16.840.1.113883.3.795.12.2.5.1"/>
+                        <procedureCode code="J3490" codeSystem="2.16.840.1.113883.6.96" displayName="put.procedure.name.here"/>
+                        <procedureTime high="2010-02-22 00:00:00.0" low="2010-02-22 00:00:00.0"/>
+                    </procedureEvent>
+                    <procedureEvent>
+                        <templateId root="2.16.840.1.113883.3.1829.11.8.1.1"/>
+                        <id extension="2289486540021430CPT4" root="2.16.840.1.113883.3.795.5.2"/>
+                        <dataSourceType code="Administrative" codeSystem="2.16.840.1.113883.3.795.12.2.5.1"/>
+                        <procedureCode code="J3490" codeSystem="2.16.840.1.113883.6.96" displayName="put.procedure.name.here"/>
+                        <procedureTime high="2010-02-22 00:00:00.0" low="2010-02-22 00:00:00.0"/>
+                    </procedureEvent>
+                    <procedureEvent>
+                        <templateId root="2.16.840.1.113883.3.1829.11.8.1.1"/>
+                        <id extension="2289486540021431CPT4" root="2.16.840.1.113883.3.795.5.2"/>
+                        <dataSourceType code="Administrative" codeSystem="2.16.840.1.113883.3.795.12.2.5.1"/>
+                        <procedureCode code="J3490" codeSystem="2.16.840.1.113883.6.96" displayName="put.procedure.name.here"/>
+                        <procedureTime high="2010-02-22 00:00:00.0" low="2010-02-22 00:00:00.0"/>
+                    </procedureEvent>
+                    <procedureEvent>
+                        <templateId root="2.16.840.1.113883.3.1829.11.8.1.1"/>
+                        <id extension="2289486540021432CPT4" root="2.16.840.1.113883.3.795.5.2"/>
+                        <dataSourceType code="Administrative" codeSystem="2.16.840.1.113883.3.795.12.2.5.1"/>
+                        <procedureCode code="J3490" codeSystem="2.16.840.1.113883.6.96" displayName="put.procedure.name.here"/>
+                        <procedureTime high="2010-02-22 00:00:00.0" low="2010-02-22 00:00:00.0"/>
+                    </procedureEvent>
+                    <procedureEvent>
+                        <templateId root="2.16.840.1.113883.3.1829.11.8.1.1"/>
+                        <id extension="2289486540021433CPT4" root="2.16.840.1.113883.3.795.5.2"/>
+                        <dataSourceType code="Administrative" codeSystem="2.16.840.1.113883.3.795.12.2.5.1"/>
+                        <procedureCode code="J3490" codeSystem="2.16.840.1.113883.6.96" displayName="put.procedure.name.here"/>
+                        <procedureTime high="2010-02-22 00:00:00.0" low="2010-02-22 00:00:00.0"/>
+                    </procedureEvent>
+                    <procedureEvent>
+                        <templateId root="2.16.840.1.113883.3.1829.11.8.1.1"/>
+                        <id extension="2289486540021434CPT4" root="2.16.840.1.113883.3.795.5.2"/>
+                        <dataSourceType code="Administrative" codeSystem="2.16.840.1.113883.3.795.12.2.5.1"/>
+                        <procedureCode code="J3490" codeSystem="2.16.840.1.113883.6.96" displayName="put.procedure.name.here"/>
+                        <procedureTime high="2010-02-22 00:00:00.0" low="2010-02-22 00:00:00.0"/>
+                    </procedureEvent>
+                    <procedureEvent>
+                        <templateId root="2.16.840.1.113883.3.1829.11.8.1.1"/>
+                        <id extension="2289486540021435CPT4" root="2.16.840.1.113883.3.795.5.2"/>
+                        <dataSourceType code="Administrative" codeSystem="2.16.840.1.113883.3.795.12.2.5.1"/>
+                        <procedureCode code="J3490" codeSystem="2.16.840.1.113883.6.96" displayName="put.procedure.name.here"/>
+                        <procedureTime high="2010-02-22 00:00:00.0" low="2010-02-22 00:00:00.0"/>
+                    </procedureEvent>
+                    <procedureEvent>
+                        <templateId root="2.16.840.1.113883.3.1829.11.8.1.1"/>
+                        <id extension="2289486550026398CPT4" root="2.16.840.1.113883.3.795.5.2"/>
+                        <dataSourceType code="Administrative" codeSystem="2.16.840.1.113883.3.795.12.2.5.1"/>
+                        <procedureCode code="J3490" codeSystem="2.16.840.1.113883.6.96" displayName="put.procedure.name.here"/>
+                        <procedureTime high="2010-02-22 00:00:00.0" low="2010-02-22 00:00:00.0"/>
+                    </procedureEvent>
+                    <procedureEvent>
+                        <templateId root="2.16.840.1.113883.3.1829.11.8.1.1"/>
+                        <id extension="2289486550026393CPT4" root="2.16.840.1.113883.3.795.5.2"/>
+                        <dataSourceType code="Administrative" codeSystem="2.16.840.1.113883.3.795.12.2.5.1"/>
+                        <procedureCode code="J3490" codeSystem="2.16.840.1.113883.6.96" displayName="put.procedure.name.here"/>
+                        <procedureTime high="2010-02-23 00:00:00.0" low="2010-02-23 00:00:00.0"/>
+                    </procedureEvent>
+                    <procedureEvent>
+                        <templateId root="2.16.840.1.113883.3.1829.11.8.1.1"/>
+                        <id extension="2289486550026394CPT4" root="2.16.840.1.113883.3.795.5.2"/>
+                        <dataSourceType code="Administrative" codeSystem="2.16.840.1.113883.3.795.12.2.5.1"/>
+                        <procedureCode code="J3490" codeSystem="2.16.840.1.113883.6.96" displayName="put.procedure.name.here"/>
+                        <procedureTime high="2010-02-23 00:00:00.0" low="2010-02-23 00:00:00.0"/>
+                    </procedureEvent>
+                    <procedureEvent>
+                        <templateId root="2.16.840.1.113883.3.1829.11.8.1.1"/>
+                        <id extension="2289486550026395CPT4" root="2.16.840.1.113883.3.795.5.2"/>
+                        <dataSourceType code="Administrative" codeSystem="2.16.840.1.113883.3.795.12.2.5.1"/>
+                        <procedureCode code="J3490" codeSystem="2.16.840.1.113883.6.96" displayName="put.procedure.name.here"/>
+                        <procedureTime high="2010-02-23 00:00:00.0" low="2010-02-23 00:00:00.0"/>
+                    </procedureEvent>
+                    <procedureEvent>
+                        <templateId root="2.16.840.1.113883.3.1829.11.8.1.1"/>
+                        <id extension="2289486550026396CPT4" root="2.16.840.1.113883.3.795.5.2"/>
+                        <dataSourceType code="Administrative" codeSystem="2.16.840.1.113883.3.795.12.2.5.1"/>
+                        <procedureCode code="J3490" codeSystem="2.16.840.1.113883.6.96" displayName="put.procedure.name.here"/>
+                        <procedureTime high="2010-02-23 00:00:00.0" low="2010-02-23 00:00:00.0"/>
+                    </procedureEvent>
+                    <procedureEvent>
+                        <templateId root="2.16.840.1.113883.3.1829.11.8.1.1"/>
+                        <id extension="2289486550026397CPT4" root="2.16.840.1.113883.3.795.5.2"/>
+                        <dataSourceType code="Administrative" codeSystem="2.16.840.1.113883.3.795.12.2.5.1"/>
+                        <procedureCode code="J3490" codeSystem="2.16.840.1.113883.6.96" displayName="put.procedure.name.here"/>
+                        <procedureTime high="2010-02-23 00:00:00.0" low="2010-02-23 00:00:00.0"/>
+                    </procedureEvent>
+                    <procedureEvent>
+                        <templateId root="2.16.840.1.113883.3.1829.11.8.1.1"/>
+                        <id extension="2289486550026399CPT4" root="2.16.840.1.113883.3.795.5.2"/>
+                        <dataSourceType code="Administrative" codeSystem="2.16.840.1.113883.3.795.12.2.5.1"/>
+                        <procedureCode code="J3490" codeSystem="2.16.840.1.113883.6.96" displayName="put.procedure.name.here"/>
+                        <procedureTime high="2010-02-23 00:00:00.0" low="2010-02-23 00:00:00.0"/>
+                    </procedureEvent>
+                    <procedureEvent>
+                        <templateId root="2.16.840.1.113883.3.1829.11.8.1.1"/>
+                        <id extension="2289486550026400CPT4" root="2.16.840.1.113883.3.795.5.2"/>
+                        <dataSourceType code="Administrative" codeSystem="2.16.840.1.113883.3.795.12.2.5.1"/>
+                        <procedureCode code="J3490" codeSystem="2.16.840.1.113883.6.96" displayName="put.procedure.name.here"/>
+                        <procedureTime high="2010-02-23 00:00:00.0" low="2010-02-23 00:00:00.0"/>
+                    </procedureEvent>
+                    <procedureEvent>
+                        <templateId root="2.16.840.1.113883.3.1829.11.8.1.1"/>
+                        <id extension="2289486550026401CPT4" root="2.16.840.1.113883.3.795.5.2"/>
+                        <dataSourceType code="Administrative" codeSystem="2.16.840.1.113883.3.795.12.2.5.1"/>
+                        <procedureCode code="J3490" codeSystem="2.16.840.1.113883.6.96" displayName="put.procedure.name.here"/>
+                        <procedureTime high="2010-02-23 00:00:00.0" low="2010-02-23 00:00:00.0"/>
+                    </procedureEvent>
+                    <procedureEvent>
+                        <templateId root="2.16.840.1.113883.3.1829.11.8.1.1"/>
+                        <id extension="2289486550026402CPT4" root="2.16.840.1.113883.3.795.5.2"/>
+                        <dataSourceType code="Administrative" codeSystem="2.16.840.1.113883.3.795.12.2.5.1"/>
+                        <procedureCode code="J3490" codeSystem="2.16.840.1.113883.6.96" displayName="put.procedure.name.here"/>
+                        <procedureTime high="2010-02-23 00:00:00.0" low="2010-02-23 00:00:00.0"/>
+                    </procedureEvent>
+                    <procedureEvent>
+                        <templateId root="2.16.840.1.113883.3.1829.11.8.1.1"/>
+                        <id extension="2289486550026403CPT4" root="2.16.840.1.113883.3.795.5.2"/>
+                        <dataSourceType code="Administrative" codeSystem="2.16.840.1.113883.3.795.12.2.5.1"/>
+                        <procedureCode code="J3490" codeSystem="2.16.840.1.113883.6.96" displayName="put.procedure.name.here"/>
+                        <procedureTime high="2010-02-23 00:00:00.0" low="2010-02-23 00:00:00.0"/>
+                    </procedureEvent>
+                    <procedureEvent>
+                        <templateId root="2.16.840.1.113883.3.1829.11.8.1.1"/>
+                        <id extension="2289486550026404CPT4" root="2.16.840.1.113883.3.795.5.2"/>
+                        <dataSourceType code="Administrative" codeSystem="2.16.840.1.113883.3.795.12.2.5.1"/>
+                        <procedureCode code="J3490" codeSystem="2.16.840.1.113883.6.96" displayName="put.procedure.name.here"/>
+                        <procedureTime high="2010-02-23 00:00:00.0" low="2010-02-23 00:00:00.0"/>
+                    </procedureEvent>
+                    <procedureEvent>
+                        <templateId root="2.16.840.1.113883.3.1829.11.8.1.1"/>
+                        <id extension="2289486550026405CPT4" root="2.16.840.1.113883.3.795.5.2"/>
+                        <dataSourceType code="Administrative" codeSystem="2.16.840.1.113883.3.795.12.2.5.1"/>
+                        <procedureCode code="J3490" codeSystem="2.16.840.1.113883.6.96" displayName="put.procedure.name.here"/>
+                        <procedureTime high="2010-02-23 00:00:00.0" low="2010-02-23 00:00:00.0"/>
+                    </procedureEvent>
+                    <procedureEvent>
+                        <templateId root="2.16.840.1.113883.3.1829.11.8.1.1"/>
+                        <id extension="2289486560031285CPT4" root="2.16.840.1.113883.3.795.5.2"/>
+                        <dataSourceType code="Administrative" codeSystem="2.16.840.1.113883.3.795.12.2.5.1"/>
+                        <procedureCode code="J3490" codeSystem="2.16.840.1.113883.6.96" displayName="put.procedure.name.here"/>
+                        <procedureTime high="2010-02-24 00:00:00.0" low="2010-02-24 00:00:00.0"/>
+                    </procedureEvent>
+                    <procedureEvent>
+                        <templateId root="2.16.840.1.113883.3.1829.11.8.1.1"/>
+                        <id extension="2289486560031286CPT4" root="2.16.840.1.113883.3.795.5.2"/>
+                        <dataSourceType code="Administrative" codeSystem="2.16.840.1.113883.3.795.12.2.5.1"/>
+                        <procedureCode code="J3490" codeSystem="2.16.840.1.113883.6.96" displayName="put.procedure.name.here"/>
+                        <procedureTime high="2010-02-24 00:00:00.0" low="2010-02-24 00:00:00.0"/>
+                    </procedureEvent>
+                    <procedureEvent>
+                        <templateId root="2.16.840.1.113883.3.1829.11.8.1.1"/>
+                        <id extension="2289486560031287CPT4" root="2.16.840.1.113883.3.795.5.2"/>
+                        <dataSourceType code="Administrative" codeSystem="2.16.840.1.113883.3.795.12.2.5.1"/>
+                        <procedureCode code="J3490" codeSystem="2.16.840.1.113883.6.96" displayName="put.procedure.name.here"/>
+                        <procedureTime high="2010-02-24 00:00:00.0" low="2010-02-24 00:00:00.0"/>
+                    </procedureEvent>
+                    <procedureEvent>
+                        <templateId root="2.16.840.1.113883.3.1829.11.8.1.1"/>
+                        <id extension="2289486560031288CPT4" root="2.16.840.1.113883.3.795.5.2"/>
+                        <dataSourceType code="Administrative" codeSystem="2.16.840.1.113883.3.795.12.2.5.1"/>
+                        <procedureCode code="J3490" codeSystem="2.16.840.1.113883.6.96" displayName="put.procedure.name.here"/>
+                        <procedureTime high="2010-02-24 00:00:00.0" low="2010-02-24 00:00:00.0"/>
+                    </procedureEvent>
+                    <procedureEvent>
+                        <templateId root="2.16.840.1.113883.3.1829.11.8.1.1"/>
+                        <id extension="2289486560031289CPT4" root="2.16.840.1.113883.3.795.5.2"/>
+                        <dataSourceType code="Administrative" codeSystem="2.16.840.1.113883.3.795.12.2.5.1"/>
+                        <procedureCode code="J3490" codeSystem="2.16.840.1.113883.6.96" displayName="put.procedure.name.here"/>
+                        <procedureTime high="2010-02-24 00:00:00.0" low="2010-02-24 00:00:00.0"/>
+                    </procedureEvent>
+                    <procedureEvent>
+                        <templateId root="2.16.840.1.113883.3.1829.11.8.1.1"/>
+                        <id extension="2289486560031290CPT4" root="2.16.840.1.113883.3.795.5.2"/>
+                        <dataSourceType code="Administrative" codeSystem="2.16.840.1.113883.3.795.12.2.5.1"/>
+                        <procedureCode code="J3490" codeSystem="2.16.840.1.113883.6.96" displayName="put.procedure.name.here"/>
+                        <procedureTime high="2010-02-24 00:00:00.0" low="2010-02-24 00:00:00.0"/>
+                    </procedureEvent>
+                </procedureEvents>
+            </clinicalStatements>
+            <clinicalStatementRelationships>
+                <clinicalStatementRelationship>
+                    <sourceId root="sourceId"/>
+                    <targetId root="targetId"/>
+                    <targetRelationshipToSource code="COMP" codeSystem="2.16.840.1.113883.3.445"/>
+                    <!--I think this is HL7 CDA, as an attribute of an EntryRelationship-->
+                </clinicalStatementRelationship>
+            </clinicalStatementRelationships>
+            <clinicalStatementEntityInRoleRelationships>
+                <clinicalStatementEntityInRoleRelationship>
+                    <sourceId root="sourceId"/>
+                    <targetEntityId root="targetEntityId"/>
+                    <targetRole code="P" codeSystem="2.16.840.1.113883.12.369" codeSystemName="Specimen Role" displayName="Patient"/>
+                </clinicalStatementEntityInRoleRelationship>
+            </clinicalStatementEntityInRoleRelationships>
+            <entityRelationships>
+                <entityRelationship>
+                    <sourceId root="sourceId"/>
+                    <targetEntityId root="targetEntityId"/>
+                    <targetRole code="C" codeSystem="2.16.840.1.114222.4.11.1040" displayName="Component"/>
+                </entityRelationship>
+            </entityRelationships>
+        </patient>
+        <otherEvaluatedPersons>
+            <evaluatedPerson>
+                <id root="otherEvaluatedPersonId"/>
+                <demographics>
+                    <birthTime value="18010101"/>
+                    <gender code="F" codeSystem="2.16.840.1.113883.1.11.1" displayName="Female"/>
+                    <isDeceased value="true"/>
+                    <ageAtDeath unit="yrs" value="99"/>
+                </demographics>
+                <clinicalStatements/>
+            </evaluatedPerson>
+        </otherEvaluatedPersons>
+        <evaluatedPersonRelationships>
+            <evaluatedPersonRelationship>
+                <sourceId root="sourceId"/>
+                <targetEntityId root="targetEntityId"/>
+                <targetRole code="relationship" codeSystem="2.16.840.1.113883.12.63"/>
+            </evaluatedPersonRelationship>
+        </evaluatedPersonRelationships>
+    </vmrInput>
+</in:cdsInput>

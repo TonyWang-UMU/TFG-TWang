@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kmm:kmMetadataList xsi:schemaLocation="org.opencds.km.metadata.v1_0 ..\schema\OmgDssKmMetadata.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:kmm="org.opencds.km.metadata.v1_0">
+<!-- 	As of 2012-02-23 there is a new parameter in the knowledge module-->
+<!-- 	configuration named: "knowledgeModulePrimaryProcessName".  This parameter -->
+<!-- 	must be set with the name of the primary process whenever a compiled knowledge -->
+<!-- 	module (with a file extension of ".pkg") includes BPMN content.  It may -->
+<!-- 	also be set for BPMN files that are not compiled into packages (file  -->
+<!-- 	extensions of ".bpmn") if they don't use the OpenCDS default name of -->
+<!-- 	"PrimaryProcess". -->
+	<kmMetadata>
+		<identifier scopingEntityId="org.opencds" businessId="NQF_0031_v1" version="1.1.0"/>
+		<!--<stewardOrganization>
+			<id root="org.opencds" extension="" />
+		</stewardOrganization>-->
+		<!--<creationDate>2011-09-17T00:00:00Z</creationDate>-->
+		<!--<lastReviewDate>2011-09-17T00:00:00Z</lastReviewDate>-->
+		<!--<authorList>
+			<author><name><part type="GIV" value="Kensaku"></part><part type="FAM" value="Kawamoto"></part></name></author>
+		</authorList>-->
+		<!--<freeTextKeywordList language="en">
+			<freeTextKeyword>NQF</freeTextKeyword>
+			<freeTextKeyword>NQF 0031</freeTextKeyword>
+		</freeTextKeywordList>-->
+		<!--<codedValueKeywordList language="en"/>-->
+		<purpose language="en">Implementation of NQF 0031 rules version 1, for Breast Cancer Screening</purpose>
+		<explanation language="en"></explanation>
+		<executionEngine>org.opencds.service.drools.v54.DroolsAdapter</executionEngine>
+		<dataModel>org.opencds.vmr^VMR^1.0</dataModel>
+		<knowledgeModulePrimaryProcessName/>
+		<!--<inputDataRequirements>text</inputDataRequirements>-->
+		<!--<outputDataRequirements>String</outputDataRequirements>-->
+		<!--<supportedLanguage>en</supportedLanguage>-->
+	</kmMetadata>
+	<kmMetadata>
+		<identifier scopingEntityId="org.opencds" businessId="NQF_0031_v1" version="1.1.1"/>
+		<purpose language="en">Implementation of NQF 0031 rules version 1, for Breast Cancer Screening</purpose>
+		<explanation language="en"></explanation>
+		<executionEngine>org.opencds.service.drools.v55.DroolsAdapter</executionEngine>
+		<dataModel>org.opencds.vmr^VMR^1.0</dataModel>
+	</kmMetadata>
+	<kmMetadata>
+		<identifier scopingEntityId="org.opencds" businessId="NQF_0032_v1" version="1.1.0"/>
+		<purpose language="en">Implementation of NQF 0032 rules version 1, for Cervical Cancer Screening</purpose>
+		<explanation language="en"></explanation>
+		<executionEngine>org.opencds.service.drools.v54.DroolsAdapter</executionEngine>
+		<dataModel>org.opencds.vmr^VMR^1.0</dataModel>
+	</kmMetadata>
+	<kmMetadata>
+		<identifier scopingEntityId="org.opencds" businessId="NQF_0032_v1" version="1.1.1"/>
+		<purpose language="en">Implementation of NQF 0032 rules version 1, for Cervical Cancer Screening</purpose>
+		<explanation language="en"></explanation>
+		<executionEngine>org.opencds.service.drools.v55.DroolsAdapter</executionEngine>
+		<dataModel>org.opencds.vmr^VMR^1.0</dataModel>
+	</kmMetadata>
+	<kmMetadata>
+		<identifier scopingEntityId="org.opencds" businessId="bounce" version="1.5.4"/>
+		<purpose language="en">Bounces all the input back as output under Drools 5.4</purpose>
+		<explanation language="en">some explanation of the KM</explanation>
+		<executionEngine>org.opencds.service.drools.v54.DroolsAdapter</executionEngine>
+		<dataModel>org.opencds.vmr^VMR^1.0</dataModel>
+	</kmMetadata>
+	<kmMetadata>
+		<identifier scopingEntityId="org.opencds" businessId="bounce" version="1.5.5"/>
+		<purpose language="en">Bounces all the input back as output under Drools 5.5</purpose>
+		<explanation language="en">some explanation of the KM</explanation>
+		<executionEngine>org.opencds.service.drools.v55.DroolsAdapter</executionEngine>
+		<dataModel>org.opencds.vmr^VMR^1.0</dataModel>
+	</kmMetadata>
+	<kmMetadata>
+		<identifier scopingEntityId="org.opencds" businessId="bounceConcepts" version="1.5.4"/>
+		<purpose language="en">Bounces all the input back as output under Drools 5.4, with identified concepts imbedded</purpose>
+		<explanation language="en">String</explanation>
+		<executionEngine>org.opencds.service.drools.v54.DroolsAdapter</executionEngine>
+		<dataModel>org.opencds.vmr^VMR^1.0</dataModel>
+	</kmMetadata>
+	<kmMetadata>
+		<identifier scopingEntityId="org.opencds" businessId="Reportable_Disease" version="1.1.0"/>
+		<purpose language="en">Evaluate lab data for reporting to the state</purpose>
+		<explanation language="en">String</explanation>
+		<executionEngine>org.opencds.service.drools.v54.DroolsAdapter</executionEngine>
+		<dataModel>org.opencds.vmr^VMR^1.0</dataModel>
+		<knowledgeModulePrimaryProcessName>PrimaryProcess</knowledgeModulePrimaryProcessName>
+	</kmMetadata>
+	<kmMetadata>
+		<identifier scopingEntityId="org.opencds" businessId="Reportable_Disease" version="2.0.0"/>
+		<purpose language="en">Evaluate lab data for reporting to the state using custom Java inferencing engine</purpose>
+		<explanation language="en">String</explanation>
+		<executionEngine>org.opencds.service.java.SampleJavaInferencingEngine</executionEngine>
+		<dataModel>org.opencds.vmr^VMR^1.0</dataModel>
+	</kmMetadata>
+	<kmMetadata>
+		<identifier scopingEntityId="edu.utah" businessId="AHRQ_PSI_02" version="4.3.0"/>
+		<purpose language="en">AHRQ Patient Safety Indicator 02, Death Rate in Low-Mortality Diagnosis Related Groups</purpose>
+		<explanation language="en">String</explanation>
+		<executionEngine>org.opencds.service.drools.v54.DroolsAdapter</executionEngine>
+		<dataModel>org.opencds.vmr^VMR^1.0</dataModel>
+		<knowledgeModulePrimaryProcessName>edu.utah.AHRQ.PSI_02_v4_3.AHRQ_PSI_Process</knowledgeModulePrimaryProcessName>
+	</kmMetadata>
+	<kmMetadata>
+		<identifier scopingEntityId="edu.utah" businessId="AHRQ_PSI_02" version="4.3.1"/>
+		<purpose language="en">AHRQ Patient Safety Indicator 02, Death Rate in Low-Mortality Diagnosis Related Groups</purpose>
+		<explanation language="en">String</explanation>
+		<executionEngine>org.opencds.service.drools.v55.DroolsAdapter</executionEngine>
+		<dataModel>org.opencds.vmr^VMR^1.0</dataModel>
+		<knowledgeModulePrimaryProcessName>edu.utah.AHRQ.PSI_02_v4_3.AHRQ_PSI_Process</knowledgeModulePrimaryProcessName>
+	</kmMetadata>
+	<kmMetadata>
+		<identifier scopingEntityId="edu.utah" businessId="AHRQ_PSI_03" version="4.3.0"/>
+		<purpose language="en">AHRQ Patient Safety Indicator 03, Pressure Ulcer Rate</purpose>
+		<explanation language="en">some explanation of the KM</explanation>
+		<executionEngine>org.opencds.service.drools.v54.DroolsAdapter</executionEngine>
+		<dataModel>org.opencds.vmr^VMR^1.0</dataModel>
+		<knowledgeModulePrimaryProcessName>edu.utah.AHRQ.PSI_03_v4_3.AHRQ_PSI_Process</knowledgeModulePrimaryProcessName>
+	</kmMetadata>
+	<kmMetadata>
+		<identifier scopingEntityId="edu.utah" businessId="AHRQ_PSI_03" version="4.3.1"/>
+		<purpose language="en">AHRQ Patient Safety Indicator 03, Pressure Ulcer Rate</purpose>
+		<explanation language="en">some explanation of the KM</explanation>
+		<executionEngine>org.opencds.service.drools.v55.DroolsAdapter</executionEngine>
+		<dataModel>org.opencds.vmr^VMR^1.0</dataModel>
+		<knowledgeModulePrimaryProcessName>edu.utah.AHRQ.PSI_03_v4_3.AHRQ_PSI_Process</knowledgeModulePrimaryProcessName>
+	</kmMetadata>
+	<kmMetadata>
+		<identifier scopingEntityId="edu.utah" businessId="AHRQ_PSI_05" version="4.3.0"/>
+		<purpose language="en">AHRQ Patient Safety Indicator 05, Foreign Body Left During Procedure</purpose>
+		<explanation language="en">some explanation of the KM</explanation>
+		<executionEngine>org.opencds.service.drools.v54.DroolsAdapter</executionEngine>
+		<dataModel>org.opencds.vmr^VMR^1.0</dataModel>
+		<knowledgeModulePrimaryProcessName>edu.utah.AHRQ.PSI_05_v4_3.AHRQ_PSI_Process</knowledgeModulePrimaryProcessName>
+	</kmMetadata>
+	<kmMetadata>
+		<identifier scopingEntityId="edu.utah" businessId="AHRQ_PSI_05" version="4.3.1"/>
+		<purpose language="en">AHRQ Patient Safety Indicator 05, Foreign Body Left During Procedure</purpose>
+		<explanation language="en">some explanation of the KM</explanation>
+		<executionEngine>org.opencds.service.drools.v55.DroolsAdapter</executionEngine>
+		<dataModel>org.opencds.vmr^VMR^1.0</dataModel>
+		<knowledgeModulePrimaryProcessName>edu.utah.AHRQ.PSI_05_v4_3.AHRQ_PSI_Process</knowledgeModulePrimaryProcessName>
+	</kmMetadata>
+	<!--<kmMetadata>
+		<identifier scopingEntityId="org.opencds" businessId="AHRQ_PSI_11" version="1.54.1"/>
+		<purpose language="en">AHRQ Patient Safety Indicator 11, Postoperative Respiratory Failure</purpose>
+		<explanation language="en">some explanation of the KM</explanation>
+		<executionEngine>org.opencds.service.drools.v54.DroolsAdapter</executionEngine>
+		<dataModel>org.opencds.vmr^VMR^1.0</dataModel>
+		<knowledgeModulePrimaryProcessName>org.opencds.AHRQ.PSI_11_v1_54_1.PSI_11_Process2</knowledgeModulePrimaryProcessName>
+	</kmMetadata>-->
+	<kmMetadata>
+		<identifier scopingEntityId="edu.utah" businessId="AHRQ_PSI_11" version="4.3.0"/>
+		<purpose language="en">AHRQ Patient Safety Indicator 11, Postoperative Respiratory Failure</purpose>
+		<explanation language="en">some explanation of the KM</explanation>
+		<executionEngine>org.opencds.service.drools.v54.DroolsAdapter</executionEngine>
+		<dataModel>org.opencds.vmr^VMR^1.0</dataModel>
+		<knowledgeModulePrimaryProcessName>edu.utah.AHRQ.PSI_11_v4_3.AHRQ_PSI_Process</knowledgeModulePrimaryProcessName>
+	</kmMetadata>
+	<kmMetadata>
+		<identifier scopingEntityId="edu.utah" businessId="AHRQ_PSI_11" version="4.3.1"/>
+		<purpose language="en">AHRQ Patient Safety Indicator 11, Postoperative Respiratory Failure</purpose>
+		<explanation language="en">some explanation of the KM</explanation>
+		<executionEngine>org.opencds.service.drools.v55.DroolsAdapter</executionEngine>
+		<dataModel>org.opencds.vmr^VMR^1.0</dataModel>
+		<knowledgeModulePrimaryProcessName>edu.utah.AHRQ.PSI_11_v4_3.AHRQ_PSI_Process</knowledgeModulePrimaryProcessName>
+	</kmMetadata>
+	<kmMetadata>
+		<identifier scopingEntityId="edu.utah" businessId="AHRQ_PSI_12" version="4.3.0"/>
+		<purpose language="en">AHRQ Patient Safety Indicator 12, Postoperative Pulmonary Embolism or Deep Vein Thrombosis Rate</purpose>
+		<explanation language="en">some explanation of the KM</explanation>
+		<executionEngine>org.opencds.service.drools.v54.DroolsAdapter</executionEngine>
+		<dataModel>org.opencds.vmr^VMR^1.0</dataModel>
+		<knowledgeModulePrimaryProcessName>edu.utah.AHRQ.PSI_12_v4_3.AHRQ_PSI_Process</knowledgeModulePrimaryProcessName>
+	</kmMetadata>
+	<kmMetadata>
+		<identifier scopingEntityId="edu.utah" businessId="AHRQ_PSI_12" version="4.3.1"/>
+		<purpose language="en">AHRQ Patient Safety Indicator 12, Postoperative Pulmonary Embolism or Deep Vein Thrombosis Rate</purpose>
+		<explanation language="en">some explanation of the KM</explanation>
+		<executionEngine>org.opencds.service.drools.v55.DroolsAdapter</executionEngine>
+		<dataModel>org.opencds.vmr^VMR^1.0</dataModel>
+		<knowledgeModulePrimaryProcessName>edu.utah.AHRQ.PSI_12_v4_3.AHRQ_PSI_Process</knowledgeModulePrimaryProcessName>
+	</kmMetadata>
+	<kmMetadata>
+		<identifier scopingEntityId="edu.utah" businessId="AHRQ_PSI_13" version="4.3.0"/>
+		<purpose language="en">AHRQ Patient Safety Indicator 13, Postoperative Sepsis Rate</purpose>
+		<explanation language="en">some explanation of the KM</explanation>
+		<executionEngine>org.opencds.service.drools.v54.DroolsAdapter</executionEngine>
+		<dataModel>org.opencds.vmr^VMR^1.0</dataModel>
+		<knowledgeModulePrimaryProcessName>edu.utah.AHRQ.PSI_13_v4_3.AHRQ_PSI_Process</knowledgeModulePrimaryProcessName>
+	</kmMetadata>
+	<kmMetadata>
+		<identifier scopingEntityId="edu.utah" businessId="AHRQ_PSI_13" version="4.3.1"/>
+		<purpose language="en">AHRQ Patient Safety Indicator 13, Postoperative Sepsis Rate</purpose>
+		<explanation language="en">some explanation of the KM</explanation>
+		<executionEngine>org.opencds.service.drools.v55.DroolsAdapter</executionEngine>
+		<dataModel>org.opencds.vmr^VMR^1.0</dataModel>
+		<knowledgeModulePrimaryProcessName>org.opencds.AHRQ.PSI_13_v1_54_1.PSI_11_Process</knowledgeModulePrimaryProcessName>
+	</kmMetadata>
+	<kmMetadata>
+		<identifier scopingEntityId="edu.utah" businessId="AHRQ_PSI_15" version="4.3.0"/>
+		<purpose language="en">AHRQ Patient Safety Indicator 13, Postoperative Sepsis Rate</purpose>
+		<explanation language="en">some explanation of the KM</explanation>
+		<executionEngine>org.opencds.service.drools.v54.DroolsAdapter</executionEngine>
+		<dataModel>org.opencds.vmr^VMR^1.0</dataModel>
+		<knowledgeModulePrimaryProcessName>edu.utah.AHRQ.PSI_15_v4_3.AHRQ_PSI_Process</knowledgeModulePrimaryProcessName>
+	</kmMetadata>
+	<kmMetadata>
+		<identifier scopingEntityId="edu.utah" businessId="AHRQ_PSI_15" version="4.3.1"/>
+		<purpose language="en">AHRQ Patient Safety Indicator 13, Postoperative Sepsis Rate</purpose>
+		<explanation language="en">some explanation of the KM</explanation>
+		<executionEngine>org.opencds.service.drools.v55.DroolsAdapter</executionEngine>
+		<dataModel>org.opencds.vmr^VMR^1.0</dataModel>
+		<knowledgeModulePrimaryProcessName>edu.utah.AHRQ.PSI_15_v4_3.AHRQ_PSI_Process</knowledgeModulePrimaryProcessName>
+	</kmMetadata>
+</kmm:kmMetadataList>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OpenCdsConceptMappingSpecificationFile>
+	<specificationNotes>Created manually from AHRQ PSI specifications.</specificationNotes>
+    <openCdsConcept code="C290" displayName="Immunocompromised State"/>
+    <conceptDeterminationMethod code="C267" displayName="AHRQ v4.3"/>
+    <membersForCodeSystem codeSystem="2.16.840.1.113883.6.103" codeSystemName="ICD9CM diagnoses">
+    	<CD code="042" displayName="HUMAN IMMUNODEFICIENCY VIRUS DISEASE"/>
+    	<CD code="136.3" displayName="PNEUMOCYSTOSIS"/>
+    	<CD code="199.2" displayName="MALIGNANT NEOPLASM ASSOCIATED WITH TRANSPLANTED ORGAN (OCT08)"/>
+    	<CD code="238.77" displayName="NEOPLASM OF UNCERTAIN BEHAVIOR, POST-TRANSPLANT LYMPHOPROLIFERATIVE DISORDER (PTLD) (OCT08)"/>
+    	<CD code="238.79" displayName="NEOPLASM OF UNCERTAIN BEHAVIOR, OTHER LYMPHATIC AND HEMATOPOIETIC TISSUES (OCT08)"/>
+    	<CD code="260" displayName="KWASHIORKOR (OCT05)"/>
+    	<CD code="261" displayName="NUTRITIONAL MARASMUS (OCT05)"/>
+    	<CD code="262" displayName="OTH SEVERE MALNUTRITION (OCT05)"/>
+    	<CD code="238.73" displayName="HI GRDE MYELODYS SYN LES (OCT06)"/>
+    	<CD code="238.76" displayName="MYELOFI W MYELO METAPLAS OCT06"/>
+    	<CD code="279.00" displayName="HYPOGAMMAGLOBULINEM NOS"/>
+    	<CD code="279.01" displayName="SELECTIVE IGA IMMUNODEF"/>
+    	<CD code="279.02" displayName="SELECTIVE IGM IMMUNODEF"/>
+    	<CD code="279.03" displayName="SELECTIVE IG DEFIC NEC"/>
+    	<CD code="279.04" displayName="CONG HYPOGAMMAGLOBULINEM"/>
+    	<CD code="279.05" displayName="IMMUNODEFIC W HYPER-IGM"/>
+    	<CD code="279.06" displayName="COMMON VARIABL IMMUNODEF"/>
+    	<CD code="279.09" displayName="HUMORAL IMMUNITY DEF NEC"/>
+    	<CD code="279.10" displayName="IMMUNDEF T-CELL DEF NOS"/>
+    	<CD code="279.11" displayName="DIGEORGES SYNDROME"/>
+    	<CD code="279.12" displayName="WISKOTT-ALDRICH SYNDROME"/>
+    	<CD code="279.13" displayName="NEZELOFS SYNDROME"/>
+    	<CD code="279.19" displayName="DEFIC CELL IMMUNITY NOS"/>
+    	<CD code="279.41" displayName="AUTOIMMUNE LYMPHOPROLIFERATIVE SYNDROME ALPS (OCT09)"/>
+    	<CD code="279.49" displayName="AUTOIMMUNE DISEASE, NOT ELSEWHERE CLASSIFIED (OCT09)"/>
+    	<CD code="279.50" displayName="GRAFT-VERSUS-HOST DISEASE UNSPECIFIED (OCT08)"/>
+    	<CD code="279.51" displayName="ACUTE GRAFT-VERSUS-HOST DISEASE (OCT08)"/>
+    	<CD code="279.52" displayName="CHRONIC GRAFT-VERSUS-HOST DISEASE (OCT08)"/>
+    	<CD code="279.53" displayName="ACUTE ON CHRONIC GRAFT-VERSUS-HOST DISEASE (OCT08)"/>
+    	<CD code="279.2" displayName="COMBINED IMMUNITY DEFICIENCY"/>
+    	<CD code="279.3" displayName="UNSPECIFIED IMMUNITY DEFICIENCY"/>
+    	<CD code="279.4" displayName="AUTOIMMUNE DISEASE, NOT ELSEWHERE CLASSIFIED"/>
+    	<CD code="279.8" displayName="OTHER SPECIFIED DISORDERS INVOLVING THE IMMUNE MECHANISM"/>
+    	<CD code="279.9" displayName="UNSPECIFIED DISORDER OF IMMUNE MECHANISM"/>
+    	<CD code="284.09" displayName="CONST APLASTC ANEMIA NEC (OCT06)"/>
+    	<CD code="284.1" displayName="PANCYTOPENIA (OCT06)"/>
+    	<CD code="288.0" displayName="AGRANULOCYTOSIS (OCT05)"/>
+    	<CD code="288.00" displayName="NEUTROPENIA NOS (OCT06)"/>
+    	<CD code="288.01" displayName="CONGENITAL NEUTROPENIA (OCT06)"/>
+    	<CD code="288.02" displayName="CYCLIC NEUTROPENIA (OCT06)"/>
+    	<CD code="288.03" displayName="DRUG INDUCED NEUTROPENIA (OCT06)"/>
+    	<CD code="288.09" displayName="NEUTROPENIA NEC (OCT06)"/>
+    	<CD code="288.1" displayName="FUNCTION DIS NEUTROPHILS (OCT05)"/>
+    	<CD code="288.2" displayName="GENETIC ANOMALY LEUKOCYT (OCT05)"/>
+    	<CD code="288.4" displayName="HEMOPHAGOCYTIC SYNDROMES (OCT06)"/>
+    	<CD code="288.50" displayName="LEUKOCYTOPENIA NOS (OCT06)"/>
+    	<CD code="288.51" displayName="LYMPHOCYTOPENIA (OCT06)"/>
+    	<CD code="288.59" displayName="DECREASED WBC COUNT NEC (OCT06)"/>
+    	<CD code="289.53" displayName="NEUTROPENIC SPLENOMEGALY (OCT06)"/>
+    	<CD code="289.83" displayName="MYELOFIBROSIS (OCT06)"/>
+    	<CD code="403.01" displayName="MAL HYP KIDNEY W CHR KID (OCT05)"/>
+    	<CD code="403.11" displayName="BEN HYP KIDNEY W CHR KID (OCT05)"/>
+    	<CD code="403.91" displayName="HYP KIDNEY NOS W CHR KID (OCT05)"/>
+    	<CD code="404.02" displayName="MAL HY HRT/KID W CHR KID (OCT05)"/>
+    	<CD code="404.03" displayName="MAL HYP HRT/KID W HF/KID (OCT05)"/>
+    	<CD code="404.12" displayName="BEN HYP HT/KID W CHR KID (OCT05)"/>
+    	<CD code="404.13" displayName="BEN HYP HT/KID W HF/KID (OCT05)"/>
+    	<CD code="404.92" displayName="HYP HT/KID NOS W CHR KID (OCT05)"/>
+    	<CD code="404.93" displayName="HYP HRT/KID NOS W HF/KID (OCT05)"/>
+    	<CD code="579.3" displayName="INTEST POSTOP NONABSORB (OCT05)"/>
+    	<CD code="585" displayName="CHRONIC KIDNEY DISEASE (OCT05)"/>
+    	<CD code="585.5" displayName="CHRON KIDNEY DIS STAGE V (OCT05)"/>
+    	<CD code="585.6" displayName="END STAGE RENAL DISEASE (OCT05)"/>
+    	<CD code="996.8" displayName="COMPLICATIONS OF TRANSPLANTED ORGAN"/>
+    	<CD code="996.80" displayName="COMP ORGAN TRANSPLNT NOS"/>
+    	<CD code="996.81" displayName="COMPL KIDNEY TRANSPLANT"/>
+    	<CD code="996.82" displayName="COMPL LIVER TRANSPLANT"/>
+    	<CD code="996.83" displayName="COMPL HEART TRANSPLANT"/>
+    	<CD code="996.84" displayName="COMPL LUNG TRANSPLANT"/>
+    	<CD code="996.85" displayName="COMPL MARROW TRANSPLANT"/>
+    	<CD code="996.86" displayName="COMPL PANCREAS TRANSPLNT"/>
+    	<CD code="996.87" displayName="COMP INTESTINE TRANSPLNT"/>
+    	<CD code="996.89" displayName="COMP OTH ORGAN TRANSPLNT"/>
+    	<CD code="V42.0" displayName="KIDNEY REPLACED BY TRANSPLANT"/>
+    	<CD code="V42.1" displayName="HEART REPLACED BY TRANSPLANT"/>
+    	<CD code="V42.6" displayName="LUNG REPLACED BY TRANSPLANT"/>
+    	<CD code="V42.7" displayName="LIVER REPLACED BY TRANSPLANT"/>
+    	<CD code="V42.8" displayName="OTHER SPECIFIED ORGAN OR TISSUE"/>
+    	<CD code="V42.81" displayName="BONE MARROW SPECIFIED BY TRANSPLANT"/>
+    	<CD code="V42.82" displayName="PERIPHERAL STEM CELLS REPLACED BY TRANSPLANT"/>
+    	<CD code="V42.83" displayName="PANCREAS REPLACED BY TRANSPLANT"/>
+    	<CD code="V42.84" displayName="INTESTINES REPLACE BY TRANSPLANT"/>
+    	<CD code="V42.89" displayName="OTHER REPLACED BY TRANSPLANT"/>
+    	<CD code="V45.1" displayName="RENAL DIALYSIS STATUS (OCT05)"/>
+    	<CD code="V45.11" displayName="RENAL DIALYSIS STATUS (OCT08)"/>
+    	<CD code="V56.0" displayName="RENAL DIALYSIS ENCOUNTER (OCT05)"/>
+    	<CD code="V56.1" displayName="FT/ADJ XTRCORP DIAL CATH (OCT05)"/>
+    	<CD code="V56.2" displayName="FIT/ADJ PERIT DIAL CATH (OCT05)"/>
+
+   	</membersForCodeSystem>
+</OpenCdsConceptMappingSpecificationFile>

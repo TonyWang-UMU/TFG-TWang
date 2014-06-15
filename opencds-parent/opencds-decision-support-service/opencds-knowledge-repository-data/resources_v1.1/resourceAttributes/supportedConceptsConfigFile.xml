@@ -1,0 +1,828 @@
+<?xml version="1.0" encoding="UTF-8"?>
+     <SupportedOpenCdsConceptsConfigFile>
+          <supportedConceptsForType>
+               <openCdsConceptType>conceptDeterminationMethod</openCdsConceptType>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C265" displayName="UUHC"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C45" displayName="NQF"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C74" displayName="Reportable Disease"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C266" displayName="IMHC"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C464" displayName="AHRQ v4.4"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C267" displayName="AHRQ v4.3"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C36" displayName="OpenCDS"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C263" displayName="HEDIS 2011"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C264" displayName="HEDIS 2012"></openCdsConcept>
+               </supportedOpenCdsConcept>
+          </supportedConceptsForType>
+          <supportedConceptsForType>
+               <openCdsConceptType>gender</openCdsConceptType>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C404" displayName="Other or Unknown Gender"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C31" displayName="Female"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C30" displayName="Male"></openCdsConcept>
+               </supportedOpenCdsConcept>
+          </supportedConceptsForType>
+          <supportedConceptsForType>
+               <openCdsConceptType>clinicalStatementRelationship</openCdsConceptType>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C406" displayName="Parts include"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C405" displayName="Part of"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C438" displayName="Discharge Dx"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C439" displayName="Dx POA"></openCdsConcept>
+               </supportedOpenCdsConcept>
+          </supportedConceptsForType>
+          <supportedConceptsForType>
+               <openCdsConceptType>entityRelationship</openCdsConceptType>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C384" displayName="Is Component Of"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C383" displayName="Has Component"></openCdsConcept>
+               </supportedOpenCdsConcept>
+          </supportedConceptsForType>
+          <supportedConceptsForType>
+               <openCdsConceptType>evaluatedPersonRelationship</openCdsConceptType>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C386" displayName="Genetic Relationship"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C394" displayName="Public Health Case"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C385" displayName="Family Relationship"></openCdsConcept>
+               </supportedOpenCdsConcept>
+          </supportedConceptsForType>
+          <supportedConceptsForType>
+               <openCdsConceptType>encounterType</openCdsConceptType>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C381" displayName="Elective Surgery Encounter"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C44" displayName="Outpatient encounter"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C238" displayName="Inpatient Encounter"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C239" displayName="Emergency Department Encounter"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C61" displayName="Obstetrics and gynecology encounter"></openCdsConcept>
+               </supportedOpenCdsConcept>
+          </supportedConceptsForType>
+          <supportedConceptsForType>
+               <openCdsConceptType>observationFocus</openCdsConceptType>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C467" displayName="Denominator Value"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C76" displayName="Reportable Chlamydia Disease"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C82" displayName="Strep Pneumo Test-deprecated"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C86" displayName="Reportable Influenza Disease"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C271" displayName="Salmonella Test for Organism"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C447" displayName="AHRQ PSI-7 Central Line Blood Infection"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C53" displayName="Quality measure"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C270" displayName="Chlamydia Test Pos/Neg"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C486" displayName="Admission Source"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C453" displayName="AHRQ PSI-14 PostOp Wound Dehiscence"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C482" displayName="NUBC Value Sets"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C443" displayName="AHRQ PSI-3 Pressure Ulcer"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C457" displayName="AHRQ PSI-18 Obstetric Trauma Vag. w/Instr."></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C83" displayName="Influenza Test-deprecated"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C468" displayName="Numerator-Denominator"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C272" displayName="Salmonella Test Pos/Neg-deprecated"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C448" displayName="AHRQ PSI-8 PostOp Hip Fracture"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C444" displayName="AHRQ PSI-4 Death Rate Treatable Complications"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C487" displayName="Admission Status"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C440" displayName="AHRQ PSI-11 Resp. Failure"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C454" displayName="AHRQ PSI-15 Accidental Puncture or Laceration"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C458" displayName="AHRQ PSI-19 Obstetric Trauma Vag. w/o Instr."></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C80" displayName="Chlamydia and Gonorrhea Panel"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C465" displayName="Encounter Number"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C469" displayName="Assertion values"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C78" displayName="Reportable Disease or Condition"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C64" displayName="Valid Immunizations"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C450" displayName="AHRQ PSI-10 PostOp Phys. Metab. Derangement"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C449" displayName="AHRQ PSI-9 PostOp Hemorrhage or Hematoma"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C262" displayName="Influenza Test Pos/Neg"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C84" displayName="Reportable Salmonella Disease"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C475" displayName="Inpatient Discharge Disposition"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C441" displayName="AHRQ Safety Measure"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C445" displayName="AHRQ PSI-5 Foreign Body Left"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C55" displayName="Num and denom criteria met"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C273" displayName="Strep Pneumo Test for Organism-deprecated"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C455" displayName="AHRQ PSI-16 Transfusion Reaction"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C59" displayName="Papanicolaou smear"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C451" displayName="AHRQ PSI-12 PostOp P.Embolism or DVT"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C81" displayName="Salmonella Test-deprecated"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C269" displayName="Chlamydia Test for Organism"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C65" displayName="Invalid Immunizations"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C261" displayName="Influenza Test for Organism"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C466" displayName="Numerator Value"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C85" displayName="Reportable Strep Pneumo Disease"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C442" displayName="AHRQ PSI-2 Death in Low-Mortality DRG"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C446" displayName="AHRQ PSI-6 Iatrogenic Pneumothorax"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C54" displayName="Denominator criteria met"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C274" displayName="Strep Pneumo Test Pos/Neg"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C456" displayName="AHRQ PSI-17 Birth Trauma Injury to Neonate"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C75" displayName="Microbiology Finding"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C452" displayName="AHRQ PSI-13 PostOp Sepsis"></openCdsConcept>
+               </supportedOpenCdsConcept>
+          </supportedConceptsForType>
+          <supportedConceptsForType>
+               <openCdsConceptType>observationMethod</openCdsConceptType>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C249" displayName="DFA Lab Method"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C252" displayName="DNA present by Probe and target amplification Lab Method"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C251" displayName="Ag identified (ord results) Lab Method"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C244" displayName="Ag Present by IF Lab Method"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C250" displayName="Organism Specific Culture (nom) Lab Method"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C246" displayName="Culture (nom) Lab Method"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C253" displayName="Organism Specific Culture (ord) Lab Method"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C254" displayName="Ag present by EIA Lab Method"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C248" displayName="PCR (nom) Lab Method"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C247" displayName="PCR (ord) Lab Method"></openCdsConcept>
+               </supportedOpenCdsConcept>
+          </supportedConceptsForType>
+          <supportedConceptsForType>
+               <openCdsConceptType>observationCodedValue</openCdsConceptType>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C87" displayName="Result Positive"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C478" displayName="Deceased"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C92" displayName="Test Missing"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C479" displayName="Transfer to Acute Care Faciity"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C91" displayName="Result Value Missing"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C484" displayName="Transfer from Hospital (different facility)"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C258" displayName="Chlamydia Species"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C90" displayName="Result Error or Indeterminate"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C260" displayName="Salmonella Species"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C257" displayName="Influenza Species"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C483" displayName="Transfer from Skilled Nursing Facility"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C259" displayName="Strep Pneumo Species"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C485" displayName="Transfer from another Health Care Facility"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C73" displayName="NQF - 0032, v1"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C72" displayName="NQF - 0031, v1"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C488" displayName="Elective Surgery"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C88" displayName="Result Negative"></openCdsConcept>
+               </supportedOpenCdsConcept>
+          </supportedConceptsForType>
+          <supportedConceptsForType>
+               <openCdsConceptType>observationInterpretation</openCdsConceptType>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C242" displayName="Micro-organism Identified"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C243" displayName="Present"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C96" displayName="Initial"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C94" displayName="Negative"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C95" displayName="Final"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C93" displayName="Positive"></openCdsConcept>
+               </supportedOpenCdsConcept>
+          </supportedConceptsForType>
+          <supportedConceptsForType>
+               <openCdsConceptType>observationCriticality</openCdsConceptType>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C429" displayName="Observation Criticality Stat"></openCdsConcept>
+               </supportedOpenCdsConcept>
+          </supportedConceptsForType>
+          <supportedConceptsForType>
+               <openCdsConceptType>observationTargetBodySite</openCdsConceptType>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C241" displayName="Respiratory Sample"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C268" displayName="Serum"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C256" displayName="Any Body Site"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C255" displayName="Unspecified Body Site"></openCdsConcept>
+               </supportedOpenCdsConcept>
+          </supportedConceptsForType>
+          <supportedConceptsForType>
+               <openCdsConceptType>observationTargetBodySiteLaterality</openCdsConceptType>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C403" displayName="Observation Target Right Body Site"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C402" displayName="Observation Target Left Body Site"></openCdsConcept>
+               </supportedOpenCdsConcept>
+          </supportedConceptsForType>
+          <supportedConceptsForType>
+               <openCdsConceptType>problemAffectedBodySiteLaterality</openCdsConceptType>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C428" displayName="Problem Affected Right Body Site"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C427" displayName="Problem Affected Left Body Site"></openCdsConcept>
+               </supportedOpenCdsConcept>
+          </supportedConceptsForType>
+          <supportedConceptsForType>
+               <openCdsConceptType>problem</openCdsConceptType>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C344" displayName="Accidental Puncture or Laceration"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C299" displayName="Hemiplegia, Paraplegia, or Quadriplegia"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C348" displayName="Injury to Brachial Plexus"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C409" displayName="MDC 4 Diseases Disorders of Respiratory Sys."></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C334" displayName="Bone Malignancy"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C328" displayName="Cardiac Arrest"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C330" displayName="Delirium and Other Psychoses"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C38" displayName="Diabetes mellitus"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C318" displayName="Iatrogenic Pneumothorax"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C290" displayName="Immunocompromised State"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C307" displayName="Lung Cancer"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C320" displayName="Pleural Effusion"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C289" displayName="Cancer"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C39" displayName="Asthma"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C324" displayName="Seizure"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C338" displayName="Physiologic and Metabolic Derangements"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C310" displayName="Hemorrhage"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C285" displayName="Neuromuscular Disorder"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C303" displayName="Influenza"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C472" displayName="MDC 9 Skin, Subcutaneous Tissue, and Breast"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C315" displayName="Anemia"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C349" displayName="Osteogenesis Imperfecta"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C335" displayName="Self-inflicted Injury"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C329" displayName="Poisoning"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C291" displayName="Low-mortality DRG"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C345" displayName="Transfusion Reaction"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C319" displayName="Chest Trauma"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C331" displayName="Anoxic Brain Injury"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C321" displayName="Hospital-associated Infection (HAI)"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C306" displayName="Viral Pneumonia"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C311" displayName="Gastrointestinal (GI) Hemorrhage"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C325" displayName="Syncope"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C339" displayName="Acute Kidney Failure"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C286" displayName="Craniofacial Anomoly"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C42" displayName="Chronic obstructive lung disease"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C302" displayName="Abortion-related and Postpartum OB Pulm. Embolism"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C352" displayName="Vaginal Delivery MS-DRG"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C301" displayName="Pulmonary Embolism"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C346" displayName="Birth Trauma"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C316" displayName="Alcoholism"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C292" displayName="Low-mortality MS-DRG"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C342" displayName="Cardiac Arrhythmia"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C326" displayName="Stroke and Occlusion of Arteries"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C332" displayName="Metastatic Cancer"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C309" displayName="Shock or Cardiac Arrest"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C336" displayName="Postoperative Hemorrhage"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C341" displayName="Acute Myocardial Infarction"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C410" displayName="MDC 5 Diseases or Disorders of Circulatory System"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C293" displayName="Pressure Ulcer"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C312" displayName="Abortion-related Shock"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C351" displayName="Vaginal Delivery DRG"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C287" displayName="Degenerative Neurological Disorder"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C322" displayName="Central Line-associated Blood Stream Infection"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C305" displayName="Respiratory Complications"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C284" displayName="Acute Respiratory Failure"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C408" displayName="MDC 14 Pregnancy, Childbirth, and Puerperium"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C347" displayName="Preterm Infact w Birth Wt LT 2000 gm"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C317" displayName="Foreign Body Left During Procedure"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C343" displayName="Deep Vein Thrombosis"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C333" displayName="Lymphoid Malignancy"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C337" displayName="Postoperative Hematoma"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C327" displayName="Coma"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C300" displayName="Spina Bifida or Anoxic Brain Damage"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C340" displayName="Chronic Renal Failure"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C323" displayName="Hip Fracture"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C308" displayName="Sepsis"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C304" displayName="Pneumonia"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C380" displayName="Infection"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C350" displayName="Obstetric Trauma"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C313" displayName="GI Hemorrhage / Acute Ulcer"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C288" displayName="Trauma"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C294" displayName="Pressure Ulcer Stage"></openCdsConcept>
+               </supportedOpenCdsConcept>
+          </supportedConceptsForType>
+          <supportedConceptsForType>
+               <openCdsConceptType>problemStatus</openCdsConceptType>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C422" displayName="Resolved"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C425" displayName="Episodic"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C423" displayName="In Remission"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C424" displayName="Chronic"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C421" displayName="Active Problem"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C426" displayName="In Treatment"></openCdsConcept>
+               </supportedOpenCdsConcept>
+          </supportedConceptsForType>
+          <supportedConceptsForType>
+               <openCdsConceptType>problemSeverity</openCdsConceptType>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C419" displayName="Debilitating"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C420" displayName="Annoying"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C418" displayName="Life-Threatening"></openCdsConcept>
+               </supportedOpenCdsConcept>
+          </supportedConceptsForType>
+          <supportedConceptsForType>
+               <openCdsConceptType>problemImportance</openCdsConceptType>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C416" displayName="Primary"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C417" displayName="Secondary"></openCdsConcept>
+               </supportedOpenCdsConcept>
+          </supportedConceptsForType>
+          <supportedConceptsForType>
+               <openCdsConceptType>procedure</openCdsConceptType>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C48" displayName="Breast cancer screening"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C372" displayName="Interruption of Vena Cava"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C297" displayName="Surgical Discharge DRG"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C477" displayName="Low Mortality DRG"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C362" displayName="Drainage of Hematoma"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C370" displayName="Procedure on Face"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C364" displayName="Mechanical Ventilation &gt; 96 Hours"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C360" displayName="Hip Fracture Repair"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C374" displayName="Abdominopelvic Procedure"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C376" displayName="Instrument-assisted Delivery"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C47" displayName="Unilateral mastectomy"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C436" displayName="Emergency Room Procedure"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C357" displayName="Thoracic Surgery"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C398" displayName="Papanicolaou test"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C359" displayName="Cardiac Procedure"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C295" displayName="Medical Discharge DRG"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C367" displayName="Tracheostomy"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C355" displayName="Shock or Cardiac Arrest Proc."></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C407" displayName="ENT / neck procedure"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C353" displayName="Debridement or Pedicle Graft"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C369" displayName="Laryngeal or Pharyngeal Surgery"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C60" displayName="Hysterectomy"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C298" displayName="Surgical Discharge MS-DRG"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C363" displayName="Dialysis"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C378" displayName="Immunocompromised State Proc."></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C373" displayName="Reclosure Procedure"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C49" displayName="Mastectomy"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C371" displayName="Nose, Mouth, or Pharynx Proc."></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C365" displayName="Mechanical Ventilation &lt; 96 Hours"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C375" displayName="Spine Surgery"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C361" displayName="Control of PostOp Hemorrhage"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C476" displayName="Low Mortality MS-DRG"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C377" displayName="Operating Room Procedure"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C46" displayName="Bilateral mastectomy"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C356" displayName="Diaphragmatic Surgery"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C437" displayName="Inpatient Procedure"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C366" displayName="Reintubation"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C435" displayName="Outpatient Procedure"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C296" displayName="Medical Discharge MS-DRG"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C358" displayName="Lung or Pleural Biopsy"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C368" displayName="Esophageal Resection"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C354" displayName="Lung Cancer Procedure"></openCdsConcept>
+               </supportedOpenCdsConcept>
+          </supportedConceptsForType>
+          <supportedConceptsForType>
+               <openCdsConceptType>procedureCriticality</openCdsConceptType>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C431" displayName="Procedure Criticality Urgent"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C432" displayName="Procedure Criticality Elective"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C430" displayName="Procedure Criticality Stat"></openCdsConcept>
+               </supportedOpenCdsConcept>
+          </supportedConceptsForType>
+          <supportedConceptsForType>
+               <openCdsConceptType>procedureTargetBodySiteLaterality</openCdsConceptType>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C399" displayName="Procedure Target Left Body Site"></openCdsConcept>
+               </supportedOpenCdsConcept>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C400" displayName="Procedure Target Right Body Site"></openCdsConcept>
+               </supportedOpenCdsConcept>
+          </supportedConceptsForType>
+          <supportedConceptsForType>
+               <openCdsConceptType>immunization</openCdsConceptType>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C63" displayName="Human Papilloma Virus vaccine"></openCdsConcept>
+               </supportedOpenCdsConcept>
+          </supportedConceptsForType>
+          <supportedConceptsForType>
+               <openCdsConceptType>substanceAdministrationCriticality</openCdsConceptType>
+               <supportedOpenCdsConcept>
+                    <openCdsConcept code="C433" displayName="Substance Administration Criticality Stat"></openCdsConcept>
+               </supportedOpenCdsConcept>
+          </supportedConceptsForType>
+     </SupportedOpenCdsConceptsConfigFile>

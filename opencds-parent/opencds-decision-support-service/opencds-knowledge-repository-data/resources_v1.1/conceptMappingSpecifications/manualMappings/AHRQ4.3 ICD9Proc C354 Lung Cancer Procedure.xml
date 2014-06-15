@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OpenCdsConceptMappingSpecificationFile>
+	<specificationNotes>Created manually from AHRQ PSI specifications.</specificationNotes>
+    <openCdsConcept code="C354" displayName="Lung Cancer Procedure"/>
+    <conceptDeterminationMethod code="C267" displayName="AHRQ"/>
+    <membersForCodeSystem codeSystem="2.16.840.1.113883.6.104" codeSystemName="ICD9CM procedures">
+    	<CD code="32.39" displayName="OTH SEG LUNG RESECT NOS"/>
+    	<CD code="32.49" displayName="LOBECTOMY OF LUNG NEC"/>
+    	<CD code="32.59" displayName="OTHER PHENUMONECTOMY NOS"/>
+   	</membersForCodeSystem>
+</OpenCdsConceptMappingSpecificationFile>

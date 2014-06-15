@@ -1,0 +1,80 @@
+<rule>
+  <name>PSI_12_DenomExcludeMissingEncounterBeginningTime</name>
+  <modelVersion>1.0</modelVersion>
+  <attributes>
+    <attribute>
+      <attributeName>ruleflow-group</attributeName>
+      <value>exclusions</value>
+    </attribute>
+    <attribute>
+      <attributeName>dialect</attributeName>
+      <value>java</value>
+    </attribute>
+  </attributes>
+  <metadataList/>
+  <lhs>
+    <dslSentence>
+      <definition>Initialize.evalTime.fpId.evalpId - Note that all criteria below must be met for the rule to fire.</definition>
+      <values/>
+    </dslSentence>
+    <freeForm>
+      <text>// This rule depends on the submission of all relevant data 
+// for exactly one encounter for one patient at a time.</text>
+    </freeForm>
+    <fact>
+      <constraintList>
+        <constraints>
+          <fieldConstraint>
+            <operator>!= null</operator>
+            <constraintValueType>0</constraintValueType>
+            <expression>
+              <parts/>
+            </expression>
+            <factType>EncounterEvent</factType>
+            <fieldName>encounterEventTime</fieldName>
+            <fieldType>IVLDate</fieldType>
+          </fieldConstraint>
+          <fieldConstraint>
+            <operator>== null</operator>
+            <constraintValueType>0</constraintValueType>
+            <expression>
+              <parts/>
+            </expression>
+            <factType>EncounterEvent</factType>
+            <fieldName>low</fieldName>
+            <fieldType>Date</fieldType>
+            <parent class="fieldConstraint" reference="../../fieldConstraint"/>
+          </fieldConstraint>
+        </constraints>
+      </constraintList>
+      <factType>EncounterEvent</factType>
+      <isNegated>false</isNegated>
+    </fact>
+  </lhs>
+  <rhs>
+    <dslSentence>
+      <definition>Assert to both Rules and Process that {AssertionToAdd:ENUM:Assertion.value}</definition>
+      <values>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+          <value>HasExclusions</value>
+        </org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue>
+          <value>AssertionToAdd</value>
+          <id>ENUM:Assertion.value</id>
+        </org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue>
+      </values>
+    </dslSentence>
+    <dslSentence>
+      <definition>Assert String {X} for both Rules and Process</definition>
+      <values>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+          <value>PSI_12_DenomExcludeMissingEncounterBeginningTime</value>
+        </org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+          <value>X</value>
+        </org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+      </values>
+    </dslSentence>
+  </rhs>
+  <isNegated>false</isNegated>
+</rule>

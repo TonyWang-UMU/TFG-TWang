@@ -1,0 +1,41 @@
+<rule>
+  <name>Initialize</name>
+  <modelVersion>1.0</modelVersion>
+  <attributes>
+    <attribute>
+      <attributeName>ruleflow-group</attributeName>
+      <value>initialize</value>
+    </attribute>
+  </attributes>
+  <metadataList/>
+  <lhs>
+    <freeForm>
+      <text>//     This KM depends on the submission of all relevant data 
+// for exactly one encounter for one patient at a time.
+//
+//     It returns two observations, nested within a response
+// wrapper observation, with two integers representing both
+// the numerator and the denominator as either 0 or 1, suitable
+// for direct storage in a database.</text>
+    </freeForm>
+    <dslSentence>
+      <definition>Concept.Determination.Identify - Concept is not determined according to {X:ENUM:VMRTemplateConcept.determinationMethodCode}</definition>
+      <values>
+        <org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+          <value>C267</value>
+        </org.drools.guvnor.client.modeldriven.brl.DSLVariableValue>
+        <org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue>
+          <value>X</value>
+          <id>ENUM:VMRTemplateConcept.determinationMethodCode</id>
+        </org.drools.guvnor.client.modeldriven.brl.DSLComplexVariableValue>
+      </values>
+    </dslSentence>
+  </lhs>
+  <rhs>
+    <dslSentence>
+      <definition>Concept.Determination.Remove - Remove concept without desired concept determination method</definition>
+      <values/>
+    </dslSentence>
+  </rhs>
+  <isNegated>false</isNegated>
+</rule>

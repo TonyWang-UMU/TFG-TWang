@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OpenCdsConceptMappingSpecificationFile>
+	<specificationNotes>Created manually from AHRQ PSI specifications.</specificationNotes>
+    <openCdsConcept code="C357" displayName="Thoracic Surgery"/>
+    <conceptDeterminationMethod code="C267" displayName="AHRQ v4.3"/>
+    <membersForCodeSystem codeSystem="2.16.840.1.113883.6.104" codeSystemName="ICD9CM procedures">
+    	<CD code="05.22" displayName="SYMPATHECTOMY CERVICAL"/>
+    	<CD code="05.23" displayName="SYMPATHECTOMY LUMBAR"/>
+    	<CD code="05.29" displayName="OTHER SYMPATHECTOMY AND GANGLIONECTOMY"/>
+    	<CD code="07.80" displayName="THYMECTOMY, NOT OTHERWISE SPECIFIED"/>
+    	<CD code="07.81" displayName="OTHER PARTIAL EXCISION OF THYMUS"/>
+    	<CD code="07.82" displayName="OTHER TOTAL EXCISION OF THYMUS"/>
+    	<CD code="07.83" displayName="THORACOSCOPIC PARTIAL EXCISION OF THYMUS"/>
+    	<CD code="07.84" displayName="THORACOSCOPIC TOTAL EXCISION OF THYMUS"/>
+    	<CD code="31.21" displayName="MEDIASTINAL TRACHEOSTOMY"/>
+    	<CD code="31.45" displayName="OPEN BIOPSY OF LARYNX OR TRACHEA"/>
+    	<CD code="31.73" displayName="CLOSURE OF OTHER FISTULA OF TRACHEA"/>
+    	<CD code="31.79" displayName="OTHER REPAIR AND PLASTIC OPERATIONS ON TRACHEA"/>
+    	<CD code="31.99" displayName="OTHER OPERATIONS ON TRACHEA"/>
+    	<CD code="32.09" displayName="OTHER LOCAL EXCISION OR DESTRUCTION OF LESION OR TISSUE OF BRONCHUS"/>
+    	<CD code="32.1" displayName="OTHER EXCISION OF BRONCHUS"/>
+    	<CD code="32.20" displayName="THORAC EXC LUNG LESION"/>
+    	<CD code="32.21" displayName="PLICATION OF EMPHYSEMATIOUS BLEB"/>
+    	<CD code="32.22" displayName="LUNG VOLUME REDUCTION SURGERY"/>
+    	<CD code="32.23" displayName="OPEN ABLTN LUNG LES/TISS (OCT06)"/>
+    	<CD code="32.24" displayName="PERC ABLTN LUNG LES/TISS (OCT06)"/>
+    	<CD code="32.25" displayName="THOR ABLTN LUNG LES/TISS (OCT06)"/>
+    	<CD code="32.26" displayName="ABLTN LUNG TISS NEC/NOS (OCT06)"/>
+    	<CD code="32.27" displayName="BRNC THRMPLSTY, ABLT MSCL"/>
+    	<CD code="32.28" displayName="ENDOSCOPIC EXCISION OR DESTRUCTION OF LESION OR TISSUE OF LUNG"/>
+    	<CD code="32.29" displayName="OTHER LOCAL EXCISION OR DESTRUCTION OF LESION OR TISSUE OF LUNG"/>
+    	<CD code="32.3" displayName="SEGMENTAL RESECTION OF LUNG"/>
+    	<CD code="32.30" displayName="THORAC SEG LUNG RESECT"/>
+    	<CD code="32.39" displayName="OTH SEG LUNG RESECT NOS"/>
+    	<CD code="32.4" displayName="LOBECTOMY OF LUNG"/>
+    	<CD code="32.41" displayName="THORAC LOBECTOMY LUNG"/>
+    	<CD code="32.49" displayName="OTHER LOBECTOMY OF LUNG"/>
+    	<CD code="32.5" displayName="COMPLETE PNEUMONECTOMY"/>
+    	<CD code="32.50" displayName="THORACOSPC PNEUMONECTOMY"/>
+    	<CD code="32.59" displayName="OTHER PNEUMONECTOMY NOS"/>
+    	<CD code="32.6" displayName="RADICAL DISSECTION OF THORACIC STRUCTURES"/>
+    	<CD code="32.9" displayName="OTHER EXCISION OF LUNG"/>
+    	<CD code="33.0" displayName="INCISION OF BRONCHUS"/>
+    	<CD code="33.1" displayName="INCISION OF LUNG"/>
+    	<CD code="33.20" displayName="THORACOSCOPC LUNG BIOPSY"/>
+    	<CD code="33.25" displayName="OPEN BIOPSY OF BRONCHUS"/>
+    	<CD code="33.27" displayName="CLOSED ENDOSCOPIC BIOPSY OF LUNG"/>
+    	<CD code="33.31" displayName="DESTRUCTION OF PHRENIC NERVE FOR COLLAPSE OF LUNG (NO LONGER PERFORMED)"/>
+    	<CD code="33.32" displayName="ARTIFICIAL PNEUMOTHORAX FOR COLLAPSE OF LUNG"/>
+    	<CD code="33.34" displayName="THORACOPLASTY"/>
+    	<CD code="33.39" displayName="OTHER SURGICAL COLLAPSE OF LUNG"/>
+    	<CD code="33.41" displayName="SUTURE OF LACERATION OF BRONCHUS"/>
+    	<CD code="33.42" displayName="CLOSURE OF BRONCHIAL FISTULA"/>
+    	<CD code="33.43" displayName="CLOSURE OF LACERATION OF LUNG"/>
+    	<CD code="33.48" displayName="OTHER REPAIR AND PLASTIC OPERATIONS ON BRONCHUS"/>
+    	<CD code="33.49" displayName="OTHER REPAIR AND PLASTIC OPERATIONS ON LUNG"/>
+    	<CD code="33.5" displayName="LUNG TRANSPLANTATION"/>
+    	<CD code="33.50" displayName="LUNG TRANSPLANTATION, NOS"/>
+    	<CD code="33.51" displayName="UNILATERAL LUNG TRANSPLANTATION"/>
+    	<CD code="33.52" displayName="BILATERAL LUNG TRANSPLANTATION"/>
+    	<CD code="33.6" displayName="COMBINED HEART-LUNG TRANSPLANTATION"/>
+    	<CD code="33.92" displayName="LIGATION OF BRONCHUS"/>
+    	<CD code="33.93" displayName="PUNCTURE OF LUNG"/>
+    	<CD code="33.98" displayName="OTHER OPERATIONS ON BRONCHUS"/>
+    	<CD code="33.99" displayName="OTHER OPERATIONS ON LUNG"/>
+    	<CD code="33.29" displayName="OTHER DIAGNOSTIC PROCEDURE ON LUNG AND BRONCHUS"/>
+    	<CD code="33.33" displayName="PNEUMOPERITONEUM FOR COLLAPSE OF LUNG"/>
+    	<CD code="34.01" displayName="INCISION OF CHEST WALL"/>
+    	<CD code="34.02" displayName="EXPLORATORY THORACOTOMY"/>
+    	<CD code="34.03" displayName="REOPENING OF RECENT THORACOTOMY SITE"/>
+    	<CD code="34.05" displayName="CREATION OF PLEUROPERITONEAL SHUNT"/>
+    	<CD code="34.09" displayName="OTHER INCISION OF PLEURA"/>
+    	<CD code="34.1" displayName="INCISION OF MEDIASTINUM"/>
+    	<CD code="34.20" displayName="THORACOSCOPIC PLEURAL BX"/>
+    	<CD code="34.21" displayName="TRANSPLEURAL THORACOSOCOPY"/>
+    	<CD code="34.22" displayName="MEDIASTINOSCOPY"/>
+    	<CD code="34.23" displayName="BIOPSY OF CHEST WALL"/>
+    	<CD code="34.25" displayName="CLOSED [PERCUTANEOUS][NEEDLE] BIOPSY OF MEDIASTINUM"/>
+    	<CD code="34.26" displayName="OPEN BIOPSY OF MEDIASTINUM"/>
+    	<CD code="34.27" displayName="BIOPSY OF DIAPHRAGM"/>
+    	<CD code="34.28" displayName="OTHER DIAGNOSTIC PROCEDURES ON CHEST WALL, PLEURA, AND DIAPHRAGM"/>
+    	<CD code="34.29" displayName="OTHER DIAGNOSTIC PROCEDURES ON MEDIASTINUM"/>
+    	<CD code="34.3" displayName="EXCISION OR DESTRUCTION OF LESION OR TISSUE OF MEDIASTINUM"/>
+    	<CD code="34.4" displayName="EXCISION OR DESTRUCTION OF LESION OF CHEST WALL"/>
+    	<CD code="34.51" displayName="DECORTICATION OF LUNG"/>
+    	<CD code="34.52" displayName="THORACOSCOPC DECORT LUNG"/>
+    	<CD code="34.59" displayName="OTHER EXCISION OF PLEURA"/>
+    	<CD code="34.71" displayName="SUTURE OF LACERATION OF CHEST WALL"/>
+    	<CD code="34.72" displayName="CLOSURE OF THORACOSTOMY"/>
+    	<CD code="34.73" displayName="CLOSURE OF OTHER FISTULA OF THORAX"/>
+    	<CD code="34.74" displayName="REPAIR OF PECTUS DEFORMITY"/>
+    	<CD code="34.79" displayName="OTHER REPAIR OF CHEST WALL"/>
+    	<CD code="34.81" displayName="EXCISION OF LESION OR TISSUE OF DIAPHRAGM"/>
+    	<CD code="34.82" displayName="SUTURE OF LACERATION OF DIAPHRAGM"/>
+    	<CD code="34.83" displayName="CLOSURE OF FISTULA OF DIAPHRAGM"/>
+    	<CD code="34.84" displayName="OTHER REPAIR OF DIAPHRAGM"/>
+    	<CD code="34.85" displayName="IMPLANTATION OF DIAPHRAGMATIC PACEMAKER"/>
+    	<CD code="34.89" displayName="OTHER OPERATIONS ON DIAPHRAGM"/>
+    	<CD code="34.93" displayName="REPAIR OF PLEURA"/>
+    	<CD code="34.99" displayName="OTHER OPERATIONS ON THORAX, OTHER"/>
+    	<CD code="40.61" displayName="CANNULATION OF THORACIC DUCT"/>
+    	<CD code="40.62" displayName="FISTULIZATION OF THORACIC DUCT"/>
+    	<CD code="40.63" displayName="CLOSURE OF FISTULA OF THORACIC DUCT"/>
+    	<CD code="40.64" displayName="LIGATION OF THORACIC DUCT"/>
+    	<CD code="40.69" displayName="OTHER OPERATIONS ON THORACIC DUCT"/>
+    	<CD code="42.01" displayName="INCISION OF ESOPHAGEAL WEB"/>
+    	<CD code="42.09" displayName="OTHER INCISION OF ESOPHAGUS"/>
+    	<CD code="42.10" displayName="ESOPHAGOSTOMY, NOS"/>
+    	<CD code="42.11" displayName="CERVICAL ESOPHAGOSTOMY"/>
+    	<CD code="42.12" displayName="EXTERIORIZATION OF ESOPHAGEAL POUCH"/>
+    	<CD code="42.19" displayName="OTHER EXTERNAL FISTULIZATION OF ESOPHAGUS"/>
+    	<CD code="42.21" displayName="OPERATIVE ESOPHAGOSCOPY BY INCISION"/>
+    	<CD code="42.25" displayName="OPEN BIOPSY OF ESOPHAGUS"/>
+    	<CD code="42.31" displayName="LOCAL EXCISION OF ESOPHAGEAL DIVERTICULUM"/>
+    	<CD code="42.32" displayName="LOCAL EXCISION OF OTHER LESION OR TISSUE OF ESOPHAGUS"/>
+    	<CD code="42.39" displayName="OTHER DESTRUCTION OF LESION OR TISSUE OF ESOPHAGUS"/>
+    	<CD code="42.40" displayName="ESOPHAGECTOMY, NOS"/>
+    	<CD code="42.41" displayName="PARTIAL ESOPHAGECTOMY"/>
+    	<CD code="42.42" displayName="TOTAL ESOPHAGECTOMY"/>
+    	<CD code="42.51" displayName="INTRATHORACIC ESOPHAGOESOPHAGOSTOMY"/>
+    	<CD code="42.52" displayName="INTRATHORACIC ESOPHAGOGASTROSTOMY"/>
+    	<CD code="42.53" displayName="INTRATHORACIC ESOPHAGEAL ANASTOMOSIS W/ INTERPOSITION OF SMALL BOWEL"/>
+    	<CD code="42.54" displayName="OTHER INTRATHORACIC ESOPHAGOENTEROSTOMY"/>
+    	<CD code="42.55" displayName="INTRATHORACIC ESOPHAGEAL ANASTOMOSIS W/ INTERPOSITION OF COLON"/>
+    	<CD code="42.56" displayName="OTHER INTRATHORACIC ESOPHAGOCOLOSTOMY"/>
+    	<CD code="42.58" displayName="INTRATHORACIC ESOPHAGEAL ANASTOMOSIS W/ OTHER INTERPOSITION"/>
+    	<CD code="42.59" displayName="OTHER INTRATHORACIC ANASTOMOSIS OF ESOPHAGUS"/>
+    	<CD code="42.61" displayName="ANTESTERNAL ESOPHAGOESOPHAGOSTOMY"/>
+    	<CD code="42.62" displayName="ANTESTERNAL ESOPHAGOGASTROSTOMY"/>
+    	<CD code="42.63" displayName="ANTESTERNAL ESOPHAGEAL ANASTOMOSIS W/ INTERPOSITION OF SMALL BOWEL"/>
+    	<CD code="42.64" displayName="OTHER ANTESTERNAL ESOPHAGOENTEROSTOMY"/>
+    	<CD code="42.65" displayName="ANTESTERNAL ESOPHAGEAL ANASTOMOSIS W/ INTERPOSITION OF COLON"/>
+    	<CD code="42.66" displayName="OTHER ANTESTERNAL ESOPHAGOCOLOSTOMY"/>
+    	<CD code="42.68" displayName="OTHER ANTESTERNAL ESOPHAGEAL ANASTOMOSIS W/ INTERPOSITION"/>
+    	<CD code="42.69" displayName="OTHER ANTESTERNAL ANASTOMOSIS OF ESOPHAGUS"/>
+    	<CD code="42.7" displayName="ESOPHAGOMYOTOMY"/>
+    	<CD code="42.81" displayName="INSERTION OF PERMANENT TUBE INTO ESOPHAGUS"/>
+    	<CD code="42.82" displayName="SUTURE OF LACERATION OF ESOPHAGUS"/>
+    	<CD code="42.83" displayName="CLOSURE OF ESOPHAGOSTOMY"/>
+    	<CD code="42.84" displayName="REPAIR OF ESOPHAGEAL FISTULA, NEC"/>
+    	<CD code="42.85" displayName="REPAIR OF ESOPHAGEAL STRICTURE"/>
+    	<CD code="42.86" displayName="PRODUCTION OF SUBCUTANEOUS TUNNEL W/O ESOPHAGEAL ANASTOMOSIS"/>
+    	<CD code="42.87" displayName="OTHER GRAFT OF ESOPHAGUS"/>
+    	<CD code="42.89" displayName="OTHER REPAIR OF ESOPHAGUS"/>
+    	<CD code="43.5" displayName="PROXIMAL GASTRECTOMY"/>
+    	<CD code="43.99" displayName="TOTAL GASTRECTOMY NEC"/>
+    	<CD code="44.65" displayName="ESOPHAGOGASTROPLASTY"/>
+    	<CD code="44.66" displayName="OTHER PROCEDURES FOR CREATION OF ESOPHAGOGASTRIC SPHINCTERIC COMPETENCE"/>
+    	<CD code="44.67" displayName="LAP CREAT ESOPH SPHINCT"/>
+    	<CD code="77.81" displayName="OTH CHEST CAGE OSTECTOMY"/>
+    	<CD code="77.91" displayName="TOT CHEST CAGE OSTECTOMY"/>
+    	<CD code="81.04" displayName="DORSAL AND DORSO-LUMBAR FUSION, ANTERIOR TECHNIQUE"/>
+    	<CD code="81.34" displayName="REFUSION OF DORSAL AND DORSOLUMBAR SPINE, ANTERIOR TECHNIQUE"/>
+   	</membersForCodeSystem>
+</OpenCdsConceptMappingSpecificationFile>
+

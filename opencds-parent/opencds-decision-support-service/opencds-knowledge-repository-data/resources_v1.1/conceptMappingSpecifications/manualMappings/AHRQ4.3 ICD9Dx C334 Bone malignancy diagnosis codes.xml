@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OpenCdsConceptMappingSpecificationFile>
+	<specificationNotes>Created manually from AHRQ PSI specifications.</specificationNotes>
+    <openCdsConcept code="C334" displayName="Bone Malignancy"/>
+    <conceptDeterminationMethod code="C267" displayName="AHRQ v4.3"/>
+    <membersForCodeSystem codeSystem="2.16.840.1.113883.6.103" codeSystemName="ICD9CM diagnoses">
+    	<CD code="170.0" displayName="MAL NEO SKULL/FACE BONE"/>
+    	<CD code="170.1" displayName="MALIGNANT NEO MANDIBLE"/>
+    	<CD code="170.2" displayName="MALIG NEO VERTEBRAE"/>
+    	<CD code="170.3" displayName="MAL NEO RIBS/STERN/CLAV"/>
+    	<CD code="170.4" displayName="MAL NEO LONG BONES ARM"/>
+    	<CD code="170.5" displayName="MAL NEO BONES WRIST/HAND"/>
+    	<CD code="170.6" displayName="MAL NEO PELVIC GIRDLE"/>
+    	<CD code="170.7" displayName="MAL NEO LONG BONES LEG"/>
+    	<CD code="170.8" displayName="MAL NEO BONES ANKLE/FOOT"/>
+    	<CD code="170.9" displayName="MALIG NEOPL BONE NOS"/>
+   	</membersForCodeSystem>
+</OpenCdsConceptMappingSpecificationFile>

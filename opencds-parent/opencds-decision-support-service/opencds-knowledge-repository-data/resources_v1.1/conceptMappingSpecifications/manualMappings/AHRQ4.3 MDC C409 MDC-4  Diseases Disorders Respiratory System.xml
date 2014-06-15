@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OpenCdsConceptMappingSpecificationFile>
+	<specificationNotes>Created manually from AHRQ PSI specifications.</specificationNotes>
+    <openCdsConcept code="C409" displayName="MDC-4 Diseases Disorders Respiratory System"/>
+    <conceptDeterminationMethod code="C267" displayName="AHRQ"/>
+    <membersForCodeSystem codeSystem="2.16.840.1.113883.3.795.12.1.3" codeSystemName="MDC">
+    	<CD code="04" displayName="MDC-4 Diseases Disorders Respiratory System"/>
+   	</membersForCodeSystem>
+</OpenCdsConceptMappingSpecificationFile>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope">
+    <soap:Body>
+        <ns2:evaluateAtSpecifiedTimeResponse xmlns:ns2="http://www.omg.org/spec/CDSS/201105/dss">
+            <evaluationResponse>
+                <finalKMEvaluationResponse>
+                    <kmId scopingEntityId="org.opencds" businessId="Reportable_Disease" version="1.0.0"/>
+                    <kmEvaluationResultData>
+                        <evaluationResultId itemId="Reportable_Disease_EvaluationResult">
+                            <containingEntityId scopingEntityId="edu.utah.its"
+                                businessId="Reportable_Disease_EvaluationResult" version="1.0.0"/>
+                        </evaluationResultId>
+                        <data>
+                            <informationModelSSId scopingEntityId="org.opencds.vmr" businessId="VMR"
+                                version="1.0"/>
+                            <base64EncodedPayload>find.base64.payload.here</base64EncodedPayload>
+                        </data>
+                    </kmEvaluationResultData>
+                </finalKMEvaluationResponse>
+            </evaluationResponse>
+        </ns2:evaluateAtSpecifiedTimeResponse>
+    </soap:Body>
+</soap:Envelope>

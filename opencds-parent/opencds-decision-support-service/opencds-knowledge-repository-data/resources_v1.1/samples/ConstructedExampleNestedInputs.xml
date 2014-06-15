@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<in:cdsInput xmlns:in="org.opencds.vmr.v1_0.schema.cdsinput"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+		xmlns:dt="org.opencds.vmr.v1_0.schema.datatypes"
+		xsi:schemaLocation="org.opencds.vmr.v1_0.schema.cdsinput ..\schema\cdsInput.xsd">
+	<templateId root="2.16.840.1.113883.3.795.11.1.1"/>
+	<vmrInput>
+		<templateId root="2.16.840.1.113883.3.795.11.1.1"/>
+		<patient>
+			<id root="2.16.840.1.113883.19.5" extension="996-756-495"/>
+			<demographics>
+				<birthTime value="19830630"/>
+				<gender codeSystem="2.16.840.1.113883.5" code="F"/>
+			</demographics>
+			<clinicalStatements>
+				<encounterEvents>
+					<encounterEvent>
+						<id root="2.16.840.1.113883.3.795.10.1" extension="7478551"/>
+						<encounterType codeSystem="2.16.840.1.113883.6.96" code="418634005"/>
+						<encounterEventTime low="200003231430" high="200003231430"/>
+						<relatedClinicalStatement>
+							<targetRelationshipToSource codeSystem="1.2.3" code="someCSRole"/>
+							<adverseEvent>
+								<id root="2.16.840.1.113883.3.795.10.1" extension="7478554"/>
+								<adverseEventCode codeSystem="2.16.840.1.113883.6.96" code="418634005"/>
+								<adverseEventAgent codeSystem="2.16.840.1.113883.6.96" code="256442007"/>
+								<documentationTime low="19450917" high="200003231430"/>
+								<adverseEventStatus codeSystem="2.16.840.1.113883.6.96" code="55561003"/>
+							</adverseEvent>
+						</relatedClinicalStatement>
+					</encounterEvent>
+				</encounterEvents>
+				<observationResults>
+					<observationResult>
+						<templateId root="2.16.840.1.113883.10.20.1.32"/> <!-- Result organizer template -->
+						<id root="107c2dc0-67a5-11db-bd13-0800200c9a66"/>
+						<observationFocus code="43789009" codeSystem="2.16.840.1.113883.6.96" displayName="CBC WO DIFFERENTIAL"/>
+						<observationEventTime low="20110803" high="20110803"/>
+						<observationValue/>
+						<relatedClinicalStatement>
+							<targetRelationshipToSource codeSystem="2.16.840.1.113883.5.1002" code="COMP"/>
+							<observationResult>
+								<templateId root="2.16.840.1.113883.10.20.1.31"/> <!-- Result observation template -->
+								<id root="33d27880-eb74-11e0-9572-0800200c9a66"/>
+								<observationFocus code="30313-1" codeSystem="2.16.840.1.113883.6.1" displayName="HGB"/>
+								<observationEventTime low="20110803" high="20110803"/>
+								<observationValue><physicalQuantity value="13.2" unit="g/dl"/></observationValue>
+								<interpretation code="N" codeSystem="2.16.840.1.113883.5.83"/>
+							</observationResult>
+						</relatedClinicalStatement>
+					</observationResult>
+				</observationResults>
+				<!-- current medications -->
+				<substanceAdministrationEvents>
+					<substanceAdministrationEvent>
+						<id root="2.16.840.1.113883.3.795.10.1" extension="4519239"/>
+						<substanceAdministrationGeneralPurpose codeSystem="2.16.840.1.113883.6.5" codeSystemName="SNOMED CT" code="18629005" displayName="Administration of drug or medicament"/>
+						<!--<substanceAdministrationGeneralPurpose codeSystem="2.16.840.1.113883.6.5" codeSystemName="SNOMED CT" code="384810002" displayName="Immunization/vaccination management (procedure)"/>-->
+						<substance>
+							<id root="f4a1d18b-2b92-4399-b4f9-efb1828d267d-2"/>
+							<!-- Hydrochlorothiazide 25 MG Oral Tablet -->
+							<substanceCode codeSystem="2.16.840.1.113883.6.88" code="310798" />
+						</substance>
+						<documentationTime low="20110803" high="20110803"/>
+						<relatedClinicalStatement>
+							<targetRelationshipToSource code="" codeSystem=""/>
+							<observationResult>
+								<templateId root="2.16.840.1.113883.10.20.1.31"/>
+								<id root="5551212"/>
+								<observationFocus code="30313-1" codeSystem="2.16.840.1.113883.6.1" displayName="HGB"/>
+								<observationEventTime low="20110803000000.000-0600" high="20110803000000.000-0600"/>
+								<observationValue>
+									<physicalQuantity value="13.2" unit="g/dl"/>
+								</observationValue>
+								<interpretation code="N" codeSystem="2.16.840.1.113883.5.83"/>
+							</observationResult>
+						</relatedClinicalStatement>
+					</substanceAdministrationEvent>
+				</substanceAdministrationEvents>
+				<substanceAdministrationProposals>
+					<substanceAdministrationProposal>
+						<id root="2.16.840.1.113883.3.795.10.1" extension="SAP123"/>
+						<substanceAdministrationGeneralPurpose codeSystem="2.16.840.1.113883.6.5" codeSystemName="SNOMED CT" code="18629005" displayName="Administration of drug or medicament"/>
+						<!--<substanceAdministrationGeneralPurpose codeSystem="2.16.840.1.113883.6.5" codeSystemName="SNOMED CT" code="384810002" displayName="Immunization/vaccination management (procedure)"/>-->
+						<substance>
+							<id root="f4a1d18b-2b92-4399-b4f9-efb1828d267d-1"/>
+							<!-- Hydrochlorothiazide 25 MG Oral Tablet -->
+							<substanceCode codeSystem="2.16.840.1.113883.6.88" code="310798" />
+						</substance>
+						<proposedAdministrationTimeInterval low="20110803" high="20110803"/>
+						<relatedClinicalStatement>
+							<targetRelationshipToSource code="" codeSystem=""/>
+							<observationResult>
+								<templateId root="2.16.840.1.113883.10.20.1.31"/>
+								<id root="5551212-2"/>
+								<observationFocus code="30313-1" codeSystem="2.16.840.1.113883.6.1" displayName="HGB"/>
+								<observationEventTime low="20110803000000.000-0600" high="20110803000000.000-0600"/>
+								<observationValue>
+									<physicalQuantity value="13.2" unit="g/dl"/>
+								</observationValue>
+								<interpretation code="N" codeSystem="2.16.840.1.113883.5.83"/>
+							</observationResult>
+						</relatedClinicalStatement>
+					</substanceAdministrationProposal>
+				</substanceAdministrationProposals>
+			</clinicalStatements>
+		</patient>
+	</vmrInput>
+</in:cdsInput>

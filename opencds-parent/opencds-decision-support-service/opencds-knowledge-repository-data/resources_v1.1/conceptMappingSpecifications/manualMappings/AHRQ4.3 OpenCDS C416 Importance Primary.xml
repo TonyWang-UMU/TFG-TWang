@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OpenCdsConceptMappingSpecificationFile>
+	<specificationNotes></specificationNotes>
+	<openCdsConcept code="C416" displayName="Importance Primary"></openCdsConcept>
+    <conceptDeterminationMethod code="C267" displayName="AHRQ v4.3"></conceptDeterminationMethod>
+    <membersForCodeSystem codeSystem="2.16.840.1.113883.3.795.12.1.2" codeSystemName="OpenCDS">
+    	<CD code="1" displayName="Primary Importance"/>
+    </membersForCodeSystem>
+</OpenCdsConceptMappingSpecificationFile>   

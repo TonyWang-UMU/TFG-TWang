@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OpenCdsConceptMappingSpecificationFile>
+	<specificationNotes>Created manually because codes are not in Apelon CPT namespace.</specificationNotes>
+    <openCdsConcept code="C51" displayName="Bilateral"></openCdsConcept>
+    <conceptDeterminationMethod code="C45" displayName="Best available NQF concept determination method"></conceptDeterminationMethod>
+    <membersForCodeSystem codeSystem="2.16.840.1.113883.6.12" codeSystemName="CPT4">
+    	<CD code="09550" displayName="Modifier for bilateral"/>
+        <CD code=".50" displayName="Modifier for bilateral"/>               
+    </membersForCodeSystem>
+</OpenCdsConceptMappingSpecificationFile>

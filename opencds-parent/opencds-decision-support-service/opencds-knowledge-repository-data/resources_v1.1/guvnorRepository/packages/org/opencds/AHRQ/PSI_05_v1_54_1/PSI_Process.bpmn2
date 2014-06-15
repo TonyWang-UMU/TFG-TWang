@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<definitions id="Definition"
+             targetNamespace="http://www.omg.org/bpmn20"
+             typeLanguage="http://www.java.com/javaTypes"
+             expressionLanguage="http://www.mvel.org/2.0"
+             xmlns="http://www.omg.org/spec/BPMN/20100524/MODEL"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://www.omg.org/spec/BPMN/20100524/MODEL BPMN20.xsd"
+             xmlns:g="http://www.jboss.org/drools/flow/gpd"
+             xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI"
+             xmlns:dc="http://www.omg.org/spec/DD/20100524/DC"
+             xmlns:di="http://www.omg.org/spec/DD/20100524/DI"
+             xmlns:tns="http://www.jboss.org/drools">
+
+  <process processType="Private" isExecutable="true" id="edu.utah.AHRQ.PSI_05_v4_3.AHRQ_PSI_Process" name="PSI_Process" tns:packageName="org.opencds.AHRQ.PSI_05_v1_54_1" tns:version="2.0" >
+
+    <!-- nodes -->
+    <startEvent id="_8AF83D72-47CB-4D5E-82D5-D9BAAB4114DA" name="start" />
+    <businessRuleTask id="_94D13C3E-FE43-4D1B-9D74-7CF66149F0CF" name="Initialize" g:ruleFlowGroup="initialize" >
+    </businessRuleTask>
+    <businessRuleTask id="_43B63C33-E30A-4226-9402-D3D80EF7902C" name="Check for Denominator Exclusions" g:ruleFlowGroup="exclusions" >
+    </businessRuleTask>
+    <businessRuleTask id="_ADF3FC9D-FF37-4F12-BAE9-F284E83F5A75" name="Denominator" g:ruleFlowGroup="denominator" >
+    </businessRuleTask>
+    <exclusiveGateway id="_3BC47EE2-99AD-452C-B40D-FB215A8D05CE" name="Is Denom Met?" gatewayDirection="Diverging" />
+    <businessRuleTask id="_FC39AA10-1EBE-40A9-B1A8-BB7063600E27" name="Numerator" g:ruleFlowGroup="numerator" >
+    </businessRuleTask>
+    <businessRuleTask id="_1B651205-0813-45C7-8B75-2DAD4CA5159A" name="Respond that Denominator Not Met" g:ruleFlowGroup="denomNotMet" >
+    </businessRuleTask>
+    <exclusiveGateway id="_DAFAA3BF-D75B-4A93-9C7C-5B9F5A384346" name="Is Num Met?" gatewayDirection="Diverging" />
+    <businessRuleTask id="_C87CCBC9-98B4-4C81-B4F5-14825FCDC5BB" name="Respond that Denominator and Numerator Met" g:ruleFlowGroup="numMet" >
+    </businessRuleTask>
+    <businessRuleTask id="_51A3575A-8532-4DB2-8D84-A171433DB566" name="Respond that Numerator Not Met" g:ruleFlowGroup="numNotMet" >
+    </businessRuleTask>
+    <endEvent id="_D8024821-36F5-4FAB-936D-072067AC363F" name="end: Num Not Met" >
+        <terminateEventDefinition />
+    </endEvent>
+    <endEvent id="_1272E0DE-C424-4383-9D40-CCFBDF2ECFC0" name="end: Not Qualified" >
+        <terminateEventDefinition />
+    </endEvent>
+    <endEvent id="_B67A420D-F6F9-4127-AEE1-6589010FD35B" name="end: Num Met" >
+        <terminateEventDefinition />
+    </endEvent>
+
+    <!-- connections -->
+    <sequenceFlow id="_8AF83D72-47CB-4D5E-82D5-D9BAAB4114DA-_94D13C3E-FE43-4D1B-9D74-7CF66149F0CF" sourceRef="_8AF83D72-47CB-4D5E-82D5-D9BAAB4114DA" targetRef="_94D13C3E-FE43-4D1B-9D74-7CF66149F0CF" />
+    <sequenceFlow id="_ADF3FC9D-FF37-4F12-BAE9-F284E83F5A75-_43B63C33-E30A-4226-9402-D3D80EF7902C" sourceRef="_ADF3FC9D-FF37-4F12-BAE9-F284E83F5A75" targetRef="_43B63C33-E30A-4226-9402-D3D80EF7902C" />
+    <sequenceFlow id="_94D13C3E-FE43-4D1B-9D74-7CF66149F0CF-_ADF3FC9D-FF37-4F12-BAE9-F284E83F5A75" sourceRef="_94D13C3E-FE43-4D1B-9D74-7CF66149F0CF" targetRef="_ADF3FC9D-FF37-4F12-BAE9-F284E83F5A75" />
+    <sequenceFlow id="_FC39AA10-1EBE-40A9-B1A8-BB7063600E27-_3BC47EE2-99AD-452C-B40D-FB215A8D05CE" sourceRef="_FC39AA10-1EBE-40A9-B1A8-BB7063600E27" targetRef="_3BC47EE2-99AD-452C-B40D-FB215A8D05CE" />
+    <sequenceFlow id="_43B63C33-E30A-4226-9402-D3D80EF7902C-_FC39AA10-1EBE-40A9-B1A8-BB7063600E27" sourceRef="_43B63C33-E30A-4226-9402-D3D80EF7902C" targetRef="_FC39AA10-1EBE-40A9-B1A8-BB7063600E27" />
+    <sequenceFlow id="_3BC47EE2-99AD-452C-B40D-FB215A8D05CE-_1B651205-0813-45C7-8B75-2DAD4CA5159A" sourceRef="_3BC47EE2-99AD-452C-B40D-FB215A8D05CE" targetRef="_1B651205-0813-45C7-8B75-2DAD4CA5159A" name="denom not met" >
+      <conditionExpression xsi:type="tFormalExpression" language="http://www.java.com/java" >return (!assertions.contains("DenominatorMet"));</conditionExpression>
+    </sequenceFlow>
+    <sequenceFlow id="_3BC47EE2-99AD-452C-B40D-FB215A8D05CE-_DAFAA3BF-D75B-4A93-9C7C-5B9F5A384346" sourceRef="_3BC47EE2-99AD-452C-B40D-FB215A8D05CE" targetRef="_DAFAA3BF-D75B-4A93-9C7C-5B9F5A384346" name="denom met" >
+      <conditionExpression xsi:type="tFormalExpression" language="http://www.java.com/java" >return assertions.contains("DenominatorMet");</conditionExpression>
+    </sequenceFlow>
+    <sequenceFlow id="_DAFAA3BF-D75B-4A93-9C7C-5B9F5A384346-_C87CCBC9-98B4-4C81-B4F5-14825FCDC5BB" sourceRef="_DAFAA3BF-D75B-4A93-9C7C-5B9F5A384346" targetRef="_C87CCBC9-98B4-4C81-B4F5-14825FCDC5BB" name="num met" >
+      <conditionExpression xsi:type="tFormalExpression" language="http://www.java.com/java" >return assertions.contains("NumeratorMet");</conditionExpression>
+    </sequenceFlow>
+    <sequenceFlow id="_DAFAA3BF-D75B-4A93-9C7C-5B9F5A384346-_51A3575A-8532-4DB2-8D84-A171433DB566" sourceRef="_DAFAA3BF-D75B-4A93-9C7C-5B9F5A384346" targetRef="_51A3575A-8532-4DB2-8D84-A171433DB566" name="num not met" >
+      <conditionExpression xsi:type="tFormalExpression" language="http://www.java.com/java" >return (!assertions.contains("NumeratorMet"));</conditionExpression>
+    </sequenceFlow>
+    <sequenceFlow id="_51A3575A-8532-4DB2-8D84-A171433DB566-_D8024821-36F5-4FAB-936D-072067AC363F" sourceRef="_51A3575A-8532-4DB2-8D84-A171433DB566" targetRef="_D8024821-36F5-4FAB-936D-072067AC363F" />
+    <sequenceFlow id="_1B651205-0813-45C7-8B75-2DAD4CA5159A-_1272E0DE-C424-4383-9D40-CCFBDF2ECFC0" sourceRef="_1B651205-0813-45C7-8B75-2DAD4CA5159A" targetRef="_1272E0DE-C424-4383-9D40-CCFBDF2ECFC0" />
+    <sequenceFlow id="_C87CCBC9-98B4-4C81-B4F5-14825FCDC5BB-_B67A420D-F6F9-4127-AEE1-6589010FD35B" sourceRef="_C87CCBC9-98B4-4C81-B4F5-14825FCDC5BB" targetRef="_B67A420D-F6F9-4127-AEE1-6589010FD35B" />
+
+  </process>
+
+  <bpmndi:BPMNDiagram>
+    <bpmndi:BPMNPlane bpmnElement="edu.utah.AHRQ.PSI_05_v4_3.AHRQ_PSI_Process" >
+      <bpmndi:BPMNShape bpmnElement="_8AF83D72-47CB-4D5E-82D5-D9BAAB4114DA" >
+        <dc:Bounds x="51" y="76" width="48" height="48" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="_94D13C3E-FE43-4D1B-9D74-7CF66149F0CF" >
+        <dc:Bounds x="135" y="60" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="_43B63C33-E30A-4226-9402-D3D80EF7902C" >
+        <dc:Bounds x="464" y="60" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="_ADF3FC9D-FF37-4F12-BAE9-F284E83F5A75" >
+        <dc:Bounds x="300" y="60" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="_3BC47EE2-99AD-452C-B40D-FB215A8D05CE" >
+        <dc:Bounds x="655" y="176" width="48" height="48" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="_FC39AA10-1EBE-40A9-B1A8-BB7063600E27" >
+        <dc:Bounds x="629" y="60" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="_1B651205-0813-45C7-8B75-2DAD4CA5159A" >
+        <dc:Bounds x="435" y="160" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="_DAFAA3BF-D75B-4A93-9C7C-5B9F5A384346" >
+        <dc:Bounds x="655" y="346" width="48" height="48" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="_C87CCBC9-98B4-4C81-B4F5-14825FCDC5BB" >
+        <dc:Bounds x="810" y="330" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="_51A3575A-8532-4DB2-8D84-A171433DB566" >
+        <dc:Bounds x="435" y="330" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="_D8024821-36F5-4FAB-936D-072067AC363F" >
+        <dc:Bounds x="324" y="344" width="48" height="48" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="_1272E0DE-C424-4383-9D40-CCFBDF2ECFC0" >
+        <dc:Bounds x="324" y="174" width="48" height="48" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="_B67A420D-F6F9-4127-AEE1-6589010FD35B" >
+        <dc:Bounds x="948" y="344" width="48" height="48" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge bpmnElement="_8AF83D72-47CB-4D5E-82D5-D9BAAB4114DA-_94D13C3E-FE43-4D1B-9D74-7CF66149F0CF" >
+        <di:waypoint x="75" y="100" />
+        <di:waypoint x="185" y="100" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="_ADF3FC9D-FF37-4F12-BAE9-F284E83F5A75-_43B63C33-E30A-4226-9402-D3D80EF7902C" >
+        <di:waypoint x="350" y="100" />
+        <di:waypoint x="514" y="100" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="_94D13C3E-FE43-4D1B-9D74-7CF66149F0CF-_ADF3FC9D-FF37-4F12-BAE9-F284E83F5A75" >
+        <di:waypoint x="185" y="100" />
+        <di:waypoint x="350" y="100" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="_FC39AA10-1EBE-40A9-B1A8-BB7063600E27-_3BC47EE2-99AD-452C-B40D-FB215A8D05CE" >
+        <di:waypoint x="679" y="100" />
+        <di:waypoint x="679" y="200" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="_43B63C33-E30A-4226-9402-D3D80EF7902C-_FC39AA10-1EBE-40A9-B1A8-BB7063600E27" >
+        <di:waypoint x="514" y="100" />
+        <di:waypoint x="679" y="100" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="_3BC47EE2-99AD-452C-B40D-FB215A8D05CE-_1B651205-0813-45C7-8B75-2DAD4CA5159A" >
+        <di:waypoint x="679" y="200" />
+        <di:waypoint x="485" y="200" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="_3BC47EE2-99AD-452C-B40D-FB215A8D05CE-_DAFAA3BF-D75B-4A93-9C7C-5B9F5A384346" >
+        <di:waypoint x="679" y="200" />
+        <di:waypoint x="679" y="370" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="_DAFAA3BF-D75B-4A93-9C7C-5B9F5A384346-_C87CCBC9-98B4-4C81-B4F5-14825FCDC5BB" >
+        <di:waypoint x="679" y="370" />
+        <di:waypoint x="860" y="370" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="_DAFAA3BF-D75B-4A93-9C7C-5B9F5A384346-_51A3575A-8532-4DB2-8D84-A171433DB566" >
+        <di:waypoint x="679" y="370" />
+        <di:waypoint x="485" y="370" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="_51A3575A-8532-4DB2-8D84-A171433DB566-_D8024821-36F5-4FAB-936D-072067AC363F" >
+        <di:waypoint x="485" y="370" />
+        <di:waypoint x="348" y="368" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="_1B651205-0813-45C7-8B75-2DAD4CA5159A-_1272E0DE-C424-4383-9D40-CCFBDF2ECFC0" >
+        <di:waypoint x="485" y="200" />
+        <di:waypoint x="348" y="198" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="_C87CCBC9-98B4-4C81-B4F5-14825FCDC5BB-_B67A420D-F6F9-4127-AEE1-6589010FD35B" >
+        <di:waypoint x="860" y="370" />
+        <di:waypoint x="972" y="368" />
+      </bpmndi:BPMNEdge>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+
+</definitions>

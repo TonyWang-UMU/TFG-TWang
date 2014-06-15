@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OpenCdsConceptMappingSpecificationFile>
+	<specificationNotes>Created manually from AHRQ PSI specifications.</specificationNotes>
+    <openCdsConcept code="C308" displayName="Sepsis"/>
+    <conceptDeterminationMethod code="C267" displayName="AHRQ v4.3"/>
+    <membersForCodeSystem codeSystem="2.16.840.1.113883.6.103" codeSystemName="ICD9CM diagnoses">
+    	<CD code="038.0" displayName="STREPTOCOCCAL SEPTICEMIA"/>
+    	<CD code="038.1" displayName="STAPHYLOCOCCAL SEPTICEMIA"/>
+    	<CD code="038.10" displayName="STAPHYLOCOCCAL SEPTICEMIA, UNSPECIFIED"/>
+    	<CD code="038.11" displayName="METHICILLIN SUSCEPTIBLE STAPHYLOCOCCUS AUREUS SEPTICEMIA (OCT08)"/>
+    	<CD code="038.12" displayName="METHICILLIN RESISTANT STAPHYLOCOCCUS AUREUS SEPTICEMIA (OCT08)"/>
+    	<CD code="038.19" displayName="OTHER STAPHYLOCOCCAL SEPTICEMIA"/>
+    	<CD code="038.2" displayName="PNEUMOCOCCAL SEPTICEMIA (STREPTOCOCCUS PNEUMONIAE SEPTICEMIA)"/>
+    	<CD code="038.3" displayName="SEPTICEMIA DUE TO ANAEROBES"/>
+    	<CD code="038.40" displayName="GRAM-NEGATIVE ORGANISM, UNSPECIFIED"/>
+    	<CD code="038.41" displayName="HEMOPHILUS INFLUENZAE"/>
+    	<CD code="038.42" displayName="ESCHERICHIA COLI"/>
+    	<CD code="038.43" displayName="PSEUDOMONAS"/>
+    	<CD code="038.44" displayName="SERRATIA"/>
+    	<CD code="038.49" displayName="SEPTICEMIA DUE TO OTHER GRAM-NEGATIVE ORGANISMS"/>
+    	<CD code="038.8" displayName="OTHER SPECIFIED SEPTICEMIAS"/>
+    	<CD code="038.9" displayName="UNSPECIFIED SEPTICEMIA"/>
+    	<CD code="785.52" displayName="SEPTIC SHOCK (OCT03)"/>
+    	<CD code="785.59*" displayName="SHOCK W/O MENTION OF TRAUMA- OTHER"/>
+    	<CD code="995.91" displayName="SYSTEMIC INFLAMMATORY RESPONSE SYNDROME DUE TO INFECTIOUS PROCESS W/O ORGAN DYSFUNCTION"/>
+    	<CD code="995.92" displayName="SYSTEMIC INFLAMMATORY RESPONSE SYNDROME DUE TO INFECTIOUS PROCESS W/ ORGAN DYSFUNCTION"/>
+    	<CD code="998.0" displayName="POSTOPERATIVE SHOCK"/>
+   	</membersForCodeSystem>
+</OpenCdsConceptMappingSpecificationFile>

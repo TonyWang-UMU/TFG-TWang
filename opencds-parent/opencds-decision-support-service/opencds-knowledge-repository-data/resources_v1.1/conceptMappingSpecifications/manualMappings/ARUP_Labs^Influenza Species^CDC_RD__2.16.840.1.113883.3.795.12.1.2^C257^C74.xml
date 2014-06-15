@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OpenCdsConceptMappingSpecificationFile>
+	<specificationNotes>Created for proprietary ARUP codes not in Apelon.</specificationNotes>
+    <openCdsConcept code="C257" displayName="Influenza Species"/>
+    <conceptDeterminationMethod code="C74" displayName="Reportable Disease"/>
+    <membersForCodeSystem codeSystem="2.16.840.1.113883.3.795.12.1.2" codeSystemName="OpenCDS proprietary local">
+    	<CD code="InfA" displayName="Culture, Influenza A"/>
+    	<CD code="InfB" displayName="Culture, Influenza B"/>
+    	<CD code="Influ" displayName="Culture, Influenza"/>
+   	</membersForCodeSystem>
+</OpenCdsConceptMappingSpecificationFile>

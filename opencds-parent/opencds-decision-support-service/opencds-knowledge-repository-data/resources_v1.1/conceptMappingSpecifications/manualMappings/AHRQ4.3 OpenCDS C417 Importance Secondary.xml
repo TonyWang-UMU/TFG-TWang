@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OpenCdsConceptMappingSpecificationFile>
+	<specificationNotes></specificationNotes>
+	<openCdsConcept code="C417" displayName="Importance Secondary"></openCdsConcept>
+    <conceptDeterminationMethod code="C267" displayName="AHRQ v4.3"></conceptDeterminationMethod>
+    <membersForCodeSystem codeSystem="2.16.840.1.113883.3.795.12.1.2" codeSystemName="OpenCDS">
+    	<CD code="2" displayName="2nd Importance"/>
+    	<CD code="3" displayName="3rd Importance"/>
+    	<CD code="4" displayName="4th Importance"/>
+    	<CD code="5" displayName="5th Importance"/>
+    	<CD code="6" displayName="6th Importance"/>
+    	<CD code="7" displayName="7th Importance"/>
+    	<CD code="8" displayName="8th Importance"/>
+    	<CD code="9" displayName="9th Importance"/>
+    	<CD code="10" displayName="10th Importance"/>
+    	<CD code="11" displayName="11th Importance"/>
+    	<CD code="12" displayName="12th Importance"/>
+    	<CD code="13" displayName="13th Importance"/>
+    	<CD code="14" displayName="14th Importance"/>
+    	<CD code="15" displayName="15th Importance"/>
+    	<CD code="16" displayName="16th Importance"/>
+    	<CD code="17" displayName="17th Importance"/>
+    	<CD code="18" displayName="18th Importance"/>
+    	<CD code="19" displayName="19th Importance"/>
+    	<CD code="20" displayName="20th Importance"/>
+    	<CD code="21" displayName="21th Importance"/>
+    	<CD code="22" displayName="22th Importance"/>
+    	<CD code="23" displayName="23th Importance"/>
+    	<CD code="24" displayName="24th Importance"/>
+    	<CD code="25" displayName="25th Importance"/>
+    	<CD code="26" displayName="26th Importance"/>
+    	<CD code="27" displayName="27th Importance"/>
+    	<CD code="28" displayName="28th Importance"/>
+    	<CD code="29" displayName="29th Importance"/>
+    	<CD code="30" displayName="30th Importance"/>
+    	<CD code="31" displayName="31th Importance"/>
+    	<CD code="32" displayName="32th Importance"/>
+    	<CD code="33" displayName="33th Importance"/>
+    	<CD code="34" displayName="34th Importance"/>
+    	<CD code="35" displayName="35th Importance"/>
+    	<CD code="36" displayName="36th Importance"/>
+    	<CD code="37" displayName="37th Importance"/>
+    	<CD code="38" displayName="38th Importance"/>
+    	<CD code="39" displayName="39th Importance"/>
+    	<CD code="40" displayName="40th Importance"/>
+    	<CD code="41" displayName="41th Importance"/>
+    	<CD code="42" displayName="42th Importance"/>
+    	<CD code="43" displayName="43th Importance"/>
+    	<CD code="44" displayName="44th Importance"/>
+    	<CD code="45" displayName="45th Importance"/>
+    	<CD code="46" displayName="46th Importance"/>
+    	<CD code="47" displayName="47th Importance"/>
+    	<CD code="48" displayName="48th Importance"/>
+    	<CD code="49" displayName="49th Importance"/>
+    	<CD code="50" displayName="50th Importance"/>
+    </membersForCodeSystem>
+</OpenCdsConceptMappingSpecificationFile>   

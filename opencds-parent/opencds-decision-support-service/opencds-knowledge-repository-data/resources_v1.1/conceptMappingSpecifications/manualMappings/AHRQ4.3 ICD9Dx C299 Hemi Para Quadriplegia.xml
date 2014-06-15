@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OpenCdsConceptMappingSpecificationFile>
+	<specificationNotes>Created manually from AHRQ PSI specifications.</specificationNotes>
+    <openCdsConcept code="C299" displayName="Hemiplegia, Paraplegia, or Quadriplegia"/>
+    <conceptDeterminationMethod code="C267" displayName="AHRQ"/>
+    <membersForCodeSystem codeSystem="2.16.840.1.113883.6.103" codeSystemName="ICD9CM diagnoses">
+		<CD code="333.71" displayName="ATHETOID CEREBRAL PALSY"/> 
+		<CD code="334.1" displayName="HERED SPASTIC PARAPLEGIA"/> 
+		<CD code="342.0" displayName="FLACCID HEMIPLEGIA"/> 
+		<CD code="342.00" displayName="FLCCD HMIPLGA UNSPF SIDE"/> 
+		<CD code="342.01" displayName="FLCCD HMIPLGA DOMNT SIDE"/> 
+		<CD code="342.02" displayName="FLCCD HMIPLG NONDMNT SDE"/> 
+		<CD code="342.1" displayName="SPASTIC HEMIPLEGIA"/> 
+		<CD code="342.10" displayName="SPSTC HMIPLGA UNSPF SIDE"/> 
+		<CD code="342.11" displayName="SPSTC HMIPLGA DOMNT SIDE"/> 
+		<CD code="342.12" displayName="SPSTC HMIPLG NONDMNT SDE"/> 
+		<CD code="342.80" displayName="OT SP HMIPLGA UNSPF SIDE"/> 
+		<CD code="342.81" displayName="OT SP HMIPLGA DOMNT SIDE"/> 
+		<CD code="342.82" displayName="OT SP HMIPLG NONDMNT SDE"/> 
+		<CD code="342.9" displayName="HEMIPLEGIA, UNSPECIFIED"/> 
+		<CD code="342.90" displayName="UNSP HEMIPLGA UNSPF SIDE"/> 
+		<CD code="342.91" displayName="UNSP HEMIPLGA DOMNT SIDE"/> 
+		<CD code="342.92" displayName="UNSP HMIPLGA NONDMNT SDE"/> 
+		<CD code="343.0" displayName="INFANTILE CEREBRAL PALSY, DIPLEGIC"/> 
+		<CD code="343.1" displayName="INFANTILE CEREBRAL PALSY, HEMIPLEGIC"/> 
+		<CD code="343.2" displayName="INFANTILE CEREBRAL PALSY, QUADRIPLEGIC"/> 
+		<CD code="343.3" displayName="INFANTILE CEREBRAL PALSY, MONOPLEGIC"/> 
+		<CD code="343.4" displayName="INFANTILE CEREBRAL PALSY INFANTILE HEMIPLEGIA"/> 
+		<CD code="343.8" displayName="INFANTILE CEREBRAL PALSY OTHER SPECIFIED INFANTILE CEREBRAL PALSY"/> 
+		<CD code="343.9" displayName="INFANTILE CEREBRAL PALSY, INFANTILE CEREBRAL PALSY, UNSPECIFIED"/> 
+		<CD code="344.0" displayName="QUADRIPLEGIA AND QUADRIPARESIS"/> 
+		<CD code="344.00" displayName="QUADRIPLEGIA, UNSPECIFD"/> 
+		<CD code="344.01" displayName="QUADRPLG C1-C4, COMPLETE"/> 
+		<CD code="344.02" displayName="QUADRPLG C1-C4, INCOMPLT"/> 
+		<CD code="344.03" displayName="QUADRPLG C5-C7, COMPLETE"/> 
+		<CD code="344.04" displayName="QUADRPLG C5-C7, INCOMPLT"/> 
+		<CD code="344.09" displayName="OTHER QUADRIPLEGIA"/> 
+		<CD code="344.1" displayName="PARAPLEGIA"/> 
+		<CD code="344.2" displayName="DIPLEGIA OF UPPER LIMBS"/> 
+		<CD code="344.3" displayName="MONOPLEGIA OF LOWER LIMB"/> 
+		<CD code="344.30" displayName="MONPLGA LWR LMB UNSP SDE"/> 
+		<CD code="344.31" displayName="MONPLGA LWR LMB DMNT SDE"/> 
+		<CD code="344.32" displayName="MNPLG LWR LMB NONDMNT SD"/> 
+		<CD code="344.4" displayName="MONOPLEGIA OF UPPER LIMB"/> 
+		<CD code="344.40" displayName="MONPLGA UPR LMB UNSP SDE"/> 
+		<CD code="344.41" displayName="MONPLGA UPR LMB DMNT SDE"/> 
+		<CD code="344.42" displayName="MNPLG UPR LMB NONDMNT SD"/> 
+		<CD code="344.5" displayName="UNSPECIFIED MONOPLEGIA"/> 
+		<CD code="344.60" displayName="CAUDA EQUINA SYNDROME, WITHOUT MENTION OF NEUROGENIC BLADDER"/> 
+		<CD code="344.61" displayName="CAUDA EQUINA SYNDROME, WITH NEUROGENIC BLADDER"/> 
+		<CD code="344.8" displayName="OTHER SPECIFIED PARALYTIC SYNDROMES"/> 
+		<CD code="344.81" displayName="LOCKED-IN STATE"/> 
+		<CD code="344.89" displayName="OTH SPCF PARALYTIC SYND"/> 
+		<CD code="344.9" displayName="PARALYSIS, UNSPECIFIED"/> 
+		<CD code="438.20" displayName="LATE EF-HEMPLGA SIDE NOS"/> 
+		<CD code="438.21" displayName="LATE EF-HEMPLGA DOM SIDE"/> 
+		<CD code="438.22" displayName="LATE EF-HEMIPLGA NON-DOM"/> 
+		<CD code="438.30" displayName="LATE EF-MPLGA UP LMB NOS"/> 
+		<CD code="438.31" displayName="LATE EF-MPLGA UP LMB DOM"/> 
+		<CD code="438.32" displayName="LT EF-MPLGA UPLMB NONDOM"/> 
+		<CD code="438.40" displayName="LTE EF-MPLGA LOW LMB NOS"/> 
+		<CD code="438.41" displayName="LTE EF-MPLGA LOW LMB DOM"/> 
+		<CD code="438.42" displayName="LT EF-MPLGA LOWLMB NONDM"/> 
+		<CD code="438.50" displayName="LT EF OTH PARAL SIDE NOS"/> 
+		<CD code="438.51" displayName="LT EF OTH PARAL DOM SIDE"/> 
+		<CD code="438.52" displayName="LT EF OTH PARALS NON-DOM"/> 
+		<CD code="438.53" displayName="LT EF OTH PARALS-BILAT"/> 
+		<CD code="768.70" displayName="HYPOXIC-ISCHEMIC ENCEPHALOPATHY, UNSPECIFIED"/> 
+		<CD code="768.72" displayName="MODERATE HYPOXIC-ISCHEMIC ENCEPHALOPATHY (OCT09)"/> 
+		<CD code="768.73" displayName="SEVERE HYPOXIC-ISCHEMIC ENCEPHALOPATHY (OCT09)"/> 
+   	</membersForCodeSystem>
+</OpenCdsConceptMappingSpecificationFile>

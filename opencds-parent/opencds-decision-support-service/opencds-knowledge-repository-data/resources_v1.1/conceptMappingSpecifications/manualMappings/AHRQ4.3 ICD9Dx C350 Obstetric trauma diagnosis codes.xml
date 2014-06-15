@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OpenCdsConceptMappingSpecificationFile>
+	<specificationNotes>Created manually from AHRQ PSI specifications.</specificationNotes>
+    <openCdsConcept code="C350" displayName="Obstetric Trauma"/>
+    <conceptDeterminationMethod code="C267" displayName="AHRQ v4.3"/>
+    <membersForCodeSystem codeSystem="2.16.840.1.113883.6.103" codeSystemName="ICD9CM diagnoses">
+    	<CD code="664.20" displayName="DEL W 3 DEG LACERAT-UNSP"/>
+    	<CD code="664.21" displayName="DEL W 3 DEG LACERAT-DEL"/>
+    	<CD code="664.24" displayName="DEL W 3 DEG LAC-POSTPART"/>
+    	<CD code="664.30" displayName="TRAUMA TO PERINEUM AND VULVA DURING DELIVERY, FOURTH-DEGREE PERINEAL LACERATION"/>
+    	<CD code="664.31" displayName="TRAUMA TO PERINEUM AND VULVA DURING DELIVERY, FOURTH-DEGREE PERINEAL LACERATION"/>
+    	<CD code="664.34" displayName="TRAUMA TO PERINEUM AND VULVA DURING DELIVERY, FOURTH-DEGREE PERINEAL LACERATION"/>
+   	</membersForCodeSystem>
+</OpenCdsConceptMappingSpecificationFile>

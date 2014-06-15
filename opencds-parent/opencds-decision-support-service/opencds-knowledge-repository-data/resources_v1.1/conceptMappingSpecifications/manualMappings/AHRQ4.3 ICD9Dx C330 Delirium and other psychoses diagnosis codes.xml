@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OpenCdsConceptMappingSpecificationFile>
+	<specificationNotes>Created manually from AHRQ PSI specifications.</specificationNotes>
+    <openCdsConcept code="C330" displayName="Delirium and Other Psychoses"/>
+    <conceptDeterminationMethod code="C267" displayName="AHRQ v4.3"/>
+    <membersForCodeSystem codeSystem="2.16.840.1.113883.6.103" codeSystemName="ICD9CM diagnoses">
+    	<CD code="290.0" displayName="SENILE DEMENTIA UNCOMP"/>
+    	<CD code="290.10" displayName="PRESENILE DEMENTIA"/>
+    	<CD code="290.11" displayName="PRESENILE DELIRIUM"/>
+    	<CD code="290.12" displayName="PRESENILE DELUSION"/>
+    	<CD code="290.13" displayName="PRESENILE DEPRESSION"/>
+    	<CD code="290.20" displayName="SENILE DELUSION"/>
+    	<CD code="290.21" displayName="SENILE DEPRESSIVE"/>
+    	<CD code="290.3" displayName="SENILE DELIRIUM"/>
+    	<CD code="290.40" displayName="ARTERIOSCLER DEMENT NOS"/>
+    	<CD code="290.41" displayName="ARTERIOSCLER DELIRIUM"/>
+    	<CD code="290.42" displayName="ARTERIOSCLER DELUSION"/>
+    	<CD code="290.43" displayName="ARTERIOSCLER DEPRESSIVE"/>
+    	<CD code="290.8" displayName="SENILE PSYCHOSIS NEC"/>
+    	<CD code="290.9" displayName="SENILE PSYCHOT COND NOS"/>
+    	<CD code="291.0" displayName="DELIRIUM TREMENS"/>
+    	<CD code="291.1" displayName="ALCOHOL AMNESTIC SYND"/>
+    	<CD code="291.2" displayName="ALCOHOLIC DEMENTIA NEC"/>
+    	<CD code="291.3" displayName="ALCOHOL HALLUCINOSIS"/>
+    	<CD code="291.4" displayName="PATHOLOGIC ALCOHOL INTOX"/>
+    	<CD code="291.5" displayName="ALCOHOLIC JEALOUSY"/>
+    	<CD code="291.8" displayName="ALCOHOLIC PSYCHOSIS NEC"/>
+    	<CD code="291.81" displayName="ALCOHOL WITHDRAWAL"/>
+    	<CD code="291.89" displayName="ALCOHOLIC PSYCHOSIS NEC"/>
+    	<CD code="291.9" displayName="ALCOHOLIC PSYCHOSIS NOS"/>
+    	<CD code="292.0" displayName="DRUG WITHDRAWAL SYNDROME"/>
+    	<CD code="292.11" displayName="DRUG PARANOID STATE"/>
+    	<CD code="292.12" displayName="DRUG HALLUCINOSIS"/>
+    	<CD code="292.2" displayName="PATHOLOGIC DRUG INTOX"/>
+    	<CD code="292.81" displayName="DRUG-INDUCED DELIRIUM"/>
+    	<CD code="292.82" displayName="DRUG-INDUCED DEMENTIA"/>
+    	<CD code="292.83" displayName="DRUG AMNESTIC SYNDROME"/>
+    	<CD code="292.84" displayName="DRUG DEPRESSIVE SYNDROME"/>
+    	<CD code="292.85" displayName="DRUG INDUCED SLEEP DISOR"/>
+    	<CD code="292.89" displayName="DRUG MENTAL DISORDER NEC"/>
+    	<CD code="292.9" displayName="DRUG MENTAL DISORDER NOS"/>
+    	<CD code="293.0" displayName="ACUTE DELIRIUM"/>
+    	<CD code="293.1" displayName="SUBACUTE DELIRIUM"/>
+    	<CD code="293.81" displayName="ORGANIC DELUSIONAL SYND"/>
+    	<CD code="293.82" displayName="ORGANIC HALLUCINOSIS SYN"/>
+    	<CD code="293.83" displayName="ORGANIC AFFECTIVE SYND"/>
+    	<CD code="293.84" displayName="ORGANIC ANXIETY SYNDROME"/>
+    	<CD code="293.89" displayName="TRANSIENT ORG MENTAL NEC"/>
+    	<CD code="293.9" displayName="TRANSIENT ORG MENTAL NOS"/>
+    	<CD code="294.0" displayName="AMNESTIC SYNDROME"/>
+    	<CD code="294.1" displayName="DEMENTIA IN OTH DISEASES"/>
+    	<CD code="294.10" displayName="DEMENTIA W/O BEHAV DIST"/>
+    	<CD code="294.11" displayName="DEMENTIA W BEHAVIOR DIST"/>
+    	<CD code="294.8" displayName="ORGANIC BRAIN SYND NEC"/>
+    	<CD code="294.9" displayName="ORGANIC BRAIN SYND NOS"/>
+    	<CD code="295.00" displayName="SIMPL SCHIZOPHREN-UNSPEC"/>
+    	<CD code="295.01" displayName="SIMPL SCHIZOPHREN-SUBCHR"/>
+    	<CD code="295.02" displayName="SIMPLE SCHIZOPHREN-CHR"/>
+    	<CD code="295.03" displayName="SIMP SCHIZ-SUBCHR/EXACER"/>
+    	<CD code="295.04" displayName="SIMPL SCHIZO-CHR/EXACERB"/>
+    	<CD code="295.05" displayName="SIMPL SCHIZOPHREN-REMISS"/>
+    	<CD code="295.10" displayName="HEBEPHRENIA-UNSPEC"/>
+    	<CD code="295.11" displayName="HEBEPHRENIA-SUBCHRONIC"/>
+    	<CD code="295.12" displayName="HEBEPHRENIA-CHRONIC"/>
+    	<CD code="295.13" displayName="HEBEPHREN-SUBCHR/EXACERB"/>
+    	<CD code="295.14" displayName="HEBEPHRENIA-CHR/EXACERB"/>
+    	<CD code="295.15" displayName="HEBEPHRENIA-REMISSION"/>
+    	<CD code="295.20" displayName="CATATONIA-UNSPEC"/>
+    	<CD code="295.21" displayName="CATATONIA-SUBCHRONIC"/>
+    	<CD code="295.22" displayName="CATATONIA-CHRONIC"/>
+    	<CD code="295.23" displayName="CATATONIA-SUBCHR/EXACERB"/>
+    	<CD code="295.24" displayName="CATATONIA-CHR/EXACERB"/>
+    	<CD code="295.25" displayName="CATATONIA-REMISSION"/>
+    	<CD code="295.30" displayName="PARANOID SCHIZO-UNSPEC"/>
+    	<CD code="295.31" displayName="PARANOID SCHIZO-SUBCHR"/>
+    	<CD code="295.32" displayName="PARANOID SCHIZO-CHRONIC"/>
+    	<CD code="295.33" displayName="PARAN SCHIZO-SUBCHR/EXAC"/>
+    	<CD code="295.34" displayName="PARAN SCHIZO-CHR/EXACERB"/>
+    	<CD code="295.35" displayName="PARANOID SCHIZO-REMISS"/>
+    	<CD code="295.40" displayName="AC SCHIZOPHRENIA-UNSPEC"/>
+    	<CD code="295.41" displayName="AC SCHIZOPHRENIA-SUBCHR"/>
+    	<CD code="295.42" displayName="AC SCHIZOPHRENIA-CHR"/>
+    	<CD code="295.43" displayName="AC SCHIZO-SUBCHR/EXACERB"/>
+    	<CD code="295.44" displayName="AC SCHIZOPHR-CHR/EXACERB"/>
+    	<CD code="295.45" displayName="AC SCHIZOPHRENIA-REMISS"/>
+    	<CD code="295.50" displayName="LATENT SCHIZOPHREN-UNSP"/>
+    	<CD code="295.51" displayName="LAT SCHIZOPHREN-SUBCHR"/>
+    	<CD code="295.52" displayName="LATENT SCHIZOPHREN-CHR"/>
+    	<CD code="295.53" displayName="LAT SCHIZO-SUBCHR/EXACER"/>
+    	<CD code="295.54" displayName="LATENT SCHIZO-CHR/EXACER"/>
+    	<CD code="295.55" displayName="LAT SCHIZOPHREN-REMISS"/>
+    	<CD code="295.60" displayName="RESID SCHIZOPHREN-UNSP"/>
+    	<CD code="295.61" displayName="RESID SCHIZOPHREN-SUBCHR"/>
+    	<CD code="295.62" displayName="RESIDUAL SCHIZOPHREN-CHR"/>
+    	<CD code="295.63" displayName="RESID SCHIZO-SUBCHR/EXAC"/>
+    	<CD code="295.64" displayName="RESID SCHIZO-CHR/EXACERB"/>
+    	<CD code="295.65" displayName="RESID SCHIZOPHREN-REMISS"/>
+    	<CD code="295.70" displayName="SCHIZOAFFECTIVE-UNSPEC"/>
+    	<CD code="295.71" displayName="SCHIZOAFFECTIVE-SUBCHR"/>
+    	<CD code="295.72" displayName="SCHIZOAFFECTIVE-CHRONIC"/>
+    	<CD code="295.73" displayName="SCHIZOAFF-SUBCHR/EXACER"/>
+    	<CD code="295.74" displayName="SCHIZOAFFECT-CHR/EXACER"/>
+    	<CD code="295.75" displayName="SCHIZOAFFECTIVE-REMISS"/>
+    	<CD code="295.80" displayName="SCHIZOPHRENIA NEC-UNSPEC"/>
+    	<CD code="295.81" displayName="SCHIZOPHRENIA NEC-SUBCHR"/>
+    	<CD code="295.82" displayName="SCHIZOPHRENIA NEC-CHR"/>
+    	<CD code="295.83" displayName="SCHIZO NEC-SUBCHR/EXACER"/>
+    	<CD code="295.84" displayName="SCHIZO NEC-CHR/EXACERB"/>
+    	<CD code="295.85" displayName="SCHIZOPHRENIA NEC-REMISS"/>
+    	<CD code="295.90" displayName="SCHIZOPHRENIA NOS-UNSPEC"/>
+    	<CD code="295.91" displayName="SCHIZOPHRENIA NOS-SUBCHR"/>
+    	<CD code="295.92" displayName="SCHIZOPHRENIA NOS-CHR"/>
+    	<CD code="295.93" displayName="SCHIZO NOS-SUBCHR/EXACER"/>
+    	<CD code="295.94" displayName="SCHIZO NOS-CHR/EXACERB"/>
+    	<CD code="295.95" displayName="SCHIZOPHRENIA NOS-REMISS"/>
+    	<CD code="296.30" displayName="RECURR DEPR PSYCHOS-UNSP"/>
+    	<CD code="296.31" displayName="RECURR DEPR PSYCHOS-MILD"/>
+    	<CD code="296.32" displayName="RECURR DEPR PSYCHOS-MOD"/>
+    	<CD code="296.33" displayName="RECUR DEPR PSYCH-SEVERE"/>
+    	<CD code="296.34" displayName="REC DEPR PSYCH-PSYCHOTIC"/>
+    	<CD code="296.35" displayName="RECUR DEPR PSYC-PART REM"/>
+    	<CD code="296.36" displayName="RECUR DEPR PSYC-FULL REM"/>
+    	<CD code="296.40" displayName="BIPOL AFF, MANIC-UNSPEC"/>
+    	<CD code="296.41" displayName="BIPOLAR AFF, MANIC-MILD"/>
+    	<CD code="296.42" displayName="BIPOLAR AFFEC, MANIC-MOD"/>
+    	<CD code="296.43" displayName="BIPOL AFF, MANIC-SEVERE"/>
+    	<CD code="296.44" displayName="BIPOL MANIC-SEV W PSYCH"/>
+    	<CD code="296.45" displayName="BIPOL AFF MANIC-PART REM"/>
+    	<CD code="296.46" displayName="BIPOL AFF MANIC-FULL REM"/>
+    	<CD code="296.7" displayName="BIPOLAR AFFECTIVE NOS"/>
+    	<CD code="296.80" displayName="MANIC-DEPRESSIVE NOS"/>
+    	<CD code="296.81" displayName="ATYPICAL MANIC DISORDER"/>
+    	<CD code="296.82" displayName="ATYPICAL DEPRESSIVE DIS"/>
+    	<CD code="296.89" displayName="MANIC-DEPRESSIVE NEC"/>
+    	<CD code="296.90" displayName="AFFECTIVE PSYCHOSIS NOS"/>
+    	<CD code="297.0" displayName="PARANOID STATE, SIMPLE"/>
+    	<CD code="297.1" displayName="PARANOIA"/>
+    	<CD code="297.2" displayName="PARAPHRENIA"/>
+    	<CD code="297.3" displayName="SHARED PARANOID DISORDER"/>
+    	<CD code="297.8" displayName="PARANOID STATES NEC"/>
+    	<CD code="297.9" displayName="PARANOID STATE NOS"/>
+    	<CD code="298.0" displayName="REACT DEPRESS PSYCHOSIS"/>
+    	<CD code="298.1" displayName="EXCITATIV TYPE PSYCHOSIS"/>
+    	<CD code="298.2" displayName="REACTIVE CONFUSION"/>
+    	<CD code="298.3" displayName="ACUTE PARANOID REACTION"/>
+    	<CD code="298.4" displayName="PSYCHOGEN PARANOID PSYCH"/>
+    	<CD code="298.8" displayName="REACT PSYCHOSIS NEC/NOS"/>
+    	<CD code="298.9" displayName="PSYCHOSIS NOS"/>
+    	<CD code="299.00" displayName="INFANTILE AUTISM-ACTIVE"/>
+    	<CD code="299.01" displayName="INFANTILE AUTISM-RESID"/>
+    	<CD code="299.10" displayName="DISINTEGR PSYCH-ACTIVE"/>
+    	<CD code="299.11" displayName="DISINTEGR PSYCH-RESIDUAL"/>
+    	<CD code="299.80" displayName="CHILD PSYCHOS NEC-ACTIVE"/>
+    	<CD code="299.81" displayName="CHILD PSYCHOS NEC-RESID"/>
+    	<CD code="299.90" displayName="CHILD PSYCHOS NOS-ACTIVE"/>
+    	<CD code="299.91" displayName="CHILD PSYCHOS NOS-RESID"/>
+   	</membersForCodeSystem>
+</OpenCdsConceptMappingSpecificationFile>

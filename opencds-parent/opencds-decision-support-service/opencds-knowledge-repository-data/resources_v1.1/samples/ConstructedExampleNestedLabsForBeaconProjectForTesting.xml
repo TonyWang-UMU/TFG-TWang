@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<in:cdsInput xmlns:in="org.opencds.vmr.v1_0.schema.cdsinput"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+		xmlns:dt="org.opencds.vmr.v1_0.schema.datatypes"
+		xsi:schemaLocation="org.opencds.vmr.v1_0.schema.cdsinput ..\schema\cdsInput.xsd">
+	<templateId root="2.16.840.1.113883.3.795.11.1.1"/>
+	<vmrInput>
+		<templateId root="2.16.840.1.113883.3.795.11.1.1"/>
+		<patient>
+			<id root="2.16.840.1.113883.3.795.5.2.1.1" extension="pat001"/>
+			<demographics/>
+			<clinicalStatements>
+				<observationResults>
+					<observationResult>
+						<id root="2.16.840.1.113883.3.795.5.2.1.2" extension="bat001"/>
+						<observationFocus code="60241" codeSystem="2.16.840.1.113883.3.795.12.1.2" codeSystemName="OpenCDS local proprietary codes"  displayName="C trachomatis and N gonorrhoeae by AMD"/>
+						<observationEventTime low="20120126" high="20120126"/>
+						<relatedClinicalStatement>
+							<targetRelationshipToSource code="COMP" codeSystem="2.16.840.1.113883.5.1002 "/>
+							<observationResult>
+								<id root="2.16.840.1.113883.3.795.5.2.1.2" extension="bat001+1"/>
+								<observationFocus code="21613-5" codeSystem="2.16.840.1.113883.6.1" displayName="C. trachomatis Amplified"/>
+								<observationEventTime low="20120126" high="20120126"/>
+								<observationValue><text value="Negative"/></observationValue>
+								<interpretation code="309306009" codeSystem="2.16.840.1.113883.6.96"/>
+								<interpretation code="63938009" codeSystem="2.16.840.1.113883.6.96"/>
+							</observationResult>
+						</relatedClinicalStatement>
+						<relatedClinicalStatement>
+							<targetRelationshipToSource code="REL" codeSystem="2.16.840.1.113883.5.1002 "/>
+							<observationResult>
+								<id root="2.16.840.1.113883.3.795.5.2.1.2" extension="bat001+1+SPECIMEN_SOURCE"/>
+								<observationFocus code="47938-6" codeSystem="2.16.840.1.113883.6.1" displayName="Specimen source"/>
+								<observationEventTime low="20120126" high="20120126"/>
+								<observationValue><text value=""/></observationValue>
+							</observationResult>
+						</relatedClinicalStatement>
+					</observationResult>
+				</observationResults>
+			</clinicalStatements>
+		</patient>
+	</vmrInput>
+</in:cdsInput>

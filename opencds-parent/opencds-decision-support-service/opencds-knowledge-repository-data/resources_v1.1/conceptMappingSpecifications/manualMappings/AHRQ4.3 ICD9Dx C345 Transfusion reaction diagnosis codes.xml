@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OpenCdsConceptMappingSpecificationFile>
+	<specificationNotes>Created manually from AHRQ PSI specifications.</specificationNotes>
+    <openCdsConcept code="C345" displayName="Transfusion Reaction"/>
+    <conceptDeterminationMethod code="C267" displayName="AHRQ v4.3"/>
+    <membersForCodeSystem codeSystem="2.16.840.1.113883.6.103" codeSystemName="ICD9CM diagnoses">
+    	<CD code="999.6" displayName="ABO INCOMPATIBILITY REACTION"/>
+    	<CD code="999.60" displayName="ABO INCOMPATIBILITY REACTION NOS"/>
+    	<CD code="999.61" displayName="ABO INCOMP/HTR NEC"/>
+    	<CD code="999.62" displayName="ABO INCOMPAT/ACUTE HTR"/>
+    	<CD code="999.63" displayName="ABO INCOMPAT/DELAY HTR"/>
+    	<CD code="999.69" displayName="ABO INCOMPAT REACTN NEC"/>
+    	<CD code="999.7" displayName="RH INCOMPATIBILITY REACTION"/>
+    	<CD code="999.70" displayName="RH INCOMPAT REACTION NOS"/>
+    	<CD code="999.71" displayName="RH INCOMP/HTR NEC"/>
+    	<CD code="999.72" displayName="RH INCOMPAT/ACUTE HTR"/>
+    	<CD code="999.73" displayName="RH INCOMPAT/DELAY HTR"/>
+    	<CD code="999.74" displayName="RH INCOMPAT REACTION NEC"/>
+    	<CD code="E87.60" displayName="MISMATCHED BLOOD IN TRANSFUSION"/>
+   	</membersForCodeSystem>
+</OpenCdsConceptMappingSpecificationFile>

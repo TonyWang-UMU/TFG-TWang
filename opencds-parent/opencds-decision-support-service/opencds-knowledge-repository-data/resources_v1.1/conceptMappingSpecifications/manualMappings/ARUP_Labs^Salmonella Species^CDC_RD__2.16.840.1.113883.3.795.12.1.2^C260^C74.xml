@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OpenCdsConceptMappingSpecificationFile>
+	<specificationNotes>Created for proprietary ARUP codes not in Apelon.</specificationNotes>
+    <openCdsConcept code="C260" displayName="Salmonella Species"/>
+    <conceptDeterminationMethod code="C74" displayName="Reportable Disease"/>
+    <membersForCodeSystem codeSystem="2.16.840.1.113883.3.795.12.1.2" codeSystemName="OpenCDS proprietary local">
+    	<CD code="Salabe" displayName="Salmonella aberdeen"/>
+    	<CD code="Salabo" displayName="Salmonella abortus-equ"/>
+    	<CD code="Salade" displayName="Salmonella adelaide"/>
+    	<CD code="Salader" displayName="Salmonella aderike"/>
+    	<CD code="Salago" displayName="Salmonella agona"/>
+    	<CD code="Salala" displayName="Salmonella alachua"/>
+    	<CD code="Salana" displayName="Salmonella anatum"/>
+    	<CD code="Salari" displayName="Salmonella arizonae"/>
+    	<CD code="Salava" displayName="Salmonella avana"/>
+    	<CD code="Salbah" displayName="Salmonella bahrenfeld"/>
+    	<CD code="Salblo" displayName="Salmonella blockley"/>
+    	<CD code="Salbon" displayName="Salmonella bongori"/>
+    	<CD code="Salbra" displayName="Salmonella braenderup"/>
+    	<CD code="Salbre" displayName="Salmonella bredeney"/>
+    	<CD code="Salbun" displayName="Salmonella bunn"/>
+    	<CD code="Salcal" displayName="Salmonella california"/>
+    	<CD code="Salcar" displayName="Salmonella carrau"/>
+    	<CD code="Salcer" displayName="Salmonella cerro"/>
+    	<CD code="Salcha" displayName="Salmonella champaign"/>
+    	<CD code="Salchi" displayName="Salmonella chittagong"/>
+    	<CD code="Salcho" displayName="Salmonella cholerasuis"/>
+    	<CD code="Salchoari" displayName="Salmonella cholerasuis ssp arizonae"/>
+    	<CD code="Salchocho" displayName="Salmonella cholerasuis ssp choleraesuis"/>
+    	<CD code="Salchodia" displayName="Salmonella cholerasuis ssp diarizonae"/>
+    	<CD code="Salchohou" displayName="Salmonella cholerasuis ssp houtenae"/>
+    	<CD code="Salchoind" displayName="Salmonella cholerasuis ssp indica"/>
+    	<CD code="Salchosal" displayName="Salmonella cholerasuis ssp salamae"/>
+    	<CD code="Salcub" displayName="Salmonella cubana"/>
+    	<CD code="Saldak" displayName="Salmonella dakar"/>
+    	<CD code="Saldar" displayName="Salmonella daressalaam"/>
+    	<CD code="Salder" displayName="Salmonella derby"/>
+    	<CD code="Saldes" displayName="Salmonella dessau"/>
+    	<CD code="Saldub" displayName="Salmonella dublin"/>
+    	<CD code="Saldue" displayName="Salmonella duesseldorf"/>
+    	<CD code="Salent" displayName="Salmonella enteritidis"/>
+    	<CD code="Salfre" displayName="Salmonella fresno"/>
+    	<CD code="SalGA" displayName="Salmonella species, group A"/>
+    	<CD code="Salgal" displayName="Salmonella gallinarum"/>
+    	<CD code="SalGB" displayName="Salmonella species, group B"/>
+    	<CD code="SalGC1" displayName="Salmonella species, group C1"/>
+    	<CD code="SalGC2" displayName="Salmonella species, group C2"/>
+    	<CD code="SalGD" displayName="Salmonella species, group D"/>
+    	<CD code="SalGE" displayName="Salmonella species, group E"/>
+    	<CD code="SalGF" displayName="Salmonella species, group F"/>
+    	<CD code="Salgiv" displayName="Salmonella give"/>
+    	<CD code="Salhaa" displayName="Salmonella haardt"/>
+    	<CD code="Salham" displayName="Salmonella hamburg"/>
+    	<CD code="Salhei" displayName="Salmonella heidelberg"/>
+    	<CD code="Salhin" displayName="Salmonella hinshawii"/>
+    	<CD code="Salill" displayName="Salmonella illinois"/>
+    	<CD code="Salinf" displayName="Salmonella infantis"/>
+    	<CD code="Salinv" displayName="Salmonella inverness"/>
+    	<CD code="Saljav" displayName="Salmonella java"/>
+    	<CD code="Saljavi" displayName="Salmonella javiana"/>
+    	<CD code="Salkir" displayName="Salmonella kirkee"/>
+    	<CD code="Salkun" displayName="Salmonella kunduchi"/>
+    	<CD code="Salkvi" displayName="Salmonella kvittingfoss"/>
+    	<CD code="Sallan" displayName="Salmonella lansing"/>
+    	<CD code="Sallit" displayName="Salmonella litchfield"/>
+    	<CD code="Salliv" displayName="Salmonella liverpool"/>
+    	<CD code="Sallon" displayName="Salmonella london"/>
+    	<CD code="Salluc" displayName="Salmonella luciana"/>
+    	<CD code="Salman" displayName="Salmonella manhattan"/>
+    	<CD code="Salmel" displayName="Salmonella melagridis"/>
+    	<CD code="Salmem" displayName="Salmonella memphis"/>
+    	<CD code="Salmic" displayName="Salmonella michigan"/>
+    	<CD code="Salmin" displayName="Salmonella minneapolis"/>
+    	<CD code="Salminn" displayName="Salmonella minnesota"/>
+    	<CD code="Salmo" displayName="Salmonella species"/>
+    	<CD code="Salmon" displayName="Salmonella montevideo"/>
+    	<CD code="Salmue" displayName="Salmonella muenchen"/>
+    	<CD code="Salnew" displayName="Salmonella newington"/>
+    	<CD code="Salnewp" displayName="Salmonella newport"/>
+    	<CD code="Salohi" displayName="Salmonella ohio"/>
+    	<CD code="Salond" displayName="Salmonella onderstepoort"/>
+    	<CD code="Salora" displayName="Salmonella oranienburg"/>
+    	<CD code="Salpar" displayName="Salmonella paratyphi A"/>
+    	<CD code="SalparB" displayName="Salmonella paratyphi B"/>
+    	<CD code="Salpoo" displayName="Salmonella poona"/>
+    	<CD code="Salpul" displayName="Salmonella pullorum"/>
+    	<CD code="Salqui" displayName="Salmonella quinhon"/>
+    	<CD code="Salrub" displayName="Salmonella rubislaw"/>
+    	<CD code="Salsai" displayName="Salmonella saintpaul"/>
+    	<CD code="Salsch" displayName="Salmonella schwarzengrund"/>
+    	<CD code="Salsen" displayName="Salmonella senftenberg"/>
+    	<CD code="Saltal" displayName="Salmonella tallahassee"/>
+    	<CD code="Saltho" displayName="Salmonella thompson"/>
+    	<CD code="Saltyp" displayName="Salmonella typhi"/>
+    	<CD code="Saltyph" displayName="Salmonella typhimurium"/>
+    	<CD code="Salvir" displayName="Salmonella virginia"/>
+    	<CD code="Salwes" displayName="Salmonella westerstede"/>
+    	<CD code="Salwor" displayName="Salmonella worthington"/>
+   	</membersForCodeSystem>
+</OpenCdsConceptMappingSpecificationFile>

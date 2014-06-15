@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+     <OpenCdsConceptMappingSpecificationFile>
+          <specificationNotes>Created using ApelonConceptMappingSpecificationFileCreator.</specificationNotes>
+          <openCdsConcept code="C47" displayName="Unilateral mastectomy"></openCdsConcept>
+          <conceptDeterminationMethod code="C45" displayName="NQF"></conceptDeterminationMethod>
+          <membersForCodeSystem codeSystem="2.16.840.1.113883.6.103" codeSystemName="ICD9CM diagnoses">
+               <CD code="85.41" displayName="Unilateral simple mastectomy [85.41]"></CD>
+               <CD code="85.43" displayName="Unilateral extended simple mastectomy [85.43]"></CD>
+               <CD code="85.45" displayName="Unilateral radical mastectomy [85.45]"></CD>
+               <CD code="85.47" displayName="Unilateral extended radical mastectomy [85.47]"></CD>
+          </membersForCodeSystem>
+     </OpenCdsConceptMappingSpecificationFile>

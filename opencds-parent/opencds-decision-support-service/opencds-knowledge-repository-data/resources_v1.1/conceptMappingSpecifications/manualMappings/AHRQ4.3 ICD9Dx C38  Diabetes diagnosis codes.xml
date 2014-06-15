@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OpenCdsConceptMappingSpecificationFile>
+	<specificationNotes>Created manually from AHRQ PSI specifications.</specificationNotes>
+    <openCdsConcept code="C38" displayName="Diabetes mellitus"/>
+    <conceptDeterminationMethod code="C267" displayName="AHRQ v4.3"/>
+    <membersForCodeSystem codeSystem="2.16.840.1.113883.6.103" codeSystemName="ICD9CM diagnoses">
+    	<CD code="249.00" displayName="SECONDARY DIABETES MELLITUS WITHOUT MENTION OF COMPLICATION, NOT STATED AS CONTROLLED OR UNSPECIFIED (OCT08)"/>
+    	<CD code="249.01" displayName="SECONDARY DIABETES MELLITUS WITHOUT MENTION OF COMPLICATION, UNCONTROLLED (OCT08)"/>
+    	<CD code="249.10" displayName="SECONDARY DIABETES MELLITUS WITH KETOACIDOSIS, UNSPECIFIED (OCT08)"/>
+    	<CD code="249.11" displayName="SECONDARY DIABETES MELLITUS WITH KETOACIDOSIS, UNCONTROLLED (OCT08)"/>
+    	<CD code="249.20" displayName="SECONDARY DIABETES MELLITUS WITH HYPEROSMOLARITY, UNSPECIFIED (OCT08)"/>
+    	<CD code="249.21" displayName="SECONDARY DIABETES MELLITUS WITH HYPEROSMOLARITY, UNCONTROLLED (OCT08)"/>
+    	<CD code="249.30" displayName="SECONDARY DIABETES MELLITUS WITH OTHER COMA, UNSPECIFIED (OCT08)"/>
+    	<CD code="249.31" displayName="SECONDARY DIABETES MELLITUS WITH OTHER COMA, UNCONTROLLED (OCT08)"/>
+    	<CD code="249.40" displayName="SECONDARY DIABETES MELLITUS WITH RENAL MANIFESTATIONS, UNSPECIFIED (OCT08)"/>
+    	<CD code="249.41" displayName="SECONDARY DIABETES MELLITUS WITH RENAL MANIFESTATIONS, UNCONTROLLED (OCT08)"/>
+    	<CD code="249.50" displayName="SECONDARY DIABETES MELLITUS WITH OPHTHALMIC MANIFESTATIONS, UNSPECIFIED (OCT08)"/>
+    	<CD code="249.51" displayName="SECONDARY DIABETES MELLITUS WITH OPHTHALMIC MANIFESTATIONS, UNCONTROLLED (OCT08)"/>
+    	<CD code="249.60" displayName="SECONDARY DIABETES MELLITUS WITH NEUROLOGICAL MANIFESTATIONS, UNSPECIFIED (OCT08)"/>
+    	<CD code="249.61" displayName="SECONDARY DIABETES MELLITUS WITH NEUROLOGICAL MANIFESTATIONS, UNCONTROLLED (OCT08)"/>
+    	<CD code="249.70" displayName="SECONDARY DIABETES MELLITUS WITH PERIPHERAL CIRCULATORY MANIFESTATIONS, UNSPECIFIED (OCT08)"/>
+    	<CD code="249.71" displayName="SECONDARY DIABETES MELLITUS WITH PERIPHERAL CIRCULATORY MANIFESTATIONS, UNCONTROLLED (OCT08)"/>
+    	<CD code="249.80" displayName="SECONDARY DIABETES MELLITUS WITH OTHER SPECIFIED MANIFESTATIONS, UNSPECIFIED (OCT08)"/>
+    	<CD code="249.81" displayName="SECONDARY DIABETES MELLITUS WITH OTHER SPECIFIED MANIFESTATIONS, UNCONTROLLED (OCT08)"/>
+    	<CD code="249.90" displayName="SECONDARY DIABETES MELLITUS WITH UNSPECIFIED MANIFESTATIONS, UNSPECIFIED (OCT08)"/>
+    	<CD code="249.91" displayName="SECONDARY DIABETES MELLITUS WITH UNSPECIFIED MANIFESTATIONS, UNCONTROLLED (OCT08)"/>
+    	<CD code="250.00" displayName="DMII WO CMP NT ST UNCNTR"/>
+    	<CD code="250.01" displayName="DMI WO CMP NT ST UNCNTRL"/>
+    	<CD code="250.02" displayName="DMII WO CMP UNCNTRLD"/>
+    	<CD code="250.03" displayName="DMI WO CMP UNCNTRLD"/>
+    	<CD code="250.10" displayName="DMII KETO NT ST UNCNTRLD"/>
+    	<CD code="250.11" displayName="DMI KETO NT ST UNCNTRLD"/>
+    	<CD code="250.12" displayName="DMII KETOACD UNCONTROLD"/>
+    	<CD code="250.13" displayName="DMI KETOACD UNCONTROLD"/>
+    	<CD code="250.20" displayName="DMII HPRSM NT ST UNCNTRL"/>
+    	<CD code="250.21" displayName="DMI HPRSM NT ST UNCNTRLD"/>
+    	<CD code="250.22" displayName="DMII HPROSMLR UNCONTROLD"/>
+    	<CD code="250.23" displayName="DMI HPROSMLR UNCONTROLD"/>
+    	<CD code="250.30" displayName="DMII O CM NT ST UNCNTRLD"/>
+    	<CD code="250.31" displayName="DMI O CM NT ST UNCNTRLD"/>
+    	<CD code="250.32" displayName="DMII OTH COMA UNCONTROLD"/>
+    	<CD code="250.33" displayName="DMI OTH COMA UNCONTROLD"/>
+    	<CD code="250.40" displayName="DMII RENL NT ST UNCNTRLD"/>
+    	<CD code="250.41" displayName="DMI RENL NT ST UNCNTRLD"/>
+    	<CD code="250.42" displayName="DMII RENAL UNCNTRLD"/>
+    	<CD code="250.43" displayName="DMI RENAL UNCNTRLD"/>
+    	<CD code="250.50" displayName="DMII OPHTH NT ST UNCNTRL"/>
+    	<CD code="250.51" displayName="DMI OPHTH NT ST UNCNTRLD"/>
+    	<CD code="250.52" displayName="DMII OPHTH UNCNTRLD"/>
+    	<CD code="250.53" displayName="DMI OPHTH UNCNTRLD"/>
+    	<CD code="250.60" displayName="DMII NEURO NT ST UNCNTRL"/>
+    	<CD code="250.61" displayName="DMI NEURO NT ST UNCNTRLD"/>
+    	<CD code="250.62" displayName="DMII NEURO UNCNTRLD"/>
+    	<CD code="250.63" displayName="DMI NEURO UNCNTRLD"/>
+    	<CD code="250.70" displayName="DMII CIRC NT ST UNCNTRLD"/>
+    	<CD code="250.71" displayName="DMI CIRC NT ST UNCNTRLD"/>
+    	<CD code="250.72" displayName="DMII CIRC UNCNTRLD"/>
+    	<CD code="250.73" displayName="DMI CIRC UNCNTRLD"/>
+    	<CD code="250.80" displayName="DMII OTH NT ST UNCNTRLD"/>
+    	<CD code="250.81" displayName="DMI OTH NT ST UNCNTRLD"/>
+    	<CD code="250.82" displayName="DMII OTH UNCNTRLD"/>
+    	<CD code="250.83" displayName="DMI OTH UNCNTRLD"/>
+    	<CD code="250.90" displayName="DMII UNSPF NT ST UNCNTRL"/>
+    	<CD code="250.91" displayName="DMI UNSPF NT ST UNCNTRLD"/>
+    	<CD code="250.92" displayName="DMII UNSPF UNCNTRLD"/>
+    	<CD code="250.93" displayName="DMI UNSPF UNCNTRLD"/>
+   	</membersForCodeSystem>
+</OpenCdsConceptMappingSpecificationFile>

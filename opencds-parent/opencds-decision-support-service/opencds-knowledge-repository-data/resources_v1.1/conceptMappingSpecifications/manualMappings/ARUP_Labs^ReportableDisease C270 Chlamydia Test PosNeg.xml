@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OpenCdsConceptMappingSpecificationFile>
+	<specificationNotes>Created for proprietary ARUP codes not in Apelon.</specificationNotes>
+    <openCdsConcept code="C270" displayName="Chlamydia Test PosNeg"/>
+    <conceptDeterminationMethod code="C74" displayName="Reportable Disease"/>
+    <membersForCodeSystem codeSystem="2.16.840.1.113883.3.795.12.1.2" codeSystemName="OpenCDS proprietary local">
+     	<CD code="21613-5" displayName="C. trachomatis Amplified"/>
+     	<CD code="6355-2" displayName="Chlamydia trachomatis DFA"/>
+     	<CD code="43404-3" displayName="C. trachomatis by DNA Probe"/>
+   	</membersForCodeSystem>
+</OpenCdsConceptMappingSpecificationFile>

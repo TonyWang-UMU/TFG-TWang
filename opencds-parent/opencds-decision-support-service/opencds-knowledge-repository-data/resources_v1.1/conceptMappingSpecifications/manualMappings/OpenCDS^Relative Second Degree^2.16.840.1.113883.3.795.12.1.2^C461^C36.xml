@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OpenCdsConceptMappingSpecificationFile>
+	<specificationNotes>A relative with whom one quarter of an individual's genes is shared (i.e., grandparent, grandchild, uncle, aunt, nephew, niece, half-sibling).</specificationNotes>
+	<openCdsConcept code="C461" displayName="Relative Second Degree"></openCdsConcept>
+    <conceptDeterminationMethod code="C36" displayName="OpenCDS"></conceptDeterminationMethod>
+    <membersForCodeSystem codeSystem="2.16.840.1.113883.3.795.12.1.2" codeSystemName="OpenCDS">
+    	<CD code="RelDegree2" displayName="Relative Second Degree"/>
+    </membersForCodeSystem>
+</OpenCdsConceptMappingSpecificationFile>     

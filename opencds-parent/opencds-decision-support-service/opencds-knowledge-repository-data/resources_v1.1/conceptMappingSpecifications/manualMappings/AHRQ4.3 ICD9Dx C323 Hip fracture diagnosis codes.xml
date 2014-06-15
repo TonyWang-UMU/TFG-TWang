@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OpenCdsConceptMappingSpecificationFile>
+	<specificationNotes>Created manually from AHRQ PSI specifications.</specificationNotes>
+    <openCdsConcept code="C323" displayName="Hip Fracture"/>
+    <conceptDeterminationMethod code="C267" displayName="AHRQ v4.3"/>
+    <membersForCodeSystem codeSystem="2.16.840.1.113883.6.103" codeSystemName="ICD9CM diagnoses">
+    	<CD code="820.00" displayName="FX FEMUR INTRCAPS NOS-CL "/>
+    	<CD code="820.01" displayName="FX UP FEMUR EPIPHY-CLOS "/>
+    	<CD code="820.02" displayName="FX FEMUR, MIDCERVIC-CLOS "/>
+    	<CD code="820.03" displayName="FX BASE FEMORAL NCK-CLOS "/>
+    	<CD code="820.09" displayName="FX FEMUR INTRCAPS NEC-CL "/>
+    	<CD code="820.10" displayName="FX FEMUR INTRCAP NOS-OPN "/>
+    	<CD code="820.11" displayName="FX UP FEMUR EPIPHY-OPEN "/>
+    	<CD code="820.12" displayName="FX FEMUR, MIDCERVIC-OPEN "/>
+    	<CD code="820.13" displayName="FX BASE FEMORAL NCK-OPEN "/>
+    	<CD code="820.19" displayName="FX FEMUR INTRCAP NEC-OPN"/>
+    	<CD code="820.20" displayName="TROCHANTERIC FX NOS-CLOS "/>
+    	<CD code="820.21" displayName="INTERTROCHANTERIC FX-CL "/>
+    	<CD code="820.22" displayName="SUBTROCHANTERIC FX-CLOSE "/>
+    	<CD code="820.30" displayName="TROCHANTERIC FX NOS-OPEN "/>
+    	<CD code="820.31" displayName="INTERTROCHANTERIC FX-OPN "/>
+    	<CD code="820.32" displayName="SUBTROCHANTERIC FX-OPEN "/>
+    	<CD code="820.8" displayName="UNSPECIFIED PART OF NECK OF FEMUR, CLOSED "/>
+    	<CD code="820.9" displayName="UNSPECIFIED PART OF NECK OF FEMUR, OPEN"/>
+   	</membersForCodeSystem>
+</OpenCdsConceptMappingSpecificationFile>

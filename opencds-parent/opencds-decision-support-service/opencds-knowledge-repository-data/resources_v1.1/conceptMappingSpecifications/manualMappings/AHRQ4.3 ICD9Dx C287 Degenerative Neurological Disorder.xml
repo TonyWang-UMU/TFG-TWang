@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OpenCdsConceptMappingSpecificationFile>
+	<specificationNotes>Created manually from AHRQ PSI specifications.</specificationNotes>
+    <openCdsConcept code="C287" displayName="Degenerative Neurological Disorder"/>
+    <conceptDeterminationMethod code="C267" displayName="AHRQ"/>
+    <membersForCodeSystem codeSystem="2.16.840.1.113883.6.103" codeSystemName="ICD9CM diagnoses">
+    	<CD code="290.0" displayName="SENILE DEMENTIA UNCOMP"/>
+    	<CD code="290.10" displayName="PRESENILE DEMENTIA"/>
+    	<CD code="290.11" displayName="PRESENILE DELIRIUM"/>
+    	<CD code="290.12" displayName="PRESENILE DELUSION"/>
+    	<CD code="290.13" displayName="PRESENILE DEPRESSION"/>
+    	<CD code="290.20" displayName="SENILE DELUSION"/>
+    	<CD code="290.21" displayName="SENILE DEPRESSIVE"/>
+    	<CD code="290.3" displayName="SENILE DELIRIUM"/>
+    	<CD code="290.40" displayName="ARTERIOSCLER DEMENT NOS"/>
+    	<CD code="290.41" displayName="ARTERIOSCLER DELIRIUM"/>
+    	<CD code="290.42" displayName="ARTERIOSCLER DELUSION"/>
+    	<CD code="290.43" displayName="ARTERIOSCLER DEPRESSIVE"/>
+    	<CD code="290.8" displayName="SENILE PSYCHOSIS NEC"/>
+    	<CD code="290.9" displayName="SENILE PSYCHOT COND NOS"/>
+    	<CD code="293.0" displayName="ACUTE DELIRIUM"/>
+    	<CD code="293.1" displayName="SUBACUTE DELIRIUM"/>
+    	<CD code="294.0" displayName="AMNESTIC SYNDROME"/>
+    	<CD code="294.1" displayName="DEMENTIA IN OTH DISEASES"/>
+    	<CD code="294.10" displayName="DEMENTIA IN OTH DISEASES W0 BEHAVRAL (OCT00)"/>
+    	<CD code="294.11" displayName="DEMENTIA IN OTH DISEASES WBEHAVIORAL (OCT00)"/>
+    	<CD code="294.8" displayName="ORGANIC BRAIN SYND NEC"/>
+    	<CD code="294.9" displayName="ORGANIC BRAIN SYND NOS"/>
+    	<CD code="310.0" displayName="FRONTAL LOBE SYNDROME"/>
+    	<CD code="310.2" displayName="POSTCONCUSSION SYNDROME"/>
+    	<CD code="310.8" displayName="NONPSYCHOT BRAIN SYN NEC"/>
+    	<CD code="310.9" displayName="NONPSYCHOT BRAIN SYN NOS"/>
+    	<CD code="331.0" displayName="ALZHEIMERS DISEASE"/>
+    	<CD code="331.1" displayName="FRONTOTEMPORAL DEMENTIA"/>
+    	<CD code="331.11" displayName="PICKS DISEASE"/>
+    	<CD code="331.19" displayName="OTHER FRONTOTEMPORAL DEMENTIA"/>
+    	<CD code="331.2" displayName="SENILE DEGENERAT BRAIN"/>
+    	<CD code="331.82" displayName="DEMENTIA WITH LEWY BODIES"/>
+    	<CD code="797" displayName="SENILITY WITHOUT MENTION OF PSYCHOSIS"/>
+   	</membersForCodeSystem>
+</OpenCdsConceptMappingSpecificationFile>

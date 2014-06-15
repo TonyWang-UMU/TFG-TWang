@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OpenCdsConceptMappingSpecificationFile>
+	<specificationNotes>Created manually from AHRQ PSI specifications.</specificationNotes>
+    <openCdsConcept code="C333" displayName="Lymphoid Malignancy"/>
+    <conceptDeterminationMethod code="C267" displayName="AHRQ v4.3"/>
+    <membersForCodeSystem codeSystem="2.16.840.1.113883.6.103" codeSystemName="ICD9CM diagnoses">
+    	<CD code="200.00" displayName="RETCLSRC UNSP XTRNDL ORG"/>
+    	<CD code="200.01" displayName="RETICULOSARCOMA HEAD"/>
+    	<CD code="200.02" displayName="RETICULOSARCOMA THORAX"/>
+    	<CD code="200.03" displayName="RETICULOSARCOMA ABDOM"/>
+    	<CD code="200.04" displayName="RETICULOSARCOMA AXILLA"/>
+    	<CD code="200.05" displayName="RETICULOSARCOMA INGUIN"/>
+    	<CD code="200.06" displayName="RETICULOSARCOMA PELVIC"/>
+    	<CD code="200.07" displayName="RETICULOSARCOMA SPLEEN"/>
+    	<CD code="200.08" displayName="RETICULOSARCOMA MULT"/>
+    	<CD code="200.10" displayName="LYMPHSRC UNSP XTRNDL ORG"/>
+    	<CD code="200.11" displayName="LYMPHOSARCOMA HEAD"/>
+    	<CD code="200.12" displayName="LYMPHOSARCOMA THORAX"/>
+    	<CD code="200.13" displayName="LYMPHOSARCOMA ABDOM"/>
+    	<CD code="200.14" displayName="LYMPHOSARCOMA AXILLA"/>
+    	<CD code="200.15" displayName="LYMPHOSARCOMA INGUIN"/>
+    	<CD code="200.16" displayName="LYMPHOSARCOMA PELVIC"/>
+    	<CD code="200.17" displayName="LYMPHOSARCOMA SPLEEN"/>
+    	<CD code="200.18" displayName="LYMPHOSARCOMA MULT"/>
+    	<CD code="200.20" displayName="BRKT TMR UNSP XTRNDL ORG"/>
+    	<CD code="200.21" displayName="BURKITTS TUMOR HEAD"/>
+    	<CD code="200.22" displayName="BURKITTS TUMOR THORAX"/>
+    	<CD code="200.23" displayName="BURKITTS TUMOR ABDOM"/>
+    	<CD code="200.24" displayName="BURKITTS TUMOR AXILLA"/>
+    	<CD code="200.25" displayName="BURKITTS TUMOR INGUIN"/>
+    	<CD code="200.26" displayName="BURKITTS TUMOR PELVIC"/>
+    	<CD code="200.27" displayName="BURKITTS TUMOR SPLEEN"/>
+    	<CD code="200.28" displayName="BURKITTS TUMOR MULT"/>
+    	<CD code="200.80" displayName="OTH VARN UNSP XTRNDL ORG"/>
+    	<CD code="200.81" displayName="MIXED LYMPHOSARC HEAD"/>
+    	<CD code="200.82" displayName="MIXED LYMPHOSARC THORAX"/>
+    	<CD code="200.83" displayName="MIXED LYMPHOSARC ABDOM"/>
+    	<CD code="200.84" displayName="MIXED LYMPHOSARC AXILLA"/>
+    	<CD code="200.85" displayName="MIXED LYMPHOSARC INGUIN"/>
+    	<CD code="200.86" displayName="MIXED LYMPHOSARC PELVIC"/>
+    	<CD code="200.87" displayName="MIXED LYMPHOSARC SPLEEN"/>
+    	<CD code="200.88" displayName="MIXED LYMPHOSARC MULT"/>
+    	<CD code="201.00" displayName="HDGK PRG UNSP XTRNDL ORG"/>
+    	<CD code="201.01" displayName="HODGKINS PARAGRAN HEAD"/>
+    	<CD code="201.02" displayName="HODGKINS PARAGRAN THORAX"/>
+    	<CD code="201.03" displayName="HODGKINS PARAGRAN ABDOM"/>
+    	<CD code="201.04" displayName="HODGKINS PARAGRAN AXILLA"/>
+    	<CD code="201.05" displayName="HODGKINS PARAGRAN INGUIN"/>
+    	<CD code="201.06" displayName="HODGKINS PARAGRAN PELVIC"/>
+    	<CD code="201.07" displayName="HODGKINS PARAGRAN SPLEEN"/>
+    	<CD code="201.08" displayName="HODGKINS PARAGRAN MULT"/>
+    	<CD code="201.10" displayName="HDGK GRN UNSP XTRNDL ORG"/>
+    	<CD code="201.11" displayName="HODGKINS GRANULOM HEAD"/>
+    	<CD code="201.12" displayName="HODGKINS GRANULOM THORAX"/>
+    	<CD code="201.13" displayName="HODGKINS GRANULOM ABDOM"/>
+    	<CD code="201.14" displayName="HODGKINS GRANULOM AXILLA"/>
+    	<CD code="201.15" displayName="HODGKINS GRANULOM INGUIN"/>
+    	<CD code="201.16" displayName="HODGKINS GRANULOM PELVIC"/>
+    	<CD code="201.17" displayName="HODGKINS GRANULOM SPLEEN"/>
+    	<CD code="201.18" displayName="HODGKINS GRANULOM MULT"/>
+    	<CD code="201.20" displayName="HDGK SRC UNSP XTRNDL ORG"/>
+    	<CD code="201.21" displayName="HODGKINS SARCOMA HEAD"/>
+    	<CD code="201.22" displayName="HODGKINS SARCOMA THORAX"/>
+    	<CD code="201.23" displayName="HODGKINS SARCOMA ABDOM"/>
+    	<CD code="201.24" displayName="HODGKINS SARCOMA AXILLA"/>
+    	<CD code="201.25" displayName="HODGKINS SARCOMA INGUIN"/>
+    	<CD code="201.26" displayName="HODGKINS SARCOMA PELVIC"/>
+    	<CD code="201.27" displayName="HODGKINS SARCOMA SPLEEN"/>
+    	<CD code="201.28" displayName="HODGKINS SARCOMA MULT"/>
+    	<CD code="201.40" displayName="LYM-HST UNSP XTRNDL ORGN"/>
+    	<CD code="201.41" displayName="HODG LYMPH-HISTIO HEAD"/>
+    	<CD code="201.42" displayName="HODG LYMPH-HISTIO THORAX"/>
+    	<CD code="201.43" displayName="HODG LYMPH-HISTIO ABDOM"/>
+    	<CD code="201.44" displayName="HODG LYMPH-HISTIO AXILLA"/>
+    	<CD code="201.45" displayName="HODG LYMPH-HISTIO INGUIN"/>
+    	<CD code="201.46" displayName="HODG LYMPH-HISTIO PELVIC"/>
+    	<CD code="201.47" displayName="HODG LYMPH-HISTIO SPLEEN"/>
+    	<CD code="201.48" displayName="HODG LYMPH-HISTIO MULT"/>
+    	<CD code="201.50" displayName="NDR SCLR UNSP XTRNDL ORG"/>
+    	<CD code="201.51" displayName="HODG NODUL SCLERO HEAD"/>
+    	<CD code="201.52" displayName="HODG NODUL SCLERO THORAX"/>
+    	<CD code="201.53" displayName="HODG NODUL SCLERO ABDOM"/>
+    	<CD code="201.54" displayName="HODG NODUL SCLERO AXILLA"/>
+    	<CD code="201.55" displayName="HODG NODUL SCLERO INGUIN"/>
+    	<CD code="201.56" displayName="HODG NODUL SCLERO PELVIC"/>
+    	<CD code="201.57" displayName="HODG NODUL SCLERO SPLEEN"/>
+    	<CD code="201.58" displayName="HODG NODUL SCLERO MULT"/>
+    	<CD code="201.60" displayName="MXD CELR UNSP XTRNDL ORG"/>
+    	<CD code="201.61" displayName="HODGKINS MIX CELL HEAD"/>
+    	<CD code="201.62" displayName="HODGKINS MIX CELL THORAX"/>
+    	<CD code="201.63" displayName="HODGKINS MIX CELL ABDOM"/>
+    	<CD code="201.64" displayName="HODGKINS MIX CELL AXILLA"/>
+    	<CD code="201.65" displayName="HODGKINS MIX CELL INGUIN"/>
+    	<CD code="201.66" displayName="HODGKINS MIX CELL PELVIC"/>
+    	<CD code="201.67" displayName="HODGKINS MIX CELL SPLEEN"/>
+    	<CD code="201.68" displayName="HODGKINS MIX CELL MULT"/>
+    	<CD code="201.70" displayName="LYM DPLT UNSP XTRNDL ORG"/>
+    	<CD code="201.71" displayName="HODG LYMPH DEPLET HEAD"/>
+    	<CD code="201.72" displayName="HODG LYMPH DEPLET THORAX"/>
+    	<CD code="201.73" displayName="HODG LYMPH DEPLET ABDOM"/>
+    	<CD code="201.74" displayName="HODG LYMPH DEPLET AXILLA"/>
+    	<CD code="201.75" displayName="HODG LYMPH DEPLET INGUIN"/>
+    	<CD code="201.76" displayName="HODG LYMPH DEPLET PELVIC"/>
+    	<CD code="201.77" displayName="HODG LYMPH DEPLET SPLEEN"/>
+    	<CD code="201.78" displayName="HODG LYMPH DEPLET MULT"/>
+    	<CD code="201.90" displayName="HDGK DIS UNSP XTRNDL ORG"/>
+    	<CD code="201.91" displayName="HODGKINS DIS NOS HEAD"/>
+    	<CD code="201.92" displayName="HODGKINS DIS NOS THORAX"/>
+    	<CD code="201.93" displayName="HODGKINS DIS NOS ABDOM"/>
+    	<CD code="201.94" displayName="HODGKINS DIS NOS AXILLA"/>
+    	<CD code="201.95" displayName="HODGKINS DIS NOS INGUIN"/>
+    	<CD code="201.96" displayName="HODGKINS DIS NOS PELVIC"/>
+    	<CD code="201.97" displayName="HODGKINS DIS NOS SPLEEN"/>
+    	<CD code="201.98" displayName="HODGKINS DIS NOS MULT"/>
+    	<CD code="202" displayName="OTHER MALIGNANT NEOPLASMS OF LYMPHOID AND HISTIOCYTIC TISSUE"/>
+    	<CD code="202.00" displayName="NDLR LYM UNSP XTRNDL ORG"/>
+    	<CD code="202.01" displayName="NODULAR LYMPHOMA HEAD"/>
+    	<CD code="202.02" displayName="NODULAR LYMPHOMA THORAX"/>
+    	<CD code="202.03" displayName="NODULAR LYMPHOMA ABDOM"/>
+    	<CD code="202.04" displayName="NODULAR LYMPHOMA AXILLA"/>
+    	<CD code="202.05" displayName="NODULAR LYMPHOMA INGUIN"/>
+    	<CD code="202.06" displayName="NODULAR LYMPHOMA PELVIC"/>
+    	<CD code="202.07" displayName="NODULAR LYMPHOMA SPLEEN"/>
+    	<CD code="202.08" displayName="NODULAR LYMPHOMA MULT"/>
+    	<CD code="202.10" displayName="MYCS FNG UNSP XTRNDL ORG"/>
+    	<CD code="202.11" displayName="MYCOSIS FUNGOIDES HEAD"/>
+    	<CD code="202.12" displayName="MYCOSIS FUNGOIDES THORAX"/>
+    	<CD code="202.13" displayName="MYCOSIS FUNGOIDES ABDOM"/>
+    	<CD code="202.14" displayName="MYCOSIS FUNGOIDES AXILLA"/>
+    	<CD code="202.15" displayName="MYCOSIS FUNGOIDES INGUIN"/>
+    	<CD code="202.16" displayName="MYCOSIS FUNGOIDES PELVIC"/>
+    	<CD code="202.17" displayName="MYCOSIS FUNGOIDES SPLEEN"/>
+    	<CD code="202.18" displayName="MYCOSIS FUNGOIDES MULT"/>
+    	<CD code="202.20" displayName="SZRY DIS UNSP XTRNDL ORG"/>
+    	<CD code="202.21" displayName="SEZARYS DISEASE HEAD"/>
+    	<CD code="202.22" displayName="SEZARYS DISEASE THORAX"/>
+    	<CD code="202.23" displayName="SEZARYS DISEASE ABDOM"/>
+    	<CD code="202.24" displayName="SEZARYS DISEASE AXILLA"/>
+    	<CD code="202.25" displayName="SEZARYS DISEASE INGUIN"/>
+    	<CD code="202.26" displayName="SEZARYS DISEASE PELVIC"/>
+    	<CD code="202.27" displayName="SEZARYS DISEASE SPLEEN"/>
+    	<CD code="202.28" displayName="SEZARYS DISEASE MULT"/>
+    	<CD code="202.30" displayName="MLG HIST UNSP XTRNDL ORG"/>
+    	<CD code="202.31" displayName="MAL HISTIOCYTOSIS HEAD"/>
+    	<CD code="202.32" displayName="MAL HISTIOCYTOSIS THORAX"/>
+    	<CD code="202.33" displayName="MAL HISTIOCYTOSIS ABDOM"/>
+    	<CD code="202.34" displayName="MAL HISTIOCYTOSIS AXILLA"/>
+    	<CD code="202.35" displayName="MAL HISTIOCYTOSIS INGUIN"/>
+    	<CD code="202.36" displayName="MAL HISTIOCYTOSIS PELVIC"/>
+    	<CD code="202.37" displayName="MAL HISTIOCYTOSIS SPLEEN"/>
+    	<CD code="202.38" displayName="MAL HISTIOCYTOSIS MULT"/>
+    	<CD code="202.40" displayName="LK RTCTL UNSP XTRNDL ORG"/>
+    	<CD code="202.41" displayName="HAIRY-CELL LEUKEM HEAD"/>
+    	<CD code="202.42" displayName="HAIRY-CELL LEUKEM THORAX"/>
+    	<CD code="202.43" displayName="HAIRY-CELL LEUKEM ABDOM"/>
+    	<CD code="202.44" displayName="HAIRY-CELL LEUKEM AXILLA"/>
+    	<CD code="202.45" displayName="HAIRY-CELL LEUKEM INGUIN"/>
+    	<CD code="202.46" displayName="HAIRY-CELL LEUKEM PELVIC"/>
+    	<CD code="202.47" displayName="HAIRY-CELL LEUKEM SPLEEN"/>
+    	<CD code="202.48" displayName="HAIRY-CELL LEUKEM MULT"/>
+    	<CD code="202.50" displayName="LTR-SIWE UNSP XTRNDL ORG"/>
+    	<CD code="202.51" displayName="LETTERER-SIWE DIS HEAD"/>
+    	<CD code="202.52" displayName="LETTERER-SIWE DIS THORAX"/>
+    	<CD code="202.53" displayName="LETTERER-SIWE DIS ABDOM"/>
+    	<CD code="202.54" displayName="LETTERER-SIWE DIS AXILLA"/>
+    	<CD code="202.55" displayName="LETTERER-SIWE DIS INGUIN"/>
+    	<CD code="202.56" displayName="LETTERER-SIWE DIS PELVIC"/>
+    	<CD code="202.57" displayName="LETTERER-SIWE DIS SPLEEN"/>
+    	<CD code="202.58" displayName="LETTERER-SIWE DIS MULT"/>
+    	<CD code="202.60" displayName="MLG MAST UNSP XTRNDL ORG"/>
+    	<CD code="202.61" displayName="MAL MASTOCYTOSIS HEAD"/>
+    	<CD code="202.62" displayName="MAL MASTOCYTOSIS THORAX"/>
+    	<CD code="202.63" displayName="MAL MASTOCYTOSIS ABDOM"/>
+    	<CD code="202.64" displayName="MAL MASTOCYTOSIS AXILLA"/>
+    	<CD code="202.65" displayName="MAL MASTOCYTOSIS INGUIN"/>
+    	<CD code="202.66" displayName="MAL MASTOCYTOSIS PELVIC"/>
+    	<CD code="202.67" displayName="MAL MASTOCYTOSIS SPLEEN"/>
+    	<CD code="202.68" displayName="MAL MASTOCYTOSIS MULT"/>
+    	<CD code="202.80" displayName="OTH LYMP UNSP XTRNDL ORG"/>
+    	<CD code="202.81" displayName="LYMPHOMAS NEC HEAD"/>
+    	<CD code="202.82" displayName="LYMPHOMAS NEC THORAX"/>
+    	<CD code="202.83" displayName="LYMPHOMAS NEC ABDOM"/>
+    	<CD code="202.84" displayName="LYMPHOMAS NEC AXILLA"/>
+    	<CD code="202.85" displayName="LYMPHOMAS NEC INGUIN"/>
+    	<CD code="202.86" displayName="LYMPHOMAS NEC PELVIC"/>
+    	<CD code="202.87" displayName="LYMPHOMAS NEC SPLEEN"/>
+    	<CD code="202.88" displayName="LYMPHOMAS NEC MULT"/>
+    	<CD code="202.90" displayName="UNSP LYM UNSP XTRNDL ORG"/>
+    	<CD code="202.91" displayName="LYMPHOID MAL NEC HEAD"/>
+    	<CD code="202.92" displayName="LYMPHOID MAL NEC THORAX"/>
+    	<CD code="202.93" displayName="LYMPHOID MAL NEC ABDOM"/>
+    	<CD code="202.94" displayName="LYMPHOID MAL NEC AXILLA"/>
+    	<CD code="202.95" displayName="LYMPHOID MAL NEC INGUIN"/>
+    	<CD code="202.96" displayName="LYMPHOID MAL NEC PELVIC"/>
+    	<CD code="202.97" displayName="LYMPHOID MAL NEC SPLEEN"/>
+    	<CD code="202.98" displayName="LYMPHOID MAL NEC MULT"/>
+    	<CD code="203.0" displayName="MULTIPLE MYELOMA"/>
+    	<CD code="203.00" displayName="MULT MYELM W/O REMISSION"/>
+    	<CD code="203.01" displayName="MULT MYELM W REMISSION"/>
+    	<CD code="203.02" displayName="MULT MYELOMA IN RELAPSE"/>
+    	<CD code="203.1" displayName="PLASMA CELL LEUKEMIA"/>
+    	<CD code="203.10" displayName="PLSM CELL LEUK W/O RMSON"/>
+    	<CD code="203.11" displayName="PLSM CELL LEUK W RMSON"/>
+    	<CD code="203.12" displayName="PLSM CEL LEUK IN RELAPSE"/>
+    	<CD code="203.8" displayName="IMMUNOPROLIFERAT NEO NEC"/>
+    	<CD code="203.80" displayName="OTH IMNPRFL NPL W/O RMSN"/>
+    	<CD code="203.81" displayName="OTH IMNPRFL NPL W RMSN"/>
+    	<CD code="203.82" displayName="OTH IMNPRLF NEO-RELAPSE"/>
+    	<CD code="204.0" displayName="ACUTE LYMPHOID LEUKEMIA"/>
+    	<CD code="204.00" displayName="ACT LYM LEUK W/O RMSION"/>
+    	<CD code="204.01" displayName="ACT LYM LEUK W RMSION"/>
+    	<CD code="204.02" displayName="ACT LYMP LEUK IN RELAPSE"/>
+    	<CD code="204.1" displayName="CHR LYMPHOID LEUKEMIA"/>
+    	<CD code="204.10" displayName="CHR LYM LEUK W/O RMSION"/>
+    	<CD code="204.11" displayName="CHR LYM LEUK W RMSION"/>
+    	<CD code="204.12" displayName="CHR LYMP LEUK IN RELAPSE"/>
+    	<CD code="204.2" displayName="SUBAC LYMPHOID LEUKEMIA"/>
+    	<CD code="204.20" displayName="SBAC LYM LEUK W/O RMSION"/>
+    	<CD code="204.21" displayName="SBAC LYM LEUK W RMSION"/>
+    	<CD code="204.22" displayName="SBAC LYM LEUK IN RELAPSE"/>
+    	<CD code="204.8" displayName="LYMPHOID LEUKEMIA NEC"/>
+    	<CD code="204.80" displayName="OTH LYM LEUK W/O RMSION"/>
+    	<CD code="204.81" displayName="OTH LYM LEUK W RMSION"/>
+    	<CD code="204.82" displayName="OTH LYM LEUK IN RELAPSE"/>
+    	<CD code="204.9" displayName="LYMPHOID LEUKEMIA NOS"/>
+    	<CD code="204.90" displayName="UNS LYM LEUK W/O RMSION"/>
+    	<CD code="204.91" displayName="UNS LYM LEUK W RMSION"/>
+    	<CD code="204.92" displayName="LYMP LEUK NOS RELAPSE"/>
+    	<CD code="205.0" displayName="ACUTE MYELOID LEUKEMIA"/>
+    	<CD code="205.00" displayName="ACT MYL LEUK W/O RMSION"/>
+    	<CD code="205.01" displayName="ACT MYL LEUK W RMSION"/>
+    	<CD code="205.02" displayName="ACT MYEL LEUK IN RELAPSE"/>
+    	<CD code="205.1" displayName="CHRONIC MYELOID LEUKEMIA"/>
+    	<CD code="205.10" displayName="CHR MYL LEUK W/O RMSION"/>
+    	<CD code="205.11" displayName="CHR MYL LEUK W RMSION"/>
+    	<CD code="205.12" displayName="CHR MYEL LEUK IN RELAPSE"/>
+    	<CD code="205.2" displayName="SUBACUT MYELOID LEUKEMIA"/>
+    	<CD code="205.20" displayName="SBAC MYL LEUK W/O RMSION"/>
+    	<CD code="205.21" displayName="SBAC MYL LEUK W RMSION"/>
+    	<CD code="205.22" displayName="SBAC MYL LEUK IN RELAPSE"/>
+    	<CD code="205.3" displayName="MYELOID SARCOMA"/>
+    	<CD code="205.30" displayName="MYL SRCOMA W/O RMSION"/>
+    	<CD code="205.31" displayName="MYL SRCOMA W RMSION"/>
+    	<CD code="205.32" displayName="MYEL SARCOMA IN RELAPSE"/>
+    	<CD code="205.8" displayName="MYELOID LEUKEMIA NEC"/>
+    	<CD code="205.80" displayName="OTH MYL LEUK W/O RMSION"/>
+    	<CD code="205.81" displayName="OTH MYL LEUK W RMSION"/>
+    	<CD code="205.82" displayName="OTH MYEL LEUK IN RELAPSE"/>
+    	<CD code="205.9" displayName="MYELOID LEUKEMIA NOS"/>
+    	<CD code="205.90" displayName="UNS MYL LEUK W/O RMSION"/>
+    	<CD code="205.91" displayName="UNS MYL LEUK W RMSION"/>
+    	<CD code="205.92" displayName="MYEL LEUK NOS IN RELAPSE"/>
+    	<CD code="206.0" displayName="ACUTE MONOCYTIC LEUKEMIA"/>
+    	<CD code="206.00" displayName="ACT MONO LEUK W/O RMSION"/>
+    	<CD code="206.01" displayName="ACT MONO LEUK W RMSION"/>
+    	<CD code="206.02" displayName="ACT MONO LEUK IN RELAPSE"/>
+    	<CD code="206.1" displayName="CHR MONOCYTIC LEUKEMIA"/>
+    	<CD code="206.10" displayName="CHR MONO LEUK W/O RMSION"/>
+    	<CD code="206.11" displayName="CHR MONO LEUK W RMSION"/>
+    	<CD code="206.12" displayName="CHR MONO LEUK IN RELAPSE"/>
+    	<CD code="206.2" displayName="SUBAC MONOCYTIC LEUKEMIA"/>
+    	<CD code="206.20" displayName="SBAC MONO LEUK W/O RMSON"/>
+    	<CD code="206.21" displayName="SBAC MONO LEUK W RMSION"/>
+    	<CD code="206.22" displayName="SBAC MONO LEU IN RELAPSE"/>
+    	<CD code="206.8" displayName="MONOCYTIC LEUKEMIA NEC"/>
+    	<CD code="206.80" displayName="OTH MONO LEUK W/O RMSION"/>
+    	<CD code="206.81" displayName="OTH MONO LEUK W RMSION"/>
+    	<CD code="206.82" displayName="OTH MONO LEUK IN RELAPSE"/>
+    	<CD code="206.9" displayName="MONOCYTIC LEUKEMIA NOS"/>
+    	<CD code="206.90" displayName="UNS MONO LEUK W/O RMSION"/>
+    	<CD code="206.91" displayName="UNS MONO LEUK W RMSION"/>
+    	<CD code="206.92" displayName="MONO LEUK NOS RELAPSE"/>
+    	<CD code="207.0" displayName="ACUTE ERYTHREMIA"/>
+    	<CD code="207.00" displayName="ACT ERTH/ERYLK W/O RMSON"/>
+    	<CD code="207.01" displayName="ACT ERTH/ERYLK W RMSON"/>
+    	<CD code="207.02" displayName="AC ERTH/ERYLK IN RELAPSE"/>
+    	<CD code="207.1" displayName="CHRONIC ERYTHREMIA"/>
+    	<CD code="207.10" displayName="CHR ERYTHRM W/O REMISION"/>
+    	<CD code="207.11" displayName="CHR ERYTHRM W REMISION"/>
+    	<CD code="207.12" displayName="CHR ERYTHRMIA IN RELAPSE"/>
+    	<CD code="207.2" displayName="MEGAKARYOCYTIC LEUKEMIA"/>
+    	<CD code="207.20" displayName="MGKRYCYT LEUK W/O RMSION"/>
+    	<CD code="207.21" displayName="MGKRYCYT LEUK W RMSION"/>
+    	<CD code="207.22" displayName="MGKRYCYT LEUK IN RELAPSE"/>
+    	<CD code="207.8" displayName="SPECIFIED LEUKEMIA NEC"/>
+    	<CD code="207.80" displayName="OTH SPF LEUK W/O REMSION"/>
+    	<CD code="207.81" displayName="OTH SPF LEUK W REMSION"/>
+    	<CD code="207.82" displayName="OTH SPF LEUK IN RELAPSE"/>
+    	<CD code="208.0" displayName="ACT LEUK UNS CL W/O RMSN"/>
+    	<CD code="208.00" displayName="ACT LEUK UNS CL W/O RMSN"/>
+    	<CD code="208.01" displayName="ACT LEUK UNS CL W RMSON"/>
+    	<CD code="208.02" displayName="AC LEUK UNS CL RELAPSE"/>
+    	<CD code="208.1" displayName="CHRONIC LEUKEMIA NOS"/>
+    	<CD code="208.10" displayName="CHR LEUK UNS CL W/O RMSN"/>
+    	<CD code="208.11" displayName="CHR LEUK UNS CL W RMSON"/>
+    	<CD code="208.12" displayName="CH LEU UNS CL IN RELAPSE"/>
+    	<CD code="208.2" displayName="SUBACUTE LEUKEMIA NOS"/>
+    	<CD code="208.20" displayName="SBAC LEUK UNS CL W/O RMS"/>
+    	<CD code="208.21" displayName="SBAC LEUK UNS CL W RMSON"/>
+    	<CD code="208.22" displayName="SBAC LEU UNS CL-RELAPSE"/>
+    	<CD code="208.8" displayName="LEUKEMIA-UNSPEC CELL NEC"/>
+    	<CD code="208.80" displayName="OTH LEUK UNS CL W/O RMSN"/>
+    	<CD code="208.81" displayName="OTH LEUK UNS CL W RMSON"/>
+    	<CD code="208.82" displayName="OTH LEUK UNS CL-RELAPSE"/>
+    	<CD code="208.9" displayName="LEUKEMIA-UNSPEC CELL NOS"/>
+    	<CD code="208.90" displayName="LEUKEMIA NOS W/O REMSION"/>
+    	<CD code="208.91" displayName="LEUKEMIA NOS W REMISSION"/>
+    	<CD code="208.92" displayName="LEUKEMIA NOS IN RELAPSE"/>
+   	</membersForCodeSystem>
+</OpenCdsConceptMappingSpecificationFile>

@@ -1,0 +1,715 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OpenCdsConceptMappingSpecificationFile>
+	<specificationNotes>Created manually from AHRQ PSI specifications.</specificationNotes>
+    <openCdsConcept code="C380" displayName="Infection"/>
+    <conceptDeterminationMethod code="C267" displayName="AHRQ v4.3"/>
+    <membersForCodeSystem codeSystem="2.16.840.1.113883.6.103" codeSystemName="ICD9CM diagnoses">
+    	<CD code="001.0" displayName="CHOLERA D/T VIB CHOLERAE (OCT05)"/>
+    	<CD code="001.1" displayName="CHOLERA D/T VIB EL TOR (OCT05)"/>
+    	<CD code="001.9" displayName="CHOLERA NOS (OCT05)"/>
+    	<CD code="002.0" displayName="TYPHOID FEVER (OCT05)"/>
+    	<CD code="002.1" displayName="PARATYPHOID FEVER A (OCT05)"/>
+    	<CD code="002.2" displayName="PARATYPHOID FEVER B (OCT05)"/>
+    	<CD code="002.3" displayName="PARATYPHOID FEVER C (OCT05)"/>
+    	<CD code="002.9" displayName="PARATYPHOID FEVER NOS (OCT05)"/>
+    	<CD code="003.0" displayName="SALMONELLA ENTERITIS (OCT05)"/>
+    	<CD code="003.1" displayName="SALMONELLA SEPTICEMIA (OCT05)"/>
+    	<CD code="003.20" displayName="LOCAL SALMONELLA INF NOS (OCT05)"/>
+    	<CD code="003.21" displayName="SALMONELLA MENINGITIS (OCT05)"/>
+    	<CD code="003.22" displayName="SALMONELLA PNEUMONIA (OCT05)"/>
+    	<CD code="003.23" displayName="SALMONELLA ARTHRITIS (OCT05)"/>
+    	<CD code="003.24" displayName="SALMONELLA OSTEOMYELITIS (OCT05)"/>
+    	<CD code="003.29" displayName="LOCAL SALMONELLA INF NEC (OCT05)"/>
+    	<CD code="003.8" displayName="SALMONELLA INFECTION NEC (OCT05)"/>
+    	<CD code="003.9" displayName="SALMONELLA INFECTION NOS (OCT05)"/>
+    	<CD code="004.0" displayName="SHIGELLA DYSENTERIAE (OCT05)"/>
+    	<CD code="004.1" displayName="SHIGELLA FLEXNERI (OCT05)"/>
+    	<CD code="004.2" displayName="SHIGELLA BOYDII (OCT05)"/>
+    	<CD code="004.3" displayName="SHIGELLA SONNEI (OCT05)"/>
+    	<CD code="004.8" displayName="SHIGELLA INFECTION NEC (OCT05)"/>
+    	<CD code="004.9" displayName="SHIGELLOSIS NOS (OCT05)"/>
+    	<CD code="005.0" displayName="STAPH FOOD POISONING (OCT05)"/>
+    	<CD code="005.1" displayName="BOTULISM (OCT05)"/>
+    	<CD code="005.2" displayName="FOOD POIS D/T C. PERFRIN (OCT05)"/>
+    	<CD code="005.3" displayName="FOOD POIS: CLOSTRID NEC (OCT05)"/>
+    	<CD code="005.4" displayName="FOOD POIS: V. PARAHAEM (OCT05)"/>
+    	<CD code="005.81" displayName="FOOD POISN D/T V. VULNIF (OCT05)"/>
+    	<CD code="005.89" displayName="BACT FOOD POISONING NEC (OCT05)"/>
+    	<CD code="005.9" displayName="FOOD POISONING NOS (OCT05)"/>
+    	<CD code="008.00" displayName="INTEST INFEC E COLI NOS (OCT05)"/>
+    	<CD code="008.01" displayName="INT INF E COLI ENTRPATH (OCT05)"/>
+    	<CD code="008.02" displayName="INT INF E COLI ENTRTOXGN (OCT05)"/>
+    	<CD code="008.03" displayName="INT INF E COLI ENTRNVSV (OCT05)"/>
+    	<CD code="008.04" displayName="INT INF E COLI ENTRHMRG (OCT05)"/>
+    	<CD code="008.09" displayName="INT INF E COLI SPCF NEC (OCT05)"/>
+    	<CD code="008.1" displayName="ARIZONA ENTERITIS (OCT05)"/>
+    	<CD code="008.2" displayName="AEROBACTER ENTERITIS (OCT05)"/>
+    	<CD code="008.3" displayName="PROTEUS ENTERITIS (OCT05)"/>
+    	<CD code="008.41" displayName="STAPHYLOCOCC ENTERITIS (OCT05)"/>
+    	<CD code="008.42" displayName="PSEUDOMONAS ENTERITIS (OCT05)"/>
+    	<CD code="008.43" displayName="INT INFEC CAMPYLOBACTER (OCT05)"/>
+    	<CD code="008.44" displayName="INT INF YRSNIA ENTRCLTCA (OCT05)"/>
+    	<CD code="008.45" displayName="INT INF CLSTRDIUM DFCILE (OCT05)"/>
+    	<CD code="008.46" displayName="INTES INFEC OTH ANEROBES (OCT05)"/>
+    	<CD code="008.47" displayName="INT INF OTH GRM NEG BCTR (OCT05)"/>
+    	<CD code="008.49" displayName="BACTERIAL ENTERITIS NEC (OCT05)"/>
+    	<CD code="008.5" displayName="BACTERIAL ENTERITIS NOS (OCT05)"/>
+    	<CD code="020.0" displayName="BUBONIC PLAGUE (OCT05)"/>
+    	<CD code="020.1" displayName="CELLULOCUTANEOUS PLAGUE (OCT05)"/>
+    	<CD code="020.2" displayName="SEPTICEMIC PLAGUE (OCT05)"/>
+    	<CD code="020.3" displayName="PRIMARY PNEUMONIC PLAGUE (OCT05)"/>
+    	<CD code="020.4" displayName="SECONDARY PNEUMON PLAGUE (OCT05)"/>
+    	<CD code="020.5" displayName="PNEUMONIC PLAGUE NOS (OCT05)"/>
+    	<CD code="020.8" displayName="OTHER TYPES OF PLAGUE (OCT05)"/>
+    	<CD code="020.9" displayName="PLAGUE NOS (OCT05)"/>
+    	<CD code="021.0" displayName="ULCEROGLANDUL TULAREMIA (OCT05)"/>
+    	<CD code="021.1" displayName="ENTERIC TULAREMIA (OCT05)"/>
+    	<CD code="021.2" displayName="PULMONARY TULAREMIA (OCT05)"/>
+    	<CD code="021.3" displayName="OCULOGLANDULAR TULAREMIA (OCT05)"/>
+    	<CD code="021.8" displayName="TULAREMIA NEC (OCT05)"/>
+    	<CD code="021.9" displayName="TULAREMIA NOS (OCT05)"/>
+    	<CD code="022.0" displayName="CUTANEOUS ANTHRAX (OCT05)"/>
+    	<CD code="022.1" displayName="PULMONARY ANTHRAX (OCT05)"/>
+    	<CD code="022.2" displayName="GASTROINTESTINAL ANTHRAX (OCT05)"/>
+    	<CD code="022.3" displayName="ANTHRAX SEPTICEMIA (OCT05)"/>
+    	<CD code="022.8" displayName="OTHER ANTHRAX MANIFEST (OCT05)"/>
+    	<CD code="022.9" displayName="ANTHRAX NOS (OCT05)"/>
+    	<CD code="023.0" displayName="BRUCELLA MELITENSIS (OCT05)"/>
+    	<CD code="023.1" displayName="BRUCELLA ABORTUS (OCT05)"/>
+    	<CD code="023.2" displayName="BRUCELLA SUIS (OCT05)"/>
+    	<CD code="023.3" displayName="BRUCELLA CANIS (OCT05)"/>
+    	<CD code="023.8" displayName="BRUCELLOSIS NEC (OCT05)"/>
+    	<CD code="023.9" displayName="BRUCELLOSIS NOS (OCT05)"/>
+    	<CD code="024" displayName="GLANDERS (OCT05)"/>
+    	<CD code="025" displayName="MELIOIDOSIS (OCT05)"/>
+    	<CD code="026.0" displayName="SPIRILLARY FEVER (OCT05)"/>
+    	<CD code="026.1" displayName="STREPTOBACILLARY FEVER (OCT05)"/>
+    	<CD code="026.9" displayName="RAT-BITE FEVER NOS (OCT05)"/>
+    	<CD code="027.0" displayName="LISTERIOSIS (OCT05)"/>
+    	<CD code="027.1" displayName="ERYSIPELOTHRIX INFECTION (OCT05)"/>
+    	<CD code="027.2" displayName="PASTEURELLOSIS (OCT05)"/>
+    	<CD code="027.8" displayName="ZOONOTIC BACT DIS NEC (OCT05)"/>
+    	<CD code="027.9" displayName="ZOONOTIC BACT DIS NOS (OCT05)"/>
+    	<CD code="032.0" displayName="FAUCIAL DIPHTHERIA (OCT05)"/>
+    	<CD code="032.1" displayName="NASOPHARYNX DIPHTHERIA (OCT05)"/>
+    	<CD code="032.2" displayName="ANT NASAL DIPHTHERIA (OCT05)"/>
+    	<CD code="032.3" displayName="LARYNGEAL DIPHTHERIA (OCT05)"/>
+    	<CD code="032.81" displayName="CONJUNCTIVAL DIPHTHERIA (OCT05)"/>
+    	<CD code="032.82" displayName="DIPHTHERITIC MYOCARDITIS (OCT05)"/>
+    	<CD code="032.83" displayName="DIPHTHERITIC PERITONITIS (OCT05)"/>
+    	<CD code="032.84" displayName="DIPHTHERITIC CYSTITIS (OCT05)"/>
+    	<CD code="032.85" displayName="CUTANEOUS DIPHTHERIA (OCT05)"/>
+    	<CD code="032.89" displayName="DIPHTHERIA NEC (OCT05)"/>
+    	<CD code="032.9" displayName="DIPHTHERIA NOS (OCT05)"/>
+    	<CD code="033.0" displayName="BORDETELLA PERTUSSIS (OCT05)"/>
+    	<CD code="033.1" displayName="BORDETELLA PARAPERTUSSIS (OCT05)"/>
+    	<CD code="033.8" displayName="WHOOPING COUGH NEC (OCT05)"/>
+    	<CD code="033.9" displayName="WHOOPING COUGH NOS (OCT05)"/>
+    	<CD code="034.0" displayName="STREP SORE THROAT (OCT05)"/>
+    	<CD code="034.1" displayName="SCARLET FEVER (OCT05)"/>
+    	<CD code="035" displayName="ERYSIPELAS (OCT05)"/>
+    	<CD code="036.0" displayName="MENINGOCOCCAL MENINGITIS (OCT05)"/>
+    	<CD code="036.1" displayName="MENINGOCOCC ENCEPHALITIS (OCT05)"/>
+    	<CD code="036.2" displayName="MENINGOCOCCEMIA (OCT05)"/>
+    	<CD code="036.3" displayName="MENINGOCOCC ADRENAL SYND (OCT05)"/>
+    	<CD code="036.40" displayName="MENINGOCOCC CARDITIS NOS (OCT05)"/>
+    	<CD code="036.41" displayName="MENINGOCOCC PERICARDITIS (OCT05)"/>
+    	<CD code="036.42" displayName="MENINGOCOCC ENDOCARDITIS (OCT05)"/>
+    	<CD code="036.43" displayName="MENINGOCOCC MYOCARDITIS (OCT05)"/>
+    	<CD code="036.81" displayName="MENINGOCOCC OPTIC NEURIT (OCT05)"/>
+    	<CD code="036.82" displayName="MENINGOCOCC ARTHROPATHY (OCT05)"/>
+    	<CD code="036.89" displayName="MENINGOCOCCAL INFECT NEC (OCT05)"/>
+    	<CD code="036.9" displayName="MENINGOCOCCAL INFECT NOS (OCT05)"/>
+    	<CD code="037" displayName="TETANUS (OCT05)"/>
+    	<CD code="038.0" displayName="STREPTOCOCCAL SEPTICEMIA (OCT05)"/>
+    	<CD code="038.10" displayName="STAPHYLCOCC SEPTICEM NOS (OCT05)"/>
+    	<CD code="038.11" displayName="METHICILLIN SUSCEPTIBLE STAPHYLOCOCCUS AUREUS SEPTICEMIA (OCT08)"/>
+    	<CD code="038.12" displayName="METHICILLIN RESISTANT STAPHYLOCOCCUS AUREUS SEPTICEMIA (OCT08)"/>
+    	<CD code="038.19" displayName="STAPHYLCOCC SEPTICEM NEC (OCT05)"/>
+    	<CD code="038.2" displayName="PNEUMOCOCCAL SEPTICEMIA (OCT05)"/>
+    	<CD code="038.3" displayName="ANAEROBIC SEPTICEMIA (OCT05)"/>
+    	<CD code="038.40" displayName="GRAM-NEG SEPTICEMIA NOS (OCT05)"/>
+    	<CD code="038.41" displayName="H. INFLUENAE SEPTICEMIA (OCT05)"/>
+    	<CD code="038.42" displayName="E COLI SEPTICEMIA (OCT05)"/>
+    	<CD code="038.43" displayName="PSEUDOMONAS SEPTICEMIA (OCT05)"/>
+    	<CD code="038.44" displayName="SERRATIA SEPTICEMIA (OCT05)"/>
+    	<CD code="038.49" displayName="GRAM-NEG SEPTICEMIA NEC (OCT05)"/>
+    	<CD code="038.8" displayName="SEPTICEMIA NEC (OCT05)"/>
+    	<CD code="038.9" displayName="SEPTICEMIA NOS (OCT05)"/>
+    	<CD code="039.0" displayName="CUTANEOUS ACTINOMYCOSIS (OCT05)"/>
+    	<CD code="039.1" displayName="PULMONARY ACTINOMYCOSIS (OCT05)"/>
+    	<CD code="039.2" displayName="ABDOMINAL ACTINOMYCOSIS (OCT05)"/>
+    	<CD code="039.3" displayName="CERVICOFAC ACTINOMYCOSIS (OCT05)"/>
+    	<CD code="039.4" displayName="MADURA FOOT (OCT05)"/>
+    	<CD code="039.8" displayName="ACTINOMYCOSIS NEC (OCT05)"/>
+    	<CD code="039.9" displayName="ACTINOMYCOSIS NOS (OCT05)"/>
+    	<CD code="040.0" displayName="GAS GANGRENE (OCT05)"/>
+    	<CD code="040.1" displayName="RHINOSCLEROMA (OCT05)"/>
+    	<CD code="040.2" displayName="WHIPPLE'S DISEASE (OCT05)"/>
+    	<CD code="040.3" displayName="NECROBACILLOSIS (OCT05)"/>
+    	<CD code="040.41" displayName="INFANT BOTULISM"/>
+    	<CD code="040.42" displayName="WOUND BOTULISM"/>
+    	<CD code="040.81" displayName="TROPICAL PYOMYOSITIS (OCT05)"/>
+    	<CD code="040.82" displayName="TOXIC SHOCK SYNDROME (OCT05)"/>
+    	<CD code="040.89" displayName="BACTERIAL DISEASES NEC (OCT05)"/>
+    	<CD code="041.00" displayName="STREPTOCOCCUS UNSPECF (OCT05)"/>
+    	<CD code="041.01" displayName="STREPTOCOCCUS GROUP A (OCT05)"/>
+    	<CD code="041.02" displayName="STREPTOCOCCUS GROUP B (OCT05)"/>
+    	<CD code="041.03" displayName="STREPTOCOCCUS GROUP C (OCT05)"/>
+    	<CD code="041.04" displayName="ENTEROCOCCUS GROUP D (OCT05)"/>
+    	<CD code="041.05" displayName="STREPTOCOCCUS GROUP G (OCT05)"/>
+    	<CD code="041.09" displayName="OTHER STREPTOCOCCUS (OCT05)"/>
+    	<CD code="041.10" displayName="STAPHYLOCOCCUS UNSPCFIED (OCT05)"/>
+    	<CD code="041.11" displayName="METHICILLIN SUSCEPTIBLE STAPHYLOCOCCUS AUREUS (OCT08)"/>
+    	<CD code="041.12" displayName="METHICILLIN RESISTANT STAPHYLOCOCCUS AUREUS (MRSA) (OCT08)"/>
+    	<CD code="041.19" displayName="OTHER STAPHYLOCOCCUS (OCT05)"/>
+    	<CD code="041.2" displayName="PNEUMOCOCCUS INFECT NOS (OCT05)"/>
+    	<CD code="041.3" displayName="KLEBSIELLA INFECT NOS (OCT05)"/>
+    	<CD code="041.4" displayName="E. COLI INFECT NOS (OCT05)"/>
+    	<CD code="041.5" displayName="H. INFLUENZAE INFECT NOS (OCT05)"/>
+    	<CD code="041.6" displayName="PROTEUS INFECTION NOS (OCT05)"/>
+    	<CD code="041.7" displayName="PSEUDOMONAS INFECT NOS (OCT05)"/>
+    	<CD code="041.82" displayName="BACTEROIDES FRAGILIS (OCT05)"/>
+    	<CD code="041.83" displayName="CLOSTRIDIUM PERFRINGENS (OCT05)"/>
+    	<CD code="041.84" displayName="OTHER ANAEROBES (OCT05)"/>
+    	<CD code="041.85" displayName="OTH GRAM NEGATV BACTERIA (OCT05)"/>
+    	<CD code="041.86" displayName="HELICOBACTER PYLORI (OCT05)"/>
+    	<CD code="041.89" displayName="OTH SPECF BACTERIA (OCT05)"/>
+    	<CD code="041.9" displayName="BACTERIAL INFECTION NOS (OCT05)"/>
+    	<CD code="078.3" displayName="CAT SCRATCH DISEASE"/>
+    	<CD code="098.0" displayName="ACUTE GC INFECT LOWER GU (OCT05)"/>
+    	<CD code="098.10" displayName="GC (ACUTE) UPPER GU NOS (OCT05)"/>
+    	<CD code="098.11" displayName="GC CYSTITIS (ACUTE) (OCT05)"/>
+    	<CD code="098.12" displayName="GC PROSTATITIS (ACUTE) (OCT05)"/>
+    	<CD code="098.13" displayName="GC ORCHITIS (ACUTE) (OCT05)"/>
+    	<CD code="098.14" displayName="GC SEM VESICULIT (ACUTE) (OCT05)"/>
+    	<CD code="098.15" displayName="GC CERVICITIS (ACUTE) (OCT05)"/>
+    	<CD code="098.16" displayName="GC ENDOMETRITIS (ACUTE) (OCT05)"/>
+    	<CD code="098.17" displayName="ACUTE GC SALPINGITIS (OCT05)"/>
+    	<CD code="098.19" displayName="GC (ACUTE) UPPER GU NEC (OCT05)"/>
+    	<CD code="098.2" displayName="CHR GC INFECT LOWER GU (OCT05)"/>
+    	<CD code="098.30" displayName="CHR GC UPPER GU NOS (OCT05)"/>
+    	<CD code="098.31" displayName="GC CYSTITIS, CHRONIC (OCT05)"/>
+    	<CD code="098.32" displayName="GC PROSTATITIS, CHRONIC (OCT05)"/>
+    	<CD code="098.33" displayName="GC ORCHITIS, CHRONIC (OCT05)"/>
+    	<CD code="098.34" displayName="GC SEM VESICULITIS, CHR (OCT05)"/>
+    	<CD code="098.35" displayName="GC CERVICITIS, CHRONIC (OCT05)"/>
+    	<CD code="098.36" displayName="GC ENDOMETRITIS, CHRONIC (OCT05)"/>
+    	<CD code="098.37" displayName="GC SALPINGITIS (CHRONIC) (OCT05)"/>
+    	<CD code="098.39" displayName="CHR GC UPPER GU NEC (OCT05)"/>
+    	<CD code="098.40" displayName="GONOCOCCAL CONJUNCTIVIT (OCT05)"/>
+    	<CD code="098.41" displayName="GONOCOCCAL IRIDOCYCLITIS (OCT05)"/>
+    	<CD code="098.42" displayName="GONOCOCCAL ENDOPHTHALMIA (OCT05)"/>
+    	<CD code="098.43" displayName="GONOCOCCAL KERATITIS (OCT05)"/>
+    	<CD code="098.49" displayName="GONOCOCCAL EYE NEC (OCT05)"/>
+    	<CD code="098.50" displayName="GONOCOCCAL ARTHRITIS (OCT05)"/>
+    	<CD code="098.51" displayName="GONOCOCCAL SYNOVITIS (OCT05)"/>
+    	<CD code="098.52" displayName="GONOCOCCAL BURSITIS (OCT05)"/>
+    	<CD code="098.53" displayName="GONOCOCCAL SPONDYLITIS (OCT05)"/>
+    	<CD code="098.59" displayName="GC INFECT JOINT NEC (OCT05)"/>
+    	<CD code="098.6" displayName="GONOCOCCAL INFEC PHARYNX (OCT05)"/>
+    	<CD code="098.7" displayName="GC INFECT ANUS + RECTUM (OCT05)"/>
+    	<CD code="098.81" displayName="GONOCOCCAL KERATOSIS (OCT05)"/>
+    	<CD code="098.82" displayName="GONOCOCCAL MENINGITIS (OCT05)"/>
+    	<CD code="098.83" displayName="GONOCOCCAL PERICARDITIS (OCT05)"/>
+    	<CD code="098.84" displayName="GONOCOCCAL ENDOCARDITIS (OCT05)"/>
+    	<CD code="098.85" displayName="GONOCOCCAL HEART DIS NEC (OCT05)"/>
+    	<CD code="098.86" displayName="GONOCOCCAL PERITONITIS (OCT05)"/>
+    	<CD code="098.89" displayName="GONOCOCCAL INF SITE NEC (OCT05)"/>
+    	<CD code="320.0" displayName="HEMOPHILUS MENINGITIS (OCT05)"/>
+    	<CD code="320.1" displayName="PNEUMOCOCCAL MENINGITIS (OCT05)"/>
+    	<CD code="320.2" displayName="STREPTOCOCCAL MENINGITIS (OCT05)"/>
+    	<CD code="320.3" displayName="STAPHYLOCOCC MENINGITIS (OCT05)"/>
+    	<CD code="320.7" displayName="MENING IN OTH BACT DIS (OCT05)"/>
+    	<CD code="320.81" displayName="ANAEROBIC MENINGITIS (OCT05)"/>
+    	<CD code="320.82" displayName="MNINGTS GRAM-NEG BCT NEC (OCT05)"/>
+    	<CD code="320.89" displayName="MENINGITIS OTH SPCF BACT (OCT05)"/>
+    	<CD code="320.9" displayName="BACTERIAL MENINGITIS NOS (OCT05)"/>
+    	<CD code="322.9" displayName="MENINGITIS NOS (OCT05)"/>
+    	<CD code="324.0" displayName="INTRACRANIAL ABSCESS (OCT05)"/>
+    	<CD code="324.1" displayName="INTRASPINAL ABSCESS (OCT05)"/>
+    	<CD code="324.9" displayName="CNS ABSCESS NOS (OCT05)"/>
+    	<CD code="360.00" displayName="PURULENT ENDOPHTHALM NOS (OCT05)"/>
+    	<CD code="360.01" displayName="ACUTE ENDOPHTHALMITIS (OCT05)"/>
+    	<CD code="360.02" displayName="PANOPHTHALMITIS (OCT05)"/>
+    	<CD code="360.04" displayName="VITREOUS ABSCESS (OCT05)"/>
+    	<CD code="370.55" displayName="CORNEAL ABSCESS (OCT05)"/>
+    	<CD code="372.00" displayName="ACUTE CONJUNCTIVITIS NOS (OCT05)"/>
+    	<CD code="372.03" displayName="MUCOPUR CONJUNCTIVIT NEC (OCT05)"/>
+    	<CD code="372.04" displayName="PSEUDOMEMB CONJUNCTIVIT (OCT05)"/>
+    	<CD code="372.20" displayName="BLEPHAROCONJUNCTIVIT NOS (OCT05)"/>
+    	<CD code="372.21" displayName="ANGULAR BLEPHAROCONJUNCT (OCT05)"/>
+    	<CD code="372.30" displayName="CONJUNCTIVITIS NOS (OCT05)"/>
+    	<CD code="373.00" displayName="BLEPHARITIS NOS (OCT05)"/>
+    	<CD code="373.01" displayName="ULCERATIVE BLEPHARITIS (OCT05)"/>
+    	<CD code="373.11" displayName="HORDEOLUM EXTERNUM (OCT05)"/>
+    	<CD code="373.12" displayName="HORDEOLUM INTERNUM (OCT05)"/>
+    	<CD code="373.13" displayName="ABSCESS OF EYELID (OCT05)"/>
+    	<CD code="375.00" displayName="DACRYOADENITIS NOS (OCT05)"/>
+    	<CD code="375.01" displayName="ACUTE DACRYOADENITIS (OCT05)"/>
+    	<CD code="375.30" displayName="DACRYOCYSTITIS NOS (OCT05)"/>
+    	<CD code="375.31" displayName="ACUTE CANALICULITIS (OCT05)"/>
+    	<CD code="375.32" displayName="ACUTE DACRYOCYSTITIS (OCT05)"/>
+    	<CD code="376.01" displayName="ORBITAL CELLULITIS (OCT05)"/>
+    	<CD code="376.02" displayName="ORBITAL PERIOSTITIS (OCT05)"/>
+    	<CD code="376.03" displayName="ORBITAL OSTEOMYELITIS (OCT05)"/>
+    	<CD code="376.04" displayName="TENONITIS (OCT05)"/>
+    	<CD code="380.10" displayName="INFEC OTITIS EXTERNA NOS (OCT05)"/>
+    	<CD code="380.11" displayName="ACUTE INFECTION OF PINNA (OCT05)"/>
+    	<CD code="380.12" displayName="ACUTE SWIMMERS' EAR (OCT05)"/>
+    	<CD code="380.13" displayName="AC INFECT EXTERN EAR NEC (OCT05)"/>
+    	<CD code="380.14" displayName="MALIGNANT OTITIS EXTERNA (OCT05)"/>
+    	<CD code="381.50" displayName="EUSTACHIAN SALPING NOS (OCT05)"/>
+    	<CD code="381.51" displayName="AC EUSTACHIAN SALPING (OCT05)"/>
+    	<CD code="382.00" displayName="AC SUPP OTITIS MEDIA NOS (OCT05)"/>
+    	<CD code="382.01" displayName="AC SUPP OM W DRUM RUPT (OCT05)"/>
+    	<CD code="382.02" displayName="AC SUPP OM IN OTH DIS (OCT05)"/>
+    	<CD code="382.1" displayName="CHR TUBOTYMP SUPP OTITIS MEDIA (OCT05)"/>
+    	<CD code="382.2" displayName="CHR ATTICOANTRAL SUPP OTITIS MEDIA (OCT05)"/>
+    	<CD code="382.3" displayName="CHR SUPP OTITIS MEDIA NOS (OCT05)"/>
+    	<CD code="382.4" displayName="SUPPUR OTITIS MEDIA NOS (OCT05)"/>
+    	<CD code="382.9" displayName="OTITIS MEDIA NOS (OCT05)"/>
+    	<CD code="383.00" displayName="AC MASTOIDITIS W/O COMPL (OCT05)"/>
+    	<CD code="383.01" displayName="SUBPERI MASTOID ABSCESS (OCT05)"/>
+    	<CD code="383.02" displayName="AC MASTOIDITIS-COMPL NEC (OCT05)"/>
+    	<CD code="383.20" displayName="PETROSITIS NOS (OCT05)"/>
+    	<CD code="383.21" displayName="ACUTE PETROSITIS (OCT05)"/>
+    	<CD code="384.00" displayName="ACUTE MYRINGITIS NOS (OCT05)"/>
+    	<CD code="386.33" displayName="SUPPURATIV LABYRINTHITIS (OCT05)"/>
+    	<CD code="420.0" displayName="AC PERICARDIT IN OTH DIS (OCT05)"/>
+    	<CD code="420.90" displayName="ACUTE PERICARDITIS NOS (OCT05)"/>
+    	<CD code="420.99" displayName="ACUTE PERICARDITIS NEC (OCT05)"/>
+    	<CD code="421.0" displayName="AC/SUBAC BACT ENDOCARD (OCT05)"/>
+    	<CD code="421.1" displayName="AC/SUBAC INFECT ENDOCARD (OCT05)"/>
+    	<CD code="421.9" displayName="AC/SUBAC ENDOCARDIT NOS (OCT05)"/>
+    	<CD code="422.92" displayName="SEPTIC MYOCARDITIS (OCT05)"/>
+    	<CD code="461.0" displayName="AC MAXILLARY SINUSITIS (OCT05)"/>
+    	<CD code="461.1" displayName="AC FRONTAL SINUSITIS (OCT05)"/>
+    	<CD code="461.2" displayName="AC ETHMOIDAL SINUSITIS (OCT05)"/>
+    	<CD code="461.3" displayName="AC SPHENOIDAL SINUSITIS (OCT05)"/>
+    	<CD code="461.8" displayName="OTHER ACUTE SINUSITIS (OCT05)"/>
+    	<CD code="461.9" displayName="ACUTE SINUSITIS NOS (OCT05)"/>
+    	<CD code="462" displayName="ACUTE PHARYNGITIS (OCT05)"/>
+    	<CD code="463" displayName="ACUTE TONSILLITIS (OCT05)"/>
+    	<CD code="464.30" displayName="AC EPIGLOTTITIS NO OBSTR (OCT05)"/>
+    	<CD code="464.31" displayName="AC EPIGLOTTITIS W OBSTR (OCT05)"/>
+    	<CD code="466.0" displayName="ACUTE BRONCHITIS (OCT05)"/>
+    	<CD code="475" displayName="PERITONSILLAR ABSCESS (OCT05)"/>
+    	<CD code="478.22" displayName="PARAPHARYNGEAL ABSCESS (OCT05)"/>
+    	<CD code="478.24" displayName="RETROPHARYNGEAL ABSCESS (OCT05)"/>
+    	<CD code="481" displayName="PNEUMOCOCCAL PNEUMONIA (OCT05)"/>
+    	<CD code="482.0" displayName="K. PNEUMONIAE PNEUMONIA (OCT05)"/>
+    	<CD code="482.1" displayName="PSEUDOMONAL PNEUMONIA (OCT05)"/>
+    	<CD code="482.2" displayName="H.INFLUENZAE PNEUMONIA (OCT05)"/>
+    	<CD code="482.30" displayName="STREPTOCOCCAL PNEUMN NOS (OCT05)"/>
+    	<CD code="482.31" displayName="PNEUMONIA STRPTOCOCCUS A (OCT05)"/>
+    	<CD code="482.32" displayName="PNEUMONIA STRPTOCOCCUS B (OCT05)"/>
+    	<CD code="482.39" displayName="PNEUMONIA OTH STREP (OCT05)"/>
+    	<CD code="482.40" displayName="STAPHYLOCOCCAL PNEU NOS (OCT05)"/>
+    	<CD code="482.41" displayName="METHICILLIN SUSCEPTIBLE PNEUMONIA DUE TO STAPHYLOCOCCUS AUREUS (OCT08)"/>
+    	<CD code="482.42" displayName="METHICILLIN RESISTANT PNEUMONIA DUE TO STAPHYLOCOCCUS AUREUS (OCT08)"/>
+    	<CD code="482.49" displayName="STAPH PNEUMONIA NEC (OCT05)"/>
+    	<CD code="482.81" displayName="PNEUMONIA ANAEROBES (OCT05)"/>
+    	<CD code="482.82" displayName="PNEUMONIA E COLI (OCT05)"/>
+    	<CD code="482.83" displayName="PNEUMO OTH GRM-NEG BACT (OCT05)"/>
+    	<CD code="482.84" displayName="LEGIONNAIRES' DISEASE (OCT05)"/>
+    	<CD code="482.89" displayName="PNEUMONIA OTH SPCF BACT (OCT05)"/>
+    	<CD code="482.9" displayName="BACTERIAL PNEUMONIA NOS (OCT05)"/>
+    	<CD code="484.3" displayName="PNEUMONIA IN WHOOPING COUGH (OCT05)"/>
+    	<CD code="484.5" displayName="PNEUMONIA IN ANTHRAX (OCT05)"/>
+    	<CD code="484.8" displayName="PNEUMONIA IN OTHER INF DIS (OCT05)"/>
+    	<CD code="485" displayName="BRONCHOPNEUMONIA ORG NOS (OCT05)"/>
+    	<CD code="486" displayName="PNEUMONIA, ORGANISM NOS (OCT05)"/>
+    	<CD code="490" displayName="BRONCHITIS NOS (OCT05)"/>
+    	<CD code="491.22" displayName="OBS CHR BRONC W AC BRONC (OCT05)"/>
+    	<CD code="494.1" displayName="BRONCHIECTASIS W AC EXAC (OCT05)"/>
+    	<CD code="510.0" displayName="EMPYEMA WITH FISTULA (OCT05)"/>
+    	<CD code="510.9" displayName="EMPYEMA W/O FISTULA (OCT05)"/>
+    	<CD code="511.1" displayName="BACT PLEUR/EFFUS NOT TB (OCT05)"/>
+    	<CD code="513.0" displayName="ABSCESS OF LUNG (OCT05)"/>
+    	<CD code="513.1" displayName="ABSCESS OF MEDIASTINUM (OCT05)"/>
+    	<CD code="519.01" displayName="TRACHEOSTOMY INFECTION (OCT05)"/>
+    	<CD code="519.2" displayName="MEDIASTINITIS (OCT05)"/>
+    	<CD code="522.0" displayName="PULPITIS (OCT05)"/>
+    	<CD code="522.5" displayName="PERIAPICAL ABSCESS (OCT05)"/>
+    	<CD code="522.7" displayName="PERIAPICAL ABSC W SINUS (OCT05)"/>
+    	<CD code="523.0" displayName="ACUTE GINGIVITIS (OCT05)"/>
+    	<CD code="523.00" displayName="ACUTE GINGITITIS, PLAQUE (OCT06)"/>
+    	<CD code="523.01" displayName="AC GINGIVITIS,NONPLAQUE (OCT06)"/>
+    	<CD code="523.3" displayName="ACUTE PERIODONTITIS (OCT05)"/>
+    	<CD code="523.30" displayName="AGGRES PERIODONTITIS NOS (OCT06)"/>
+    	<CD code="523.31" displayName="AGGRES PERIODONTITIS,LOC (OCT06)"/>
+    	<CD code="523.32" displayName="AGGRES PERIODONTITIS,GEN (OCT06)"/>
+    	<CD code="523.33" displayName="ACUTE PERIODONTITIS (OCT06)"/>
+    	<CD code="526.4" displayName="INFLAMMATION OF JAW (OCT05)"/>
+    	<CD code="527.3" displayName="SALIVARY GLAND ABSCESS (OCT05)"/>
+    	<CD code="528.3" displayName="CELLULITIS/ABSCESS MOUTH (OCT05)"/>
+    	<CD code="536.41" displayName="GASTROSTOMY INFECTION (OCT05)"/>
+    	<CD code="540.0" displayName="AC APPEND W PERITONITIS"/>
+    	<CD code="540.1" displayName="ABSCESS OF APPENDIX"/>
+    	<CD code="540.9" displayName="ACUTE APPENDICITIS NOS"/>
+    	<CD code="541" displayName="APPENDICITIS NOS"/>
+    	<CD code="542" displayName="OTHER APPENDICITIS"/>
+    	<CD code="562.01" displayName="DVRTCLI SML INT W/O HMRG"/>
+    	<CD code="562.03" displayName="DVRTCLI SML INT W HMRHG"/>
+    	<CD code="562.11" displayName="DVRTCLI COLON W/O HMRHG"/>
+    	<CD code="562.13" displayName="DVRTCLI COLON W HMRHG"/>
+    	<CD code="566" displayName="ANAL + RECTAL ABSCESS"/>
+    	<CD code="567.0" displayName="PERITONITIS IN INFEC DIS"/>
+    	<CD code="567.1" displayName="PNEUMOCOCCAL PERITONITIS"/>
+    	<CD code="567.2" displayName="SUPPURAT PERITONITIS NEC"/>
+    	<CD code="567.21" displayName="PERITONITIS (ACUTE) GEN (OCT05)"/>
+    	<CD code="567.22" displayName="PERITONEAL ABSCESS (OCT05)"/>
+    	<CD code="567.23" displayName="SPONTAN BACT PERITONITIS (OCT05)"/>
+    	<CD code="567.29" displayName="SUPPURAT PERITONITIS NEC (OCT05)"/>
+    	<CD code="567.31" displayName="PSOAS MUSCLE ABSCESS (OCT05)"/>
+    	<CD code="567.38" displayName="RETROPERITON ABSCESS NEC (OCT05)"/>
+    	<CD code="567.39" displayName="RETROPERITON INFECT NEC (OCT05)"/>
+    	<CD code="567.81" displayName="CHOLEPERITONITIS (OCT05)"/>
+    	<CD code="567.82" displayName="SCLEROSING MESENTERITIS (OCT05)"/>
+    	<CD code="567.89" displayName="PERITONITIS NEC (OCT05)"/>
+    	<CD code="567.9" displayName="PERITONITIS NOS"/>
+    	<CD code="569.5" displayName="INTESTINAL ABSCESS"/>
+    	<CD code="569.61" displayName="COLOSTY/ENTEROST INFECTN"/>
+    	<CD code="572.0" displayName="ABSCESS OF LIVER"/>
+    	<CD code="572.1" displayName="PORTAL PYEMIA"/>
+    	<CD code="574.00" displayName="CHOLELITH W AC CHOLECYST"/>
+    	<CD code="574.01" displayName="CHOLELITH/AC GB INF-OBST"/>
+    	<CD code="574.30" displayName="CHOLEDOCHOLITH/AC GB INF"/>
+    	<CD code="574.31" displayName="CHOLEDOCHLITH/AC GB-OBST"/>
+    	<CD code="574.60" displayName="GALL+BIL CAL W/AC W/O OB"/>
+    	<CD code="574.61" displayName="GALL+BIL CAL W/AC W OBS"/>
+    	<CD code="574.80" displayName="GAL+BIL CAL W/AC+CHR W/O"/>
+    	<CD code="574.81" displayName="GAL+BIL CAL W/AC+CH W OB"/>
+    	<CD code="575.0" displayName="ACUTE CHOLECYSTITIS"/>
+    	<CD code="575.10" displayName="CHOLECYSTITIS UNSPEC (OCT05)"/>
+    	<CD code="575.12" displayName="AC+CHRON CHOLECYSTITIS (OCT05)"/>
+    	<CD code="575.4" displayName="PERFORATION GALLBLADDER"/>
+    	<CD code="576.1" displayName="CHOLANGITIS"/>
+    	<CD code="576.3" displayName="PERFORATION OF BILE DUCT"/>
+    	<CD code="577.0" displayName="ACUTE PANCREATITIS (OCT05)"/>
+    	<CD code="590.10" displayName="AC PYELONEPHRITIS NOS (OCT05)"/>
+    	<CD code="590.11" displayName="AC PYELONEPHR W MED NECR (OCT05)"/>
+    	<CD code="590.2" displayName="RENAL/PERIRENAL ABSCESS (OCT05)"/>
+    	<CD code="590.3" displayName="PYELOURETERITIS CYSTICA (OCT05)"/>
+    	<CD code="590.80" displayName="PYELONEPHRITIS NOS (OCT05)"/>
+    	<CD code="590.81" displayName="PYELONEPHRIT IN OTH DIS (OCT05)"/>
+    	<CD code="590.9" displayName="INFECTION OF KIDNEY NOS (OCT05)"/>
+    	<CD code="595.0" displayName="ACUTE CYSTITIS (OCT05)"/>
+    	<CD code="595.4" displayName="CYSTITIS IN OTH DIS (OCT05)"/>
+    	<CD code="595.81" displayName="CYSTITIS CYSTICA (OCT05)"/>
+    	<CD code="595.89" displayName="CYSTITIS NEC (OCT05)"/>
+    	<CD code="595.9" displayName="CYSTITIS NOS (OCT05)"/>
+    	<CD code="597.0" displayName="URETHRAL ABSCESS (OCT05)"/>
+    	<CD code="599.0" displayName="URIN TRACT INFECTION NOS (OCT05)"/>
+    	<CD code="601.0" displayName="ACUTE PROSTATITIS (OCT05)"/>
+    	<CD code="601.2" displayName="ABSCESS OF PROSTATE (OCT05)"/>
+    	<CD code="601.3" displayName="PROSTATOCYSTITIS (OCT05)"/>
+    	<CD code="601.4" displayName="PROSTATITIS IN OTH DIS (OCT05)"/>
+    	<CD code="601.8" displayName="PROSTATITIS (OCT05)"/>
+    	<CD code="601.9" displayName="PROSTATITIS NOS (OCT05)"/>
+    	<CD code="603.1" displayName="INFECTED HYDROCELE (OCT05)"/>
+    	<CD code="604.0" displayName="ORCHITIS WITH ABSCESS (OCT05)"/>
+    	<CD code="604.90" displayName="ORCHITIS/EPIDIDYMIT NOS (OCT05)"/>
+    	<CD code="604.91" displayName="ORCHITIS IN OTH DISEASE (OCT05)"/>
+    	<CD code="607.1" displayName="BALANOPOSTHITIS (OCT05)"/>
+    	<CD code="607.2" displayName="INFLAM DIS, PENIS NEC (OCT05)"/>
+    	<CD code="608.0" displayName="SEMINAL VESICULITIS (OCT05)"/>
+    	<CD code="608.4" displayName="MALE GEN INFLAM DIS NEC (OCT05)"/>
+    	<CD code="611.0" displayName="INFLAM DISEASE OF BREAST (OCT05)"/>
+    	<CD code="614.0" displayName="AC SALPINGO-OOPHORITIS (OCT05)"/>
+    	<CD code="614.1" displayName="CHRON SALPINGITIS OOPHORITIS (OCT05)"/>
+    	<CD code="614.2" displayName="SALPINGO-OOPHORITIS NOS (OCT05)"/>
+    	<CD code="614.3" displayName="ACUTE PARAMETRITIS (OCT05)"/>
+    	<CD code="614.4" displayName="CHRON OR UNSP CELLULITIS (OCT05)"/>
+    	<CD code="614.5" displayName="AC PELV PERITONITIS-FEM (OCT05)"/>
+    	<CD code="614.9" displayName="PID NOS (OCT05)"/>
+    	<CD code="615.0" displayName="AC UTERINE INFLAMMATION (OCT05)"/>
+    	<CD code="615.9" displayName="UTERINE INFLAM DIS NOS (OCT05)"/>
+    	<CD code="616.0" displayName="CERVICITIS (OCT05)"/>
+    	<CD code="616.10" displayName="VAGINITIS NOS (OCT05)"/>
+    	<CD code="616.3" displayName="BARTHOLIN'S GLND ABSCESS (OCT05)"/>
+    	<CD code="616.4" displayName="ABSCESS OF VULVA NEC (OCT05)"/>
+    	<CD code="634.00" displayName="SPON ABOR W PEL INF-UNSP (OCT05)"/>
+    	<CD code="634.01" displayName="SPON ABOR W PELV INF-INC (OCT05)"/>
+    	<CD code="634.02" displayName="SPON ABOR W PEL INF-COMP (OCT05)"/>
+    	<CD code="635.00" displayName="LEG ABOR W PELV INF-UNSP (OCT05)"/>
+    	<CD code="635.01" displayName="LEG ABOR W PELV INF-INC (OCT05)"/>
+    	<CD code="635.02" displayName="LEG ABOR W PELV INF-COMP (OCT05)"/>
+    	<CD code="636.00" displayName="ILLEG AB W PELV INF-UNSP (OCT05)"/>
+    	<CD code="636.01" displayName="ILLEG AB W PELV INF-INC (OCT05)"/>
+    	<CD code="636.02" displayName="ILLEG AB W PELV INF-COMP (OCT05)"/>
+    	<CD code="637.00" displayName="ABORT NOS W PEL INF-UNSP (OCT05)"/>
+    	<CD code="637.01" displayName="ABORT NOS W PEL INF-INC (OCT05)"/>
+    	<CD code="637.02" displayName="ABORT NOS W PEL INF-COMP (OCT05)"/>
+    	<CD code="638.0" displayName="ATTEM ABORT W PELVIC INF (OCT05)"/>
+    	<CD code="639.0" displayName="POSTABORTION GU INFECT (OCT05)"/>
+    	<CD code="646.50" displayName="BACTERIURIA PREG-UNSPEC (OCT05)"/>
+    	<CD code="646.51" displayName="ASYM BACTERIURIA-DELIVER (OCT05)"/>
+    	<CD code="646.52" displayName="ASY BACTERURIA-DEL W P/P (OCT05)"/>
+    	<CD code="646.53" displayName="ASY BACTERIURIA-ANTEPART (OCT05)"/>
+    	<CD code="646.54" displayName="ASY BACTERIURIA-POSTPART (OCT05)"/>
+    	<CD code="646.60" displayName="GU INFECT IN PREG-UNSPEC (OCT05)"/>
+    	<CD code="646.61" displayName="GU INFECTION-DELIVERED (OCT05)"/>
+    	<CD code="646.62" displayName="GU INFECTION-DELIV W P/P (OCT05)"/>
+    	<CD code="646.63" displayName="GU INFECTION-ANTEPARTUM (OCT05)"/>
+    	<CD code="646.64" displayName="GU INFECTION-POSTPARTUM (OCT05)"/>
+    	<CD code="647.10" displayName="GONORRHEA IN PREG-UNSPEC (OCT05)"/>
+    	<CD code="647.11" displayName="GONORRHEA-DELIVERED (OCT05)"/>
+    	<CD code="647.12" displayName="GONORRHEA-DELIVER W P/P (OCT05)"/>
+    	<CD code="647.13" displayName="GONORRHEA-ANTEPARTUM (OCT05)"/>
+    	<CD code="647.14" displayName="GONORRHEA-POSTPARTUM (OCT05)"/>
+    	<CD code="647.80" displayName="INF DIS IN PREG NEC-UNSP (OCT05)"/>
+    	<CD code="647.81" displayName="INFECT DIS NEC-DELIVERED (OCT05)"/>
+    	<CD code="647.82" displayName="INFECT DIS NEC-DEL W P/P (OCT05)"/>
+    	<CD code="647.83" displayName="INFECT DIS NEC-ANTEPART (OCT05)"/>
+    	<CD code="647.84" displayName="INFECT DIS NEC-POSTPART (OCT05)"/>
+    	<CD code="647.90" displayName="INFECT IN PREG NOS-UNSP (OCT05)"/>
+    	<CD code="647.91" displayName="INFECT NOS-DELIVERED (OCT05)"/>
+    	<CD code="647.92" displayName="INFECT NOS-DELIVER W P/P (OCT05)"/>
+    	<CD code="647.93" displayName="INFECT NOS-ANTEPARTUM (OCT05)"/>
+    	<CD code="647.94" displayName="INFECT NOS-POSTPARTUM (OCT05)"/>
+    	<CD code="658.40" displayName="AMNIOTIC INFECTION-UNSP (OCT05)"/>
+    	<CD code="658.41" displayName="AMNIOTIC INFECTION-DELIV (OCT05)"/>
+    	<CD code="658.43" displayName="AMNIOTIC INFECT-ANTEPART (OCT05)"/>
+    	<CD code="670.00" displayName="MAJOR PUERP INFECT-UNSP (OCT05)"/>
+    	<CD code="670.02" displayName="MAJOR PUERP INF-DEL P/P (OCT05)"/>
+    	<CD code="670.04" displayName="MAJOR PUERP INF-POSTPART (OCT05)"/>
+    	<CD code="670.10" displayName="PUERP ENDOMETRITIS-UNSP (OCT09)"/>
+    	<CD code="670.12" displayName="PUERP ENDOMET DEL W P/P (OCT09)"/>
+    	<CD code="670.14" displayName="PUERP ENDOMET-POSTPART (OCT09)"/>
+    	<CD code="670.20" displayName="PUERPERAL SEPSIS-UNSP (OCT09)"/>
+    	<CD code="670.22" displayName="PUERPRL SEPSIS-DEL W P/P (OCT09)"/>
+    	<CD code="670.24" displayName="PUERPERL SEPSIS-POSTPART (OCT09)"/>
+    	<CD code="670.30" displayName="PUERP SEPTC THROMB-UNSP (OCT090"/>
+    	<CD code="670.32" displayName="PRP SPTC THRMB-DEL W P/P (OCT09)"/>
+    	<CD code="670.34" displayName="PRP SEPTC THRMB-POSTPART (OCT09)"/>
+    	<CD code="670.80" displayName="MAJ PRP INFEC NEC-UNSPEC (OCT09)"/>
+    	<CD code="670.82" displayName="MAJ PRP INF NEC-DL W P/P (OCT09)"/>
+    	<CD code="670.84" displayName="MAJ PUERP INFEC NEC-P/P (OCT09)"/>
+    	<CD code="675.00" displayName="INFECT NIPPLE PREG-UNSP (OCT05)"/>
+    	<CD code="675.01" displayName="INFECT NIPPLE-DELIVERED (OCT05)"/>
+    	<CD code="675.02" displayName="INFECT NIPPLE-DEL W P/P (OCT05)"/>
+    	<CD code="675.03" displayName="INFECT NIPPLE-ANTEPARTUM (OCT05)"/>
+    	<CD code="675.04" displayName="INFECT NIPPLE-POSTPARTUM (OCT05)"/>
+    	<CD code="675.10" displayName="BREAST ABSCESS PREG-UNSP (OCT05)"/>
+    	<CD code="675.11" displayName="BREAST ABSCESS-DELIVERED (OCT05)"/>
+    	<CD code="675.12" displayName="BREAST ABSCESS-DEL W P/P (OCT05)"/>
+    	<CD code="675.13" displayName="BREAST ABSCESS-ANTEPART (OCT05)"/>
+    	<CD code="675.14" displayName="BREAST ABSCESS-POSTPART (OCT05)"/>
+    	<CD code="675.80" displayName="BREAST INF PREG NEC-UNSP (OCT05)"/>
+    	<CD code="675.81" displayName="BREAST INFECT NEC-DELIV (OCT05)"/>
+    	<CD code="675.82" displayName="BREAST INF NEC-DEL W P/P (OCT05)"/>
+    	<CD code="675.83" displayName="BREAST INF NEC-ANTEPART (OCT05)"/>
+    	<CD code="675.84" displayName="BREAST INF NEC-POSTPART (OCT05)"/>
+    	<CD code="675.90" displayName="BREAST INF PREG NOS-UNSP (OCT05)"/>
+    	<CD code="675.91" displayName="BREAST INFECT NOS-DELIV (OCT05)"/>
+    	<CD code="675.92" displayName="BREAST INF NOS-DEL W P/P (OCT05)"/>
+    	<CD code="675.93" displayName="BREAST INF NOS-ANTEPART (OCT05)"/>
+    	<CD code="675.94" displayName="BREAST INF NOS-POSTPART (OCT05)"/>
+    	<CD code="680.0" displayName="CARBUNCLE OF FACE (OCT05)"/>
+    	<CD code="680.1" displayName="CARBUNCLE OF NECK (OCT05)"/>
+    	<CD code="680.2" displayName="CARBUNCLE OF TRUNK (OCT05)"/>
+    	<CD code="680.3" displayName="CARBUNCLE OF ARM (OCT05)"/>
+    	<CD code="680.4" displayName="CARBUNCLE OF HAND (OCT05)"/>
+    	<CD code="680.5" displayName="CARBUNCLE OF BUTTOCK (OCT05)"/>
+    	<CD code="680.6" displayName="CARBUNCLE OF LEG (OCT05)"/>
+    	<CD code="680.7" displayName="CARBUNCLE OF FOOT (OCT05)"/>
+    	<CD code="680.8" displayName="CARBUNCLE, SITE NEC (OCT05)"/>
+    	<CD code="680.9" displayName="CARBUNCLE NOS (OCT05)"/>
+    	<CD code="681.00" displayName="CELLULITIS, FINGER NOS (OCT05)"/>
+    	<CD code="681.01" displayName="FELON (OCT05)"/>
+    	<CD code="681.02" displayName="ONYCHIA OF FINGER (OCT05)"/>
+    	<CD code="681.10" displayName="CELLULITIS, TOE NOS (OCT05)"/>
+    	<CD code="681.11" displayName="ONYCHIA OF TOE (OCT05)"/>
+    	<CD code="681.9" displayName="CELLULITIS OF DIGIT NOS (OCT05)"/>
+    	<CD code="682.0" displayName="CELLULITIS OF FACE (OCT05)"/>
+    	<CD code="682.1" displayName="CELLULITIS OF NECK (OCT05)"/>
+    	<CD code="682.2" displayName="CELLULITIS OF TRUNK (OCT05)"/>
+    	<CD code="682.3" displayName="CELLULITIS OF ARM (OCT05)"/>
+    	<CD code="682.4" displayName="CELLULITIS OF HAND (OCT05)"/>
+    	<CD code="682.5" displayName="CELLULITIS OF BUTTOCK (OCT05)"/>
+    	<CD code="682.6" displayName="CELLULITIS OF LEG (OCT05)"/>
+    	<CD code="682.7" displayName="CELLULITIS OF FOOT (OCT05)"/>
+    	<CD code="682.8" displayName="CELLULITIS, SITE NEC (OCT05)"/>
+    	<CD code="682.9" displayName="CRLLULITIS, SITE NOS (OCT05)"/>
+    	<CD code="683" displayName="ACUTE LYMPHADENITIS (OCT05)"/>
+    	<CD code="684" displayName="IMPETIGO (OCT05)"/>
+    	<CD code="686.00" displayName="PYODERMA NOS (OCT05)"/>
+    	<CD code="686.09" displayName="PYODERMA OTHER (OCT05)"/>
+    	<CD code="686.8" displayName="LOCAL SKIN INFECTION NEC (OCT05)"/>
+    	<CD code="686.9" displayName="LOCAL SKIN INFECTION NOS (OCT05)"/>
+    	<CD code="695.81" displayName="RITTER'S DISEASE (OCT05)"/>
+    	<CD code="707.00*" displayName="DECUBITUS ULCER SITE NOS (OCT05)"/>
+    	<CD code="707.01*" displayName="DECUBITUS ULCER,ELBOW (OCT05)"/>
+    	<CD code="707.02*" displayName="DECUBITUS ULCER,UP BACK (OCT05)"/>
+    	<CD code="707.03*" displayName="DECUBITUS ULCER,LOW BACK (OCT05)"/>
+    	<CD code="707.04*" displayName="DECUBITUS ULCER,HIP (OCT05)"/>
+    	<CD code="707.05*" displayName="DECUBITUS ULCER,BUTTOCK (OCT05)"/>
+    	<CD code="707.06*" displayName="DECUBITUS ULCER,ANKLE (OCT05)"/>
+    	<CD code="707.07*" displayName="DECUBITUS ULCER,HEEL (OCT05)"/>
+    	<CD code="707.09*" displayName="DECUBITUS ULCER,SITE NEC (OCT05)"/>
+    	<CD code="707.20" displayName="PRESSURE ULCER UNSPECIFIED STAGE (OCT08)"/>
+    	<CD code="707.22" displayName="PRESSURE ULCER STAGE II (OCT08)"/>
+    	<CD code="707.23" displayName="PRESSURE ULCER STAGE III (OCT08)"/>
+    	<CD code="707.24" displayName="PRESSURE ULCER STAGE IV (OCT08)"/>
+    	<CD code="711.00" displayName="PYOGEN ARTHRITIS-UNSPEC (OCT05)"/>
+    	<CD code="711.01" displayName="PYOGEN ARTHRITIS-SHLDER (OCT05)"/>
+    	<CD code="711.02" displayName="PYOGEN ARTHRITIS-UP/ARM (OCT05)"/>
+    	<CD code="711.03" displayName="PYOGEN ARTHRITIS-FOREARM (OCT05)"/>
+    	<CD code="711.04" displayName="PYOGEN ARTHRITIS-HAND (OCT05)"/>
+    	<CD code="711.05" displayName="PYOGEN ARTHRITIS-PELVIS (OCT05)"/>
+    	<CD code="711.06" displayName="PYOGEN ARTHRITIS-L/LEG (OCT05)"/>
+    	<CD code="711.07" displayName="PYOGEN ARTHRITIS-ANKLE (OCT05)"/>
+    	<CD code="711.08" displayName="PYOGEN ARTHRITIS NEC (OCT05)"/>
+    	<CD code="711.09" displayName="PYOGEN ARTHRITIS-MULT (OCT05)"/>
+    	<CD code="711.90" displayName="INF ARTHRITIS NOS-UNSPEC (OCT05)"/>
+    	<CD code="711.91" displayName="INF ARTHRITIS NOS-SHLDER (OCT05)"/>
+    	<CD code="711.92" displayName="INF ARTHRITIS NOS-UP/ARM (OCT05)"/>
+    	<CD code="711.93" displayName="INF ARTHRIT NOS-FOREARM (OCT05)"/>
+    	<CD code="711.94" displayName="INF ARTHRIT NOS-HAND (OCT05)"/>
+    	<CD code="711.95" displayName="INF ARTHRIT NOS-PELVIS (OCT05)"/>
+    	<CD code="711.96" displayName="INF ARTHRIT NOS-L/LEG (OCT05)"/>
+    	<CD code="711.97" displayName="INF ARTHRIT NOS-ANKLE (OCT05)"/>
+    	<CD code="711.98" displayName="INF ARTHRIT NOS-OTH SITE (OCT05)"/>
+    	<CD code="711.99" displayName="INF ARTHRITIS NOS-MULT (OCT05)"/>
+    	<CD code="728.0" displayName="INFECTIVE MYOSITIS (OCT05)"/>
+    	<CD code="728.86" displayName="NECROTIZING FASCIITIS (OCT05)"/>
+    	<CD code="730.00" displayName="AC OSTEOMYELITIS-UNSPEC (OCT05)"/>
+    	<CD code="730.01" displayName="AC OSTEOMYELITIS-SHLDER (OCT05)"/>
+    	<CD code="730.02" displayName="AC OSTEOMYELITIS-UP/ARM (OCT05)"/>
+    	<CD code="730.03" displayName="AC OSTEOMYELITIS-FOREARM (OCT05)"/>
+    	<CD code="730.04" displayName="AC OSTEOMYELITIS-HAND (OCT05)"/>
+    	<CD code="730.05" displayName="AC OSTEOMYELITIS-PELVIS (OCT05)"/>
+    	<CD code="730.06" displayName="AC OSTEOMYELITIS-L/LEG (OCT05)"/>
+    	<CD code="730.07" displayName="AC OSTEOMYELITIS-ANKLE (OCT05)"/>
+    	<CD code="730.08" displayName="AC OSTEOMYELITIS NEC (OCT05)"/>
+    	<CD code="730.09" displayName="AC OSTEOMYELITIS-MULT (OCT05)"/>
+    	<CD code="730.10" displayName="CHR OSTEOMYELITIS-UNSP (OCT05)"/>
+    	<CD code="730.11" displayName="CHR OSTEOMYELIT-SHLDER (OCT05)"/>
+    	<CD code="730.12" displayName="CHR OSTEOMYELIT-UP/ARM (OCT05)"/>
+    	<CD code="730.13" displayName="CHR OSTEOMYELIT-FOREARM (OCT05)"/>
+    	<CD code="730.14" displayName="CHR OSTEOMYELIT-HAND (OCT05)"/>
+    	<CD code="730.15" displayName="CHR OSTEOMYELIT-PELVIS (OCT05)"/>
+    	<CD code="730.16" displayName="CHR OSTEOMYELIT-L/LEG (OCT05)"/>
+    	<CD code="730.17" displayName="CHR OSTEOMYELIT-ANKLE (OCT05)"/>
+    	<CD code="730.18" displayName="CHR OSTEOMYELIT NEC (OCT05)"/>
+    	<CD code="730.19" displayName="CHR OSTEOMYELIT-MULT (OCT05)"/>
+    	<CD code="730.20" displayName="OSTEOMYELITIS NOS-UNSPEC (OCT05)"/>
+    	<CD code="730.21" displayName="OSTEOMYELITIS NOS-SHLDER (OCT05)"/>
+    	<CD code="730.22" displayName="OSTEOMYELITIS NOS-UP/ARM (OCT05)"/>
+    	<CD code="730.23" displayName="OSTEOMYELIT NOS-FOREARM (OCT05)"/>
+    	<CD code="730.24" displayName="OSTEOMYELITIS NOS-HAND (OCT05)"/>
+    	<CD code="730.25" displayName="OSTEOMYELITIS NOS-PELVIS (OCT05)"/>
+    	<CD code="730.26" displayName="OSTEOMYELITIS NOS-L/LEG (OCT05)"/>
+    	<CD code="730.27" displayName="OSTEOMYELITIS NOS-ANKLE (OCT05)"/>
+    	<CD code="730.28" displayName="OSTEOMYELIT NOS-OTH SITE (OCT05)"/>
+    	<CD code="730.29" displayName="OSTEOMYELITIS NOS-MULT (OCT05)"/>
+    	<CD code="730.30" displayName="PERIOSTITIS-UNSPEC (OCT05)"/>
+    	<CD code="730.31" displayName="PERIOSTITIS-SHLDER (OCT05)"/>
+    	<CD code="730.32" displayName="PERIOSTITIS-UP/ARM (OCT05)"/>
+    	<CD code="730.33" displayName="PERIOSTITIS-FOREARM (OCT05)"/>
+    	<CD code="730.34" displayName="PERIOSTITIS-HAND (OCT05)"/>
+    	<CD code="730.35" displayName="PERIOSTITIS-PELVIS (OCT05)"/>
+    	<CD code="730.36" displayName="PERIOSTITIS-L/LEG (OCT05)"/>
+    	<CD code="730.37" displayName="PERIOSTITIS-ANKLE (OCT05)"/>
+    	<CD code="730.38" displayName="PERIOSTITIS NEC (OCT05)"/>
+    	<CD code="730.39" displayName="PERIOSTITIS-MULT (OCT05)"/>
+    	<CD code="730.80" displayName="BONE INFECT NEC-UNSPEC (OCT05)"/>
+    	<CD code="730.81" displayName="BONE INFECT NEC-SHLDER (OCT05)"/>
+    	<CD code="730.82" displayName="BONE INFECT NEC-UP/ARM (OCT05)"/>
+    	<CD code="730.83" displayName="BONE INFECT NEC-FOREARM (OCT05)"/>
+    	<CD code="730.84" displayName="BONE INFECT NEC-HAND (OCT05)"/>
+    	<CD code="730.85" displayName="BONE INFECT NEC-PELVIS (OCT05)"/>
+    	<CD code="730.86" displayName="BONE INFECT NEC-L/LEG (OCT05)"/>
+    	<CD code="730.87" displayName="BONE INFECT NEC-ANKLE (OCT05)"/>
+    	<CD code="730.88" displayName="BONE INFECT NEC-OTH SITE (OCT05)"/>
+    	<CD code="730.89" displayName="BONE INFECT NEC-MULT (OCT05)"/>
+    	<CD code="730.90" displayName="BONE INFEC NOS-UNSP SITE (OCT05)"/>
+    	<CD code="730.91" displayName="BONE INFECT NOS-SHLDER (OCT05)"/>
+    	<CD code="730.92" displayName="BONE INFECT NOS-UP/ARM (OCT05)"/>
+    	<CD code="730.93" displayName="BONE INFECT NOS-FOREARM (OCT05)"/>
+    	<CD code="730.94" displayName="BONE INFECT NOS-HAND (OCT05)"/>
+    	<CD code="730.95" displayName="BONE INFECT NOS-PELVIS (OCT05)"/>
+    	<CD code="730.96" displayName="BONE INFECT NOS-L/LEG (OCT05)"/>
+    	<CD code="730.97" displayName="BONE INFECT NOS-ANKLE (OCT05)"/>
+    	<CD code="730.98" displayName="BONE INFECT NOS-OTH SITE (OCT05)"/>
+    	<CD code="730.99" displayName="BONE INFECT NOS-MULT (OCT05)"/>
+    	<CD code="771.3" displayName="TETANUS NEONATORUM (OCT05)"/>
+    	<CD code="771.4" displayName="OMPHALITIS OF NEWBORN (OCT05)"/>
+    	<CD code="771.5" displayName="NEONATAL INFEC MASTITIS (OCT05)"/>
+    	<CD code="771.81" displayName="NB SEPTICEMIA SEPSIS (OCT05)"/>
+    	<CD code="771.82" displayName="NB URINARY TRACT INFECTN (OCT05)"/>
+    	<CD code="771.83" displayName="BACTEREMIA OF NEWBORN (OCT05)"/>
+    	<CD code="771.89" displayName="PERINATAL INFECTION NEC (OCT05)"/>
+    	<CD code="777.5" displayName="NECROT ENTEROCOLITIS NB (OCT05)"/>
+    	<CD code="777.50" displayName="NECROT ENTEROCOLITIS IN NEWBORN, UNSPECIFIED (OCT08)"/>
+    	<CD code="777.51" displayName="STAGE I NECROT ENTEROCOLITIS IN NEWBORN (OCT08)"/>
+    	<CD code="777.52" displayName="STAGE II NECROT ENTEROCOLITIS IN NEWBORN (OCT08)"/>
+    	<CD code="777.53" displayName="STAGE III NECROT ENTEROCOLITIS IN NEWBORN (OCT08)"/>
+    	<CD code="785.4" displayName="GANGRENE (OCT05)"/>
+    	<CD code="785.52" displayName="SEPTIC SHOCK (OCT05)"/>
+    	<CD code="790.7" displayName="BACTEREMIA (OCT05)"/>
+    	<CD code="910.1" displayName="ABRASION HEAD-INFECTED (OCT05)"/>
+    	<CD code="910.3" displayName="BLISTER HEAD-INFECTED (OCT05)"/>
+    	<CD code="910.5" displayName="INSECT BITE HEAD-INFECT (OCT05)"/>
+    	<CD code="910.7" displayName="FOREIGN BODY HEAD-INFECT (OCT05)"/>
+    	<CD code="910.9" displayName="SUPERF INJ HEAD NEC-INF (OCT05)"/>
+    	<CD code="911.1" displayName="ABRASION TRUNK-INFECTED (OCT05)"/>
+    	<CD code="911.3" displayName="BLISTER TRUNK-INFECTED (OCT05)"/>
+    	<CD code="911.5" displayName="INSECT BITE TRUNK-INFEC (OCT05)"/>
+    	<CD code="911.7" displayName="FOREIGN BODY TRUNK-INFEC (OCT05)"/>
+    	<CD code="911.9" displayName="SUPERF INJ TRNK NEC-INF (OCT05)"/>
+    	<CD code="912.1" displayName="ABRASION SHLDR/ARM-INFEC (OCT05)"/>
+    	<CD code="912.3" displayName="BLISTER SHOULDER/ARM-INF (OCT05)"/>
+    	<CD code="912.5" displayName="INSECT BITE SHLD/ARM-INF (OCT05)"/>
+    	<CD code="912.7" displayName="FB SHOULDER/ARM-INFECT (OCT05)"/>
+    	<CD code="912.9" displayName="SUPERF INJ SHLDR NEC-INF (OCT05)"/>
+    	<CD code="913.1" displayName="ABRASION FOREARM-INFECT (OCT05)"/>
+    	<CD code="913.3" displayName="BLISTER FOREARM-INFECTED (OCT05)"/>
+    	<CD code="913.5" displayName="INSECT BITE FOREARM-INF (OCT05)"/>
+    	<CD code="913.7" displayName="FOREIGN BODY FOREARM-INF (OCT05)"/>
+    	<CD code="913.9" displayName="SUPRF INJ FORARM NEC-INF (OCT05)"/>
+    	<CD code="914.1" displayName="ABRASION HAND-INFECTED (OCT05)"/>
+    	<CD code="914.3" displayName="BLISTER HAND-INFECTED (OCT05)"/>
+    	<CD code="914.5" displayName="INSECT BITE HAND-INFECT (OCT05)"/>
+    	<CD code="914.7" displayName="FOREIGN BODY HAND-INFECT (OCT05)"/>
+    	<CD code="914.9" displayName="SUPERF INJ HAND NEC-INF (OCT05)"/>
+    	<CD code="915.1" displayName="ABRASION FINGER-INFECTED (OCT05)"/>
+    	<CD code="915.3" displayName="BLISTER FINGER-INFECTED (OCT05)"/>
+    	<CD code="915.5" displayName="INSECT BITE FINGER-INFEC (OCT05)"/>
+    	<CD code="915.7" displayName="FOREIGN BODY FINGER-INF (OCT05)"/>
+    	<CD code="915.9" displayName="SUPRF INJ FINGER NEC-INF (OCT05)"/>
+    	<CD code="916.1" displayName="ABRASION HIP/LEG-INFECT (OCT05)"/>
+    	<CD code="916.3" displayName="BLISTER HIP + LEG-INFECT (OCT05)"/>
+    	<CD code="916.5" displayName="INSECT BITE HIP/LEG-INF (OCT05)"/>
+    	<CD code="916.7" displayName="FOREIGN BDY HIP/LEG-INF (OCT05)"/>
+    	<CD code="916.9" displayName="SUPERF INJ LEG NEC-INFEC (OCT05)"/>
+    	<CD code="917.1" displayName="ABRASION FOOT/TOE-INFEC (OCT05)"/>
+    	<CD code="917.3" displayName="BLISTER FOOT + TOE-INFEC (OCT05)"/>
+    	<CD code="917.5" displayName="INSECT BITE FOOT/TOE-INF (OCT05)"/>
+    	<CD code="917.7" displayName="FOREIGN BDY FOOT/TOE-INF (OCT05)"/>
+    	<CD code="917.9" displayName="SUPERF INJ FOOT NEC-INF (OCT05)"/>
+    	<CD code="919.1" displayName="ABRASION NEC-INFECTED (OCT05)"/>
+    	<CD code="919.3" displayName="BLISTER NEC-INFECTED (OCT05)"/>
+    	<CD code="919.5" displayName="INSECT BITE NEC-INFECTED (OCT05)"/>
+    	<CD code="919.7" displayName="SUPERFICIAL FB NEC-INFEC (OCT05)"/>
+    	<CD code="919.9" displayName="SUPERFIC INJ NEC-INFECT (OCT05)"/>
+    	<CD code="995.90" displayName="SIRS, NOS (OCT05)"/>
+    	<CD code="995.91" displayName="SIRS-INFECT W/O ORG DYSF (OCT05)"/>
+    	<CD code="995.92" displayName="SIRS-INFECT W ORGAN DYSF (OCT05)"/>
+    	<CD code="996.60" displayName="INFECT INFLAMM DEVICE IMPLANT GRAFT NOS (OCT05)"/>
+    	<CD code="996.61" displayName="INFECT INFLAMM CARDIAC DEVICE IMPLANT GRAFT (OCT05)"/>
+    	<CD code="996.62" displayName="INFECT INFLAMM VASCULAR DEVICE IMPLANT GRAFT (OCT05)"/>
+    	<CD code="996.63" displayName="INFECT INFLAMM NERV DEVICE IMPLANT GRAFT (OCT05)"/>
+    	<CD code="996.64" displayName="INFECT INFLAMM URINARY CATH (OCT05)"/>
+    	<CD code="996.65" displayName="INFECT INFLAMM GU DEVICE IMPLANT GRAFT (OCT05)"/>
+    	<CD code="996.66" displayName="INFECT INFLAMM JOINT PROSTH (OCT05)"/>
+    	<CD code="996.67" displayName="INFECT INFLAMM OTH ORTHOP DEVICE IMPLANT GRAFT NOS (OCT05)"/>
+    	<CD code="996.69" displayName="INFECT INFLAMM OTH DEVICE IMPLANT GRAFT (OCT05)"/>
+    	<CD code="997.62" displayName="INFECTION AMPUTAT STUMP (OCT05)"/>
+    	<CD code="998.51" displayName="INFECTED POSTOP SEROMA (OCT05)"/>
+    	<CD code="998.59" displayName="OTHER POSTOP INFECTION (OCT05)"/>
+    	<CD code="999.3" displayName="INFEC COMPL MED CARE NEC (OCT05)"/>
+   	</membersForCodeSystem>
+</OpenCdsConceptMappingSpecificationFile>

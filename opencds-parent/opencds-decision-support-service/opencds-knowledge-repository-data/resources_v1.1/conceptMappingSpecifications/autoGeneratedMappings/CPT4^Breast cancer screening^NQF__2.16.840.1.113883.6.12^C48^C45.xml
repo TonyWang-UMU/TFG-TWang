@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+     <OpenCdsConceptMappingSpecificationFile>
+          <specificationNotes>Created using ApelonConceptMappingSpecificationFileCreator.</specificationNotes>
+          <openCdsConcept code="C48" displayName="Breast cancer screening"></openCdsConcept>
+          <conceptDeterminationMethod code="C45" displayName="NQF"></conceptDeterminationMethod>
+          <membersForCodeSystem codeSystem="2.16.840.1.113883.6.12" codeSystemName="CPT4">
+               <CD code="77055" displayName="Mammography; unilateral [77055]"></CD>
+               <CD code="77056" displayName="Mammography; bilateral [77056]"></CD>
+               <CD code="77057" displayName="Screening mammography, bilateral (2-view film study of each breast) [77057]"></CD>
+          </membersForCodeSystem>
+     </OpenCdsConceptMappingSpecificationFile>

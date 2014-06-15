@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OpenCdsConceptMappingSpecificationFile>
+	<specificationNotes>Created manually from AHRQ PSI specifications.</specificationNotes>
+    <openCdsConcept code="C370" displayName="Procedure on Face"/>
+    <conceptDeterminationMethod code="C267" displayName="AHRQ"/>
+    <membersForCodeSystem codeSystem="2.16.840.1.113883.6.104" codeSystemName="ICD9CM procedures">
+    	<CD code="25.2" displayName="PARTIAL GLOSSECTOMY"/>
+    	<CD code="25.59" displayName="OTHER REPAIR AND PLASTIC OPERATIONS ON TONGUE"/>
+    	<CD code="27.32" displayName="WIDE EXCISION OR DESTRUCTION OF LESION OR TISSUE OF BONY PALATE"/>
+    	<CD code="27.62" displayName="CORRECTION OF CLEFT PALATE"/>
+    	<CD code="27.63" displayName="REVISION OF CLEFT PALATE REPAIR"/>
+    	<CD code="27.69" displayName="OTHER PLASTIC REPAIR OF PALATE"/>
+    	<CD code="29.31" displayName="CRICOPHARYNGEAL MYOTOMY"/>
+    	<CD code="76.65" displayName="SEGMENTAL OSTEOPLASTY [OSTEOTOMY] OF MAXILLA"/>
+    	<CD code="76.66" displayName="TOTAL OSTEOPLASTY [OSTEOTOMY] OF MAXILLA"/>
+    	<CD code="76.46" displayName="OTHER RECONSTRUCTION OF OTHER FACIAL BONE"/>
+    	<CD code="76.69" displayName="OTHER FACIAL BONE REPAIR"/>
+    	<CD code="76.91" displayName="BONE GRAFT TO FACIAL BONE"/>
+   	</membersForCodeSystem>
+</OpenCdsConceptMappingSpecificationFile>
