@@ -1,1 +1,0 @@
-[when] Gender - EvaluatedPerson gender is {gender:ENUM:GenderConcept.openCdsConceptCode} = ($GenderDsl_evalPerson : EvaluatedPerson(id == $evaluatedPersonId) and GenderConcept(conceptTargetId == $GenderDsl_evalPerson.id, openCdsConceptCode == "{gender}")) //DslUsed==GenderDsl|||gender=={gender}

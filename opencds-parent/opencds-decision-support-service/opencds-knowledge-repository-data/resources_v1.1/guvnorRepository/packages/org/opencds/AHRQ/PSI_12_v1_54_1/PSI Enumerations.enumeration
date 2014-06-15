@@ -1,4 +1,0 @@
-'Assertion.value': ['NumeratorMet=Numerator Indicator met', 'NumeratorNotMet=Numerator Indicator not met', 'DenominatorNotMet=Denominator Indicator not met', 'DenominatorMet=Denominator Indicator met', 'NoExclusions=No Exclusions', 'HasExclusions=Has Exclusions']
-'EncounterId.reference': ['A=encounter A', 'B=encounter B', 'C=encounter C', 'D=encounter D', 'E=encounter E', 'F=encounter F']
-'ProcedureId.reference': ['A=procedure A', 'B=procedure B', 'C=procedure C', 'D=procedure D', 'E=procedure E', 'F=procedure F']
-'DateCompare.operator': ['< =before any', '> =after one or more']

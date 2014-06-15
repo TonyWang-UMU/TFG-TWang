@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<OpenCdsConceptMappingSpecificationFile>
-	<specificationNotes></specificationNotes>
-	<openCdsConcept code="C406" displayName="Parts include"></openCdsConcept>
-    <conceptDeterminationMethod code="C36" displayName="OpenCDS"></conceptDeterminationMethod>
-    <membersForCodeSystem codeSystem="2.16.840.1.113883.3.795.12.1.2" codeSystemName="OpenCDS">
-    	<CD code="Includes" displayName="Includes as a Component"/>
-    </membersForCodeSystem>
-</OpenCdsConceptMappingSpecificationFile>     

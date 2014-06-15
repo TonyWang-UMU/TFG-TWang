@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<OpenCdsConceptMappingSpecificationFile>
-	<specificationNotes>The genetic full sibling of a person, for scientific purposes.  This means they share both genetic parents.</specificationNotes>
-	<openCdsConcept code="C392" displayName="Genetic Full Sibling of"></openCdsConcept>
-    <conceptDeterminationMethod code="C36" displayName="OpenCDS"></conceptDeterminationMethod>
-    <membersForCodeSystem codeSystem="2.16.840.1.113883.3.795.12.1.2" codeSystemName="OpenCDS">
-    	<CD code="GFullSibling" displayName="Genetic Full Sibling Of"/>
-    </membersForCodeSystem>
-</OpenCdsConceptMappingSpecificationFile>     

@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<OpenCdsConceptMappingSpecificationFile>
-	<specificationNotes>Created manually from AHRQ PSI specifications.</specificationNotes>
-    <openCdsConcept code="C373" displayName="Reclosure Procedure"/>
-    <conceptDeterminationMethod code="C267" displayName="AHRQ v4.3"/>
-    <membersForCodeSystem codeSystem="2.16.840.1.113883.6.104" codeSystemName="ICD9CM procedures">
-    	<CD code="54.61" displayName="RECLOSURE OF POSTOPERATIVE DISRUPTION OF ABDOMINAL WALL"/>
-   	</membersForCodeSystem>
-</OpenCdsConceptMappingSpecificationFile>

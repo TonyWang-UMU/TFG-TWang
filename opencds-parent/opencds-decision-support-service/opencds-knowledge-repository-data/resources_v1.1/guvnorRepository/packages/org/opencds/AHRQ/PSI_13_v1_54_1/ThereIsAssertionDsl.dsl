@@ -1,1 +1,0 @@
-[when]There is assertion {assert:ENUM:Assertion.value} = ($assertion_{assert} : Assertion(value == "{assert}")) //DslUsed==ThereIsAssertionDsl|||assert=={assert}

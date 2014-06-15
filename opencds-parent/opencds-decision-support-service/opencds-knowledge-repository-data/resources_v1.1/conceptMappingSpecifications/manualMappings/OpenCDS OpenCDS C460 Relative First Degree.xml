@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<OpenCdsConceptMappingSpecificationFile>
-	<specificationNotes>First degree relatives include genetic parents, offspring, and full siblings.</specificationNotes>
-	<openCdsConcept code="C460" displayName="Relative First Degree"></openCdsConcept>
-    <conceptDeterminationMethod code="C36" displayName="OpenCDS"></conceptDeterminationMethod>
-    <membersForCodeSystem codeSystem="2.16.840.1.113883.3.795.12.1.2" codeSystemName="OpenCDS">
-    	<CD code="RelDegree1" displayName="Relative First Degree"/>
-    </membersForCodeSystem>
-</OpenCdsConceptMappingSpecificationFile>     

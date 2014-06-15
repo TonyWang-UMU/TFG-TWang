@@ -1,1 +1,0 @@
-[when] Age.High - EvaluatedPerson age is less than or equal to {n} years = ($AgeHighDsl_focalPerson : EvaluatedPerson(id == $evaluatedPersonId) and EvaluatedPersonAgeAtEvalTime(personId == $AgeHighDsl_focalPerson.id , ageUnit == "1", age <= {n})) //DslUsed==AgeHighDsl|||n=={n}

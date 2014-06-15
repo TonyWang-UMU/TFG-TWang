@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<OpenCdsConceptMappingSpecificationFile>
-	<specificationNotes>Created manually from AHRQ PSI specifications.</specificationNotes>
-    <openCdsConcept code="C366" displayName="Reintubation"/>
-    <conceptDeterminationMethod code="C267" displayName="AHRQ"/>
-    <membersForCodeSystem codeSystem="2.16.840.1.113883.6.104" codeSystemName="ICD9CM procedures">
-    	<CD code="96.04" displayName="Insertion of Endotracheal Tube"/>
-   	</membersForCodeSystem>
-</OpenCdsConceptMappingSpecificationFile>

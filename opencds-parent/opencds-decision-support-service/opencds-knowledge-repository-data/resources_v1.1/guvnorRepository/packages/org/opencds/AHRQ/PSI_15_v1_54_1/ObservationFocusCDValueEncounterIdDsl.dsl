@@ -1,8 +1,0 @@
-[when] Obs.Focus.CDVal.EncId - EvaluatedPerson had {ObsFocus:ENUM:ObservationFocusConcept.openCdsConceptCode} of {ObsCDVal:ENUM:ObservationCodedValueConcept.openCdsConceptCode} as {Role:ENUM:ClinicalStatementRelationshipConcept.openCdsConceptCode} {EncId:ENUM:EncounterId.reference} above = 
-($ObservationFocusCDValueEncounterIdDsl_observationFocusConcept_{ObsFocus}{ObsCDVal}{Role}{EncId} : ObservationFocusConcept(openCdsConceptCode == "{ObsFocus}") and 
-$ObservationFocusCDValueEncounterIdDsl_observationResult_{ObsFocus}{ObsCDVal}{Role}{EncId} : ObservationResult(id == $ObservationFocusCDValueEncounterIdDsl_observationFocusConcept_{ObsFocus}{ObsCDVal}{Role}{EncId}.conceptTargetId) and ($ObservationFocusCDValueEncounterIdDsl_observationCodedValueConcept_{ObsFocus}{ObsCDVal}{Role}{EncId} : ObservationCodedValueConcept(openCdsConceptCode == "{ObsCDVal}") and 
-( $ObservationFocusCDValueEncounterIdDsl_relationshipConcept_{ObsFocus}{ObsCDVal}{Role}{EncId} : ClinicalStatementRelationshipConcept(openCdsConceptCode == "{Role}") and 
-$ObservationFocusCDValueEncounterIdDsl_relationship_{ObsFocus}{ObsCDVal}{Role}{EncId} : ClinicalStatementRelationship(
- id == $ObservationFocusCDValueEncounterIdDsl_relationshipConcept_{ObsFocus}{ObsCDVal}{Role}{EncId}.conceptTargetId,
- sourceId == $EncounterId_encounterEvent_A.id, 
- targetId == $ObservationFocusCDValueEncounterIdDsl_observationResult_{ObsFocus}{ObsCDVal}{Role}{EncId}.id ) ))) //DslUsed==ObservationFocusCDValueEncounterIdDsl|||ObsFocus=={ObsFocus}|||ObsCDVal=={ObsCDVal}|||Role=={Role}|||EncId=={EncId}

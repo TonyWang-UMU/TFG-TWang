@@ -1,5 +1,0 @@
-[when] ProcId.Before.Proc2Id - EvaluatedPerson had {ProcId:ENUM:ProcedureId.reference} above before all other {ProcId2:ENUM:ProcedureId.reference} above  = 
-( $firstProcedureConceptBefore{ProcId}{ProcId2} : ProcedureConcept( openCdsConceptCode == $ProcedureIdEncounterIdDsl_procedureConcept_{ProcId}.openCdsConceptCode ) and 
-$firstProcedureEventBefore{ProcId}{ProcId2} : ProcedureEvent(id == $firstProcedureConceptBefore{ProcId}{ProcId2}.conceptTargetId) and 
-$otherProcedureConceptAfter{ProcId}{ProcId2} : ProcedureConcept( openCdsConceptCode == $ProcedureIdEncounterIdDsl_procedureConcept_{ProcId2}.openCdsConceptCode ) and 
-$otherProcedureEventAfter{ProcId}{ProcId2} : ProcedureEvent(id == $otherProcedureConceptAfter{ProcId}{ProcId2}.conceptTargetId, id not memberOf $firstProcedureEventBefore{ProcId}{ProcId2}.id, procedureTime.getLow().getTime() > $firstProcedureEventBefore{ProcId}{ProcId2}.procedureTime.getLow().getTime() ) ) //DslUsed==ProcedureIdBeforeProcedure2IdDsl|||ProcId=={ProcId}|||ProcId2=={ProcId2}

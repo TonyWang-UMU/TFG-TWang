@@ -1,1 +1,0 @@
-[when]There is NOT an assertion2 {assert:ENUM:Assertion.value} = ($assertions_{assert} : java.util.List (size == 0) from collect ( Assertion(value == "{assert}") ) //DslUsed==ThereIsNoAssertionDsl2|||assert=={assert}

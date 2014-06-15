@@ -1,1 +1,0 @@
-[when]There is assertion string {assert} = ($assertions_{assert} : Assertion(value == "{assert}")) //DslUsed==ThereIsAssertionStringDsl|||assert=={assert}

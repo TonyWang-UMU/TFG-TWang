@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<OpenCdsConceptMappingSpecificationFile>
-	<specificationNotes>Created manually to supplement a retired code not in Apelon.</specificationNotes>
-    <openCdsConcept code="C46" displayName="Bilateral mastectomy"/>
-    <conceptDeterminationMethod code="C45" displayName="Best available NQF concept determination method"/>
-    <membersForCodeSystem codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
-    	<CD code="172046003" displayName="Other specified total mastectomy (procedure)"/>
-   	</membersForCodeSystem>
-</OpenCdsConceptMappingSpecificationFile>
