@@ -137,7 +137,7 @@ public class TestEvaluationImpl {
 				er.getDataRequirementItemData().get(0).getData().getInformationModelSSId().setVersion("1.0");	
 				parameters.setEvaluationRequest(er);
 				
-				filePath = "C:/OpenCDS/pruebastxt/ConstructedExampleNestedInputs.xml";  //must be a valid VMR xml in a single file
+				filePath = "C:/OpenCDS/pacientes/ConstructedExampleNestedInputs.xml";  //must be a valid VMR xml in a single file
 				
 				try {
 					payloadString = FileUtility.getInstance().getFileContentsAsString(new File (filePath));
