@@ -119,7 +119,7 @@ public class Main {
 			// lectura de fichero de los datos del paciente
 			String payloadString = null;
 			String filePath = null;
-			filePath = "pacientes/ConstructedExampleNestedInputs.xml";
+			filePath = "pacientes/ConstructedExampleNestedLabsForBeaconProjectForTesting.xml";
 			try {
 				payloadString = FileUtility.getInstance()
 						.getFileContentsAsString(new File(filePath));
@@ -174,15 +174,13 @@ public class Main {
 
 					System.out.println("output="
 							+ outputPayloadString.toString());
-
+					// limpiar memoria
 					outputPayloadString = null;
 					outputPayloadStringBuffer = null;
 					output = null;
 				}
 
-				// System.out.println("finished inner loop: " + i);
-
-				// clear things we created
+				// limpiar memoria
 				evalResp = null;
 				myEvaluationImpl = null;
 				c = null;
