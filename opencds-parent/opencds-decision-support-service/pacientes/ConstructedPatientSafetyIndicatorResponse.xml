@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cdsOutput>
+	<vmrOutput>
+		<templateId root="OpenCDSoidForPSIResult"/>
+		<patient>
+			<id root="OID" extension="patient.id.will.be.here"/>
+			<demographics/>
+			<clinicalStatements>
+				<observationResults>
+					<observationResult>
+						<id root="ROOT"/>
+						<dataSourceType code="inferred" codeSystem="2.16.840.1.113883.3.795.12.1.1" />
+						<observationFocus  code="C238" codeSystem="2.16.840.1.113883.3.795.12.1.1" displayName="Inpatient Encounter" codeSystemName="OpenCDS concepts"/>
+						<observationEventTime low="20111202" high="20111202"/>
+						<observationValue>
+							<identifier root="oid.for.encounterId" extension="encounterId"/>
+						</observationValue>
+						<relatedClinicalStatement>
+							<targetRelationshipToSource code="C67" codeSystem="2.16.840.1.113883.3.795.12.1.1" displayName="Is contained by"/>
+							<observationResult>
+								<id root="batch.id.will.be.here"/>
+								<observationFocus  code="C440" codeSystem="2.16.840.1.113883.3.795.12.1.1" displayName="AHRQ PSI-11 Resp. Failure" codeSystemName="OpenCDS concepts"/>
+								<observationValue>
+									<ratio numerator="0" denominator="0"/>
+								</observationValue>
+							</observationResult>
+						</relatedClinicalStatement>
+					</observationResult>
+				</observationResults>
+			</clinicalStatements>
+		</patient>
+	</vmrOutput>
+</cdsOutput>

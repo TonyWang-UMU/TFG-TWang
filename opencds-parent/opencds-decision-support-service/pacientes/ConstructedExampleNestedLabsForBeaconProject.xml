@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<in:cdsInput xmlns:in="org.opencds.vmr.v1_0.schema.cdsinput"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+		xmlns:dt="org.opencds.vmr.v1_0.schema.datatypes"
+		xsi:schemaLocation="org.opencds.vmr.v1_0.schema.cdsinput ..\schema\cdsInput.xsd">
+	<templateId root="2.16.840.1.113883.3.795.11.1.1"/>
+	<vmrInput>
+		<templateId root="2.16.840.1.113883.3.795.11.1.1"/>
+		<patient>
+			<id root="2.16.840.1.113883.3.795.5.2.1.1" extension="putPatientNoHere"/>
+			<demographics>
+				<birthTime value="19830630"/><!--optional, use this format if sent-->
+				<gender codeSystem="2.16.840.1.113883.5.1" code="F"/><!--optional, use codes M/F if sent-->
+			</demographics>
+			<clinicalStatements>
+				<observationResults>
+					<observationResult>
+						<templateId root="2.16.840.1.113883.3.795.11.6.3.2"/>
+						<id root="2.16.840.1.113883.3.795.5.2.1.2" extension="put.lab.panel.no.here"/>
+						<observationFocus code="62864-4" codeSystem="2.16.840.1.113883.6.1" displayName="PhenX measure - assay for chlamydia - gonorrhea"/><!--LOINC Code for PhenX measure - assay for chlamydia - gonorrhea-->
+						<observationEventTime low="20110803" high="20110803"/>
+						<relatedClinicalStatement>
+							<targetRelationshipToSource code="COMP" codeSystem="2.16.840.1.113883.5.1002 "/><!-- this is a component of a panel -->
+							<observationResult>
+								<templateId root="2.16.840.1.113883.3.795.11.6.3.3"/>
+								<id root="2.16.840.1.113883.3.795.5.2.1.3" extension="putUniqueLabResultNoHere"/>
+								<observationFocus code="22194-5" codeSystem="2.16.840.1.113883.6.1" displayName="Chlamydia trachomatis B IgA Ab [Titer] in Serum"/><!--LOINC code-->
+								<observationEventTime low="20110803" high="20110803"/>
+								<observationValue><text value="put the string containing the observation results here"/></observationValue>
+								<!--you may submit as many interpretation codes as needed to fully describe the observationResult-->
+								<interpretation code="442635007" codeSystem="2.16.840.1.113883.6.96"/><!--Snomed Code for Positive Microbiology Finding-->
+								<interpretation code="63938009" codeSystem="2.16.840.1.113883.6.96"/><!--Snomed Code for Chlamydia Trachomatis-->
+							</observationResult>
+						</relatedClinicalStatement>
+						<relatedClinicalStatement>
+							<targetRelationshipToSource code="COMP" codeSystem="2.16.840.1.113883.5.1002 "/><!-- this is a component of a panel -->
+							<observationResult>
+								<templateId root="2.16.840.1.113883.3.795.11.6.3.3"/>
+								<id root="2.16.840.1.113883.3.795.5.2.1.3" extension="putUniqueLabResultNoHere"/>
+								<observationFocus code="13217-5" codeSystem="2.16.840.1.113883.6.1" displayName="Chlamydia trachomatis B Ab [Units/volume] in Serum"/><!--LOINC code-->
+								<observationEventTime low="20110803" high="20110803"/>
+								<observationValue><text value="put the string containing the observation results here"/></observationValue>
+								<!--you may submit as many interpretation codes as needed to fully describe the observationResult-->
+								<interpretation code="442635007" codeSystem="2.16.840.1.113883.6.96"/><!--Snomed Code for Positive Microbiology Finding-->
+								<interpretation code="63938009" codeSystem="2.16.840.1.113883.6.96"/><!--Snomed Code for Chlamydia Trachomatis-->
+							</observationResult>
+						</relatedClinicalStatement>
+					</observationResult>
+				</observationResults>
+			</clinicalStatements>
+		</patient>
+	</vmrInput>
+</in:cdsInput>

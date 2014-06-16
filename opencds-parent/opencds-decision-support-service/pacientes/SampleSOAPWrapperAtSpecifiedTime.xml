@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://www.w3.org/2003/05/soap-envelope"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="org.opencds.vmr.v1_0.schema.dss ..\schema\OmgDssSchema.xsd"
+    xmlns:dss="http://www.omg.org/spec/CDSS/201105/dss">
+    <SOAP-ENV:Header/>
+    <SOAP-ENV:Body>
+        <dss:evaluateAtSpecifiedTime>
+            <interactionId scopingEntityId="edu.duke.duhs" interactionId="123456" submissionTime="2010-07-20T07:59:35.123"/>
+            <specifiedTime>2012-01-01T00:00:00.000</specifiedTime><!-- by definition this is midnight, the instant of the start of the year 2012, and the end of 2011 -->
+            <!-- note that a specifiedTime  = "2011-12-31" may be interpreted as midnight, the BEGINNING of the last day of the year, and you probably don't mean that -->
+           <evaluationRequest clientLanguage="" clientTimeZoneOffset="">
+                <kmEvaluationRequest>
+                    <kmId scopingEntityId="org.opencds" businessId="bounce" version="1.5.3"/>
+                </kmEvaluationRequest>
+                <dataRequirementItemData>
+                    <driId itemId="testPayload">
+                        <containingEntityId scopingEntityId="edu.utah.bmi" businessId="bounceData" version="1.0.0"/>
+                    </driId>
+                    <data>
+                        <informationModelSSId scopingEntityId="org.opencds.vmr" businessId="VMR" version="1.0"/>
+                        <base64EncodedPayload>BASE64ENCODEDCONTENT</base64EncodedPayload>
+                    </data>
+                </dataRequirementItemData>
+            </evaluationRequest>
+        </dss:evaluateAtSpecifiedTime>
+    </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>

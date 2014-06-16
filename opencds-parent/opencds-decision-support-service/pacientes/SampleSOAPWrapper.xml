@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://www.w3.org/2003/05/soap-envelope"
+    xmlns:dss="http://www.omg.org/spec/CDSS/201105/dss">
+    <SOAP-ENV:Header/>
+    <SOAP-ENV:Body>
+        <dss:evaluate>
+            <interactionId scopingEntityId="edu.duke.duhs" interactionId="123456" submissionTime="2010-07-20T07:59:35.123"/>
+            <evaluationRequest clientLanguage="" clientTimeZoneOffset="">
+                <kmEvaluationRequest>
+                    <kmId scopingEntityId="org.opencds" businessId="bounce" version="1.5.3"/>
+                </kmEvaluationRequest>
+                <dataRequirementItemData>
+                    <driId itemId="testPayload">
+                        <containingEntityId scopingEntityId="edu.utah.bmi" businessId="bounceData" version="1.0.0"/>
+                    </driId>
+                    <data>
+                        <informationModelSSId scopingEntityId="org.opencds.vmr" businessId="VMR" version="1.0"/>
+                        <base64EncodedPayload>BASE64ENCODEDCONTENT</base64EncodedPayload>
+                    </data>
+                </dataRequirementItemData>
+            </evaluationRequest>
+        </dss:evaluate>
+    </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
