@@ -12,12 +12,4 @@
 		<purpose language=""></purpose>
 		<explanation language=""></explanation>
 	</semanticSignifier>
-<!-- 	<semanticSignifier> -->
-<!-- 		<dataModel>org.opencds.vmr^VMR^alpha</dataModel> -->
-<!-- 		<id businessId="VMR" version="alpha" scopingEntityId="org.opencds.vmr"/> -->
-<!-- 		<unmarshalClass>org.opencds.vmr.alpha.mappings.in.UnmarshalVMRSchemaPayload2VMR</unmarshalClass> -->
-<!-- 		<marshalClass>org.opencds.vmr.alpha.mappings.out.MarshalVMR2VMRSchemaPayload</marshalClass> -->
-<!-- 		<purpose language=""></purpose> -->
-<!-- 		<explanation language=""></explanation> -->
-<!-- 	</semanticSignifier> -->
 </ss:semanticSignifierList>

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2010 rel. 3 sp1 (http://www.altova.com) by catherine Staes (university of utah) -->
+<xs:schema xmlns="http://hsc.utah.edu/kr/coreTypes/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://hsc.utah.edu/kr/coreTypes/1.0" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:include schemaLocation="http://dev-esb.further.utah.edu:9000/mdr/rest/asset/resource/path/kr/kr-base-types.xsd"/>
+	<xs:include schemaLocation="http://dev-esb.further.utah.edu:9000/mdr/rest/asset/resource/path/CDA_R2/datatypes-base.xsd"/>
+	<xs:complexType name="detectionCriteriaComplexType">
+		<xs:sequence>
+			<xs:element name="header" type="ResourceHeaderComplexType"/>
+			<xs:element name="body">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="reportableCondition" type="TerminologyCodeLinkComplexType"/>
+						<xs:element name="labDetectionCriteria">
+							<xs:annotation>
+								<xs:documentation>If a lab result matches any of the criteria specified herein, then consider that result to be reportable for the condition specified.</xs:documentation>
+							</xs:annotation>
+							<xs:complexType>
+								<xs:sequence>
+									<xs:element name="labDetectionCriterion" type="labDetectionCriterion" maxOccurs="unbounded"/>
+								</xs:sequence>
+							</xs:complexType>
+						</xs:element>
+						<xs:element name="demographicCriteria">
+							<xs:complexType>
+								<xs:sequence>
+									<xs:element name="ageCriteria" minOccurs="0">
+										<xs:annotation>
+											<xs:documentation>if blank, all ages are reported.  If specified, then this constraint should be applied.  If multiple specified, all must be met</xs:documentation>
+										</xs:annotation>
+										<xs:complexType>
+											<xs:sequence>
+												<xs:element name="ageCriterion" maxOccurs="unbounded">
+													<xs:complexType>
+														<xs:sequence>
+															<xs:element name="operator">
+																<xs:simpleType>
+																	<xs:restriction base="xs:string">
+																		<xs:enumeration value="GreaterThan"/>
+																		<xs:enumeration value="GreaterThanOrEqualTo"/>
+																		<xs:enumeration value="LessThan"/>
+																		<xs:enumeration value="LessThanOrEqualTo"/>
+																	</xs:restriction>
+																</xs:simpleType>
+															</xs:element>
+															<xs:element name="value" type="PQ"/>
+														</xs:sequence>
+													</xs:complexType>
+												</xs:element>
+											</xs:sequence>
+										</xs:complexType>
+									</xs:element>
+								</xs:sequence>
+							</xs:complexType>
+						</xs:element>
+						<xs:element name="encounterRequirement">
+							<xs:annotation>
+								<xs:documentation>if blank, encounter status does not matter.  If specified, then this constraint should be applied.  If multiple specified, any specified encounter status fulfills this requirement.</xs:documentation>
+							</xs:annotation>
+							<xs:complexType>
+								<xs:sequence>
+									<xs:element name="encounterStatusRequired" type="TerminologyCodeLinkComplexType" minOccurs="0" maxOccurs="unbounded"/>
+								</xs:sequence>
+							</xs:complexType>
+						</xs:element>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="detectionCriteria" type="detectionCriteriaComplexType"/>
+	<xs:complexType name="labDetectionCriterion">
+		<xs:sequence>
+			<xs:element name="labTestTypeClassification" type="TerminologyCodeLinkComplexType">
+				<xs:annotation>
+					<xs:documentation>example= isolation of [chlamydia trachomitis] by culture.  these need to be coded for use by the logic analyzer tool </xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="labTestsOfInterest">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="labTest" type="TerminologyCodeLinkComplexType" maxOccurs="unbounded">
+							<xs:annotation>
+								<xs:documentation>Codes for the test ordered or performed.  Should generally be a LOINC code.</xs:documentation>
+							</xs:annotation>
+						</xs:element>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="specimenSourceRequirement" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>If unspecified, there is no requirement with regard to the specimen source.  If one source is specified, then the lab result must have the specimen source specified.  If multiple sources are specified, then specimen of the lab result must match at least one of the specified required sources.</xs:documentation>
+				</xs:annotation>
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="specimenSource" type="TerminologyCodeLinkComplexType" maxOccurs="unbounded">
+							<xs:annotation>
+								<xs:documentation>E.g., blood, serum, CSF, tissue, sterile body fluid</xs:documentation>
+							</xs:annotation>
+						</xs:element>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="resultRequirement">
+				<xs:complexType>
+					<xs:choice>
+						<xs:element name="sendRegardlessOfResult" type="xs:boolean"/>
+						<xs:element name="interpretationRequirement">
+							<xs:annotation>
+								<xs:documentation>The interpretation type to send.  Must always include Positive. May potentially include values such as Indeterminate.  If more than one specified, meeting any of the specified interpretations will result in fulfilling this requirement.</xs:documentation>
+							</xs:annotation>
+							<xs:complexType>
+								<xs:sequence>
+									<xs:element name="interpretationTypeToSend" type="TerminologyCodeLinkComplexType" maxOccurs="unbounded"/>
+								</xs:sequence>
+							</xs:complexType>
+						</xs:element>
+						<xs:element name="numericValueRequirement">
+							<xs:complexType>
+								<xs:sequence>
+									<xs:element name="operator">
+										<xs:simpleType>
+											<xs:restriction base="xs:string">
+												<xs:enumeration value="GreaterThan"/>
+												<xs:enumeration value="GreaterThanOrEqualTo"/>
+												<xs:enumeration value="LessThan"/>
+												<xs:enumeration value="LessThanOrEqualTo"/>
+											</xs:restriction>
+										</xs:simpleType>
+									</xs:element>
+									<xs:choice>
+										<xs:element name="ratioThreshold" type="RTO"/>
+										<xs:element name="physicalQuantityThreshold" type="PQ"/>
+									</xs:choice>
+								</xs:sequence>
+							</xs:complexType>
+						</xs:element>
+						<xs:element name="organismRequirement">
+							<xs:complexType>
+								<xs:sequence>
+									<xs:element name="organism" type="TerminologyCodeLinkComplexType" maxOccurs="unbounded">
+										<xs:annotation>
+											<xs:documentation>SNOMED-CT code for the organisms identitied</xs:documentation>
+										</xs:annotation>
+									</xs:element>
+								</xs:sequence>
+							</xs:complexType>
+						</xs:element>
+					</xs:choice>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="sendPrelimaryResult" type="xs:boolean">
+				<xs:annotation>
+					<xs:documentation>If true, send preliminary results as well as final and corrected.  If false, do not.  Always send final and corrected results. May need to look for these results in two places in a HL7 2.x message:  order Status or the Observation Result status</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>

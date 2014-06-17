@@ -66,28 +66,32 @@ public class Main {
 			// evaluacion 0
 			er.getKmEvaluationRequest().add(new KMEvaluationRequest());
 			er.getKmEvaluationRequest().get(0).setKmId(new EntityIdentifier());
+
+			// Esta parte es importante, es donde se le añade la base de
+			// conocimiento que se va a usar
+			// la base de conocimiento es un fichero llamado
+			// edu.utah^AHRQ_PSI_02^4.3.1
 			er.getKmEvaluationRequest().get(0).getKmId()
 					.setBusinessId("AHRQ_PSI_02");
 			er.getKmEvaluationRequest().get(0).getKmId()
 					.setScopingEntityId("edu.utah");
 			er.getKmEvaluationRequest().get(0).getKmId().setVersion("4.3.1");
+
 			// evaluacion 1
 			er.getKmEvaluationRequest().add(new KMEvaluationRequest());
 			er.getKmEvaluationRequest().get(1).setKmId(new EntityIdentifier());
+			// Esta parte es importante, es donde se le añade la base de
+			// conocimiento que se va a usar
+			// la base de conocimiento es un fichero llamado
+			// edu.utah^AHRQ_PSI_11^4.3.1
 			er.getKmEvaluationRequest().get(1).getKmId()
 					.setBusinessId("AHRQ_PSI_11");
 			er.getKmEvaluationRequest().get(1).getKmId()
 					.setScopingEntityId("edu.utah");
 			er.getKmEvaluationRequest().get(1).getKmId().setVersion("4.3.1");
-			// evaluacion 2
-			er.getKmEvaluationRequest().add(new KMEvaluationRequest());
-			er.getKmEvaluationRequest().get(2).setKmId(new EntityIdentifier());
-			er.getKmEvaluationRequest().get(2).getKmId()
-					.setBusinessId("AHRQ_PSI_12");
-			er.getKmEvaluationRequest().get(2).getKmId()
-					.setScopingEntityId("edu.utah");
-			er.getKmEvaluationRequest().get(2).getKmId().setVersion("4.3.1");
 
+			// etc.. se le pueden añadir mas
+		
 			// indica el tipo de datos de paciente que usa
 			// en este caso usamos el estandar vMR
 			er.getDataRequirementItemData().add(new DataRequirementItemData());
@@ -119,7 +123,7 @@ public class Main {
 			// lectura de fichero de los datos del paciente
 			String payloadString = null;
 			String filePath = null;
-			filePath = "pacientes/ConstructedExampleNestedLabsForBeaconProjectForTesting.xml";
+			filePath = "opencds-knowledge-repository-data/resources_v1.1/pacientes/ConstructedExampleNestedLabsForBeaconProjectForTesting.xml";
 			try {
 				payloadString = FileUtility.getInstance()
 						.getFileContentsAsString(new File(filePath));

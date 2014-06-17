@@ -4,18 +4,5 @@
 		xsi:schemaLocation="org.opencds.km.executionEngines ..\schema\OpenCdsExecutionEngines.xsd" 
 		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
 		xmlns:kme="org.opencds.km.executionEngines">
-<!--include all supported executionEngine package names in this list, along with the operations they support-->
-	<!-- example: <executionEngine name="fullclasspath" 
-			doesEvaluate="true"
-			doesEvaluateAtSpecifiedTime="true"
-			doesEvaluateIteratively="false"
-			doesEvaluateIterativelyAtSpecifiedTime="false"/> -->
-<!-- 	inferencing engines includes in opencds v1.1.0 and newer -->
-	<executionEngine name="org.opencds.service.drools.v53.DroolsAdapter" doesEvaluate="true" doesEvaluateAtSpecifiedTime="true"/>
-	<executionEngine name="org.opencds.service.drools.v54.DroolsAdapter" doesEvaluate="true" doesEvaluateAtSpecifiedTime="true"/>
 	<executionEngine name="org.opencds.service.drools.v55.DroolsAdapter" doesEvaluate="true" doesEvaluateAtSpecifiedTime="true"/>
-	<executionEngine name="org.opencds.service.java.SampleJavaInferencingEngine" doesEvaluate="true" doesEvaluateAtSpecifiedTime="true"/>
-<!-- 	inferencing engine for opencds v1.0 thru v1.0.4 -->
-	<executionEngine name="org.opencds.client.drools.DroolsDecisionEngine53DSSEvaluationAdapter" doesEvaluate="true" doesEvaluateAtSpecifiedTime="true"/>
-	<!--<executionEngine name="org.opencds.client.drools.DSSEvaluationAdapter_DroolsDecisionEngineV5_2" doesEvaluate="true" doesEvaluateAtSpecifiedTime="true"/>-->
 </kme:executionEngineList>
