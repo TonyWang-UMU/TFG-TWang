@@ -1,0 +1,58 @@
+package TFG_v1
+
+import org.opencds.vmr.v1_0.internal.ClinicalStatement
+import org.opencds.vmr.v1_0.internal.ClinicalStatementRelationship
+import org.opencds.vmr.v1_0.internal.EntityBase
+import org.opencds.vmr.v1_0.internal.Demographics;
+import org.opencds.vmr.v1_0.internal.EvaluatedPerson;
+import javax.swing.JDialog;
+import javax.swing.JOptionPane;
+
+
+global java.util.Date evalTime
+global String clientLanguage
+global String clientTimeZoneOffset
+global String focalPersonId
+global java.util.HashSet assertions
+global java.util.HashMap namedObjects
+
+// devuelve todo lo que encuentre  de entity base
+rule "BounceAllEntities"
+	dialect "mvel"
+	when
+		$entityBase : EntityBase()
+	then
+		$entityBase.setToBeReturned( true );
+		JOptionPane.showMessageDialog(null, "Se ha encontrado un entity base");
+end
+
+// devuelve todo lo que encuentre de clinical statement
+rule "BounceAllClinicalStatements"
+	dialect "mvel"
+	when
+		$cs : ClinicalStatement()
+	then
+		$cs.setToBeReturned( true );
+		/OptionPane.showMessageDialog(null, "Se ha encontrado un clinical statement");
+end
+
+rule "HayPersona"
+	// probando que salience funciona, sino se dispararia primero la otra regla
+	salience 1
+	when 
+		$person : EvaluatedPerson()
+	then
+		JOptionPane.showMessageDialog(null, "Se ha encontrado una Persona");
+		JOptionPane.showMessageDialog(null, "Edad: "+ $person.getDemographics().getAge().getValue());
+end
+
+rule "MayorDe25"
+	salience 0
+	when
+		$person : EvaluatedPerson()
+		eval ($person.getDemographics().getAge().getValue() > 25)
+	then
+		JOptionPane.showMessageDialog(null, "Es mayor de 25 años");
+end
+
+

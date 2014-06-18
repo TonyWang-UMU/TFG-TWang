@@ -60,9 +60,24 @@ public class Main {
 			// y se le van añadiendo los request
 			EvaluationRequest er = new EvaluationRequest();
 
-			// er.setClientLanguage("");
-			// er.setClientTimeZoneOffset("");
+			// informacion para el debug
+			er.setClientLanguage("Spanish");
+			er.setClientTimeZoneOffset("GMT +1");
 
+			// evaluacion 0
+			er.getKmEvaluationRequest().add(new KMEvaluationRequest());
+			er.getKmEvaluationRequest().get(0).setKmId(new EntityIdentifier());
+
+			// Esta parte es importante, es donde se le añade la base de
+			// conocimiento que se va a usar
+			// la base de conocimiento es un fichero llamado
+			// umu^tfg^1
+			er.getKmEvaluationRequest().get(0).getKmId()
+					.setBusinessId("tfg");
+			er.getKmEvaluationRequest().get(0).getKmId()
+					.setScopingEntityId("umu");
+			er.getKmEvaluationRequest().get(0).getKmId().setVersion("1");
+			/*
 			// evaluacion 0
 			er.getKmEvaluationRequest().add(new KMEvaluationRequest());
 			er.getKmEvaluationRequest().get(0).setKmId(new EntityIdentifier());
@@ -72,24 +87,11 @@ public class Main {
 			// la base de conocimiento es un fichero llamado
 			// edu.utah^AHRQ_PSI_02^4.3.1
 			er.getKmEvaluationRequest().get(0).getKmId()
-					.setBusinessId("AHRQ_PSI_02");
+					.setBusinessId("bounce");
 			er.getKmEvaluationRequest().get(0).getKmId()
-					.setScopingEntityId("edu.utah");
-			er.getKmEvaluationRequest().get(0).getKmId().setVersion("4.3.1");
-
-			// evaluacion 1
-			er.getKmEvaluationRequest().add(new KMEvaluationRequest());
-			er.getKmEvaluationRequest().get(1).setKmId(new EntityIdentifier());
-			// Esta parte es importante, es donde se le añade la base de
-			// conocimiento que se va a usar
-			// la base de conocimiento es un fichero llamado
-			// edu.utah^AHRQ_PSI_11^4.3.1
-			er.getKmEvaluationRequest().get(1).getKmId()
-					.setBusinessId("AHRQ_PSI_11");
-			er.getKmEvaluationRequest().get(1).getKmId()
-					.setScopingEntityId("edu.utah");
-			er.getKmEvaluationRequest().get(1).getKmId().setVersion("4.3.1");
-
+					.setScopingEntityId("org.opencds");
+			er.getKmEvaluationRequest().get(0).getKmId().setVersion("1.5.5");
+			*/
 			// etc.. se le pueden añadir mas
 		
 			// indica el tipo de datos de paciente que usa
@@ -123,7 +125,7 @@ public class Main {
 			// lectura de fichero de los datos del paciente
 			String payloadString = null;
 			String filePath = null;
-			filePath = "opencds-knowledge-repository-data/resources_v1.1/pacientes/ConstructedExampleNestedLabsForBeaconProjectForTesting.xml";
+			filePath = "opencds-knowledge-repository-data/resources_v1.1/pacientes/pacienteEjemplo.xml";
 			try {
 				payloadString = FileUtility.getInstance()
 						.getFileContentsAsString(new File(filePath));
@@ -161,6 +163,8 @@ public class Main {
 					 * 
 					 */
 					String kmid = kmer.getKmId().getBusinessId().toString();
+				
+					
 					// imprimimos el kmid que se le asocio a cada consulta
 					System.out.println("kmid=" + kmid);
 					kmid = null;

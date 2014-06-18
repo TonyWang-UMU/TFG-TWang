@@ -176,7 +176,8 @@ public class EvaluationImpl implements org.omg.dss.Evaluation {
 	        try
 			{		
 				log.debug("KMId: " + oneRequest.getRequestedKmId().toString() + " EvaluationImpl.evaluate starting one KM");
-				log.trace("" + structuredDroolsResult);
+				// Quito esta linea para que no se muestre duplicada la informacion de paciente
+				// log.trace("" + structuredDroolsResult);
 				base64EncodedPayload 	= semanticPayload.getBase64EncodedPayload();
 				base64EncodedPayload.add( structuredDroolsResult.getBytes() ); 
 		        

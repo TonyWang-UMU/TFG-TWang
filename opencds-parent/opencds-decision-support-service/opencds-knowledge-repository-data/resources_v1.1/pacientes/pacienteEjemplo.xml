@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<in:cdsInput xmlns:in="org.opencds.vmr.v1_0.schema.cdsinput"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+		xmlns:dt="org.opencds.vmr.v1_0.schema.datatypes"
+		xsi:schemaLocation="org.opencds.vmr.v1_0.schema.cdsinput ..\schema\cdsInput.xsd">
+	<templateId root="2.16.840.1.113883.3.795.11.1.1"/>
+	<vmrInput>
+		<templateId root="2.16.840.1.113883.3.795.11.1.1"/>
+		<patient>
+			<id root="2.16.840.1.113883.19.5" extension="996-756-495"/>
+			<demographics>
+				<!-- no se para que es unit pero es obligatorio -->
+				<age value="30.0" unit="31.0"/>
+				<gender codeSystem="2.16.840.1.113883.5" code="M"/>
+				<race codeSystem="2.16.840.1.113883.5" code="2028-9"/>
+				<!-- preguntar como representar un nombre
+				<name> 
+					<parts>
+						<part type="FAM"/>
+					</parts>
+				</name> -->
+			</demographics>
+			<clinicalStatements>
+			</clinicalStatements>
+		</patient>
+	</vmrInput>
+</in:cdsInput>
