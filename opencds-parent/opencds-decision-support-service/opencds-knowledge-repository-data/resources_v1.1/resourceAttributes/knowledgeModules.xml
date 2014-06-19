@@ -11,6 +11,7 @@
 	<!-- modulo de conocimiento del tfg -->
 	<kmMetadata>
 		<identifier scopingEntityId="umu" businessId="tfg" version="1"/>
+		<!-- qué versión de Drools usamos? -->
 		<purpose language="es">Bounces all the input back as output under Drools 5.5</purpose>
 		<explanation language="en">Modulo de conocimiento de soporte a la decision clinica en farmacovigilancia</explanation>
 		<executionEngine>org.opencds.service.drools.v55.DroolsAdapter</executionEngine>

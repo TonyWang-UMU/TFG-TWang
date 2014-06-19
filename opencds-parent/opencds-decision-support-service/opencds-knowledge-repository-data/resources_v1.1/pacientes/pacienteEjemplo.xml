@@ -13,12 +13,10 @@
 				<age value="30.0" unit="31.0"/>
 				<gender codeSystem="2.16.840.1.113883.5" code="M"/>
 				<race codeSystem="2.16.840.1.113883.5" code="2028-9"/>
-				<!-- preguntar como representar un nombre
-				<name> 
-					<parts>
-						<part type="FAM"/>
-					</parts>
-				</name> -->
+				<name use="ABC"> 
+						<part type="FAM" value="valor"/>
+						<part type="GIV"/>
+				</name> 
 			</demographics>
 			<clinicalStatements>
 			</clinicalStatements>

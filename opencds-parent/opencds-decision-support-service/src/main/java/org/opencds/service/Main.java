@@ -41,7 +41,7 @@ import org.opencds.knowledgeRepository.SimpleKnowledgeRepository;
 public class Main {
 	public static void main(String[] args) {
 		try {
-			// Inicializar la base de conocimiento
+			// Inicializar las bases de conocimiento
 			SimpleKnowledgeRepository
 					.setFullPathToKRData("opencds-knowledge-repository-data/resources_v1.1");
 			// Clase que contiene los parametros de la query

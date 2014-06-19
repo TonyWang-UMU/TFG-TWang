@@ -33,7 +33,7 @@ rule "BounceAllClinicalStatements"
 		$cs : ClinicalStatement()
 	then
 		$cs.setToBeReturned( true );
-		/OptionPane.showMessageDialog(null, "Se ha encontrado un clinical statement");
+		JOptionPane.showMessageDialog(null, "Se ha encontrado un clinical statement");
 end
 
 rule "HayPersona"
