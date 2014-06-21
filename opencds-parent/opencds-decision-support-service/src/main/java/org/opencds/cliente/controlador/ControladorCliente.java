@@ -45,8 +45,53 @@ public class ControladorCliente {
 			writer = new PrintWriter(
 					"opencds-knowledge-repository-data/resources_v1.1/pacientes/"
 							+ paciente.getIdentificador() + ".xml", "UTF-8");
-			writer.println("The first line");
-			writer.println("The second line");
+			// cabeceras comunes
+			writer.println("<?xml version=\"1.0\" encoding=\"UTF-8\"?>");
+			writer.println("<in:cdsInput xmlns:in=\"org.opencds.vmr.v1_0.schema.cdsinput\"");
+			writer.println("\t\txmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"");
+			writer.println("\t\txmlns:dt=\"org.opencds.vmr.v1_0.schema.datatypes\"");
+			writer.println("\t\txsi:schemaLocation=\"org.opencds.vmr.v1_0.schema.cdsinput ..\\schema\\cdsInput.xsd\">");
+			writer.println("\t<templateId root=\"2.16.840.1.113883.3.795.11.1.1\"/>");
+			writer.println("\t<vmrInput>");
+			writer.println("\t\t<templateId root=\"2.16.840.1.113883.3.795.11.1.1\"/>");
+			writer.println("\t\t<patient>");
+
+			// datos del paciente
+			writer.println("\t\t\t<id root=\"2.16.840.1.113883.19.5\" extension=\""
+					+ paciente.getIdentificador() + "\"/>");
+
+			if (paciente.tieneDatos()) {
+				writer.println("\t\t\t<demographics>");
+				if (paciente.getNombre() != null) {
+
+				}
+				if (paciente.getUnidadEdad() != null) {
+					if (paciente.getEdad() > 0.0) {
+
+					}
+				}
+
+				if (paciente.getSexo() != null) {
+
+				}
+
+				if (paciente.getRaza() != null) {
+
+				}
+
+				writer.println("\t\t\t</demographics>");
+			}
+
+			// datos clinicos
+			writer.println("\t\t\t<clinicalStatements>");
+
+			writer.println("\t\t\t</clinicalStatements>");
+
+			// final del documento, cerramos etiquetas
+			writer.println("\t\t</patient>");
+			writer.println("\t</vmrInput>");
+			writer.println("</in:cdsInput>");
+
 			writer.close();
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();

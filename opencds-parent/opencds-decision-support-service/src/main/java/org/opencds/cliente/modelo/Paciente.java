@@ -28,6 +28,21 @@ public class Paciente {
 		this.nombre = nombre;
 	}
 
+	/**
+	 * Comprueba si tiene algun dato relleno, como no son obligatorios, con que
+	 * tenga un dato ya devuelve true
+	 * 
+	 * @return true si tiene algun dato, false en caso contrario
+	 */
+
+	public boolean tieneDatos() {
+		if (this.identificador != null || this.edad > 0
+				|| this.unidadEdad != null || this.sexo != null
+				|| this.raza != null || this.nombre != null)
+			return true;
+		return false;
+	}
+
 	public String getIdentificador() {
 		return identificador;
 	}
