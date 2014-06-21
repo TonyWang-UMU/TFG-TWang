@@ -1,4 +1,4 @@
-package org.opencds.service;
+package org.opencds.test;
 
 import java.io.File;
 import java.io.UnsupportedEncodingException;

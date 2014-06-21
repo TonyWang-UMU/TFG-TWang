@@ -9,13 +9,11 @@
 		<patient>
 			<id root="2.16.840.1.113883.19.5" extension="996-756-495"/>
 			<demographics>
-				<!-- no se para que es unit pero es obligatorio -->
 				<age value="30.0" unit="31.0"/>
 				<gender codeSystem="2.16.840.1.113883.5" code="M"/>
 				<race codeSystem="2.16.840.1.113883.5" code="2028-9"/>
 				<name use="ABC"> 
-						<part type="FAM" value="valor"/>
-						<part type="GIV"/>
+					<part type="FAM" value="valor"/>
 				</name> 
 			</demographics>
 			<clinicalStatements>

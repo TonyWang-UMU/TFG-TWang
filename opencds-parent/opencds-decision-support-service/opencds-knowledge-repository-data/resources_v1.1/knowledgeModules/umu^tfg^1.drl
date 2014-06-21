@@ -23,7 +23,7 @@ rule "BounceAllEntities"
 		$entityBase : EntityBase()
 	then
 		$entityBase.setToBeReturned( true );
-		JOptionPane.showMessageDialog(null, "Se ha encontrado un entity base");
+		//JOptionPane.showMessageDialog(null, "Se ha encontrado un entity base");
 end
 
 // devuelve todo lo que encuentre de clinical statement
@@ -33,7 +33,7 @@ rule "BounceAllClinicalStatements"
 		$cs : ClinicalStatement()
 	then
 		$cs.setToBeReturned( true );
-		JOptionPane.showMessageDialog(null, "Se ha encontrado un clinical statement");
+		//JOptionPane.showMessageDialog(null, "Se ha encontrado un clinical statement");
 end
 
 rule "HayPersona"
@@ -42,8 +42,8 @@ rule "HayPersona"
 	when 
 		$person : EvaluatedPerson()
 	then
-		JOptionPane.showMessageDialog(null, "Se ha encontrado una Persona");
-		JOptionPane.showMessageDialog(null, "Edad: "+ $person.getDemographics().getAge().getValue());
+		//JOptionPane.showMessageDialog(null, "Se ha encontrado una Persona");
+		//JOptionPane.showMessageDialog(null, "Edad: "+ $person.getDemographics().getAge().getValue());
 end
 
 rule "MayorDe25"
@@ -52,7 +52,7 @@ rule "MayorDe25"
 		$person : EvaluatedPerson()
 		eval ($person.getDemographics().getAge().getValue() > 25)
 	then
-		JOptionPane.showMessageDialog(null, "Es mayor de 25 años");
+		//JOptionPane.showMessageDialog(null, "Es mayor de 25 años");
 end
 
 

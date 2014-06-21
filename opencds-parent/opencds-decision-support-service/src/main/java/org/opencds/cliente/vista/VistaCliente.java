@@ -1,34 +1,18 @@
 package org.opencds.cliente.vista;
 
-import java.awt.BorderLayout;
-import java.awt.EventQueue;
-
-import javax.swing.JFrame;
-import javax.swing.JPanel;
-import javax.swing.border.EmptyBorder;
-import javax.swing.JMenuBar;
-import javax.swing.JMenu;
-import javax.swing.JLabel;
-
-import java.awt.Choice;
-import java.awt.FlowLayout;
-import java.awt.GridLayout;
-
-import javax.swing.SwingConstants;
-import javax.swing.JButton;
-import javax.swing.JTextField;
-
+import java.awt.*;
+import java.awt.event.*;
+import javax.swing.*;
+import javax.swing.border.*;
 import org.opencds.cliente.controlador.ControladorCliente;
-
-import java.awt.event.ActionListener;
-import java.awt.event.ActionEvent;
 
 public class VistaCliente extends JFrame {
 
-	private JPanel contentPane;
-	private JTextField textField;
-	private Choice choice = new Choice();
-	private Choice choice_1 = new Choice();
+	private JPanel contenedorPrincipal;
+	private Choice desplegablePacientes = new Choice();
+	private Choice desplegableKM = new Choice();
+	TextArea textoEntrada;
+	TextArea textoSalida;
 
 	/**
 	 * Create the frame.
@@ -36,68 +20,161 @@ public class VistaCliente extends JFrame {
 	public VistaCliente() {
 		setTitle("TFG Tony Wang - Cliente");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 640, 480);
+		setBounds(100, 100, 1200, 600);
+		setLocationRelativeTo(null);
 
-		JMenuBar menuBar = new JMenuBar();
-		setJMenuBar(menuBar);
+		JMenuBar menuBarra = new JMenuBar();
+		setJMenuBar(menuBarra);
 
-		JMenu mnNewMenu = new JMenu("Archivo");
-		menuBar.add(mnNewMenu);
+		JMenu menuBarraArchivo = new JMenu("Archivo");
+		menuBarra.add(menuBarraArchivo);
 
-		JMenu mnEditar = new JMenu("Editar");
-		menuBar.add(mnEditar);
+		JMenu menuBarraEditar = new JMenu("Editar");
+		menuBarra.add(menuBarraEditar);
 
-		JMenu mnAyuda = new JMenu("Ayuda");
-		menuBar.add(mnAyuda);
-		contentPane = new JPanel();
-		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
-		setContentPane(contentPane);
-		contentPane.setLayout(new BorderLayout(0, 0));
+		JMenu menuBarraAyuda = new JMenu("Ayuda");
+		menuBarra.add(menuBarraAyuda);
 
-		JPanel panel = new JPanel();
-		contentPane.add(panel, BorderLayout.NORTH);
-		panel.setLayout(new GridLayout(0, 2, 0, 0));
+		JMenuItem subMenuAyudaAcercaDe = new JMenuItem("Acerca de");
+		subMenuAyudaAcercaDe.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				ControladorCliente.getUnicainstancia().mostrarAcercaDe();
+			}
+		});
+		menuBarraAyuda.add(subMenuAyudaAcercaDe);
 
-		JLabel lblNewLabel = new JLabel("Seleccionar Paciente");
-		lblNewLabel.setHorizontalAlignment(SwingConstants.CENTER);
-		panel.add(lblNewLabel);
-		panel.add(choice);
+		JSeparator separadorAyuda = new JSeparator();
+		menuBarraAyuda.add(separadorAyuda);
 
-		JLabel lblNewLabel_1 = new JLabel("Seleccionar Base de Conocimiento");
-		lblNewLabel_1.setHorizontalAlignment(SwingConstants.CENTER);
-		panel.add(lblNewLabel_1);
+		JMenuItem subMenuAyudaSalir = new JMenuItem("Salir");
+		subMenuAyudaSalir.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				ControladorCliente.getUnicainstancia().terminar();
+			}
+		});
 
-		panel.add(choice_1);
+		menuBarraAyuda.add(subMenuAyudaSalir);
+		contenedorPrincipal = new JPanel();
+		contenedorPrincipal.setBorder(new EmptyBorder(5, 5, 5, 5));
+		setContentPane(contenedorPrincipal);
+		contenedorPrincipal.setLayout(new BorderLayout(0, 0));
 
-		ControladorCliente.getUnicainstancia()
-				.listarBasesConocimiento(choice_1);
+		JPanel panelNortePrincipal = new JPanel();
+		panelNortePrincipal.setBorder(new TitledBorder(null, "",
+				TitledBorder.LEADING, TitledBorder.TOP, null, null));
+		contenedorPrincipal.add(panelNortePrincipal, BorderLayout.NORTH);
+		panelNortePrincipal.setLayout(new GridLayout(0, 2, 0, 0));
 
-		JPanel panel_1 = new JPanel();
-		contentPane.add(panel_1, BorderLayout.SOUTH);
-		panel_1.setLayout(new FlowLayout(FlowLayout.CENTER, 5, 5));
+		JLabel etiquetaSeleccionPaciente = new JLabel("Seleccionar Paciente");
+		etiquetaSeleccionPaciente.setHorizontalAlignment(SwingConstants.CENTER);
+		panelNortePrincipal.add(etiquetaSeleccionPaciente);
+		panelNortePrincipal.add(desplegablePacientes);
 
-		JButton btnNewButton = new JButton("Generar XML");
-		btnNewButton.addActionListener(new ActionListener() {
+		// muestra los usuarios que hay en la base de pacientes
+		ControladorCliente.getUnicainstancia().listarPacientes(
+				desplegablePacientes);
+
+		JLabel etiquetaSeleccionKM = new JLabel(
+				"Seleccionar Base de Conocimiento");
+		etiquetaSeleccionKM.setHorizontalAlignment(SwingConstants.CENTER);
+		panelNortePrincipal.add(etiquetaSeleccionKM);
+
+		panelNortePrincipal.add(desplegableKM);
+		// muestra las bases de conocimiento
+		ControladorCliente.getUnicainstancia().listarBasesConocimiento(
+				desplegableKM);
+
+		JPanel panelBotones = new JPanel();
+		contenedorPrincipal.add(panelBotones, BorderLayout.SOUTH);
+		panelBotones.setLayout(new FlowLayout(FlowLayout.CENTER, 5, 5));
+
+		JButton botonGenerarXML = new JButton("Generar XML");
+		botonGenerarXML.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				ControladorCliente.getUnicainstancia().generarXML(
 						ControladorCliente.getUnicainstancia().obtenerPaciente(
-								choice.getSelectedItem()));
+								desplegablePacientes.getSelectedItem()));
+				ControladorCliente.getUnicainstancia().mostrarEntrada(
+						textoEntrada, desplegablePacientes.getSelectedItem());
 			}
 		});
-		panel_1.add(btnNewButton);
+		panelBotones.add(botonGenerarXML);
 
-		JButton btnNewButton_1 = new JButton("Enviar XML");
-		btnNewButton_1.addActionListener(new ActionListener() {
+		JButton botonEnviarXML = new JButton("Enviar XML");
+		botonEnviarXML.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				ControladorCliente.getUnicainstancia().enviarXML(
-						choice.getSelectedItem());
+				if (textoEntrada.getText().isEmpty()) {
+					ControladorCliente.getUnicainstancia().mostrarEntrada(
+							textoEntrada,
+							desplegablePacientes.getSelectedItem());
+				}
+				// Esto es para mostrar simplemente la ventana de espera
+				final JDialog loading = new JDialog(VistaCliente.this);
+				JPanel p1 = new JPanel(new BorderLayout());
+				p1.add(new JLabel(
+						"Procesando la solicitud, espera por favor..."),
+						BorderLayout.CENTER);
+				loading.setUndecorated(true);
+				loading.getContentPane().add(p1);
+				loading.pack();
+				loading.setLocationRelativeTo(VistaCliente.this);
+				loading.setDefaultCloseOperation(JDialog.DO_NOTHING_ON_CLOSE);
+				loading.setModal(true);
+
+				SwingWorker<String, Void> worker = new SwingWorker<String, Void>() {
+					@Override
+					protected String doInBackground()
+							throws InterruptedException {
+						textoSalida.setText(ControladorCliente
+								.getUnicainstancia().enviarXML(
+										desplegablePacientes.getSelectedItem(),
+										desplegableKM.getSelectedItem()));
+						return "";
+					}
+
+					@Override
+					protected void done() {
+						loading.dispose();
+					}
+				};
+				worker.execute();
+				loading.setVisible(true);
+				try {
+					worker.get();
+				} catch (Exception e1) {
+					e1.printStackTrace();
+				}
 			}
 		});
-		panel_1.add(btnNewButton_1);
+		panelBotones.add(botonEnviarXML);
 
-		textField = new JTextField();
-		textField.setEditable(false);
-		contentPane.add(textField, BorderLayout.CENTER);
-		textField.setColumns(10);
+		JPanel panelInformacion = new JPanel();
+		contenedorPrincipal.add(panelInformacion, BorderLayout.CENTER);
+		panelInformacion.setLayout(new GridLayout(0, 2, 0, 0));
+
+		JPanel panelEntradaInterior = new JPanel();
+		panelInformacion.add(panelEntradaInterior);
+		panelEntradaInterior.setLayout(new BorderLayout(0, 0));
+
+		JLabel tituloEntrada = new JLabel("Entrada");
+		tituloEntrada.setHorizontalAlignment(SwingConstants.CENTER);
+		panelEntradaInterior.add(tituloEntrada, BorderLayout.NORTH);
+
+		textoEntrada = new TextArea();
+		textoEntrada.setEditable(false);
+		panelEntradaInterior.add(textoEntrada, BorderLayout.CENTER);
+
+		JPanel panelSalidaInterior = new JPanel();
+		panelInformacion.add(panelSalidaInterior);
+		panelSalidaInterior.setLayout(new BorderLayout(0, 0));
+
+		JLabel tituloSalida = new JLabel("Salida");
+		tituloSalida.setHorizontalAlignment(SwingConstants.CENTER);
+		panelSalidaInterior.add(tituloSalida, BorderLayout.NORTH);
+
+		textoSalida = new TextArea();
+		textoSalida.setEditable(false);
+		panelSalidaInterior.add(textoSalida, BorderLayout.CENTER);
+
 	}
 }
