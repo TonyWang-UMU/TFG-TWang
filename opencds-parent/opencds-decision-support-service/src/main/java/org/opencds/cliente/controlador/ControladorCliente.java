@@ -50,8 +50,81 @@ public class ControladorCliente {
 	}
 
 	public Paciente obtenerPaciente(String identificador) {
-		// TODO
+		// TODO tiene que obtener los pacientes de la base de datos
 		return new Paciente("pat001", 20, "anos", "M", "2028-9", "Juan");
+	}
+
+	/**
+	 * Convierte los datos clinicos de un paciente al estandar vMR
+	 * 
+	 * @param paciente
+	 *            El paciente del que se realiza el analisis
+	 * @return Texto en formato estandar vMR
+	 */
+	private String clinicalStatementsAvMR(Paciente paciente) {
+		String clinicalStatement = "";
+		clinicalStatement += "\t\t\t<clinicalStatements>";
+
+		clinicalStatement += "\t\t\t</clinicalStatements>";
+
+		return clinicalStatement;
+	}
+
+	/**
+	 * Convierte los datos personales del paciente en estandar vMR
+	 * 
+	 * @param paciente
+	 *            El paciente del que se realiza el analisis
+	 * @return Texto en formato estandar vMR
+	 */
+	private String pacienteAvMR(Paciente paciente) {
+		// datos del paciente
+		String datosPaciente = "";
+		datosPaciente += "\t\t<patient>";
+		datosPaciente += "\t\t\t<id root=\"2.16.840.1.113883.19.5\" extension=\""
+				+ paciente.getIdentificador() + "\"/>";
+		// añadir los datos que se dispongan
+		if (paciente.tieneDatos()) {
+			datosPaciente += "\t\t\t<demographics>";
+			if (paciente.getNombre() != null) {
+				// TODO hay que arreglarlo y ponerlo bien respetando los
+				// formatos ya que se permiten varios nombres y demás
+				// sacarlo todo a metodos independientes que devuelvan strings
+				// para haer el codigo mas legible
+				datosPaciente += "\t\t\t\t<name use=\"ABC\">";
+				datosPaciente += "\t\t\t\t\t<part type=\"FAM\" value=\""
+						+ paciente.getNombre() + "\"/>";
+				datosPaciente += "\t\t\t\t</name>";
+			}
+			if (paciente.getUnidadEdad() != null) {
+				if (paciente.getEdad() > 0.0) {
+					datosPaciente += "\t\t\t\t<age value=\""
+							+ paciente.getEdad() + "\" unit=\""
+							+ paciente.getUnidadEdad() + "\"/>";
+				} else {
+					datosPaciente += "\t\t\t\t<age unit=\""
+							+ paciente.getUnidadEdad() + "\"/>";
+				}
+			}
+
+			if (paciente.getSexo() != null) {
+				// TODO El codesystem es asi?
+				datosPaciente += "\t\t\t\t<gender codeSystem=\"2.16.840.1.113883.5\" code=\""
+						+ paciente.getSexo() + "\"/>";
+			}
+
+			if (paciente.getRaza() != null) {
+				// TODO el codesystem es asi?
+				datosPaciente += "\t\t\t\t<race codeSystem=\"2.16.840.1.113883.5\" code=\""
+						+ paciente.getRaza() + "\"/>";
+			}
+			datosPaciente += "\t\t\t</demographics>";
+		}
+
+		// datos clinicos
+		datosPaciente += clinicalStatementsAvMR(paciente);
+		datosPaciente += "\t\t</patient>";
+		return datosPaciente;
 	}
 
 	/**
@@ -79,54 +152,10 @@ public class ControladorCliente {
 			writer.println("\t<templateId root=\"2.16.840.1.113883.3.795.11.1.1\"/>");
 			writer.println("\t<vmrInput>");
 			writer.println("\t\t<templateId root=\"2.16.840.1.113883.3.795.11.1.1\"/>");
-			writer.println("\t\t<patient>");
 
-			// datos del paciente
-			writer.println("\t\t\t<id root=\"2.16.840.1.113883.19.5\" extension=\""
-					+ paciente.getIdentificador() + "\"/>");
-			// añadir los datos que se dispongan
-			if (paciente.tieneDatos()) {
-				writer.println("\t\t\t<demographics>");
-				if (paciente.getNombre() != null) {
-					// TODO hay que arreglarlo y ponerlo bien respetando los
-					// formatos ya que se permiten varios nombres y demás
-					writer.println("\t\t\t\t<name use=\"ABC\">");
-					writer.println("\t\t\t\t\t<part type=\"FAM\" value=\""
-							+ paciente.getNombre() + "\"/>");
-					writer.println("\t\t\t\t</name>");
-				}
-				if (paciente.getUnidadEdad() != null) {
-					if (paciente.getEdad() > 0.0) {
-						writer.println("\t\t\t\t<age value=\""
-								+ paciente.getEdad() + "\" unit=\""
-								+ paciente.getUnidadEdad() + "\"/>");
-					} else {
-						writer.println("\t\t\t\t<age unit=\""
-								+ paciente.getUnidadEdad() + "\"/>");
-					}
-				}
-
-				if (paciente.getSexo() != null) {
-					// TODO El codesystem es asi?
-					writer.println("\t\t\t\t<gender codeSystem=\"2.16.840.1.113883.5\" code=\""
-							+ paciente.getSexo() + "\"/>");
-				}
-
-				if (paciente.getRaza() != null) {
-					// TODO el codesystem es asi?
-					writer.println("\t\t\t\t<race codeSystem=\"2.16.840.1.113883.5\" code=\""
-							+ paciente.getRaza() + "\"/>");
-				}
-				writer.println("\t\t\t</demographics>");
-			}
-
-			// datos clinicos
-			writer.println("\t\t\t<clinicalStatements>");
-
-			writer.println("\t\t\t</clinicalStatements>");
+			writer.println(pacienteAvMR(paciente));
 
 			// final del documento, cerramos etiquetas
-			writer.println("\t\t</patient>");
 			writer.println("\t</vmrInput>");
 			writer.println("</in:cdsInput>");
 
@@ -190,6 +219,7 @@ public class ControladorCliente {
 				// se obtiene del campo que hay para ello
 				// el formado de una KM es entidad^nombre^version
 				// por tanto hay que quitarle la extension .drl
+
 				String[] splittedKM = obtenerBaseConocimientoDividida(baseConocimiento
 						.substring(0, baseConocimiento.length() - 4));
 				er.getKmEvaluationRequest().get(0).getKmId()
@@ -198,6 +228,7 @@ public class ControladorCliente {
 						.setScopingEntityId(splittedKM[0]);
 				er.getKmEvaluationRequest().get(0).getKmId()
 						.setVersion(splittedKM[2]);
+
 				// indica el tipo de datos de paciente que usa
 				// en este caso usamos el estandar vMR
 				er.getDataRequirementItemData().add(
@@ -375,7 +406,7 @@ public class ControladorCliente {
 	 */
 
 	public void listarPacientes(Choice choice) {
-		// TODO
+		// TODO tiene que listar los pacientes de la base de datos
 		choice.add("pat001");
 	}
 

@@ -56,7 +56,7 @@ import org.opencds.knowledgeRepository.SimpleKnowledgeRepository;
  * @date 2012-12-28
  *
  */
-public class TestEvaluationImpl {
+public class TestOpenCDS {
 
 	@SuppressWarnings("unused")
 	public static void main(String [ ] args) 

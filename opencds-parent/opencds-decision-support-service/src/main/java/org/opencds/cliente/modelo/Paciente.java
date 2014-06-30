@@ -17,6 +17,14 @@ public class Paciente {
 	private String sexo;
 	private String raza;
 	private String nombre;
+	
+	// atributos de la guia clinica
+	private double temperatura;  // temperatura corporal en tiempo de diagnostico
+	
+	//TODO constructur de prueba
+	public Paciente(double temperatura){
+		this.temperatura=temperatura;
+	}
 
 	public Paciente(String identificador, double edad, String unidadEdad,
 			String sexo, String raza, String nombre) {

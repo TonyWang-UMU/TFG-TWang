@@ -38,7 +38,7 @@ import org.opencds.knowledgeRepository.SimpleKnowledgeRepository;
  * 
  */
 
-public class Main {
+public class TestTFG {
 	public static void main(String[] args) {
 		try {
 			// Inicializar las bases de conocimiento
