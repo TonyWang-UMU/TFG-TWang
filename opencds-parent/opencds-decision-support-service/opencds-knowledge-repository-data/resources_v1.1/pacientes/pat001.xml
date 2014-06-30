@@ -9,15 +9,13 @@
 		<patient>
 			<id root="2.16.840.1.113883.19.5" extension="pat001"/>
 			<demographics>
-				<name use="ABC">
-					<part type="FAM" value="Juan"/>
-				</name>
-				<age value="20.0" unit="anos"/>
-				<gender codeSystem="2.16.840.1.113883.5" code="M"/>
-				<race codeSystem="2.16.840.1.113883.5" code="2028-9"/>
+				<age value="30.0" unit="Year"/>
 			</demographics>
 			<clinicalStatements>
+			<observationResults>
+			</observationResults>
 			</clinicalStatements>
 		</patient>
+
 	</vmrInput>
 </in:cdsInput>

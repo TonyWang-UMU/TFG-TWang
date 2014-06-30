@@ -49,9 +49,92 @@ public class ControladorCliente {
 		return unicaInstancia;
 	}
 
+	/**
+	 * Obtiene de la base de datos el paciente pedido
+	 * 
+	 * @param identificador
+	 *            Identificador del paciente que se obtiene
+	 * @return El paciente correspondiente al identificador
+	 */
 	public Paciente obtenerPaciente(String identificador) {
 		// TODO tiene que obtener los pacientes de la base de datos
-		return new Paciente("pat001", 20, "anos", "M", "2028-9", "Juan");
+		Paciente paciente = new Paciente();
+		paciente.setIdentificador(identificador);
+		paciente.setTemperatura(37);
+		paciente.setEdad(30);
+		return paciente;
+	}
+
+	/**
+	 * Obtiene en formato estandar los observation results del paciente como por
+	 * ejemplo la temperatura corporal
+	 * 
+	 * @param paciente
+	 *            El paciente para el que se construye el estandar
+	 * @return La cadena XML correspondiente al estandar vMR
+	 */
+
+	private String observationsResultsAvMR(Paciente paciente) {
+		String observationsResults = "";
+		observationsResults += "\t\t\t<observationResults>\n";
+		// aqui cada uno de los observations result
+		// TODO
+		observationsResults += "\t\t\t</observationResults>\n";
+		return observationsResults;
+	}
+
+	/**
+	 * Obtiene en formato estandar los encounter events del paciente
+	 * 
+	 * @param paciente
+	 *            El paciente para el que se construye el estandar
+	 * @return La cadena XML correspondiente al estandar vMR
+	 */
+
+	private String encounterEventsAvMR(Paciente paciente) {
+		String encounterEvents = "";
+		encounterEvents += "\t\t\t<encounterEvents>\n";
+		// aqui cada uno de los encounter event
+		// TODO
+		encounterEvents += "\t\t\t</encounterEvents>\n";
+		return encounterEvents;
+	}
+
+	/**
+	 * Obtiene en formato estandar los substance administration event del
+	 * paciente
+	 * 
+	 * @param paciente
+	 *            El paciente para el que se construye el estandar
+	 * @return La cadena XML correspondiente al estandar vMR
+	 */
+
+	private String substanceAdministrationEventsAvMR(Paciente paciente) {
+		String administrationEvents = "";
+		administrationEvents += "\t\t\t<substanceAdministrationEvents>\n";
+		// aqui cada uno de los substance administration event
+		// TODO
+		administrationEvents += "\t\t\t</substanceAdministrationEvents>\n";
+
+		return administrationEvents;
+	}
+
+	/**
+	 * Obtiene el formato estandar de los substance adminsitration proposal del
+	 * paciente
+	 * 
+	 * @param paciente
+	 *            El paciente para el que se construye el estandar
+	 * @return La cadena XML correspondiente al estandar vMR
+	 */
+
+	private String substanceAdministrationProposalsAvMR(Paciente paciente) {
+		String substanceAdministrationProposals = "";
+		substanceAdministrationProposals += "\t\t\t<substanceAdministrationProposals>\n";
+		// aqui cada uno de los substance administration proposal
+		// TODO
+		substanceAdministrationProposals += "\t\t\t</substanceAdministrationProposals>\n";
+		return substanceAdministrationProposals;
 	}
 
 	/**
@@ -63,9 +146,16 @@ public class ControladorCliente {
 	 */
 	private String clinicalStatementsAvMR(Paciente paciente) {
 		String clinicalStatement = "";
-		clinicalStatement += "\t\t\t<clinicalStatements>";
-
-		clinicalStatement += "\t\t\t</clinicalStatements>";
+		clinicalStatement += "\t\t\t<clinicalStatements>\n";
+		if (paciente.tieneEncounterEvents())
+			clinicalStatement += encounterEventsAvMR(paciente);
+		if (paciente.tieneObservation())
+			clinicalStatement += observationsResultsAvMR(paciente);
+		if (paciente.tieneSubstanceAdministrationEvents())
+			clinicalStatement += substanceAdministrationEventsAvMR(paciente);
+		if (paciente.tieneSubstanceAdministrationProposals())
+			clinicalStatement += substanceAdministrationProposalsAvMR(paciente);
+		clinicalStatement += "\t\t\t</clinicalStatements>\n";
 
 		return clinicalStatement;
 	}
@@ -80,50 +170,51 @@ public class ControladorCliente {
 	private String pacienteAvMR(Paciente paciente) {
 		// datos del paciente
 		String datosPaciente = "";
-		datosPaciente += "\t\t<patient>";
+		datosPaciente += "\t\t<patient>\n";
 		datosPaciente += "\t\t\t<id root=\"2.16.840.1.113883.19.5\" extension=\""
-				+ paciente.getIdentificador() + "\"/>";
+				+ paciente.getIdentificador() + "\"/>\n";
 		// añadir los datos que se dispongan
 		if (paciente.tieneDatos()) {
-			datosPaciente += "\t\t\t<demographics>";
-			if (paciente.getNombre() != null) {
+			datosPaciente += "\t\t\t<demographics>\n";
+			if (paciente.tieneNombre()) {
 				// TODO hay que arreglarlo y ponerlo bien respetando los
 				// formatos ya que se permiten varios nombres y demás
 				// sacarlo todo a metodos independientes que devuelvan strings
 				// para haer el codigo mas legible
-				datosPaciente += "\t\t\t\t<name use=\"ABC\">";
+				datosPaciente += "\t\t\t\t<name use=\"ABC\">\n";
 				datosPaciente += "\t\t\t\t\t<part type=\"FAM\" value=\""
-						+ paciente.getNombre() + "\"/>";
-				datosPaciente += "\t\t\t\t</name>";
+						+ paciente.getNombre() + "\"/>\n";
+				datosPaciente += "\t\t\t\t</name>\n";
 			}
-			if (paciente.getUnidadEdad() != null) {
-				if (paciente.getEdad() > 0.0) {
+			if (paciente.tieneUnidadEdad()) {
+				if (paciente.tieneEdad()) {
 					datosPaciente += "\t\t\t\t<age value=\""
 							+ paciente.getEdad() + "\" unit=\""
-							+ paciente.getUnidadEdad() + "\"/>";
+							+ paciente.getUnidadEdad() + "\"/>\n";
 				} else {
 					datosPaciente += "\t\t\t\t<age unit=\""
-							+ paciente.getUnidadEdad() + "\"/>";
+							+ paciente.getUnidadEdad() + "\"/>\n";
 				}
 			}
 
-			if (paciente.getSexo() != null) {
+			if (paciente.tieneSexo()) {
 				// TODO El codesystem es asi?
 				datosPaciente += "\t\t\t\t<gender codeSystem=\"2.16.840.1.113883.5\" code=\""
-						+ paciente.getSexo() + "\"/>";
+						+ paciente.getSexo() + "\"/>\n";
 			}
 
-			if (paciente.getRaza() != null) {
-				// TODO el codesystem es asi?
+			if (paciente.tieneRaza()) {
+				// TODO el codesystem es asi? habria que poner un ENUM con las
+				// razas y los distintos codesystem asociados
 				datosPaciente += "\t\t\t\t<race codeSystem=\"2.16.840.1.113883.5\" code=\""
-						+ paciente.getRaza() + "\"/>";
+						+ paciente.getRaza() + "\"/>\n";
 			}
-			datosPaciente += "\t\t\t</demographics>";
+			datosPaciente += "\t\t\t</demographics>\n";
 		}
 
 		// datos clinicos
 		datosPaciente += clinicalStatementsAvMR(paciente);
-		datosPaciente += "\t\t</patient>";
+		datosPaciente += "\t\t</patient>\n";
 		return datosPaciente;
 	}
 
