@@ -35,9 +35,11 @@ public class ControladorCliente {
 	private static VistaCliente ventanaPrincipal;
 
 	public static void main(String[] args) {
+
 		ventanaPrincipal = new VistaCliente();
 		ventanaPrincipal.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		ventanaPrincipal.setVisible(true);
+
 	}
 
 	/**
@@ -47,22 +49,6 @@ public class ControladorCliente {
 	 */
 	public static ControladorCliente getUnicainstancia() {
 		return unicaInstancia;
-	}
-
-	/**
-	 * Obtiene de la base de datos el paciente pedido
-	 * 
-	 * @param identificador
-	 *            Identificador del paciente que se obtiene
-	 * @return El paciente correspondiente al identificador
-	 */
-	public Paciente obtenerPaciente(String identificador) {
-		// TODO tiene que obtener los pacientes de la base de datos
-		Paciente paciente = new Paciente();
-		paciente.setIdentificador(identificador);
-		paciente.setTemperatura(37);
-		paciente.setEdad(30);
-		return paciente;
 	}
 
 	/**
@@ -487,18 +473,6 @@ public class ControladorCliente {
 			e.printStackTrace();
 		}
 
-	}
-
-	/**
-	 * Hace la conexion con la base de datos, y obtiene la lista de pacientes
-	 * que hay disponible
-	 * 
-	 * @param choice
-	 */
-
-	public void listarPacientes(Choice choice) {
-		// TODO tiene que listar los pacientes de la base de datos
-		choice.add("pat001");
 	}
 
 	/**

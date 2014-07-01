@@ -1,0 +1,62 @@
+package TFG_v1
+
+// atributos globales que usa el estandar 
+global java.util.Date evalTime
+global String clientLanguage
+global String clientTimeZoneOffset
+global String focalPersonId
+global java.util.HashSet assertions
+global java.util.HashMap namedObjects
+
+import org.opencds.cliente.modelo.Paciente;
+
+declare RuleMetadata
+	 @kbStatus(draft)
+	 @kbVersion(1.0.0)
+	 @kbRelationships(None)
+	 @kbSemanticType(drl)
+	 @kbIsoLanguageCode(en-US)
+end
+// rules dialect
+dialect "mvel"
+
+// declare the CPIScore as a time driven event so that we can implement temporal rules
+declare CPIScore
+   @role(event) 
+end
+
+// CPIS RULES
+
+rule "CPISHighTemperature"
+// ********** AUDIT METADATA INFO ********************************
+// rule source information: sourceDocument, pageNumber, lineRange
+  @sourceDocument(John Hopkins Clinical Guidelines Infections)
+  @pageNumber(80)
+  @lineRange(CPIS calculation table, row 1 column 1)
+// generic information about the rule: date, ruleDescription, ruleAuthor, ruleVersion
+  @ruleDate(2014-07-01)
+  @ruleDescription("Measures patient's temperature and if within a range adds 0 points to the CPI Score")
+  @ruleAuthor(Tony Wang)
+  @ruleVersion(1.0.0)
+// clinicalAction (diagnosis, treatment, score,...), infectionType (VAP...), agent, antibiotic)
+  @clinicalAction(CPISAlert)
+  @infectionType(VAP)
+  @infectionAgent()
+  @infectionAntibiotic()
+// *********** END OF AUDIT METADATA INFO ************************ 
+	lock-on-active
+    salience 100 
+    no-loop
+    agenda-group "cpis"
+    when
+    	// existe una persona
+  		$person : EvaluatedPerson()
+		eval ($person.getDemographics().getAge().getValue() > 25)
+        $patient: Patient (temperature > 36.5 && temperature <= 38.4)
+    then
+    	JOptionPane.showMessageDialog(null, "Temperatura alta");
+        //modify ($patient) {CPIS +=0};
+        //$patient.CPIS += 0;
+        //update( $patient );
+        //System.out.println( "CPIS NOT changed :High Temp, CPI of patient " + $patient.name + " increased by 0, final value = " + $patient.CPIS);
+end 

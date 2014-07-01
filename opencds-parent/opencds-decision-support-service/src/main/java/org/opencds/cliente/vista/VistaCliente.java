@@ -2,8 +2,11 @@ package org.opencds.cliente.vista;
 
 import java.awt.*;
 import java.awt.event.*;
+
 import javax.swing.*;
 import javax.swing.border.*;
+
+import org.opencds.cliente.controlador.ControladorBaseDatos;
 import org.opencds.cliente.controlador.ControladorCliente;
 
 public class VistaCliente extends JFrame {
@@ -71,7 +74,7 @@ public class VistaCliente extends JFrame {
 		panelNortePrincipal.add(desplegablePacientes);
 
 		// muestra los usuarios que hay en la base de pacientes
-		ControladorCliente.getUnicainstancia().listarPacientes(
+		ControladorBaseDatos.getUnicainstancia().listarPacientes(
 				desplegablePacientes);
 
 		JLabel etiquetaSeleccionKM = new JLabel(
@@ -92,8 +95,10 @@ public class VistaCliente extends JFrame {
 		botonGenerarXML.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				ControladorCliente.getUnicainstancia().generarXML(
-						ControladorCliente.getUnicainstancia().obtenerPaciente(
-								desplegablePacientes.getSelectedItem()));
+						ControladorBaseDatos.getUnicainstancia()
+								.obtenerPaciente(
+										Integer.parseInt(desplegablePacientes
+												.getSelectedItem())));
 				ControladorCliente.getUnicainstancia().mostrarEntrada(
 						textoEntrada, desplegablePacientes.getSelectedItem());
 			}
