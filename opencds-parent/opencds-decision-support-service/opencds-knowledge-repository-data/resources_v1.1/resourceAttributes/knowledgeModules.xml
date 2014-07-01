@@ -10,7 +10,7 @@
 
 	<!-- modulo de conocimiento de ejemplo del tfg -->
 	<kmMetadata>
-		<identifier scopingEntityId="umu" businessId="tfg" version="1"/>
+		<identifier scopingEntityId="z-umu" businessId="tfg" version="1"/>
 		<!-- qué versión de Drools usamos? -->
 		<purpose language="es">Bounces all the input back as output under Drools 5.5</purpose>
 		<explanation language="en">Modulo de conocimiento de soporte a la decision clinica en farmacovigilancia</explanation>
@@ -20,14 +20,15 @@
 	
 	<!-- FIN modulo de conocimiento del tfg -->
 	
-	<!-- modulo de conocimiento de VAP CPIS -->
+	<!-- modulo de conocimiento de VAP CPIS TFG-->
 	<kmMetadata>
-		<identifier scopingEntityId="umu" businessId="VAPCPIS" version="1.0"/>
+		<identifier scopingEntityId="umu" businessId="VAPCPIS" version="1.0.0"/>
 		<!-- qué versión de Drools usamos? -->
 		<purpose language="es">Sistema de alertas de infecciones pulmonares</purpose>
 		<explanation language="en">Corresponde a la pagina 80 de la guia clinica Johns Hopkins</explanation>
 		<executionEngine>org.opencds.service.drools.v55.DroolsAdapter</executionEngine>
 		<dataModel>org.opencds.vmr^VMR^1.0</dataModel>
 	</kmMetadata>
+	<!-- FIN modulo de conocimiento VAP CPIS TFG-->
 
 </kmm:kmMetadataList>

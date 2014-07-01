@@ -22,6 +22,7 @@ public class Paciente {
 	// clinical statements
 	// 1. observation results
 	private double temperatura; // temperatura corporal en tiempo de diagnostico
+	private int leucocitos; // numero de leucocitos del ultimo analisis
 
 	// 2. encounter events
 	// 3. substance administration events
@@ -101,6 +102,15 @@ public class Paciente {
 	}
 
 	/**
+	 * Metodo que comprueba si tiene los leucocitos establecidos como parametro
+	 * 
+	 * @return True si los tiene y false si no
+	 */
+	public boolean tieneLeucocitos() {
+		return this.leucocitos > 0;
+	}
+
+	/**
 	 * Comprueba si tiene algun dato relleno, como no son obligatorios, con que
 	 * tenga un dato ya devuelve true
 	 * 
@@ -119,7 +129,7 @@ public class Paciente {
 	 */
 	public boolean tieneObservation() {
 		// TODO terminar con todos los tipos de observation
-		return this.tieneTemperatura();
+		return this.tieneTemperatura() || this.tieneLeucocitos();
 	}
 
 	/**
@@ -204,6 +214,14 @@ public class Paciente {
 
 	public void setNombre(String nombre) {
 		this.nombre = nombre;
+	}
+
+	public int getLeucocitos() {
+		return leucocitos;
+	}
+
+	public void setLeucocitos(int leucocitos) {
+		this.leucocitos = leucocitos;
 	}
 
 }

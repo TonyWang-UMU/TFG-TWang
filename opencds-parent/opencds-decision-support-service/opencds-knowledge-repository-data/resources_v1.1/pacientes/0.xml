@@ -13,8 +13,25 @@
 				<gender codeSystem="2.16.840.1.113883.5" code="M"/>
 			</demographics>
 			<clinicalStatements>
+			<observationResults>
+				<observationResult>
+					<templateId root="2.16.840.1.113883.10.20.1.31"/>
+					<id root="2.16.840.1.113883.5.10636"/>
+					<observationFocus code="temp_corp" codeSystem="2.16.840.1.113883.6.1" displayName="Temperatura"/>
+					<observationValue>
+						<physicalQuantity value="30.6800003" unit="Grados Centigrados"/>
+					</observationValue>
+				</observationResult>
+				<observationResult>
+					<templateId root="2.16.840.1.113883.10.20.1.31"/>
+					<id root="2.16.840.1.113883.5.10636"/>
+					<observationFocus code="pWBC" codeSystem="2.16.840.1.113883.6.1" displayName="Leucocitos"/>
+					<observationValue>
+						<integer value="17276"/>
+					</observationValue>
+				</observationResult>
+			</observationResults>
 			</clinicalStatements>
 		</patient>
-
 	</vmrInput>
 </in:cdsInput>

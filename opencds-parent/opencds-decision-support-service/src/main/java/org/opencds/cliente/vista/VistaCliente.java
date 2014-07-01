@@ -9,13 +9,14 @@ import javax.swing.border.*;
 import org.opencds.cliente.controlador.ControladorBaseDatos;
 import org.opencds.cliente.controlador.ControladorCliente;
 
+@SuppressWarnings("serial")
 public class VistaCliente extends JFrame {
 
 	private JPanel contenedorPrincipal;
 	private Choice desplegablePacientes = new Choice();
 	private Choice desplegableKM = new Choice();
-	TextArea textoEntrada;
-	TextArea textoSalida;
+	private TextArea textoEntrada;
+	private TextArea textoSalida;
 
 	/**
 	 * Create the frame.

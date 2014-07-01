@@ -8,7 +8,10 @@ global String focalPersonId
 global java.util.HashSet assertions
 global java.util.HashMap namedObjects
 
-import org.opencds.cliente.modelo.Paciente;
+import org.opencds.vmr.v1_0.internal.*;
+import org.opencds.vmr.v1_0.internal.datatypes.*;
+import javax.swing.JDialog;
+import javax.swing.JOptionPane;
 
 declare RuleMetadata
 	 @kbStatus(draft)
@@ -28,35 +31,221 @@ end
 // CPIS RULES
 
 rule "CPISHighTemperature"
-// ********** AUDIT METADATA INFO ********************************
-// rule source information: sourceDocument, pageNumber, lineRange
-  @sourceDocument(John Hopkins Clinical Guidelines Infections)
-  @pageNumber(80)
-  @lineRange(CPIS calculation table, row 1 column 1)
-// generic information about the rule: date, ruleDescription, ruleAuthor, ruleVersion
-  @ruleDate(2014-07-01)
-  @ruleDescription("Measures patient's temperature and if within a range adds 0 points to the CPI Score")
-  @ruleAuthor(Tony Wang)
-  @ruleVersion(1.0.0)
-// clinicalAction (diagnosis, treatment, score,...), infectionType (VAP...), agent, antibiotic)
-  @clinicalAction(CPISAlert)
-  @infectionType(VAP)
-  @infectionAgent()
-  @infectionAntibiotic()
-// *********** END OF AUDIT METADATA INFO ************************ 
+	// ********** AUDIT METADATA INFO ********************************
+	// rule source information: sourceDocument, pageNumber, lineRange
+	@sourceDocument(John Hopkins Clinical Guidelines Infections)
+	@pageNumber(80)
+ 	@lineRange(CPIS calculation table, row 1 column 1)
+	// generic information about the rule: date, ruleDescription, ruleAuthor, ruleVersion
+	@ruleDate(2014-07-01)
+	@ruleDescription("Measures patient's temperature and if within a range adds 0 points to the CPI Score")
+	@ruleAuthor(Tony Wang)
+	@ruleVersion(1.0.0)
+	// clinicalAction (diagnosis, treatment, score,...), infectionType (VAP...), agent, antibiotic)
+ 	@clinicalAction(CPISAlert)
+ 	@infectionType(VAP)
+	// 	@infectionAgent()
+	//  @infectionAntibiotic()
+	// *********** END OF AUDIT METADATA INFO ************************ 
 	lock-on-active
+  	salience 100 
+ 	no-loop
+	when
+    	// existe una persona
+  		$person : EvaluatedPerson()
+  		// tiene un observation result asociado a esa persona
+  		$os : ObservationResult(evaluatedPersonId == $person.id)
+  		// el observation result es del tipo temperatura y que la temperatura sea > 36.5 y <= 38.4
+  		eval($os.getObservationFocus().getCode()=="temp_corp" && 
+  		$os.getObservationValue().getPhysicalQuantity().getValue() > 36.5 
+  		&& $os.getObservationValue().getPhysicalQuantity().getValue() <=38.4) 
+	then
+		JOptionPane.showMessageDialog(null, "CPISHighTemperature");
+        //modify ($patient) {CPIS +=0};
+        //System.out.println( "CPIS NOT changed :High Temp, CPI of patient " + $patient.name + " increased by 0, final value = " + $patient.CPIS);
+	
+end 
+
+rule "CPISVeryHighTemperature"
+	// ********** AUDIT METADATA INFO ********************************
+	// rule source information: sourceDocument, pageNumber, lineRange
+  	@sourceDocument(John Hopkins Clinical Guidelines Infections)
+  	@pageNumber(80)
+  	@lineRange(CPIS calculation table, row 1 column 2)
+	// generic information about the rule: date, ruleDescription, ruleAuthor, ruleVersion
+  	@ruleDate(2014-07-01)
+  	@ruleDescription("Measures patient's temperature and if within a range adds 1 point to the CPI Score")
+  	@ruleAuthor(Tony Wang)
+ 	@ruleVersion(1.0.0)
+	// clinicalAction (diagnosis, treatment, score,...), infectionType (VAP...), agent, antibiotic)
+  	@clinicalAction(CPISAlert)
+  	@infectionType(VAP)
+  	//@infectionAgent()
+  	//@infectionAntibiotic()
+	// *********** END OF AUDIT METADATA INFO ************************ 
+    lock-on-active
     salience 100 
     no-loop
-    agenda-group "cpis"
+   // agenda-group "cpis"
     when
     	// existe una persona
   		$person : EvaluatedPerson()
-		eval ($person.getDemographics().getAge().getValue() > 25)
-        $patient: Patient (temperature > 36.5 && temperature <= 38.4)
+  		// tiene un observation result asociado a esa persona
+  		$os : ObservationResult(evaluatedPersonId == $person.id)
+  		// el observation result es del tipo temperatura y que la temperatura sea > 38.4 y <= 38.9
+  		eval($os.getObservationFocus().getCode()=="temp_corp" && 
+  		$os.getObservationValue().getPhysicalQuantity().getValue() > 38.4
+  		&& $os.getObservationValue().getPhysicalQuantity().getValue() <=38.9) 
     then
-    	JOptionPane.showMessageDialog(null, "Temperatura alta");
-        //modify ($patient) {CPIS +=0};
-        //$patient.CPIS += 0;
-        //update( $patient );
-        //System.out.println( "CPIS NOT changed :High Temp, CPI of patient " + $patient.name + " increased by 0, final value = " + $patient.CPIS);
-end 
+    	JOptionPane.showMessageDialog(null, "CPISVeryHighTemperature");
+       	//modify ($patient) {CPIS +=1};
+        //System.out.println( "CPIS changed :Very High temp, CPI of patient " + $patient.name + " increased by 1, current value = " + $patient.CPIS);
+end
+
+rule "CPISExtremeTemperature"
+	// ********** AUDIT METADATA INFO ********************************
+	// rule source information: sourceDocument, pageNumber, lineRange
+ 	@sourceDocument(John Hopkins Clinical Guidelines Infections)
+  	@pageNumber(80)
+  	@lineRange(CPIS calculation table, row 1 column 3)
+	// generic information about the rule: date, ruleDescription, ruleAuthor, ruleVersion
+	@ruleDate(2014-07-02)
+	@ruleDescription("Measures patient's temperature and if within a range adds 2 points to the CPI Score")
+	@ruleAuthor(Tony Wang)
+	@ruleVersion(1.0.0)
+	// clinicalAction (diagnosis, treatment, score,...), infectionType (VAP...), agent, antibiotic)
+	@clinicalAction(CPISAlert)
+	@infectionType(VAP)
+	// @infectionAgent()
+	// @infectionAntibiotic()
+	// *********** END OF AUDIT METADATA INFO ************************ 
+	lock-on-active
+	salience 100 
+	no-loop
+	//agenda-group "cpis"
+    when
+   		// existe una persona
+  		$person : EvaluatedPerson()
+  		// tiene un observation result asociado a esa persona
+  		$os : ObservationResult(evaluatedPersonId == $person.id)
+  		// el observation result es del tipo temperatura y que la temperatura sea > 38.9 y <= 36.4
+  		eval($os.getObservationFocus().getCode()=="temp_corp" && 
+  		($os.getObservationValue().getPhysicalQuantity().getValue() > 38.4
+  		|| $os.getObservationValue().getPhysicalQuantity().getValue() <=38.9))
+    then
+		JOptionPane.showMessageDialog(null, "CPISExtremeTemperature");
+        //modify ($patient) {CPIS +=2};
+        //System.out.println( "CPIS changed :Extreme temp, CPI of patient " + $patient.name + " increased by 2, current value = " + $patient.CPIS);
+        //System.out.println( "Audit Information: "  + " @clinicalAction "+drools.getRule().getMetaData().get("clinicalAction") );
+end
+
+rule "CPISpWBCMedium"
+	// ********** AUDIT METADATA INFO ********************************
+	// rule source information: sourceDocument, pageNumber, lineRange
+	@sourceDocument(John Hopkins Clinical Guidelines Infections)
+	@pageNumber(80)
+	@lineRange(CPIS calculation table, row 2 column 1)
+	// generic information about the rule: date, ruleDescription, ruleAuthor, ruleVersion
+ 	@ruleDate(2014-07-02)
+ 	@ruleDescription("Measures patient's peripheral WBC and if within 4000-11000 adds 0 points to the CPI Score")
+	@ruleAuthor(Tony Wang)
+ 	@ruleVersion(1.0.0)
+	// clinicalAction (diagnosis, treatment, score,...), infectionType (VAP...), agent, antibiotic)
+  	@clinicalAction(CPISAlert)
+  	@infectionType(VAP)
+  	//@infectionAgent()
+  	//@infectionAntibiotic()
+	// *********** END OF AUDIT METADATA INFO ************************ 
+	lock-on-active
+	salience 100
+	no-loop
+    //agenda-group "cpis"
+    when
+    	// existe una persona
+  		$person : EvaluatedPerson()
+  		// tiene un observation result asociado a esa persona
+  		$os : ObservationResult(evaluatedPersonId == $person.id)
+  		// el observation result es del tipo temperatura y que la temperatura sea > 38.9 y <= 36.4
+  		eval($os.getObservationFocus().getCode()=="pWBC" && 
+  		$os.getObservationValue().getInteger().getValue() >= 4000
+  		&& $os.getObservationValue().getInteger().getValue() <=11000)
+    then
+		JOptionPane.showMessageDialog(null, "CPISpWBCMedium");   
+        //modify ($patient) {CPIS += 0};
+        //System.out.println( "CPIS changed :Medium pwB, CPI of patient " + $patient.name + " increased by 0, current value = " + $patient.CPIS);
+end
+
+rule "CPISExtremepWBC"
+	// ********** AUDIT METADATA INFO ********************************
+	// rule source information: sourceDocument, pageNumber, lineRange
+	@sourceDocument(John Hopkins Clinical Guidelines Infections)
+	@pageNumber(80)
+	@lineRange(CPIS calculation table, row 2 column 2)
+	// generic information about the rule: date, ruleDescription, ruleAuthor, ruleVersion
+	@ruleDate(2014-07-02)
+	@ruleDescription("Measures patient's peripheral WBC and if within less than 4000 or higher than 11000 adds 1 point to the CPI Score")
+	@ruleAuthor(Tony Wang)
+	@ruleVersion(1.0.0)
+	// clinicalAction (diagnosis, treatment, score,...), infectionType (VAP...), agent, antibiotic)
+	@clinicalAction(CPISAlert)
+	@infectionType(VAP)
+	//@infectionAgent()
+	//@infectionAntibiotic()
+	// *********** END OF AUDIT METADATA INFO ************************ 
+    lock-on-active
+    salience 100
+    no-loop
+    //agenda-group "cpis"
+    when
+        // existe una persona
+  		$person : EvaluatedPerson()
+  		// tiene un observation result asociado a esa persona
+  		$os : ObservationResult(evaluatedPersonId == $person.id)
+  		// el observation result es del tipo temperatura y que la temperatura sea > 38.9 y <= 36.4
+  		eval($os.getObservationFocus().getCode()=="pWBC" && 
+  		($os.getObservationValue().getInteger().getValue() < 4000
+  		|| $os.getObservationValue().getInteger().getValue() > 11000))
+    then
+         JOptionPane.showMessageDialog(null, "CPISExtremepWBC");   
+         //modify ($patient) {CPIS += 1};
+         //System.out.println( "CPIS changed :Extreme pWBC, CPI of patient " + $patient.name + " increased by 1, current value = " + $patient.CPIS);
+end
+
+// rule to add one extra point if 50% off bands
+     
+rule "CPISVeryExtremepWBC"
+	// ********** AUDIT METADATA INFO ********************************
+	// rule source information: sourceDocument, pageNumber, lineRange
+  	@sourceDocument(John Hopkins Clinical Guidelines Infections)
+  	@pageNumber(80)
+  	@lineRange(CPIS calculation table, row 2 column 2)
+	// generic information about the rule: date, ruleDescription, ruleAuthor, ruleVersion
+  	@ruleDate(2014-07-02)
+  	@ruleDescription("Measures patient's peripheral WBC and if within less than 2000 or higher than 16500 adds 1 extra point to the CPI Score")
+  	@ruleAuthor(Tony Wang)
+  	@ruleVersion(1.0.0)
+	// clinicalAction (diagnosis, treatment, score,...), infectionType (VAP...), agent, antibiotic)
+  	@clinicalAction(CPISAlert)
+  	@infectionType(VAP)
+  	//@infectionAgent()
+  	//@infectionAntibiotic()
+	// *********** END OF AUDIT METADATA INFO ************************ 
+    lock-on-active
+    salience 100
+    no-loop
+    //agenda-group "cpis"
+    when
+		// existe una persona
+  		$person : EvaluatedPerson()
+  		// tiene un observation result asociado a esa persona
+  		$os : ObservationResult(evaluatedPersonId == $person.id)
+  		// el observation result es del tipo temperatura y que la temperatura sea > 38.9 y <= 36.4
+  		eval($os.getObservationFocus().getCode()=="pWBC" && 
+  		($os.getObservationValue().getInteger().getValue() < 2000
+  		|| $os.getObservationValue().getInteger().getValue() > 16500))
+    then
+		JOptionPane.showMessageDialog(null, "CPISVeryExtremepWBC");   
+        //modify ($patient) {CPIS += 1};
+        //System.out.println( "Very extreme pWBC, CPI of patient " + $patient.name + " increased by 1, current value = " + $patient.CPIS);
+        
+end

@@ -65,6 +65,40 @@ public class ControladorCliente {
 		observationsResults += "\t\t\t<observationResults>\n";
 		// aqui cada uno de los observations result
 		// TODO
+
+		// temperatura
+		if (paciente.tieneTemperatura()) {
+			observationsResults += "\t\t\t\t<observationResult>\n";
+			// TODO es el oid de un observation result
+			observationsResults += "\t\t\t\t\t<templateId root=\"2.16.840.1.113883.10.20.1.31\"/>\n";
+			// TODO cual es la id de este observation? tiene que ser unico
+			observationsResults += "\t\t\t\t\t<id root=\"2.16.840.1.113883.5.10636\"/>\n";
+			// TODO el code me lo invento? no encuentro nada..
+			observationsResults += "\t\t\t\t\t<observationFocus code=\"temp_corp\" codeSystem=\"2.16.840.1.113883.6.1\" displayName=\"Temperatura\"/>\n";
+			observationsResults += "\t\t\t\t\t<observationValue>\n";
+			observationsResults += "\t\t\t\t\t\t<physicalQuantity value=\""
+					+ paciente.getTemperatura()
+					+ "\" unit=\"Grados Centigrados\"/>\n";
+			observationsResults += "\t\t\t\t\t</observationValue>\n";
+			observationsResults += "\t\t\t\t</observationResult>\n";
+		}
+
+		// leucocitos
+		if (paciente.tieneLeucocitos()) {
+			observationsResults += "\t\t\t\t<observationResult>\n";
+			// TODO es el oid de un observation result
+			observationsResults += "\t\t\t\t\t<templateId root=\"2.16.840.1.113883.10.20.1.31\"/>\n";
+			// TODO cual es la id de este observation? tiene que ser unico
+			observationsResults += "\t\t\t\t\t<id root=\"2.16.840.1.113883.5.10636\"/>\n";
+			// TODO el code me lo invento? no encuentro nada..
+			observationsResults += "\t\t\t\t\t<observationFocus code=\"pWBC\" codeSystem=\"2.16.840.1.113883.6.1\" displayName=\"Leucocitos\"/>\n";
+			observationsResults += "\t\t\t\t\t<observationValue>\n";
+			observationsResults += "\t\t\t\t\t\t<integer value=\""
+					+ paciente.getLeucocitos() + "\"/>\n";
+			observationsResults += "\t\t\t\t\t</observationValue>\n";
+			observationsResults += "\t\t\t\t</observationResult>\n";
+		}
+
 		observationsResults += "\t\t\t</observationResults>\n";
 		return observationsResults;
 	}
@@ -200,7 +234,7 @@ public class ControladorCliente {
 
 		// datos clinicos
 		datosPaciente += clinicalStatementsAvMR(paciente);
-		datosPaciente += "\t\t</patient>\n";
+		datosPaciente += "\t\t</patient>";
 		return datosPaciente;
 	}
 
