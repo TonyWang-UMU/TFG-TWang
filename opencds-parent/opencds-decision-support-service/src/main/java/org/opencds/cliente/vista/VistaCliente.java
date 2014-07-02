@@ -31,6 +31,11 @@ public class VistaCliente extends JFrame {
 	private JTextField textFieldSexo;
 	private JTextField textFieldTemperatura;
 	private JTextField textFieldLeucocitos;
+	private JTextField textFieldSecrecionTraqueal;
+	private JTextField textFieldXRayos;
+	private JTextField textFieldEvolucionX;
+	private JTextField textFieldARDS;
+	private JTextField textFieldOxygenation;
 
 	/**
 	 * Create the frame.
@@ -223,6 +228,33 @@ public class VistaCliente extends JFrame {
 								.getTemperatura()));
 					else
 						textFieldTemperatura.setText("N/D");
+					if (paciente.tieneSecTraq())
+						textFieldSecrecionTraqueal.setText(paciente
+								.getSecrecion_traqueal());
+					else
+						textFieldSecrecionTraqueal.setText("N/D");
+
+					if (paciente.tieneXRayosPecho())
+						textFieldXRayos.setText(paciente.getRayos_x_pecho());
+					else
+						textFieldXRayos.setText("N/D");
+
+					if (paciente.tieneEvolucionXRayos())
+						textFieldEvolucionX.setText("SI");
+					else
+						textFieldEvolucionX.setText("NO");
+
+					if (paciente.tieneARDS())
+						textFieldARDS.setText("SI");
+					else
+						textFieldARDS.setText("NO");
+
+					if (paciente.tieneOxigenacion())
+						textFieldOxygenation.setText(String.valueOf(paciente
+								.getOxigenacion()));
+					else
+						textFieldOxygenation.setText("N/D");
+
 				} else {
 					JOptionPane.showMessageDialog(null,
 							"No hay paciente seleccionado", "ERROR",
@@ -235,48 +267,55 @@ public class VistaCliente extends JFrame {
 		JButton botonEnviarXML = new JButton("Enviar al CDSS");
 		botonEnviarXML.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				if (textoEntrada.getText().isEmpty()) {
-					ControladorCliente.getUnicainstancia().mostrarEntrada(
-							textoEntrada,
-							desplegablePacientes.getSelectedItem());
-				}
-				// Esto es para mostrar simplemente la ventana de espera
-				final JDialog loading = new JDialog(VistaCliente.this);
-				JPanel p1 = new JPanel(new BorderLayout());
 
-				JLabel textoEspera = new JLabel(
-						"Procesando la solicitud, espera por favor...");
-				textoEspera.setFont(new Font("Tahoma", Font.PLAIN, 28));
-				p1.add(textoEspera, BorderLayout.CENTER);
-				loading.setUndecorated(true);
-				loading.getContentPane().add(p1);
-				loading.pack();
-				loading.setLocationRelativeTo(VistaCliente.this);
-				loading.setDefaultCloseOperation(JDialog.DO_NOTHING_ON_CLOSE);
-				loading.setModal(true);
-
-				SwingWorker<String, Void> worker = new SwingWorker<String, Void>() {
-					@Override
-					protected String doInBackground()
-							throws InterruptedException {
-						textoSalida.setText(ControladorCliente
-								.getUnicainstancia().enviarXML(
-										desplegablePacientes.getSelectedItem(),
-										desplegableKM.getSelectedItem()));
-						return "";
+				if (desplegablePacientes.getSelectedItem() != "") {
+					if (textoEntrada.getText().isEmpty()) {
+						ControladorCliente.getUnicainstancia().mostrarEntrada(
+								textoEntrada,
+								desplegablePacientes.getSelectedItem());
 					}
+					// Esto es para mostrar simplemente la ventana de espera
+					final JDialog loading = new JDialog(VistaCliente.this);
+					JPanel p1 = new JPanel(new BorderLayout());
+					JLabel textoEspera = new JLabel(
+							"Procesando la solicitud, espera por favor...");
+					textoEspera.setFont(new Font("Tahoma", Font.PLAIN, 28));
+					p1.add(textoEspera, BorderLayout.CENTER);
+					loading.setUndecorated(true);
+					loading.getContentPane().add(p1);
+					loading.pack();
+					loading.setLocationRelativeTo(VistaCliente.this);
+					loading.setDefaultCloseOperation(JDialog.DO_NOTHING_ON_CLOSE);
+					loading.setModal(true);
 
-					@Override
-					protected void done() {
-						loading.dispose();
+					SwingWorker<String, Void> worker = new SwingWorker<String, Void>() {
+						@Override
+						protected String doInBackground()
+								throws InterruptedException {
+							textoSalida.setText(ControladorCliente
+									.getUnicainstancia().enviarXML(
+											desplegablePacientes
+													.getSelectedItem(),
+											desplegableKM.getSelectedItem()));
+							return "";
+						}
+
+						@Override
+						protected void done() {
+							loading.dispose();
+						}
+					};
+					worker.execute();
+					loading.setVisible(true);
+					try {
+						worker.get();
+					} catch (Exception e1) {
+						e1.printStackTrace();
 					}
-				};
-				worker.execute();
-				loading.setVisible(true);
-				try {
-					worker.get();
-				} catch (Exception e1) {
-					e1.printStackTrace();
+				} else {
+					JOptionPane.showMessageDialog(null,
+							"No hay paciente seleccionado", "ERROR",
+							JOptionPane.ERROR_MESSAGE);
 				}
 			}
 		});
@@ -298,7 +337,7 @@ public class VistaCliente extends JFrame {
 		JPanel panelDatos = new JPanel();
 		panelDatosInterior.add(panelDatos, BorderLayout.CENTER);
 		panelDatos.setLayout(new MigLayout("", "[158.00][::200px,grow]",
-				"[25px:n][][][][][]"));
+				"[25px:n][][][][][][][][][][][]"));
 
 		JLabel lblId = new JLabel("Identificador");
 		panelDatos.add(lblId, "cell 0 1,alignx center");
@@ -339,6 +378,46 @@ public class VistaCliente extends JFrame {
 		textFieldLeucocitos.setEditable(false);
 		panelDatos.add(textFieldLeucocitos, "cell 1 5,growx");
 		textFieldLeucocitos.setColumns(10);
+
+		JLabel lblSeqTraq = new JLabel("Secreci\u00F3n Traqueal");
+		panelDatos.add(lblSeqTraq, "cell 0 6,alignx center");
+
+		textFieldSecrecionTraqueal = new JTextField();
+		textFieldSecrecionTraqueal.setEditable(false);
+		panelDatos.add(textFieldSecrecionTraqueal, "cell 1 6,growx");
+		textFieldSecrecionTraqueal.setColumns(10);
+
+		JLabel lblXRay = new JLabel("Rayos X en el Pecho");
+		panelDatos.add(lblXRay, "cell 0 7,alignx center");
+
+		textFieldXRayos = new JTextField();
+		textFieldXRayos.setEditable(false);
+		panelDatos.add(textFieldXRayos, "cell 1 7,growx");
+		textFieldXRayos.setColumns(10);
+
+		JLabel lblEvolucion = new JLabel("Evoluci\u00F3n en Infiltracion");
+		panelDatos.add(lblEvolucion, "cell 0 8,alignx center");
+
+		textFieldEvolucionX = new JTextField();
+		textFieldEvolucionX.setEditable(false);
+		panelDatos.add(textFieldEvolucionX, "cell 1 8,growx");
+		textFieldEvolucionX.setColumns(10);
+
+		JLabel lblARDS = new JLabel("ARDS");
+		panelDatos.add(lblARDS, "cell 0 9,alignx center");
+
+		textFieldARDS = new JTextField();
+		textFieldARDS.setEditable(false);
+		panelDatos.add(textFieldARDS, "cell 1 9,growx");
+		textFieldARDS.setColumns(10);
+
+		JLabel lblOxygenation = new JLabel("Oxigenaci\u00F3n");
+		panelDatos.add(lblOxygenation, "cell 0 10,alignx center");
+
+		textFieldOxygenation = new JTextField();
+		textFieldOxygenation.setEditable(false);
+		panelDatos.add(textFieldOxygenation, "cell 1 10,growx");
+		textFieldOxygenation.setColumns(10);
 
 		JPanel panelEntradaInterior = new JPanel();
 		panelInformacion.add(panelEntradaInterior);

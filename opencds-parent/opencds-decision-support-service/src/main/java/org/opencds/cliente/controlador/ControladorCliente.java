@@ -35,11 +35,9 @@ public class ControladorCliente {
 	private static VistaCliente ventanaPrincipal;
 
 	public static void main(String[] args) {
-
 		ventanaPrincipal = new VistaCliente();
 		ventanaPrincipal.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		ventanaPrincipal.setVisible(true);
-
 	}
 
 	/**
@@ -98,6 +96,98 @@ public class ControladorCliente {
 			observationsResults += "\t\t\t\t\t</observationValue>\n";
 			observationsResults += "\t\t\t\t</observationResult>\n";
 		}
+
+		// secrecion traqueal
+		if (paciente.tieneSecTraq()) {
+			observationsResults += "\t\t\t\t<observationResult>\n";
+			// TODO es el oid de un observation result
+			observationsResults += "\t\t\t\t\t<templateId root=\"2.16.840.1.113883.10.20.1.31\"/>\n";
+			// TODO cual es la id de este observation? tiene que ser unico
+			observationsResults += "\t\t\t\t\t<id root=\"2.16.840.1.113883.5.10636\"/>\n";
+			// TODO el code me lo invento? no encuentro nada..
+			observationsResults += "\t\t\t\t\t<observationFocus code=\"sec_traq\" codeSystem=\"2.16.840.1.113883.6.1\" displayName=\"Secrecion Traqueal\"/>\n";
+			observationsResults += "\t\t\t\t\t<observationValue>\n";
+			observationsResults += "\t\t\t\t\t\t<text value=\""
+					+ paciente.getSecrecion_traqueal() + "\"/>\n";
+			observationsResults += "\t\t\t\t\t</observationValue>\n";
+			observationsResults += "\t\t\t\t</observationResult>\n";
+		}
+
+		// rayos x en el pecho
+		if (paciente.tieneXRayosPecho()) {
+			observationsResults += "\t\t\t\t<observationResult>\n";
+			// TODO es el oid de un observation result
+			observationsResults += "\t\t\t\t\t<templateId root=\"2.16.840.1.113883.10.20.1.31\"/>\n";
+			// TODO cual es la id de este observation? tiene que ser unico
+			observationsResults += "\t\t\t\t\t<id root=\"2.16.840.1.113883.5.10636\"/>\n";
+			// TODO el code me lo invento? no encuentro nada..
+			observationsResults += "\t\t\t\t\t<observationFocus code=\"x_ray_chest\" codeSystem=\"2.16.840.1.113883.6.1\" displayName=\"Rayos X del Pecho\"/>\n";
+			observationsResults += "\t\t\t\t\t<observationValue>\n";
+			observationsResults += "\t\t\t\t\t\t<text value=\""
+					+ paciente.getRayos_x_pecho() + "\"/>\n";
+			observationsResults += "\t\t\t\t\t</observationValue>\n";
+			observationsResults += "\t\t\t\t</observationResult>\n";
+		}
+
+		// oxygenation
+		if (paciente.tieneOxigenacion()) {
+			observationsResults += "\t\t\t\t<observationResult>\n";
+			// TODO es el oid de un observation result
+			observationsResults += "\t\t\t\t\t<templateId root=\"2.16.840.1.113883.10.20.1.31\"/>\n";
+			// TODO cual es la id de este observation? tiene que ser unico
+			observationsResults += "\t\t\t\t\t<id root=\"2.16.840.1.113883.5.10636\"/>\n";
+			// TODO el code me lo invento? no encuentro nada..
+			observationsResults += "\t\t\t\t\t<observationFocus code=\"oxygenation\" codeSystem=\"2.16.840.1.113883.6.1\" displayName=\"Oxigenacion\"/>\n";
+			observationsResults += "\t\t\t\t\t<observationValue>\n";
+			observationsResults += "\t\t\t\t\t\t<integer value=\""
+					+ paciente.getOxigenacion() + "\"/>\n";
+			observationsResults += "\t\t\t\t\t</observationValue>\n";
+			observationsResults += "\t\t\t\t</observationResult>\n";
+		}
+
+		// los valores booleanos se ponen siempre en el fichero de salida
+
+		// ARDS
+		observationsResults += "\t\t\t\t<observationResult>\n";
+		// TODO es el oid de un observation result
+		observationsResults += "\t\t\t\t\t<templateId root=\"2.16.840.1.113883.10.20.1.31\"/>\n";
+		// TODO cual es la id de este observation? tiene que ser unico
+		observationsResults += "\t\t\t\t\t<id root=\"2.16.840.1.113883.5.10636\"/>\n";
+		// TODO el code me lo invento? no encuentro nada..
+		observationsResults += "\t\t\t\t\t<observationFocus code=\"ARDS\" codeSystem=\"2.16.840.1.113883.6.1\" displayName=\"Sindrome de distres respiratorio agudo\"/>\n";
+		observationsResults += "\t\t\t\t\t<observationValue>\n";
+		observationsResults += "\t\t\t\t\t\t<boolean value=\""
+				+ paciente.isARDS() + "\"/>\n";
+		observationsResults += "\t\t\t\t\t</observationValue>\n";
+		observationsResults += "\t\t\t\t</observationResult>\n";
+
+		// Progresion de infiltracion en rayos X
+
+		observationsResults += "\t\t\t\t<observationResult>\n";
+		// TODO es el oid de un observation result
+		observationsResults += "\t\t\t\t\t<templateId root=\"2.16.840.1.113883.10.20.1.31\"/>\n";
+		// TODO cual es la id de este observation? tiene que ser unico
+		observationsResults += "\t\t\t\t\t<id root=\"2.16.840.1.113883.5.10636\"/>\n";
+		// TODO el code me lo invento? no encuentro nada..
+		observationsResults += "\t\t\t\t\t<observationFocus code=\"x_ray_chest_progression\" codeSystem=\"2.16.840.1.113883.6.1\" displayName=\"Progression of infiltrate from prior radiographs\"/>\n";
+		observationsResults += "\t\t\t\t\t<observationValue>\n";
+		observationsResults += "\t\t\t\t\t\t<boolean value=\""
+				+ paciente.isProgresion_infiltracion_rayos_x_pecho() + "\"/>\n";
+		observationsResults += "\t\t\t\t\t</observationValue>\n";
+		observationsResults += "\t\t\t\t</observationResult>\n";
+
+		// valor del CPIS, este valor se calcula en la salida
+		observationsResults += "\t\t\t\t<observationResult>\n";
+		// TODO es el oid de un observation result
+		observationsResults += "\t\t\t\t\t<templateId root=\"2.16.840.1.113883.10.20.1.31\"/>\n";
+		// TODO cual es la id de este observation? tiene que ser unico
+		observationsResults += "\t\t\t\t\t<id root=\"2.16.840.1.113883.5.10636\"/>\n";
+		// TODO el code me lo invento? no encuentro nada..
+		observationsResults += "\t\t\t\t\t<observationFocus code=\"CPIS\" codeSystem=\"2.16.840.1.113883.6.1\" displayName=\"Valor del CPIS\"/>\n";
+		observationsResults += "\t\t\t\t\t<observationValue>\n";
+		observationsResults += "\t\t\t\t\t\t<integer value=\"0\"/>\n";
+		observationsResults += "\t\t\t\t\t</observationValue>\n";
+		observationsResults += "\t\t\t\t</observationResult>\n";
 
 		observationsResults += "\t\t\t</observationResults>\n";
 		return observationsResults;
@@ -442,8 +532,7 @@ public class ControladorCliente {
 		} else {
 			JOptionPane.showMessageDialog(null,
 					"No se ha generado el archivo vMR. Usar primero Obtener Datos de Paciente"
-							+ idPaciente, "ERROR",
-					JOptionPane.ERROR_MESSAGE);
+							+ idPaciente, "ERROR", JOptionPane.ERROR_MESSAGE);
 		}
 
 		return null;

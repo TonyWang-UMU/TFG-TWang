@@ -70,10 +70,15 @@ public class ControladorBaseDatos {
 			this.rellenarDatosPaciente(paciente);
 			// comprobar con -1 es que ese dato esta relleno
 			if (idClinic != -1) {
-				this.rellenarTemperatura(paciente, idClinic);
+				this.rellenarDatosClinicos(paciente, idClinic);
 			}
-			if (idAnalit != -1)
-				this.rellenarLeucocitos(paciente, idAnalit);
+			if (idAnalit != -1) {
+				this.rellenarDatosAnalitica(paciente, idAnalit);
+			}
+
+			if (idVenti != -1) {
+				this.rellenarDatosVentilacion(paciente, idVenti);
+			}
 		} catch (SQLException e) {
 		}
 		this.desconectar();
@@ -81,7 +86,35 @@ public class ControladorBaseDatos {
 	}
 
 	/**
-	 * Rellena el campo de leucocitos del paciente
+	 * Metodo que rellena datos de ventilacion del paciente
+	 * 
+	 * @param paciente
+	 *            Paciente al que se le rellenan los campos
+	 * @param idVenti
+	 *            El identificador del dianostico de ventilacion que se va a
+	 *            usar
+	 * @throws SQLException
+	 */
+
+	private void rellenarDatosVentilacion(Paciente paciente, int identificador)
+			throws SQLException {
+		this.conectar();
+		Statement st = bd.createStatement();
+		// buscamos en la historia clinica el valor de los leucocitos de los
+		// datos de la analitica del identificador
+		ResultSet rs = st
+				.executeQuery("SELECT venti.vent7a_oxigenacion_valor, venti.vent7b_ards FROM tfg.datos_ventilacion venti WHERE venti.id_dato="
+						+ identificador);
+		rs.next();
+		// ponemos los atributos obtenidos
+		paciente.setOxigenacion(rs.getInt(1));
+		paciente.setARDS(rs.getBoolean(2));
+		this.desconectar();
+
+	}
+
+	/**
+	 * Rellena los campos de analitica del paciente
 	 * 
 	 * @param paciente
 	 *            El paciente para el que se rellena el campo
@@ -89,7 +122,7 @@ public class ControladorBaseDatos {
 	 *            El identificador de la analitica que se va a usar
 	 * @throws SQLException
 	 */
-	private void rellenarLeucocitos(Paciente paciente, int identificador)
+	private void rellenarDatosAnalitica(Paciente paciente, int identificador)
 			throws SQLException {
 		this.conectar();
 		Statement st = bd.createStatement();
@@ -100,13 +133,13 @@ public class ControladorBaseDatos {
 						+ identificador);
 
 		rs.next();
-		// ponemos el atributo leucocitos
+		// ponemos los atributos obtenidos
 		paciente.setLeucocitos(rs.getInt(1));
 		this.desconectar();
 	}
 
 	/**
-	 * Metodo que rellena la edad y el sexo del paciente
+	 * Metodo que rellena datos demograficos del paciente
 	 * 
 	 * @param paciente
 	 *            El paciente para el que se rellenan los datos
@@ -133,7 +166,7 @@ public class ControladorBaseDatos {
 	}
 
 	/**
-	 * Metodo que rellena la temperatura del paciente
+	 * Metodo que rellena datos clinicos del paciente
 	 * 
 	 * @param paciente
 	 *            El paciente para el que se rellena la temperatura
@@ -141,19 +174,22 @@ public class ControladorBaseDatos {
 	 *            El identificador de los datos clinicos que se van a usar
 	 * @throws SQLException
 	 */
-	private void rellenarTemperatura(Paciente paciente, int identificador)
+	private void rellenarDatosClinicos(Paciente paciente, int identificador)
 			throws SQLException {
 		this.conectar();
 		Statement st = bd.createStatement();
 		// buscamos en la historia clinica el valor de la temperatura de
 		// fiebre dentro de los datos clinicos del identificador
 		ResultSet rs = st
-				.executeQuery("SELECT cli.dc02b_temperatura_valor FROM tfg.datos_clinicos cli WHERE cli.id_dato="
+				.executeQuery("SELECT cli.dc02b_temperatura_valor, cli.dc16_secrecion_traqueal, cli.dc14_rx_torax_infiltrado, dc15_rx_torax_evolucion FROM tfg.datos_clinicos cli WHERE cli.id_dato="
 						+ identificador);
 
 		rs.next();
-		// ponemos el atributo leucocitos
+		// ponemos los atributos obtenidos
 		paciente.setTemperatura(rs.getDouble(1));
+		paciente.setSecrecion_traqueal(rs.getString(2));
+		paciente.setRayos_x_pecho(rs.getString(3));
+		paciente.setProgresion_infiltracion_rayos_x_pecho(rs.getBoolean(4));
 		this.desconectar();
 	}
 

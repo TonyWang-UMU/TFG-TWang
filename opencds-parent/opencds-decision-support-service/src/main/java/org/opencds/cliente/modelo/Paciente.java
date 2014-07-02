@@ -23,6 +23,14 @@ public class Paciente {
 	// 1. observation results
 	private double temperatura; // temperatura corporal en tiempo de diagnostico
 	private int leucocitos; // numero de leucocitos del ultimo analisis
+	private String secrecion_traqueal; // informacion sobre secrecion traqueal
+	private String rayos_x_pecho; // informacion sobre los rayos X en el pecho
+	private boolean progresion_infiltracion_rayos_x_pecho; // progresion de
+															// infiltraciones de
+															// anteriores rayos
+															// X
+	private boolean ARDS; // Síndrome de distrés respiratorio agudo
+	private int oxigenacion; // valor de la oxigenacion
 
 	// 2. encounter events
 	// 3. substance administration events
@@ -111,6 +119,49 @@ public class Paciente {
 	}
 
 	/**
+	 * Metodo que comprueba si tiene secrecion traqueal establecida como
+	 * parametro
+	 * 
+	 * @return True si lo tiene y false si no
+	 */
+	public boolean tieneSecTraq() {
+		return this.secrecion_traqueal != null;
+	}
+
+	/**
+	 * Metodo que comprueba si tiene informacion de rayos X de pecho
+	 * 
+	 * @return True si tiene y false si no
+	 */
+
+	public boolean tieneXRayosPecho() {
+		return this.rayos_x_pecho != null;
+	}
+
+	/**
+	 * Metodo que comprueba si tiene evolucion de infiltracion en rayos X de
+	 * pecho anteriores
+	 * 
+	 * @return True si tiene, false si no
+	 */
+	public boolean tieneEvolucionXRayos() {
+		return this.progresion_infiltracion_rayos_x_pecho;
+	}
+
+	/**
+	 * Metodo que comprueba si tiene ARDS
+	 * 
+	 * @return True si tiene, false si no
+	 */
+	public boolean tieneARDS() {
+		return ARDS;
+	}
+
+	public boolean tieneOxigenacion() {
+		return this.oxigenacion > 0;
+	}
+
+	/**
 	 * Comprueba si tiene algun dato relleno, como no son obligatorios, con que
 	 * tenga un dato ya devuelve true
 	 * 
@@ -129,7 +180,10 @@ public class Paciente {
 	 */
 	public boolean tieneObservation() {
 		// TODO terminar con todos los tipos de observation
-		return this.tieneTemperatura() || this.tieneLeucocitos();
+		return this.tieneTemperatura() || this.tieneLeucocitos()
+				|| this.tieneSecTraq() || this.tieneXRayosPecho()
+				|| this.tieneARDS() || this.tieneIdentificador()
+				|| this.tieneOxigenacion();
 	}
 
 	/**
@@ -222,6 +276,47 @@ public class Paciente {
 
 	public void setLeucocitos(int leucocitos) {
 		this.leucocitos = leucocitos;
+	}
+
+	public String getSecrecion_traqueal() {
+		return secrecion_traqueal;
+	}
+
+	public void setSecrecion_traqueal(String secrecion_traqueal) {
+		this.secrecion_traqueal = secrecion_traqueal;
+	}
+
+	public String getRayos_x_pecho() {
+		return rayos_x_pecho;
+	}
+
+	public void setRayos_x_pecho(String rayos_x_pecho) {
+		this.rayos_x_pecho = rayos_x_pecho;
+	}
+
+	public boolean isProgresion_infiltracion_rayos_x_pecho() {
+		return progresion_infiltracion_rayos_x_pecho;
+	}
+
+	public void setProgresion_infiltracion_rayos_x_pecho(
+			boolean progresion_infiltracion_rayos_x_pecho) {
+		this.progresion_infiltracion_rayos_x_pecho = progresion_infiltracion_rayos_x_pecho;
+	}
+
+	public boolean isARDS() {
+		return ARDS;
+	}
+
+	public void setARDS(boolean aRDS) {
+		ARDS = aRDS;
+	}
+
+	public int getOxigenacion() {
+		return oxigenacion;
+	}
+
+	public void setOxigenacion(int oxigenacion) {
+		this.oxigenacion = oxigenacion;
 	}
 
 }
