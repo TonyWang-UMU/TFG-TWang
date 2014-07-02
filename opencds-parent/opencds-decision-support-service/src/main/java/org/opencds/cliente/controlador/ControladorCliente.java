@@ -441,8 +441,8 @@ public class ControladorCliente {
 			}
 		} else {
 			JOptionPane.showMessageDialog(null,
-					"No se ha generado archivo XML para el paciente "
-							+ idPaciente, "Error en el envío del XML",
+					"No se ha generado el archivo vMR. Usar primero Obtener Datos de Paciente"
+							+ idPaciente, "ERROR",
 					JOptionPane.ERROR_MESSAGE);
 		}
 
@@ -530,4 +530,5 @@ public class ControladorCliente {
 						"Acerca de", JOptionPane.QUESTION_MESSAGE);
 
 	}
+
 }

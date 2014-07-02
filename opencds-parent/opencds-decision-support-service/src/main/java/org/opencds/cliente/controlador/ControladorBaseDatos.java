@@ -2,7 +2,6 @@ package org.opencds.cliente.controlador;
 
 import java.awt.Choice;
 import java.sql.Connection;
-import java.sql.Date;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -41,15 +40,26 @@ public class ControladorBaseDatos {
 	}
 
 	/**
-	 * Obtiene el paciente de la id pasada
+	 * Obtiene los datos el paciente de la id pasada
 	 * 
 	 * @param idPaciente
 	 *            La id del paciente que se busca
+	 * @param idClinic
+	 *            La id de sus datos clinicos
+	 * @param idAnalit
+	 *            La id de sus datos de analitica
+	 * @param idMicro
+	 *            La id de sus datos de microbiologia
+	 * @param idVenti
+	 *            La id de sus datos de ventilacion
+	 * @param idTrat
+	 *            La id de sus datos de tratamiento
 	 * @return El paciente con la id mencionada. El paciente sera el objeto
 	 *         "intermedio" que se ha creado, y no solo los datos de la base de
 	 *         datos
 	 */
-	public Paciente obtenerPaciente(int idPaciente) {
+	public Paciente obtenerPaciente(int idPaciente, int idClinic, int idAnalit,
+			int idMicro, int idVenti, int idTrat) {
 		// TODO el paciente tiene que estar completo
 		// por ahora que obtenga la edad, temperatura y leucocitos
 
@@ -58,11 +68,13 @@ public class ControladorBaseDatos {
 
 		try {
 			this.rellenarDatosPaciente(paciente);
-			this.rellenarTemperatura(paciente);
-			this.rellenarLeucocitos(paciente);
-
+			// comprobar con -1 es que ese dato esta relleno
+			if (idClinic != -1) {
+				this.rellenarTemperatura(paciente, idClinic);
+			}
+			if (idAnalit != -1)
+				this.rellenarLeucocitos(paciente, idAnalit);
 		} catch (SQLException e) {
-
 		}
 		this.desconectar();
 		return paciente;
@@ -73,34 +85,23 @@ public class ControladorBaseDatos {
 	 * 
 	 * @param paciente
 	 *            El paciente para el que se rellena el campo
+	 * @param identificador
+	 *            El identificador de la analitica que se va a usar
 	 * @throws SQLException
 	 */
-	private void rellenarLeucocitos(Paciente paciente) throws SQLException {
+	private void rellenarLeucocitos(Paciente paciente, int identificador)
+			throws SQLException {
 		this.conectar();
 		Statement st = bd.createStatement();
-		// buscamos en la historia clinica el valor de los leucocitos mas
-		// reciente
-		// TODO ¿que habria que hacer en realidad?
-		// a lo mejor en lugar de seleccionar pacientes habria que seleccionar
-		// diagnosticos
+		// buscamos en la historia clinica el valor de los leucocitos de los
+		// datos de la analitica del identificador
 		ResultSet rs = st
-				.executeQuery("SELECT ana.fecha, an01_leucocitos FROM tfg.datos_analitica ana WHERE ana.id_paciente="
-						+ paciente.getIdentificador() + "");
+				.executeQuery("SELECT an01_leucocitos FROM tfg.datos_analitica ana WHERE ana.id_dato="
+						+ identificador);
 
-		Date masReciente = new Date(1);
-		int ultimosLeucocitos = 0;
-		while (rs.next()) { // si en ese diagnostico se ha registrado leucocitos
-			if (rs.getString(2) != null) {
-				Date fecha = rs.getDate(1);
-				if (fecha.after(masReciente)) {
-					ultimosLeucocitos = rs.getInt(2);
-					masReciente = fecha;
-				}
-			}
-		}
-
+		rs.next();
 		// ponemos el atributo leucocitos
-		paciente.setLeucocitos(ultimosLeucocitos);
+		paciente.setLeucocitos(rs.getInt(1));
 		this.desconectar();
 	}
 
@@ -136,35 +137,23 @@ public class ControladorBaseDatos {
 	 * 
 	 * @param paciente
 	 *            El paciente para el que se rellena la temperatura
+	 * @param identificador
+	 *            El identificador de los datos clinicos que se van a usar
 	 * @throws SQLException
 	 */
-	private void rellenarTemperatura(Paciente paciente) throws SQLException {
+	private void rellenarTemperatura(Paciente paciente, int identificador)
+			throws SQLException {
 		this.conectar();
 		Statement st = bd.createStatement();
 		// buscamos en la historia clinica el valor de la temperatura de
-		// fiebre mas reciente
-		// TODO ¿que habria que hacer en realidad?
-		// a lo mejor en lugar de seleccionar pacientes habria que seleccionar
-		// diagnosticos
+		// fiebre dentro de los datos clinicos del identificador
 		ResultSet rs = st
-				.executeQuery("SELECT cli.fecha, cli.dc02b_temperatura_valor FROM tfg.datos_clinicos cli WHERE cli.id_paciente="
-						+ paciente.getIdentificador() + "");
+				.executeQuery("SELECT cli.dc02b_temperatura_valor FROM tfg.datos_clinicos cli WHERE cli.id_dato="
+						+ identificador);
 
-		Date masReciente = new Date(1);
-		double ultimaTemperatura = 0.0;
-		while (rs.next()) { // si en ese diagnostico se ha registrado una
-							// temperatura
-			if (rs.getString(2) != null) {
-				Date fecha = rs.getDate(1);
-				if (fecha.after(masReciente)) {
-					ultimaTemperatura = rs.getDouble(2);
-					masReciente = fecha;
-				}
-			}
-		}
-
-		// ponemos el atributo temperatura
-		paciente.setTemperatura(ultimaTemperatura);
+		rs.next();
+		// ponemos el atributo leucocitos
+		paciente.setTemperatura(rs.getDouble(1));
 		this.desconectar();
 	}
 
@@ -176,7 +165,7 @@ public class ControladorBaseDatos {
 	 */
 	public void listarPacientes(Choice desplegablePacientes) {
 		this.conectar();
-
+		desplegablePacientes.add("");
 		try {
 			Statement st = bd.createStatement();
 			ResultSet rs = st
@@ -185,11 +174,169 @@ public class ControladorBaseDatos {
 				desplegablePacientes.add(rs.getString(1));
 			}
 		} catch (SQLException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 
 		this.desconectar();
+	}
+
+	/**
+	 * Hace la conexion a la base de datos y obtiene la lista de diagnosticos
+	 * del paciente pedido
+	 * 
+	 * @param idPaciente
+	 *            El paciente para el que se obtienen los diagnosticos
+	 * @param desplegableEHR
+	 */
+	public void listarEHR(String idPaciente, Choice desplegableEHR) {
+		// limpiar lo que ya hay
+		desplegableEHR.removeAll();
+		// primer campo vacio por si se decide no usar este dato
+		desplegableEHR.add("");
+		if (idPaciente != "") {
+
+			this.conectar();
+			try {
+				Statement st = bd.createStatement();
+				ResultSet rs = st
+						.executeQuery("SELECT cli.id_dato, cli.fecha FROM tfg.datos_clinicos cli WHERE cli.id_paciente="
+								+ idPaciente + " ORDER BY cli.fecha DESC");
+				while (rs.next()) {
+					desplegableEHR.add("Fecha: " + rs.getDate(2)
+							+ " Historial Nº: " + rs.getInt(1));
+				}
+			} catch (SQLException e) {
+				e.printStackTrace();
+			}
+			this.desconectar();
+		}
+	}
+
+	/**
+	 * Hace una conexion a la base de datos y recupera los datos de analitica
+	 * del paciente pedido
+	 * 
+	 * @param idPaciente
+	 *            El paciente para el que se recuperan los datos
+	 * @param desplegableAnalitica
+	 */
+	public void listarAnalitica(String idPaciente, Choice desplegableAnalitica) {
+		// limpiar lo que ya hay
+		desplegableAnalitica.removeAll();
+		// primer campo vacio por si se decide no usar este dato
+		desplegableAnalitica.add("");
+		if (idPaciente != "") {
+			this.conectar();
+			try {
+				Statement st = bd.createStatement();
+				ResultSet rs = st
+						.executeQuery("SELECT cli.id_dato, cli.fecha FROM tfg.datos_analitica cli WHERE cli.id_paciente="
+								+ idPaciente + " ORDER BY cli.fecha DESC");
+				while (rs.next()) {
+					desplegableAnalitica.add("Fecha: " + rs.getDate(2)
+							+ " Historial Nº: " + rs.getInt(1));
+				}
+			} catch (SQLException e) {
+				e.printStackTrace();
+			}
+			this.desconectar();
+		}
+	}
+
+	/**
+	 * Hace una conexion a la base de datos y recupera los datos de
+	 * microbiologia
+	 * 
+	 * @param idPaciente
+	 *            Paciente para el que se recuperan los datos de microbiologia
+	 * @param desplegableMicro
+	 */
+	public void listarMicro(String idPaciente, Choice desplegableMicro) {
+		// limpiar lo que ya hay
+		desplegableMicro.removeAll();
+		// primer campo vacio por si se decide no usar este dato
+		desplegableMicro.add("");
+		if (idPaciente != "") {
+			this.conectar();
+			try {
+				Statement st = bd.createStatement();
+				ResultSet rs = st
+						.executeQuery("SELECT cli.id_dato, cli.fecha FROM tfg.datos_microbiologia cli WHERE cli.id_paciente="
+								+ idPaciente + " ORDER BY cli.fecha DESC");
+				while (rs.next()) {
+					desplegableMicro.add("Fecha: " + rs.getDate(2)
+							+ " Historial Nº: " + rs.getInt(1));
+				}
+			} catch (SQLException e) {
+				e.printStackTrace();
+			}
+			this.desconectar();
+		}
+	}
+
+	/**
+	 * Metodo se conecta a la base de datos y recupera la lista de tratamientos
+	 * de un paciente
+	 * 
+	 * @param idPaciente
+	 *            Paciente para el que se recupera los datos
+	 * @param desplegableTratamiento
+	 */
+	public void listarTratamiento(String idPaciente,
+			Choice desplegableTratamiento) {
+		// limpiar lo que ya hay
+		desplegableTratamiento.removeAll();
+		// primer campo vacio por si se decide no usar este dato
+		desplegableTratamiento.add("");
+		if (idPaciente != "") {
+			this.conectar();
+			try {
+				Statement st = bd.createStatement();
+				ResultSet rs = st
+						.executeQuery("SELECT cli.id_dato, cli.fecha_inicio FROM tfg.datos_tratamientos cli WHERE cli.id_paciente="
+								+ idPaciente
+								+ " ORDER BY cli.fecha_inicio DESC");
+				while (rs.next()) {
+					desplegableTratamiento.add("Fecha Inicio: " + rs.getDate(2)
+							+ " Historial Nº: " + rs.getInt(1));
+				}
+			} catch (SQLException e) {
+				e.printStackTrace();
+			}
+			this.desconectar();
+		}
+	}
+
+	/**
+	 * Metodo que se conecta a la base de datos y recupera los datos de
+	 * ventilacion de un paciente
+	 * 
+	 * @param idPaciente
+	 *            Paciente para el que se recuperan los datos de ventilacion
+	 * @param desplegableVentilacion
+	 */
+	public void listarVentilacion(String idPaciente,
+			Choice desplegableVentilacion) {
+		// limpiar lo que ya hay
+		desplegableVentilacion.removeAll();
+		// primer campo vacio por si se decide no usar este dato
+		desplegableVentilacion.add("");
+		if (idPaciente != "") {
+			this.conectar();
+			try {
+				Statement st = bd.createStatement();
+				ResultSet rs = st
+						.executeQuery("SELECT cli.id_dato, cli.fecha FROM tfg.datos_ventilacion cli WHERE cli.id_paciente="
+								+ idPaciente + " ORDER BY cli.fecha DESC");
+				while (rs.next()) {
+					desplegableVentilacion.add("Fecha: " + rs.getDate(2)
+							+ " Historial Nº: " + rs.getInt(1));
+				}
+			} catch (SQLException e) {
+				e.printStackTrace();
+			}
+			this.desconectar();
+		}
 	}
 
 }
