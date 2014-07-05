@@ -34,6 +34,14 @@ public class Paciente {
 											// agudo
 	private int oxigenacion; // valor de la oxigenacion
 
+	private Booleano misma_bacteria = Booleano.NONE; // indica si tiene la misma
+														// bacteria del
+	// cultivo ET
+	private Booleano etCultivo = Booleano.NONE; // indica si ha habido un
+												// crecimiento en el
+
+	// cutivo ET
+
 	// 2. encounter events
 	// 3. substance administration events
 	// 4. substance administration proposals
@@ -159,8 +167,31 @@ public class Paciente {
 		return this.ARDS == Booleano.TRUE;
 	}
 
+	/**
+	 * Metodo que comprueba si tiene la oxigenacion como valor
+	 * 
+	 * @return True si tiene, false sino
+	 */
 	public boolean tieneOxigenacion() {
 		return this.oxigenacion > 0;
+	}
+
+	/**
+	 * Metodo que comprueba si tiene misma bacteria a true
+	 * 
+	 * @return True si lo tiene, false en caso contrario
+	 */
+	public boolean tieneSameBacteria() {
+		return this.misma_bacteria == Booleano.TRUE;
+	}
+
+	/**
+	 * Metodo que comprueba si tiene misma et cultivo a true
+	 * 
+	 * @return True si lo tiene, false en caso contrario
+	 */
+	public boolean tieneEtCultivo() {
+		return this.etCultivo == Booleano.TRUE;
 	}
 
 	/**
@@ -181,12 +212,14 @@ public class Paciente {
 	 * @return False si no tiene, true si tiene
 	 */
 	public boolean tieneObservation() {
-		// TODO terminar con todos los tipos de observation
 		return this.tieneTemperatura() || this.tieneLeucocitos()
 				|| this.tieneSecTraq() || this.tieneXRayosPecho()
 				|| this.tieneARDS() || this.ARDS == Booleano.FALSE
 				|| this.progresion_infiltracion_rayos_x_pecho == Booleano.FALSE
-				|| this.tieneIdentificador() || this.tieneOxigenacion();
+				|| this.tieneIdentificador() || this.tieneOxigenacion()
+				|| this.tieneEtCultivo() || this.tieneSameBacteria()
+				|| this.etCultivo == Booleano.FALSE
+				|| this.misma_bacteria == Booleano.FALSE;
 	}
 
 	/**
@@ -320,6 +353,22 @@ public class Paciente {
 
 	public void setOxigenacion(int oxigenacion) {
 		this.oxigenacion = oxigenacion;
+	}
+
+	public Booleano getMisma_bacteria() {
+		return misma_bacteria;
+	}
+
+	public void setMisma_bacteria(Booleano misma_bacteria) {
+		this.misma_bacteria = misma_bacteria;
+	}
+
+	public Booleano getEtCultivo() {
+		return etCultivo;
+	}
+
+	public void setEtCultivo(Booleano etCultivo) {
+		this.etCultivo = etCultivo;
 	}
 
 }

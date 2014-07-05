@@ -1,0 +1,80 @@
+package TFG_v1
+
+import org.opencds.vmr.v1_0.internal.*;
+import org.opencds.vmr.v1_0.internal.datatypes.*;
+import javax.swing.JDialog;
+import javax.swing.JOptionPane;
+
+
+global java.util.Date evalTime
+global String clientLanguage
+global String clientTimeZoneOffset
+global String focalPersonId
+global java.util.HashSet assertions
+global java.util.HashMap namedObjects
+
+// CPIS DIAGNOSTICOS
+
+rule "CPISMenorIgualSeis"
+	// ********** AUDIT METADATA INFO ********************************
+	// rule source information: sourceDocument, pageNumber, lineRange
+	@sourceDocument(John Hopkins Clinical Guidelines Infections)
+	@pageNumber(80)
+ 	@lineRange(CPIS calculation table, row 1 column 1)
+	// generic information about the rule: date, ruleDescription, ruleAuthor, ruleVersion
+	@ruleDate(2014-07-05)
+	@ruleDescription("Empiric treatment when CPIS is under or equal 6")
+	@ruleAuthor(Tony Wang)
+	@ruleVersion(1.0.0)
+	// clinicalAction (diagnosis, treatment, score,...), infectionType (VAP...), agent, antibiotic)
+ 	@clinicalAction(CPISAlert)
+ 	@infectionType(VAP)
+	//@infectionAgent()
+	//@infectionAntibiotic()
+	// *********** END OF AUDIT METADATA INFO ************************ 
+	lock-on-active
+  	salience 100 
+ 	no-loop
+	when
+    	// existe una persona
+  		$person : EvaluatedPerson()
+  		// obtenemos el objeto que tiene dentro el valor de CPIS
+  		$cpis : ObservationResult(evaluatedPersonId == $person.id && observationFocus.getCode()=="CPIS")
+  		// el valor del CPIS es <= 6
+  		eval($cpis.getObservationValue().getInteger().getValue() <= 6) 
+	then
+        System.out.println("CPIS MENOR IGUAL QUE SEIS");
+end 
+
+rule "CPISMayorSeis"
+	// ********** AUDIT METADATA INFO ********************************
+	// rule source information: sourceDocument, pageNumber, lineRange
+	@sourceDocument(John Hopkins Clinical Guidelines Infections)
+	@pageNumber(80)
+ 	@lineRange(CPIS calculation table, row 1 column 1)
+	// generic information about the rule: date, ruleDescription, ruleAuthor, ruleVersion
+	@ruleDate(2014-07-05)
+	@ruleDescription("Empiric treatment when CPIS is greater than 6")
+	@ruleAuthor(Tony Wang)
+	@ruleVersion(1.0.0)
+	// clinicalAction (diagnosis, treatment, score,...), infectionType (VAP...), agent, antibiotic)
+ 	@clinicalAction(CPISAlert)
+ 	@infectionType(VAP)
+	//@infectionAgent()
+	//@infectionAntibiotic()
+	// *********** END OF AUDIT METADATA INFO ************************ 
+	lock-on-active
+  	salience 100 
+ 	no-loop
+	when
+    	// existe una persona
+  		$person : EvaluatedPerson()
+  		// obtenemos el objeto que tiene dentro el valor de CPIS
+  		$cpis : ObservationResult(evaluatedPersonId == $person.id && observationFocus.getCode()=="CPIS")
+  		// el valor del CPIS es > 6
+  		eval($cpis.getObservationValue().getInteger().getValue() > 6) 
+	then
+        System.out.println("CPIS MAYOR QUE SEIS");
+end 
+
+

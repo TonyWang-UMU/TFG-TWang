@@ -2,10 +2,13 @@ package org.opencds.cliente.controlador;
 
 import java.awt.Choice;
 import java.sql.Connection;
+import java.sql.Date;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
+
+import javax.swing.JOptionPane;
 
 import org.opencds.cliente.modelo.Booleano;
 import org.opencds.cliente.modelo.Paciente;
@@ -47,43 +50,99 @@ public class ControladorBaseDatos {
 	 *            La id del paciente que se busca
 	 * @param idClinic
 	 *            La id de sus datos clinicos
-	 * @param idAnalit
-	 *            La id de sus datos de analitica
-	 * @param idMicro
-	 *            La id de sus datos de microbiologia
-	 * @param idVenti
-	 *            La id de sus datos de ventilacion
-	 * @param idTrat
-	 *            La id de sus datos de tratamiento
+	 * 
 	 * @return El paciente con la id mencionada. El paciente sera el objeto
 	 *         "intermedio" que se ha creado, y no solo los datos de la base de
 	 *         datos
 	 */
-	public Paciente obtenerPaciente(int idPaciente, int idClinic, int idAnalit,
-			int idMicro, int idVenti, int idTrat) {
-		// TODO el paciente tiene que estar completo
-		// por ahora que obtenga la edad, temperatura y leucocitos
+	public Paciente obtenerPaciente(int idPaciente, int idClinic) {
 
 		Paciente paciente = new Paciente();
 		paciente.setIdentificador(String.valueOf(idPaciente));
 
-		try {
-			this.rellenarDatosPaciente(paciente);
-			// comprobar con -1 es que ese dato esta relleno
-			if (idClinic != -1) {
-				this.rellenarDatosClinicos(paciente, idClinic);
-			}
-			if (idAnalit != -1) {
-				this.rellenarDatosAnalitica(paciente, idAnalit);
-			}
+		// llama a los diferentes metodos para que rellene los datos del
+		// paciente usando la base de datos
 
-			if (idVenti != -1) {
-				this.rellenarDatosVentilacion(paciente, idVenti);
+		this.rellenarDatosPaciente(paciente);
+		// comprobar con -1 es que ese dato esta relleno
+		Date fechaClin = new Date(0);
+		if (idClinic != -1) {
+			fechaClin = this.rellenarDatosClinicos(paciente, idClinic);
+		} else {
+			JOptionPane.showMessageDialog(null,
+					"No se han seleccionado los datos clínicos del paciente",
+					"AVISO", JOptionPane.WARNING_MESSAGE);
+		}
+
+		if (!this.rellenarDatosAnalitica(paciente, fechaClin))
+			// mostrar warning indicando que no se ha encontrado analitica
+			JOptionPane
+					.showMessageDialog(
+							null,
+							"No se han encontrado datos de analítica de los 15 días anteriores",
+							"AVISO", JOptionPane.WARNING_MESSAGE);
+
+		if (!this.rellenarDatosVentilacion(paciente, fechaClin))
+			// mostrar warning indicando que no se ha encontrado datos
+			// de
+			// ventilacion
+			JOptionPane
+					.showMessageDialog(
+							null,
+							"No se han encontrado datos de ventilación de los 15 días anteriores",
+							"AVISO", JOptionPane.WARNING_MESSAGE);
+
+		if (!this.rellenarDatosMicro(paciente, fechaClin))
+			// mostrar warning indicando que no se ha encontrado datos
+			// de
+			// microbiologia
+			JOptionPane
+					.showMessageDialog(
+							null,
+							"No se han encontrado datos de microbiología de los 15 días anteriores",
+							"AVISO", JOptionPane.WARNING_MESSAGE);
+
+		return paciente;
+	}
+
+	/**
+	 * Metodo que rellena los datos de microbiologia del paciente
+	 * 
+	 * @param paciente
+	 *            Paciente al que se le rellenan los campos
+	 * @param fechaClin
+	 *            La fecha de los datos clinicos, la analitica sera la mas
+	 *            reciente en los 15 dias anteriores
+	 * @return True si encuentra datos de microbiologia, false sino
+	 */
+	private boolean rellenarDatosMicro(Paciente paciente, Date fechaClin) {
+		try {
+			this.conectar();
+			Statement st = bd.createStatement();
+			// buscamos en la historia microbiologica el valor de same bacteria
+			// de los
+			// datos de la microbiologia de 15 dias anteriores mas moderno
+			ResultSet rs = st
+					.executeQuery("SELECT micro.cu04_mismo_micro_repetido FROM tfg.datos_microbiologia micro WHERE micro.id_paciente="
+							+ paciente.getIdentificador()
+							+ " AND DATE_PART('day','"
+							+ fechaClin
+							+ "'- micro.fecha) <= 15 AND DATE_PART('day','"
+							+ fechaClin
+							+ "'- micro.fecha) >= 0 ORDER BY micro.fecha DESC ");
+			if (rs.next()) {
+				if (rs.getBoolean(1) == true)
+					paciente.setMisma_bacteria(Booleano.TRUE);
+				else if (rs.getBoolean(1) == false)
+					paciente.setMisma_bacteria(Booleano.FALSE);
+				if (rs.wasNull())
+					paciente.setMisma_bacteria(Booleano.NONE);
+				this.desconectar();
+				return true;
 			}
 		} catch (SQLException e) {
 		}
-		this.desconectar();
-		return paciente;
+		return false;
 	}
 
 	/**
@@ -91,32 +150,44 @@ public class ControladorBaseDatos {
 	 * 
 	 * @param paciente
 	 *            Paciente al que se le rellenan los campos
-	 * @param idVenti
-	 *            El identificador del dianostico de ventilacion que se va a
-	 *            usar
-	 * @throws SQLException
+	 * @param fechaClin
+	 *            La fecha de los datos clinicos, la analitica sera la mas
+	 *            reciente en los 15 dias anteriores
+	 * @return True si encuentra datos de ventilacion, false sino
 	 */
 
-	private void rellenarDatosVentilacion(Paciente paciente, int identificador)
-			throws SQLException {
-		this.conectar();
-		Statement st = bd.createStatement();
-		// buscamos en la historia clinica el valor de los leucocitos de los
-		// datos de la analitica del identificador
-		ResultSet rs = st
-				.executeQuery("SELECT venti.vent7a_oxigenacion_valor, venti.vent7b_ards FROM tfg.datos_ventilacion venti WHERE venti.id_dato="
-						+ identificador);
-		rs.next();
-		// ponemos los atributos obtenidos
-		paciente.setOxigenacion(rs.getInt(1));
-		if (rs.getBoolean(2) == true)
-			paciente.setARDS(Booleano.TRUE);
-		else if (rs.getBoolean(2) == false)
-			paciente.setARDS(Booleano.FALSE);
-		if (rs.wasNull())
-			paciente.setARDS(Booleano.NONE);
-		this.desconectar();
+	private boolean rellenarDatosVentilacion(Paciente paciente, Date fechaClin) {
+		try {
+			this.conectar();
+			Statement st = bd.createStatement();
+			// buscamos en la historia clinica
+			// el valor de los leucocitos de
+			// los datos de la analitica de
+			// 15 dias anteriores
+			ResultSet rs = st
+					.executeQuery("SELECT venti.vent7a_oxigenacion_valor, venti.vent7b_ards FROM tfg.datos_ventilacion venti WHERE venti.id_paciente="
+							+ paciente.getIdentificador()
+							+ " AND DATE_PART('day','"
+							+ fechaClin
+							+ "'- venti.fecha) <= 15 AND DATE_PART('day','"
+							+ fechaClin
+							+ "'- venti.fecha) >= 0 ORDER BY venti.fecha DESC ");
+			// ponemos los atributos obtenidos
+			if (rs.next()) {
+				paciente.setOxigenacion(rs.getInt(1));
+				if (rs.getBoolean(2) == true)
+					paciente.setARDS(Booleano.TRUE);
+				else if (rs.getBoolean(2) == false)
+					paciente.setARDS(Booleano.FALSE);
+				if (rs.wasNull())
+					paciente.setARDS(Booleano.NONE);
+				this.desconectar();
+				return true;
+			}
 
+		} catch (SQLException e) {
+		}
+		return false;
 	}
 
 	/**
@@ -124,24 +195,33 @@ public class ControladorBaseDatos {
 	 * 
 	 * @param paciente
 	 *            El paciente para el que se rellena el campo
-	 * @param identificador
-	 *            El identificador de la analitica que se va a usar
-	 * @throws SQLException
+	 * @param fechaClin
+	 *            La fecha de los datos clinicos, la analitica sera la mas
+	 *            reciente en los 15 dias anteriores
+	 * @return True si encuentra datos de analitica, false sino
 	 */
-	private void rellenarDatosAnalitica(Paciente paciente, int identificador)
-			throws SQLException {
-		this.conectar();
-		Statement st = bd.createStatement();
-		// buscamos en la historia clinica el valor de los leucocitos de los
-		// datos de la analitica del identificador
-		ResultSet rs = st
-				.executeQuery("SELECT an01_leucocitos FROM tfg.datos_analitica ana WHERE ana.id_dato="
-						+ identificador);
-
-		rs.next();
-		// ponemos los atributos obtenidos
-		paciente.setLeucocitos(rs.getInt(1));
-		this.desconectar();
+	private boolean rellenarDatosAnalitica(Paciente paciente, Date fechaClin) {
+		try {
+			this.conectar();
+			Statement st = bd.createStatement();
+			// buscamos en la historia clinica el valor de los leucocitos de los
+			// datos de la analitica de 15 dias anteriores mas moderno
+			ResultSet rs = st
+					.executeQuery("SELECT an01_leucocitos FROM tfg.datos_analitica ana WHERE ana.id_paciente="
+							+ paciente.getIdentificador()
+							+ " AND DATE_PART('day','"
+							+ fechaClin
+							+ "'- ana.fecha) <= 15 AND DATE_PART('day','"
+							+ fechaClin
+							+ "'- ana.fecha) >= 0 ORDER BY ana.fecha DESC ");
+			if (rs.next()) {
+				paciente.setLeucocitos(rs.getInt(1));
+				this.desconectar();
+				return true;
+			}
+		} catch (SQLException e) {
+		}
+		return false;
 	}
 
 	/**
@@ -149,26 +229,29 @@ public class ControladorBaseDatos {
 	 * 
 	 * @param paciente
 	 *            El paciente para el que se rellenan los datos
-	 * @throws SQLException
 	 */
-	private void rellenarDatosPaciente(Paciente paciente) throws SQLException {
-		this.conectar();
-		Statement st = bd.createStatement();
-		ResultSet rs = st
-				.executeQuery("SELECT pac.dc00_sexo, pac.dc01_edad FROM tfg.paciente pac WHERE pac.id_paciente="
-						+ paciente.getIdentificador() + "");
-		// iteramos sobre la primera devolucion. Como esa tabla tiene 1
-		// entrada por cada paciente no habran entradas repetidas
-		rs.next();
-		// en esta columna tenemos la edad
-		paciente.setEdad(rs.getDouble(2));
-		// en esta columna tenemos el sexo
-		if (rs.getString(1).equals("hombre")) {
-			paciente.setSexo("M");
-		} else if (rs.getString(1).equals("mujer")) {
-			paciente.setSexo("F");
+	private void rellenarDatosPaciente(Paciente paciente) {
+
+		try {
+			this.conectar();
+			Statement st = bd.createStatement();
+			ResultSet rs = st
+					.executeQuery("SELECT pac.dc00_sexo, pac.dc01_edad FROM tfg.paciente pac WHERE pac.id_paciente="
+							+ paciente.getIdentificador() + "");
+			// iteramos sobre la primera devolucion. Como esa tabla tiene 1
+			// entrada por cada paciente no habran entradas repetidas
+			rs.next();
+			// en esta columna tenemos la edad
+			paciente.setEdad(rs.getDouble(2));
+			// en esta columna tenemos el sexo
+			if (rs.getString(1).equals("hombre")) {
+				paciente.setSexo("M");
+			} else if (rs.getString(1).equals("mujer")) {
+				paciente.setSexo("F");
+			}
+			this.desconectar();
+		} catch (SQLException e) {
 		}
-		this.desconectar();
 	}
 
 	/**
@@ -178,31 +261,44 @@ public class ControladorBaseDatos {
 	 *            El paciente para el que se rellena la temperatura
 	 * @param identificador
 	 *            El identificador de los datos clinicos que se van a usar
-	 * @throws SQLException
+	 * @return La fecha de los datos clinicos
 	 */
-	private void rellenarDatosClinicos(Paciente paciente, int identificador)
-			throws SQLException {
-		this.conectar();
-		Statement st = bd.createStatement();
-		// buscamos en la historia clinica el valor de la temperatura de
-		// fiebre dentro de los datos clinicos del identificador
-		ResultSet rs = st
-				.executeQuery("SELECT cli.dc02b_temperatura_valor, cli.dc16_secrecion_traqueal, cli.dc14_rx_torax_infiltrado, dc15_rx_torax_evolucion FROM tfg.datos_clinicos cli WHERE cli.id_dato="
-						+ identificador);
+	private Date rellenarDatosClinicos(Paciente paciente, int identificador) {
+		try {
+			this.conectar();
+			Statement st = bd.createStatement();
+			// buscamos en la historia clinica el valor de la temperatura de
+			// fiebre dentro de los datos clinicos del identificador
+			ResultSet rs = st
+					.executeQuery("SELECT cli.fecha, cli.dc02b_temperatura_valor, cli.dc16_secrecion_traqueal, cli.dc14_rx_torax_infiltrado, dc15_rx_torax_evolucion, dc17_crecimiento_de_et FROM tfg.datos_clinicos cli WHERE cli.id_dato="
+							+ identificador);
 
-		rs.next();
-		// ponemos los atributos obtenidos
-		paciente.setTemperatura(rs.getDouble(1));
-		paciente.setSecrecion_traqueal(rs.getString(2));
-		paciente.setRayos_x_pecho(rs.getString(3));
+			rs.next();
+			// ponemos los atributos obtenidos
+			paciente.setTemperatura(rs.getDouble(2));
+			paciente.setSecrecion_traqueal(rs.getString(3));
+			paciente.setRayos_x_pecho(rs.getString(4));
 
-		if (rs.getBoolean(4) == true)
-			paciente.setProgresion_infiltracion_rayos_x_pecho(Booleano.TRUE);
-		else if (rs.getBoolean(4) == false)
-			paciente.setProgresion_infiltracion_rayos_x_pecho(Booleano.FALSE);
-		if (rs.wasNull())
-			paciente.setProgresion_infiltracion_rayos_x_pecho(Booleano.NONE);
-		this.desconectar();
+			if (rs.getBoolean(5) == true)
+				paciente.setProgresion_infiltracion_rayos_x_pecho(Booleano.TRUE);
+			else if (rs.getBoolean(5) == false)
+				paciente.setProgresion_infiltracion_rayos_x_pecho(Booleano.FALSE);
+			if (rs.wasNull())
+				paciente.setProgresion_infiltracion_rayos_x_pecho(Booleano.NONE);
+
+			if (rs.getBoolean(6) == true)
+				paciente.setEtCultivo(Booleano.TRUE);
+			else if (rs.getBoolean(6) == false)
+				paciente.setEtCultivo(Booleano.FALSE);
+			if (rs.wasNull())
+				paciente.setEtCultivo(Booleano.NONE);
+
+			this.desconectar();
+			return rs.getDate(1);
+		} catch (SQLException e) {
+		}
+
+		return null;
 	}
 
 	/**
@@ -251,133 +347,6 @@ public class ControladorBaseDatos {
 								+ idPaciente + " ORDER BY cli.fecha DESC");
 				while (rs.next()) {
 					desplegableEHR.add("Fecha: " + rs.getDate(2)
-							+ " Historial Nº: " + rs.getInt(1));
-				}
-			} catch (SQLException e) {
-				e.printStackTrace();
-			}
-			this.desconectar();
-		}
-	}
-
-	/**
-	 * Hace una conexion a la base de datos y recupera los datos de analitica
-	 * del paciente pedido
-	 * 
-	 * @param idPaciente
-	 *            El paciente para el que se recuperan los datos
-	 * @param desplegableAnalitica
-	 */
-	public void listarAnalitica(String idPaciente, Choice desplegableAnalitica) {
-		// limpiar lo que ya hay
-		desplegableAnalitica.removeAll();
-		// primer campo vacio por si se decide no usar este dato
-		desplegableAnalitica.add("");
-		if (idPaciente != "") {
-			this.conectar();
-			try {
-				Statement st = bd.createStatement();
-				ResultSet rs = st
-						.executeQuery("SELECT cli.id_dato, cli.fecha FROM tfg.datos_analitica cli WHERE cli.id_paciente="
-								+ idPaciente + " ORDER BY cli.fecha DESC");
-				while (rs.next()) {
-					desplegableAnalitica.add("Fecha: " + rs.getDate(2)
-							+ " Historial Nº: " + rs.getInt(1));
-				}
-			} catch (SQLException e) {
-				e.printStackTrace();
-			}
-			this.desconectar();
-		}
-	}
-
-	/**
-	 * Hace una conexion a la base de datos y recupera los datos de
-	 * microbiologia
-	 * 
-	 * @param idPaciente
-	 *            Paciente para el que se recuperan los datos de microbiologia
-	 * @param desplegableMicro
-	 */
-	public void listarMicro(String idPaciente, Choice desplegableMicro) {
-		// limpiar lo que ya hay
-		desplegableMicro.removeAll();
-		// primer campo vacio por si se decide no usar este dato
-		desplegableMicro.add("");
-		if (idPaciente != "") {
-			this.conectar();
-			try {
-				Statement st = bd.createStatement();
-				ResultSet rs = st
-						.executeQuery("SELECT cli.id_dato, cli.fecha FROM tfg.datos_microbiologia cli WHERE cli.id_paciente="
-								+ idPaciente + " ORDER BY cli.fecha DESC");
-				while (rs.next()) {
-					desplegableMicro.add("Fecha: " + rs.getDate(2)
-							+ " Historial Nº: " + rs.getInt(1));
-				}
-			} catch (SQLException e) {
-				e.printStackTrace();
-			}
-			this.desconectar();
-		}
-	}
-
-	/**
-	 * Metodo se conecta a la base de datos y recupera la lista de tratamientos
-	 * de un paciente
-	 * 
-	 * @param idPaciente
-	 *            Paciente para el que se recupera los datos
-	 * @param desplegableTratamiento
-	 */
-	public void listarTratamiento(String idPaciente,
-			Choice desplegableTratamiento) {
-		// limpiar lo que ya hay
-		desplegableTratamiento.removeAll();
-		// primer campo vacio por si se decide no usar este dato
-		desplegableTratamiento.add("");
-		if (idPaciente != "") {
-			this.conectar();
-			try {
-				Statement st = bd.createStatement();
-				ResultSet rs = st
-						.executeQuery("SELECT cli.id_dato, cli.fecha_inicio FROM tfg.datos_tratamientos cli WHERE cli.id_paciente="
-								+ idPaciente
-								+ " ORDER BY cli.fecha_inicio DESC");
-				while (rs.next()) {
-					desplegableTratamiento.add("Fecha Inicio: " + rs.getDate(2)
-							+ " Historial Nº: " + rs.getInt(1));
-				}
-			} catch (SQLException e) {
-				e.printStackTrace();
-			}
-			this.desconectar();
-		}
-	}
-
-	/**
-	 * Metodo que se conecta a la base de datos y recupera los datos de
-	 * ventilacion de un paciente
-	 * 
-	 * @param idPaciente
-	 *            Paciente para el que se recuperan los datos de ventilacion
-	 * @param desplegableVentilacion
-	 */
-	public void listarVentilacion(String idPaciente,
-			Choice desplegableVentilacion) {
-		// limpiar lo que ya hay
-		desplegableVentilacion.removeAll();
-		// primer campo vacio por si se decide no usar este dato
-		desplegableVentilacion.add("");
-		if (idPaciente != "") {
-			this.conectar();
-			try {
-				Statement st = bd.createStatement();
-				ResultSet rs = st
-						.executeQuery("SELECT cli.id_dato, cli.fecha FROM tfg.datos_ventilacion cli WHERE cli.id_paciente="
-								+ idPaciente + " ORDER BY cli.fecha DESC");
-				while (rs.next()) {
-					desplegableVentilacion.add("Fecha: " + rs.getDate(2)
 							+ " Historial Nº: " + rs.getInt(1));
 				}
 			} catch (SQLException e) {

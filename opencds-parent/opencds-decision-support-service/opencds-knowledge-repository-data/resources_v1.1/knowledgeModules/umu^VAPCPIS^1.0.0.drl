@@ -54,13 +54,13 @@ rule "CPISHighTemperature"
     	// existe una persona
   		$person : EvaluatedPerson()
   		// tiene un observation result asociado a esa persona
-  		$os : ObservationResult(evaluatedPersonId == $person.id)
+  		$or : ObservationResult(evaluatedPersonId == $person.id)
   		// obtenemos el objeto que tiene dentro el valor de CPIS
   		$cpis : ObservationResult(evaluatedPersonId == $person.id && observationFocus.getCode()=="CPIS")
   		// el observation result es del tipo temperatura y que la temperatura sea > 36.5 y <= 38.4
-  		eval($os.getObservationFocus().getCode()=="temp_corp" && 
-  		$os.getObservationValue().getPhysicalQuantity().getValue() > 36.5 
-  		&& $os.getObservationValue().getPhysicalQuantity().getValue() <=38.4) 
+  		eval($or.getObservationFocus().getCode()=="temp_corp" && 
+  		$or.getObservationValue().getPhysicalQuantity().getValue() > 36.5 
+  		&& $or.getObservationValue().getPhysicalQuantity().getValue() <=38.4) 
 	then
 		int cpis=$cpis.getObservationValue().getInteger().getValue();
 		cpis+=0;
@@ -95,13 +95,13 @@ rule "CPISVeryHighTemperature"
     	// existe una persona
   		$person : EvaluatedPerson()
   		// tiene un observation result asociado a esa persona
-  		$os : ObservationResult(evaluatedPersonId == $person.id)
+  		$or : ObservationResult(evaluatedPersonId == $person.id)
   		// obtenemos el objeto que tiene dentro el valor de CPIS
   		$cpis : ObservationResult(evaluatedPersonId == $person.id && observationFocus.getCode()=="CPIS")
   		// el observation result es del tipo temperatura y que la temperatura sea > 38.4 y <= 38.9
-  		eval($os.getObservationFocus().getCode()=="temp_corp" && 
-  		$os.getObservationValue().getPhysicalQuantity().getValue() > 38.4
-  		&& $os.getObservationValue().getPhysicalQuantity().getValue() <=38.9) 
+  		eval($or.getObservationFocus().getCode()=="temp_corp" && 
+  		$or.getObservationValue().getPhysicalQuantity().getValue() > 38.4
+  		&& $or.getObservationValue().getPhysicalQuantity().getValue() <=38.9) 
     then
 		int cpis=$cpis.getObservationValue().getInteger().getValue();
 		cpis+=1;
@@ -135,13 +135,13 @@ rule "CPISExtremeTemperature"
    		// existe una persona
   		$person : EvaluatedPerson()
   		// tiene un observation result asociado a esa persona
-  		$os : ObservationResult(evaluatedPersonId == $person.id)
+  		$or : ObservationResult(evaluatedPersonId == $person.id)
   		// obtenemos el objeto que tiene dentro el valor de CPIS
   		$cpis : ObservationResult(evaluatedPersonId == $person.id && observationFocus.getCode()=="CPIS")
   		// el observation result es del tipo temperatura y que la temperatura sea > 38.9 o <= 36.4
-  		eval($os.getObservationFocus().getCode()=="temp_corp" && 
-  		($os.getObservationValue().getPhysicalQuantity().getValue() > 38.9
-  		|| $os.getObservationValue().getPhysicalQuantity().getValue() <=36.4))
+  		eval($or.getObservationFocus().getCode()=="temp_corp" && 
+  		($or.getObservationValue().getPhysicalQuantity().getValue() > 38.9
+  		|| $or.getObservationValue().getPhysicalQuantity().getValue() <=36.4))
     then
 		int cpis=$cpis.getObservationValue().getInteger().getValue();
 		cpis+=2;
@@ -175,13 +175,13 @@ rule "CPISpWBCMedium"
     	// existe una persona
   		$person : EvaluatedPerson()
   		// tiene un observation result asociado a esa persona
-  		$os : ObservationResult(evaluatedPersonId == $person.id)
+  		$or : ObservationResult(evaluatedPersonId == $person.id)
   		// obtenemos el objeto que tiene dentro el valor de CPIS
   		$cpis : ObservationResult(evaluatedPersonId == $person.id && observationFocus.getCode()=="CPIS")
   		// el observation result es del tipo pWBC y es >=4000 y <= 11000
-  		eval($os.getObservationFocus().getCode()=="pWBC" && 
-  		$os.getObservationValue().getInteger().getValue() >= 4000
-  		&& $os.getObservationValue().getInteger().getValue() <=11000)
+  		eval($or.getObservationFocus().getCode()=="pWBC" && 
+  		$or.getObservationValue().getInteger().getValue() >= 4000
+  		&& $or.getObservationValue().getInteger().getValue() <=11000)
     then
 		int cpis=$cpis.getObservationValue().getInteger().getValue();
 		cpis+=0;
@@ -215,13 +215,13 @@ rule "CPISExtremepWBC"
         // existe una persona
   		$person : EvaluatedPerson()
   		// tiene un observation result asociado a esa persona
-  		$os : ObservationResult(evaluatedPersonId == $person.id)
+  		$or : ObservationResult(evaluatedPersonId == $person.id)
   		// obtenemos el objeto que tiene dentro el valor de CPIS
   		$cpis : ObservationResult(evaluatedPersonId == $person.id && observationFocus.getCode()=="CPIS")
   		// el observation result es del tipo pWBC es un valor <4000 o >11000
-  		eval($os.getObservationFocus().getCode()=="pWBC" && 
-  		($os.getObservationValue().getInteger().getValue() < 4000
-  		|| $os.getObservationValue().getInteger().getValue() > 11000))
+  		eval($or.getObservationFocus().getCode()=="pWBC" && 
+  		($or.getObservationValue().getInteger().getValue() < 4000
+  		|| $or.getObservationValue().getInteger().getValue() > 11000))
     then
 		int cpis=$cpis.getObservationValue().getInteger().getValue();
 		cpis+=1;
@@ -257,13 +257,13 @@ rule "CPISVeryExtremepWBC"
 		// existe una persona
   		$person : EvaluatedPerson()
   		// tiene un observation result asociado a esa persona
-  		$os : ObservationResult(evaluatedPersonId == $person.id)
+  		$or : ObservationResult(evaluatedPersonId == $person.id)
   		// obtenemos el objeto que tiene dentro el valor de CPIS
   		$cpis : ObservationResult(evaluatedPersonId == $person.id && observationFocus.getCode()=="CPIS")
   		// el observation result es del tipo pWBC y que el valor sea sea > 16500 y < 2000
-  		eval($os.getObservationFocus().getCode()=="pWBC" && 
-  		($os.getObservationValue().getInteger().getValue() < 2000
-  		|| $os.getObservationValue().getInteger().getValue() > 16500))
+  		eval($or.getObservationFocus().getCode()=="pWBC" && 
+  		($or.getObservationValue().getInteger().getValue() < 2000
+  		|| $or.getObservationValue().getInteger().getValue() > 16500))
     then
 		int cpis=$cpis.getObservationValue().getInteger().getValue();
 		cpis+=1;
@@ -298,12 +298,12 @@ rule "CPISNoTrachealSecretion"
 		// existe una persona
   		$person : EvaluatedPerson()
   		// tiene un observation result asociado a esa persona
-  		$os : ObservationResult(evaluatedPersonId == $person.id)
+  		$or : ObservationResult(evaluatedPersonId == $person.id)
   		// obtenemos el objeto que tiene dentro el valor de CPIS
   		$cpis : ObservationResult(evaluatedPersonId == $person.id && observationFocus.getCode()=="CPIS")
   		// el observation result es del tipo Secrecion traqueal y el valor sea NO
-  		eval($os.getObservationFocus().getCode()=="sec_traq"
-  		&& $os.getObservationValue().getText() == "no")
+  		eval($or.getObservationFocus().getCode()=="sec_traq"
+  		&& $or.getObservationValue().getText() == "no")
 	then
 		int cpis=$cpis.getObservationValue().getInteger().getValue();
 		cpis+=0;
@@ -338,12 +338,12 @@ rule "CPISNoPurulentTrachealSecretion"
     	// existe una persona
   		$person : EvaluatedPerson()
   		// tiene un observation result asociado a esa persona
-  		$os : ObservationResult(evaluatedPersonId == $person.id)
+  		$or : ObservationResult(evaluatedPersonId == $person.id)
   		// obtenemos el objeto que tiene dentro el valor de CPIS
   		$cpis : ObservationResult(evaluatedPersonId == $person.id && observationFocus.getCode()=="CPIS")
   		// el observation result es del tipo Secrecion traqueal y el valor sea no purulenta
-  		eval($os.getObservationFocus().getCode()=="sec_traq"
-  		&& $os.getObservationValue().getText() == "no purulenta")
+  		eval($or.getObservationFocus().getCode()=="sec_traq"
+  		&& $or.getObservationValue().getText() == "no purulenta")
     then
 		int cpis=$cpis.getObservationValue().getInteger().getValue();
 		cpis+=1;
@@ -378,12 +378,12 @@ rule "CPISPurulentTrachealSecretion"
     	// existe una persona
   		$person : EvaluatedPerson()
   		// tiene un observation result asociado a esa persona
-  		$os : ObservationResult(evaluatedPersonId == $person.id)
+  		$or : ObservationResult(evaluatedPersonId == $person.id)
   		// obtenemos el objeto que tiene dentro el valor de CPIS
   		$cpis : ObservationResult(evaluatedPersonId == $person.id && observationFocus.getCode()=="CPIS")
   		// el observation result es del tipo Secrecion traqueal y el valor sea no purulenta
-  		eval($os.getObservationFocus().getCode()=="sec_traq"
-  		&& $os.getObservationValue().getText() == "purulenta")    
+  		eval($or.getObservationFocus().getCode()=="sec_traq"
+  		&& $or.getObservationValue().getText() == "purulenta")    
     then
 		int cpis=$cpis.getObservationValue().getInteger().getValue();
 		cpis+=2;
@@ -418,12 +418,12 @@ rule "CPISNoInfiltrateChestXRay"
         // existe una persona
   		$person : EvaluatedPerson()
   		// tiene un observation result asociado a esa persona
-  		$os : ObservationResult(evaluatedPersonId == $person.id)
+  		$or : ObservationResult(evaluatedPersonId == $person.id)
   		// obtenemos el objeto que tiene dentro el valor de CPIS
   		$cpis : ObservationResult(evaluatedPersonId == $person.id && observationFocus.getCode()=="CPIS")
   		// el observation result es del tipo rayos X y el valor no infiltrado
-  		eval($os.getObservationFocus().getCode()=="x_ray_chest"
-  		&& $os.getObservationValue().getText() == "no infiltrado")    
+  		eval($or.getObservationFocus().getCode()=="x_ray_chest"
+  		&& $or.getObservationValue().getText() == "no infiltrado")    
     then
 		int cpis=$cpis.getObservationValue().getInteger().getValue();
 		cpis+=0;
@@ -458,12 +458,12 @@ rule "CPISDiffuseOrPatchyInfiltratesChestXRay"
         // existe una persona
   		$person : EvaluatedPerson()
   		// tiene un observation result asociado a esa persona
-  		$os : ObservationResult(evaluatedPersonId == $person.id)
+  		$or : ObservationResult(evaluatedPersonId == $person.id)
   		// obtenemos el objeto que tiene dentro el valor de CPIS
   		$cpis : ObservationResult(evaluatedPersonId == $person.id && observationFocus.getCode()=="CPIS")
   		// el observation result es del tipo rayos X y el valor es difuso
-  		eval($os.getObservationFocus().getCode()=="x_ray_chest"
-  		&& $os.getObservationValue().getText() == "infiltracion difusa")
+  		eval($or.getObservationFocus().getCode()=="x_ray_chest"
+  		&& $or.getObservationValue().getText() == "infiltracion difusa")
     then
 		int cpis=$cpis.getObservationValue().getInteger().getValue();
 		cpis+=1;
@@ -499,12 +499,12 @@ rule "CPISLocalizedInfiltrateChestXRay"
     	// existe una persona
   		$person : EvaluatedPerson()
   		// tiene un observation result asociado a esa persona
-  		$os : ObservationResult(evaluatedPersonId == $person.id)
+  		$or : ObservationResult(evaluatedPersonId == $person.id)
   		// obtenemos el objeto que tiene dentro el valor de CPIS
   		$cpis : ObservationResult(evaluatedPersonId == $person.id && observationFocus.getCode()=="CPIS")
   		// el observation result es del tipo rayos X y el valor es localizada
-  		eval($os.getObservationFocus().getCode()=="x_ray_chest"
-  		&& $os.getObservationValue().getText() == "infiltracion localizada")
+  		eval($or.getObservationFocus().getCode()=="x_ray_chest"
+  		&& $or.getObservationValue().getText() == "infiltracion localizada")
     then
 		int cpis=$cpis.getObservationValue().getInteger().getValue();
 		cpis+=2;
@@ -539,18 +539,178 @@ rule "CPISNoInfiltrateProgression"
         // existe una persona
   		$person : EvaluatedPerson()
   		// tiene un observation result asociado a esa persona
-  		$os : ObservationResult(evaluatedPersonId == $person.id)
+  		$or : ObservationResult(evaluatedPersonId == $person.id)
   		// obtenemos el objeto que tiene dentro el valor de CPIS
   		$cpis : ObservationResult(evaluatedPersonId == $person.id && observationFocus.getCode()=="CPIS")
   		// el observation result es del tipo progresion en infiltracion de rayos X y es falso
-  		eval($os.getObservationFocus().getCode()=="x_ray_chest_progression"
-  		&& $os.getObservationValue().get_boolean().isValue() == false)
+  		eval($or.getObservationFocus().getCode()=="x_ray_chest_progression"
+  		&& $or.getObservationValue().get_boolean().isValue() == false)
     then
 		int cpis=$cpis.getObservationValue().getInteger().getValue();
 		cpis+=0;
 		$cpis.getObservationValue().getInteger().setValue(cpis);
         update ($cpis);    
         //System.out.println( "CPIS changed :No infiltrate progression, CPI of patient " + $patient.name + " increased by 0, current value = " + $patient.CPIS);
+end
+
+
+// rule to add 2 points to CPIS if there is progression in the infiltrate
+rule "CPISPositiveInfiltrateProgression"
+	// ********** AUDIT METADATA INFO ********************************
+	// rule source information: sourceDocument, pageNumber, lineRange
+	@sourceDocument(John Hopkins Clinical Guidelines Infections)
+	@pageNumber(80)
+	@lineRange(CPIS calculation table, row 5 column 3)
+	// generic information about the rule: date, ruleDescription, ruleAuthor, ruleVersion
+	@ruleDate(2014-07-05)
+	@ruleDescription("Measures patient's chest X rays and if progression found adds 2 points to the CPI Score")
+	@ruleAuthor(Tony Wang)
+	@ruleVersion(1.0.0)
+	// clinicalAction (diagnosis, treatment, score,...), infectionType (VAP...), agent, antibiotic)
+	@clinicalAction(CPISAlert)
+	@infectionType(VAP)
+ 	//@infectionAgent()
+	//@infectionAntibiotic()
+	// *********** END OF AUDIT METADATA INFO ************************ 
+    lock-on-active
+    salience 100 
+    no-loop
+    //agenda-group "cpis"
+    when
+		// existe una persona
+  		$person : EvaluatedPerson()
+  		// tiene un observation result asociado a esa persona
+  		$or : ObservationResult(evaluatedPersonId == $person.id)
+  		// obtenemos el objeto que tiene dentro el valor de CPIS
+  		$cpis : ObservationResult(evaluatedPersonId == $person.id && observationFocus.getCode()=="CPIS")
+  		// el observation result es del tipo progresion en infiltracion de rayos X y es verdadero
+  		eval($or.getObservationFocus().getCode()=="x_ray_chest_progression"
+  		&& $or.getObservationValue().get_boolean().isValue() == true)
+    then
+        int cpis=$cpis.getObservationValue().getInteger().getValue();
+		cpis+=2;
+		$cpis.getObservationValue().getInteger().setValue(cpis);
+        update ($cpis);   
+        //System.out.println( "CPIS changed :Progression of infiltrates and both ARDS and CHF unlikely, CPI of patient " + $patient.name + " increased by 2, current value = " + $patient.CPIS);
+end
+
+// rule to add cero point to CPIS if no/light growth of culture
+rule "CPISNoCultureGrowthOrLightCultureGrowth"
+	// ********** AUDIT METADATA INFO ********************************
+	// rule source information: sourceDocument, pageNumber, lineRange
+	@sourceDocument(John Hopkins Clinical Guidelines Infections)
+	@pageNumber(80)
+	@lineRange(CPIS calculation table, row 6 column 1)
+	// generic information about the rule: date, ruleDescription, ruleAuthor, ruleVersion
+	@ruleDate(2014-07-05)
+	@ruleDescription("Measures patient's culture of ET suction and if no growth or light growth found over prior culture adds 0 points to the CPI Score")
+	@ruleAuthor(Tony Wang)
+	@ruleVersion(1.0.0)
+	// clinicalAction (diagnosis, treatment, score,...), infectionType (VAP...), agent, antibiotic)
+	@clinicalAction(CPISAlert)
+	@infectionType(VAP)
+	//@infectionAgent()
+	//@infectionAntibiotic()
+	// *********** END OF AUDIT METADATA INFO ************************ 
+    lock-on-active
+    salience 100 
+    no-loop
+    //agenda-group "cpis"
+    when
+		// existe una persona
+  		$person : EvaluatedPerson()
+  		// tiene un observation result asociado a esa persona
+  		$or : ObservationResult(evaluatedPersonId == $person.id)
+  		// obtenemos el objeto que tiene dentro el valor de CPIS
+  		$cpis : ObservationResult(evaluatedPersonId == $person.id && observationFocus.getCode()=="CPIS")
+  		// el observation result es del tipo et culture y es falso
+  		eval($or.getObservationFocus().getCode()=="et_culture_suction"
+  		&& $or.getObservationValue().get_boolean().isValue() == false)
+    then
+        int cpis=$cpis.getObservationValue().getInteger().getValue();
+		cpis+=0;
+		$cpis.getObservationValue().getInteger().setValue(cpis);
+        update ($cpis);  
+        //System.out.println( "CPIS changed :None or Light Culture Growth, CPI of patient " + $patient.name + " increased by 0, current value = " + $patient.CPIS);
+end  
+
+// rule to add cero point to CPIS if no/light growth of culture
+rule "CPISCultureHeavyGrowth"
+	// ********** AUDIT METADATA INFO ********************************
+	// rule source information: sourceDocument, pageNumber, lineRange
+	@sourceDocument(John Hopkins Clinical Guidelines Infections)
+	@pageNumber(80)
+  	@lineRange(CPIS calculation table, row 6 column 2)
+	// generic information about the rule: date, ruleDescription, ruleAuthor, ruleVersion
+	@ruleDate(2014-07-05)
+  	@ruleDescription("Measures patient's culture of ET suction and if heavy growth adds 1 points to the CPI Score")	
+  	@ruleAuthor(Tony Wang)
+	@ruleVersion(1.0.0)
+	// clinicalAction (diagnosis, treatment, score,...), infectionType (VAP...), agent, antibiotic)
+	@clinicalAction(CPISAlert)
+	@infectionType(VAP)
+	//@infectionAgent()
+	//@infectionAntibiotic()
+	// *********** END OF AUDIT METADATA INFO ************************ 
+    lock-on-active
+    salience 100 
+    no-loop
+    //agenda-group "cpis"
+    when
+		// existe una persona
+  		$person : EvaluatedPerson()
+  		// tiene un observation result asociado a esa persona
+  		$or : ObservationResult(evaluatedPersonId == $person.id)
+  		// obtenemos el objeto que tiene dentro el valor de CPIS
+  		$cpis : ObservationResult(evaluatedPersonId == $person.id && observationFocus.getCode()=="CPIS")
+  		// el observation result es del tipo et culture y es true
+  		eval($or.getObservationFocus().getCode()=="et_culture_suction"
+  		&& $or.getObservationValue().get_boolean().isValue() == true)
+    then
+        int cpis=$cpis.getObservationValue().getInteger().getValue();
+		cpis+=1;
+		$cpis.getObservationValue().getInteger().setValue(cpis);
+        update ($cpis);  
+        //System.out.println( "CPIS changed :Heavy Culture Growth, CPI of patient " + $patient.name + " increased by 1, current value = " + $patient.CPIS);
+end  
+
+// add one extra point when same bacteria and heavy culture growth
+rule "CPISCultureHeavyGrowthAndSameBacteria"
+	// rule source information: sourceDocument, pageNumber, lineRange
+	  @sourceDocument(John Hopkins Clinical Guidelines Infections)
+	@pageNumber(80)
+	@lineRange(CPIS calculation table, row 6 column 2)
+	// generic information about the rule: date, ruleDescription, ruleAuthor, ruleVersion
+	@ruleDate(2014-07-05)
+	@ruleDescription("Measures patient's culture of ET suction and if heavy growth and same bacteria on gram stain  adds 1 extra points to the CPI Score")
+	@ruleAuthor(Tony Wang)
+	@ruleVersion(1.0.0)
+	// clinicalAction (diagnosis, treatment, score,...), infectionType (VAP...), agent, antibiotic)
+	@clinicalAction(CPISAlert)
+	@infectionType(VAP)
+	//@infectionAgent()
+	//@infectionAntibiotic()
+	// *********** END OF AUDIT METADATA INFO ************************ 
+    lock-on-active
+    salience 100 
+    no-loop
+    //agenda-group "cpis"
+    when
+        // existe una persona
+  		$person : EvaluatedPerson()
+  		// el observation result es del tipo same bacteria verdadero y etculture verdadero
+  		$sb : ObservationResult(evaluatedPersonId == $person.id && observationFocus.getCode()=="same_bacteria")
+  		$et : ObservationResult(evaluatedPersonId == $person.id && observationFocus.getCode()=="et_culture_suction")
+  		// obtenemos el objeto que tiene dentro el valor de CPIS
+  		$cpis : ObservationResult(evaluatedPersonId == $person.id && observationFocus.getCode()=="CPIS")
+  		eval($sb.getObservationValue().get_boolean().isValue() == true
+  		&& $et.getObservationValue().get_boolean().isValue() == true)
+    then
+        int cpis=$cpis.getObservationValue().getInteger().getValue();
+		cpis+=1;
+		$cpis.getObservationValue().getInteger().setValue(cpis);
+        update ($cpis);  
+        //System.out.println( "CPIS changed :Heavy Culture Growth same bacteria, CPI of patient " + $patient.name + " increased by 1, current value = " + $patient.CPIS);
 end
 
 rule "CPISHighOxygenationOrARDS"
@@ -660,5 +820,3 @@ rule "returnCPISValue"
     then
     	$cpis.setToBeReturned(true);
 end
-
-// CPIS DIAGNOSIS RULES

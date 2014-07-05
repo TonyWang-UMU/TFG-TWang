@@ -10,7 +10,7 @@
 
 	<!-- modulo de conocimiento de ejemplo del tfg -->
 	<kmMetadata>
-		<identifier scopingEntityId="z-umu" businessId="tfg" version="1"/>
+		<identifier scopingEntityId="umu" businessId="CPISTREATMENT" version="1.0.0"/>
 		<!-- qué versión de Drools usamos? -->
 		<purpose language="es">Bounces all the input back as output under Drools 5.5</purpose>
 		<explanation language="en">Modulo de conocimiento de soporte a la decision clinica en farmacovigilancia</explanation>

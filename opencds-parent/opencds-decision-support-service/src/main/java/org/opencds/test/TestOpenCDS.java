@@ -177,9 +177,9 @@ public class TestOpenCDS {
 /**
  * print the kmid of the output.  Uncomment the println() below to print just the kmid of each output
  * 
- */
+ */						
 							String kmid = kmer.getKmId().getBusinessId().toString();									
-//							System.out.println("kmid=" + kmid);
+							System.out.println("kmid=" + kmid);
 							kmid = null;
 						
 

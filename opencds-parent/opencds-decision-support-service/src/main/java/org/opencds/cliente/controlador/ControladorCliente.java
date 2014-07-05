@@ -2,6 +2,7 @@ package org.opencds.cliente.controlador;
 
 import java.awt.*;
 import java.io.*;
+import java.util.LinkedList;
 import java.util.List;
 
 import javax.swing.*;
@@ -163,6 +164,36 @@ public class ControladorCliente {
 			observationsResults += "\t\t\t\t</observationResult>\n";
 		}
 
+		// Progresion del cultivo et
+		if (paciente.getEtCultivo() != Booleano.NONE) {
+			observationsResults += "\t\t\t\t<observationResult>\n";
+			observationsResults += "\t\t\t\t\t<templateId root=\"2.16.840.1.113883.10.20.1.31\"/>\n";
+			observationsResults += "\t\t\t\t\t<id root=\"2.16.840.1.113883.5.10636\"/>\n";
+			observationsResults += "\t\t\t\t\t<observationFocus code=\"et_culture_suction\" codeSystem=\"2.16.840.1.113883.6.1\" displayName=\"Culture of ET suction growing\"/>\n";
+			observationsResults += "\t\t\t\t\t<observationValue>\n";
+			if (paciente.tieneEtCultivo())
+				observationsResults += "\t\t\t\t\t\t<boolean value=\"true\"/>\n";
+			else
+				observationsResults += "\t\t\t\t\t\t<boolean value=\"false\"/>\n";
+			observationsResults += "\t\t\t\t\t</observationValue>\n";
+			observationsResults += "\t\t\t\t</observationResult>\n";
+		}
+
+		// Same bacteria
+		if (paciente.getMisma_bacteria() != Booleano.NONE) {
+			observationsResults += "\t\t\t\t<observationResult>\n";
+			observationsResults += "\t\t\t\t\t<templateId root=\"2.16.840.1.113883.10.20.1.31\"/>\n";
+			observationsResults += "\t\t\t\t\t<id root=\"2.16.840.1.113883.5.10636\"/>\n";
+			observationsResults += "\t\t\t\t\t<observationFocus code=\"same_bacteria\" codeSystem=\"2.16.840.1.113883.6.1\" displayName=\"Same bacteria on gram stain\"/>\n";
+			observationsResults += "\t\t\t\t\t<observationValue>\n";
+			if (paciente.tieneSameBacteria())
+				observationsResults += "\t\t\t\t\t\t<boolean value=\"true\"/>\n";
+			else
+				observationsResults += "\t\t\t\t\t\t<boolean value=\"false\"/>\n";
+			observationsResults += "\t\t\t\t\t</observationValue>\n";
+			observationsResults += "\t\t\t\t</observationResult>\n";
+		}
+
 		// valor del CPIS, este valor se calcula en la salida
 		observationsResults += "\t\t\t\t<observationResult>\n";
 		observationsResults += "\t\t\t\t\t<templateId root=\"2.16.840.1.113883.10.20.1.31\"/>\n";
@@ -292,14 +323,11 @@ public class ControladorCliente {
 			}
 
 			if (paciente.tieneSexo()) {
-				// TODO El codesystem es asi?
 				datosPaciente += "\t\t\t\t<gender codeSystem=\"2.16.840.1.113883.5\" code=\""
 						+ paciente.getSexo() + "\"/>\n";
 			}
 
 			if (paciente.tieneRaza()) {
-				// TODO el codesystem es asi? habria que poner un ENUM con las
-				// razas y los distintos codesystem asociados
 				datosPaciente += "\t\t\t\t<race codeSystem=\"2.16.840.1.113883.5\" code=\""
 						+ paciente.getRaza() + "\"/>\n";
 			}
@@ -360,9 +388,12 @@ public class ControladorCliente {
 	 * @param idPaciente
 	 *            El identificador del paciente único
 	 * @param baseConocimiento
-	 *            La base de conocimiento que se usa para el analisis
+	 *            Las bases de conocimiento que se usan para el analisis
+	 * @param textoSalida
+	 *            Cuadro donde se va a escribir el diagnostico
 	 */
-	public String enviarXML(String idPaciente, String baseConocimiento) {
+	public void enviarXML(String idPaciente,
+			java.util.LinkedList<String> baseConocimiento, TextArea textoSalida) {
 		File paciente = new File(
 				"opencds-knowledge-repository-data/resources_v1.1/pacientes/"
 						+ idPaciente + ".xml");
@@ -392,28 +423,29 @@ public class ControladorCliente {
 				// informacion para el debug
 				er.setClientLanguage("Spanish");
 				er.setClientTimeZoneOffset("GMT +1");
+				for (int i = 0; i < baseConocimiento.size(); i++) {
+					// evaluacion 0
+					er.getKmEvaluationRequest().add(new KMEvaluationRequest());
+					er.getKmEvaluationRequest().get(i)
+							.setKmId(new EntityIdentifier());
 
-				// evaluacion 0
-				er.getKmEvaluationRequest().add(new KMEvaluationRequest());
-				er.getKmEvaluationRequest().get(0)
-						.setKmId(new EntityIdentifier());
+					// Esta parte es importante, es donde se le añade la base de
+					// conocimiento que se va a usar
 
-				// Esta parte es importante, es donde se le añade la base de
-				// conocimiento que se va a usar
+					// se obtiene del campo que hay para ello
+					// el formado de una KM es entidad^nombre^version
+					// por tanto hay que quitarle la extension .drl
 
-				// se obtiene del campo que hay para ello
-				// el formado de una KM es entidad^nombre^version
-				// por tanto hay que quitarle la extension .drl
-
-				String[] splittedKM = obtenerBaseConocimientoDividida(baseConocimiento
-						.substring(0, baseConocimiento.length() - 4));
-				er.getKmEvaluationRequest().get(0).getKmId()
-						.setBusinessId(splittedKM[1]);
-				er.getKmEvaluationRequest().get(0).getKmId()
-						.setScopingEntityId(splittedKM[0]);
-				er.getKmEvaluationRequest().get(0).getKmId()
-						.setVersion(splittedKM[2]);
-
+					String[] splittedKM = obtenerBaseConocimientoDividida(baseConocimiento
+							.get(i).substring(0,
+									baseConocimiento.get(i).length() - 4));
+					er.getKmEvaluationRequest().get(i).getKmId()
+							.setBusinessId(splittedKM[1]);
+					er.getKmEvaluationRequest().get(i).getKmId()
+							.setScopingEntityId(splittedKM[0]);
+					er.getKmEvaluationRequest().get(i).getKmId()
+							.setVersion(splittedKM[2]);
+				}
 				// indica el tipo de datos de paciente que usa
 				// en este caso usamos el estandar vMR
 				er.getDataRequirementItemData().add(
@@ -480,9 +512,38 @@ public class ControladorCliente {
 							.toString();
 					outputPayloadStringBuffer = null;
 					output = null;
-					return outputPayloadString.toString();
+					PrintWriter writerSalida;
+					try {
+						writerSalida = new PrintWriter(
+								"opencds-knowledge-repository-data/resources_v1.1/diagnosticos/PacienteNo"
+										+ idPaciente
+										+ "-Diagnostico con modulo de conocimiento "
+										+ kmer.getKmId().getBusinessId()
+												.toString() + ".xml", "UTF-8");
+						// cabeceras comunes
+						writerSalida.println(outputPayloadString);
+
+						textoSalida
+								.append("Resultado para la base de conocimiento "
+										+ kmer.getKmId().getBusinessId()
+										+ ":\n\n" + outputPayloadString + "\n");
+						outputPayloadString = null;
+						writerSalida.close();
+					} catch (FileNotFoundException e) {
+						e.printStackTrace();
+					} catch (UnsupportedEncodingException e) {
+						e.printStackTrace();
+					}
 
 				}
+				JOptionPane
+						.showMessageDialog(
+								null,
+								"Se han generado "
+										+ baseConocimiento.size()
+										+ " diagnósticos en el directorio opencds-knowledge-repository-data/resources_v1.1/diagnosticos/",
+								"TERMINADO", JOptionPane.INFORMATION_MESSAGE);
+
 				// limpiar memoria
 				evalResp = null;
 				myEvaluationImpl = null;
@@ -519,7 +580,6 @@ public class ControladorCliente {
 							+ idPaciente, "ERROR", JOptionPane.ERROR_MESSAGE);
 		}
 
-		return null;
 	}
 
 	private String[] obtenerBaseConocimientoDividida(String baseConocimiento) {
@@ -530,11 +590,11 @@ public class ControladorCliente {
 	 * Metodo que obtiene de una ruta fija las bases de conocimiento y las lista
 	 * para poder ser elegidas
 	 * 
-	 * @param objetoDesplegable
+	 * @param listaKM
 	 *            El objeto que contiene la lista de bases de conocimiento
 	 */
 
-	public void listarBasesConocimiento(Choice objetoDesplegable) {
+	public void listarBasesConocimiento(java.awt.List listaKM) {
 		String directorioKM = "opencds-knowledge-repository-data/resources_v1.1/knowledgeModules";
 		File directory = new File(directorioKM);
 
@@ -543,7 +603,7 @@ public class ControladorCliente {
 
 		for (File file : fList) {
 			if (file.isFile()) {
-				objetoDesplegable.add(file.getName());
+				listaKM.add(file.getName());
 			}
 		}
 	}
@@ -583,6 +643,22 @@ public class ControladorCliente {
 	}
 
 	/**
+	 * Metodo que obtiene las bases de conocimiento en una lista de String
+	 * 
+	 * @param listaKMSeleccionadas
+	 *            El contenedor que contiene la lista con los KM seleccionados
+	 * @return La lista de String correspondiente
+	 */
+	public java.util.LinkedList<String> obtenerBasesConocimiento(
+			java.awt.List listaKMSeleccionadas) {
+		java.util.LinkedList<String> listaDevolver = new LinkedList<String>();
+		for (int i = 0; i < listaKMSeleccionadas.getItemCount(); i++) {
+			listaDevolver.add(listaKMSeleccionadas.getItem(i));
+		}
+		return listaDevolver;
+	}
+
+	/**
 	 * Termina la ejecucion del programa
 	 */
 
@@ -601,7 +677,5 @@ public class ControladorCliente {
 						null,
 						"Sistema de soporte a la decisión clínica en farmacovigilancia.\nPor Tony Wang",
 						"Acerca de", JOptionPane.QUESTION_MESSAGE);
-
 	}
-
 }

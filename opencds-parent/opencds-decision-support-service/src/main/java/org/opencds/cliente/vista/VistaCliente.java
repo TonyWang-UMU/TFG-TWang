@@ -2,6 +2,7 @@ package org.opencds.cliente.vista;
 
 import java.awt.*;
 import java.awt.event.*;
+import java.util.LinkedList;
 
 import javax.swing.*;
 import javax.swing.border.*;
@@ -18,12 +19,7 @@ public class VistaCliente extends JFrame {
 
 	private JPanel contenedorPrincipal;
 	private Choice desplegablePacientes = new Choice();
-	private Choice desplegableKM = new Choice();
 	private Choice desplegableEHR = new Choice();
-	private Choice desplegableAnalitica = new Choice();
-	private Choice desplegableMicro = new Choice();
-	private Choice desplegableTratamiento = new Choice();
-	private Choice desplegableVentilacion = new Choice();
 
 	private TextArea textoEntrada;
 	private TextArea textoSalida;
@@ -37,6 +33,10 @@ public class VistaCliente extends JFrame {
 	private JTextField textFieldEvolucionX;
 	private JTextField textFieldARDS;
 	private JTextField textFieldOxygenation;
+	private JTextField textFieldETCulture;
+	private JTextField textFieldSameBacteria;
+	private List listaKMSeleccionadas;
+	private List listaKM;
 
 	/**
 	 * Create the frame.
@@ -87,33 +87,27 @@ public class VistaCliente extends JFrame {
 		panelNortePrincipal.setBorder(new TitledBorder(null, "",
 				TitledBorder.LEADING, TitledBorder.TOP, null, null));
 		contenedorPrincipal.add(panelNortePrincipal, BorderLayout.NORTH);
-		panelNortePrincipal.setLayout(new GridLayout(0, 2, 0, 0));
+		panelNortePrincipal.setLayout(new GridLayout(1, 1, 0, 0));
+
+		JPanel panelDatosClinicos = new JPanel();
+		panelDatosClinicos.setBorder(new BevelBorder(BevelBorder.LOWERED, null,
+				null, null, null));
+		panelNortePrincipal.add(panelDatosClinicos);
+		panelDatosClinicos.setLayout(new GridLayout(0, 1, 0, 0));
 
 		JLabel etiquetaSeleccionPaciente = new JLabel("Seleccionar Paciente");
+		panelDatosClinicos.add(etiquetaSeleccionPaciente);
 		etiquetaSeleccionPaciente.setHorizontalAlignment(SwingConstants.CENTER);
-		panelNortePrincipal.add(etiquetaSeleccionPaciente);
+		panelDatosClinicos.add(desplegablePacientes);
 		desplegablePacientes.addItemListener(new ItemListener() {
 			public void itemStateChanged(ItemEvent e) {
 				// cada vez que se cambia de paciente hay que comunicarlo a la
 				// base de datos para que cambie los diagnosticos
 				ControladorBaseDatos.getUnicainstancia().listarEHR(
 						desplegablePacientes.getSelectedItem(), desplegableEHR);
-				ControladorBaseDatos.getUnicainstancia().listarAnalitica(
-						desplegablePacientes.getSelectedItem(),
-						desplegableAnalitica);
-				ControladorBaseDatos.getUnicainstancia().listarMicro(
-						desplegablePacientes.getSelectedItem(),
-						desplegableMicro);
-				ControladorBaseDatos.getUnicainstancia().listarTratamiento(
-						desplegablePacientes.getSelectedItem(),
-						desplegableTratamiento);
-				ControladorBaseDatos.getUnicainstancia().listarVentilacion(
-						desplegablePacientes.getSelectedItem(),
-						desplegableVentilacion);
+
 			}
 		});
-
-		panelNortePrincipal.add(desplegablePacientes);
 
 		// muestra los usuarios que hay en la base de pacientes
 		ControladorBaseDatos.getUnicainstancia().listarPacientes(
@@ -121,58 +115,89 @@ public class VistaCliente extends JFrame {
 
 		JLabel lblSeleccionarHistorialClnico = new JLabel(
 				"Seleccionar Datos Cl\u00EDnicos");
+		panelDatosClinicos.add(lblSeleccionarHistorialClnico);
 		lblSeleccionarHistorialClnico
 				.setHorizontalAlignment(SwingConstants.CENTER);
-		panelNortePrincipal.add(lblSeleccionarHistorialClnico);
-
-		panelNortePrincipal.add(desplegableEHR);
+		panelDatosClinicos.add(desplegableEHR);
 		// listados iniciales del paciente por defecto
 		ControladorBaseDatos.getUnicainstancia().listarEHR(
 				desplegablePacientes.getSelectedItem(), desplegableEHR);
-		ControladorBaseDatos.getUnicainstancia().listarAnalitica(
-				desplegablePacientes.getSelectedItem(), desplegableAnalitica);
-		ControladorBaseDatos.getUnicainstancia().listarMicro(
-				desplegablePacientes.getSelectedItem(), desplegableMicro);
-		ControladorBaseDatos.getUnicainstancia().listarTratamiento(
-				desplegablePacientes.getSelectedItem(), desplegableTratamiento);
 
-		JLabel labelAnalitica = new JLabel("Seleccionar Datos Anal\u00EDtica");
-		labelAnalitica.setHorizontalAlignment(SwingConstants.CENTER);
-		panelNortePrincipal.add(labelAnalitica);
+		JPanel panelKMs = new JPanel();
+		panelKMs.setBorder(new EmptyBorder(0, 10, 10, 10));
+		panelNortePrincipal.add(panelKMs);
+		panelKMs.setLayout(new BorderLayout(0, 0));
 
-		panelNortePrincipal.add(desplegableAnalitica);
-
-		JLabel labelMicrobiologia = new JLabel(
-				"Seleccionar Datos Microbiolog\u00EDa");
-		labelMicrobiologia.setHorizontalAlignment(SwingConstants.CENTER);
-		panelNortePrincipal.add(labelMicrobiologia);
-
-		panelNortePrincipal.add(desplegableMicro);
-
-		JLabel labelVentilacion = new JLabel(
-				"Seleccionar Datos Ventilaci\u00F3n");
-		labelVentilacion.setHorizontalAlignment(SwingConstants.CENTER);
-		panelNortePrincipal.add(labelVentilacion);
-		ControladorBaseDatos.getUnicainstancia().listarVentilacion(
-				desplegablePacientes.getSelectedItem(), desplegableVentilacion);
-
-		panelNortePrincipal.add(desplegableVentilacion);
-
-		JLabel labelTratamientos = new JLabel("Seleccionar Datos Tratamiento");
-		labelTratamientos.setHorizontalAlignment(SwingConstants.CENTER);
-		panelNortePrincipal.add(labelTratamientos);
-
-		panelNortePrincipal.add(desplegableTratamiento);
-
-		JLabel etiquetaSeleccionKM = new JLabel(
-				"Seleccionar Base de Conocimiento");
+		JLabel etiquetaSeleccionKM = new JLabel("Bases de Conocimiento");
+		panelKMs.add(etiquetaSeleccionKM, BorderLayout.NORTH);
 		etiquetaSeleccionKM.setHorizontalAlignment(SwingConstants.CENTER);
-		panelNortePrincipal.add(etiquetaSeleccionKM);
 
-		panelNortePrincipal.add(desplegableKM);
-		// muestra las bases de conocimiento
-		ControladorCliente.getUnicainstancia().listarBasesConocimiento(
-				desplegableKM);
+		JPanel panelCentralKM = new JPanel();
+		panelKMs.add(panelCentralKM, BorderLayout.SOUTH);
+		panelCentralKM.setLayout(new GridLayout(0, 3, 0, 0));
+
+		Panel panelListadoKM = new Panel();
+		panelCentralKM.add(panelListadoKM);
+		panelListadoKM.setLayout(new BorderLayout(0, 0));
+
+		JLabel lblKMDispo = new JLabel(" Bases Disponibles");
+		lblKMDispo.setBorder(BorderFactory.createEmptyBorder(0, 0, 5, 0));
+		lblKMDispo.setHorizontalAlignment(SwingConstants.CENTER);
+		panelListadoKM.add(lblKMDispo, BorderLayout.NORTH);
+
+		listaKM = new List();
+		panelListadoKM.add(listaKM);
+
+		ControladorCliente.getUnicainstancia().listarBasesConocimiento(listaKM);
+
+		JPanel panelBotonesKM = new JPanel();
+		panelBotonesKM.setBorder(new EmptyBorder(30, 0, 0, 0));
+		panelCentralKM.add(panelBotonesKM);
+		panelBotonesKM.setLayout(new BorderLayout(0, 0));
+
+		JPanel panelBotonesCentro = new JPanel();
+		panelBotonesKM.add(panelBotonesCentro, BorderLayout.NORTH);
+
+		JButton btnIzda = new JButton("<<");
+		btnIzda.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				// comprobar que hay algo seleccionado en la lista izquierda y
+				// ponerlo en la derecha
+				if (listaKMSeleccionadas.getSelectedIndex() != -1) {
+					listaKM.add(listaKMSeleccionadas.getSelectedItem());
+					listaKMSeleccionadas.remove(listaKMSeleccionadas
+							.getSelectedIndex());
+				}
+			}
+
+		});
+		panelBotonesCentro.add(btnIzda);
+
+		JButton btnDcha = new JButton(">>");
+		btnDcha.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				// comprobar que hay algo seleccionado en la lista derecha y
+				// ponerlo en la izquierda
+				if (listaKM.getSelectedIndex() != -1) {
+					listaKMSeleccionadas.add(listaKM.getSelectedItem());
+					listaKM.remove(listaKM.getSelectedIndex());
+				}
+
+			}
+		});
+		panelBotonesCentro.add(btnDcha);
+
+		JPanel panelKMAUsar = new JPanel();
+		panelCentralKM.add(panelKMAUsar);
+		panelKMAUsar.setLayout(new BorderLayout(0, 0));
+
+		JLabel lblKMUsados = new JLabel("Bases a utilizar");
+		lblKMUsados.setBorder(BorderFactory.createEmptyBorder(0, 0, 5, 0));
+		lblKMUsados.setHorizontalAlignment(SwingConstants.CENTER);
+		panelKMAUsar.add(lblKMUsados, BorderLayout.NORTH);
+
+		listaKMSeleccionadas = new List();
+		panelKMAUsar.add(listaKMSeleccionadas);
 
 		JPanel panelBotones = new JPanel();
 		contenedorPrincipal.add(panelBotones, BorderLayout.SOUTH);
@@ -193,14 +218,7 @@ public class VistaCliente extends JFrame {
 							.getUnicainstancia().obtenerPaciente(
 									Integer.parseInt(desplegablePacientes
 											.getSelectedItem()),
-									getId(desplegableEHR.getSelectedItem()),
-									getId(desplegableAnalitica
-											.getSelectedItem()),
-									getId(desplegableMicro.getSelectedItem()),
-									getId(desplegableVentilacion
-											.getSelectedItem()),
-									getId(desplegableTratamiento
-											.getSelectedItem()));
+									getId(desplegableEHR.getSelectedItem()));
 					ControladorCliente.getUnicainstancia().generarXML(paciente);
 
 					ControladorCliente.getUnicainstancia().mostrarEntrada(
@@ -240,6 +258,12 @@ public class VistaCliente extends JFrame {
 					else
 						textFieldXRayos.setText("N/D");
 
+					if (paciente.tieneOxigenacion())
+						textFieldOxygenation.setText(String.valueOf(paciente
+								.getOxigenacion()));
+					else
+						textFieldOxygenation.setText("N/D");
+
 					if (paciente.tieneEvolucionXRayos())
 						textFieldEvolucionX.setText("si");
 					else {
@@ -259,11 +283,24 @@ public class VistaCliente extends JFrame {
 						}
 					}
 
-					if (paciente.tieneOxigenacion())
-						textFieldOxygenation.setText(String.valueOf(paciente
-								.getOxigenacion()));
-					else
-						textFieldOxygenation.setText("N/D");
+					if (paciente.tieneEtCultivo())
+						textFieldETCulture.setText("si");
+					else {
+						if (paciente.getEtCultivo() == Booleano.FALSE)
+							textFieldETCulture.setText("no");
+						else {
+							textFieldETCulture.setText("N/D");
+						}
+					}
+
+					if (paciente.tieneSameBacteria()) {
+						textFieldSameBacteria.setText("si");
+					} else {
+						if (paciente.getMisma_bacteria() == Booleano.FALSE)
+							textFieldSameBacteria.setText("no");
+						else
+							textFieldSameBacteria.setText("N/D");
+					}
 
 				} else {
 					JOptionPane.showMessageDialog(null,
@@ -302,11 +339,25 @@ public class VistaCliente extends JFrame {
 						@Override
 						protected String doInBackground()
 								throws InterruptedException {
-							textoSalida.setText(ControladorCliente
-									.getUnicainstancia().enviarXML(
-											desplegablePacientes
-													.getSelectedItem(),
-											desplegableKM.getSelectedItem()));
+							LinkedList<String> listaKMString = ControladorCliente
+									.getUnicainstancia()
+									.obtenerBasesConocimiento(
+											listaKMSeleccionadas);
+
+							if (listaKMString.size() > 0) {
+								ControladorCliente.getUnicainstancia()
+										.enviarXML(
+												desplegablePacientes
+														.getSelectedItem(),
+												listaKMString, textoSalida);
+							} else {
+								JOptionPane
+										.showMessageDialog(
+												null,
+												"No se han seleccionado bases de conocimiento",
+												"ERROR",
+												JOptionPane.ERROR_MESSAGE);
+							}
 							return "";
 						}
 
@@ -332,6 +383,7 @@ public class VistaCliente extends JFrame {
 		panelBotones.add(botonEnviarXML);
 
 		JPanel panelInformacion = new JPanel();
+		panelInformacion.setBorder(new EmptyBorder(10, 10, 10, 10));
 		contenedorPrincipal.add(panelInformacion, BorderLayout.CENTER);
 		panelInformacion.setLayout(new GridLayout(0, 3, 0, 0));
 
@@ -340,6 +392,7 @@ public class VistaCliente extends JFrame {
 		panelDatosInterior.setLayout(new BorderLayout(0, 0));
 
 		JLabel lblDatosDelPaciente = new JLabel("Datos del Paciente");
+
 		lblDatosDelPaciente.setHorizontalAlignment(SwingConstants.CENTER);
 		lblDatosDelPaciente.setFont(new Font("Tahoma", Font.PLAIN, 14));
 		panelDatosInterior.add(lblDatosDelPaciente, BorderLayout.NORTH);
@@ -347,7 +400,7 @@ public class VistaCliente extends JFrame {
 		JPanel panelDatos = new JPanel();
 		panelDatosInterior.add(panelDatos, BorderLayout.CENTER);
 		panelDatos.setLayout(new MigLayout("", "[158.00][::200px,grow]",
-				"[25px:n][][][][][][][][][][][]"));
+				"[25px:n][][][][][][][][][][][][]"));
 
 		JLabel lblId = new JLabel("Identificador");
 		panelDatos.add(lblId, "cell 0 1,alignx center");
@@ -429,11 +482,28 @@ public class VistaCliente extends JFrame {
 		panelDatos.add(textFieldOxygenation, "cell 1 10,growx");
 		textFieldOxygenation.setColumns(10);
 
+		JLabel lblCrecimientoDeEt = new JLabel("Crecimiento de ET");
+		panelDatos.add(lblCrecimientoDeEt, "cell 0 11,alignx center");
+
+		textFieldETCulture = new JTextField();
+		textFieldETCulture.setEditable(false);
+		panelDatos.add(textFieldETCulture, "cell 1 11,growx");
+		textFieldETCulture.setColumns(10);
+
+		JLabel lblMismaBacteria = new JLabel("Misma Bacteria");
+		panelDatos.add(lblMismaBacteria, "cell 0 12,alignx center");
+
+		textFieldSameBacteria = new JTextField();
+		textFieldSameBacteria.setEditable(false);
+		panelDatos.add(textFieldSameBacteria, "cell 1 12,growx");
+		textFieldSameBacteria.setColumns(10);
+
 		JPanel panelEntradaInterior = new JPanel();
 		panelInformacion.add(panelEntradaInterior);
 		panelEntradaInterior.setLayout(new BorderLayout(0, 0));
 
 		JLabel tituloEntrada = new JLabel("Paciente en vMR");
+		tituloEntrada.setBorder(BorderFactory.createEmptyBorder(0, 0, 10, 0));
 		tituloEntrada.setFont(new Font("Tahoma", Font.PLAIN, 14));
 		tituloEntrada.setHorizontalAlignment(SwingConstants.CENTER);
 		panelEntradaInterior.add(tituloEntrada, BorderLayout.NORTH);
@@ -447,6 +517,7 @@ public class VistaCliente extends JFrame {
 		panelSalidaInterior.setLayout(new BorderLayout(0, 0));
 
 		JLabel tituloSalida = new JLabel("Respuesta del CDSS");
+		tituloSalida.setBorder(BorderFactory.createEmptyBorder(0, 0, 10, 0));
 		tituloSalida.setFont(new Font("Tahoma", Font.PLAIN, 14));
 		tituloSalida.setHorizontalAlignment(SwingConstants.CENTER);
 		panelSalidaInterior.add(tituloSalida, BorderLayout.NORTH);
