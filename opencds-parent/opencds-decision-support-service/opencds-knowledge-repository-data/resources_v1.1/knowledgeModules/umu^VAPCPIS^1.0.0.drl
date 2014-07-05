@@ -656,9 +656,9 @@ rule "returnCPISValue"
   		$person : EvaluatedPerson()
   		// tiene un observation result asociado a esa persona
   		// si es del tipo CPIS se devuelve en la salida
-  		$os : ObservationResult(evaluatedPersonId == $person.id && observationFocus.getCode()=="CPIS")
+  		$cpis : ObservationResult(evaluatedPersonId == $person.id && observationFocus.getCode()=="CPIS")
     then
-    	$os.setToBeReturned(true);
+    	$cpis.setToBeReturned(true);
 end
 
 // CPIS DIAGNOSIS RULES

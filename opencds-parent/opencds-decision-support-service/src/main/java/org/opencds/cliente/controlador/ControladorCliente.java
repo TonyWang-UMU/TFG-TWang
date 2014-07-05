@@ -24,6 +24,7 @@ import org.omg.dss.evaluation.requestresponse.DataRequirementItemData;
 import org.omg.dss.evaluation.requestresponse.EvaluationRequest;
 import org.omg.dss.evaluation.requestresponse.FinalKMEvaluationResponse;
 import org.omg.dss.evaluation.requestresponse.KMEvaluationRequest;
+import org.opencds.cliente.modelo.Booleano;
 import org.opencds.cliente.modelo.Paciente;
 import org.opencds.cliente.vista.VistaCliente;
 import org.opencds.common.utilities.FileUtility;
@@ -62,16 +63,14 @@ public class ControladorCliente {
 		String observationsResults = "";
 		observationsResults += "\t\t\t<observationResults>\n";
 		// aqui cada uno de los observations result
-		// TODO
+		// TODO Hay que comprobar los oid de los observation result, el del root
+		// y el code de cada campo con alguno real
 
 		// temperatura
 		if (paciente.tieneTemperatura()) {
 			observationsResults += "\t\t\t\t<observationResult>\n";
-			// TODO es el oid de un observation result
 			observationsResults += "\t\t\t\t\t<templateId root=\"2.16.840.1.113883.10.20.1.31\"/>\n";
-			// TODO cual es la id de este observation? tiene que ser unico
 			observationsResults += "\t\t\t\t\t<id root=\"2.16.840.1.113883.5.10636\"/>\n";
-			// TODO el code me lo invento? no encuentro nada..
 			observationsResults += "\t\t\t\t\t<observationFocus code=\"temp_corp\" codeSystem=\"2.16.840.1.113883.6.1\" displayName=\"Temperatura\"/>\n";
 			observationsResults += "\t\t\t\t\t<observationValue>\n";
 			observationsResults += "\t\t\t\t\t\t<physicalQuantity value=\""
@@ -84,11 +83,8 @@ public class ControladorCliente {
 		// leucocitos
 		if (paciente.tieneLeucocitos()) {
 			observationsResults += "\t\t\t\t<observationResult>\n";
-			// TODO es el oid de un observation result
 			observationsResults += "\t\t\t\t\t<templateId root=\"2.16.840.1.113883.10.20.1.31\"/>\n";
-			// TODO cual es la id de este observation? tiene que ser unico
 			observationsResults += "\t\t\t\t\t<id root=\"2.16.840.1.113883.5.10636\"/>\n";
-			// TODO el code me lo invento? no encuentro nada..
 			observationsResults += "\t\t\t\t\t<observationFocus code=\"pWBC\" codeSystem=\"2.16.840.1.113883.6.1\" displayName=\"Leucocitos\"/>\n";
 			observationsResults += "\t\t\t\t\t<observationValue>\n";
 			observationsResults += "\t\t\t\t\t\t<integer value=\""
@@ -100,11 +96,8 @@ public class ControladorCliente {
 		// secrecion traqueal
 		if (paciente.tieneSecTraq()) {
 			observationsResults += "\t\t\t\t<observationResult>\n";
-			// TODO es el oid de un observation result
 			observationsResults += "\t\t\t\t\t<templateId root=\"2.16.840.1.113883.10.20.1.31\"/>\n";
-			// TODO cual es la id de este observation? tiene que ser unico
 			observationsResults += "\t\t\t\t\t<id root=\"2.16.840.1.113883.5.10636\"/>\n";
-			// TODO el code me lo invento? no encuentro nada..
 			observationsResults += "\t\t\t\t\t<observationFocus code=\"sec_traq\" codeSystem=\"2.16.840.1.113883.6.1\" displayName=\"Secrecion Traqueal\"/>\n";
 			observationsResults += "\t\t\t\t\t<observationValue>\n";
 			observationsResults += "\t\t\t\t\t\t<text value=\""
@@ -116,11 +109,8 @@ public class ControladorCliente {
 		// rayos x en el pecho
 		if (paciente.tieneXRayosPecho()) {
 			observationsResults += "\t\t\t\t<observationResult>\n";
-			// TODO es el oid de un observation result
 			observationsResults += "\t\t\t\t\t<templateId root=\"2.16.840.1.113883.10.20.1.31\"/>\n";
-			// TODO cual es la id de este observation? tiene que ser unico
 			observationsResults += "\t\t\t\t\t<id root=\"2.16.840.1.113883.5.10636\"/>\n";
-			// TODO el code me lo invento? no encuentro nada..
 			observationsResults += "\t\t\t\t\t<observationFocus code=\"x_ray_chest\" codeSystem=\"2.16.840.1.113883.6.1\" displayName=\"Rayos X del Pecho\"/>\n";
 			observationsResults += "\t\t\t\t\t<observationValue>\n";
 			observationsResults += "\t\t\t\t\t\t<text value=\""
@@ -132,11 +122,8 @@ public class ControladorCliente {
 		// oxygenation
 		if (paciente.tieneOxigenacion()) {
 			observationsResults += "\t\t\t\t<observationResult>\n";
-			// TODO es el oid de un observation result
 			observationsResults += "\t\t\t\t\t<templateId root=\"2.16.840.1.113883.10.20.1.31\"/>\n";
-			// TODO cual es la id de este observation? tiene que ser unico
 			observationsResults += "\t\t\t\t\t<id root=\"2.16.840.1.113883.5.10636\"/>\n";
-			// TODO el code me lo invento? no encuentro nada..
 			observationsResults += "\t\t\t\t\t<observationFocus code=\"oxygenation\" codeSystem=\"2.16.840.1.113883.6.1\" displayName=\"Oxigenacion\"/>\n";
 			observationsResults += "\t\t\t\t\t<observationValue>\n";
 			observationsResults += "\t\t\t\t\t\t<integer value=\""
@@ -145,44 +132,41 @@ public class ControladorCliente {
 			observationsResults += "\t\t\t\t</observationResult>\n";
 		}
 
-		// los valores booleanos se ponen siempre en el fichero de salida
-
 		// ARDS
-		observationsResults += "\t\t\t\t<observationResult>\n";
-		// TODO es el oid de un observation result
-		observationsResults += "\t\t\t\t\t<templateId root=\"2.16.840.1.113883.10.20.1.31\"/>\n";
-		// TODO cual es la id de este observation? tiene que ser unico
-		observationsResults += "\t\t\t\t\t<id root=\"2.16.840.1.113883.5.10636\"/>\n";
-		// TODO el code me lo invento? no encuentro nada..
-		observationsResults += "\t\t\t\t\t<observationFocus code=\"ARDS\" codeSystem=\"2.16.840.1.113883.6.1\" displayName=\"Sindrome de distres respiratorio agudo\"/>\n";
-		observationsResults += "\t\t\t\t\t<observationValue>\n";
-		observationsResults += "\t\t\t\t\t\t<boolean value=\""
-				+ paciente.isARDS() + "\"/>\n";
-		observationsResults += "\t\t\t\t\t</observationValue>\n";
-		observationsResults += "\t\t\t\t</observationResult>\n";
+		if (paciente.getARDS() != Booleano.NONE) {
+			observationsResults += "\t\t\t\t<observationResult>\n";
+			observationsResults += "\t\t\t\t\t<templateId root=\"2.16.840.1.113883.10.20.1.31\"/>\n";
+			observationsResults += "\t\t\t\t\t<id root=\"2.16.840.1.113883.5.10636\"/>\n";
+			observationsResults += "\t\t\t\t\t<observationFocus code=\"ARDS\" codeSystem=\"2.16.840.1.113883.6.1\" displayName=\"Sindrome de distres respiratorio agudo\"/>\n";
+			observationsResults += "\t\t\t\t\t<observationValue>\n";
+			if (paciente.tieneARDS())
+				observationsResults += "\t\t\t\t\t\t<boolean value=\"true\"/>\n";
+			else {
+				observationsResults += "\t\t\t\t\t\t<boolean value=\"false\"/>\n";
+			}
+			observationsResults += "\t\t\t\t\t</observationValue>\n";
+			observationsResults += "\t\t\t\t</observationResult>\n";
 
+		}
 		// Progresion de infiltracion en rayos X
-
-		observationsResults += "\t\t\t\t<observationResult>\n";
-		// TODO es el oid de un observation result
-		observationsResults += "\t\t\t\t\t<templateId root=\"2.16.840.1.113883.10.20.1.31\"/>\n";
-		// TODO cual es la id de este observation? tiene que ser unico
-		observationsResults += "\t\t\t\t\t<id root=\"2.16.840.1.113883.5.10636\"/>\n";
-		// TODO el code me lo invento? no encuentro nada..
-		observationsResults += "\t\t\t\t\t<observationFocus code=\"x_ray_chest_progression\" codeSystem=\"2.16.840.1.113883.6.1\" displayName=\"Progression of infiltrate from prior radiographs\"/>\n";
-		observationsResults += "\t\t\t\t\t<observationValue>\n";
-		observationsResults += "\t\t\t\t\t\t<boolean value=\""
-				+ paciente.isProgresion_infiltracion_rayos_x_pecho() + "\"/>\n";
-		observationsResults += "\t\t\t\t\t</observationValue>\n";
-		observationsResults += "\t\t\t\t</observationResult>\n";
+		if (paciente.getProgresion_infiltracion_rayos_x_pecho() != Booleano.NONE) {
+			observationsResults += "\t\t\t\t<observationResult>\n";
+			observationsResults += "\t\t\t\t\t<templateId root=\"2.16.840.1.113883.10.20.1.31\"/>\n";
+			observationsResults += "\t\t\t\t\t<id root=\"2.16.840.1.113883.5.10636\"/>\n";
+			observationsResults += "\t\t\t\t\t<observationFocus code=\"x_ray_chest_progression\" codeSystem=\"2.16.840.1.113883.6.1\" displayName=\"Progression of infiltrate from prior radiographs\"/>\n";
+			observationsResults += "\t\t\t\t\t<observationValue>\n";
+			if (paciente.tieneEvolucionXRayos())
+				observationsResults += "\t\t\t\t\t\t<boolean value=\"true\"/>\n";
+			else
+				observationsResults += "\t\t\t\t\t\t<boolean value=\"false\"/>\n";
+			observationsResults += "\t\t\t\t\t</observationValue>\n";
+			observationsResults += "\t\t\t\t</observationResult>\n";
+		}
 
 		// valor del CPIS, este valor se calcula en la salida
 		observationsResults += "\t\t\t\t<observationResult>\n";
-		// TODO es el oid de un observation result
 		observationsResults += "\t\t\t\t\t<templateId root=\"2.16.840.1.113883.10.20.1.31\"/>\n";
-		// TODO cual es la id de este observation? tiene que ser unico
 		observationsResults += "\t\t\t\t\t<id root=\"2.16.840.1.113883.5.10636\"/>\n";
-		// TODO el code me lo invento? no encuentro nada..
 		observationsResults += "\t\t\t\t\t<observationFocus code=\"CPIS\" codeSystem=\"2.16.840.1.113883.6.1\" displayName=\"Valor del CPIS\"/>\n";
 		observationsResults += "\t\t\t\t\t<observationValue>\n";
 		observationsResults += "\t\t\t\t\t\t<integer value=\"0\"/>\n";

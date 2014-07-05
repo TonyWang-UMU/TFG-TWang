@@ -25,11 +25,13 @@ public class Paciente {
 	private int leucocitos; // numero de leucocitos del ultimo analisis
 	private String secrecion_traqueal; // informacion sobre secrecion traqueal
 	private String rayos_x_pecho; // informacion sobre los rayos X en el pecho
-	private boolean progresion_infiltracion_rayos_x_pecho; // progresion de
-															// infiltraciones de
-															// anteriores rayos
-															// X
-	private boolean ARDS; // Síndrome de distrés respiratorio agudo
+	private Booleano progresion_infiltracion_rayos_x_pecho = Booleano.NONE; // progresion
+																			// de
+	// infiltraciones de
+	// anteriores rayos
+	// X
+	private Booleano ARDS = Booleano.NONE; // Síndrome de distrés respiratorio
+											// agudo
 	private int oxigenacion; // valor de la oxigenacion
 
 	// 2. encounter events
@@ -142,19 +144,19 @@ public class Paciente {
 	 * Metodo que comprueba si tiene evolucion de infiltracion en rayos X de
 	 * pecho anteriores
 	 * 
-	 * @return True si tiene, false si no
+	 * @return True si tiene, false si no o si no se sabe
 	 */
 	public boolean tieneEvolucionXRayos() {
-		return this.progresion_infiltracion_rayos_x_pecho;
+		return this.progresion_infiltracion_rayos_x_pecho == Booleano.TRUE;
 	}
 
 	/**
 	 * Metodo que comprueba si tiene ARDS
 	 * 
-	 * @return True si tiene, false si no
+	 * @return True si tiene, false si no o n/d
 	 */
 	public boolean tieneARDS() {
-		return ARDS;
+		return this.ARDS == Booleano.TRUE;
 	}
 
 	public boolean tieneOxigenacion() {
@@ -182,8 +184,9 @@ public class Paciente {
 		// TODO terminar con todos los tipos de observation
 		return this.tieneTemperatura() || this.tieneLeucocitos()
 				|| this.tieneSecTraq() || this.tieneXRayosPecho()
-				|| this.tieneARDS() || this.tieneIdentificador()
-				|| this.tieneOxigenacion();
+				|| this.tieneARDS() || this.ARDS == Booleano.FALSE
+				|| this.progresion_infiltracion_rayos_x_pecho == Booleano.FALSE
+				|| this.tieneIdentificador() || this.tieneOxigenacion();
 	}
 
 	/**
@@ -294,20 +297,20 @@ public class Paciente {
 		this.rayos_x_pecho = rayos_x_pecho;
 	}
 
-	public boolean isProgresion_infiltracion_rayos_x_pecho() {
+	public Booleano getProgresion_infiltracion_rayos_x_pecho() {
 		return progresion_infiltracion_rayos_x_pecho;
 	}
 
 	public void setProgresion_infiltracion_rayos_x_pecho(
-			boolean progresion_infiltracion_rayos_x_pecho) {
+			Booleano progresion_infiltracion_rayos_x_pecho) {
 		this.progresion_infiltracion_rayos_x_pecho = progresion_infiltracion_rayos_x_pecho;
 	}
 
-	public boolean isARDS() {
+	public Booleano getARDS() {
 		return ARDS;
 	}
 
-	public void setARDS(boolean aRDS) {
+	public void setARDS(Booleano aRDS) {
 		ARDS = aRDS;
 	}
 

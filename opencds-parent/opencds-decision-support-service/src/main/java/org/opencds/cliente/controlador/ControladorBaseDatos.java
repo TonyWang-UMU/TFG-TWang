@@ -7,6 +7,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
+import org.opencds.cliente.modelo.Booleano;
 import org.opencds.cliente.modelo.Paciente;
 
 public class ControladorBaseDatos {
@@ -108,7 +109,12 @@ public class ControladorBaseDatos {
 		rs.next();
 		// ponemos los atributos obtenidos
 		paciente.setOxigenacion(rs.getInt(1));
-		paciente.setARDS(rs.getBoolean(2));
+		if (rs.getBoolean(2) == true)
+			paciente.setARDS(Booleano.TRUE);
+		else if (rs.getBoolean(2) == false)
+			paciente.setARDS(Booleano.FALSE);
+		if (rs.wasNull())
+			paciente.setARDS(Booleano.NONE);
 		this.desconectar();
 
 	}
@@ -189,7 +195,13 @@ public class ControladorBaseDatos {
 		paciente.setTemperatura(rs.getDouble(1));
 		paciente.setSecrecion_traqueal(rs.getString(2));
 		paciente.setRayos_x_pecho(rs.getString(3));
-		paciente.setProgresion_infiltracion_rayos_x_pecho(rs.getBoolean(4));
+
+		if (rs.getBoolean(4) == true)
+			paciente.setProgresion_infiltracion_rayos_x_pecho(Booleano.TRUE);
+		else if (rs.getBoolean(4) == false)
+			paciente.setProgresion_infiltracion_rayos_x_pecho(Booleano.FALSE);
+		if (rs.wasNull())
+			paciente.setProgresion_infiltracion_rayos_x_pecho(Booleano.NONE);
 		this.desconectar();
 	}
 

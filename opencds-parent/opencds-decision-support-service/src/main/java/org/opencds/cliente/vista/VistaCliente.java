@@ -8,6 +8,7 @@ import javax.swing.border.*;
 
 import org.opencds.cliente.controlador.ControladorBaseDatos;
 import org.opencds.cliente.controlador.ControladorCliente;
+import org.opencds.cliente.modelo.Booleano;
 import org.opencds.cliente.modelo.Paciente;
 
 import net.miginfocom.swing.MigLayout;
@@ -240,14 +241,23 @@ public class VistaCliente extends JFrame {
 						textFieldXRayos.setText("N/D");
 
 					if (paciente.tieneEvolucionXRayos())
-						textFieldEvolucionX.setText("SI");
-					else
-						textFieldEvolucionX.setText("NO");
-
+						textFieldEvolucionX.setText("si");
+					else {
+						if (paciente.getProgresion_infiltracion_rayos_x_pecho() == Booleano.FALSE)
+							textFieldEvolucionX.setText("no");
+						else {
+							textFieldEvolucionX.setText("N/D");
+						}
+					}
 					if (paciente.tieneARDS())
-						textFieldARDS.setText("SI");
-					else
-						textFieldARDS.setText("NO");
+						textFieldARDS.setText("si");
+					else {
+						if (paciente.getARDS() == Booleano.FALSE)
+							textFieldARDS.setText("no");
+						else {
+							textFieldARDS.setText("N/D");
+						}
+					}
 
 					if (paciente.tieneOxigenacion())
 						textFieldOxygenation.setText(String.valueOf(paciente
