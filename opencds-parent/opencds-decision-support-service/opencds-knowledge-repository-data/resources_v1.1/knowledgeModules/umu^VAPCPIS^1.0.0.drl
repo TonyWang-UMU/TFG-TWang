@@ -13,42 +13,58 @@ import org.opencds.vmr.v1_0.internal.datatypes.*;
 import javax.swing.JDialog;
 import javax.swing.JOptionPane;
 
-declare RuleMetadata
-	 @kbStatus(draft)
-	 @kbVersion(1.0.0)
-	 @kbRelationships(None)
-	 @kbSemanticType(drl)
-	 @kbIsoLanguageCode(en-US)
+declare KMMetadata
+
 end
 // rules dialect
 dialect "mvel"
 
-// declare the CPIScore as a time driven event so that we can implement temporal rules
-declare CPIScore
-   @role(event) 
+// METAINFORMATION RULES
+rule "createKMMetainformation"
+	no-loop
+	when
+	then
+		insert(new KMMetadata())
+end
+
+
+rule "ShowKMMetainformation"
+	// REGLA QUE GUARDA LOS METADATOS
+	@kbScopingEntityId(umu)
+	@kbBusinessId(CPISTREATMENT)
+	@kbVersion(1.0.0)
+	@kbStatus(draft)
+	@kbDescription(Rules to diagnose VAP from John Hopkins Clinical Guidelines Infections)
+	@kbIsoLanguageCode(en-US)
+	@kbSourceDocument(John Hopkins Clinical Guidelines Infections)
+	@kbSourceURL(www.hopkinsmedicine.org/amp/guidelines/Antibiotic_guidelines.pdf)
+	salience 500
+	no-loop
+	when
+		eval(1==1)
+	then
+		System.out.println("KM Metainformation: ");
+		System.out.println("Scoping Entity ID: " + drools.getRule().getMetaData().get("kbScopingEntityId"));
+		System.out.println("Version: " + drools.getRule().getMetaData().get("kbVersion"));
+		System.out.println("Status:" + drools.getRule().getMetaData().get("kbStatus"));
+		System.out.println("Description: " + drools.getRule().getMetaData().get("kbDescription"));
+		System.out.println("Language CODE: " + drools.getRule().getMetaData().get("kbIsoLanguageCode"));
+		System.out.println("Document Source: " + drools.getRule().getMetaData().get("kbSourceDocument"));
+		System.out.println("Document URL: " + drools.getRule().getMetaData().get("kbSourceURL"));
 end
 
 // CPIS CALCULATION RULES
 
 rule "CPISHighTemperature"
-	// ********** AUDIT METADATA INFO ********************************
-	// rule source information: sourceDocument, pageNumber, lineRange
-	@sourceDocument(John Hopkins Clinical Guidelines Infections)
 	@pageNumber(80)
  	@lineRange(CPIS calculation table, row 1 column 1)
-	// generic information about the rule: date, ruleDescription, ruleAuthor, ruleVersion
 	@ruleDate(2014-07-01)
 	@ruleDescription("Measures patient's temperature and if within a range adds 0 points to the CPI Score")
 	@ruleAuthor(Tony Wang)
 	@ruleVersion(1.0.0)
-	// clinicalAction (diagnosis, treatment, score,...), infectionType (VAP...), agent, antibiotic)
- 	@clinicalAction(CPISAlert)
- 	@infectionType(VAP)
-	// 	@infectionAgent()
-	//  @infectionAntibiotic()
-	// *********** END OF AUDIT METADATA INFO ************************ 
+	@ruleAction("Added 0 points to CPIS because the patient temperature is between 36.5 and 38.4. \n")
 	lock-on-active
-  	salience 100 
+  	salience 120  
  	no-loop
 	when
     	// existe una persona
@@ -61,36 +77,30 @@ rule "CPISHighTemperature"
   		eval($or.getObservationFocus().getCode()=="temp_corp" && 
   		$or.getObservationValue().getPhysicalQuantity().getValue() > 36.5 
   		&& $or.getObservationValue().getPhysicalQuantity().getValue() <=38.4) 
+  		// obtenemos el objeto que guarda la estructura de la traza
+  		$mi : ObservationResult(evaluatedPersonId == $person.id && observationFocus.getCode()=="cpis_metainfo")
 	then
 		int cpis=$cpis.getObservationValue().getInteger().getValue();
 		cpis+=0;
 		$cpis.getObservationValue().getInteger().setValue(cpis);
         update ($cpis);
-        //System.out.println( "CPIS NOT changed :High Temp, CPI of patient " + $patient.name + " increased by 0, final value = " + $patient.CPIS);
-	
+        // actualizar la metainformacion
+        String metaInfoGuardada = $mi.getObservationValue().getText();
+       	$mi.getObservationValue().setText(metaInfoGuardada+drools.getRule().getMetaData().get("ruleAction"));
+       	update ($mi);
 end 
 
 rule "CPISVeryHighTemperature"
-	// ********** AUDIT METADATA INFO ********************************
-	// rule source information: sourceDocument, pageNumber, lineRange
-  	@sourceDocument(John Hopkins Clinical Guidelines Infections)
   	@pageNumber(80)
   	@lineRange(CPIS calculation table, row 1 column 2)
-	// generic information about the rule: date, ruleDescription, ruleAuthor, ruleVersion
   	@ruleDate(2014-07-01)
   	@ruleDescription("Measures patient's temperature and if within a range adds 1 point to the CPI Score")
   	@ruleAuthor(Tony Wang)
  	@ruleVersion(1.0.0)
-	// clinicalAction (diagnosis, treatment, score,...), infectionType (VAP...), agent, antibiotic)
-  	@clinicalAction(CPISAlert)
-  	@infectionType(VAP)
-  	//@infectionAgent()
-  	//@infectionAntibiotic()
-	// *********** END OF AUDIT METADATA INFO ************************ 
+ 	@ruleAction("Added 1 point to CPIS because the patient temperature is between 38.4 and 38.9. \n")
     lock-on-active
-    salience 100 
+    salience 120  
     no-loop
-   // agenda-group "cpis"
     when
     	// existe una persona
   		$person : EvaluatedPerson()
@@ -102,35 +112,30 @@ rule "CPISVeryHighTemperature"
   		eval($or.getObservationFocus().getCode()=="temp_corp" && 
   		$or.getObservationValue().getPhysicalQuantity().getValue() > 38.4
   		&& $or.getObservationValue().getPhysicalQuantity().getValue() <=38.9) 
+  		// obtenemos el objeto que guarda la estructura de la traza
+  		$mi : ObservationResult(evaluatedPersonId == $person.id && observationFocus.getCode()=="cpis_metainfo")
     then
 		int cpis=$cpis.getObservationValue().getInteger().getValue();
 		cpis+=1;
 		$cpis.getObservationValue().getInteger().setValue(cpis);
         update ($cpis);
-        //System.out.println( "CPIS changed :Very High temp, CPI of patient " + $patient.name + " increased by 1, current value = " + $patient.CPIS);
+        // actualizar la metainformacion
+        String metaInfoGuardada = $mi.getObservationValue().getText();
+       	$mi.getObservationValue().setText(metaInfoGuardada+drools.getRule().getMetaData().get("ruleAction"));
+       	update ($mi);
 end
 
 rule "CPISExtremeTemperature"
-	// ********** AUDIT METADATA INFO ********************************
-	// rule source information: sourceDocument, pageNumber, lineRange
- 	@sourceDocument(John Hopkins Clinical Guidelines Infections)
   	@pageNumber(80)
   	@lineRange(CPIS calculation table, row 1 column 3)
-	// generic information about the rule: date, ruleDescription, ruleAuthor, ruleVersion
 	@ruleDate(2014-07-02)
 	@ruleDescription("Measures patient's temperature and if within a range adds 2 points to the CPI Score")
 	@ruleAuthor(Tony Wang)
 	@ruleVersion(1.0.0)
-	// clinicalAction (diagnosis, treatment, score,...), infectionType (VAP...), agent, antibiotic)
-	@clinicalAction(CPISAlert)
-	@infectionType(VAP)
-	// @infectionAgent()
-	// @infectionAntibiotic()
-	// *********** END OF AUDIT METADATA INFO ************************ 
+	@ruleAction("Added 2 points to CPIS because the patient's temperature is higher than 38.9 or lower than 36.4. \n")
 	lock-on-active
-	salience 100 
+	salience 120 
 	no-loop
-	//agenda-group "cpis"
     when
    		// existe una persona
   		$person : EvaluatedPerson()
@@ -142,35 +147,30 @@ rule "CPISExtremeTemperature"
   		eval($or.getObservationFocus().getCode()=="temp_corp" && 
   		($or.getObservationValue().getPhysicalQuantity().getValue() > 38.9
   		|| $or.getObservationValue().getPhysicalQuantity().getValue() <=36.4))
+  		// obtenemos el objeto que guarda la estructura de la traza
+  		$mi : ObservationResult(evaluatedPersonId == $person.id && observationFocus.getCode()=="cpis_metainfo")
     then
 		int cpis=$cpis.getObservationValue().getInteger().getValue();
 		cpis+=2;
 		$cpis.getObservationValue().getInteger().setValue(cpis);
         update ($cpis);    
-        //System.out.println( "Audit Information: "  + " @clinicalAction "+drools.getRule().getMetaData().get("clinicalAction") );
+        // actualizar la metainformacion
+        String metaInfoGuardada = $mi.getObservationValue().getText();
+       	$mi.getObservationValue().setText(metaInfoGuardada+drools.getRule().getMetaData().get("ruleAction"));
+       	update ($mi);
 end
 
 rule "CPISpWBCMedium"
-	// ********** AUDIT METADATA INFO ********************************
-	// rule source information: sourceDocument, pageNumber, lineRange
-	@sourceDocument(John Hopkins Clinical Guidelines Infections)
 	@pageNumber(80)
 	@lineRange(CPIS calculation table, row 2 column 1)
-	// generic information about the rule: date, ruleDescription, ruleAuthor, ruleVersion
  	@ruleDate(2014-07-02)
  	@ruleDescription("Measures patient's peripheral WBC and if within 4000-11000 adds 0 points to the CPI Score")
 	@ruleAuthor(Tony Wang)
  	@ruleVersion(1.0.0)
-	// clinicalAction (diagnosis, treatment, score,...), infectionType (VAP...), agent, antibiotic)
-  	@clinicalAction(CPISAlert)
-  	@infectionType(VAP)
-  	//@infectionAgent()
-  	//@infectionAntibiotic()
-	// *********** END OF AUDIT METADATA INFO ************************ 
+ 	@ruleAction("Added 0 points to CPIS because the patient's peripheral WBC is between 4000-11000. \n")
 	lock-on-active
-	salience 100
+	salience 120 
 	no-loop
-    //agenda-group "cpis"
     when
     	// existe una persona
   		$person : EvaluatedPerson()
@@ -182,35 +182,29 @@ rule "CPISpWBCMedium"
   		eval($or.getObservationFocus().getCode()=="pWBC" && 
   		$or.getObservationValue().getInteger().getValue() >= 4000
   		&& $or.getObservationValue().getInteger().getValue() <=11000)
+  		// obtenemos el objeto que guarda la estructura de la traza
+  		$mi : ObservationResult(evaluatedPersonId == $person.id && observationFocus.getCode()=="cpis_metainfo")
     then
 		int cpis=$cpis.getObservationValue().getInteger().getValue();
 		cpis+=0;
 		$cpis.getObservationValue().getInteger().setValue(cpis);
         update ($cpis);    
-        //System.out.println( "CPIS changed :Medium pwB, CPI of patient " + $patient.name + " increased by 0, current value = " + $patient.CPIS);
+        String metaInfoGuardada = $mi.getObservationValue().getText();
+       	$mi.getObservationValue().setText(metaInfoGuardada+drools.getRule().getMetaData().get("ruleAction"));
+       	update ($mi);
 end
 
 rule "CPISExtremepWBC"
-	// ********** AUDIT METADATA INFO ********************************
-	// rule source information: sourceDocument, pageNumber, lineRange
-	@sourceDocument(John Hopkins Clinical Guidelines Infections)
 	@pageNumber(80)
 	@lineRange(CPIS calculation table, row 2 column 2)
-	// generic information about the rule: date, ruleDescription, ruleAuthor, ruleVersion
 	@ruleDate(2014-07-02)
 	@ruleDescription("Measures patient's peripheral WBC and if within less than 4000 or higher than 11000 adds 1 point to the CPI Score")
 	@ruleAuthor(Tony Wang)
 	@ruleVersion(1.0.0)
-	// clinicalAction (diagnosis, treatment, score,...), infectionType (VAP...), agent, antibiotic)
-	@clinicalAction(CPISAlert)
-	@infectionType(VAP)
-	//@infectionAgent()
-	//@infectionAntibiotic()
-	// *********** END OF AUDIT METADATA INFO ************************ 
+	@ruleAction("Added 1 point to CPIS because the patient's peripheral WBC is less than 4000 or higher than 11000. \n")
     lock-on-active
-    salience 100
+    salience 120 
     no-loop
-    //agenda-group "cpis"
     when
         // existe una persona
   		$person : EvaluatedPerson()
@@ -222,37 +216,31 @@ rule "CPISExtremepWBC"
   		eval($or.getObservationFocus().getCode()=="pWBC" && 
   		($or.getObservationValue().getInteger().getValue() < 4000
   		|| $or.getObservationValue().getInteger().getValue() > 11000))
+		// obtenemos el objeto que guarda la estructura de la traza
+  		$mi : ObservationResult(evaluatedPersonId == $person.id && observationFocus.getCode()=="cpis_metainfo")
     then
 		int cpis=$cpis.getObservationValue().getInteger().getValue();
 		cpis+=1;
 		$cpis.getObservationValue().getInteger().setValue(cpis);
         update ($cpis);    
-         //System.out.println( "CPIS changed :Extreme pWBC, CPI of patient " + $patient.name + " increased by 1, current value = " + $patient.CPIS);
+        String metaInfoGuardada = $mi.getObservationValue().getText();
+       	$mi.getObservationValue().setText(metaInfoGuardada+drools.getRule().getMetaData().get("ruleAction"));
+       	update ($mi);
 end
 
 // rule to add one extra point if 50% off bands
      
 rule "CPISVeryExtremepWBC"
-	// ********** AUDIT METADATA INFO ********************************
-	// rule source information: sourceDocument, pageNumber, lineRange
-  	@sourceDocument(John Hopkins Clinical Guidelines Infections)
   	@pageNumber(80)
   	@lineRange(CPIS calculation table, row 2 column 2)
-	// generic information about the rule: date, ruleDescription, ruleAuthor, ruleVersion
   	@ruleDate(2014-07-02)
   	@ruleDescription("Measures patient's peripheral WBC and if within less than 2000 or higher than 16500 adds 1 extra point to the CPI Score")
   	@ruleAuthor(Tony Wang)
   	@ruleVersion(1.0.0)
-	// clinicalAction (diagnosis, treatment, score,...), infectionType (VAP...), agent, antibiotic)
-  	@clinicalAction(CPISAlert)
-  	@infectionType(VAP)
-  	//@infectionAgent()
-  	//@infectionAntibiotic()
-	// *********** END OF AUDIT METADATA INFO ************************ 
+  	@ruleAction("Added 1 extra point to CPIS because the patient's peripheral WBC is algo less than 2000 or higher than 16500. \n")
     lock-on-active
-    salience 100
+    salience 110
     no-loop
-    //agenda-group "cpis"
     when
 		// existe una persona
   		$person : EvaluatedPerson()
@@ -264,36 +252,30 @@ rule "CPISVeryExtremepWBC"
   		eval($or.getObservationFocus().getCode()=="pWBC" && 
   		($or.getObservationValue().getInteger().getValue() < 2000
   		|| $or.getObservationValue().getInteger().getValue() > 16500))
+		// obtenemos el objeto que guarda la estructura de la traza
+  		$mi : ObservationResult(evaluatedPersonId == $person.id && observationFocus.getCode()=="cpis_metainfo")
     then
 		int cpis=$cpis.getObservationValue().getInteger().getValue();
 		cpis+=1;
 		$cpis.getObservationValue().getInteger().setValue(cpis);
-        update ($cpis);    
-        //System.out.println( "Very extreme pWBC, CPI of patient " + $patient.name + " increased by 1, current value = " + $patient.CPIS);
+        update ($cpis); 
+       	String metaInfoGuardada = $mi.getObservationValue().getText();
+       	$mi.getObservationValue().setText(metaInfoGuardada+drools.getRule().getMetaData().get("ruleAction"));
+       	update ($mi);
 end
 
 // rule to add cero points if no tracheal secretions in place
 rule "CPISNoTrachealSecretion"
-	// ********** AUDIT METADATA INFO ********************************
-	// rule source information: sourceDocument, pageNumber, lineRange
-	@sourceDocument(John Hopkins Clinical Guidelines Infections)
   	@pageNumber(80)
 	@lineRange(CPIS calculation table, row 3 column 1)
-	// generic information about the rule: date, ruleDescription, ruleAuthor, ruleVersion
 	@ruleDate(2014-02-07)
 	@ruleDescription("Measures patient's tracheal secretions and if none adds 0 point to the CPI Score")
 	@ruleAuthor(Tony Wang)
 	@ruleVersion(1.0.0)
-	// clinicalAction (diagnosis, treatment, score,...), infectionType (VAP...), agent, antibiotic)
-	@clinicalAction(CPISAlert)
-	@infectionType(VAP)
-	//@infectionAgent()
-	//@infectionAntibiotic()
-	// *********** END OF AUDIT METADATA INFO ************************ 
+	@ruleAction("Added 0 points to CPIS because the patient's doesn't have tracheal secretions. \n")
 	lock-on-active
-	salience 100 
+	salience 120  
 	no-loop
-	//agenda-group "cpis"
 	when
 		// existe una persona
   		$person : EvaluatedPerson()
@@ -304,36 +286,30 @@ rule "CPISNoTrachealSecretion"
   		// el observation result es del tipo Secrecion traqueal y el valor sea NO
   		eval($or.getObservationFocus().getCode()=="sec_traq"
   		&& $or.getObservationValue().getText() == "no")
+		// obtenemos el objeto que guarda la estructura de la traza
+  		$mi : ObservationResult(evaluatedPersonId == $person.id && observationFocus.getCode()=="cpis_metainfo")
 	then
 		int cpis=$cpis.getObservationValue().getInteger().getValue();
 		cpis+=0;
 		$cpis.getObservationValue().getInteger().setValue(cpis);
         update ($cpis);    
-       //System.out.println( "CPIS changed :No tracheal secretion, CPI of patient " + $patient.name + " increased by 0, current value = " + $patient.CPIS);  
+        String metaInfoGuardada = $mi.getObservationValue().getText();
+       	$mi.getObservationValue().setText(metaInfoGuardada+drools.getRule().getMetaData().get("ruleAction"));
+       	update ($mi);
 end
 
 // rule to add 1 point to CPIS is tracheal secretions are non-purulent
 rule "CPISNoPurulentTrachealSecretion"
-	// ********** AUDIT METADATA INFO ********************************
-	// rule source information: sourceDocument, pageNumber, lineRange
-	@sourceDocument(John Hopkins Clinical Guidelines Infections)
 	@pageNumber(80)
 	@lineRange(CPIS calculation table, row 3 column 2)
-	// generic information about the rule: date, ruleDescription, ruleAuthor, ruleVersion
 	@ruleDate(2014-07-02)
 	@ruleDescription("Measures patient's tracheal secretions and if non-purulent secretions found adds 1 point to the CPI Score")
 	@ruleAuthor(Tony Wang)
 	@ruleVersion(1.0.0)
-	// clinicalAction (diagnosis, treatment, score,...), infectionType (VAP...), agent, antibiotic)
-	@clinicalAction(CPISAlert)
-	@infectionType(VAP)
-	//@infectionAgent()
-	//@infectionAntibiotic()
-	// *********** END OF AUDIT METADATA INFO ************************ 
+	@ruleAction("Added 1 point to CPIS because the patient's has non purulent tracheal secretions. \n")
     lock-on-active
-    salience 100 
+    salience 120  
     no-loop
-    //agenda-group "cpis"
     when
     	// existe una persona
   		$person : EvaluatedPerson()
@@ -344,36 +320,30 @@ rule "CPISNoPurulentTrachealSecretion"
   		// el observation result es del tipo Secrecion traqueal y el valor sea no purulenta
   		eval($or.getObservationFocus().getCode()=="sec_traq"
   		&& $or.getObservationValue().getText() == "no purulenta")
+		// obtenemos el objeto que guarda la estructura de la traza
+  		$mi : ObservationResult(evaluatedPersonId == $person.id && observationFocus.getCode()=="cpis_metainfo")
     then
 		int cpis=$cpis.getObservationValue().getInteger().getValue();
 		cpis+=1;
 		$cpis.getObservationValue().getInteger().setValue(cpis);
         update ($cpis);    
-        //System.out.println( "CPIS changed :Non purulent tracheal secretion, CPI of patient " + $patient.name + " increased by 1, current value = " + $patient.CPIS);
+        String metaInfoGuardada = $mi.getObservationValue().getText();
+       	$mi.getObservationValue().setText(metaInfoGuardada+drools.getRule().getMetaData().get("ruleAction"));
+       	update ($mi);
 end
 
 // rule to add 2 points to CPIS is tracheal secretions are purulent
 rule "CPISPurulentTrachealSecretion"
-	// ********** AUDIT METADATA INFO ********************************
-	// rule source information: sourceDocument, pageNumber, lineRange
-	@sourceDocument(John Hopkins Clinical Guidelines Infections)
 	@pageNumber(80)
 	@lineRange(CPIS calculation table, row 3 column 2)
-	// generic information about the rule: date, ruleDescription, ruleAuthor, ruleVersion
 	@ruleDate(2014-07-02)
 	@ruleDescription("Measures patient's tracheal secretions and if purulent secretions found adds 2 points to the CPI Score")
 	@ruleAuthor(Tony Wang)
 	@ruleVersion(1.0.0)
-	// clinicalAction (diagnosis, treatment, score,...), infectionType (VAP...), agent, antibiotic)
-	@clinicalAction(CPISAlert)
-	@infectionType(VAP)
-	//@infectionAgent()
-	//@infectionAntibiotic()
-	// *********** END OF AUDIT METADATA INFO ************************ 
+	@ruleAction("Added 2 points to CPIS because the patient's has purulent tracheal secretions. \n")
     lock-on-active
-    salience 100 
+    salience 120  
     no-loop
-    //agenda-group "cpis"
     when
     	// existe una persona
   		$person : EvaluatedPerson()
@@ -383,37 +353,31 @@ rule "CPISPurulentTrachealSecretion"
   		$cpis : ObservationResult(evaluatedPersonId == $person.id && observationFocus.getCode()=="CPIS")
   		// el observation result es del tipo Secrecion traqueal y el valor sea no purulenta
   		eval($or.getObservationFocus().getCode()=="sec_traq"
-  		&& $or.getObservationValue().getText() == "purulenta")    
+  		&& $or.getObservationValue().getText() == "purulenta")
+		// obtenemos el objeto que guarda la estructura de la traza
+  		$mi : ObservationResult(evaluatedPersonId == $person.id && observationFocus.getCode()=="cpis_metainfo")
     then
 		int cpis=$cpis.getObservationValue().getInteger().getValue();
 		cpis+=2;
 		$cpis.getObservationValue().getInteger().setValue(cpis);
         update ($cpis);    
-        //System.out.println( "CPIS changed :Purulent tracheal secretion, CPI of patient " + $patient.name + " increased by 2, current value = " + $patient.CPIS);     
+        String metaInfoGuardada = $mi.getObservationValue().getText();
+       	$mi.getObservationValue().setText(metaInfoGuardada+drools.getRule().getMetaData().get("ruleAction"));
+       	update ($mi);
 end
 
 // if chest Xray shows no infiltrates, no points are added
 rule "CPISNoInfiltrateChestXRay"
-	// ********** AUDIT METADATA INFO ********************************
-	// rule source information: sourceDocument, pageNumber, lineRange
-	@sourceDocument(John Hopkins Clinical Guidelines Infections)
 	@pageNumber(80)
 	@lineRange(CPIS calculation table, row 4 column 1)
-	// generic information about the rule: date, ruleDescription, ruleAuthor, ruleVersion
 	@ruleDate(2014-07-02)
 	@ruleDescription("Measures patient's chest X rays and if no infiltrates found adds 0 points to the CPI Score")
 	@ruleAuthor(Tony Wang)
 	@ruleVersion(1.0.0)
-	// clinicalAction (diagnosis, treatment, score,...), infectionType (VAP...), agent, antibiotic)
-	@clinicalAction(CPISAlert)
-	@infectionType(VAP)
-	//@infectionAgent()
-	//@infectionAntibiotic()
-	// *********** END OF AUDIT METADATA INFO ************************ 
+	@ruleAction("Added 0 points to CPIS because the patient doesn't have infiltrates in the chest x rays. \n")
     lock-on-active
-    salience 100 
+    salience 120  
     no-loop
-    //agenda-group "cpis"
     when
         // existe una persona
   		$person : EvaluatedPerson()
@@ -423,37 +387,31 @@ rule "CPISNoInfiltrateChestXRay"
   		$cpis : ObservationResult(evaluatedPersonId == $person.id && observationFocus.getCode()=="CPIS")
   		// el observation result es del tipo rayos X y el valor no infiltrado
   		eval($or.getObservationFocus().getCode()=="x_ray_chest"
-  		&& $or.getObservationValue().getText() == "no infiltrado")    
+  		&& $or.getObservationValue().getText() == "no infiltrado")
+ 		// obtenemos el objeto que guarda la estructura de la traza
+  		$mi : ObservationResult(evaluatedPersonId == $person.id && observationFocus.getCode()=="cpis_metainfo")
     then
 		int cpis=$cpis.getObservationValue().getInteger().getValue();
 		cpis+=0;
 		$cpis.getObservationValue().getInteger().setValue(cpis);
         update ($cpis);    
-        //System.out.println( "CPIS changed :No infiltrate chest X ray, CPI of patient " + $patient.name + " increased by 0, current value = " + $patient.CPIS);
+        String metaInfoGuardada = $mi.getObservationValue().getText();
+       	$mi.getObservationValue().setText(metaInfoGuardada+drools.getRule().getMetaData().get("ruleAction"));
+       	update ($mi);
 end
 
 // if chest XRay shows diffuse or patchy infiltrates, add 1 point
 rule "CPISDiffuseOrPatchyInfiltratesChestXRay"
-	// ********** AUDIT METADATA INFO ********************************
-	// rule source information: sourceDocument, pageNumber, lineRange
-	@sourceDocument(John Hopkins Clinical Guidelines Infections)
 	@pageNumber(80)
 	@lineRange(CPIS calculation table, row 4 column 2)
-	// generic information about the rule: date, ruleDescription, ruleAuthor, ruleVersion
 	@ruleDate(2014-07-02)
 	@ruleDescription("Measures patient's chest X rays and if diffuse or patchy infiltrates found adds 1 points to the CPI Score")
 	@ruleAuthor(Tony Wang)
 	@ruleVersion(1.0.0)
-	// clinicalAction (diagnosis, treatment, score,...), infectionType (VAP...), agent, antibiotic)
-	@clinicalAction(CPISAlert)
-	@infectionType(VAP)
-	//@infectionAgent()
-	//@infectionAntibiotic()
-	// *********** END OF AUDIT METADATA INFO ************************ 
+	@ruleAction("Added 1 point to CPIS because the patient has diffuse or patchy infiltrates in the chest x rays. \n")
     lock-on-active
-    salience 100 
+    salience 120  
     no-loop
-    //agenda-group "cpis"
     when
         // existe una persona
   		$person : EvaluatedPerson()
@@ -464,37 +422,30 @@ rule "CPISDiffuseOrPatchyInfiltratesChestXRay"
   		// el observation result es del tipo rayos X y el valor es difuso
   		eval($or.getObservationFocus().getCode()=="x_ray_chest"
   		&& $or.getObservationValue().getText() == "infiltracion difusa")
+  		// obtenemos el objeto que guarda la estructura de la traza
+  		$mi : ObservationResult(evaluatedPersonId == $person.id && observationFocus.getCode()=="cpis_metainfo")
     then
 		int cpis=$cpis.getObservationValue().getInteger().getValue();
 		cpis+=1;
 		$cpis.getObservationValue().getInteger().setValue(cpis);
         update ($cpis);    
-        //System.out.println( "CPIS changed :Diffuse or patchy infiltrates chest X ray, CPI of patient " + $patient.name + " increased by 1, current value = " + $patient.CPIS);
-        
+	    String metaInfoGuardada = $mi.getObservationValue().getText();
+       	$mi.getObservationValue().setText(metaInfoGuardada+drools.getRule().getMetaData().get("ruleAction"));
+       	update ($mi);        
 end
 
 // if chest Xray shows localized infiltrates add 2 points
 rule "CPISLocalizedInfiltrateChestXRay"
-	// ********** AUDIT METADATA INFO ********************************
-	// rule source information: sourceDocument, pageNumber, lineRange
-	@sourceDocument(John Hopkins Clinical Guidelines Infections)
 	@pageNumber(80)
 	@lineRange(CPIS calculation table, row 4 column 3)
-	// generic information about the rule: date, ruleDescription, ruleAuthor, ruleVersion
 	@ruleDate(2014-07-02)
 	@ruleDescription("Measures patient's chest X rays and if localized infiltrates found adds 2 points to the CPI Score")
 	@ruleAuthor(Tony Wang)
 	@ruleVersion(1.0.0)
-	// clinicalAction (diagnosis, treatment, score,...), infectionType (VAP...), agent, antibiotic)
-	@clinicalAction(CPISAlert)
-	@infectionType(VAP)
-	//@infectionAgent()
-	//@infectionAntibiotic()
-	// *********** END OF AUDIT METADATA INFO ************************ 
+	@ruleAction("Added 2 points to CPIS because the patient has localized infiltrates in the chest x rays. \n")
 	lock-on-active
-    salience 100 
+    salience 120  
     no-loop
-    //agenda-group "cpis"
     when
     	// existe una persona
   		$person : EvaluatedPerson()
@@ -505,36 +456,30 @@ rule "CPISLocalizedInfiltrateChestXRay"
   		// el observation result es del tipo rayos X y el valor es localizada
   		eval($or.getObservationFocus().getCode()=="x_ray_chest"
   		&& $or.getObservationValue().getText() == "infiltracion localizada")
+  		// obtenemos el objeto que guarda la estructura de la traza
+  		$mi : ObservationResult(evaluatedPersonId == $person.id && observationFocus.getCode()=="cpis_metainfo")
     then
 		int cpis=$cpis.getObservationValue().getInteger().getValue();
 		cpis+=2;
 		$cpis.getObservationValue().getInteger().setValue(cpis);
         update ($cpis);    
-        //System.out.println( "CPIS changed :Localized infiltrates chest X ray, CPI of patient " + $patient.name + " increased by 2, current value = " + $patient.CPIS);
+	    String metaInfoGuardada = $mi.getObservationValue().getText();
+       	$mi.getObservationValue().setText(metaInfoGuardada+drools.getRule().getMetaData().get("ruleAction"));
+       	update ($mi); 
 end
 
 // rule to add 0 points if no progression of infiltrate from prior radiographs    
 rule "CPISNoInfiltrateProgression"
-	// ********** AUDIT METADATA INFO ********************************
-	// rule source information: sourceDocument, pageNumber, lineRange
-	@sourceDocument(John Hopkins Clinical Guidelines Infections)
 	@pageNumber(80)
 	@lineRange(CPIS calculation table, row 5 column 1)
-	// generic information about the rule: date, ruleDescription, ruleAuthor, ruleVersion
 	@ruleDate(2014-07-03)
 	@ruleDescription("Measures patient's chest X rays and if no progression found over prior x-rays adds 0 points to the CPI Score")
 	@ruleAuthor(Tony Wang)
 	@ruleVersion(1.0.0)
-	// clinicalAction (diagnosis, treatment, score,...), infectionType (VAP...), agent, antibiotic)
-	@clinicalAction(CPISAlert)
-	@infectionType(VAP)
-	//@infectionAgent()
-	//@infectionAntibiotic()
-	// *********** END OF AUDIT METADATA INFO ************************ 
+	@ruleAction("Added 0 points to CPIS because the patient has not progression of infiltrate from prior chest x rays radiographs. \n")
     lock-on-active
-    salience 100 
+    salience 110
     no-loop
-    //agenda-group "cpis"
     when
         // existe una persona
   		$person : EvaluatedPerson()
@@ -545,37 +490,31 @@ rule "CPISNoInfiltrateProgression"
   		// el observation result es del tipo progresion en infiltracion de rayos X y es falso
   		eval($or.getObservationFocus().getCode()=="x_ray_chest_progression"
   		&& $or.getObservationValue().get_boolean().isValue() == false)
+  		// obtenemos el objeto que guarda la estructura de la traza
+  		$mi : ObservationResult(evaluatedPersonId == $person.id && observationFocus.getCode()=="cpis_metainfo")
     then
 		int cpis=$cpis.getObservationValue().getInteger().getValue();
 		cpis+=0;
 		$cpis.getObservationValue().getInteger().setValue(cpis);
         update ($cpis);    
-        //System.out.println( "CPIS changed :No infiltrate progression, CPI of patient " + $patient.name + " increased by 0, current value = " + $patient.CPIS);
+	    String metaInfoGuardada = $mi.getObservationValue().getText();
+       	$mi.getObservationValue().setText(metaInfoGuardada+drools.getRule().getMetaData().get("ruleAction"));
+       	update ($mi); 
 end
 
 
 // rule to add 2 points to CPIS if there is progression in the infiltrate
 rule "CPISPositiveInfiltrateProgression"
-	// ********** AUDIT METADATA INFO ********************************
-	// rule source information: sourceDocument, pageNumber, lineRange
-	@sourceDocument(John Hopkins Clinical Guidelines Infections)
 	@pageNumber(80)
 	@lineRange(CPIS calculation table, row 5 column 3)
-	// generic information about the rule: date, ruleDescription, ruleAuthor, ruleVersion
 	@ruleDate(2014-07-05)
 	@ruleDescription("Measures patient's chest X rays and if progression found adds 2 points to the CPI Score")
 	@ruleAuthor(Tony Wang)
 	@ruleVersion(1.0.0)
-	// clinicalAction (diagnosis, treatment, score,...), infectionType (VAP...), agent, antibiotic)
-	@clinicalAction(CPISAlert)
-	@infectionType(VAP)
- 	//@infectionAgent()
-	//@infectionAntibiotic()
-	// *********** END OF AUDIT METADATA INFO ************************ 
+	@ruleAction("Added 2 points to CPIS because the patient has progression of infiltrate since last chest x rays radiograph. \n")
     lock-on-active
-    salience 100 
+    salience 120  
     no-loop
-    //agenda-group "cpis"
     when
 		// existe una persona
   		$person : EvaluatedPerson()
@@ -586,36 +525,30 @@ rule "CPISPositiveInfiltrateProgression"
   		// el observation result es del tipo progresion en infiltracion de rayos X y es verdadero
   		eval($or.getObservationFocus().getCode()=="x_ray_chest_progression"
   		&& $or.getObservationValue().get_boolean().isValue() == true)
+  		// obtenemos el objeto que guarda la estructura de la traza
+  		$mi : ObservationResult(evaluatedPersonId == $person.id && observationFocus.getCode()=="cpis_metainfo")
     then
         int cpis=$cpis.getObservationValue().getInteger().getValue();
 		cpis+=2;
 		$cpis.getObservationValue().getInteger().setValue(cpis);
         update ($cpis);   
-        //System.out.println( "CPIS changed :Progression of infiltrates and both ARDS and CHF unlikely, CPI of patient " + $patient.name + " increased by 2, current value = " + $patient.CPIS);
+	    String metaInfoGuardada = $mi.getObservationValue().getText();
+       	$mi.getObservationValue().setText(metaInfoGuardada+drools.getRule().getMetaData().get("ruleAction"));
+       	update ($mi); 
 end
 
 // rule to add cero point to CPIS if no/light growth of culture
 rule "CPISNoCultureGrowthOrLightCultureGrowth"
-	// ********** AUDIT METADATA INFO ********************************
-	// rule source information: sourceDocument, pageNumber, lineRange
-	@sourceDocument(John Hopkins Clinical Guidelines Infections)
 	@pageNumber(80)
 	@lineRange(CPIS calculation table, row 6 column 1)
-	// generic information about the rule: date, ruleDescription, ruleAuthor, ruleVersion
 	@ruleDate(2014-07-05)
 	@ruleDescription("Measures patient's culture of ET suction and if no growth or light growth found over prior culture adds 0 points to the CPI Score")
 	@ruleAuthor(Tony Wang)
 	@ruleVersion(1.0.0)
-	// clinicalAction (diagnosis, treatment, score,...), infectionType (VAP...), agent, antibiotic)
-	@clinicalAction(CPISAlert)
-	@infectionType(VAP)
-	//@infectionAgent()
-	//@infectionAntibiotic()
-	// *********** END OF AUDIT METADATA INFO ************************ 
+	@ruleAction("Added 0 points to CPIS because the patient culture of ET suction has no growth or has light growth over prior culture. \n")
     lock-on-active
-    salience 100 
+    salience 120  
     no-loop
-    //agenda-group "cpis"
     when
 		// existe una persona
   		$person : EvaluatedPerson()
@@ -626,36 +559,30 @@ rule "CPISNoCultureGrowthOrLightCultureGrowth"
   		// el observation result es del tipo et culture y es falso
   		eval($or.getObservationFocus().getCode()=="et_culture_suction"
   		&& $or.getObservationValue().get_boolean().isValue() == false)
+  		// obtenemos el objeto que guarda la estructura de la traza
+  		$mi : ObservationResult(evaluatedPersonId == $person.id && observationFocus.getCode()=="cpis_metainfo")
     then
         int cpis=$cpis.getObservationValue().getInteger().getValue();
 		cpis+=0;
 		$cpis.getObservationValue().getInteger().setValue(cpis);
         update ($cpis);  
-        //System.out.println( "CPIS changed :None or Light Culture Growth, CPI of patient " + $patient.name + " increased by 0, current value = " + $patient.CPIS);
+	    String metaInfoGuardada = $mi.getObservationValue().getText();
+       	$mi.getObservationValue().setText(metaInfoGuardada+drools.getRule().getMetaData().get("ruleAction"));
+       	update ($mi); 
 end  
 
-// rule to add cero point to CPIS if no/light growth of culture
+// rule to add 2 points if has heavy growth 
 rule "CPISCultureHeavyGrowth"
-	// ********** AUDIT METADATA INFO ********************************
-	// rule source information: sourceDocument, pageNumber, lineRange
-	@sourceDocument(John Hopkins Clinical Guidelines Infections)
 	@pageNumber(80)
   	@lineRange(CPIS calculation table, row 6 column 2)
-	// generic information about the rule: date, ruleDescription, ruleAuthor, ruleVersion
 	@ruleDate(2014-07-05)
   	@ruleDescription("Measures patient's culture of ET suction and if heavy growth adds 1 points to the CPI Score")	
   	@ruleAuthor(Tony Wang)
 	@ruleVersion(1.0.0)
-	// clinicalAction (diagnosis, treatment, score,...), infectionType (VAP...), agent, antibiotic)
-	@clinicalAction(CPISAlert)
-	@infectionType(VAP)
-	//@infectionAgent()
-	//@infectionAntibiotic()
-	// *********** END OF AUDIT METADATA INFO ************************ 
+	@ruleAction("Added 1 point to CPIS because the patient culture of ET suction has heavy growth over prior culture. \n")
     lock-on-active
-    salience 100 
+    salience 120 
     no-loop
-    //agenda-group "cpis"
     when
 		// existe una persona
   		$person : EvaluatedPerson()
@@ -666,35 +593,30 @@ rule "CPISCultureHeavyGrowth"
   		// el observation result es del tipo et culture y es true
   		eval($or.getObservationFocus().getCode()=="et_culture_suction"
   		&& $or.getObservationValue().get_boolean().isValue() == true)
+  		// obtenemos el objeto que guarda la estructura de la traza
+  		$mi : ObservationResult(evaluatedPersonId == $person.id && observationFocus.getCode()=="cpis_metainfo")
     then
         int cpis=$cpis.getObservationValue().getInteger().getValue();
 		cpis+=1;
 		$cpis.getObservationValue().getInteger().setValue(cpis);
         update ($cpis);  
-        //System.out.println( "CPIS changed :Heavy Culture Growth, CPI of patient " + $patient.name + " increased by 1, current value = " + $patient.CPIS);
+	    String metaInfoGuardada = $mi.getObservationValue().getText();
+       	$mi.getObservationValue().setText(metaInfoGuardada+drools.getRule().getMetaData().get("ruleAction"));
+       	update ($mi); 
 end  
 
 // add one extra point when same bacteria and heavy culture growth
 rule "CPISCultureHeavyGrowthAndSameBacteria"
-	// rule source information: sourceDocument, pageNumber, lineRange
-	  @sourceDocument(John Hopkins Clinical Guidelines Infections)
 	@pageNumber(80)
 	@lineRange(CPIS calculation table, row 6 column 2)
-	// generic information about the rule: date, ruleDescription, ruleAuthor, ruleVersion
 	@ruleDate(2014-07-05)
 	@ruleDescription("Measures patient's culture of ET suction and if heavy growth and same bacteria on gram stain  adds 1 extra points to the CPI Score")
 	@ruleAuthor(Tony Wang)
 	@ruleVersion(1.0.0)
-	// clinicalAction (diagnosis, treatment, score,...), infectionType (VAP...), agent, antibiotic)
-	@clinicalAction(CPISAlert)
-	@infectionType(VAP)
-	//@infectionAgent()
-	//@infectionAntibiotic()
-	// *********** END OF AUDIT METADATA INFO ************************ 
+	@ruleAction("Added 1 extra point to CPIS because the patient also has same bacteria on gram stain. \n")
     lock-on-active
-    salience 100 
+    salience 110
     no-loop
-    //agenda-group "cpis"
     when
         // existe una persona
   		$person : EvaluatedPerson()
@@ -705,34 +627,29 @@ rule "CPISCultureHeavyGrowthAndSameBacteria"
   		$cpis : ObservationResult(evaluatedPersonId == $person.id && observationFocus.getCode()=="CPIS")
   		eval($sb.getObservationValue().get_boolean().isValue() == true
   		&& $et.getObservationValue().get_boolean().isValue() == true)
+  		// obtenemos el objeto que guarda la estructura de la traza
+  		$mi : ObservationResult(evaluatedPersonId == $person.id && observationFocus.getCode()=="cpis_metainfo")
     then
         int cpis=$cpis.getObservationValue().getInteger().getValue();
 		cpis+=1;
 		$cpis.getObservationValue().getInteger().setValue(cpis);
         update ($cpis);  
-        //System.out.println( "CPIS changed :Heavy Culture Growth same bacteria, CPI of patient " + $patient.name + " increased by 1, current value = " + $patient.CPIS);
+	    String metaInfoGuardada = $mi.getObservationValue().getText();
+       	$mi.getObservationValue().setText(metaInfoGuardada+drools.getRule().getMetaData().get("ruleAction"));
+       	update ($mi); 
 end
 
 rule "CPISHighOxygenationOrARDS"
-	// rule source information: sourceDocument, pageNumber, lineRange
-	@sourceDocument(John Hopkins Clinical Guidelines Infections)
 	@pageNumber(80)
 	@lineRange(CPIS calculation table, row 7 column 1)
-	// generic information about the rule: date, ruleDescription, ruleAuthor, ruleVersion
 	@ruleDate(2014-07-03)
 	@ruleDescription("Measures patient's oxygenation and if it's > 240 or patient has ARDS adds 0 points to the CPI Score")
 	@ruleAuthor(Tony Wang)
 	@ruleVersion(1.0.0)
-	// clinicalAction (diagnosis, treatment, score,...), infectionType (VAP...), agent, antibiotic)
-	@clinicalAction(CPISAlert)
-	@infectionType(VAP)
-	//@infectionAgent()
-	//@infectionAntibiotic()
-	// *********** END OF AUDIT METADATA INFO ************************ 
+	@ruleAction("Added 0 points to CPIS because the patient oxygenation is greater than 240 or the patient has ARDS. \n")
     lock-on-active
-    salience 100 
+    salience 120 
     no-loop
-    //agenda-group "cpis"
     when
         // existe una persona
   		$person : EvaluatedPerson()
@@ -743,34 +660,29 @@ rule "CPISHighOxygenationOrARDS"
   		$cpis : ObservationResult(evaluatedPersonId == $person.id && observationFocus.getCode()=="CPIS")
   		eval($ox.getObservationValue().getInteger().getValue() > 240
   		|| $ards.getObservationValue().get_boolean().isValue() == true)
+  		// obtenemos el objeto que guarda la estructura de la traza
+  		$mi : ObservationResult(evaluatedPersonId == $person.id && observationFocus.getCode()=="cpis_metainfo")
     then
 		int cpis=$cpis.getObservationValue().getInteger().getValue();
 		cpis+=0;
 		$cpis.getObservationValue().getInteger().setValue(cpis);
         update ($cpis);    
-        //System.out.println( "CPIS changed :High oxygen. or ARDS, CPI of patient " + $patient.name + " increased by 0, current value = " + $patient.CPIS);
+       	String metaInfoGuardada = $mi.getObservationValue().getText();
+       	$mi.getObservationValue().setText(metaInfoGuardada+drools.getRule().getMetaData().get("ruleAction"));
+       	update ($mi); 
 end
 
 rule "CPISLowOxygenationAndNotARDS"
-	// rule source information: sourceDocument, pageNumber, lineRange
-	@sourceDocument(John Hopkins Clinical Guidelines Infections)
 	@pageNumber(80)
-	  @lineRange(CPIS calculation table, row 7 column 3)
-	// generic information about the rule: date, ruleDescription, ruleAuthor, ruleVersion
+	@lineRange(CPIS calculation table, row 7 column 3)
 	@ruleDate(2014-07-03)
 	@ruleDescription("Measures patient's oxygenation and if it's <= 240 and patient has no ARDS adds 2 points to the CPI Score")
 	@ruleAuthor(Tony Wang)
 	@ruleVersion(1.0.0)
-	// clinicalAction (diagnosis, treatment, score,...), infectionType (VAP...), agent, antibiotic)
-	@clinicalAction(CPISAlert)
-	@infectionType(VAP)
-	//@infectionAgent()
-	//@infectionAntibiotic()
-	// *********** END OF AUDIT METADATA INFO ************************ 
+	@ruleAction("Added 2 points to CPIS because the patient oxygenation is lower than 240 and the patient has not ARDS. \n")
     lock-on-active
-    salience 100 
+    salience 120  
     no-loop
-    //agenda-group "cpis"
     when
         // existe una persona
   		$person : EvaluatedPerson()
@@ -781,36 +693,31 @@ rule "CPISLowOxygenationAndNotARDS"
   		$cpis : ObservationResult(evaluatedPersonId == $person.id && observationFocus.getCode()=="CPIS")
   		eval($ox.getObservationValue().getInteger().getValue() <= 240
   		&& $ards.getObservationValue().get_boolean().isValue() == false)
+  		// obtenemos el objeto que guarda la estructura de la traza
+  		$mi : ObservationResult(evaluatedPersonId == $person.id && observationFocus.getCode()=="cpis_metainfo")
     then
        	int cpis=$cpis.getObservationValue().getInteger().getValue();
 		cpis+=2;
 		$cpis.getObservationValue().getInteger().setValue(cpis);
         update ($cpis);  
-        //System.out.println( "CPIS changed : Low oxygen. and no ARDS, CPI of patient " + $patient.name + " increased by 2, current value = " + $patient.CPIS);
+       	String metaInfoGuardada = $mi.getObservationValue().getText();
+       	$mi.getObservationValue().setText(metaInfoGuardada+drools.getRule().getMetaData().get("ruleAction"));
+       	update ($mi); 
 end
 
 // regla que en caso de que exista el CPIS hace que lo devuelva con la salida
+
 rule "returnCPISValue"
-	// ********** AUDIT METADATA INFO ********************************
-	// rule source information: sourceDocument, pageNumber, lineRange
-	@sourceDocument(John Hopkins Clinical Guidelines Infections)
 	@pageNumber(80)
 	@lineRange(All the page)
-	// generic information about the rule: date, ruleDescription, ruleAuthor, ruleVersion
 	@ruleDate(2014-07-02)
 	@ruleDescription("Return the CPIS value in the XML file")
 	@ruleAuthor(Tony Wang)
 	@ruleVersion(1.0.0)
-	// clinicalAction (diagnosis, treatment, score,...), infectionType (VAP...), agent, antibiotic)
-	@clinicalAction(CPISAlert)
-	@infectionType(VAP)
-	//@infectionAgent()
-	//@infectionAntibiotic()
-	// *********** END OF AUDIT METADATA INFO ************************ 
+	@ruleAction("Returns de CPIS value in the XML file")
 	lock-on-active
     salience 100 
     no-loop
-    //agenda-group "cpis"
     when
     	// existe una persona
   		$person : EvaluatedPerson()
@@ -819,4 +726,106 @@ rule "returnCPISValue"
   		$cpis : ObservationResult(evaluatedPersonId == $person.id && observationFocus.getCode()=="CPIS")
     then
     	$cpis.setToBeReturned(true);
+
 end
+
+// devolver tambien por salida la traza usando metadatos
+
+rule "returnMetainformation"
+	@pageNumber(80)
+	@lineRange(All the page)
+	@ruleDate(2014-07-02)
+	@ruleDescription("Return the inference trace value in the XML file")
+	@ruleAuthor(Tony Wang)
+	@ruleVersion(1.0.0)
+	@ruleAction("Return the metainformation in the XML file. Also prints it in the window w/ the diagnosis")
+	lock-on-active
+    salience 100 
+    no-loop
+    when
+    	// existe una persona
+  		$person : EvaluatedPerson()
+  		// tiene un observation result asociado a esa persona
+  		// si es del tipo CPIS se devuelve en la salida
+  		$cpis : ObservationResult(evaluatedPersonId == $person.id && observationFocus.getCode()=="cpis_metainfo")
+   		$diagnos : ProcedureProposal(evaluatedPersonId == $person.id && procedureMethod.getCode()=="cpis_diag_steps")
+    then
+    	$cpis.setToBeReturned(true);
+    	$diagnos.setToBeReturned(true);
+    	// se indica que no es un root para que no se imprima dos veces
+    	$cpis.setClinicalStatementToBeRoot(false);
+    	$diagnos.setClinicalStatementToBeRoot(false);
+end
+
+
+// mostrar informacion por la pantalla
+rule "showInformaton"
+	@pageNumber(80)
+	@lineRange(All the page)
+	@ruleDate(2014-07-02)
+	@ruleDescription("Show the metainformation trace on window, also show the CPIS and the treatment")
+	@ruleAuthor(Tony Wang)
+	@ruleVersion(1.0.0)
+	@ruleAction("Show the metainformation trace, CPIS and treatment on a dialog")
+	lock-on-active
+    salience 40
+    no-loop
+    when
+    	// existe una persona
+  		$person : EvaluatedPerson()
+  		// tiene un observation result asociado a esa persona
+  		// si es del tipo CPIS se devuelve en la salida
+  		$cpis : ObservationResult(evaluatedPersonId == $person.id && observationFocus.getCode()=="CPIS")
+   	  	$mi : ObservationResult(evaluatedPersonId == $person.id && observationFocus.getCode()=="cpis_metainfo")
+    	$diagnos : ProcedureProposal(evaluatedPersonId == $person.id && procedureMethod.getCode()=="cpis_diag_steps")
+    then
+    	String tratamiento = $diagnos.getProcedureMethod().getDisplayName();
+    	String metaInfoGuardada = $mi.getObservationValue().getText();
+    	int cpis=$cpis.getObservationValue().getInteger().getValue();
+    	JOptionPane.showMessageDialog(null, metaInfoGuardada+"CPIS value: "+cpis+"\nRecommended treatment:\n " + tratamiento, "Informacion del diagnostico", JOptionPane.INFORMATION_MESSAGE);
+end
+
+// diagnosticos CPIS
+rule "CPISLessEqualSix"
+	@pageNumber(80)
+ 	@lineRange(CPIS calculation table, row 1 column 1)
+	@ruleDate(2014-07-05)
+	@ruleDescription("Empiric treatment when CPIS is under or equal 6")
+	@ruleAuthor(Tony Wang)
+	@ruleVersion(1.0.0)
+  	salience 50
+ 	no-loop
+	when
+    	// existe una persona
+  		$person : EvaluatedPerson()
+  		// obtenemos el objeto que tiene dentro el valor de CPIS
+  		$cpis : ObservationResult(evaluatedPersonId == $person.id && observationFocus.getCode()=="CPIS")
+  		// valor para rellenar el posible diagnostico
+  		$diagnos : ProcedureProposal(evaluatedPersonId == $person.id && procedureMethod.getCode()=="cpis_diag_steps")
+		// el valor del CPIS es <= 6
+		eval($cpis.getObservationValue().getInteger().getValue() <= 6)
+	then
+		$diagnos.getProcedureMethod.setDisplayName("VAP is unlikely.\nIf VAP strongly suspected see treatment recommendations below.\nIf CPIS remains <= 6 after 3 days, antibiotics can be stopped in most cases");        
+end 
+
+rule "CPISHigherThanSix"
+	@pageNumber(80)
+ 	@lineRange(CPIS calculation table, row 1 column 1)
+	@ruleDate(2014-07-05)
+	@ruleDescription("Empiric treatment when CPIS is greater than 6")
+	@ruleAuthor(Tony Wang)
+	@ruleVersion(1.0.0)
+  	salience 50
+ 	no-loop
+	when
+    	// existe una persona
+  		$person : EvaluatedPerson()
+  		// obtenemos el objeto que tiene dentro el valor de CPIS
+  		$cpis : ObservationResult(evaluatedPersonId == $person.id && observationFocus.getCode()=="CPIS")
+  		// valor para rellenar el posible diagnostico
+  		$diagnos : ProcedureProposal(evaluatedPersonId == $person.id && procedureMethod.getCode()=="cpis_diag_steps")
+		// mayor que 6 CPIS
+		eval($cpis.getObservationValue().getInteger().getValue() > 6)
+	then
+		$diagnos.getProcedureMethod.setDisplayName("If Early-onset VAP (occurring within 72 hours of hospitalization and patient has not been hospitalized or resided in a nursing home, long-term care or rehabilitation facility in the past 3 months) then\nCeftriaxone 1 g IV Q24H or Severe PCN allergy: Moxifloxacin 400 mg IV Q24H\nelse if Late-onset VAP (all VAP that is not early-onset) then\nVancomycin (see dosing section, p. 146) PLUS [Piperacillin/tazobactam 4.5 g IV Q6H OR Cefepime 2 g IV OR Q8H] ± Tobramycin (see dosing section, p. 141) or\nSevere PCN allergy: Vancomycin (see dosing section, p. 146) PLUS [Ciprofloxacin 400 mg IV Q8H OR Aztreonam 2 g IV Q8H] PLUS Tobramycin (see dosing section, p. 141) ");
+end 

@@ -345,6 +345,8 @@ public class VistaCliente extends JFrame {
 											listaKMSeleccionadas);
 
 							if (listaKMString.size() > 0) {
+								// limpiar el texo
+								textoSalida.setText("");
 								ControladorCliente.getUnicainstancia()
 										.enviarXML(
 												desplegablePacientes
@@ -377,6 +379,7 @@ public class VistaCliente extends JFrame {
 					JOptionPane.showMessageDialog(null,
 							"No hay paciente seleccionado", "ERROR",
 							JOptionPane.ERROR_MESSAGE);
+
 				}
 			}
 		});

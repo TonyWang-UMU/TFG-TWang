@@ -85,6 +85,7 @@ public class TestOpenCDS {
 				EvaluationRequest er = new EvaluationRequest();
 				er.setClientLanguage("");
 				er.setClientTimeZoneOffset("");
+		
 				
 //				er.getKmEvaluationRequest().add(new KMEvaluationRequest());
 //				er.getKmEvaluationRequest().get(0).setKmId(new EntityIdentifier());
@@ -105,6 +106,7 @@ public class TestOpenCDS {
 				er.getKmEvaluationRequest().get(0).getKmId().setScopingEntityId("edu.utah");
 				er.getKmEvaluationRequest().get(0).getKmId().setVersion("4.3.1");
 				
+				
 				er.getKmEvaluationRequest().add(new KMEvaluationRequest());
 				er.getKmEvaluationRequest().get(1).setKmId(new EntityIdentifier());
 				er.getKmEvaluationRequest().get(1).getKmId().setBusinessId("AHRQ_PSI_11");
@@ -114,6 +116,7 @@ public class TestOpenCDS {
 				er.getKmEvaluationRequest().add(new KMEvaluationRequest());
 				er.getKmEvaluationRequest().get(2).setKmId(new EntityIdentifier());
 				er.getKmEvaluationRequest().get(2).getKmId().setBusinessId("AHRQ_PSI_12");
+				
 				er.getKmEvaluationRequest().get(2).getKmId().setScopingEntityId("edu.utah");
 				er.getKmEvaluationRequest().get(2).getKmId().setVersion("4.3.1");
 				

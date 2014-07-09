@@ -62,149 +62,174 @@ public class ControladorCliente {
 
 	private String observationsResultsAvMR(Paciente paciente) {
 		String observationsResults = "";
-		observationsResults += "\t\t\t<observationResults>\n";
+		observationsResults += "\t\t\t\t<observationResults>\n";
 		// aqui cada uno de los observations result
 		// TODO Hay que comprobar los oid de los observation result, el del root
 		// y el code de cada campo con alguno real
 
 		// temperatura
 		if (paciente.tieneTemperatura()) {
-			observationsResults += "\t\t\t\t<observationResult>\n";
-			observationsResults += "\t\t\t\t\t<templateId root=\"2.16.840.1.113883.10.20.1.31\"/>\n";
-			observationsResults += "\t\t\t\t\t<id root=\"2.16.840.1.113883.5.10636\"/>\n";
-			observationsResults += "\t\t\t\t\t<observationFocus code=\"temp_corp\" codeSystem=\"2.16.840.1.113883.6.1\" displayName=\"Temperatura\"/>\n";
-			observationsResults += "\t\t\t\t\t<observationValue>\n";
-			observationsResults += "\t\t\t\t\t\t<physicalQuantity value=\""
+			observationsResults += "\t\t\t\t\t<observationResult>\n";
+			observationsResults += "\t\t\t\t\t\t<templateId root=\"2.16.840.1.113883.3.1829.11.6.3.1\"/>\n";
+			observationsResults += "\t\t\t\t\t\t<id extension=\"1\" root=\"2.16.840.1.113883.3.795.5.1\"/>\n";
+			observationsResults += "\t\t\t\t\t\t<observationFocus code=\"temp_corp\" codeSystem=\"2.16.840.1.113883.6.1\" displayName=\"Temperatura\"/>\n";
+			observationsResults += "\t\t\t\t\t\t<observationValue>\n";
+			observationsResults += "\t\t\t\t\t\t\t<physicalQuantity value=\""
 					+ paciente.getTemperatura()
 					+ "\" unit=\"Grados Centigrados\"/>\n";
-			observationsResults += "\t\t\t\t\t</observationValue>\n";
-			observationsResults += "\t\t\t\t</observationResult>\n";
+			observationsResults += "\t\t\t\t\t\t</observationValue>\n";
+			observationsResults += "\t\t\t\t\t</observationResult>\n";
 		}
 
 		// leucocitos
 		if (paciente.tieneLeucocitos()) {
-			observationsResults += "\t\t\t\t<observationResult>\n";
-			observationsResults += "\t\t\t\t\t<templateId root=\"2.16.840.1.113883.10.20.1.31\"/>\n";
-			observationsResults += "\t\t\t\t\t<id root=\"2.16.840.1.113883.5.10636\"/>\n";
-			observationsResults += "\t\t\t\t\t<observationFocus code=\"pWBC\" codeSystem=\"2.16.840.1.113883.6.1\" displayName=\"Leucocitos\"/>\n";
-			observationsResults += "\t\t\t\t\t<observationValue>\n";
-			observationsResults += "\t\t\t\t\t\t<integer value=\""
+			observationsResults += "\t\t\t\t\t<observationResult>\n";
+			observationsResults += "\t\t\t\t\t\t<templateId root=\"2.16.840.1.113883.3.1829.11.6.3.2\"/>\n";
+			observationsResults += "\t\t\t\t\t\t<id extension=\"2\" root=\"2.16.840.1.113883.3.795.5.1\"/>\n";
+			observationsResults += "\t\t\t\t\t\t<observationFocus code=\"pWBC\" codeSystem=\"2.16.840.1.113883.6.96\" displayName=\"Leucocitos\"/>\n";
+			observationsResults += "\t\t\t\t\t\t<observationValue>\n";
+			observationsResults += "\t\t\t\t\t\t\t<integer value=\""
 					+ paciente.getLeucocitos() + "\"/>\n";
-			observationsResults += "\t\t\t\t\t</observationValue>\n";
-			observationsResults += "\t\t\t\t</observationResult>\n";
+			observationsResults += "\t\t\t\t\t\t</observationValue>\n";
+			observationsResults += "\t\t\t\t\t</observationResult>\n";
 		}
 
 		// secrecion traqueal
 		if (paciente.tieneSecTraq()) {
-			observationsResults += "\t\t\t\t<observationResult>\n";
-			observationsResults += "\t\t\t\t\t<templateId root=\"2.16.840.1.113883.10.20.1.31\"/>\n";
-			observationsResults += "\t\t\t\t\t<id root=\"2.16.840.1.113883.5.10636\"/>\n";
-			observationsResults += "\t\t\t\t\t<observationFocus code=\"sec_traq\" codeSystem=\"2.16.840.1.113883.6.1\" displayName=\"Secrecion Traqueal\"/>\n";
-			observationsResults += "\t\t\t\t\t<observationValue>\n";
-			observationsResults += "\t\t\t\t\t\t<text value=\""
+			observationsResults += "\t\t\t\t\t<observationResult>\n";
+			observationsResults += "\t\t\t\t\t\t<templateId root=\"2.16.840.1.113883.3.1829.11.6.3.1\"/>\n";
+			observationsResults += "\t\t\t\t\t\t<id extension=\"3\" root=\"2.16.840.1.113883.3.795.5.1\"/>\n";
+			observationsResults += "\t\t\t\t\t\t<observationFocus code=\"sec_traq\" codeSystem=\"2.16.840.1.113883.6.1\" displayName=\"Secrecion Traqueal\"/>\n";
+			observationsResults += "\t\t\t\t\t\t<observationValue>\n";
+			observationsResults += "\t\t\t\t\t\t\t<text value=\""
 					+ paciente.getSecrecion_traqueal() + "\"/>\n";
-			observationsResults += "\t\t\t\t\t</observationValue>\n";
-			observationsResults += "\t\t\t\t</observationResult>\n";
+			observationsResults += "\t\t\t\t\t\t</observationValue>\n";
+			observationsResults += "\t\t\t\t\t</observationResult>\n";
 		}
 
 		// rayos x en el pecho
 		if (paciente.tieneXRayosPecho()) {
-			observationsResults += "\t\t\t\t<observationResult>\n";
-			observationsResults += "\t\t\t\t\t<templateId root=\"2.16.840.1.113883.10.20.1.31\"/>\n";
-			observationsResults += "\t\t\t\t\t<id root=\"2.16.840.1.113883.5.10636\"/>\n";
-			observationsResults += "\t\t\t\t\t<observationFocus code=\"x_ray_chest\" codeSystem=\"2.16.840.1.113883.6.1\" displayName=\"Rayos X del Pecho\"/>\n";
-			observationsResults += "\t\t\t\t\t<observationValue>\n";
-			observationsResults += "\t\t\t\t\t\t<text value=\""
+			observationsResults += "\t\t\t\t\t<observationResult>\n";
+			observationsResults += "\t\t\t\t\t\t<templateId root=\"2.16.840.1.113883.3.1829.11.6.3.1\"/>\n";
+			observationsResults += "\t\t\t\t\t\t<id extension=\"4\" root=\"2.16.840.1.113883.3.795.5.1\"/>\n";
+			observationsResults += "\t\t\t\t\t\t<observationFocus code=\"x_ray_chest\" codeSystem=\"2.16.840.1.113883.6.1\" displayName=\"Rayos X del Pecho\"/>\n";
+			observationsResults += "\t\t\t\t\t\t<observationValue>\n";
+			observationsResults += "\t\t\t\t\t\t\t<text value=\""
 					+ paciente.getRayos_x_pecho() + "\"/>\n";
-			observationsResults += "\t\t\t\t\t</observationValue>\n";
-			observationsResults += "\t\t\t\t</observationResult>\n";
+			observationsResults += "\t\t\t\t\t\t</observationValue>\n";
+			observationsResults += "\t\t\t\t\t</observationResult>\n";
 		}
 
 		// oxygenation
 		if (paciente.tieneOxigenacion()) {
-			observationsResults += "\t\t\t\t<observationResult>\n";
-			observationsResults += "\t\t\t\t\t<templateId root=\"2.16.840.1.113883.10.20.1.31\"/>\n";
-			observationsResults += "\t\t\t\t\t<id root=\"2.16.840.1.113883.5.10636\"/>\n";
-			observationsResults += "\t\t\t\t\t<observationFocus code=\"oxygenation\" codeSystem=\"2.16.840.1.113883.6.1\" displayName=\"Oxigenacion\"/>\n";
-			observationsResults += "\t\t\t\t\t<observationValue>\n";
-			observationsResults += "\t\t\t\t\t\t<integer value=\""
+			observationsResults += "\t\t\t\t\t<observationResult>\n";
+			observationsResults += "\t\t\t\t\t\t<templateId root=\"2.16.840.1.113883.3.1829.11.6.3.1\"/>\n";
+			observationsResults += "\t\t\t\t\t\t\t<id extension=\"5\" root=\"2.16.840.1.113883.3.795.5.1\"/>\n";
+			observationsResults += "\t\t\t\t\t\t<observationFocus code=\"oxygenation\" codeSystem=\"2.16.840.1.113883.6.1\" displayName=\"Oxigenacion\"/>\n";
+			observationsResults += "\t\t\t\t\t\t<observationValue>\n";
+			observationsResults += "\t\t\t\t\t\t\t<integer value=\""
 					+ paciente.getOxigenacion() + "\"/>\n";
-			observationsResults += "\t\t\t\t\t</observationValue>\n";
-			observationsResults += "\t\t\t\t</observationResult>\n";
+			observationsResults += "\t\t\t\t\t\t</observationValue>\n";
+			observationsResults += "\t\t\t\t\t</observationResult>\n";
 		}
 
 		// ARDS
 		if (paciente.getARDS() != Booleano.NONE) {
-			observationsResults += "\t\t\t\t<observationResult>\n";
-			observationsResults += "\t\t\t\t\t<templateId root=\"2.16.840.1.113883.10.20.1.31\"/>\n";
-			observationsResults += "\t\t\t\t\t<id root=\"2.16.840.1.113883.5.10636\"/>\n";
-			observationsResults += "\t\t\t\t\t<observationFocus code=\"ARDS\" codeSystem=\"2.16.840.1.113883.6.1\" displayName=\"Sindrome de distres respiratorio agudo\"/>\n";
-			observationsResults += "\t\t\t\t\t<observationValue>\n";
+			observationsResults += "\t\t\t\t\t<observationResult>\n";
+			observationsResults += "\t\t\t\t\t\t<templateId root=\"2.16.840.1.113883.3.1829.11.6.3.1\"/>\n";
+			observationsResults += "\t\t\t\t\t\t<id extension=\"6\" root=\"2.16.840.1.113883.3.795.5.1\"/>\n";
+			observationsResults += "\t\t\t\t\t\t<observationFocus code=\"ARDS\" codeSystem=\"2.16.840.1.113883.6.1\" displayName=\"Sindrome de distres respiratorio agudo\"/>\n";
+			observationsResults += "\t\t\t\t\t\t<observationValue>\n";
 			if (paciente.tieneARDS())
-				observationsResults += "\t\t\t\t\t\t<boolean value=\"true\"/>\n";
+				observationsResults += "\t\t\t\t\t\t\t<boolean value=\"true\"/>\n";
 			else {
-				observationsResults += "\t\t\t\t\t\t<boolean value=\"false\"/>\n";
+				observationsResults += "\t\t\t\t\t\t\t<boolean value=\"false\"/>\n";
 			}
-			observationsResults += "\t\t\t\t\t</observationValue>\n";
-			observationsResults += "\t\t\t\t</observationResult>\n";
+			observationsResults += "\t\t\t\t\t\t</observationValue>\n";
+			observationsResults += "\t\t\t\t\t</observationResult>\n";
 
 		}
 		// Progresion de infiltracion en rayos X
 		if (paciente.getProgresion_infiltracion_rayos_x_pecho() != Booleano.NONE) {
-			observationsResults += "\t\t\t\t<observationResult>\n";
-			observationsResults += "\t\t\t\t\t<templateId root=\"2.16.840.1.113883.10.20.1.31\"/>\n";
-			observationsResults += "\t\t\t\t\t<id root=\"2.16.840.1.113883.5.10636\"/>\n";
-			observationsResults += "\t\t\t\t\t<observationFocus code=\"x_ray_chest_progression\" codeSystem=\"2.16.840.1.113883.6.1\" displayName=\"Progression of infiltrate from prior radiographs\"/>\n";
-			observationsResults += "\t\t\t\t\t<observationValue>\n";
+			observationsResults += "\t\t\t\t\t<observationResult>\n";
+			observationsResults += "\t\t\t\t\t\t<templateId root=\"2.16.840.1.113883.3.1829.11.6.3.1\"/>\n";
+			observationsResults += "\t\t\t\t\t\t<id extension=\"7\" root=\"2.16.840.1.113883.3.795.5.1\"/>\n";
+			observationsResults += "\t\t\t\t\t\t<observationFocus code=\"x_ray_chest_progression\" codeSystem=\"2.16.840.1.113883.6.1\" displayName=\"Progression of infiltrate from prior radiographs\"/>\n";
+			observationsResults += "\t\t\t\t\t\t<observationValue>\n";
 			if (paciente.tieneEvolucionXRayos())
-				observationsResults += "\t\t\t\t\t\t<boolean value=\"true\"/>\n";
+				observationsResults += "\t\t\t\t\t\t\t<boolean value=\"true\"/>\n";
 			else
-				observationsResults += "\t\t\t\t\t\t<boolean value=\"false\"/>\n";
-			observationsResults += "\t\t\t\t\t</observationValue>\n";
-			observationsResults += "\t\t\t\t</observationResult>\n";
+				observationsResults += "\t\t\t\t\t\t\t<boolean value=\"false\"/>\n";
+			observationsResults += "\t\t\t\t\t\t</observationValue>\n";
+			observationsResults += "\t\t\t\t\t</observationResult>\n";
 		}
 
 		// Progresion del cultivo et
 		if (paciente.getEtCultivo() != Booleano.NONE) {
-			observationsResults += "\t\t\t\t<observationResult>\n";
-			observationsResults += "\t\t\t\t\t<templateId root=\"2.16.840.1.113883.10.20.1.31\"/>\n";
-			observationsResults += "\t\t\t\t\t<id root=\"2.16.840.1.113883.5.10636\"/>\n";
-			observationsResults += "\t\t\t\t\t<observationFocus code=\"et_culture_suction\" codeSystem=\"2.16.840.1.113883.6.1\" displayName=\"Culture of ET suction growing\"/>\n";
-			observationsResults += "\t\t\t\t\t<observationValue>\n";
+			observationsResults += "\t\t\t\t\t<observationResult>\n";
+			observationsResults += "\t\t\t\t\t\t<templateId root=\"2.16.840.1.113883.3.1829.11.6.3.4\"/>\n";
+			observationsResults += "\t\t\t\t\t\t<id extension=\"8\" root=\"2.16.840.1.113883.3.795.5.1\"/>\n";
+			observationsResults += "\t\t\t\t\t\t<observationFocus code=\"et_culture_suction\" codeSystem=\"2.16.840.1.113883.6.1\" displayName=\"Culture of ET suction growing\"/>\n";
+			observationsResults += "\t\t\t\t\t\t<observationValue>\n";
 			if (paciente.tieneEtCultivo())
-				observationsResults += "\t\t\t\t\t\t<boolean value=\"true\"/>\n";
+				observationsResults += "\t\t\t\t\t\t\t<boolean value=\"true\"/>\n";
 			else
-				observationsResults += "\t\t\t\t\t\t<boolean value=\"false\"/>\n";
-			observationsResults += "\t\t\t\t\t</observationValue>\n";
-			observationsResults += "\t\t\t\t</observationResult>\n";
+				observationsResults += "\t\t\t\t\t\t\t<boolean value=\"false\"/>\n";
+			observationsResults += "\t\t\t\t\t\t</observationValue>\n";
+			observationsResults += "\t\t\t\t\t</observationResult>\n";
 		}
 
 		// Same bacteria
 		if (paciente.getMisma_bacteria() != Booleano.NONE) {
-			observationsResults += "\t\t\t\t<observationResult>\n";
-			observationsResults += "\t\t\t\t\t<templateId root=\"2.16.840.1.113883.10.20.1.31\"/>\n";
-			observationsResults += "\t\t\t\t\t<id root=\"2.16.840.1.113883.5.10636\"/>\n";
-			observationsResults += "\t\t\t\t\t<observationFocus code=\"same_bacteria\" codeSystem=\"2.16.840.1.113883.6.1\" displayName=\"Same bacteria on gram stain\"/>\n";
-			observationsResults += "\t\t\t\t\t<observationValue>\n";
+			observationsResults += "\t\t\t\t\t<observationResult>\n";
+			observationsResults += "\t\t\t\t\t\t<templateId root=\"2.16.840.1.113883.3.1829.11.6.3.4\"/>\n";
+			observationsResults += "\t\t\t\t\t\t<id extension=\"9\" root=\"2.16.840.1.113883.3.795.5.1\"/>\n";
+			observationsResults += "\t\t\t\t\t\t<observationFocus code=\"same_bacteria\" codeSystem=\"2.16.840.1.113883.6.1\" displayName=\"Same bacteria on gram stain\"/>\n";
+			observationsResults += "\t\t\t\t\t\t<observationValue>\n";
 			if (paciente.tieneSameBacteria())
-				observationsResults += "\t\t\t\t\t\t<boolean value=\"true\"/>\n";
+				observationsResults += "\t\t\t\t\t\t\t<boolean value=\"true\"/>\n";
 			else
-				observationsResults += "\t\t\t\t\t\t<boolean value=\"false\"/>\n";
-			observationsResults += "\t\t\t\t\t</observationValue>\n";
-			observationsResults += "\t\t\t\t</observationResult>\n";
+				observationsResults += "\t\t\t\t\t\t\t<boolean value=\"false\"/>\n";
+			observationsResults += "\t\t\t\t\t\t</observationValue>\n";
+			observationsResults += "\t\t\t\t\t</observationResult>\n";
 		}
 
 		// valor del CPIS, este valor se calcula en la salida
-		observationsResults += "\t\t\t\t<observationResult>\n";
-		observationsResults += "\t\t\t\t\t<templateId root=\"2.16.840.1.113883.10.20.1.31\"/>\n";
-		observationsResults += "\t\t\t\t\t<id root=\"2.16.840.1.113883.5.10636\"/>\n";
-		observationsResults += "\t\t\t\t\t<observationFocus code=\"CPIS\" codeSystem=\"2.16.840.1.113883.6.1\" displayName=\"Valor del CPIS\"/>\n";
-		observationsResults += "\t\t\t\t\t<observationValue>\n";
-		observationsResults += "\t\t\t\t\t\t<integer value=\"0\"/>\n";
-		observationsResults += "\t\t\t\t\t</observationValue>\n";
-		observationsResults += "\t\t\t\t</observationResult>\n";
+		observationsResults += "\t\t\t\t\t<observationResult>\n";
+		observationsResults += "\t\t\t\t\t\t<templateId root=\"2.16.840.1.113883.3.1829.11.6.3.6\"/>\n";
+		observationsResults += "\t\t\t\t\t\t<id extension=\"10\" root=\"2.16.840.1.113883.3.795.5.1\"/>\n";
+		observationsResults += "\t\t\t\t\t\t<observationFocus code=\"CPIS\" codeSystem=\"2.16.840.1.113883.6.1\" displayName=\"Valor del CPIS\"/>\n";
+		observationsResults += "\t\t\t\t\t\t<observationValue>\n";
+		observationsResults += "\t\t\t\t\t\t\t<integer value=\"0\"/>\n";
+		observationsResults += "\t\t\t\t\t\t</observationValue>\n";
+		// dentro del valor CPIS ademas habra un campo relacionado que es la
+		// metainformacion
+		observationsResults += "\t\t\t\t\t\t<relatedClinicalStatement>\n";
+		observationsResults += "\t\t\t\t\t\t\t<targetRelationshipToSource code=\"CPIS\" codeSystem=\"2.16.840.1.113883.6.1\"/>\n";
+		observationsResults += "\t\t\t\t\t\t\t<observationResult>\n";
+		observationsResults += "\t\t\t\t\t\t\t\t<templateId root=\"2.16.840.1.113883.3.1829.11.6.3.6\"/>\n";
+		observationsResults += "\t\t\t\t\t\t\t\t<id extension=\"11\" root=\"2.16.840.1.113883.3.795.5.1\"/>\n";
+		observationsResults += "\t\t\t\t\t\t\t\t<observationFocus code=\"cpis_metainfo\" codeSystem=\"2.16.840.1.113883.6.1\" displayName=\"Informacion de la traza que se ha seguido hasta llegar a la solucion\"/>\n";
+		observationsResults += "\t\t\t\t\t\t\t\t<observationValue>\n";
+		observationsResults += "\t\t\t\t\t\t\t\t\t<text value=\"\"/>\n";
+		observationsResults += "\t\t\t\t\t\t\t\t</observationValue>\n";
+		observationsResults += "\t\t\t\t\t\t\t</observationResult>\n";
+		observationsResults += "\t\t\t\t\t\t</relatedClinicalStatement>\n";
 
-		observationsResults += "\t\t\t</observationResults>\n";
+		// y otro campo que sera el procedimiento a seguir con ese paciente
+		observationsResults += "\t\t\t\t\t\t<relatedClinicalStatement>\n";
+
+		observationsResults += "\t\t\t\t\t\t\t<targetRelationshipToSource code=\"CPIS\" codeSystem=\"2.16.840.1.113883.6.1\"/>\n";
+		observationsResults += "\t\t\t\t\t\t\t<procedureProposal>\n";
+		observationsResults += "\t\t\t\t\t\t\t\t<templateId root=\"2.16.840.1.113883.3.1829.11.8.3.1\"/>\n";
+		observationsResults += "\t\t\t\t\t\t\t\t<id extension=\"12\" root=\"2.16.840.1.113883.3.795.5.1\"/>\n";
+		observationsResults += "\t\t\t\t\t\t\t\t<procedureCode code=\"cpis_diag\" codeSystem=\"2.16.840.1.113883.6.104\" codeSystemName=\"ICD9CM procedures\" displayName=\"Procedure to follow to heal VAP\"/>\n";
+		observationsResults += "\t\t\t\t\t\t\t\t<procedureMethod code=\"cpis_diag_steps\" codeSystem=\"2.16.840.1.113883.6.104\" displayName=\"\"/>\n";
+		observationsResults += "\t\t\t\t\t\t\t</procedureProposal>\n";
+		observationsResults += "\t\t\t\t\t\t</relatedClinicalStatement>\n";
+		observationsResults += "\t\t\t\t\t</observationResult>\n";
+		observationsResults += "\t\t\t\t</observationResults>\n";
+		
 		return observationsResults;
 	}
 
@@ -218,10 +243,10 @@ public class ControladorCliente {
 
 	private String encounterEventsAvMR(Paciente paciente) {
 		String encounterEvents = "";
-		encounterEvents += "\t\t\t<encounterEvents>\n";
+		encounterEvents += "\t\t\t\t<encounterEvents>\n";
 		// aqui cada uno de los encounter event
 		// TODO
-		encounterEvents += "\t\t\t</encounterEvents>\n";
+		encounterEvents += "\t\t\t\t</encounterEvents>\n";
 		return encounterEvents;
 	}
 
@@ -236,10 +261,10 @@ public class ControladorCliente {
 
 	private String substanceAdministrationEventsAvMR(Paciente paciente) {
 		String administrationEvents = "";
-		administrationEvents += "\t\t\t<substanceAdministrationEvents>\n";
+		administrationEvents += "\t\t\t\t<substanceAdministrationEvents>\n";
 		// aqui cada uno de los substance administration event
 		// TODO
-		administrationEvents += "\t\t\t</substanceAdministrationEvents>\n";
+		administrationEvents += "\t\t\t\t</substanceAdministrationEvents>\n";
 
 		return administrationEvents;
 	}
@@ -255,10 +280,10 @@ public class ControladorCliente {
 
 	private String substanceAdministrationProposalsAvMR(Paciente paciente) {
 		String substanceAdministrationProposals = "";
-		substanceAdministrationProposals += "\t\t\t<substanceAdministrationProposals>\n";
+		substanceAdministrationProposals += "\t\t\t\t<substanceAdministrationProposals>\n";
 		// aqui cada uno de los substance administration proposal
 		// TODO
-		substanceAdministrationProposals += "\t\t\t</substanceAdministrationProposals>\n";
+		substanceAdministrationProposals += "\t\t\t\t</substanceAdministrationProposals>\n";
 		return substanceAdministrationProposals;
 	}
 
@@ -296,7 +321,8 @@ public class ControladorCliente {
 		// datos del paciente
 		String datosPaciente = "";
 		datosPaciente += "\t\t<patient>\n";
-		datosPaciente += "\t\t\t<id root=\"2.16.840.1.113883.19.5\" extension=\""
+		datosPaciente += "\t\t\t<templateId root=\"2.16.840.1.113883.3.1829.11.2.1.1\"/>\n";
+		datosPaciente += "\t\t\t<id root=\"2.16.840.1.113883.3.795.5.2.1.1\" extension=\""
 				+ paciente.getIdentificador() + "\"/>\n";
 		// añadir los datos que se dispongan
 		if (paciente.tieneDatos()) {
@@ -362,9 +388,9 @@ public class ControladorCliente {
 			writer.println("\t\txmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"");
 			writer.println("\t\txmlns:dt=\"org.opencds.vmr.v1_0.schema.datatypes\"");
 			writer.println("\t\txsi:schemaLocation=\"org.opencds.vmr.v1_0.schema.cdsinput ..\\schema\\cdsInput.xsd\">");
-			writer.println("\t<templateId root=\"2.16.840.1.113883.3.795.11.1.1\"/>");
+			writer.println("\t<templateId root=\"2.16.840.1.113883.3.1829.11.1.1.1\"/>");
 			writer.println("\t<vmrInput>");
-			writer.println("\t\t<templateId root=\"2.16.840.1.113883.3.795.11.1.1\"/>");
+			writer.println("\t\t<templateId root=\"2.16.840.1.113883.3.1829.11.1.2.1\"/>");
 
 			writer.println(pacienteAvMR(paciente));
 

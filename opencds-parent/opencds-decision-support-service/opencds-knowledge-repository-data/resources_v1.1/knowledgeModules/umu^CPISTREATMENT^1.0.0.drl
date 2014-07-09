@@ -13,68 +13,54 @@ global String focalPersonId
 global java.util.HashSet assertions
 global java.util.HashMap namedObjects
 
-// CPIS DIAGNOSTICOS
-
-rule "CPISMenorIgualSeis"
-	// ********** AUDIT METADATA INFO ********************************
-	// rule source information: sourceDocument, pageNumber, lineRange
-	@sourceDocument(John Hopkins Clinical Guidelines Infections)
-	@pageNumber(80)
- 	@lineRange(CPIS calculation table, row 1 column 1)
-	// generic information about the rule: date, ruleDescription, ruleAuthor, ruleVersion
-	@ruleDate(2014-07-05)
-	@ruleDescription("Empiric treatment when CPIS is under or equal 6")
-	@ruleAuthor(Tony Wang)
-	@ruleVersion(1.0.0)
-	// clinicalAction (diagnosis, treatment, score,...), infectionType (VAP...), agent, antibiotic)
- 	@clinicalAction(CPISAlert)
- 	@infectionType(VAP)
-	//@infectionAgent()
-	//@infectionAntibiotic()
-	// *********** END OF AUDIT METADATA INFO ************************ 
-	lock-on-active
-  	salience 100 
- 	no-loop
+// PRUEBAS
+rule "reglaDePrueba"
+	no-loop
 	when
-    	// existe una persona
-  		$person : EvaluatedPerson()
+		// existe una persona
+  		//$person : EvaluatedPerson()
+  		// tiene un observation result asociado a esa persona
+  		//$or : ObservationResult(evaluatedPersonId == $person.id)
   		// obtenemos el objeto que tiene dentro el valor de CPIS
-  		$cpis : ObservationResult(evaluatedPersonId == $person.id && observationFocus.getCode()=="CPIS")
-  		// el valor del CPIS es <= 6
-  		eval($cpis.getObservationValue().getInteger().getValue() <= 6) 
+  		//$cpis : ObservationResult(evaluatedPersonId == $person.id && observationFocus.getCode()=="CPIS")
+  		// el observation result es del tipo temperatura y que la temperatura sea > 38.9 o <= 36.4
+  		//eval($or.getObservationFocus().getCode()=="temp_corp")
+  		$p : ClinicalStatementRelationship()
 	then
-        System.out.println("CPIS MENOR IGUAL QUE SEIS");
-end 
+		//$or.setToBeReturned(true);
+		//System.out.println($or.getObservationFocus().getCode());
+		//System.out.println("OERKOERKOR");
+		System.out.println($p.getId());
+				System.out.println($p.getSourceId());
+		
+				System.out.println($p.getTargetId());
+		
+		//System.out.println($p);
+end
 
-rule "CPISMayorSeis"
-	// ********** AUDIT METADATA INFO ********************************
-	// rule source information: sourceDocument, pageNumber, lineRange
-	@sourceDocument(John Hopkins Clinical Guidelines Infections)
-	@pageNumber(80)
- 	@lineRange(CPIS calculation table, row 1 column 1)
-	// generic information about the rule: date, ruleDescription, ruleAuthor, ruleVersion
-	@ruleDate(2014-07-05)
-	@ruleDescription("Empiric treatment when CPIS is greater than 6")
-	@ruleAuthor(Tony Wang)
-	@ruleVersion(1.0.0)
-	// clinicalAction (diagnosis, treatment, score,...), infectionType (VAP...), agent, antibiotic)
- 	@clinicalAction(CPISAlert)
- 	@infectionType(VAP)
-	//@infectionAgent()
-	//@infectionAntibiotic()
-	// *********** END OF AUDIT METADATA INFO ************************ 
-	lock-on-active
-  	salience 100 
- 	no-loop
+rule "reglaDePrueba2"
+	no-loop
 	when
-    	// existe una persona
+		// existe una persona
   		$person : EvaluatedPerson()
+  		// tiene un observation result asociado a esa persona
+  		$or : ObservationResult(evaluatedPersonId == $person.id)
   		// obtenemos el objeto que tiene dentro el valor de CPIS
-  		$cpis : ObservationResult(evaluatedPersonId == $person.id && observationFocus.getCode()=="CPIS")
-  		// el valor del CPIS es > 6
-  		eval($cpis.getObservationValue().getInteger().getValue() > 6) 
+  		//$cpis : ObservationResult(evaluatedPersonId == $person.id && observationFocus.getCode()=="CPIS")
+  		// el observation result es del tipo temperatura y que la temperatura sea > 38.9 o <= 36.4
+  		//eval($or.getObservationFocus().getCode()=="temp_corp")
+  		//$p : ClinicalStatementRelationship()
 	then
-        System.out.println("CPIS MAYOR QUE SEIS");
-end 
-
+		//$or.setToBeReturned(true);
+		//System.out.println($or.getObservationFocus().getCode());
+		System.out.println($or.getId());
+		//System.out.println("OERKOERKOR");
+		//System.out.println($p.getId());
+			//	System.out.println($p.getSourceId());
+		
+		//		System.out.println($p.getTargetId());
+		
+		//System.out.println($p);
+end
+	
 

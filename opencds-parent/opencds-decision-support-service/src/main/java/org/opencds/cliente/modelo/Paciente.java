@@ -25,20 +25,19 @@ public class Paciente {
 	private int leucocitos; // numero de leucocitos del ultimo analisis
 	private String secrecion_traqueal; // informacion sobre secrecion traqueal
 	private String rayos_x_pecho; // informacion sobre los rayos X en el pecho
-	private Booleano progresion_infiltracion_rayos_x_pecho = Booleano.NONE; // progresion
-																			// de
-	// infiltraciones de
-	// anteriores rayos
-	// X
-	private Booleano ARDS = Booleano.NONE; // Síndrome de distrés respiratorio
-											// agudo
+	private Booleano progresion_infiltracion_rayos_x_pecho; // progresion
+															// de infiltraciones
+															// de anteriores
+															// rayos X
+	private Booleano ARDS; // Síndrome de distrés respiratorio
+							// agudo
 	private int oxigenacion; // valor de la oxigenacion
 
-	private Booleano misma_bacteria = Booleano.NONE; // indica si tiene la misma
-														// bacteria del
+	private Booleano misma_bacteria; // indica si tiene la misma
+										// bacteria del
 	// cultivo ET
-	private Booleano etCultivo = Booleano.NONE; // indica si ha habido un
-												// crecimiento en el
+	private Booleano etCultivo; // indica si ha habido un
+								// crecimiento en el
 
 	// cutivo ET
 
@@ -50,7 +49,10 @@ public class Paciente {
 
 	// constructor
 	public Paciente() {
-
+		this.progresion_infiltracion_rayos_x_pecho = Booleano.NONE;
+		this.ARDS = Booleano.NONE;
+		this.misma_bacteria = Booleano.NONE;
+		this.etCultivo = Booleano.NONE;
 	}
 
 	// metodos de comprobacion de atributos
