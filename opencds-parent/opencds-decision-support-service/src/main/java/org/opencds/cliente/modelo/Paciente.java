@@ -24,8 +24,8 @@ public class Paciente {
 	private double temperatura; // temperatura corporal en tiempo de diagnostico
 	private int leucocitos; // numero de leucocitos del ultimo analisis
 	private String secrecion_traqueal; // informacion sobre secrecion traqueal
-	private String rayos_x_pecho; // informacion sobre los rayos X en el pecho
-	private Booleano progresion_infiltracion_rayos_x_pecho; // progresion
+	private String rayos_x_torax; // informacion sobre los rayos X en el pecho
+	private Booleano progresion_infiltracion_rayos_x_torax; // progresion
 															// de infiltraciones
 															// de anteriores
 															// rayos X
@@ -49,7 +49,7 @@ public class Paciente {
 
 	// constructor
 	public Paciente() {
-		this.progresion_infiltracion_rayos_x_pecho = Booleano.NONE;
+		this.progresion_infiltracion_rayos_x_torax = Booleano.NONE;
 		this.ARDS = Booleano.NONE;
 		this.misma_bacteria = Booleano.NONE;
 		this.etCultivo = Booleano.NONE;
@@ -147,7 +147,7 @@ public class Paciente {
 	 */
 
 	public boolean tieneXRayosPecho() {
-		return this.rayos_x_pecho != null;
+		return this.rayos_x_torax != null;
 	}
 
 	/**
@@ -157,7 +157,7 @@ public class Paciente {
 	 * @return True si tiene, false si no o si no se sabe
 	 */
 	public boolean tieneEvolucionXRayos() {
-		return this.progresion_infiltracion_rayos_x_pecho == Booleano.TRUE;
+		return this.progresion_infiltracion_rayos_x_torax == Booleano.TRUE;
 	}
 
 	/**
@@ -217,7 +217,7 @@ public class Paciente {
 		return this.tieneTemperatura() || this.tieneLeucocitos()
 				|| this.tieneSecTraq() || this.tieneXRayosPecho()
 				|| this.tieneARDS() || this.ARDS == Booleano.FALSE
-				|| this.progresion_infiltracion_rayos_x_pecho == Booleano.FALSE
+				|| this.progresion_infiltracion_rayos_x_torax == Booleano.FALSE
 				|| this.tieneIdentificador() || this.tieneOxigenacion()
 				|| this.tieneEtCultivo() || this.tieneSameBacteria()
 				|| this.etCultivo == Booleano.FALSE
@@ -325,20 +325,20 @@ public class Paciente {
 	}
 
 	public String getRayos_x_pecho() {
-		return rayos_x_pecho;
+		return rayos_x_torax;
 	}
 
 	public void setRayos_x_pecho(String rayos_x_pecho) {
-		this.rayos_x_pecho = rayos_x_pecho;
+		this.rayos_x_torax = rayos_x_pecho;
 	}
 
 	public Booleano getProgresion_infiltracion_rayos_x_pecho() {
-		return progresion_infiltracion_rayos_x_pecho;
+		return progresion_infiltracion_rayos_x_torax;
 	}
 
 	public void setProgresion_infiltracion_rayos_x_pecho(
 			Booleano progresion_infiltracion_rayos_x_pecho) {
-		this.progresion_infiltracion_rayos_x_pecho = progresion_infiltracion_rayos_x_pecho;
+		this.progresion_infiltracion_rayos_x_torax = progresion_infiltracion_rayos_x_pecho;
 	}
 
 	public Booleano getARDS() {

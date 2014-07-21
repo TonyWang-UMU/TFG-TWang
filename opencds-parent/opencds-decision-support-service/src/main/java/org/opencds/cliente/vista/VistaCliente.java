@@ -453,7 +453,7 @@ public class VistaCliente extends JFrame {
 		panelDatos.add(textFieldSecrecionTraqueal, "cell 1 6,growx");
 		textFieldSecrecionTraqueal.setColumns(10);
 
-		JLabel lblXRay = new JLabel("Rayos X en el Pecho");
+		JLabel lblXRay = new JLabel("Rayos X en el Torax");
 		panelDatos.add(lblXRay, "cell 0 7,alignx center");
 
 		textFieldXRayos = new JTextField();
